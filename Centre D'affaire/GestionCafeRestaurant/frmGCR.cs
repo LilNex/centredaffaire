@@ -19,9 +19,7 @@ namespace Centre_D_affaire.GestionCafeRestaurant
 
         private void frmGCR_Load(object sender, EventArgs e)
         {
-           //dddd
-            ///test
-            ///cafe
+          
         }
     }
 }
