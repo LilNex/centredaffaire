@@ -16,5 +16,10 @@ namespace Centre_D_affaire.GestionCafeRestaurant
         {
             InitializeComponent();
         }
+
+        private void frmGCR_Load(object sender, EventArgs e)
+        {
+            //kkk
+        }
     }
 }
