@@ -1,5 +1,4 @@
-﻿
-namespace Centre_D_affaire.GestionPersonnel
+﻿namespace Centre_D_affaire.GestionPersonnel
 {
     partial class frmGPersonnel
     {
@@ -29,10 +28,18 @@ namespace Centre_D_affaire.GestionPersonnel
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmGPersonnel
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "frmGPersonnel";
             this.Text = "frmGPersonnel";
+            this.Load += new System.EventHandler(this.frmGPersonnel_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

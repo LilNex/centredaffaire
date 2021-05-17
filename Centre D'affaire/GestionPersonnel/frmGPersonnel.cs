@@ -16,5 +16,10 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             InitializeComponent();
         }
+
+        private void frmGPersonnel_Load(object sender, EventArgs e)
+        {
+            // test
+        }
     }
 }
