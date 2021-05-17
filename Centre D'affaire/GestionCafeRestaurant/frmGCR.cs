@@ -21,6 +21,7 @@ namespace Centre_D_affaire.GestionCafeRestaurant
         {
            
             ///test
+            ///cafe
         }
     }
 }
