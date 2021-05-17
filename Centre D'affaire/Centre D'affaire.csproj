@@ -76,6 +76,7 @@
     <Compile Include="GestionParking\frmGParking.Designer.cs">
       <DependentUpon>frmGParking.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\clsEmploye.cs" />
     <Compile Include="GestionPersonnel\frmGPersonnel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +103,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GestionPersonnel\frmGPersonnel.resx">
+      <DependentUpon>frmGPersonnel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
