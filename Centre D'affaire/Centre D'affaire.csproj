@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>GestionPersonnel\Resources\Bunifu_UI_v1.52.dll</HintPath>
+      <!--<HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>-->
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -76,7 +80,70 @@
     <Compile Include="GestionParking\frmGParking.Designer.cs">
       <DependentUpon>frmGParking.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\ClsDepartement.cs" />
     <Compile Include="GestionPersonnel\clsEmploye.cs" />
+    <Compile Include="GestionPersonnel\clsPoste.cs" />
+    <Compile Include="GestionPersonnel\CustomControls\Functions.cs" />
+    <Compile Include="GestionPersonnel\CustomControls\UCAjoutDepartement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCAjoutDepartement.Designer.cs">
+      <DependentUpon>UCAjoutDepartement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCAjoutEmploye.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCAjoutEmploye.Designer.cs">
+      <DependentUpon>UCAjoutEmploye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCDashboard.Designer.cs">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCEmployes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCEmployes.Designer.cs">
+      <DependentUpon>UCEmployes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCListeDepartement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCListeDepartement.Designer.cs">
+      <DependentUpon>UCListeDepartement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCListeEmployes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCListeEmployes.Designer.cs">
+      <DependentUpon>UCListeEmployes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCListePoste.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCListePoste.Designer.cs">
+      <DependentUpon>UCListePoste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCProfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCProfil.Designer.cs">
+      <DependentUpon>UCProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\_UCDepartements.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\_UCDepartements.Designer.cs">
+      <DependentUpon>_UCDepartements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\frmPrincipal_Directeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\frmPrincipal_Directeur.Designer.cs">
+      <DependentUpon>frmPrincipal_Directeur.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionPersonnel\frmGPersonnel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +173,36 @@
     <EmbeddedResource Include="GestionPersonnel\frmGPersonnel.resx">
       <DependentUpon>frmGPersonnel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCAjoutDepartement.resx">
+      <DependentUpon>UCAjoutDepartement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCAjoutEmploye.resx">
+      <DependentUpon>UCAjoutEmploye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCDashboard.resx">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCEmployes.resx">
+      <DependentUpon>UCEmployes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCListeDepartement.resx">
+      <DependentUpon>UCListeDepartement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCListeEmployes.resx">
+      <DependentUpon>UCListeEmployes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCListePoste.resx">
+      <DependentUpon>UCListePoste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCProfil.resx">
+      <DependentUpon>UCProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\_UCDepartements.resx">
+      <DependentUpon>_UCDepartements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\frmPrincipal_Directeur.resx">
+      <DependentUpon>frmPrincipal_Directeur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -114,6 +211,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
@@ -130,6 +228,87 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_multiply_26px_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_minus_24px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_add_user_male_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_denied_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_female_user_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_find_user_male_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_home_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_male_user_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_user_126px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_user_male_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_add_user_male_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_checklist_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_clipboard_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_dashboard_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_denied_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_euro_money_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_female_user_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_find_user_male_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_home_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_male_user_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_minus_24px_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_money_bag_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_multiply_26px_41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_user_126px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_user_groups_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_user_male_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_settings_32px.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
