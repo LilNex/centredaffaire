@@ -50,6 +50,10 @@
     <Compile Include="AchatsLogistiquePatrimoine\ClsEmploye.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsFacturation.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsProfil.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsAchats.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsFournisseur.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsCommande.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsType.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\frmALP.cs">
       <SubType>Form</SubType>
     </Compile>
