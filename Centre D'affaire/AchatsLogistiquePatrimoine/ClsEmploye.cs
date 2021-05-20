@@ -1,4 +1,4 @@
-﻿using System;
+﻿§M  using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +13,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private string Prenom;
         private int Telephone;
         private string E_mail;
-        private string Profil;
-        private ClsProfil Type_profil;
+        private ClsProfil Profil;
 
 
         public string Nom1 { get => Nom; set => Nom = value; }
@@ -24,20 +23,21 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         public int Telephone1 { get => Telephone; set => Telephone = value; }
         public string ID_emp1{ get => ID_emp; set => ID_emp = value; }
         public string E_mail1 { get => E_mail; set => E_mail = value; }
-        public string Profil1 { get => Profil; set => Profil = value; }
-        internal ClsProfil Type_profil1 { get => Type_profil; set => Type_profil = value; }
+        public ClsProfil Profil1 { get => this.Profil; set => this.Profil = value; }
+
+
         //----------constructeur par default---------------
         public ClsEmploye() { }
         //--------------constructeur renseigné-----------------
-        public ClsEmploye(string id_emp,string nom,string prenom,int telephone,string email,string profil,ClsProfil type_employe)
+        public ClsEmploye(string id_emp,string nom,string prenom,int telephone,string email,ClsProfil profil)            
+
         {
             this.ID_emp = id_emp;
             this.Nom = nom;
             this.Prenom = prenom;
             this.Telephone = telephone;
-            this.E_mail = email;
-            this.Profil = profil;
-            this.Type_profil = type_employe;
+            this.E_mail = email;          
+            this.Profil1 = profil ;
         }
 
 
