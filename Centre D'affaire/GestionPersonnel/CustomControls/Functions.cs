@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Centre_D_affaire.GestionPersonnel.CustomControls
+namespace Centre_D_affaire.GestionPersonnel
 {
     static class Functions
     {
@@ -36,5 +36,35 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
 
             }
         }
+
+        public static bool addPoste(List<clsPoste> ListePostes, clsPoste Poste)
+        {
+            for (int i = 0; i < ListePostes.Count; i++)
+            {
+                if (Poste.Num == ListePostes[i].Num)
+                {
+                    return false;
+                }
+            }
+            ListePostes.Add(Poste);
+            return true;
+        }
+        public static bool AjouterDepartement(ClsDepartement departement)
+        {
+            for (int i = 0; i < ClsDepartement.ListeDepartement.Count; i++)
+            {
+                if (departement.Num == ClsDepartement.ListeDepartement[i].Num)
+                {
+                    throw new DepartementNumExistantException();
+                }
+                else if (departement.Nom == ClsDepartement.ListeDepartement[i].Nom)
+                {
+                    throw new DepartementNomExistantException();
+                }
+            }
+            ClsDepartement.ListeDepartement.Add(departement);
+            return true;
+        }
     }
+    
 }

@@ -45,8 +45,6 @@
             this.btnListeEmployes = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListeDeps)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListePoste)).BeginInit();
             this.SuspendLayout();
@@ -58,15 +56,13 @@
             this.dgvListeDeps.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvListeDeps.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListeDeps.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListeDeps.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1});
             this.dgvListeDeps.EnableHeadersVisualStyles = false;
             this.dgvListeDeps.Location = new System.Drawing.Point(8, 70);
             this.dgvListeDeps.Name = "dgvListeDeps";
@@ -126,6 +122,8 @@
             // 
             // dgvListePoste
             // 
+            this.dgvListePoste.AllowUserToAddRows = false;
+            this.dgvListePoste.AllowUserToDeleteRows = false;
             this.dgvListePoste.BackgroundColor = System.Drawing.Color.White;
             this.dgvListePoste.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListePoste.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -138,11 +136,10 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvListePoste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListePoste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListePoste.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn4});
             this.dgvListePoste.EnableHeadersVisualStyles = false;
             this.dgvListePoste.Location = new System.Drawing.Point(550, 70);
             this.dgvListePoste.Name = "dgvListePoste";
+            this.dgvListePoste.ReadOnly = true;
             this.dgvListePoste.RowHeadersVisible = false;
             this.dgvListePoste.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListePoste.Size = new System.Drawing.Size(402, 414);
@@ -249,16 +246,6 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Column4";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
             // UCListeDepartement
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -304,7 +291,5 @@
         private System.Windows.Forms.Button btnListeEmployes;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

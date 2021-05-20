@@ -36,9 +36,6 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.lblText_ParNumero = new System.Windows.Forms.Label();
             this.lblText_Recherche = new System.Windows.Forms.Label();
             this.dgvListeEmployes = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -102,6 +99,8 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             // 
             // dgvListeEmployes
             // 
+            this.dgvListeEmployes.AllowUserToAddRows = false;
+            this.dgvListeEmployes.AllowUserToDeleteRows = false;
             this.dgvListeEmployes.BackgroundColor = System.Drawing.Color.White;
             this.dgvListeEmployes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListeEmployes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -114,32 +113,14 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvListeEmployes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListeEmployes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListeEmployes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
             this.dgvListeEmployes.EnableHeadersVisualStyles = false;
             this.dgvListeEmployes.Location = new System.Drawing.Point(8, 112);
             this.dgvListeEmployes.Name = "dgvListeEmployes";
+            this.dgvListeEmployes.ReadOnly = true;
             this.dgvListeEmployes.RowHeadersVisible = false;
             this.dgvListeEmployes.Size = new System.Drawing.Size(493, 414);
             this.dgvListeEmployes.TabIndex = 16;
             this.dgvListeEmployes.Click += new System.EventHandler(this.dgvListeEmployes_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
             // 
             // label3
             // 
@@ -254,9 +235,6 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private System.Windows.Forms.Label lblText_ParNumero;
         private System.Windows.Forms.Label lblText_Recherche;
         private System.Windows.Forms.DataGridView dgvListeEmployes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

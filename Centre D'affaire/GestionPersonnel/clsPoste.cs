@@ -12,9 +12,8 @@ namespace Centre_D_affaire.GestionPersonnel
         private string num;
         private List<ClsEmploye> listeDesEmployé = new List<ClsEmploye>();
 
-
-        public string Nom { get => nom; set => nom = value; }
         public string Num { get => num; set => num = value; }
+        public string Nom { get => nom; set => nom = value; }
 
         public clsPoste(string nom, string num)
         {

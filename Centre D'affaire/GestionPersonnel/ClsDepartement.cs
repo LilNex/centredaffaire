@@ -20,6 +20,7 @@ namespace Centre_D_affaire.GestionPersonnel
         // CONDITION format : XXX000
         public string Nom { get => nom; set => nom = value; }
         internal List<clsPoste> ListePoste { get => listePoste; set => listePoste = value; }
+        public int Id { get => id; set => id = value; }
 
         public ClsDepartement(string nom, string num)
         {
@@ -37,7 +38,7 @@ namespace Centre_D_affaire.GestionPersonnel
             }
             return -1;
         }
-        public bool Ajouter(clsPoste poste)
+        public bool AjouterPoste(clsPoste poste)
         {
             if (rechercheNum(poste.Num) != -1)
             {
@@ -50,6 +51,7 @@ namespace Centre_D_affaire.GestionPersonnel
                 return true;
             }
         }
+        
 
     }
 }

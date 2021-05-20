@@ -82,6 +82,7 @@
     </Compile>
     <Compile Include="GestionPersonnel\ClsDepartement.cs" />
     <Compile Include="GestionPersonnel\clsEmploye.cs" />
+    <Compile Include="GestionPersonnel\clsExceptions.cs" />
     <Compile Include="GestionPersonnel\clsPoste.cs" />
     <Compile Include="GestionPersonnel\CustomControls\Functions.cs" />
     <Compile Include="GestionPersonnel\CustomControls\UCAjoutDepartement.cs">
@@ -125,6 +126,12 @@
     </Compile>
     <Compile Include="GestionPersonnel\CustomControls\UCListePoste.Designer.cs">
       <DependentUpon>UCListePoste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCNotif.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCNotif.Designer.cs">
+      <DependentUpon>UCNotif.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionPersonnel\CustomControls\UCProfil.cs">
       <SubType>UserControl</SubType>
@@ -170,6 +177,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCNotif.resx">
+      <DependentUpon>UCNotif.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\frmGPersonnel.resx">
       <DependentUpon>frmGPersonnel.cs</DependentUpon>
     </EmbeddedResource>
