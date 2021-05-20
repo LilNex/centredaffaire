@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AchatsLogistiquePatrimoine\ClsContrat.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsEmploye.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsFacturation.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsProfil.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\frmALP.cs">
       <SubType>Form</SubType>
     </Compile>
