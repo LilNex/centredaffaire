@@ -13,6 +13,6 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         public static List<ClsAchats> List_achat = new List<ClsAchats>();
         public static List<ClsCommande> List_commande = new List<ClsCommande>();
         public static List<ClsDemande> List_demande = new List<ClsDemande>();
-
+        public static List<ClsFacture> List_facture = new List<ClsFacture>();
     }
 }

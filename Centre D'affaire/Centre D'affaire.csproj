@@ -49,7 +49,7 @@
     <Compile Include="AchatsLogistiquePatrimoine\ClsContrat.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsDemande.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsEmploye.cs" />
-    <Compile Include="AchatsLogistiquePatrimoine\ClsFacturation.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsFacture.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsListe.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsProfil.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsAchats.cs" />
