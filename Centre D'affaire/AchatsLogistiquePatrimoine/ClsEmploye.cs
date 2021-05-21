@@ -39,8 +39,61 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.E_mail = email;          
             this.Profil1 = profil ;
         }
+        public int Recherche_Emp(string idemp)
+        {
+            for (int i = 0; i < ClsListe.List_employe.Count(); i++)
+            {
+                if (ClsListe.List_employe[i].ID_emp == idemp)
+                {
+                    return i;
+                }
+                
+            }
+            return -1;
+        }
+        public ClsEmploye Recherche_Emp_OB(string idemp)
+        {
+            for (int i = 0; i < ClsListe.List_employe.Count(); i++)
+            {
+                if (ClsListe.List_employe[i].ID_emp == idemp)
+                {
+                    return ClsListe.List_employe[i];
+                }
+
+            }
+            return null;
+        }
+        public bool Ajouter_Emp(ClsEmploye A)
+        {
+            if (Recherche_Emp(A.ID_emp) == -1)
+            {
+                ClsListe.List_employe.Add(A);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
 
 
+        public bool Supprimer_Emp(ClsEmploye s)
+        {
+            if (Recherche_Emp(s.ID_emp) != -1)
+            {
+                ClsListe.List_employe.Remove(s);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+
+       
     }
    
 }
