@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    class ClsType
+    class ClsType_Achat
     {
         private string nom_Type;
 
-        public ClsType(){}
+        public ClsType_Achat(){}
 
-        public ClsType(string nom )
+        public ClsType_Achat(string nom )
         {
             this.nom_Type = nom;
         }
