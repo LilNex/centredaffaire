@@ -92,8 +92,24 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         }
 
+        public bool Modifier_Emp(string id, ClsEmploye e)
+        {
+            if (Recherche_Emp(id) != -1)
+            {
+                ClsListe.List_employe[ Recherche_Emp(id) ] = e;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
-       
+        }
+
+
+
+
+
     }
    
 }

@@ -29,5 +29,80 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         }
 
+
+
+        public int Recherche_Four(string email)
+        {
+            for (int i = 0; i < ClsListe.List_fournisseur.Count ; i++)
+            {   
+                if(ClsListe.List_fournisseur[i].email_Four == email)
+                {
+                    return i;
+                }
+
+            }
+            return -1;
+        }
+
+
+        public ClsFournisseur Recherche_Four_OB(string email)
+        {
+            for (int i = 0; i < ClsListe.List_fournisseur.Count() ; i++)
+            {
+                if (ClsListe.List_fournisseur[i].email_Four == email)
+                {
+                    return ClsListe.List_fournisseur[i];
+                }
+
+            }
+            return null;
+        }
+
+
+
+
+
+
+        public bool Ajouter_Four(ClsFournisseur f)
+        {
+            if (Recherche_Four(f.email_Four) == -1)
+            {
+                ClsListe.List_fournisseur.Add(f);
+                return true;
+            }
+            else return false  ;
+
+        }
+
+        public bool Supprimer_Four(ClsFournisseur f)
+        {
+            if (Recherche_Four(f.email_Four) != -1)
+            {
+                ClsListe.List_fournisseur.Remove(f);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+        public bool Modifier_Emp(string email, ClsFournisseur f)
+        {
+            if (Recherche_Four(email) != -1)
+            {
+                ClsListe.List_fournisseur[Recherche_Four(email) ] = f;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+
+
     }
 }
