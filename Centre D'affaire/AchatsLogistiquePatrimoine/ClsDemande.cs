@@ -27,7 +27,64 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.Etat_demande = etatdemande;
             this.Date_demande = datedemande;
         }
-
+        public int Recherche_Dmd(string iddmd)
+        {
+            for (int i = 0; i < ClsListe.List_demande.Count(); i++)
+            {
+                if (ClsListe.List_demande[i].ID_demande == iddmd)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        public ClsDemande Recherche_Dmd_O(string iddmd)
+        {
+            for (int i = 0; i < ClsListe.List_demande.Count(); i++)
+            {
+                if (ClsListe.List_demande[i].ID_demande == iddmd)
+                {
+                    return ClsListe.List_demande[i];
+                }
+            }
+            return null;
+        }
+        public bool Ajouter_Dmd(ClsDemande dmd)
+        {
+            if (Recherche_Dmd(dmd.ID_demande) == -1)
+            {
+                ClsListe.List_demande.Add(dmd);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool Supprimer_Dmd(ClsDemande dmd)
+        {
+            if (Recherche_Dmd(dmd.ID_demande) != -1)
+            {
+                ClsListe.List_demande.Remove(dmd);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool Modifier_Acha(string id, ClsDemande dmd)
+        {
+            if (Recherche_Dmd(id) != -1)
+            {
+                ClsListe.List_demande[Recherche_Dmd(id)] = dmd;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
 

@@ -23,5 +23,63 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
 
         }
+        public int Recherche_Cmd(string idcmd)
+        {
+            for (int i = 0; i < ClsListe.List_commande.Count(); i++)
+            {
+                if (ClsListe.List_commande[i].iD_cmd == idcmd)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        public ClsCommande Recherche_Cmd_O(string idcmd)
+        {
+            for (int i = 0; i < ClsListe.List_commande.Count(); i++)
+            {
+                if (ClsListe.List_commande[i].iD_cmd == idcmd)
+                {
+                    return ClsListe.List_commande[i];
+                }
+            }
+            return null;
+        }
+        public bool Ajouter_Cmd(ClsCommande cmd)
+        {
+            if (Recherche_Cmd(cmd.iD_cmd) == -1)
+            {
+                ClsListe.List_commande.Add(cmd);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool Supprimer_Cmd(ClsCommande cmd)
+        {
+            if (Recherche_Cmd(cmd.iD_cmd) != -1)
+            {
+                ClsListe.List_commande.Remove(cmd);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool Modifier_Cmd(string id, ClsCommande cmd)
+        {
+            if (Recherche_Cmd(id) != -1)
+            {
+                ClsListe.List_commande[Recherche_Cmd(id)] = cmd;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
