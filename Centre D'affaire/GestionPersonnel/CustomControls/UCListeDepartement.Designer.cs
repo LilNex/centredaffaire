@@ -69,6 +69,7 @@
             this.dgvListeDeps.RowHeadersVisible = false;
             this.dgvListeDeps.Size = new System.Drawing.Size(402, 414);
             this.dgvListeDeps.TabIndex = 30;
+            this.dgvListeDeps.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListeDeps_CellContentClick);
             // 
             // txtRechercheNom
             // 

@@ -18,6 +18,7 @@ namespace Centre_D_affaire.GestionPersonnel
         {   
             InitializeComponent();
             setupForm();
+            ClsDepartement.loadListeDeps();
             //clsRFID rFID = new clsRFID();
             //rFID.connectArduino();
         }
@@ -80,6 +81,11 @@ namespace Centre_D_affaire.GestionPersonnel
         private void btnParametre_Click(object sender, EventArgs e)
         {
             pnlActive.Top = btnParametre.Top;
+
+        }
+
+        private void ucDepartements_Load(object sender, EventArgs e)
+        {
 
         }
     }

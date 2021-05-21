@@ -32,6 +32,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
 
         private void btnAjouterEmploye_Click(object sender, EventArgs e)
         {
+            ucAjoutEmploye.reloadForm();
             ucAjoutEmploye.BringToFront();
         }
 

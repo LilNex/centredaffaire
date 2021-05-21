@@ -30,13 +30,14 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            //if (tempListePoste.Count != 0)
-            //{
-            //    newDep.ListePoste = tempListePoste;
-            //}
+
             try 
             {
                 ClsDepartement newDep = new ClsDepartement(txtDepNom.Text, txtDepNum.Text);
+                if (tempListePoste.Count != 0)
+                {
+                    newDep.ListePoste = tempListePoste;
+                }
                 Functions.AjouterDepartement(newDep);
                 N.ShowBalloonTip(1100, "Departement ajouté", "Le département a été ajouté à la liste avec succès", ToolTipIcon.Info);
             }

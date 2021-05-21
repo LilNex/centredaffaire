@@ -29,5 +29,10 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         {
             loadForm();
         }
+
+        private void dgvListeDeps_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvListePoste.DataSource = ((ClsDepartement)dgvListeDeps.CurrentRow.DataBoundItem).ListePoste;
+        }
     }
 }

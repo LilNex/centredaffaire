@@ -52,6 +52,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private void btnListePostes_Click(object sender, EventArgs e)
         {
             Functions.clearForm(ucListePoste);
+            ucListePoste.reloadForm();
             ucListePoste.BringToFront();
         }
 

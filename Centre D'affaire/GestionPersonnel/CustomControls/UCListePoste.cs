@@ -15,6 +15,22 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         public UCListePoste()
         {
             InitializeComponent();
+            
+        }
+
+        private void dgvListePostes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void UCListePoste_Load(object sender, EventArgs e)
+        {
+            reloadForm();
+        }
+        public void reloadForm()
+        {
+            dgvListePostes.DataSource = Functions.getListPostes();
+
         }
     }
 }

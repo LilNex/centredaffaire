@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionPersonnel
 {
-    class ClsEmploye
+    public class ClsEmploye
     {
         private string nom;
         private String prenom;

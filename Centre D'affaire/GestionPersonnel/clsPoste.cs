@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionPersonnel
 {
-    class clsPoste
+    public class clsPoste
     {
         private string nom;
         private string num;
@@ -20,6 +20,7 @@ namespace Centre_D_affaire.GestionPersonnel
             this.nom = nom;
             this.num = num;
         }
+        public clsPoste() { }
         public int rechercheNum(int num)
         {
             for (int i = 0; i < listeDesEmployé.Count(); i++)
@@ -44,7 +45,10 @@ namespace Centre_D_affaire.GestionPersonnel
                 return true;
             }
         }
-
+        public override string ToString()
+        {
+            return this.Nom;
+        }
 
     }
 }

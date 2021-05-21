@@ -42,10 +42,6 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvListePostes = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtPosteNom = new System.Windows.Forms.TextBox();
             this.txtPosteNum = new System.Windows.Forms.TextBox();
             this.lblText_ParNom = new System.Windows.Forms.Label();
@@ -54,6 +50,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnListeEmployes = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListeEmployes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListePostes)).BeginInit();
             this.SuspendLayout();
@@ -169,36 +166,14 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.dgvListePostes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListePostes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListePostes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
+            this.Column1});
             this.dgvListePostes.EnableHeadersVisualStyles = false;
             this.dgvListePostes.Location = new System.Drawing.Point(8, 70);
             this.dgvListePostes.Name = "dgvListePostes";
             this.dgvListePostes.RowHeadersVisible = false;
             this.dgvListePostes.Size = new System.Drawing.Size(402, 414);
             this.dgvListePostes.TabIndex = 45;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.Name = "Column4";
+            this.dgvListePostes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListePostes_CellContentClick);
             // 
             // txtPosteNom
             // 
@@ -301,6 +276,11 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.btnListeEmployes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnListeEmployes.UseVisualStyleBackColor = false;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
             // UCListePoste
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -321,6 +301,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.Controls.Add(this.lblText_Poste);
             this.Name = "UCListePoste";
             this.Size = new System.Drawing.Size(952, 529);
+            this.Load += new System.EventHandler(this.UCListePoste_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListeEmployes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListePostes)).EndInit();
             this.ResumeLayout(false);
@@ -344,14 +325,11 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridView dgvListePostes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.TextBox txtPosteNom;
         private System.Windows.Forms.TextBox txtPosteNum;
         private System.Windows.Forms.Label lblText_ParNom;
         private System.Windows.Forms.Label lblText_ParNumero;
         private System.Windows.Forms.Label lblText_Poste;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

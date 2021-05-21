@@ -63,7 +63,24 @@ namespace Centre_D_affaire.GestionPersonnel
                 }
             }
             ClsDepartement.ListeDepartement.Add(departement);
+            ClsDepartement.saveListeDeps();
             return true;
+        }
+
+        public static List<clsPoste> getListPostes()
+        {
+            List<clsPoste> _listPoste = new List<clsPoste>();
+            for (int i = 0; i < ClsDepartement.ListeDepartement.Count; i++)
+            {
+                for (int y = 0; y < ClsDepartement.ListeDepartement[i].ListePoste.Count; y++)
+                {
+                    foreach (clsPoste poste in ClsDepartement.ListeDepartement[i].ListePoste)
+                    {
+                        _listPoste.Add(poste);
+                    }
+                }
+            }
+            return _listPoste;
         }
     }
     

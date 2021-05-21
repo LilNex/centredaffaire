@@ -283,7 +283,7 @@ namespace Centre_D_affaire.GestionPersonnel
             this.btnDashboard.ButtonText = "Dashboard";
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
-            this.btnDashboard.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDashboard.Iconimage = null;
             this.btnDashboard.Iconimage_right = global::Centre_D_affaire.Properties.Resources.icons8_home_32px1;
@@ -383,6 +383,7 @@ namespace Centre_D_affaire.GestionPersonnel
             this.ucDepartements.Name = "ucDepartements";
             this.ucDepartements.Size = new System.Drawing.Size(949, 565);
             this.ucDepartements.TabIndex = 2;
+            this.ucDepartements.Load += new System.EventHandler(this.ucDepartements_Load);
             // 
             // ucEmployes
             // 
