@@ -20,7 +20,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
 
         private void dgvListePostes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            dgvListeEmployes.DataSource = ((clsPoste)dgvListePostes.CurrentRow.DataBoundItem).listeDesEmployé;
         }
 
         private void UCListePoste_Load(object sender, EventArgs e)

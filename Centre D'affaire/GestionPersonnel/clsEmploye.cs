@@ -9,8 +9,8 @@ namespace Centre_D_affaire.GestionPersonnel
     public class ClsEmploye
     {
         private string nom;
-        private String prenom;
-        private int num;
+        private string prenom;
+        private string num;
         private string télephone;
         private string email;
         private string cin;
@@ -60,7 +60,7 @@ namespace Centre_D_affaire.GestionPersonnel
             }
         }
 
-        public int Num { get => num; set => num = value; }
+        public string Num { get => num; set => num = value; }
         public string Cin { get => cin; set => cin = value; }
         public string Télephone { get => télephone; set => télephone = value; }
         public string Email { get => email; set => email = value; }
@@ -72,5 +72,12 @@ namespace Centre_D_affaire.GestionPersonnel
         public string Adresse { get => adresse; set => adresse = value; }
         public int Salaire { get => salaire; set => salaire = value; }
         public string Rfid { get => rfid; set => rfid = value; }
+
+        public ClsEmploye(string num, string nom)
+        {
+            this.Nom = nom;
+            this.Num = num;
+        }
+        public ClsEmploye() { }
     }
 }

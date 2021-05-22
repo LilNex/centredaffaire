@@ -10,7 +10,7 @@ namespace Centre_D_affaire.GestionPersonnel
     {
         private string nom;
         private string num;
-        private List<ClsEmploye> listeDesEmployé = new List<ClsEmploye>();
+        public List<ClsEmploye> listeDesEmployé = new List<ClsEmploye>();
 
         public string Num { get => num; set => num = value; }
         public string Nom { get => nom; set => nom = value; }
@@ -21,7 +21,7 @@ namespace Centre_D_affaire.GestionPersonnel
             this.num = num;
         }
         public clsPoste() { }
-        public int rechercheNum(int num)
+        public  int rechercheEmployeNum(string num)
         {
             for (int i = 0; i < listeDesEmployé.Count(); i++)
             {
@@ -32,9 +32,9 @@ namespace Centre_D_affaire.GestionPersonnel
             }
             return -1;
         }
-        public bool ajouter(ClsEmploye p)
+        public bool ajouterEmploye(ClsEmploye p)
         {
-            if (rechercheNum(p.Num) != -1)
+            if (rechercheEmployeNum(p.Num) != -1)
             {
                 return false;
             }

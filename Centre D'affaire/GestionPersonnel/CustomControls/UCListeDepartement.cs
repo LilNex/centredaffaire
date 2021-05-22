@@ -24,15 +24,24 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         public void loadForm()
         {
             dgvListeDeps.DataSource = ClsDepartement.ListeDepartement;
+            dgvListeDeps.DefaultCellStyle.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            
         }
         private void UCListeDepartement_Load(object sender, EventArgs e)
         {
             loadForm();
+
         }
 
         private void dgvListeDeps_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dgvListePoste.DataSource = ((ClsDepartement)dgvListeDeps.CurrentRow.DataBoundItem).ListePoste;
+        }
+
+        private void dgvListeDeps_CellStyleChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            //dgvListeDeps.DefaultCellStyle.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
         }
     }
 }

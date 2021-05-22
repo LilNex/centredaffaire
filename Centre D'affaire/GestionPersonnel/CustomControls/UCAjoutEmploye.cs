@@ -69,5 +69,37 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
                 }
             }
         }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            ClsEmploye employe = new ClsEmploye(txtNum.Text,txtNom.Text);
+            if(cmbDeparts.SelectedItem is ClsDepartement)
+            {
+                if (cmbPoste.SelectedItem is clsPoste)
+                {
+                    //((clsPoste)cmbPoste.SelectedItem).ajouterEmploye(employe);
+                    for (int i = 0; i < ClsDepartement.ListeDepartement.Count; i++)
+                    {
+                        if (ClsDepartement.ListeDepartement[i].Num == ((ClsDepartement)cmbDeparts.SelectedItem).Num)
+                        {
+                            for (int y = 0; y < ClsDepartement.ListeDepartement[i].ListePoste.Count; y++)
+                            {
+                                if (ClsDepartement.ListeDepartement[i].ListePoste[y].Num == ((clsPoste)cmbPoste.SelectedItem).Num)
+                                {
+                                    ClsDepartement.ListeDepartement[i].ListePoste[y].ajouterEmploye(employe);
+                                    ClsDepartement.saveListeDeps();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        private void txtRechercheNom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

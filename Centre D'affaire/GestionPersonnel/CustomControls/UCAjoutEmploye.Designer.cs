@@ -29,9 +29,9 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtRecherchePrenom = new System.Windows.Forms.TextBox();
-            this.txtRechercheNom = new System.Windows.Forms.TextBox();
-            this.txtRechercheNum = new System.Windows.Forms.TextBox();
+            this.txtPrenom = new System.Windows.Forms.TextBox();
+            this.txtNom = new System.Windows.Forms.TextBox();
+            this.txtNum = new System.Windows.Forms.TextBox();
             this.lblText_Prenom = new System.Windows.Forms.Label();
             this.lblText_Nom = new System.Windows.Forms.Label();
             this.lblText_Numero = new System.Windows.Forms.Label();
@@ -76,35 +76,36 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.grpSexe.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtRecherchePrenom
+            // txtPrenom
             // 
-            this.txtRecherchePrenom.BackColor = System.Drawing.Color.DarkGray;
-            this.txtRecherchePrenom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRecherchePrenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtRecherchePrenom.Location = new System.Drawing.Point(145, 134);
-            this.txtRecherchePrenom.Name = "txtRecherchePrenom";
-            this.txtRecherchePrenom.Size = new System.Drawing.Size(137, 19);
-            this.txtRecherchePrenom.TabIndex = 22;
+            this.txtPrenom.BackColor = System.Drawing.Color.DarkGray;
+            this.txtPrenom.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtPrenom.Location = new System.Drawing.Point(145, 134);
+            this.txtPrenom.Name = "txtPrenom";
+            this.txtPrenom.Size = new System.Drawing.Size(137, 19);
+            this.txtPrenom.TabIndex = 22;
             // 
-            // txtRechercheNom
+            // txtNom
             // 
-            this.txtRechercheNom.BackColor = System.Drawing.Color.DarkGray;
-            this.txtRechercheNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRechercheNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtRechercheNom.Location = new System.Drawing.Point(145, 91);
-            this.txtRechercheNom.Name = "txtRechercheNom";
-            this.txtRechercheNom.Size = new System.Drawing.Size(137, 19);
-            this.txtRechercheNom.TabIndex = 21;
+            this.txtNom.BackColor = System.Drawing.Color.DarkGray;
+            this.txtNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtNom.Location = new System.Drawing.Point(145, 91);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(137, 19);
+            this.txtNom.TabIndex = 21;
+            this.txtNom.TextChanged += new System.EventHandler(this.txtRechercheNom_TextChanged);
             // 
-            // txtRechercheNum
+            // txtNum
             // 
-            this.txtRechercheNum.BackColor = System.Drawing.Color.DarkGray;
-            this.txtRechercheNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRechercheNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRechercheNum.Location = new System.Drawing.Point(145, 48);
-            this.txtRechercheNum.Name = "txtRechercheNum";
-            this.txtRechercheNum.Size = new System.Drawing.Size(137, 19);
-            this.txtRechercheNum.TabIndex = 20;
+            this.txtNum.BackColor = System.Drawing.Color.DarkGray;
+            this.txtNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNum.Location = new System.Drawing.Point(145, 48);
+            this.txtNum.Name = "txtNum";
+            this.txtNum.Size = new System.Drawing.Size(137, 19);
+            this.txtNum.TabIndex = 20;
             // 
             // lblText_Prenom
             // 
@@ -548,6 +549,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAjouter.UseVisualStyleBackColor = false;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // UCAjoutEmploye
             // 
@@ -586,9 +588,9 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.Controls.Add(this.lblText_DateNaissance);
             this.Controls.Add(this.datePicker);
             this.Controls.Add(this.pictureBox);
-            this.Controls.Add(this.txtRecherchePrenom);
-            this.Controls.Add(this.txtRechercheNom);
-            this.Controls.Add(this.txtRechercheNum);
+            this.Controls.Add(this.txtPrenom);
+            this.Controls.Add(this.txtNom);
+            this.Controls.Add(this.txtNum);
             this.Controls.Add(this.lblText_Prenom);
             this.Controls.Add(this.lblText_Nom);
             this.Controls.Add(this.lblText_Numero);
@@ -606,9 +608,9 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtRecherchePrenom;
-        private System.Windows.Forms.TextBox txtRechercheNom;
-        private System.Windows.Forms.TextBox txtRechercheNum;
+        private System.Windows.Forms.TextBox txtPrenom;
+        private System.Windows.Forms.TextBox txtNom;
+        private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.Label lblText_Prenom;
         private System.Windows.Forms.Label lblText_Nom;
         private System.Windows.Forms.Label lblText_Numero;
