@@ -1,7 +1,7 @@
 ﻿
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    partial class frmALP
+    partial class Formulaire1
     {
         /// <summary>
         /// Required designer variable.

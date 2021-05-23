@@ -56,11 +56,11 @@
     <Compile Include="AchatsLogistiquePatrimoine\ClsFournisseur.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsCommande.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsType_Achat.cs" />
-    <Compile Include="AchatsLogistiquePatrimoine\frmALP.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\frmALP.Designer.cs">
-      <DependentUpon>frmALP.cs</DependentUpon>
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire1.Designer.cs">
+      <DependentUpon>Formulaire1.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
