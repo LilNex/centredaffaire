@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
     class ClsAchats
-    {
+    { 
         private string iD_Achat;
         private int quantité;
         private int prix;
