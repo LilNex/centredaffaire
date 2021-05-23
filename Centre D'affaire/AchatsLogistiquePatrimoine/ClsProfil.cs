@@ -9,7 +9,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
     public class ClsProfil
     {
         private string ID_profil;
-        private string Nom_profil;
+        private string Nom_profil;// DIRECTEUR / RESPONSABLE ACHAT / COMMERCIAL / SECRETAIRE 
 
         public string ID_profil1 { get => ID_profil; set => ID_profil = value; }
         public string Nom_profil1 { get => Nom_profil; set => Nom_profil = value; }
