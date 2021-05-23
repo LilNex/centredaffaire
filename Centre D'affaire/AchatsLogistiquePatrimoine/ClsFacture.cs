@@ -10,7 +10,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
     {
         private string Numero_facture;
         private DateTime Date_facturation;
-        private string Etat;
+        private string Etat; // declenche serialisation 
         private int Prix_facture;
 
         public string Numero_facture1 { get => Numero_facture; set => Numero_facture = value; }
