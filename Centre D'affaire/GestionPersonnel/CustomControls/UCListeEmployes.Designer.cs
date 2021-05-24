@@ -120,7 +120,6 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.dgvListeEmployes.RowHeadersVisible = false;
             this.dgvListeEmployes.Size = new System.Drawing.Size(493, 414);
             this.dgvListeEmployes.TabIndex = 16;
-            this.dgvListeEmployes.Click += new System.EventHandler(this.dgvListeEmployes_Click);
             // 
             // label3
             // 

@@ -32,9 +32,9 @@
             this.btnAjouterDeps = new System.Windows.Forms.Button();
             this.btnListeDeps = new System.Windows.Forms.Button();
             this.btnListePostes = new System.Windows.Forms.Button();
-            this.ucAjoutDepartement = new Centre_D_affaire.GestionPersonnel.CustomControls.UCAjoutDepartement();
             this.ucListeDepartement = new Centre_D_affaire.GestionPersonnel.CustomControls.UCListeDepartement();
             this.ucListePoste = new Centre_D_affaire.GestionPersonnel.CustomControls.UCListePoste();
+            this.ucAjoutDepartement = new Centre_D_affaire.GestionPersonnel.CustomControls.UCAjoutDepartement();
             this.SuspendLayout();
             // 
             // btnAjouterPoste
@@ -108,20 +108,13 @@
             this.btnListePostes.UseVisualStyleBackColor = false;
             this.btnListePostes.Click += new System.EventHandler(this.btnListePostes_Click);
             // 
-            // ucAjoutDepartement
-            // 
-            this.ucAjoutDepartement.Location = new System.Drawing.Point(0, 42);
-            this.ucAjoutDepartement.Name = "ucAjoutDepartement";
-            this.ucAjoutDepartement.Size = new System.Drawing.Size(952, 529);
-            this.ucAjoutDepartement.TabIndex = 12;
-            this.ucAjoutDepartement.Load += new System.EventHandler(this.ucAjoutDepartement_Load);
-            // 
             // ucListeDepartement
             // 
             this.ucListeDepartement.Location = new System.Drawing.Point(0, 42);
             this.ucListeDepartement.Name = "ucListeDepartement";
             this.ucListeDepartement.Size = new System.Drawing.Size(952, 529);
             this.ucListeDepartement.TabIndex = 10;
+            this.ucListeDepartement.Load += new System.EventHandler(this.ucListeDepartement_Load);
             // 
             // ucListePoste
             // 
@@ -129,6 +122,14 @@
             this.ucListePoste.Name = "ucListePoste";
             this.ucListePoste.Size = new System.Drawing.Size(952, 529);
             this.ucListePoste.TabIndex = 11;
+            // 
+            // ucAjoutDepartement
+            // 
+            this.ucAjoutDepartement.Location = new System.Drawing.Point(0, 42);
+            this.ucAjoutDepartement.Name = "ucAjoutDepartement";
+            this.ucAjoutDepartement.Size = new System.Drawing.Size(952, 529);
+            this.ucAjoutDepartement.TabIndex = 12;
+            this.ucAjoutDepartement.Load += new System.EventHandler(this.ucAjoutDepartement_Load);
             // 
             // UCDepartements
             // 

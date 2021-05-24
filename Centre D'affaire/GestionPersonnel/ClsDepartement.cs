@@ -63,14 +63,21 @@ namespace Centre_D_affaire.GestionPersonnel
         public static void loadListeDeps()
         {
             XmlSerializer XS = new XmlSerializer(ListeDepartement.GetType());
-            StreamReader r_fileDeps = new StreamReader("Liste des departements");
+            try { 
+            StreamReader r_fileDeps = new StreamReader("Liste des departements.xml");
             ClsDepartement.ListeDepartement = (List<ClsDepartement>)XS.Deserialize(r_fileDeps);
+
+            }
+            catch (FileNotFoundException e)
+            {
+                ClsDepartement.ListeDepartement = new List<ClsDepartement>();
+            }
         }
 
         public static void saveListeDeps()
         {
             XmlSerializer XS = new XmlSerializer(ListeDepartement.GetType());
-            StreamWriter w_fileDeps = new StreamWriter("Liste des departements");
+            StreamWriter w_fileDeps = new StreamWriter("Liste des departements.xml");
             XS.Serialize(w_fileDeps, ListeDepartement);
         }
         public override string ToString()

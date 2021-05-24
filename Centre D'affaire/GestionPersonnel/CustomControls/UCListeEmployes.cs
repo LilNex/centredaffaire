@@ -16,16 +16,16 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         {
             InitializeComponent();
         }
-
+        public void reloadForm()
+        {
+            dgvListeEmployes.DataSource = Functions.getListemployes();
+        }
         private void UCListeEmployes_Load(object sender, EventArgs e)
         {
             dgvListeEmployes.Font = new Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dgvListeEmployes.BackgroundColor = Color.White;
+            dgvListeEmployes.BackgroundColor = Color.White; 
+            reloadForm();
         }
 
-        private void dgvListeEmployes_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

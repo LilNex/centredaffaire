@@ -52,6 +52,8 @@
             // 
             // dgvListeDeps
             // 
+            this.dgvListeDeps.AllowUserToAddRows = false;
+            this.dgvListeDeps.AllowUserToDeleteRows = false;
             this.dgvListeDeps.BackgroundColor = System.Drawing.Color.White;
             this.dgvListeDeps.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListeDeps.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -75,6 +77,7 @@
             this.dgvListeDeps.EnableHeadersVisualStyles = false;
             this.dgvListeDeps.Location = new System.Drawing.Point(8, 70);
             this.dgvListeDeps.Name = "dgvListeDeps";
+            this.dgvListeDeps.ReadOnly = true;
             this.dgvListeDeps.RowHeadersVisible = false;
             this.dgvListeDeps.Size = new System.Drawing.Size(402, 414);
             this.dgvListeDeps.TabIndex = 30;

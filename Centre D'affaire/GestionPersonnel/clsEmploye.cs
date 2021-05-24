@@ -33,7 +33,7 @@ namespace Centre_D_affaire.GestionPersonnel
                 }
                 else
                 {
-                    throw new Exception("le Prenom ne doit pas contenur des chiffres et des caracteres spécieux");
+                    throw new Exception("le Prenom ne doit pas contenur des chiffres et des caracteres spéciaux");
                 }
             }
         }

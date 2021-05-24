@@ -383,7 +383,6 @@ namespace Centre_D_affaire.GestionPersonnel
             this.ucDepartements.Name = "ucDepartements";
             this.ucDepartements.Size = new System.Drawing.Size(949, 565);
             this.ucDepartements.TabIndex = 2;
-            this.ucDepartements.Load += new System.EventHandler(this.ucDepartements_Load);
             // 
             // ucEmployes
             // 

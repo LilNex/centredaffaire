@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing.Text;
 
 namespace Centre_D_affaire.GestionPersonnel
 {
     static class Functions
     {
+        
         public static void clearForm(Control form) 
         { 
             foreach(Control x in form.Controls)
@@ -72,15 +74,41 @@ namespace Centre_D_affaire.GestionPersonnel
             List<clsPoste> _listPoste = new List<clsPoste>();
             for (int i = 0; i < ClsDepartement.ListeDepartement.Count; i++)
             {
+                //for (int y = 0; y < ClsDepartement.ListeDepartement[i].ListePoste.Count; y++)
+                //{
+                foreach (clsPoste poste in ClsDepartement.ListeDepartement[i].ListePoste)
+                {
+                    _listPoste.Add(poste);
+                }
+                //}
+            }
+            return _listPoste;
+        }
+        public static List<ClsEmploye> getListemployes()
+        {
+            List<ClsEmploye> _listEmployes = new List<ClsEmploye>();
+            for (int i = 0; i < ClsDepartement.ListeDepartement.Count; i++)
+            {
                 for (int y = 0; y < ClsDepartement.ListeDepartement[i].ListePoste.Count; y++)
                 {
-                    foreach (clsPoste poste in ClsDepartement.ListeDepartement[i].ListePoste)
+                    foreach (ClsEmploye employe in ClsDepartement.ListeDepartement[i].ListePoste[y].listeDesEmployé)
                     {
-                        _listPoste.Add(poste);
+                        _listEmployes.Add(employe);
                     }
                 }
             }
-            return _listPoste;
+            return _listEmployes;
+        }
+
+        public static void setFont(Control control)
+        {
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            //pfc.AddFontFile("\\GestionPersonnel\\Resources\\Fonts\\Poppins-Medium.ttf");
+
+            //foreach (Control c in control.Controls)
+            //{
+            //    c.Font = new System.Drawing.Font(pfc.Families[0], 10, System.Drawing.FontStyle.Regular);
+            //}
         }
     }
     

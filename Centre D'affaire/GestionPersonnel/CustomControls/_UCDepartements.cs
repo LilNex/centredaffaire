@@ -60,5 +60,10 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         {
             ucListeDepartement.dgvListeEmploye.DataSource = ClsDepartement.ListeDepartement;
         }
+
+        private void ucListeDepartement_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

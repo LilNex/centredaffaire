@@ -19,6 +19,7 @@ namespace Centre_D_affaire.GestionPersonnel
             InitializeComponent();
             setupForm();
             ClsDepartement.loadListeDeps();
+            Functions.setFont(this);
             //clsRFID rFID = new clsRFID();
             //rFID.connectArduino();
         }
@@ -84,9 +85,6 @@ namespace Centre_D_affaire.GestionPersonnel
 
         }
 
-        private void ucDepartements_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }
