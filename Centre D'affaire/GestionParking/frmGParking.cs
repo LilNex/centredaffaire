@@ -16,5 +16,10 @@ namespace Centre_D_affaire.GestionParking
         {
             InitializeComponent();
         }
+
+        private void frmGParking_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
