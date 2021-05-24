@@ -27,10 +27,27 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            
-            
-        }
+            //string a;
+            //do
+            //{
+            //    if (e.recherche(txt_Id.Text) != -1)
+            //    {
+            //        a = e.recherche(txt_Id.Text);
+            //        if (txt_Mdp.Text == ClsListe.List_employe[a].MDP_emp1 && cmb_profil != "DIRECTEUR") ;
+            //        {
+            //            // conexion + nv formulaire + notification +.....
+            //            //
+            //        }
+            //            else // verification mo de pass
 
+
+            //    }
+            //    else // compte inexistant
+
+
+            //} while (); // recherch(id) == -1 )
+
+        }
         private void txt_Id_TextChanged(object sender, EventArgs e)
         {
 
