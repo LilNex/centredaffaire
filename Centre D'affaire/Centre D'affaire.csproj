@@ -94,6 +94,7 @@
     <Compile Include="GestionSalleDeSport\frmGSS.Designer.cs">
       <DependentUpon>frmGSS.cs</DependentUpon>
     </Compile>
+    <Compile Include="LocationEspacesSalleReunion\ClsTest.cs" />
     <Compile Include="LocationEspacesSalleReunion\frmLESR.cs">
       <SubType>Form</SubType>
     </Compile>
