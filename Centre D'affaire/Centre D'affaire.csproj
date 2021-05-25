@@ -90,7 +90,6 @@
     <Compile Include="GestionSalleDeJeux\frmGSJ.Designer.cs">
       <DependentUpon>frmGSJ.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\PointeuseS.cs" />
     <Compile Include="GestionSalleDeJeux\SalleDeJeux.cs" />
     <Compile Include="GestionSalleDeJeux\TablesS.cs" />
     <Compile Include="GestionSalleDeSport\frmGSS.cs">
