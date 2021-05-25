@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-// Windows Form Rounded Corners :
 using System.Runtime.InteropServices;
+
 
 namespace Centre_D_affaire.GestionParking
 {
