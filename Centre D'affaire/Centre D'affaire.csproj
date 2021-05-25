@@ -112,6 +112,9 @@
     <EmbeddedResource Include="GestionParking\frmGParking.resx">
       <DependentUpon>frmGParking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionParking\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -120,6 +123,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
@@ -137,6 +141,38 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2021-05-25 131013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2021-05-25 1310131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resize-login parking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resize-login parking1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_05-25-02.01.07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_05-25-02.03.55[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_05-25-hhhhhhhhh02.03.55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_05-25-02.13.30[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resize-login_parking[1].jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgot-password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
