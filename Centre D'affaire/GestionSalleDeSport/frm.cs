@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    public partial class frmGSS : Form
+    public partial class frm : Form
     {
-        public frmGSS()
+        public frm()
         {
             InitializeComponent();
         }
     }
-    //hy world
 }
