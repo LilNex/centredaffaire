@@ -30,8 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvListeDeps = new System.Windows.Forms.DataGridView();
             this.txtRechercheNom = new System.Windows.Forms.TextBox();
             this.txtRechercheNum = new System.Windows.Forms.TextBox();
             this.lblText_ParNom = new System.Windows.Forms.Label();
@@ -46,43 +44,10 @@
             this.btnListeEmployes = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListeDeps)).BeginInit();
+            this.dgvListeDeps = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListePoste)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListeDeps)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvListeDeps
-            // 
-            this.dgvListeDeps.AllowUserToAddRows = false;
-            this.dgvListeDeps.AllowUserToDeleteRows = false;
-            this.dgvListeDeps.BackgroundColor = System.Drawing.Color.White;
-            this.dgvListeDeps.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvListeDeps.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListeDeps.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvListeDeps.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvListeDeps.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvListeDeps.EnableHeadersVisualStyles = false;
-            this.dgvListeDeps.Location = new System.Drawing.Point(8, 70);
-            this.dgvListeDeps.Name = "dgvListeDeps";
-            this.dgvListeDeps.ReadOnly = true;
-            this.dgvListeDeps.RowHeadersVisible = false;
-            this.dgvListeDeps.Size = new System.Drawing.Size(402, 414);
-            this.dgvListeDeps.TabIndex = 30;
-            this.dgvListeDeps.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListeDeps_CellContentClick);
-            this.dgvListeDeps.CellStyleChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListeDeps_CellStyleChanged);
             // 
             // txtRechercheNom
             // 
@@ -141,14 +106,14 @@
             this.dgvListePoste.BackgroundColor = System.Drawing.Color.White;
             this.dgvListePoste.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListePoste.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListePoste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListePoste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListePoste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListePoste.EnableHeadersVisualStyles = false;
             this.dgvListePoste.Location = new System.Drawing.Point(550, 70);
@@ -260,9 +225,37 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // dgvListeDeps
+            // 
+            this.dgvListeDeps.AllowUserToAddRows = false;
+            this.dgvListeDeps.AllowUserToDeleteRows = false;
+            this.dgvListeDeps.BackgroundColor = System.Drawing.Color.White;
+            this.dgvListeDeps.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvListeDeps.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListeDeps.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvListeDeps.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListeDeps.EnableHeadersVisualStyles = false;
+            this.dgvListeDeps.Location = new System.Drawing.Point(8, 70);
+            this.dgvListeDeps.Name = "dgvListeDeps";
+            this.dgvListeDeps.ReadOnly = true;
+            this.dgvListeDeps.RowHeadersVisible = false;
+            this.dgvListeDeps.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvListeDeps.Size = new System.Drawing.Size(402, 414);
+            this.dgvListeDeps.TabIndex = 31;
+            this.dgvListeDeps.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListeDeps_CellContentClick);
+            // 
             // UCListeDepartement
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.dgvListeDeps);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnListeEmployes);
@@ -272,7 +265,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblText_Postes);
             this.Controls.Add(this.dgvListePoste);
-            this.Controls.Add(this.dgvListeDeps);
             this.Controls.Add(this.txtRechercheNom);
             this.Controls.Add(this.txtRechercheNum);
             this.Controls.Add(this.lblText_ParNom);
@@ -281,16 +273,14 @@
             this.Name = "UCListeDepartement";
             this.Size = new System.Drawing.Size(952, 529);
             this.Load += new System.EventHandler(this.UCListeDepartement_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListeDeps)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListePoste)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListeDeps)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvListeDeps;
         private System.Windows.Forms.TextBox txtRechercheNom;
         private System.Windows.Forms.TextBox txtRechercheNum;
         private System.Windows.Forms.Label lblText_ParNom;
@@ -305,5 +295,6 @@
         private System.Windows.Forms.Button btnListeEmployes;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dgvListeDeps;
     }
 }

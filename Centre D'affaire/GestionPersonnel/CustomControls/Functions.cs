@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing.Text;
+using System.Drawing;
 
 namespace Centre_D_affaire.GestionPersonnel
 {
@@ -110,6 +111,32 @@ namespace Centre_D_affaire.GestionPersonnel
             //    c.Font = new System.Drawing.Font(pfc.Families[0], 10, System.Drawing.FontStyle.Regular);
             //}
         }
+        public static void setCellStyle(Control control)
+        {
+            foreach(object ctl in control.Controls)
+            {
+                if (ctl is DataGridView)
+                {
+                    DataGridView dgv = (DataGridView)ctl;
+                    ((DataGridView)ctl).DefaultCellStyle.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    for (int i = 0; i < dgv.Rows.Count; i++)
+                    {
+                        if (i % 2 == 0)
+                        {
+                            ((DataGridView)ctl).Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(159, 201, 243);
+                        }
+                        else
+                        {
+                            ((DataGridView)ctl).Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(207, 228, 249);
+                        }
+                    }
+                    
+                }
+            }
+
+            
+        }
+        
     }
     
 }
