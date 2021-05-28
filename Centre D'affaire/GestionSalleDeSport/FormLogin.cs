@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    public partial class frm : Form
+    public partial class FormLogin : Form
     {
-        public frm()
+        public FormLogin()
         {
             InitializeComponent();
         }
