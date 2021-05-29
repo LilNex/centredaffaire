@@ -134,6 +134,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Adresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SituationFamilliale = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.bunifuPanel2.SuspendLayout();
             this.PanelGestion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -698,7 +699,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.DPNaissance.IconColor = System.Drawing.Color.Gray;
             this.DPNaissance.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.DPNaissance.LeftTextMargin = 5;
-            this.DPNaissance.Location = new System.Drawing.Point(902, 212);
+            this.DPNaissance.Location = new System.Drawing.Point(869, 131);
             this.DPNaissance.MinimumSize = new System.Drawing.Size(4, 32);
             this.DPNaissance.Name = "DPNaissance";
             this.DPNaissance.Size = new System.Drawing.Size(240, 32);
@@ -1770,7 +1771,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.GridMembre.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(102)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
@@ -1808,7 +1809,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.GridMembre.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(204)))), ((int)(((byte)(229)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(102)))), ((int)(((byte)(178)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
@@ -1919,12 +1920,25 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.SituationFamilliale.Name = "SituationFamilliale";
             this.SituationFamilliale.Width = 125;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Ink Free", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(864, 101);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 27);
+            this.label1.TabIndex = 153;
+            this.label1.Text = "Date Naissace";
+            // 
             // FormGestionMembre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(1278, 601);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.GridMembre);
             this.Controls.Add(this.DPNaissance);
             this.Controls.Add(this.TXTadresse);
@@ -2012,5 +2026,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNModifier;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNSuprrimer;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNAjouter;
+        private System.Windows.Forms.Label label1;
     }
 }
