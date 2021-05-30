@@ -35,6 +35,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNredire = new Bunifu.Framework.UI.BunifuTileButton();
             this.BTNfermer = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.BTNPropos = new Bunifu.Framework.UI.BunifuTileButton();
+            this.BTNadmin = new Bunifu.Framework.UI.BunifuTileButton();
+            this.BTNsalles = new Bunifu.Framework.UI.BunifuTileButton();
+            this.BTNequipment = new Bunifu.Framework.UI.BunifuTileButton();
+            this.BTNmembres = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,6 +105,117 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // BTNPropos
+            // 
+            this.BTNPropos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BTNPropos.BackColor = System.Drawing.Color.Transparent;
+            this.BTNPropos.color = System.Drawing.Color.Transparent;
+            this.BTNPropos.colorActive = System.Drawing.Color.Purple;
+            this.BTNPropos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNPropos.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BTNPropos.ForeColor = System.Drawing.Color.Black;
+            this.BTNPropos.Image = ((System.Drawing.Image)(resources.GetObject("BTNPropos.Image")));
+            this.BTNPropos.ImagePosition = 20;
+            this.BTNPropos.ImageZoom = 40;
+            this.BTNPropos.LabelPosition = 41;
+            this.BTNPropos.LabelText = "A propos nous";
+            this.BTNPropos.Location = new System.Drawing.Point(763, 377);
+            this.BTNPropos.Margin = new System.Windows.Forms.Padding(6);
+            this.BTNPropos.Name = "BTNPropos";
+            this.BTNPropos.Size = new System.Drawing.Size(292, 211);
+            this.BTNPropos.TabIndex = 28;
+            // 
+            // BTNadmin
+            // 
+            this.BTNadmin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BTNadmin.BackColor = System.Drawing.Color.Transparent;
+            this.BTNadmin.color = System.Drawing.Color.Transparent;
+            this.BTNadmin.colorActive = System.Drawing.Color.Purple;
+            this.BTNadmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNadmin.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BTNadmin.ForeColor = System.Drawing.Color.Black;
+            this.BTNadmin.Image = ((System.Drawing.Image)(resources.GetObject("BTNadmin.Image")));
+            this.BTNadmin.ImagePosition = 20;
+            this.BTNadmin.ImageZoom = 40;
+            this.BTNadmin.LabelPosition = 41;
+            this.BTNadmin.LabelText = "Les Admins";
+            this.BTNadmin.Location = new System.Drawing.Point(267, 377);
+            this.BTNadmin.Margin = new System.Windows.Forms.Padding(6);
+            this.BTNadmin.Name = "BTNadmin";
+            this.BTNadmin.Size = new System.Drawing.Size(294, 217);
+            this.BTNadmin.TabIndex = 27;
+            // 
+            // BTNsalles
+            // 
+            this.BTNsalles.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BTNsalles.BackColor = System.Drawing.Color.Transparent;
+            this.BTNsalles.color = System.Drawing.Color.Transparent;
+            this.BTNsalles.colorActive = System.Drawing.Color.Purple;
+            this.BTNsalles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNsalles.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BTNsalles.ForeColor = System.Drawing.Color.Black;
+            this.BTNsalles.Image = ((System.Drawing.Image)(resources.GetObject("BTNsalles.Image")));
+            this.BTNsalles.ImagePosition = 20;
+            this.BTNsalles.ImageZoom = 40;
+            this.BTNsalles.LabelPosition = 41;
+            this.BTNsalles.LabelText = "Salles Info";
+            this.BTNsalles.Location = new System.Drawing.Point(871, 111);
+            this.BTNsalles.Margin = new System.Windows.Forms.Padding(6);
+            this.BTNsalles.Name = "BTNsalles";
+            this.BTNsalles.Size = new System.Drawing.Size(292, 212);
+            this.BTNsalles.TabIndex = 26;
+            // 
+            // BTNequipment
+            // 
+            this.BTNequipment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BTNequipment.BackColor = System.Drawing.Color.Transparent;
+            this.BTNequipment.color = System.Drawing.Color.Transparent;
+            this.BTNequipment.colorActive = System.Drawing.Color.Purple;
+            this.BTNequipment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNequipment.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BTNequipment.ForeColor = System.Drawing.Color.Black;
+            this.BTNequipment.Image = ((System.Drawing.Image)(resources.GetObject("BTNequipment.Image")));
+            this.BTNequipment.ImagePosition = 20;
+            this.BTNequipment.ImageZoom = 40;
+            this.BTNequipment.LabelPosition = 41;
+            this.BTNequipment.LabelText = "Equipments";
+            this.BTNequipment.Location = new System.Drawing.Point(501, 111);
+            this.BTNequipment.Margin = new System.Windows.Forms.Padding(6);
+            this.BTNequipment.Name = "BTNequipment";
+            this.BTNequipment.Size = new System.Drawing.Size(286, 212);
+            this.BTNequipment.TabIndex = 25;
+            // 
+            // BTNmembres
+            // 
+            this.BTNmembres.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BTNmembres.BackColor = System.Drawing.Color.Transparent;
+            this.BTNmembres.color = System.Drawing.Color.Transparent;
+            this.BTNmembres.colorActive = System.Drawing.Color.Purple;
+            this.BTNmembres.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNmembres.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BTNmembres.ForeColor = System.Drawing.Color.Black;
+            this.BTNmembres.Image = ((System.Drawing.Image)(resources.GetObject("BTNmembres.Image")));
+            this.BTNmembres.ImagePosition = 20;
+            this.BTNmembres.ImageZoom = 40;
+            this.BTNmembres.LabelPosition = 41;
+            this.BTNmembres.LabelText = "Membres";
+            this.BTNmembres.Location = new System.Drawing.Point(85, 111);
+            this.BTNmembres.Margin = new System.Windows.Forms.Padding(6);
+            this.BTNmembres.Name = "BTNmembres";
+            this.BTNmembres.Size = new System.Drawing.Size(268, 212);
+            this.BTNmembres.TabIndex = 24;
+            this.BTNmembres.Click += new System.EventHandler(this.BTNmembres_Click);
+            // 
             // FormAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -107,6 +223,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1278, 632);
+            this.Controls.Add(this.BTNPropos);
+            this.Controls.Add(this.BTNadmin);
+            this.Controls.Add(this.BTNsalles);
+            this.Controls.Add(this.BTNequipment);
+            this.Controls.Add(this.BTNmembres);
             this.Controls.Add(this.bunifuPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAccueil";
@@ -122,5 +243,10 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private Bunifu.Framework.UI.BunifuTileButton BTNredire;
         private Bunifu.Framework.UI.BunifuTileButton BTNfermer;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuTileButton BTNPropos;
+        private Bunifu.Framework.UI.BunifuTileButton BTNadmin;
+        private Bunifu.Framework.UI.BunifuTileButton BTNsalles;
+        private Bunifu.Framework.UI.BunifuTileButton BTNequipment;
+        private Bunifu.Framework.UI.BunifuTileButton BTNmembres;
     }
 }
