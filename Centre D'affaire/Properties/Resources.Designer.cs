@@ -63,6 +63,26 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap @__incoming_call {
+            get {
+                object obj = ResourceManager.GetObject("--incoming-call", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap email {
+            get {
+                object obj = ResourceManager.GetObject("email", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap forgot_password {
             get {
                 object obj = ResourceManager.GetObject("forgot-password", resourceCulture);
@@ -76,6 +96,36 @@ namespace Centre_D_affaire.Properties {
         internal static System.Drawing.Bitmap name {
             get {
                 object obj = ResourceManager.GetObject("name", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phone {
+            get {
+                object obj = ResourceManager.GetObject("phone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phone_icon_trendy_flat_style_260nw_750981196 {
+            get {
+                object obj = ResourceManager.GetObject("phone-icon-trendy-flat-style-260nw-750981196", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phone_not_being_used {
+            get {
+                object obj = ResourceManager.GetObject("phone-not-being-used", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

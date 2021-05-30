@@ -182,12 +182,19 @@
     <Compile Include="GestionParking\frmGParking.Designer.cs">
       <DependentUpon>frmGParking.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionParking\LoginForm.cs">
+    <Compile Include="GestionParking\LoadingPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionParking\LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="GestionParking\LoadingPage.Designer.cs">
+      <DependentUpon>LoadingPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionParking\Login-SignUp-Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionParking\Login-SignUp-Form.Designer.cs">
+      <DependentUpon>Login-SignUp-Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionParking\info.cs" />
     <Compile Include="GestionPersonnel\frmGPersonnel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,8 +224,11 @@
     <EmbeddedResource Include="GestionParking\frmGParking.resx">
       <DependentUpon>frmGParking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionParking\LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="GestionParking\LoadingPage.resx">
+      <DependentUpon>LoadingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionParking\Login-SignUp-Form.resx">
+      <DependentUpon>Login-SignUp-Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -280,6 +290,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-icon-trendy-flat-style-260nw-750981196.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\--incoming-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-not-being-used.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
