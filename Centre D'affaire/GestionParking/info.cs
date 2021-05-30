@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace Centre_D_affaire.GestionParking
 {
-    class info
+    public class info
     {
         private string username;
         private string password;
@@ -27,6 +29,8 @@ namespace Centre_D_affaire.GestionParking
             this.Email = _email;
             this.Telephone = _telephone;
         }
+
+        public info() { }
 
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }

@@ -18,7 +18,8 @@ namespace Centre_D_affaire.GestionParking
     public partial class LoginForm : Form
     {
         List<info> list = new List<info>();
-        XmlSerializer xml;
+        public bool x = true;
+        //XmlSerializer xml;
 
 
         //[DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -34,7 +35,8 @@ namespace Centre_D_affaire.GestionParking
         public LoginForm()
         {
             InitializeComponent();
-            xml = new XmlSerializer(typeof(List<info>));
+            //xml = new XmlSerializer(typeof(List<info>));
+
             //this.FormBorderStyle = FormBorderStyle.None;
             //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
@@ -99,37 +101,50 @@ namespace Centre_D_affaire.GestionParking
                 if (UserName.Text == "")
                 {
                     MessageBox.Show("User Name vide", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    x = false;
                 }
                 else
                 {
                     MessageBox.Show("Password vide", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    x = false;
                 }
             }
-            info login = new info(UserName.Text, Password.Text);
-
-            FileStream file = new FileStream("C:\\Users\\dell\\source\repos\\centredaffaire\\Centre D'affaire\\GestionParking\\info.xml", FileMode.Open, FileAccess.Read);
-            list = (List<info>)xml.Deserialize(file);
-            vide();
-            foreach (info i in list)
+            if (UserName.Text != "" || Password.Text != "" )
             {
-                if (Password.Text != i.Password2)
+                info login = new info(UserName.Text, Password.Text);
+
+                FileStream file = new FileStream("C:\\data.xml", FileMode.Open, FileAccess.Read);
+                XmlSerializer xml = new XmlSerializer(typeof(List<info>));
+
+                list = (List<info>)xml.Deserialize(file);
+
+                foreach (info i in list)
                 {
-                    MessageBox.Show("Password incorrect", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    if (UserName.Text != i.Username2)
+                    if (Password.Text != i.Password2)
                     {
-                        MessageBox.Show("UserName incorrect", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Password incorrect", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Good to go", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (UserName.Text != i.Username2)
+                        {
+                            MessageBox.Show("UserName incorrect", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Good to go", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+                            Dashboard form = new Dashboard();
+                            form.Show();
+                        }
                     }
                 }
+
+                file.Close();
+                vide();
             }
 
-            file.Close();
+
         }
 
         private void ShowPasswordToggleSwitch1_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
@@ -210,27 +225,29 @@ namespace Centre_D_affaire.GestionParking
 
                     }
 
+
+                    info signup = new info(username2.Text, password2.Text, email.Text, int.Parse(telephone.Text));
+
+                    signup.Username2 = username2.Text;
+                    signup.Password2 = password2.Text;
+                    signup.Email = email.Text;
+                    signup.Telephone = int.Parse(telephone.Text);
+
+                    list.Add(signup);
+
+                    XmlSerializer xml = new XmlSerializer(typeof(List<info>));
+
+                    FileStream file = new FileStream("C:\\data.xml", FileMode.Create, FileAccess.Write);
+
+                    xml.Serialize(file, list);
+                    file.Close();
+
+                    panelSIGNUP.Hide();
+                    PanelSIGNIN.Show();
+                    vide();
                 }
 
             }
-
-            FileStream file = new FileStream("C:\\data.xml", FileMode.Create, FileAccess.Write);
-
-            info signup = new info(username2.Text, password2.Text, email.Text, int.Parse(telephone.Text));
-
-            signup.Username2 = username2.Text;
-            signup.Password2 = password2.Text;
-            signup.Email = email.Text;
-            signup.Telephone = int.Parse(telephone.Text);
-
-            list.Add(signup);
-
-            xml.Serialize(file, list);
-            file.Close();
-
-            panelSIGNUP.Hide();
-            PanelSIGNIN.Show();
-            vide();
 
 
         }

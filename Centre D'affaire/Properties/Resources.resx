@@ -133,6 +133,12 @@
   <data name="resize-login parking1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\resize-login parking1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="forgot-password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forgot-password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phone-not-being-used" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone-not-being-used.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PicsArt_05-25-02.13.30[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PicsArt_05-25-02.13.30[1].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,13 +163,10 @@
   <data name="PicsArt_05-25-02.03.55[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PicsArt_05-25-02.03.55[1].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forgot-password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forgot-password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="phone-not-being-used" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phone-not-being-used.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PicsArt_05-30-07.48.01[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PicsArt_05-30-07.48.01[1].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

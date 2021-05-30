@@ -176,11 +176,11 @@
       <DependentUpon>frmGC.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionParking\Client.cs" />
-    <Compile Include="GestionParking\frmGParking.cs">
+    <Compile Include="GestionParking\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionParking\frmGParking.Designer.cs">
-      <DependentUpon>frmGParking.cs</DependentUpon>
+    <Compile Include="GestionParking\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionParking\LoadingPage.cs">
       <SubType>Form</SubType>
@@ -221,8 +221,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GestionParking\frmGParking.resx">
-      <DependentUpon>frmGParking.cs</DependentUpon>
+    <EmbeddedResource Include="GestionParking\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionParking\LoadingPage.resx">
       <DependentUpon>LoadingPage.cs</DependentUpon>
@@ -305,6 +305,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\phone-not-being-used.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_05-30-07.48.01[1].jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

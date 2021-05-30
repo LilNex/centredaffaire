@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionParking
 {
-    public partial class frmGParking : Form
+    public partial class Dashboard : Form
     {
-        public frmGParking()
+        public Dashboard()
         {
             InitializeComponent();
         }

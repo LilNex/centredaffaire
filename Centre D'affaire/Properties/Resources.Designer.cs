@@ -173,6 +173,16 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PicsArt_05_30_07_48_01_1_ {
+            get {
+                object obj = ResourceManager.GetObject("PicsArt_05-30-07.48.01[1]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap resize_login_parking {
             get {
                 object obj = ResourceManager.GetObject("resize-login parking", resourceCulture);

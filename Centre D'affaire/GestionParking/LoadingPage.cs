@@ -16,5 +16,17 @@ namespace Centre_D_affaire.GestionParking
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            panel2.Width += 5;
+            if (panel2.Width >= 795)
+            {
+                timer1.Stop();
+                LoginForm form = new LoginForm();
+                this.Hide();
+                form.Show();
+            }
+        }
     }
 }

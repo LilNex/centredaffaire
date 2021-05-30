@@ -1,7 +1,7 @@
 ﻿
 namespace Centre_D_affaire.GestionParking
 {
-    partial class frmGParking
+    partial class Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,20 +29,36 @@ namespace Centre_D_affaire.GestionParking
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // frmGParking
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(253, 170);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(276, 63);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "salam hhh";
+            // 
+            // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "frmGParking";
-            this.Text = "frmGParking";
+            this.Controls.Add(this.label1);
+            this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.frmGParking_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }
