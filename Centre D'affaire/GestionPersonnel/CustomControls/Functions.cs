@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Drawing.Text;
 using System.Drawing;
@@ -16,7 +17,7 @@ namespace Centre_D_affaire.GestionPersonnel
         { 
             foreach(Control x in form.Controls)
             {
-                if (x is TextBox)
+               if (x is TextBox)
                 {
                     x.Text = "";
                 }
@@ -104,22 +105,27 @@ namespace Centre_D_affaire.GestionPersonnel
         public static void setFont(Control control)
         {
             PrivateFontCollection pfc = new PrivateFontCollection();
-            //pfc.AddFontFile("\\GestionPersonnel\\Resources\\Fonts\\Poppins-Medium.ttf");
+            pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
 
-            //foreach (Control c in control.Controls)
-            //{
-            //    c.Font = new System.Drawing.Font(pfc.Families[0], 10, System.Drawing.FontStyle.Regular);
-            //}
+            foreach (Control c in control.Controls)
+            {
+                c.Font = new System.Drawing.Font(pfc.Families[0], 12, System.Drawing.FontStyle.Regular);
+                if (c.Controls.Count > 0)
+                {
+                    setFont(c);
+                }
+            }
         }
         public static void setCellStyle(Control control)
         {
-            foreach(object ctl in control.Controls)
+            foreach(Control ctl in control.Controls)
             {
                 if (ctl is DataGridView)
                 {
-                    DataGridView dgv = (DataGridView)ctl;
+                    ((DataGridView)ctl).BorderStyle = BorderStyle.None;
+                    ((DataGridView)ctl).CellBorderStyle = DataGridViewCellBorderStyle.None;
                     ((DataGridView)ctl).DefaultCellStyle.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                    for (int i = 0; i < dgv.Rows.Count; i++)
+                    for (int i = 0; i < ((DataGridView)ctl).Rows.Count; i++)
                     {
                         if (i % 2 == 0)
                         {
@@ -132,11 +138,52 @@ namespace Centre_D_affaire.GestionPersonnel
                     }
                     
                 }
+                if(ctl.Controls.Count > 0)
+                {
+                    setCellStyle(ctl);
+                }
             }
 
             
         }
         
+        public static void setupDgv (Control control)
+        {
+            foreach (Control ctl in control.Controls)
+            {
+                if (ctl is DataGridView)
+                {
+                    ((DataGridView)ctl).DataSourceChanged += Functions.Functions_DataSourceChanged;
+                }
+                if (ctl.Controls.Count > 0)
+                {
+                    setupDgv(ctl);
+                }
+            }
+        }
+
+        private static void Functions_DataSourceChanged(object sender, EventArgs e)
+        { 
+            
+            if (sender is DataGridView)
+            {
+                ((DataGridView)sender).BorderStyle = BorderStyle.None;
+                ((DataGridView)sender).CellBorderStyle = DataGridViewCellBorderStyle.None;
+                ((DataGridView)sender).DefaultCellStyle.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                for (int i = 0; i < ((DataGridView)sender).Rows.Count; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        ((DataGridView)sender).Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(159, 201, 243);
+                    }
+                    else
+                    {
+                        ((DataGridView)sender).Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(207, 228, 249);
+                    }
+                }
+
+            }
+        }
     }
     
 }

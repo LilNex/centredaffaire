@@ -27,8 +27,10 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         {
             tempPostes.Clear();
             Functions.clearForm(ucListeDepartement);
-            ucListeDepartement.dgvListeEmploye.DataSource = ClsDepartement.ListeDepartement;
-
+            Functions.setupDgv(this);
+            //ucListeDepartement.dgvListeEmploye.DataSource = ClsDepartement.ListeDepartement;
+            ucListeDepartement.loadForm();
+            //Functions.setCellStyle(ucListeDepartement);
         }
         private void UCDepartements_Load(object sender, EventArgs e)
         {
@@ -52,6 +54,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private void btnListePostes_Click(object sender, EventArgs e)
         {
             Functions.clearForm(ucListePoste);
+            //Functions.setCellStyle(ucListePoste);
             ucListePoste.reloadForm();
             ucListePoste.BringToFront();
         }

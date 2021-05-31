@@ -320,6 +320,12 @@
   <ItemGroup>
     <None Include="GestionPersonnel\Resources\icons8_settings_32px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\Fonts\Poppins\Poppins-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\Fonts\Poppins\Poppins-Light.ttf" />
+  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

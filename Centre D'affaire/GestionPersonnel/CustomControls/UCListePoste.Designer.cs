@@ -173,7 +173,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.dgvListePostes.RowHeadersVisible = false;
             this.dgvListePostes.Size = new System.Drawing.Size(402, 414);
             this.dgvListePostes.TabIndex = 45;
-            this.dgvListePostes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListePostes_CellContentClick);
+            this.dgvListePostes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListePostes_CellContentClick);
             // 
             // txtPosteNom
             // 
