@@ -41,7 +41,7 @@
             // 
             this.btnAjouterPoste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnAjouterPoste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAjouterPoste.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterPoste.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouterPoste.ForeColor = System.Drawing.Color.White;
             this.btnAjouterPoste.Image = global::Centre_D_affaire.Properties.Resources.icons8_add_user_male_32px;
             this.btnAjouterPoste.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -58,7 +58,7 @@
             // 
             this.btnAjouterDeps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnAjouterDeps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAjouterDeps.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterDeps.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouterDeps.ForeColor = System.Drawing.Color.White;
             this.btnAjouterDeps.Image = global::Centre_D_affaire.Properties.Resources.icons8_add_user_male_32px;
             this.btnAjouterDeps.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -76,7 +76,7 @@
             // 
             this.btnListeDeps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnListeDeps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListeDeps.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListeDeps.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListeDeps.ForeColor = System.Drawing.Color.White;
             this.btnListeDeps.Image = global::Centre_D_affaire.Properties.Resources.icons8_user_groups_32px;
             this.btnListeDeps.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -94,7 +94,7 @@
             // 
             this.btnListePostes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnListePostes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListePostes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListePostes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListePostes.ForeColor = System.Drawing.Color.White;
             this.btnListePostes.Image = global::Centre_D_affaire.Properties.Resources.icons8_user_groups_32px;
             this.btnListePostes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -110,6 +110,7 @@
             // 
             // ucListeDepartement
             // 
+            this.ucListeDepartement.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ucListeDepartement.Location = new System.Drawing.Point(0, 42);
             this.ucListeDepartement.Name = "ucListeDepartement";
             this.ucListeDepartement.Size = new System.Drawing.Size(952, 529);

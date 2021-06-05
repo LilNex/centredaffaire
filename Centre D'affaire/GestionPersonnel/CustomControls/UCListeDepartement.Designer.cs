@@ -53,7 +53,7 @@
             this.txtRechercheNom.BackColor = System.Drawing.Color.DarkGray;
             this.txtRechercheNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRechercheNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtRechercheNom.Location = new System.Drawing.Point(145, 45);
+            this.txtRechercheNom.Location = new System.Drawing.Point(144, 52);
             this.txtRechercheNom.Name = "txtRechercheNom";
             this.txtRechercheNom.Size = new System.Drawing.Size(124, 19);
             this.txtRechercheNom.TabIndex = 28;
@@ -63,7 +63,7 @@
             this.txtRechercheNum.BackColor = System.Drawing.Color.DarkGray;
             this.txtRechercheNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRechercheNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtRechercheNum.Location = new System.Drawing.Point(8, 45);
+            this.txtRechercheNum.Location = new System.Drawing.Point(7, 52);
             this.txtRechercheNum.Name = "txtRechercheNum";
             this.txtRechercheNum.Size = new System.Drawing.Size(124, 19);
             this.txtRechercheNum.TabIndex = 27;
@@ -72,7 +72,7 @@
             // 
             this.lblText_ParNom.AutoSize = true;
             this.lblText_ParNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText_ParNom.Location = new System.Drawing.Point(142, 25);
+            this.lblText_ParNom.Location = new System.Drawing.Point(141, 33);
             this.lblText_ParNom.Name = "lblText_ParNom";
             this.lblText_ParNom.Size = new System.Drawing.Size(64, 16);
             this.lblText_ParNom.TabIndex = 25;
@@ -82,7 +82,7 @@
             // 
             this.lblText_ParNumero.AutoSize = true;
             this.lblText_ParNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText_ParNumero.Location = new System.Drawing.Point(5, 25);
+            this.lblText_ParNumero.Location = new System.Drawing.Point(4, 33);
             this.lblText_ParNumero.Name = "lblText_ParNumero";
             this.lblText_ParNumero.Size = new System.Drawing.Size(83, 16);
             this.lblText_ParNumero.TabIndex = 24;
@@ -115,7 +115,7 @@
             this.dgvListePoste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListePoste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListePoste.EnableHeadersVisualStyles = false;
-            this.dgvListePoste.Location = new System.Drawing.Point(550, 70);
+            this.dgvListePoste.Location = new System.Drawing.Point(549, 77);
             this.dgvListePoste.Name = "dgvListePoste";
             this.dgvListePoste.ReadOnly = true;
             this.dgvListePoste.RowHeadersVisible = false;
@@ -138,7 +138,7 @@
             this.textBox1.BackColor = System.Drawing.Color.DarkGray;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.Location = new System.Drawing.Point(687, 45);
+            this.textBox1.Location = new System.Drawing.Point(686, 52);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(124, 19);
             this.textBox1.TabIndex = 36;
@@ -148,7 +148,7 @@
             this.textBox2.BackColor = System.Drawing.Color.DarkGray;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox2.Location = new System.Drawing.Point(550, 45);
+            this.textBox2.Location = new System.Drawing.Point(549, 52);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 19);
             this.textBox2.TabIndex = 35;
@@ -157,7 +157,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(684, 25);
+            this.label1.Location = new System.Drawing.Point(683, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 34;
@@ -167,7 +167,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(547, 25);
+            this.label2.Location = new System.Drawing.Point(546, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 16);
             this.label2.TabIndex = 33;
@@ -181,7 +181,7 @@
             this.btnListeEmployes.ForeColor = System.Drawing.Color.White;
             this.btnListeEmployes.Image = global::Centre_D_affaire.Properties.Resources.icons8_user_groups_32px;
             this.btnListeEmployes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListeEmployes.Location = new System.Drawing.Point(413, 356);
+            this.btnListeEmployes.Location = new System.Drawing.Point(412, 364);
             this.btnListeEmployes.Margin = new System.Windows.Forms.Padding(0);
             this.btnListeEmployes.Name = "btnListeEmployes";
             this.btnListeEmployes.Size = new System.Drawing.Size(134, 42);
@@ -198,7 +198,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Centre_D_affaire.Properties.Resources.icons8_user_groups_32px;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(413, 398);
+            this.button1.Location = new System.Drawing.Point(413, 407);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 42);
@@ -215,7 +215,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Centre_D_affaire.Properties.Resources.icons8_user_groups_32px;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(413, 440);
+            this.button2.Location = new System.Drawing.Point(413, 449);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(134, 42);
@@ -234,7 +234,7 @@
             this.dgvListeDeps.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListeDeps.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListeDeps.EnableHeadersVisualStyles = false;
-            this.dgvListeDeps.Location = new System.Drawing.Point(8, 70);
+            this.dgvListeDeps.Location = new System.Drawing.Point(7, 77);
             this.dgvListeDeps.Name = "dgvListeDeps";
             this.dgvListeDeps.ReadOnly = true;
             this.dgvListeDeps.RowHeadersVisible = false;
@@ -242,7 +242,6 @@
             this.dgvListeDeps.Size = new System.Drawing.Size(402, 414);
             this.dgvListeDeps.TabIndex = 31;
             this.dgvListeDeps.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListeDeps_CellContentClick);
-            //this.dgvListeDeps.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListeDeps_CellContentClick);
             // 
             // UCListeDepartement
             // 

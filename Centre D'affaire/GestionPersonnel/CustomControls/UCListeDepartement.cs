@@ -26,7 +26,6 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             //Functions.setupDgv(this);
             dgvListeDeps.DataSource = ClsDepartement.ListeDepartement;
             dgvListeDeps.Columns["Id"].Visible = false;
-            dgvListeDeps.DefaultCellStyle.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             
         }
         private void UCListeDepartement_Load(object sender, EventArgs e)
