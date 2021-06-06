@@ -13,7 +13,8 @@ namespace Centre_D_affaire.GestionPersonnel
 {
     static class Functions
     {
-        
+        readonly static PrivateFontCollection pfc = new PrivateFontCollection();
+
         public static void clearForm(Control form) 
         { 
             foreach(Control x in form.Controls)
@@ -105,18 +106,18 @@ namespace Centre_D_affaire.GestionPersonnel
 
         public static void setFont(Control control)
         {
-            PrivateFontCollection pfc = new PrivateFontCollection();
             pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
 
             foreach (Control c in control.Controls)
             {
                 if (c is Bunifu.Framework.UI.BunifuFlatButton)
                 {
-                    ((Bunifu.Framework.UI.BunifuFlatButton)c).TextFont = new System.Drawing.Font(pfc.Families[0], ((Bunifu.Framework.UI.BunifuFlatButton)c).TextFont.Size, ((Bunifu.Framework.UI.BunifuFlatButton)c).TextFont.Style);
+                    ((Bunifu.Framework.UI.BunifuFlatButton)c).TextFont = new System.Drawing.Font(pfc.Families[0], ((Bunifu.Framework.UI.BunifuFlatButton)c).TextFont.Size, ((Bunifu.Framework.UI.BunifuFlatButton)c).Font.Style);
+                    
                 }
                 else if(c is DataGridView)
                 {
-                    ((DataGridView)c).ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font(pfc.Families[0], /*((DataGridView)c).ColumnHeadersDefaultCellStyle.Font.Size*/12, ((DataGridView)c).ColumnHeadersDefaultCellStyle.Font.Style);
+                    ((DataGridView)c).ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font(pfc.Families[0], /*((DataGridView)c).ColumnHeadersDefaultCellStyle.Font.Size*/12, ((DataGridView)c).Font.Style) ;
                 }
 
                 else if (!(c is TextBox))
@@ -136,7 +137,6 @@ namespace Centre_D_affaire.GestionPersonnel
         }
         public static void setCellStyle(Control control)
         {
-            PrivateFontCollection pfc = new PrivateFontCollection();
             pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
             foreach (Control ctl in control.Controls)
             {
@@ -184,7 +184,6 @@ namespace Centre_D_affaire.GestionPersonnel
 
         private static void Functions_DataSourceChanged(object sender, EventArgs e)
         {
-            PrivateFontCollection pfc = new PrivateFontCollection();
             pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
             if (sender is DataGridView)
             {
