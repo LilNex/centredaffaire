@@ -187,8 +187,11 @@
     <Compile Include="GestionSalleDeJeux\frmGSJ.Designer.cs">
       <DependentUpon>frmGSJ.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSalleDeSport\ClassListes.cs" />
-    <Compile Include="GestionSalleDeSport\ClassMembre.cs" />
+    <Compile Include="GestionSalleDeSport\Achat.cs" />
+    <Compile Include="GestionSalleDeSport\Client.cs" />
+    <Compile Include="GestionSalleDeSport\Equipment.cs" />
+    <Compile Include="GestionSalleDeSport\Listes.cs" />
+    <Compile Include="GestionSalleDeSport\Entraineur.cs" />
     <Compile Include="GestionSalleDeSport\FormAccueil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +210,21 @@
     <Compile Include="GestionSalleDeSport\FormGestionMembre.Designer.cs">
       <DependentUpon>FormGestionMembre.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSalleDeSport\FormSignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\FormSignIn.Designer.cs">
+      <DependentUpon>FormSignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\Membre.cs" />
+    <Compile Include="GestionSalleDeSport\Package.cs" />
+    <Compile Include="GestionSalleDeSport\Paiement.cs" />
+    <Compile Include="GestionSalleDeSport\Personne.cs" />
+    <Compile Include="GestionSalleDeSport\Produit.cs" />
+    <Compile Include="GestionSalleDeSport\Stock.cs" />
+    <Compile Include="GestionSalleDeSport\Utilisateur.cs" />
+    <Compile Include="GestionSalleDeSport\Vendeur.cs" />
+    <Compile Include="GestionSalleDeSport\Vente.cs" />
     <Compile Include="LocationEspacesSalleReunion\frmLESR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeSport\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeSport\FormSignIn.resx">
+      <DependentUpon>FormSignIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -10,21 +10,26 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    public partial class btnSeconnecter : Form
+    public partial class FormSignIn : Form
     {
-        public btnSeconnecter()
+        public FormSignIn()
         {
             InitializeComponent();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void FormSignIn_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void FormLogin_Load(object sender, EventArgs e)
+        private void TXTadresse_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BTNfermer_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
