@@ -46,16 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AchatsLogistiquePatrimoine\ClsContrat.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsArticle.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsCategorie.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsDemande.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsDetailLivraison.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsDetail_Demande.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsEmploye.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsFacture.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsListe.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsLivraison.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsProfil.cs" />
-    <Compile Include="AchatsLogistiquePatrimoine\ClsAchats.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsFournisseur.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsCommande.cs" />
-    <Compile Include="AchatsLogistiquePatrimoine\ClsType_Achat.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsService.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsUnite.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\Formulaire1.cs">
       <SubType>Form</SubType>
     </Compile>

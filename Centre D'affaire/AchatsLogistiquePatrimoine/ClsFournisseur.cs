@@ -12,20 +12,36 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private string telephone_Four;
         private string email_Four;
         private string siteweb_Four;
+        private string adresse;
+        private string tel_responsable;
+        private string nom_responsable;
+        private string ville;
+
+
 
         public string Nom_Societe { get => nom_Societe; set => nom_Societe = value; }
         public string Telephone_Four { get => telephone_Four; set => telephone_Four = value; }
         public string Email_Four { get => email_Four; set => email_Four = value; }
         public string Siteweb_Four { get => siteweb_Four; set => siteweb_Four = value; }
+        public string Adresse { get => adresse; set => adresse = value; }
+        public string Tel_responsable { get => tel_responsable; set => tel_responsable = value; }
+        public string Nom_responsable { get => nom_responsable; set => nom_responsable = value; }
+        public string Ville { get => ville; set => ville = value; }
 
         public ClsFournisseur() { }
 
-        public ClsFournisseur(string nomsociete,string telephonefour,string emailfour,string sitewebfour)
+        public ClsFournisseur(string nomsociete,string telephonefour,string emailfour,string sitewebfour, string adresse ,string telresponsable , string nomresponsable , string ville )
         {
             this.Nom_Societe = nomsociete;
             this.Telephone_Four = telephonefour;
             this.Email_Four = emailfour;
             this.Siteweb_Four = sitewebfour;
+            this.Adresse = adresse;
+            this.tel_responsable = telresponsable;
+            this.nom_responsable = nomresponsable;
+            this.Ville = ville; 
+
+
 
         }
 
