@@ -18,7 +18,7 @@ namespace Centre_D_affaire
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSignIn());
+            Application.Run(new FormGestionnaire());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

@@ -16,19 +16,21 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private Vendeur vend;
 
         public  Produit() { }
-        public Produit(string idproduit , int prix , int quantite , string unite , int total ) 
+        public Produit(string idproduit , int prix , int quantite , string unite , int total , Vendeur vend ) 
         {
             this.ID = idproduit;
             this.Prix = prix;
             this.Quantite = quantite;
             this.Unite = unite;
             this.Total = total;
+            this.Vendeuur = vend;
         }
         public string ID { get => idProduit; set => idProduit = value; }
         public int Prix { get => prix; set => prix = value; }
         public int Quantite { get => quantite; set => quantite = value; }
         public string Unite { get => unite; set => unite = value; }
         public int Total { get => total; set => total = value; }
+        public Vendeur Vendeuur { get => vend; set => vend = value ; }
 
 
 

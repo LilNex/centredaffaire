@@ -17,6 +17,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             InitializeComponent();
         }
 
+        private void OpenChildForm(Form childForm, object btnSender)
+        {
+            
+        }
+
         private void lblprenom_Click(object sender, EventArgs e)
         {
 
@@ -34,6 +39,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void TXTnom_TextChanged(object sender, EventArgs e)
         {
+           
+          
 
         }
 
@@ -48,7 +55,31 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void BTNNeouveau_Click(object sender, EventArgs e)
         {
-            TXTprenom.Text = "ousaama";
+            TXTnomcomplet.Text = "ousaama";
+        }
+
+        private void DPdate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                // display image in picture box  
+                pictureBox1.Image = new Bitmap(open.FileName);
+                // image file path  
+               // textBox1.Text = open.FileName;
+            }
         }
     }
 }

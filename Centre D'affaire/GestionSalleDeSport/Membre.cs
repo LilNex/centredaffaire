@@ -9,7 +9,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
     class Membre : Personne
     {
         Package pack;
-        private string statut;
         private int poids;
         private int frais;
         private int duree;
@@ -21,7 +20,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         public Membre
         (
             string ID, string NOmComplet, DateTime DAteREJoin, int TElephone,
-            string EMail, string ADresse, string SEx ,Package PAckage , string STatut , 
+            string EMail, string ADresse, string SEx ,Package PAckage , 
             int POids , int FRais, int DUree , int TOTal 
         )
             
@@ -30,7 +29,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         {
             this.Package = PAckage;
-            this.Statut = STatut;
+            
             this.Poids = POids;
             this.Duree = DUree;
             this.Total = TOTal;
@@ -40,7 +39,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
 
         public Package Package { get => pack; set => pack = value; }
-        public string Statut { get => statut; set => statut = value; }
         public int Poids { get => poids; set => poids = value; }
         public int Frais { get => frais; set => frais = value; }
         public int Duree { get => duree; set => duree = value; }

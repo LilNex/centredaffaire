@@ -21,5 +21,10 @@ namespace Centre_D_affaire.GestionSalleDeSport
         {
 
         }
+
+        private void BTNequipment_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

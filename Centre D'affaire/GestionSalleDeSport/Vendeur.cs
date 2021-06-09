@@ -8,21 +8,18 @@ namespace Centre_D_affaire.GestionSalleDeSport
 {
     class Vendeur : Personne
     {
-        private string fourniture ;
+        
 
         //Constructure
         public Vendeur() { }
 
-        public Vendeur(string ID, string NOmComplet, DateTime DAteREJoin, int TElephone, string EMail, string ADresse, string SEx, string FOurniture)
+        public Vendeur(string ID, string NOmComplet, DateTime DAteREJoin, int TElephone, string EMail, string ADresse, string SEx)
             : base(ID, NOmComplet,  DAteREJoin, TElephone, EMail, ADresse, SEx)
         {
-
-            this.Fourniture = FOurniture;
 
         }
 
 
-        public string Fourniture { get => fourniture; set => fourniture = value; }
 
     }
 }
