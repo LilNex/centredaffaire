@@ -7,12 +7,14 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Drawing.Text;
 using System.Drawing;
+using Centre_D_affaire.GestionPersonnel;
 
 namespace Centre_D_affaire.GestionPersonnel
 {
     static class Functions
     {
-        
+        readonly static PrivateFontCollection pfc = new PrivateFontCollection();
+
         public static void clearForm(Control form) 
         { 
             foreach(Control x in form.Controls)
@@ -104,12 +106,29 @@ namespace Centre_D_affaire.GestionPersonnel
 
         public static void setFont(Control control)
         {
-            PrivateFontCollection pfc = new PrivateFontCollection();
             pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
 
             foreach (Control c in control.Controls)
             {
-                c.Font = new System.Drawing.Font(pfc.Families[0], 12, System.Drawing.FontStyle.Regular);
+                if (c is Bunifu.Framework.UI.BunifuFlatButton)
+                {
+                    ((Bunifu.Framework.UI.BunifuFlatButton)c).TextFont = new System.Drawing.Font(pfc.Families[0], ((Bunifu.Framework.UI.BunifuFlatButton)c).TextFont.Size, ((Bunifu.Framework.UI.BunifuFlatButton)c).Font.Style);
+                    
+                }
+                else if(c is DataGridView)
+                {
+                    ((DataGridView)c).ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font(pfc.Families[0], /*((DataGridView)c).ColumnHeadersDefaultCellStyle.Font.Size*/12, ((DataGridView)c).Font.Style) ;
+                }
+
+                else if (!(c is TextBox))
+                {
+                    c.Font = new System.Drawing.Font(pfc.Families[0], c.Font.Size, c.Font.Style);
+                    //if(c.Font.Size < 10)
+                    //{
+                    //    c.BringToFront();
+                    //}
+                } 
+                
                 if (c.Controls.Count > 0)
                 {
                     setFont(c);
@@ -118,13 +137,14 @@ namespace Centre_D_affaire.GestionPersonnel
         }
         public static void setCellStyle(Control control)
         {
-            foreach(Control ctl in control.Controls)
+            pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
+            foreach (Control ctl in control.Controls)
             {
                 if (ctl is DataGridView)
                 {
                     ((DataGridView)ctl).BorderStyle = BorderStyle.None;
                     ((DataGridView)ctl).CellBorderStyle = DataGridViewCellBorderStyle.None;
-                    ((DataGridView)ctl).DefaultCellStyle.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    ((DataGridView)ctl).DefaultCellStyle.Font = new System.Drawing.Font(pfc.Families[0], 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     for (int i = 0; i < ((DataGridView)ctl).Rows.Count; i++)
                     {
                         if (i % 2 == 0)
@@ -163,13 +183,13 @@ namespace Centre_D_affaire.GestionPersonnel
         }
 
         private static void Functions_DataSourceChanged(object sender, EventArgs e)
-        { 
-            
+        {
+            pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
             if (sender is DataGridView)
             {
                 ((DataGridView)sender).BorderStyle = BorderStyle.None;
                 ((DataGridView)sender).CellBorderStyle = DataGridViewCellBorderStyle.None;
-                ((DataGridView)sender).DefaultCellStyle.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                ((DataGridView)sender).DefaultCellStyle.Font = new System.Drawing.Font(pfc.Families[0], 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 for (int i = 0; i < ((DataGridView)sender).Rows.Count; i++)
                 {
                     if (i % 2 == 0)
