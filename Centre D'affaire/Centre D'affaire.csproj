@@ -84,6 +84,7 @@
     <Compile Include="GestionPersonnel\clsEmploye.cs" />
     <Compile Include="GestionPersonnel\clsExceptions.cs" />
     <Compile Include="GestionPersonnel\clsPoste.cs" />
+    <Compile Include="GestionPersonnel\Congé.cs" />
     <Compile Include="GestionPersonnel\CustomControls\Functions.cs" />
     <Compile Include="GestionPersonnel\CustomControls\UCAjoutDepartement.cs">
       <SubType>UserControl</SubType>
@@ -145,6 +146,7 @@
     <Compile Include="GestionPersonnel\CustomControls\_UCDepartements.Designer.cs">
       <DependentUpon>_UCDepartements.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\Demission.cs" />
     <Compile Include="GestionPersonnel\frmPrincipal_Directeur.cs">
       <SubType>Form</SubType>
     </Compile>
