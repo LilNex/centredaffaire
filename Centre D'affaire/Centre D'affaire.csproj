@@ -210,12 +210,6 @@
     <Compile Include="GestionSalleDeSport\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSalleDeSport\FormGestionMembre.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionSalleDeSport\FormGestionMembre.Designer.cs">
-      <DependentUpon>FormGestionMembre.cs</DependentUpon>
-    </Compile>
     <Compile Include="GestionSalleDeSport\FormSignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +222,48 @@
     <Compile Include="GestionSalleDeSport\Personne.cs" />
     <Compile Include="GestionSalleDeSport\Produit.cs" />
     <Compile Include="GestionSalleDeSport\Stock.cs" />
+    <Compile Include="GestionSalleDeSport\UCgestionEntraineur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UCgestionEntraineur.Designer.cs">
+      <DependentUpon>UCgestionEntraineur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UCgestionMemebre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UCgestionMemebre.Designer.cs">
+      <DependentUpon>UCgestionMemebre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UCgestionPackage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UCgestionPackage.Designer.cs">
+      <DependentUpon>UCgestionPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UcGestionVendeur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UcGestionVendeur.Designer.cs">
+      <DependentUpon>UcGestionVendeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UCgetionAchats.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UCgetionAchats.Designer.cs">
+      <DependentUpon>UCgetionAchats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UCGestionPaiment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UCGestionPaiment.Designer.cs">
+      <DependentUpon>UCGestionPaiment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UCgestionVente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UCgestionVente.Designer.cs">
+      <DependentUpon>UCgestionVente.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionSalleDeSport\Utilisateur.cs" />
     <Compile Include="GestionSalleDeSport\Vendeur.cs" />
     <Compile Include="GestionSalleDeSport\Vente.cs" />
@@ -242,11 +278,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\frmGPersonnel.resx">
+      <DependentUpon>frmGPersonnel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeSport\FormAccueil.resx">
       <DependentUpon>FormAccueil.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionSalleDeSport\FormGestionMembre.resx">
-      <DependentUpon>FormGestionMembre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeSport\FormGestionnaire.resx">
       <DependentUpon>FormGestionnaire.cs</DependentUpon>
@@ -256,6 +292,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeSport\FormSignIn.resx">
       <DependentUpon>FormSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeSport\UCgestionEntraineur.resx">
+      <DependentUpon>UCgestionEntraineur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeSport\UCgestionMemebre.resx">
+      <DependentUpon>UCgestionMemebre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeSport\UCgestionPackage.resx">
+      <DependentUpon>UCgestionPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeSport\UcGestionVendeur.resx">
+      <DependentUpon>UcGestionVendeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeSport\UCgetionAchats.resx">
+      <DependentUpon>UCgetionAchats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeSport\UCGestionPaiment.resx">
+      <DependentUpon>UCGestionPaiment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeSport\UCgestionVente.resx">
+      <DependentUpon>UCgestionVente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

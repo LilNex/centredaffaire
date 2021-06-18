@@ -30,27 +30,27 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGestionnaire));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.BTNredire = new Bunifu.Framework.UI.BunifuTileButton();
             this.BTNfermer = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTNQuitter = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BTNVente = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTNutilisateur = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BTNAchat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BTNPrésence = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -156,7 +156,16 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(267, 755);
             this.bunifuPanel1.TabIndex = 156;
-            this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(4, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(259, 117);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 158;
+            this.pictureBox1.TabStop = false;
             // 
             // BTNQuitter
             // 
@@ -177,11 +186,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNQuitter.ColorContrastOnClick = 45;
             this.BTNQuitter.ColorContrastOnHover = 45;
             this.BTNQuitter.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.BTNQuitter.CustomizableEdges = borderEdges13;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.BTNQuitter.CustomizableEdges = borderEdges1;
             this.BTNQuitter.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BTNQuitter.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTNQuitter.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -266,11 +275,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNVente.ColorContrastOnClick = 45;
             this.BTNVente.ColorContrastOnHover = 45;
             this.BTNVente.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges14.BottomLeft = true;
-            borderEdges14.BottomRight = true;
-            borderEdges14.TopLeft = true;
-            borderEdges14.TopRight = true;
-            this.BTNVente.CustomizableEdges = borderEdges14;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.BTNVente.CustomizableEdges = borderEdges2;
             this.BTNVente.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BTNVente.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTNVente.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -335,18 +344,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNVente.TextMarginLeft = 0;
             this.BTNVente.TextPadding = new System.Windows.Forms.Padding(0);
             this.BTNVente.UseDefaultRadiusAndThickness = true;
-            this.BTNVente.Click += new System.EventHandler(this.BTNVente_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 117);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 158;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // BTNutilisateur
             // 
@@ -367,11 +364,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNutilisateur.ColorContrastOnClick = 45;
             this.BTNutilisateur.ColorContrastOnHover = 45;
             this.BTNutilisateur.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges15.BottomLeft = true;
-            borderEdges15.BottomRight = true;
-            borderEdges15.TopLeft = true;
-            borderEdges15.TopRight = true;
-            this.BTNutilisateur.CustomizableEdges = borderEdges15;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.BTNutilisateur.CustomizableEdges = borderEdges3;
             this.BTNutilisateur.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BTNutilisateur.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTNutilisateur.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -456,11 +453,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNAchat.ColorContrastOnClick = 45;
             this.BTNAchat.ColorContrastOnHover = 45;
             this.BTNAchat.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges16.BottomLeft = true;
-            borderEdges16.BottomRight = true;
-            borderEdges16.TopLeft = true;
-            borderEdges16.TopRight = true;
-            this.BTNAchat.CustomizableEdges = borderEdges16;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.BTNAchat.CustomizableEdges = borderEdges4;
             this.BTNAchat.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BTNAchat.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTNAchat.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -525,7 +522,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNAchat.TextMarginLeft = 0;
             this.BTNAchat.TextPadding = new System.Windows.Forms.Padding(0);
             this.BTNAchat.UseDefaultRadiusAndThickness = true;
-            this.BTNAchat.Click += new System.EventHandler(this.BTNAchat_Click);
             // 
             // BTNPrésence
             // 
@@ -546,11 +542,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNPrésence.ColorContrastOnClick = 45;
             this.BTNPrésence.ColorContrastOnHover = 45;
             this.BTNPrésence.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges17.BottomLeft = true;
-            borderEdges17.BottomRight = true;
-            borderEdges17.TopLeft = true;
-            borderEdges17.TopRight = true;
-            this.BTNPrésence.CustomizableEdges = borderEdges17;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.BTNPrésence.CustomizableEdges = borderEdges5;
             this.BTNPrésence.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BTNPrésence.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTNPrésence.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -615,7 +611,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNPrésence.TextMarginLeft = 0;
             this.BTNPrésence.TextPadding = new System.Windows.Forms.Padding(0);
             this.BTNPrésence.UseDefaultRadiusAndThickness = true;
-            this.BTNPrésence.Click += new System.EventHandler(this.BTNPrésence_Click);
             // 
             // btnPaiment
             // 
@@ -636,11 +631,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.btnPaiment.ColorContrastOnClick = 45;
             this.btnPaiment.ColorContrastOnHover = 45;
             this.btnPaiment.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges18.BottomLeft = true;
-            borderEdges18.BottomRight = true;
-            borderEdges18.TopLeft = true;
-            borderEdges18.TopRight = true;
-            this.btnPaiment.CustomizableEdges = borderEdges18;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnPaiment.CustomizableEdges = borderEdges6;
             this.btnPaiment.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnPaiment.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPaiment.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -705,7 +700,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.btnPaiment.TextMarginLeft = 0;
             this.btnPaiment.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnPaiment.UseDefaultRadiusAndThickness = true;
-            this.btnPaiment.Click += new System.EventHandler(this.btnPaiment_Click);
             // 
             // BTNPackage
             // 
@@ -726,11 +720,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNPackage.ColorContrastOnClick = 45;
             this.BTNPackage.ColorContrastOnHover = 45;
             this.BTNPackage.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges19.BottomLeft = true;
-            borderEdges19.BottomRight = true;
-            borderEdges19.TopLeft = true;
-            borderEdges19.TopRight = true;
-            this.BTNPackage.CustomizableEdges = borderEdges19;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.BTNPackage.CustomizableEdges = borderEdges7;
             this.BTNPackage.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BTNPackage.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTNPackage.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -795,7 +789,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNPackage.TextMarginLeft = 0;
             this.BTNPackage.TextPadding = new System.Windows.Forms.Padding(0);
             this.BTNPackage.UseDefaultRadiusAndThickness = true;
-            this.BTNPackage.Click += new System.EventHandler(this.BTNPackage_Click);
             // 
             // BTNVendeur
             // 
@@ -816,11 +809,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNVendeur.ColorContrastOnClick = 45;
             this.BTNVendeur.ColorContrastOnHover = 45;
             this.BTNVendeur.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges20.BottomLeft = true;
-            borderEdges20.BottomRight = true;
-            borderEdges20.TopLeft = true;
-            borderEdges20.TopRight = true;
-            this.BTNVendeur.CustomizableEdges = borderEdges20;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.BTNVendeur.CustomizableEdges = borderEdges8;
             this.BTNVendeur.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BTNVendeur.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTNVendeur.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -905,11 +898,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNStock.ColorContrastOnClick = 45;
             this.BTNStock.ColorContrastOnHover = 45;
             this.BTNStock.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges21.BottomLeft = true;
-            borderEdges21.BottomRight = true;
-            borderEdges21.TopLeft = true;
-            borderEdges21.TopRight = true;
-            this.BTNStock.CustomizableEdges = borderEdges21;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.BTNStock.CustomizableEdges = borderEdges9;
             this.BTNStock.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BTNStock.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTNStock.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -994,11 +987,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNEntraineur.ColorContrastOnClick = 45;
             this.BTNEntraineur.ColorContrastOnHover = 45;
             this.BTNEntraineur.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges22.BottomLeft = true;
-            borderEdges22.BottomRight = true;
-            borderEdges22.TopLeft = true;
-            borderEdges22.TopRight = true;
-            this.BTNEntraineur.CustomizableEdges = borderEdges22;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.BTNEntraineur.CustomizableEdges = borderEdges10;
             this.BTNEntraineur.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BTNEntraineur.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTNEntraineur.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1084,11 +1077,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNMembre.ColorContrastOnClick = 45;
             this.BTNMembre.ColorContrastOnHover = 45;
             this.BTNMembre.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges23.BottomLeft = true;
-            borderEdges23.BottomRight = true;
-            borderEdges23.TopLeft = true;
-            borderEdges23.TopRight = true;
-            this.BTNMembre.CustomizableEdges = borderEdges23;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.BTNMembre.CustomizableEdges = borderEdges11;
             this.BTNMembre.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BTNMembre.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTNMembre.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1173,11 +1166,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNstatistique.ColorContrastOnClick = 45;
             this.BTNstatistique.ColorContrastOnHover = 45;
             this.BTNstatistique.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges24.BottomLeft = true;
-            borderEdges24.BottomRight = true;
-            borderEdges24.TopLeft = true;
-            borderEdges24.TopRight = true;
-            this.BTNstatistique.CustomizableEdges = borderEdges24;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.BTNstatistique.CustomizableEdges = borderEdges12;
             this.BTNstatistique.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BTNstatistique.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTNstatistique.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));

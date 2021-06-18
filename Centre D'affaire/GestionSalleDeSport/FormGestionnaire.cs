@@ -19,14 +19,14 @@ namespace Centre_D_affaire.GestionSalleDeSport
         }
         private Form activeForm;
 
-        private void OpenChildForm(Form childForm, object btnSender)
+        private void OpenChildForm(UserControl  childForm, object btnSender)
         {
             if (activeForm != null)
             activeForm.Close();
             
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
+            
+            
+            
             childForm.Dock = DockStyle.Fill;
             this.PAnelDesktop.Controls.Add(childForm);
             this.PAnelDesktop.Tag = childForm;
@@ -38,45 +38,14 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
 
 
-        private void BTNAchat_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void BTNEntraineur_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormGestionMembre(), sender);
+            OpenChildForm(new UCgestionVente(), sender);
+            bunifuPanel2.BackgroundColor = Color.FromArgb(155, 155, 155);
         }
 
-        private void BTNPrésence_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPaiment_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BTNPackage_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BTNVente_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
