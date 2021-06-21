@@ -196,6 +196,12 @@
     <Compile Include="GestionSalleDeSport\FormGestionnaire.Designer.cs">
       <DependentUpon>FormGestionnaire.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSalleDeSport\FormGridMemebre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\FormGridMemebre.Designer.cs">
+      <DependentUpon>FormGridMemebre.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionSalleDeSport\Listes.cs" />
     <Compile Include="GestionSalleDeSport\Entraineur.cs" />
     <Compile Include="GestionSalleDeSport\FormAccueil.cs">
@@ -286,6 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeSport\FormGestionnaire.resx">
       <DependentUpon>FormGestionnaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeSport\FormGridMemebre.resx">
+      <DependentUpon>FormGridMemebre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeSport\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

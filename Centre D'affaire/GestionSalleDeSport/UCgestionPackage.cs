@@ -19,7 +19,34 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void UCgestionPackage_Load(object sender, EventArgs e)
         {
+            remplirgrid();
+        }
+
+        private void TXTnomcomplet_TextChanged(object sender, EventArgs e)
+        {
 
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            Package pack = new Package(TXTnumero.Text , TXTnomcomplet.Text ,TXTprix.Text , TXTdetails.Text);
+            pack.Ajouter(pack);
+            remplirgrid();
+        }
+        public void remplirgrid()
+        {
+            GridPackage.Rows.Clear();
+            for (int i = 0; i < Listes.PackagesListe.Count; i++)
+            {
+                GridPackage.Rows.Add();
+                GridPackage.Rows[i].Cells["ID"].Value = Listes.PackagesListe[i].Id;
+                GridPackage.Rows[i].Cells["Details"].Value = Listes.PackagesListe[i].Detail;
+                GridPackage.Rows[i].Cells["Prxi"].Value = Listes.PackagesListe[i].Prix;
+                GridPackage.Rows[i].Cells["PackageNom"].Value = Listes.PackagesListe[i].Nom;
+
+            }
+
+        }
+        
     }
-}
+} 

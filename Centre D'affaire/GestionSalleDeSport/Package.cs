@@ -21,11 +21,44 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Prix = PRix;
             this.Detail = DEtail;
         }
+
+        public Package(string NOm)
+        {
+            
+            this.Nom = NOm;
+            
+        }
         public string Id { get => id; set => id = value; }
         public string Nom {get =>nom  ; set =>nom = value ; }
         public string Prix  { get => prix; set => prix = value; }
         public string Detail { get => detail; set => detail = value; }
 
+
+        public int Rechercher(string id)
+        {
+            for (int i = 0; i < Listes.PackagesListe.Count; i++)
+            {
+                if (Listes.PackagesListe[i].Id == id)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+
+        public bool Ajouter(Package pack)
+        {
+            if (Rechercher(pack.Id) == -1)
+            {
+                Listes.PackagesListe.Add(pack);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
     }
 }
