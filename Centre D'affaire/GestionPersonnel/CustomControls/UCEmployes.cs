@@ -16,6 +16,8 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
     public partial class UCEmployes : UserControl
     {
         
+        public UCListeEmployes UCListeEmployes { get => ucListeEmployes; }
+
         public UCEmployes()
         {
             InitializeComponent();

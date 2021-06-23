@@ -80,10 +80,18 @@
     <Compile Include="GestionParking\frmGParking.Designer.cs">
       <DependentUpon>frmGParking.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\ClsCompteBanquaire.cs" />
     <Compile Include="GestionPersonnel\ClsDepartement.cs" />
     <Compile Include="GestionPersonnel\clsEmploye.cs" />
     <Compile Include="GestionPersonnel\clsExceptions.cs" />
     <Compile Include="GestionPersonnel\clsPoste.cs" />
+    <Compile Include="GestionPersonnel\Congé.cs" />
+    <Compile Include="GestionPersonnel\CustomControls\frmAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\frmAlert.Designer.cs">
+      <DependentUpon>frmAlert.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionPersonnel\CustomControls\Functions.cs" />
     <Compile Include="GestionPersonnel\CustomControls\UCAjoutDepartement.cs">
       <SubType>UserControl</SubType>
@@ -145,6 +153,7 @@
     <Compile Include="GestionPersonnel\CustomControls\_UCDepartements.Designer.cs">
       <DependentUpon>_UCDepartements.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\Demission.cs" />
     <Compile Include="GestionPersonnel\frmPrincipal_Directeur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +186,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\frmAlert.resx">
+      <DependentUpon>frmAlert.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\CustomControls\UCNotif.resx">
       <DependentUpon>UCNotif.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,6 +338,11 @@
   <ItemGroup>
     <None Include="GestionPersonnel\Resources\Fonts\Poppins\Poppins-Light.ttf" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8_error_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_info_96px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

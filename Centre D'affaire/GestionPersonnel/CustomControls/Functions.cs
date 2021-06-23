@@ -11,9 +11,9 @@ using Centre_D_affaire.GestionPersonnel;
 
 namespace Centre_D_affaire.GestionPersonnel
 {
-    static class Functions
+    class Functions
     {
-        readonly static PrivateFontCollection pfc = new PrivateFontCollection();
+        private static PrivateFontCollection pfc = new PrivateFontCollection();
 
         public static void clearForm(Control form) 
         { 
@@ -107,7 +107,8 @@ namespace Centre_D_affaire.GestionPersonnel
 
         public static void setFont(Control control)
         {
-            pfc.AddFontFile("Poppins-Regular.ttf");
+            pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
+            //pfc.AddFontFile("Poppins-Regular.ttf");
 
             foreach (Control c in control.Controls)
             {
@@ -121,7 +122,7 @@ namespace Centre_D_affaire.GestionPersonnel
                     ((DataGridView)c).ColumnHeadersDefaultCellStyle.Font = new Font(pfc.Families[0], /*((DataGridView)c).ColumnHeadersDefaultCellStyle.Font.Size*/12, ((DataGridView)c).Font.Style) ;
                 }
 
-                else if (!(c is TextBox))
+                else if (!(c is TextBox || c is Bunifu.Framework.UI.BunifuDatepicker))
                 {
                     c.Font = new System.Drawing.Font(pfc.Families[0], c.Font.Size, c.Font.Style);
                     //if(c.Font.Size < 10)
@@ -183,7 +184,7 @@ namespace Centre_D_affaire.GestionPersonnel
             }
         }
 
-        private static void Functions_DataSourceChanged(object sender, EventArgs e)
+        public static void Functions_DataSourceChanged(object sender, EventArgs e)
         {
             pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
             if (sender is DataGridView)
