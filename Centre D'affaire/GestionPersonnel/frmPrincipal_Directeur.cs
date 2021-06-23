@@ -13,7 +13,22 @@ namespace Centre_D_affaire.GestionPersonnel
 {
     public partial class frmPrincipal_Directeur : Form
     {
+        private ClsEmploye userLogged;
+        public ClsEmploye UserLogged
+        {
+            get => userLogged;
+            set
+            {
+                userLogged = value;
+                ucProfil1.loggedUser = value;
+            }
+
+        }
+
         public CultureInfo cultureInfo = new CultureInfo("fr-FR");
+
+        
+
         public frmPrincipal_Directeur()
         {   
             InitializeComponent();
@@ -29,6 +44,7 @@ namespace Centre_D_affaire.GestionPersonnel
             pnlActive.Height = btnDashboard.Height;
             pnlActive.Top = btnDashboard.Top;
             ucDashboard.BringToFront();
+            //pnlError.BringToFront();
         }
         
         private void btnClose_Click(object sender, EventArgs e)
@@ -77,7 +93,6 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             ucDashboard.DateNow = DateTime.Now.ToString("F", cultureInfo).ToUpper();
         }
-
 
         private void btnParametre_Click(object sender, EventArgs e)
         {

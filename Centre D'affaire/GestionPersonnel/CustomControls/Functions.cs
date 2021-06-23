@@ -91,6 +91,7 @@ namespace Centre_D_affaire.GestionPersonnel
         public static List<ClsEmploye> getListemployes()
         {
             List<ClsEmploye> _listEmployes = new List<ClsEmploye>();
+            ClsDepartement.loadListeDeps();
             for (int i = 0; i < ClsDepartement.ListeDepartement.Count; i++)
             {
                 for (int y = 0; y < ClsDepartement.ListeDepartement[i].ListePoste.Count; y++)
@@ -106,18 +107,18 @@ namespace Centre_D_affaire.GestionPersonnel
 
         public static void setFont(Control control)
         {
-            pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
+            pfc.AddFontFile("Poppins-Regular.ttf");
 
             foreach (Control c in control.Controls)
             {
                 if (c is Bunifu.Framework.UI.BunifuFlatButton)
                 {
-                    ((Bunifu.Framework.UI.BunifuFlatButton)c).TextFont = new System.Drawing.Font(pfc.Families[0], ((Bunifu.Framework.UI.BunifuFlatButton)c).TextFont.Size, ((Bunifu.Framework.UI.BunifuFlatButton)c).Font.Style);
+                    ((Bunifu.Framework.UI.BunifuFlatButton)c).TextFont = new Font(pfc.Families[0], ((Bunifu.Framework.UI.BunifuFlatButton)c).TextFont.Size, ((Bunifu.Framework.UI.BunifuFlatButton)c).Font.Style);
                     
                 }
                 else if(c is DataGridView)
                 {
-                    ((DataGridView)c).ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font(pfc.Families[0], /*((DataGridView)c).ColumnHeadersDefaultCellStyle.Font.Size*/12, ((DataGridView)c).Font.Style) ;
+                    ((DataGridView)c).ColumnHeadersDefaultCellStyle.Font = new Font(pfc.Families[0], /*((DataGridView)c).ColumnHeadersDefaultCellStyle.Font.Size*/12, ((DataGridView)c).Font.Style) ;
                 }
 
                 else if (!(c is TextBox))
@@ -203,6 +204,18 @@ namespace Centre_D_affaire.GestionPersonnel
                 }
 
             }
+        }
+        public static ClsEmploye login(string user, string mdp)
+        {
+            foreach(ClsEmploye emp in getListemployes())
+            {
+                if (emp.Userlogin == user && emp.Mdp == mdp)
+                {
+                    return emp;
+                }
+            }
+            return null;
+
         }
     }
     

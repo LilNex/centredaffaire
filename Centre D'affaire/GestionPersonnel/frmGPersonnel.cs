@@ -21,5 +21,20 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             // test
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            ClsEmploye logged = Functions.login(txtLogin.Text, txtMdp.Text);
+            if (logged != null)
+            {
+                frmPrincipal_Directeur frm = new frmPrincipal_Directeur();
+                frm.UserLogged = logged;
+                frm.Show();
+            }
+            else
+            {
+                lblNotif.Text = "Identifiant ou mot de passe invalide.";
+            }
+        }
     }
 }

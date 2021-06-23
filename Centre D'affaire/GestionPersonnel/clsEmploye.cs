@@ -22,6 +22,11 @@ namespace Centre_D_affaire.GestionPersonnel
         private string adresse;
         private int salaire;
         private string rfid;
+
+        //login
+        private string userlogin;
+        private string mdp;
+
         public string Nom
         {
             get => nom;
@@ -41,7 +46,7 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             get => prenom; set
             {
-                bool okey = false;
+                bool okey = true;
                 foreach (char c in value)
                 {
                     if (char.IsLetter(c) == false)
@@ -72,12 +77,21 @@ namespace Centre_D_affaire.GestionPersonnel
         public string Adresse { get => adresse; set => adresse = value; }
         public int Salaire { get => salaire; set => salaire = value; }
         public string Rfid { get => rfid; set => rfid = value; }
+        public string Userlogin { get => userlogin; set => userlogin = value; }
+        public string Mdp { get => mdp; set => mdp = value; }
 
-        public ClsEmploye(string num, string nom)
+        public ClsEmploye(string num, string nom,string prenom,string cin)
         {
             this.Nom = nom;
+            this.Prenom = prenom;
             this.Num = num;
+            this.Cin = cin;
+
+
+            this.Userlogin = Nom + "." + Prenom;
+            this.Mdp = this.Cin;
         }
+
         public ClsEmploye() { }
     }
 }

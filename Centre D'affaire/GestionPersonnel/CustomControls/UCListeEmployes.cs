@@ -18,6 +18,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         }
         public void reloadForm()
         {
+            dgvListeEmployes.DataSource = null;
             dgvListeEmployes.DataSource = Functions.getListemployes();
         }
         private void UCListeEmployes_Load(object sender, EventArgs e)
@@ -27,5 +28,20 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             reloadForm();
         }
 
+        private void txtRechercheNum_TextChanged(object sender, EventArgs e)
+        {
+            var querry = from x in Functions.getListemployes()
+                         where x.Num.Contains(txtRechercheNum.Text.ToLower()) && x.Nom.ToLower().Contains(txtRechercheNom.Text.ToLower())
+                         select x;
+            dgvListeEmployes.DataSource = querry.ToList();
+        }
+
+        private void txtRechercheNom_TextChanged(object sender, EventArgs e)
+        {
+            var querry = from x in Functions.getListemployes()
+                         where x.Num.Contains(txtRechercheNum.Text.ToLower()) && x.Nom.ToLower().Contains(txtRechercheNom.Text.ToLower())
+                         select x;
+            dgvListeEmployes.DataSource = querry.ToList();
+        }
     }
 }

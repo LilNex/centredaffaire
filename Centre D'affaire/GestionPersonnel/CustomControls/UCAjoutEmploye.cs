@@ -72,7 +72,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            ClsEmploye employe = new ClsEmploye(txtNum.Text,txtNom.Text);
+            ClsEmploye employe = new ClsEmploye(txtNum.Text,txtNom.Text, txtPrenom.Text,txtCIN.Text);
             if(cmbDeparts.SelectedItem is ClsDepartement)
             {
                 if (cmbPoste.SelectedItem is clsPoste)

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtRechercheNom = new System.Windows.Forms.TextBox();
             this.txtRechercheNum = new System.Windows.Forms.TextBox();
             this.lblText_ParNom = new System.Windows.Forms.Label();
@@ -36,8 +36,8 @@
             this.lblText_Departements = new System.Windows.Forms.Label();
             this.dgvListePoste = new System.Windows.Forms.DataGridView();
             this.lblText_Postes = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPRNom = new System.Windows.Forms.TextBox();
+            this.txtPRNum = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnListeEmployes = new System.Windows.Forms.Button();
@@ -57,6 +57,7 @@
             this.txtRechercheNom.Name = "txtRechercheNom";
             this.txtRechercheNom.Size = new System.Drawing.Size(124, 19);
             this.txtRechercheNom.TabIndex = 28;
+            this.txtRechercheNom.TextChanged += new System.EventHandler(this.txtRechercheNom_TextChanged);
             // 
             // txtRechercheNum
             // 
@@ -67,6 +68,7 @@
             this.txtRechercheNum.Name = "txtRechercheNum";
             this.txtRechercheNum.Size = new System.Drawing.Size(124, 19);
             this.txtRechercheNum.TabIndex = 27;
+            this.txtRechercheNum.TextChanged += new System.EventHandler(this.txtRechercheNum_TextChanged);
             // 
             // lblText_ParNom
             // 
@@ -105,14 +107,14 @@
             this.dgvListePoste.BackgroundColor = System.Drawing.Color.White;
             this.dgvListePoste.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListePoste.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListePoste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListePoste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListePoste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListePoste.EnableHeadersVisualStyles = false;
             this.dgvListePoste.Location = new System.Drawing.Point(549, 77);
@@ -133,25 +135,27 @@
             this.lblText_Postes.TabIndex = 32;
             this.lblText_Postes.Text = "Postes :";
             // 
-            // textBox1
+            // txtPRNom
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.Location = new System.Drawing.Point(686, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(124, 19);
-            this.textBox1.TabIndex = 36;
+            this.txtPRNom.BackColor = System.Drawing.Color.DarkGray;
+            this.txtPRNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPRNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtPRNom.Location = new System.Drawing.Point(686, 52);
+            this.txtPRNom.Name = "txtPRNom";
+            this.txtPRNom.Size = new System.Drawing.Size(124, 19);
+            this.txtPRNom.TabIndex = 36;
+            this.txtPRNom.TextChanged += new System.EventHandler(this.txtPRNom_TextChanged);
             // 
-            // textBox2
+            // txtPRNum
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox2.Location = new System.Drawing.Point(549, 52);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(124, 19);
-            this.textBox2.TabIndex = 35;
+            this.txtPRNum.BackColor = System.Drawing.Color.DarkGray;
+            this.txtPRNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPRNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtPRNum.Location = new System.Drawing.Point(549, 52);
+            this.txtPRNum.Name = "txtPRNum";
+            this.txtPRNum.Size = new System.Drawing.Size(124, 19);
+            this.txtPRNum.TabIndex = 35;
+            this.txtPRNum.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
@@ -231,8 +235,8 @@
             this.dgvListeDeps.BackgroundColor = System.Drawing.Color.White;
             this.dgvListeDeps.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListeDeps.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvListeDeps.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListeDeps.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListeDeps.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListeDeps.EnableHeadersVisualStyles = false;
             this.dgvListeDeps.Location = new System.Drawing.Point(7, 77);
             this.dgvListeDeps.Name = "dgvListeDeps";
@@ -251,8 +255,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnListeEmployes);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPRNom);
+            this.Controls.Add(this.txtPRNum);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblText_Postes);
@@ -280,8 +284,8 @@
         private System.Windows.Forms.Label lblText_Departements;
         private System.Windows.Forms.DataGridView dgvListePoste;
         private System.Windows.Forms.Label lblText_Postes;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPRNom;
+        private System.Windows.Forms.TextBox txtPRNum;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnListeEmployes;

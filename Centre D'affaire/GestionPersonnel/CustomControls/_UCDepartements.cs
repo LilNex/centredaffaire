@@ -61,11 +61,12 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
 
         private void ucAjoutDepartement_Load(object sender, EventArgs e)
         {
-            ucListeDepartement.dgvListeEmploye.DataSource = ClsDepartement.ListeDepartement;
+            ucListeDepartement.dgvListDeps.DataSource = ClsDepartement.ListeDepartement;
         }
 
         private void ucListeDepartement_Load(object sender, EventArgs e)
         {
+            ucListeDepartement.dgvListDeps.DataSource = ClsDepartement.ListeDepartement;
 
         }
     }

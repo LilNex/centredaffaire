@@ -77,6 +77,7 @@ namespace Centre_D_affaire.GestionPersonnel
             this.ucProfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.ucProfil1.ForeColor = System.Drawing.Color.White;
             this.ucProfil1.Location = new System.Drawing.Point(0, 0);
+            this.ucProfil1.loggedUser = null;
             this.ucProfil1.Name = "ucProfil1";
             this.ucProfil1.Size = new System.Drawing.Size(200, 175);
             this.ucProfil1.TabIndex = 0;
