@@ -35,6 +35,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 GridMembre.Rows[i].Cells["Statut"].Value = Listes.MembresListe[i].Statut;
                 GridMembre.Rows[i].Cells["Sex"].Value = Listes.MembresListe[i].Sex;
                 GridMembre.Rows[i].Cells["DateJoin"].Value = Listes.MembresListe[i].DateJoin;
+                GridMembre.Rows[i].Cells["Package"].Value = Listes.MembresListe[i].Package.Nom;
+
 
 
             }

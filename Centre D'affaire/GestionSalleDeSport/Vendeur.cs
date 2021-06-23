@@ -18,8 +18,33 @@ namespace Centre_D_affaire.GestionSalleDeSport
         {
 
         }
+        
+
+        public int Rechercher(string id)
+        {
+            for (int i = 0; i < Listes.VendeursListe.Count; i++)
+            {
+                if (Listes.VendeursListe[i].Id == id)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
 
 
+        public bool Ajouter(Vendeur m)
+        {
+            if (Rechercher(m.Id) == -1)
+            {
+                Listes.VendeursListe.Add(m);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
     }
 }

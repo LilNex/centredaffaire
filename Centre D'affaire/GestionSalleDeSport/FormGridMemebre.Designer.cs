@@ -51,6 +51,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Frais = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Statut = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Package = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridMembre)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +75,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.bunifuPanel2.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(1288, 41);
+            this.bunifuPanel2.Size = new System.Drawing.Size(1492, 41);
             this.bunifuPanel2.TabIndex = 156;
             // 
             // BTNredire
@@ -91,7 +92,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNredire.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BTNredire.LabelPosition = 0;
             this.BTNredire.LabelText = "";
-            this.BTNredire.Location = new System.Drawing.Point(1175, 0);
+            this.BTNredire.Location = new System.Drawing.Point(1379, 0);
             this.BTNredire.Margin = new System.Windows.Forms.Padding(6);
             this.BTNredire.Name = "BTNredire";
             this.BTNredire.Size = new System.Drawing.Size(49, 45);
@@ -111,7 +112,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNfermer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BTNfermer.LabelPosition = 0;
             this.BTNfermer.LabelText = "";
-            this.BTNfermer.Location = new System.Drawing.Point(1242, 0);
+            this.BTNfermer.Location = new System.Drawing.Point(1446, 0);
             this.BTNfermer.Margin = new System.Windows.Forms.Padding(6);
             this.BTNfermer.Name = "BTNfermer";
             this.BTNfermer.Size = new System.Drawing.Size(46, 46);
@@ -148,7 +149,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Duree,
             this.Frais,
             this.Total,
-            this.Statut});
+            this.Statut,
+            this.Package});
             this.GridMembre.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(191)))), ((int)(((byte)(223)))));
             this.GridMembre.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.GridMembre.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -186,7 +188,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.GridMembre.RowHeadersWidth = 62;
             this.GridMembre.RowTemplate.Height = 40;
             this.GridMembre.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GridMembre.Size = new System.Drawing.Size(1288, 288);
+            this.GridMembre.Size = new System.Drawing.Size(1492, 288);
             this.GridMembre.TabIndex = 157;
             this.GridMembre.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Purple;
             // 
@@ -262,11 +264,17 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Statut.MinimumWidth = 8;
             this.Statut.Name = "Statut";
             // 
+            // Package
+            // 
+            this.Package.HeaderText = "Package";
+            this.Package.MinimumWidth = 8;
+            this.Package.Name = "Package";
+            // 
             // FormGridMemebre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1288, 347);
+            this.ClientSize = new System.Drawing.Size(1492, 347);
             this.Controls.Add(this.GridMembre);
             this.Controls.Add(this.bunifuPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -298,5 +306,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private System.Windows.Forms.DataGridViewTextBoxColumn Frais;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
         private System.Windows.Forms.DataGridViewTextBoxColumn Statut;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Package;
     }
 }

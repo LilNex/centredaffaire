@@ -62,12 +62,9 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNMembre = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BTNstatistique = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.PAnelDesktop = new Bunifu.UI.WinForms.BunifuPanel();
-            this.uCgestionMemebre1 = new Centre_D_affaire.GestionSalleDeSport.UCgestionMemebre();
-            this.uCgestionPackage1 = new Centre_D_affaire.GestionSalleDeSport.UCgestionPackage();
             this.Panel2.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.PAnelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -703,6 +700,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.btnPaiment.TextMarginLeft = 0;
             this.btnPaiment.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnPaiment.UseDefaultRadiusAndThickness = true;
+            this.btnPaiment.Click += new System.EventHandler(this.btnPaiment_Click);
             // 
             // BTNPackage
             // 
@@ -765,7 +763,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNPackage.onHoverState.BorderRadius = 1;
             this.BTNPackage.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.BTNPackage.onHoverState.BorderThickness = 1;
-            this.BTNPackage.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.BTNPackage.onHoverState.FillColor = System.Drawing.Color.Yellow;
             this.BTNPackage.onHoverState.ForeColor = System.Drawing.Color.White;
             this.BTNPackage.onHoverState.IconLeftImage = null;
             this.BTNPackage.onHoverState.IconRightImage = null;
@@ -781,7 +779,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNPackage.OnPressedState.BorderRadius = 1;
             this.BTNPackage.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.BTNPackage.OnPressedState.BorderThickness = 1;
-            this.BTNPackage.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.BTNPackage.OnPressedState.FillColor = System.Drawing.Color.Gold;
             this.BTNPackage.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.BTNPackage.OnPressedState.IconLeftImage = null;
             this.BTNPackage.OnPressedState.IconRightImage = null;
@@ -882,6 +880,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNVendeur.TextMarginLeft = 0;
             this.BTNVendeur.TextPadding = new System.Windows.Forms.Padding(0);
             this.BTNVendeur.UseDefaultRadiusAndThickness = true;
+            this.BTNVendeur.Click += new System.EventHandler(this.BTNVendeur_Click);
             // 
             // BTNStock
             // 
@@ -1249,30 +1248,13 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.PAnelDesktop.BorderColor = System.Drawing.Color.Transparent;
             this.PAnelDesktop.BorderRadius = 3;
             this.PAnelDesktop.BorderThickness = 1;
-            this.PAnelDesktop.Controls.Add(this.uCgestionPackage1);
-            this.PAnelDesktop.Controls.Add(this.uCgestionMemebre1);
             this.PAnelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PAnelDesktop.Location = new System.Drawing.Point(267, 46);
             this.PAnelDesktop.Name = "PAnelDesktop";
             this.PAnelDesktop.ShowBorders = true;
             this.PAnelDesktop.Size = new System.Drawing.Size(1100, 755);
             this.PAnelDesktop.TabIndex = 159;
-            // 
-            // uCgestionMemebre1
-            // 
-            this.uCgestionMemebre1.BackColor = System.Drawing.Color.White;
-            this.uCgestionMemebre1.Location = new System.Drawing.Point(-3, 0);
-            this.uCgestionMemebre1.Name = "uCgestionMemebre1";
-            this.uCgestionMemebre1.Size = new System.Drawing.Size(1100, 755);
-            this.uCgestionMemebre1.TabIndex = 0;
-            // 
-            // uCgestionPackage1
-            // 
-            this.uCgestionPackage1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.uCgestionPackage1.Location = new System.Drawing.Point(-3, 0);
-            this.uCgestionPackage1.Name = "uCgestionPackage1";
-            this.uCgestionPackage1.Size = new System.Drawing.Size(1100, 755);
-            this.uCgestionPackage1.TabIndex = 1;
+            this.PAnelDesktop.Click += new System.EventHandler(this.PAnelDesktop_Click);
             // 
             // FormGestionnaire
             // 
@@ -1288,7 +1270,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Panel2.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.PAnelDesktop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1314,7 +1295,5 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNQuitter;
         private Bunifu.UI.WinForms.BunifuPanel PAnelDesktop;
-        private UCgestionMemebre uCgestionMemebre1;
-        private UCgestionPackage uCgestionPackage1;
     }
 }
