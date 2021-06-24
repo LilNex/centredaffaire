@@ -36,5 +36,17 @@ namespace Centre_D_affaire.GestionSalleDeSport
         {
 
         }
+
+        private void btntrouver_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Listes.VendeursListe.Count; i++)
+            {
+                if (Listes.VendeursListe[i].Id == TXTnomcomplet.Text)
+                {
+                    TXTtele.Text = Listes.VendeursListe[i].Telephone.ToString() ;
+                    bunifuTextBox3.Text = Listes.VendeursListe[i].NomComplet;
+                }
+            }
+        }
     }
 }

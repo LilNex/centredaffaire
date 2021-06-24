@@ -13,5 +13,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
             :base(idproduit,  prix, quantite, unite,total , vend)
         {
         }
+
+
+        
     }
 }

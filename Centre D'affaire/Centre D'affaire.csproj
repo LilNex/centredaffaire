@@ -188,6 +188,7 @@
       <DependentUpon>frmGSJ.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSalleDeSport\Achat.cs" />
+    <Compile Include="GestionSalleDeSport\ClassInterface.cs" />
     <Compile Include="GestionSalleDeSport\Client.cs" />
     <Compile Include="GestionSalleDeSport\Equipment.cs" />
     <Compile Include="GestionSalleDeSport\FormGestionnaire.cs">
@@ -202,6 +203,7 @@
     <Compile Include="GestionSalleDeSport\FormGridMemebre.Designer.cs">
       <DependentUpon>FormGridMemebre.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSalleDeSport\Interface.cs" />
     <Compile Include="GestionSalleDeSport\Listes.cs" />
     <Compile Include="GestionSalleDeSport\Entraineur.cs" />
     <Compile Include="GestionSalleDeSport\FormAccueil.cs">

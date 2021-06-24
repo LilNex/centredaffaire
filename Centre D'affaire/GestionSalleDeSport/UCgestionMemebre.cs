@@ -27,7 +27,20 @@ namespace Centre_D_affaire.GestionSalleDeSport
             Package pack = new Package(cbPackage.Text);
 
             Membre mbr = new Membre(TXTnumero.Text ,TXTnomcomplet.Text ,DPdate.Value , int.Parse(TXTtele.Text),TxtEmail.Text , TXTadresse.Text , Cbgenre.Text , pack, int.Parse(TXTXpoids.Text) , int.Parse(TxtFrais.Text) , int.Parse( TXTDUREE.Text ), int.Parse( TXTtotal.Text) ,cbStatus.Text   );
-            mbr.Ajouter(mbr);
+            if (mbr.Ajouter(mbr) == true)
+            {
+                MessageBox.Show(TXTnomcomplet.Text + " ajouté avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
+                ClassInterface i = new ClassInterface();
+                i.viderform(this);
+            }
+            else
+            {
+                MessageBox.Show("Ajout non effectué, vérifiez que le ID  n'est pas en double", "Avertissement", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXTnumero.Focus();
+
+
+            }
         }
 
         private void BTnshow_Click(object sender, EventArgs e)

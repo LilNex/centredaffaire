@@ -77,6 +77,18 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 return false;
             }
         }
+        public bool supprimer(string numero)
+        {
+            if (Rechercher(numero) != -1)
+            {
+                Listes.MembresListe.RemoveAt(Rechercher(numero));
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
 

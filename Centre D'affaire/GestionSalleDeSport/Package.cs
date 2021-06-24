@@ -60,5 +60,18 @@ namespace Centre_D_affaire.GestionSalleDeSport
             }
         }
 
+        public bool supprimer(Package ST)
+        {
+            if (Rechercher(ST.Id) != -1)
+            {
+                Listes.PackagesListe.Remove(ST);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }

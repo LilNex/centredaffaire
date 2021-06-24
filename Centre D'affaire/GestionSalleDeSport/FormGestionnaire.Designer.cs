@@ -344,6 +344,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNVente.TextMarginLeft = 0;
             this.BTNVente.TextPadding = new System.Windows.Forms.Padding(0);
             this.BTNVente.UseDefaultRadiusAndThickness = true;
+            this.BTNVente.Click += new System.EventHandler(this.BTNVente_Click);
             // 
             // BTNutilisateur
             // 
@@ -522,6 +523,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNAchat.TextMarginLeft = 0;
             this.BTNAchat.TextPadding = new System.Windows.Forms.Padding(0);
             this.BTNAchat.UseDefaultRadiusAndThickness = true;
+            this.BTNAchat.Click += new System.EventHandler(this.BTNAchat_Click);
             // 
             // BTNPrésence
             // 

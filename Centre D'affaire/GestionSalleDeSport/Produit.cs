@@ -11,27 +11,53 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private string idProduit;
         private int prix;
         private int quantite;
-        private string unite;
+        public string nom;
         private int total;
         private Vendeur vend;
 
         public  Produit() { }
-        public Produit(string idproduit , int prix , int quantite , string unite , int total , Vendeur vend ) 
+        public Produit(string idproduit , int prix , string nom, int quantite  , int total , Vendeur vend ) 
         {
             this.ID = idproduit;
+            this.Nom = nom; 
             this.Prix = prix;
             this.Quantite = quantite;
-            this.Unite = unite;
             this.Total = total;
             this.Vendeuur = vend;
         }
         public string ID { get => idProduit; set => idProduit = value; }
+        public string Nom { get => nom; set => nom = value; }
+
         public int Prix { get => prix; set => prix = value; }
         public int Quantite { get => quantite; set => quantite = value; }
-        public string Unite { get => unite; set => unite = value; }
         public int Total { get => total; set => total = value; }
         public Vendeur Vendeuur { get => vend; set => vend = value ; }
 
+        public int Rechercher(string id)
+        {
+            for (int i = 0; i < Listes.produit.Count; i++)
+            {
+                if (Listes.produit[i].ID == id)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+
+        public bool Ajouter(Produit m)
+        {
+            if (Rechercher(m.ID) == -1)
+            {
+                Listes.produit.Add(m);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
 

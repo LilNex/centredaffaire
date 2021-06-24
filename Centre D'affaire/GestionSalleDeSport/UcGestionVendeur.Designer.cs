@@ -387,7 +387,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTnomcomplet.TextPlaceholder = "Tapez ici ";
             this.TXTnomcomplet.UseSystemPasswordChar = false;
             this.TXTnomcomplet.WordWrap = true;
-            this.TXTnomcomplet.TextChanged += new System.EventHandler(this.TXTnomcomplet_TextChanged);
             // 
             // TXTnumero
             // 
@@ -462,7 +461,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTnumero.TextPlaceholder = "Tapez ici ";
             this.TXTnumero.UseSystemPasswordChar = false;
             this.TXTnumero.WordWrap = true;
-            this.TXTnumero.TextChanged += new System.EventHandler(this.TXTnumero_TextChanged);
             // 
             // lbladresse
             // 
@@ -515,7 +513,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.lblnumero.Size = new System.Drawing.Size(88, 27);
             this.lblnumero.TabIndex = 177;
             this.lblnumero.Text = "Numéro";
-            this.lblnumero.Click += new System.EventHandler(this.lblnumero_Click);
             // 
             // GridVendeur
             // 
@@ -573,7 +570,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.GridVendeur.HeaderBackColor = System.Drawing.Color.Orange;
             this.GridVendeur.HeaderBgColor = System.Drawing.Color.Empty;
             this.GridVendeur.HeaderForeColor = System.Drawing.Color.White;
-            this.GridVendeur.Location = new System.Drawing.Point(0, 523);
+            this.GridVendeur.Location = new System.Drawing.Point(0, 516);
             this.GridVendeur.Name = "GridVendeur";
             this.GridVendeur.RowHeadersVisible = false;
             this.GridVendeur.RowHeadersWidth = 62;
@@ -583,7 +580,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.GridVendeur.TabIndex = 191;
             this.GridVendeur.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
             this.GridVendeur.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVendeur_CellClick);
-            this.GridVendeur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVendeur_CellContentClick);
             // 
             // ID
             // 
@@ -793,6 +789,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.btnMise.TextMarginLeft = 0;
             this.btnMise.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnMise.UseDefaultRadiusAndThickness = true;
+            this.btnMise.Click += new System.EventHandler(this.btnMise_Click);
             // 
             // btnSupprimer
             // 
@@ -882,6 +879,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.btnSupprimer.TextMarginLeft = 0;
             this.btnSupprimer.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnSupprimer.UseDefaultRadiusAndThickness = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // UcGestionVendeur
             // 
