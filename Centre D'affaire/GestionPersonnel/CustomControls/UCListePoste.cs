@@ -32,5 +32,51 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             dgvListePostes.DataSource = Functions.getListPostes();
 
         }
+
+        private void txtEmployeNum_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var querry = from x in ((clsPoste)dgvListePostes.CurrentRow.DataBoundItem).listeDesEmployé
+                             where x.Num.Contains(txtEmployeNum.Text) && x.Nom.ToLower().Contains(txtEmployeNom.Text.ToLower())
+                             select x;
+                dgvListeEmployes.DataSource = querry.ToList();
+            }
+            catch (Exception ex)
+            {
+                dgvListeEmployes.DataSource = null;
+            }
+        }
+
+        private void txtEmployeNom_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var querry = from x in ((clsPoste)dgvListePostes.CurrentRow.DataBoundItem).listeDesEmployé
+                             where x.Num.Contains(txtEmployeNum.Text) && x.Nom.ToLower().Contains(txtEmployeNom.Text.ToLower())
+                             select x;
+                dgvListeEmployes.DataSource = querry.ToList();
+            }
+            catch (Exception ex)
+            {
+                dgvListeEmployes.DataSource = null;
+            }
+        }
+
+        private void txtPosteNum_TextChanged(object sender, EventArgs e)
+        {
+            var querry = from x in Functions.getListPostes()
+                         where x.Num.Contains(txtPosteNum.Text.ToLower()) && x.Nom.ToLower().Contains(txtPosteNom.Text.ToLower())
+                         select x;
+            dgvListePostes.DataSource = querry.ToList();
+        }
+
+        private void txtPosteNom_TextChanged(object sender, EventArgs e)
+        {
+            var querry = from x in Functions.getListPostes()
+                         where x.Num.Contains(txtPosteNum.Text.ToLower()) && x.Nom.ToLower().Contains(txtPosteNom.Text.ToLower())
+                         select x;
+            dgvListePostes.DataSource = querry.ToList();
+        }
     }
 }

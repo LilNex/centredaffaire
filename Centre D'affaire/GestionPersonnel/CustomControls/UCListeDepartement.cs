@@ -14,7 +14,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
     {
         public event Action reloadForm;
 
-        public DataGridView dgvListeEmploye { get=> dgvListeDeps; set=> dgvListeDeps = value; }
+        public DataGridView dgvListDeps { get => dgvListeDeps; set => dgvListeDeps = value; }
         public UCListeDepartement()
         {
             InitializeComponent();
@@ -43,6 +43,52 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         {
             //dgvListeDeps.DefaultCellStyle.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
+        }
+
+        private void txtRechercheNum_TextChanged(object sender, EventArgs e)
+        {
+            var querry = from x in ClsDepartement.ListeDepartement
+                         where x.Num.Contains(txtRechercheNum.Text) && x.Nom.ToLower().Contains(txtRechercheNom.Text.ToLower())
+                         select x;
+            dgvListeDeps.DataSource = querry.ToList();
+        }
+
+        private void txtRechercheNom_TextChanged(object sender, EventArgs e)
+        {
+            var querry = from x in ClsDepartement.ListeDepartement
+                         where x.Num.Contains(txtRechercheNum.Text) && x.Nom.ToLower().Contains(txtRechercheNom.Text.ToLower())
+                         select x;
+            dgvListeDeps.DataSource = querry.ToList();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var querry = from x in ((ClsDepartement)dgvListeDeps.CurrentRow.DataBoundItem).ListePoste
+                             where x.Num.Contains(txtPRNum.Text) && x.Nom.ToLower().Contains(txtPRNom.Text.ToLower())
+                             select x;
+                dgvListePoste.DataSource = querry.ToList();
+            }
+            catch (Exception ex)
+            {
+                dgvListePoste.DataSource = null;
+            }
+        }
+
+        private void txtPRNom_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var querry = from x in ((ClsDepartement)dgvListeDeps.CurrentRow.DataBoundItem).ListePoste
+                             where x.Num.Contains(txtPRNum.Text) && x.Nom.ToLower().Contains(txtPRNom.Text.ToLower())
+                             select x;
+                dgvListePoste.DataSource = querry.ToList();
+            }
+            catch(Exception ex)
+            {
+                dgvListePoste.DataSource = null;
+            }
         }
     }
 }

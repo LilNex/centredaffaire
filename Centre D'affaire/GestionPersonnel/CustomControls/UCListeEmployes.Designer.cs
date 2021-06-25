@@ -29,7 +29,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtRechercheNom = new System.Windows.Forms.TextBox();
             this.txtRechercheNum = new System.Windows.Forms.TextBox();
             this.lblText_ParNom = new System.Windows.Forms.Label();
@@ -56,6 +56,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.txtRechercheNom.Name = "txtRechercheNom";
             this.txtRechercheNom.Size = new System.Drawing.Size(124, 19);
             this.txtRechercheNom.TabIndex = 14;
+            this.txtRechercheNom.TextChanged += new System.EventHandler(this.txtRechercheNom_TextChanged);
             // 
             // txtRechercheNum
             // 
@@ -66,6 +67,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.txtRechercheNum.Name = "txtRechercheNum";
             this.txtRechercheNum.Size = new System.Drawing.Size(124, 19);
             this.txtRechercheNum.TabIndex = 13;
+            this.txtRechercheNum.TextChanged += new System.EventHandler(this.txtRechercheNum_TextChanged);
             // 
             // lblText_ParNom
             // 
@@ -104,14 +106,14 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.dgvListeEmployes.BackgroundColor = System.Drawing.Color.White;
             this.dgvListeEmployes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListeEmployes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListeEmployes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListeEmployes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListeEmployes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListeEmployes.EnableHeadersVisualStyles = false;
             this.dgvListeEmployes.Location = new System.Drawing.Point(8, 112);

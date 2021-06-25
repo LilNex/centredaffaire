@@ -23,10 +23,12 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private void UCEmployes_Load(object sender, EventArgs e)
         {
             ucListeEmployes.BringToFront();
+            Functions.setupDgv(this);
         }
 
         private void btnListeEmployes_Click(object sender, EventArgs e)
         {
+            ucListeEmployes.reloadForm();
             ucListeEmployes.BringToFront();
         }
 
@@ -34,6 +36,11 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         {
             ucAjoutEmploye.reloadForm();
             ucAjoutEmploye.BringToFront();
+        }
+
+        private void ucListeEmployes_Load(object sender, EventArgs e)
+        {
+            ucListeEmployes.reloadForm();
         }
 
         
