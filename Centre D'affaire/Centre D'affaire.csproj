@@ -101,6 +101,12 @@
     <Compile Include="GestionSalleDeJeux\Billard.Designer.cs">
       <DependentUpon>Billard.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionSalleDeJeux\MENU1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeJeux\Billard.resx">
       <DependentUpon>Billard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeJeux\MENU1.resx">
       <DependentUpon>MENU1.cs</DependentUpon>

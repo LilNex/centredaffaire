@@ -16,5 +16,11 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
             InitializeComponent();
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            MENU1 menu = new MENU1();
+            menu.Show();
+        }
     }
 }

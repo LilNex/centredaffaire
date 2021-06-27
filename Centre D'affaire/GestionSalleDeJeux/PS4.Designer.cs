@@ -178,6 +178,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnHome.Text = "HOME";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panel4
             // 

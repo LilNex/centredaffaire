@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    public partial class BabyFoot : Form
+    public partial class FrmAbout : Form
     {
-        public BabyFoot()
+        public FrmAbout()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            MENU1 menu = new MENU1();
-            menu.Show();
         }
     }
 }
