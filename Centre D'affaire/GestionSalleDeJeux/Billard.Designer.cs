@@ -393,7 +393,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // lblBillHot
             // 
             this.lblBillHot.AutoSize = true;
-            this.lblBillHot.BackColor = System.Drawing.Color.Transparent;
+            this.lblBillHot.BackColor = System.Drawing.Color.LightSteelBlue;
             this.lblBillHot.Font = new System.Drawing.Font("Lucida Fax", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBillHot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblBillHot.Location = new System.Drawing.Point(313, 9);
@@ -1009,6 +1009,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button38.TabIndex = 14;
             this.button38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button38.UseVisualStyleBackColor = false;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
             // 
             // button39
             // 

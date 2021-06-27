@@ -181,6 +181,9 @@
   <data name="baby-foot-personnalise-sur-mesure-Pure-debuchy-Toulet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\baby-foot-personnalise-sur-mesure-Pure-debuchy-Toulet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="kisspng-billiards-computer-icons-billiard-balls-eight-ball-8-ball-pool-5accb508721f40.6250710415233651284675" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-billiards-computer-icons-billiard-balls-eight-ball-8-ball-pool-5accb508721f40.6250710415233651284675.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-engrenage-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-engrenage-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -189,6 +192,9 @@
   </data>
   <data name="outline_restart_alt_black_24dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\outline_restart_alt_black_24dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="outline_restart_alt_black_24dp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\outline_restart_alt_black_24dp1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-engrenage-60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-engrenage-60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,14 +220,8 @@
   <data name="billiard (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\billiard (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-engrenage-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-engrenage-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-information-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-information-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3401193" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3401193.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3205207" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3205207.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -295,9 +295,6 @@
   <data name="billiard-ball" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\billiard-ball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="street-fighter-ii-micro-player" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\street-fighter-ii-micro-player.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Home 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -307,11 +304,14 @@
   <data name="71b7616dee_50157963_2-noel-console-ps4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\71b7616dee_50157963_2-noel-console-ps4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="outline_menu_black_24dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\outline_menu_black_24dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="40-405613_arcade-data-src-classic-arcade-wallpaper-cell-phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\40-405613_arcade-data-src-classic-arcade-wallpaper-cell-phone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="outline_play_arrow_black_24dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\outline_play_arrow_black_24dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-engrenage-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-engrenage-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RepliCade_Street_Fighter_II_Arcade_03_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RepliCade_Street_Fighter_II_Arcade_03_11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,8 +325,8 @@
   <data name="65687" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\65687.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="outline_restart_alt_black_24dp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\outline_restart_alt_black_24dp1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="outline_play_arrow_black_24dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\outline_play_arrow_black_24dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="outline_menu_black_24dp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\outline_menu_black_24dp1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -346,8 +346,11 @@
   <data name="1588774394_407_Rues-de-Rage-4-est-genial-mais-c39est-autre-chose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1588774394_407_Rues-de-Rage-4-est-genial-mais-c39est-autre-chose.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kisspng-billiards-computer-icons-billiard-balls-eight-ball-8-ball-pool-5accb508721f40.6250710415233651284675" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-billiards-computer-icons-billiard-balls-eight-ball-8-ball-pool-5accb508721f40.6250710415233651284675.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="street-fighter-ii-micro-player" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\street-fighter-ii-micro-player.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="png-clipart-joystick-controller-stencil-joystick-game-controllers-atari-2600-computer-icons-video-games-electronics-video-game-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-clipart-joystick-controller-stencil-joystick-game-controllers-atari-2600-computer-icons-video-games-electronics-video-game-thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,13 +361,13 @@
   <data name="1865398" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1865398.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="outline_menu_black_24dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\outline_menu_black_24dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3401193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3401193.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="outline_pause_black_24dp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\outline_pause_black_24dp1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="video-screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\video-screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

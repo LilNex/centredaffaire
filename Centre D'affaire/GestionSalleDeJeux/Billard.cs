@@ -92,5 +92,10 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
 
         }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
