@@ -22,5 +22,38 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         public int numeroS { get => NumeroS; set => NumeroS = value; }
         public string nomS { get => NomS; set => NomS = value; }
 
+
+        //--------LA METHODE DE RECHERCHE---------------
+        public int RechercheSDJ(int NumeroS)
+        {
+            for(int i=0;i<ClsListeSDJ.ListSalle.Count;i++)
+            {
+                if (ClsListeSDJ.ListSalle[i].numeroS == NumeroS)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+
+
+        //--------LA METHODE D'AJOUTE---------------
+        public bool AjouterSalleDJ()
+        {
+            if (RechercheSDJ(NumeroS) == -1)
+            {
+                SalleDeJeux SDJ = new SalleDeJeux();
+                //button = SDJ.NumeroT;
+                //button = SDJ.nomT;
+                ClsListeSDJ.ListSalle.Add(SDJ);
+                return true;
+            }
+            else
+            {
+                //SDJ est deja exsite
+                return false;
+            }
+        }
     }
 }

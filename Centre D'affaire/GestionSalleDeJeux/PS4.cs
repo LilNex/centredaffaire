@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    public partial class frmGSJ : Form
+    public partial class PS4 : Form
     {
-        public frmGSJ()
+        public PS4()
         {
             InitializeComponent();
         }
