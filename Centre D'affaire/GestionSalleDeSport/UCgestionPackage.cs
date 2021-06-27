@@ -29,9 +29,21 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Package pack = new Package(TXTnumero.Text , TXTnomcomplet.Text ,TXTprix.Text , TXTdetails.Text);
-            pack.Ajouter(pack);
-            remplirgrid();
+            foreach (char c in TXTprix.Text)
+            {
+                if (Char.IsDigit(c) == false)
+                {
+                    
+                    MessageBox.Show("Tu doix ecrire une chaine du mombre "+ MessageBoxButtons.OK);
+                }
+                else
+                {
+                    Package pack = new Package(TXTnumero.Text, TXTnomcomplet.Text, TXTprix.Text, TXTdetails.Text);
+                    pack.Ajouter(pack);
+                    remplirgrid();
+                }
+            }
+           
         }
         public void remplirgrid()
         {

@@ -81,8 +81,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void BTNVente_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new UCgestionVente(), sender);
-            Panel2.BackgroundColor = Color.FromArgb(0, 250, 154);
+            
         }
 
         private void BTNAchat_Click(object sender, EventArgs e)
@@ -90,6 +89,13 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
             OpenChildForm(new UCgetionAchats(), sender);
             Panel2.BackgroundColor = Color.FromArgb(0, 250, 154);
+        }
+
+        private void BTNutilisateur_Click(object sender, EventArgs e)
+        {
+            FormSignIn frm = new FormSignIn();
+            frm.Show(); 
+            
         }
     }
 }

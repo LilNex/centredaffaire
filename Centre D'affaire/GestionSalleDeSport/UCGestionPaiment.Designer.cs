@@ -103,7 +103,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTDUREE.IconRight = null;
             this.TXTDUREE.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.TXTDUREE.Lines = new string[0];
-            this.TXTDUREE.Location = new System.Drawing.Point(549, 203);
+            this.TXTDUREE.Location = new System.Drawing.Point(568, 179);
             this.TXTDUREE.MaxLength = 32767;
             this.TXTDUREE.MinimumSize = new System.Drawing.Size(1, 1);
             this.TXTDUREE.Modified = false;
@@ -156,7 +156,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Ink Free", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(555, 182);
+            this.label6.Location = new System.Drawing.Point(563, 159);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 27);
@@ -191,7 +191,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTtotal.IconRight = null;
             this.TXTtotal.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.TXTtotal.Lines = new string[0];
-            this.TXTtotal.Location = new System.Drawing.Point(56, 386);
+            this.TXTtotal.Location = new System.Drawing.Point(64, 363);
             this.TXTtotal.MaxLength = 32767;
             this.TXTtotal.MinimumSize = new System.Drawing.Size(1, 1);
             this.TXTtotal.Modified = false;
@@ -244,7 +244,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Ink Free", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(51, 356);
+            this.label4.Location = new System.Drawing.Point(59, 333);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 27);
@@ -279,7 +279,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TxtFrais.IconRight = null;
             this.TxtFrais.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtFrais.Lines = new string[0];
-            this.TxtFrais.Location = new System.Drawing.Point(56, 312);
+            this.TxtFrais.Location = new System.Drawing.Point(64, 289);
             this.TxtFrais.MaxLength = 32767;
             this.TxtFrais.MinimumSize = new System.Drawing.Size(1, 1);
             this.TxtFrais.Modified = false;
@@ -332,7 +332,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Ink Free", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(51, 282);
+            this.label2.Location = new System.Drawing.Point(59, 259);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 27);
@@ -366,7 +366,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTnomcomplet.IconRight = null;
             this.TXTnomcomplet.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.TXTnomcomplet.Lines = new string[0];
-            this.TXTnomcomplet.Location = new System.Drawing.Point(56, 202);
+            this.TXTnomcomplet.Location = new System.Drawing.Point(64, 179);
             this.TXTnomcomplet.MaxLength = 32767;
             this.TXTnomcomplet.MinimumSize = new System.Drawing.Size(1, 1);
             this.TXTnomcomplet.Modified = false;
@@ -440,7 +440,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTnumero.IconRight = null;
             this.TXTnumero.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.TXTnumero.Lines = new string[0];
-            this.TXTnumero.Location = new System.Drawing.Point(56, 116);
+            this.TXTnumero.Location = new System.Drawing.Point(64, 93);
             this.TXTnumero.MaxLength = 32767;
             this.TXTnumero.MinimumSize = new System.Drawing.Size(1, 1);
             this.TXTnumero.Modified = false;
@@ -493,7 +493,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.lblNOms.BackColor = System.Drawing.Color.Transparent;
             this.lblNOms.Font = new System.Drawing.Font("Ink Free", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNOms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblNOms.Location = new System.Drawing.Point(51, 172);
+            this.lblNOms.Location = new System.Drawing.Point(59, 149);
             this.lblNOms.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNOms.Name = "lblNOms";
             this.lblNOms.Size = new System.Drawing.Size(142, 27);
@@ -506,7 +506,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.lblnumero.BackColor = System.Drawing.Color.Transparent;
             this.lblnumero.Font = new System.Drawing.Font("Ink Free", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnumero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblnumero.Location = new System.Drawing.Point(51, 86);
+            this.lblnumero.Location = new System.Drawing.Point(59, 63);
             this.lblnumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblnumero.Name = "lblnumero";
             this.lblnumero.Size = new System.Drawing.Size(88, 27);
@@ -519,7 +519,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Ink Free", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblDate.Location = new System.Drawing.Point(555, 86);
+            this.lblDate.Location = new System.Drawing.Point(563, 63);
             this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(70, 27);
@@ -545,7 +545,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.DPdate.IconColor = System.Drawing.Color.Gray;
             this.DPdate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.DPdate.LeftTextMargin = 5;
-            this.DPdate.Location = new System.Drawing.Point(549, 116);
+            this.DPdate.Location = new System.Drawing.Point(557, 93);
             this.DPdate.MinimumSize = new System.Drawing.Size(4, 32);
             this.DPdate.Name = "DPdate";
             this.DPdate.Size = new System.Drawing.Size(224, 32);
@@ -655,7 +655,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Date.MinimumWidth = 8;
             this.Date.Name = "Date";
             // 
-            // UCpaiment
+            // UCGestionPaiment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -673,7 +673,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TxtFrais);
             this.Controls.Add(this.label2);
-            this.Name = "UCpaiment";
+            this.Name = "UCGestionPaiment";
             this.Size = new System.Drawing.Size(1100, 755);
             this.Load += new System.EventHandler(this.UCpaiment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridPaiment)).EndInit();

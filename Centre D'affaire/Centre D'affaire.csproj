@@ -229,7 +229,6 @@
     <Compile Include="GestionSalleDeSport\Paiement.cs" />
     <Compile Include="GestionSalleDeSport\Personne.cs" />
     <Compile Include="GestionSalleDeSport\Produit.cs" />
-    <Compile Include="GestionSalleDeSport\Stock.cs" />
     <Compile Include="GestionSalleDeSport\UCgestionEntraineur.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -266,15 +265,8 @@
     <Compile Include="GestionSalleDeSport\UCGestionPaiment.Designer.cs">
       <DependentUpon>UCGestionPaiment.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSalleDeSport\UCgestionVente.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GestionSalleDeSport\UCgestionVente.Designer.cs">
-      <DependentUpon>UCgestionVente.cs</DependentUpon>
-    </Compile>
     <Compile Include="GestionSalleDeSport\Utilisateur.cs" />
     <Compile Include="GestionSalleDeSport\Vendeur.cs" />
-    <Compile Include="GestionSalleDeSport\Vente.cs" />
     <Compile Include="LocationEspacesSalleReunion\frmLESR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,9 +313,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeSport\UCGestionPaiment.resx">
       <DependentUpon>UCGestionPaiment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionSalleDeSport\UCgestionVente.resx">
-      <DependentUpon>UCgestionVente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

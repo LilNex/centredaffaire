@@ -56,6 +56,12 @@ namespace Centre_D_affaire.GestionSalleDeSport
             cbPackage.DataSource = Listes.PackagesListe;
             cbPackage.ValueMember = "Nom";
             cbPackage.DisplayMember = "Nom";
+            
+        }
+
+        private void cbPackage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

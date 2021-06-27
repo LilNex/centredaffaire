@@ -580,6 +580,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.GridVendeur.TabIndex = 191;
             this.GridVendeur.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
             this.GridVendeur.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVendeur_CellClick);
+            this.GridVendeur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVendeur_CellContentClick);
             // 
             // ID
             // 
@@ -748,7 +749,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.btnMise.IdleIconLeftImage = null;
             this.btnMise.IdleIconRightImage = null;
             this.btnMise.IndicateFocus = false;
-            this.btnMise.Location = new System.Drawing.Point(805, 395);
+            this.btnMise.Location = new System.Drawing.Point(807, 412);
             this.btnMise.Name = "btnMise";
             this.btnMise.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnMise.OnDisabledState.BorderRadius = 1;
@@ -838,7 +839,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.btnSupprimer.IdleIconLeftImage = null;
             this.btnSupprimer.IdleIconRightImage = null;
             this.btnSupprimer.IndicateFocus = false;
-            this.btnSupprimer.Location = new System.Drawing.Point(637, 395);
+            this.btnSupprimer.Location = new System.Drawing.Point(639, 412);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSupprimer.OnDisabledState.BorderRadius = 1;
