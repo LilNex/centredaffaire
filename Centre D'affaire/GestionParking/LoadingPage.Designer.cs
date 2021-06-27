@@ -65,17 +65,17 @@ namespace Centre_D_affaire.GestionParking
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 407);
+            this.panel1.Location = new System.Drawing.Point(0, 417);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 24);
+            this.panel1.Size = new System.Drawing.Size(800, 14);
             this.panel1.TabIndex = 2;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(123)))), ((int)(((byte)(12)))));
-            this.panel2.Location = new System.Drawing.Point(0, 407);
+            this.panel2.Location = new System.Drawing.Point(0, 417);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 24);
+            this.panel2.Size = new System.Drawing.Size(14, 17);
             this.panel2.TabIndex = 3;
             // 
             // timer1

@@ -10,12 +10,41 @@ namespace Centre_D_affaire.GestionParking
 {
     public class info
     {
-        private string username;
-        private string password;
-        private int telephone;
-        private string email;
-        private string username2;
-        private string password2;
+        private static string username;
+        private  string password;
+        private  int telephone;
+        private  string email;
+        private  string username2;
+        private  string password2;
+
+        private string carname;
+        private string cartype;
+        private int time;
+
+        private int spotNumber;
+        private string spotName;
+
+        private string methode;
+        private string holderName;
+        private string ExperitionDate;
+        private int cardNumber;
+        private int cvvCode;
+        public info() { }
+
+        //public info(int time,int spot, string carname)
+        //{
+        //    this.time = time;
+        //    this.spotNumber = spot;
+        //    this.carname = carname;
+        //}
+
+        public info(string cn, string ct, int time)
+        {
+            this.carname = cn;
+            this.cartype = ct;
+            this.Time = time;
+        }
+
         public info(string username, string password)
         {
             this.Username = username;
@@ -30,7 +59,31 @@ namespace Centre_D_affaire.GestionParking
             this.Telephone = _telephone;
         }
 
-        public info() { }
+        public info (int sn, string sname)
+        {
+            this.spotNumber = sn;
+            this.spotName = sname;
+        }
+
+        public info(string pm, string hm, string ed, int cn, int cd)
+        {
+            this.methode = pm;
+            this.holderName = hm;
+            this.ExperitionDate = ed;
+            this.cardNumber = cn;
+            this.cvvCode = cd;
+        }
+
+        public static string User
+        {
+            get { return username  ; }
+            set { username = value; }
+        }
+        // or:  public static string Username { get => username; set => username = value; }
+        //public static int Telephonee { get => telephone; set => telephone = value; }
+        //public static string Passwordd { get => password; set => password = value; }
+        //public static string Emaill { get => email; set => email = value; }
+
 
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
@@ -38,5 +91,21 @@ namespace Centre_D_affaire.GestionParking
         public string Email { get => email; set => email = value; }
         public string Username2 { get => username2; set => username2 = value; }
         public string Password2 { get => password2; set => password2 = value; }
+
+
+        public string Methode { get => methode; set => methode = value; }
+        public string HolderName { get => holderName; set => holderName = value; }
+        public string ExperitionDate1 { get => ExperitionDate; set => ExperitionDate = value; }
+        public int CardNumber { get => cardNumber; set => cardNumber = value; }
+        public int CvvCode { get => cvvCode; set => cvvCode = value; }
+
+
+        public int SpotNumber { get => spotNumber; set => spotNumber = value; }
+        public string SpotName { get => spotName; set => spotName = value; }
+
+
+        public string Carname { get => carname; set => carname = value; }
+        public string Cartype { get => cartype; set => cartype = value; }
+        public int Time { get => time; set => time = value; }
     }
 }

@@ -17,9 +17,10 @@ namespace Centre_D_affaire.GestionParking
 
     public partial class LoginForm : Form
     {
-        List<info> list = new List<info>();
+        public List<info> list = new List<info>();
         public bool x = false;
-        public bool y = true;
+        public bool y = false;
+        public bool z = false;
         //XmlSerializer xml;
 
 
@@ -102,10 +103,12 @@ namespace Centre_D_affaire.GestionParking
                 if (UserName.Text == "")
                 {
                     MessageBox.Show("User Name vide", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    z = true;
                 }
                 else
                 {
                     MessageBox.Show("Password vide", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    z = true;
                 }
             }
             if (UserName.Text != "" || Password.Text != "")
@@ -133,7 +136,7 @@ namespace Centre_D_affaire.GestionParking
                         //    }
                         if (Password.Text == i.Password2 && UserName.Text == i.Username2)
                         {
-                            MessageBox.Show("Good to go", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Correct, Click Ok to Continue ", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             x = true;
 
                             this.Hide();
@@ -144,17 +147,15 @@ namespace Centre_D_affaire.GestionParking
                         }
                     }
                 
-                    if (x == false)
+                    if (x == false && z == false)
                     //if (UserName.Text == "" || Password.Text == "" )
-
                     {
                         foreach (info i in list)
                         {
                             if (Password.Text != i.Password2 && UserName.Text == i.Username2)
                             {
                                 MessageBox.Show("Password incorrect", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                y = false;
-
+                                y = true;
                                 break;
                             }
                             else
@@ -162,14 +163,14 @@ namespace Centre_D_affaire.GestionParking
                                 if (UserName.Text != i.Username2 && Password.Text == i.Password2)
                                 {
                                     MessageBox.Show("UserName incorrect", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    y = false;
+                                    y = true;
                                     break;
                                 }
                             }
                         }
-                        foreach (info i in list)
-                        {
-                            if (y == true )
+                        if (y == false && UserName.Text != "" && Password.Text != "")
+                            {
+                            foreach (info i in list)
                             {
                                 if (UserName.Text != i.Username2 && Password.Text != i.Password2)
                                 {
@@ -277,34 +278,41 @@ namespace Centre_D_affaire.GestionParking
             }
             else
             {
-                info signup = new info(username2.Text, password2.Text, email.Text, int.Parse(telephone.Text));
-
-                signup.Username2 = username2.Text;
-                signup.Password2 = password2.Text;
-                signup.Email = email.Text;
-                signup.Telephone = int.Parse(telephone.Text);
-
-                if (File.Exists("C:\\data.xml"))
+                try
                 {
-                    FileStream file0 = new FileStream("C:\\data.xml", FileMode.Open, FileAccess.Read);
-                    XmlSerializer xml0 = new XmlSerializer(typeof(List<info>));
+                    info signup = new info(username2.Text, password2.Text, email.Text, int.Parse(telephone.Text));
 
-                    list = (List<info>)xml0.Deserialize(file0);
-                    file0.Close();
-                }
+                    signup.Username2 = username2.Text;
+                    signup.Password2 = password2.Text;
+                    signup.Email = email.Text;
+                    signup.Telephone = int.Parse(telephone.Text);
+
+                    if (File.Exists("C:\\data.xml"))
+                    {
+                        FileStream file0 = new FileStream("C:\\data.xml", FileMode.Open, FileAccess.Read);
+                        XmlSerializer xml0 = new XmlSerializer(typeof(List<info>));
+
+                        list = (List<info>)xml0.Deserialize(file0);
+                        file0.Close();
+                    }
 
                     list.Add(signup);
 
-                XmlSerializer xml = new XmlSerializer(typeof(List<info>));
+                    XmlSerializer xml = new XmlSerializer(typeof(List<info>));
 
-                FileStream file = new FileStream("C:\\data.xml", FileMode.Create, FileAccess.Write);
+                    FileStream file = new FileStream("C:\\data.xml", FileMode.Create, FileAccess.Write);
 
-                xml.Serialize(file, list);
-                file.Close();
+                    xml.Serialize(file, list);
+                    file.Close();
 
-                panelSIGNUP.Hide();
-                PanelSIGNIN.Show();
-                vide();
+                    panelSIGNUP.Hide();
+                    PanelSIGNIN.Show();
+                    vide();
+                }
+                catch (Exception a)
+                {
+                    MessageBox.Show(a.Message, "attention", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
 
 

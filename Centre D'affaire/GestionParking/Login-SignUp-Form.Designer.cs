@@ -178,7 +178,7 @@ namespace Centre_D_affaire.GestionParking
             this.panelSIGNUP.Controls.Add(this.label9);
             this.panelSIGNUP.Controls.Add(this.label10);
             this.panelSIGNUP.Controls.Add(this.username2);
-            this.panelSIGNUP.Location = new System.Drawing.Point(593, 28);
+            this.panelSIGNUP.Location = new System.Drawing.Point(593, 27);
             this.panelSIGNUP.Name = "panelSIGNUP";
             this.panelSIGNUP.ShowBorders = true;
             this.panelSIGNUP.Size = new System.Drawing.Size(236, 382);
@@ -1009,6 +1009,7 @@ namespace Centre_D_affaire.GestionParking
             this.LoginBTN.TabIndex = 17;
             this.LoginBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LoginBTN.Click += new System.EventHandler(this.LoginBTN_Click);
+            this.LoginBTN.Enter += new System.EventHandler(this.LoginBTN_Click);
             // 
             // UserName
             // 
@@ -1118,7 +1119,7 @@ namespace Centre_D_affaire.GestionParking
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoginForm";
+            this.Text = "Login/LogOut";
             this.Load += new System.EventHandler(this.LoginForm_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1146,7 +1147,6 @@ namespace Centre_D_affaire.GestionParking
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
-        private Bunifu.UI.WinForms.BunifuTextBox UserName;
         private Bunifu.UI.WinForms.BunifuTextBox Password;
         private Bunifu.Framework.UI.BunifuThinButton2 LoginBTN;
         private Bunifu.UI.WinForms.BunifuToggleSwitch ShowPasswordToggleSwitch1;
@@ -1168,5 +1168,6 @@ namespace Centre_D_affaire.GestionParking
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private Bunifu.UI.WinForms.BunifuTextBox username2;
+        private Bunifu.UI.WinForms.BunifuTextBox UserName;
     }
 }

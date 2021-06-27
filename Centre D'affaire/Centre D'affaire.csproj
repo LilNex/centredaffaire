@@ -309,5 +309,56 @@
   <ItemGroup>
     <None Include="Resources\PicsArt_05-30-07.48.01[1].jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-sharing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_06-17-06.01.19[1].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_location_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_rounded_left_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online_payment_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rent_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visa_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastercard_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paypal_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_30px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
