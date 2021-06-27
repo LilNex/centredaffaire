@@ -31,118 +31,118 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
             this.GbJ1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnPause = new System.Windows.Forms.Button();
             this.btnPrix = new System.Windows.Forms.Button();
             this.btnOccupation = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnRest = new System.Windows.Forms.Button();
             this.LblNumeroJ1 = new System.Windows.Forms.Label();
             this.LblNameJ1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pnlTitle = new System.Windows.Forms.Panel();
-            this.lblBillHot = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblBillHot = new System.Windows.Forms.Label();
             this.FlpMenu = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picHome = new System.Windows.Forms.PictureBox();
             this.btnHome = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button46 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button47 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button48 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.button34 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.button40 = new System.Windows.Forms.Button();
+            this.button41 = new System.Windows.Forms.Button();
             this.button42 = new System.Windows.Forms.Button();
             this.button43 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.button41 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
             this.button45 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picHome = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.btnPause = new System.Windows.Forms.Button();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.btnRest = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.GbJ1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             this.FlpMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // GbJ1
@@ -177,6 +177,21 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // btnPause
+            // 
+            this.btnPause.BackColor = System.Drawing.Color.Transparent;
+            this.btnPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPause.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPause.ForeColor = System.Drawing.Color.White;
+            this.btnPause.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
+            this.btnPause.Location = new System.Drawing.Point(62, 93);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.Size = new System.Drawing.Size(45, 38);
+            this.btnPause.TabIndex = 18;
+            this.btnPause.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPause.UseVisualStyleBackColor = false;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
+            // 
             // btnPrix
             // 
             this.btnPrix.BackColor = System.Drawing.Color.Transparent;
@@ -204,6 +219,35 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnOccupation.TabIndex = 15;
             this.btnOccupation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOccupation.UseVisualStyleBackColor = false;
+            // 
+            // btnStart
+            // 
+            this.btnStart.BackColor = System.Drawing.Color.Transparent;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.ForeColor = System.Drawing.Color.White;
+            this.btnStart.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.btnStart.Location = new System.Drawing.Point(11, 93);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(45, 38);
+            this.btnStart.TabIndex = 14;
+            this.btnStart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // btnRest
+            // 
+            this.btnRest.BackColor = System.Drawing.Color.Transparent;
+            this.btnRest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRest.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRest.ForeColor = System.Drawing.Color.White;
+            this.btnRest.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.btnRest.Location = new System.Drawing.Point(113, 93);
+            this.btnRest.Name = "btnRest";
+            this.btnRest.Size = new System.Drawing.Size(45, 38);
+            this.btnRest.TabIndex = 13;
+            this.btnRest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRest.UseVisualStyleBackColor = false;
             // 
             // LblNumeroJ1
             // 
@@ -255,6 +299,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
+            this.button5.Location = new System.Drawing.Point(62, 93);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(45, 38);
+            this.button5.TabIndex = 18;
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Transparent;
@@ -282,6 +340,34 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button7.TabIndex = 15;
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.button8.Location = new System.Drawing.Point(11, 93);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(45, 38);
+            this.button8.TabIndex = 14;
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.button9.Location = new System.Drawing.Point(113, 93);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(45, 38);
+            this.button9.TabIndex = 13;
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -333,6 +419,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = false;
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Transparent;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
+            this.button11.Location = new System.Drawing.Point(62, 93);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(45, 38);
+            this.button11.TabIndex = 18;
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.UseVisualStyleBackColor = false;
+            // 
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.Transparent;
@@ -360,6 +460,34 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button13.TabIndex = 15;
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Transparent;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ForeColor = System.Drawing.Color.White;
+            this.button14.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.button14.Location = new System.Drawing.Point(11, 93);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(45, 38);
+            this.button14.TabIndex = 14;
+            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.Transparent;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.ForeColor = System.Drawing.Color.White;
+            this.button15.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.button15.Location = new System.Drawing.Point(113, 93);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(45, 38);
+            this.button15.TabIndex = 13;
+            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button15.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -390,18 +518,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pnlTitle.Size = new System.Drawing.Size(810, 94);
             this.pnlTitle.TabIndex = 32;
             // 
-            // lblBillHot
-            // 
-            this.lblBillHot.AutoSize = true;
-            this.lblBillHot.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.lblBillHot.Font = new System.Drawing.Font("Lucida Fax", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBillHot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblBillHot.Location = new System.Drawing.Point(313, 9);
-            this.lblBillHot.Name = "lblBillHot";
-            this.lblBillHot.Size = new System.Drawing.Size(376, 74);
-            this.lblBillHot.TabIndex = 25;
-            this.lblBillHot.Text = "𝐵 𝐼 𝐿 𝐿 𝒜 𝑅 𝒟";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -414,6 +530,19 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button1.TabIndex = 30;
             this.button1.Text = "C O N N E C T E R";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_4);
+            // 
+            // lblBillHot
+            // 
+            this.lblBillHot.AutoSize = true;
+            this.lblBillHot.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblBillHot.Font = new System.Drawing.Font("Lucida Fax", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBillHot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblBillHot.Location = new System.Drawing.Point(313, 9);
+            this.lblBillHot.Name = "lblBillHot";
+            this.lblBillHot.Size = new System.Drawing.Size(376, 74);
+            this.lblBillHot.TabIndex = 25;
+            this.lblBillHot.Text = "𝐵 𝐼 𝐿 𝐿 𝒜 𝑅 𝒟";
             // 
             // FlpMenu
             // 
@@ -430,6 +559,32 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.FlpMenu.Size = new System.Drawing.Size(213, 599);
             this.FlpMenu.TabIndex = 30;
             // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Image = global::Centre_D_affaire.Properties.Resources.outline_menu_black_24dp1;
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.Location = new System.Drawing.Point(3, 3);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(213, 96);
+            this.btnDashboard.TabIndex = 41;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Centre_D_affaire.Properties.Resources.billiard__2_;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 105);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(210, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.picHome);
@@ -438,6 +593,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(207, 62);
             this.panel1.TabIndex = 40;
+            // 
+            // picHome
+            // 
+            this.picHome.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.picHome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picHome.Image = global::Centre_D_affaire.Properties.Resources.outline_home_black_24dp1;
+            this.picHome.Location = new System.Drawing.Point(3, 3);
+            this.picHome.Name = "picHome";
+            this.picHome.Size = new System.Drawing.Size(48, 48);
+            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picHome.TabIndex = 34;
+            this.picHome.TabStop = false;
             // 
             // btnHome
             // 
@@ -464,6 +633,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel4.Size = new System.Drawing.Size(207, 62);
             this.panel4.TabIndex = 43;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Image = global::Centre_D_affaire.Properties.Resources.outline_help_black_24dp;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 34;
+            this.pictureBox4.TabStop = false;
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
@@ -487,6 +670,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(207, 62);
             this.panel2.TabIndex = 42;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_add_box_black_24dp;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 34;
+            this.pictureBox2.TabStop = false;
             // 
             // button46
             // 
@@ -512,6 +709,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel3.Size = new System.Drawing.Size(207, 62);
             this.panel3.TabIndex = 44;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Image = global::Centre_D_affaire.Properties.Resources.outline_support_agent_black_24dp2;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 34;
+            this.pictureBox3.TabStop = false;
+            // 
             // button47
             // 
             this.button47.BackColor = System.Drawing.Color.Transparent;
@@ -526,6 +737,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button47.Text = "SUPPORT";
             this.button47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button47.UseVisualStyleBackColor = false;
+            this.button47.Click += new System.EventHandler(this.button47_Click);
             // 
             // panel5
             // 
@@ -535,6 +747,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(207, 62);
             this.panel5.TabIndex = 45;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.Image = global::Centre_D_affaire.Properties.Resources.icons8_engrenage_60;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 34;
+            this.pictureBox5.TabStop = false;
             // 
             // button48
             // 
@@ -581,6 +807,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button16.UseVisualStyleBackColor = false;
             // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.Transparent;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.ForeColor = System.Drawing.Color.White;
+            this.button17.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
+            this.button17.Location = new System.Drawing.Point(62, 93);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(45, 38);
+            this.button17.TabIndex = 18;
+            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button17.UseVisualStyleBackColor = false;
+            // 
             // button18
             // 
             this.button18.BackColor = System.Drawing.Color.Transparent;
@@ -608,6 +848,34 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button19.TabIndex = 15;
             this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button19.UseVisualStyleBackColor = false;
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.Transparent;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ForeColor = System.Drawing.Color.White;
+            this.button20.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.button20.Location = new System.Drawing.Point(11, 93);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(45, 38);
+            this.button20.TabIndex = 14;
+            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.Transparent;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.ForeColor = System.Drawing.Color.White;
+            this.button21.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.button21.Location = new System.Drawing.Point(113, 93);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(45, 38);
+            this.button21.TabIndex = 13;
+            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -659,6 +927,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button22.UseVisualStyleBackColor = false;
             // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.Color.Transparent;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button23.ForeColor = System.Drawing.Color.White;
+            this.button23.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
+            this.button23.Location = new System.Drawing.Point(62, 93);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(45, 38);
+            this.button23.TabIndex = 18;
+            this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button23.UseVisualStyleBackColor = false;
+            // 
             // button24
             // 
             this.button24.BackColor = System.Drawing.Color.Transparent;
@@ -686,6 +968,34 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button25.TabIndex = 15;
             this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button25.UseVisualStyleBackColor = false;
+            // 
+            // button26
+            // 
+            this.button26.BackColor = System.Drawing.Color.Transparent;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button26.ForeColor = System.Drawing.Color.White;
+            this.button26.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.button26.Location = new System.Drawing.Point(11, 93);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(45, 38);
+            this.button26.TabIndex = 14;
+            this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button26.UseVisualStyleBackColor = false;
+            // 
+            // button27
+            // 
+            this.button27.BackColor = System.Drawing.Color.Transparent;
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button27.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button27.ForeColor = System.Drawing.Color.White;
+            this.button27.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.button27.Location = new System.Drawing.Point(113, 93);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(45, 38);
+            this.button27.TabIndex = 13;
+            this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button27.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -737,6 +1047,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button28.UseVisualStyleBackColor = false;
             // 
+            // button29
+            // 
+            this.button29.BackColor = System.Drawing.Color.Transparent;
+            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button29.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.ForeColor = System.Drawing.Color.White;
+            this.button29.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
+            this.button29.Location = new System.Drawing.Point(62, 93);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(45, 38);
+            this.button29.TabIndex = 18;
+            this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button29.UseVisualStyleBackColor = false;
+            // 
             // button30
             // 
             this.button30.BackColor = System.Drawing.Color.Transparent;
@@ -764,6 +1088,34 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button31.TabIndex = 15;
             this.button31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button31.UseVisualStyleBackColor = false;
+            // 
+            // button32
+            // 
+            this.button32.BackColor = System.Drawing.Color.Transparent;
+            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button32.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button32.ForeColor = System.Drawing.Color.White;
+            this.button32.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.button32.Location = new System.Drawing.Point(11, 93);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(45, 38);
+            this.button32.TabIndex = 14;
+            this.button32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button32.UseVisualStyleBackColor = false;
+            // 
+            // button33
+            // 
+            this.button33.BackColor = System.Drawing.Color.Transparent;
+            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button33.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button33.ForeColor = System.Drawing.Color.White;
+            this.button33.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.button33.Location = new System.Drawing.Point(113, 93);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(45, 38);
+            this.button33.TabIndex = 13;
+            this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button33.UseVisualStyleBackColor = false;
             // 
             // label9
             // 
@@ -815,6 +1167,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button34.UseVisualStyleBackColor = false;
             // 
+            // button35
+            // 
+            this.button35.BackColor = System.Drawing.Color.Transparent;
+            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button35.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button35.ForeColor = System.Drawing.Color.White;
+            this.button35.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
+            this.button35.Location = new System.Drawing.Point(57, 88);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(45, 38);
+            this.button35.TabIndex = 18;
+            this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button35.UseVisualStyleBackColor = false;
+            // 
             // button36
             // 
             this.button36.BackColor = System.Drawing.Color.Transparent;
@@ -842,6 +1208,35 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button37.TabIndex = 15;
             this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button37.UseVisualStyleBackColor = false;
+            // 
+            // button38
+            // 
+            this.button38.BackColor = System.Drawing.Color.Transparent;
+            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button38.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button38.ForeColor = System.Drawing.Color.White;
+            this.button38.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.button38.Location = new System.Drawing.Point(6, 89);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(45, 38);
+            this.button38.TabIndex = 14;
+            this.button38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button38.UseVisualStyleBackColor = false;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
+            // 
+            // button39
+            // 
+            this.button39.BackColor = System.Drawing.Color.Transparent;
+            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button39.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button39.ForeColor = System.Drawing.Color.White;
+            this.button39.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.button39.Location = new System.Drawing.Point(108, 89);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(45, 38);
+            this.button39.TabIndex = 13;
+            this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button39.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
@@ -893,6 +1288,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button40.UseVisualStyleBackColor = false;
             // 
+            // button41
+            // 
+            this.button41.BackColor = System.Drawing.Color.Transparent;
+            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button41.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button41.ForeColor = System.Drawing.Color.White;
+            this.button41.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
+            this.button41.Location = new System.Drawing.Point(57, 88);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(45, 38);
+            this.button41.TabIndex = 18;
+            this.button41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button41.UseVisualStyleBackColor = false;
+            // 
             // button42
             // 
             this.button42.BackColor = System.Drawing.Color.Transparent;
@@ -920,40 +1329,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button43.TabIndex = 15;
             this.button43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button43.UseVisualStyleBackColor = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 53);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(66, 24);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "label1";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(7, 20);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 24);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "label1";
-            // 
-            // button41
-            // 
-            this.button41.BackColor = System.Drawing.Color.Transparent;
-            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button41.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button41.ForeColor = System.Drawing.Color.White;
-            this.button41.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
-            this.button41.Location = new System.Drawing.Point(57, 88);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(45, 38);
-            this.button41.TabIndex = 18;
-            this.button41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button41.UseVisualStyleBackColor = false;
             // 
             // button44
             // 
@@ -983,398 +1358,25 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button45.UseVisualStyleBackColor = false;
             // 
-            // button35
+            // label13
             // 
-            this.button35.BackColor = System.Drawing.Color.Transparent;
-            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button35.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button35.ForeColor = System.Drawing.Color.White;
-            this.button35.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
-            this.button35.Location = new System.Drawing.Point(57, 88);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(45, 38);
-            this.button35.TabIndex = 18;
-            this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button35.UseVisualStyleBackColor = false;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(6, 53);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(66, 24);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "label1";
             // 
-            // button38
+            // label14
             // 
-            this.button38.BackColor = System.Drawing.Color.Transparent;
-            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button38.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button38.ForeColor = System.Drawing.Color.White;
-            this.button38.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.button38.Location = new System.Drawing.Point(6, 89);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(45, 38);
-            this.button38.TabIndex = 14;
-            this.button38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button38.UseVisualStyleBackColor = false;
-            this.button38.Click += new System.EventHandler(this.button38_Click);
-            // 
-            // button39
-            // 
-            this.button39.BackColor = System.Drawing.Color.Transparent;
-            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button39.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button39.ForeColor = System.Drawing.Color.White;
-            this.button39.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.button39.Location = new System.Drawing.Point(108, 89);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(45, 38);
-            this.button39.TabIndex = 13;
-            this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button39.UseVisualStyleBackColor = false;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.Transparent;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
-            this.button17.Location = new System.Drawing.Point(62, 93);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(45, 38);
-            this.button17.TabIndex = 18;
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.Transparent;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.button20.Location = new System.Drawing.Point(11, 93);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(45, 38);
-            this.button20.TabIndex = 14;
-            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.Transparent;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.Color.White;
-            this.button21.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.button21.Location = new System.Drawing.Point(113, 93);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(45, 38);
-            this.button21.TabIndex = 13;
-            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.Image = global::Centre_D_affaire.Properties.Resources.outline_menu_black_24dp1;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(3, 3);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(213, 96);
-            this.btnDashboard.TabIndex = 41;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Centre_D_affaire.Properties.Resources.billiard__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 105);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
-            // 
-            // picHome
-            // 
-            this.picHome.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.picHome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.picHome.Image = global::Centre_D_affaire.Properties.Resources.outline_home_black_24dp1;
-            this.picHome.Location = new System.Drawing.Point(3, 3);
-            this.picHome.Name = "picHome";
-            this.picHome.Size = new System.Drawing.Size(48, 48);
-            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picHome.TabIndex = 34;
-            this.picHome.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.Image = global::Centre_D_affaire.Properties.Resources.outline_help_black_24dp;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 34;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_add_box_black_24dp;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 34;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = global::Centre_D_affaire.Properties.Resources.outline_support_agent_black_24dp2;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 34;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.Image = global::Centre_D_affaire.Properties.Resources.icons8_engrenage_60;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 34;
-            this.pictureBox5.TabStop = false;
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.Color.Transparent;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.ForeColor = System.Drawing.Color.White;
-            this.button23.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
-            this.button23.Location = new System.Drawing.Point(62, 93);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(45, 38);
-            this.button23.TabIndex = 18;
-            this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.UseVisualStyleBackColor = false;
-            // 
-            // button26
-            // 
-            this.button26.BackColor = System.Drawing.Color.Transparent;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.ForeColor = System.Drawing.Color.White;
-            this.button26.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.button26.Location = new System.Drawing.Point(11, 93);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(45, 38);
-            this.button26.TabIndex = 14;
-            this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button26.UseVisualStyleBackColor = false;
-            // 
-            // button27
-            // 
-            this.button27.BackColor = System.Drawing.Color.Transparent;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.ForeColor = System.Drawing.Color.White;
-            this.button27.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.button27.Location = new System.Drawing.Point(113, 93);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(45, 38);
-            this.button27.TabIndex = 13;
-            this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button27.UseVisualStyleBackColor = false;
-            // 
-            // button29
-            // 
-            this.button29.BackColor = System.Drawing.Color.Transparent;
-            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button29.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.ForeColor = System.Drawing.Color.White;
-            this.button29.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
-            this.button29.Location = new System.Drawing.Point(62, 93);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(45, 38);
-            this.button29.TabIndex = 18;
-            this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button29.UseVisualStyleBackColor = false;
-            // 
-            // button32
-            // 
-            this.button32.BackColor = System.Drawing.Color.Transparent;
-            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button32.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.ForeColor = System.Drawing.Color.White;
-            this.button32.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.button32.Location = new System.Drawing.Point(11, 93);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(45, 38);
-            this.button32.TabIndex = 14;
-            this.button32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button32.UseVisualStyleBackColor = false;
-            // 
-            // button33
-            // 
-            this.button33.BackColor = System.Drawing.Color.Transparent;
-            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button33.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button33.ForeColor = System.Drawing.Color.White;
-            this.button33.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.button33.Location = new System.Drawing.Point(113, 93);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(45, 38);
-            this.button33.TabIndex = 13;
-            this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button33.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
-            this.button11.Location = new System.Drawing.Point(62, 93);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(45, 38);
-            this.button11.TabIndex = 18;
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.Transparent;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.button14.Location = new System.Drawing.Point(11, 93);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(45, 38);
-            this.button14.TabIndex = 14;
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.Transparent;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.button15.Location = new System.Drawing.Point(113, 93);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(45, 38);
-            this.button15.TabIndex = 13;
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
-            this.button5.Location = new System.Drawing.Point(62, 93);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(45, 38);
-            this.button5.TabIndex = 18;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.button8.Location = new System.Drawing.Point(11, 93);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(45, 38);
-            this.button8.TabIndex = 14;
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.button9.Location = new System.Drawing.Point(113, 93);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(45, 38);
-            this.button9.TabIndex = 13;
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // btnPause
-            // 
-            this.btnPause.BackColor = System.Drawing.Color.Transparent;
-            this.btnPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPause.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPause.ForeColor = System.Drawing.Color.White;
-            this.btnPause.Image = global::Centre_D_affaire.Properties.Resources.outline_pause_black_24dp1;
-            this.btnPause.Location = new System.Drawing.Point(62, 93);
-            this.btnPause.Name = "btnPause";
-            this.btnPause.Size = new System.Drawing.Size(45, 38);
-            this.btnPause.TabIndex = 18;
-            this.btnPause.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPause.UseVisualStyleBackColor = false;
-            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
-            // 
-            // btnStart
-            // 
-            this.btnStart.BackColor = System.Drawing.Color.Transparent;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.White;
-            this.btnStart.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.btnStart.Location = new System.Drawing.Point(11, 93);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(45, 38);
-            this.btnStart.TabIndex = 14;
-            this.btnStart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStart.UseVisualStyleBackColor = false;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // btnRest
-            // 
-            this.btnRest.BackColor = System.Drawing.Color.Transparent;
-            this.btnRest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRest.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRest.ForeColor = System.Drawing.Color.White;
-            this.btnRest.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.btnRest.Location = new System.Drawing.Point(113, 93);
-            this.btnRest.Name = "btnRest";
-            this.btnRest.Size = new System.Drawing.Size(45, 38);
-            this.btnRest.TabIndex = 13;
-            this.btnRest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRest.UseVisualStyleBackColor = false;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(7, 20);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(66, 24);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "label1";
             // 
             // Billard
             // 
@@ -1405,15 +1407,21 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox2.PerformLayout();
             this.pnlTitle.ResumeLayout(false);
             this.FlpMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -1424,12 +1432,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

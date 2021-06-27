@@ -22,5 +22,17 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             MENU1 menu = new MENU1();
             menu.Show();
         }
+
+        private void button47_Click(object sender, EventArgs e)
+        {
+            FrmSupport FS = new FrmSupport();
+            FS.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmConnection FC = new FrmConnection();
+            FC.Show();
+        }
     }
 }

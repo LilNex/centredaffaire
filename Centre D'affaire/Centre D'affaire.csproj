@@ -107,6 +107,18 @@
     <Compile Include="GestionSalleDeJeux\FrmAbout.Designer.cs">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmConnection.Designer.cs">
+      <DependentUpon>FrmConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmSupport.Designer.cs">
+      <DependentUpon>FrmSupport.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionSalleDeJeux\MENU1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeJeux\FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmConnection.resx">
+      <DependentUpon>FrmConnection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeJeux\MENU1.resx">
       <DependentUpon>MENU1.cs</DependentUpon>

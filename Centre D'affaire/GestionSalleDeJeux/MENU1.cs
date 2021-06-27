@@ -38,5 +38,17 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
             //FlpMenu.Width = 67;
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FrmSupport FS = new FrmSupport();
+            FS.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FrmConnection FC = new FrmConnection();
+            FC.Show();
+        }
     }
 }
