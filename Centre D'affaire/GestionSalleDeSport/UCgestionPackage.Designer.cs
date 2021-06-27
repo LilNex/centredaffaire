@@ -356,7 +356,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTdetails.IconRight = null;
             this.TXTdetails.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.TXTdetails.Lines = new string[0];
-            this.TXTdetails.Location = new System.Drawing.Point(433, 112);
+            this.TXTdetails.Location = new System.Drawing.Point(407, 132);
             this.TXTdetails.MaxLength = 32767;
             this.TXTdetails.MinimumSize = new System.Drawing.Size(1, 1);
             this.TXTdetails.Modified = false;
