@@ -16,5 +16,15 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
             InitializeComponent();
         }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            
+        }
+
+        private void FrmSupport_Load(object sender, EventArgs e)
+        {
+            WebSupport.Navigate("https://support.google.com/?hl=fr");
+        }
     }
 }

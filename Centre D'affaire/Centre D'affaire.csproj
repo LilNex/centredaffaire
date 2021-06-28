@@ -82,24 +82,25 @@
     <Compile Include="GestionPersonnel\frmGPersonnel.Designer.cs">
       <DependentUpon>frmGPersonnel.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\ARCARDE STREET.cs">
+    <Compile Include="GestionSalleDeJeux\FrmARCARDE STREET.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\ARCARDE STREET.Designer.cs">
-      <DependentUpon>ARCARDE STREET.cs</DependentUpon>
+    <Compile Include="GestionSalleDeJeux\FrmARCARDE STREET.Designer.cs">
+      <DependentUpon>FrmARCARDE STREET.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\BabyFoot.cs">
+    <Compile Include="GestionSalleDeJeux\FrmBabyFoot.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\BabyFoot.Designer.cs">
-      <DependentUpon>BabyFoot.cs</DependentUpon>
+    <Compile Include="GestionSalleDeJeux\FrmBabyFoot.Designer.cs">
+      <DependentUpon>FrmBabyFoot.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSalleDeJeux\clsEmployersSDJ.cs" />
     <Compile Include="GestionSalleDeJeux\ClsListeSDJ.cs" />
-    <Compile Include="GestionSalleDeJeux\Billard.cs">
+    <Compile Include="GestionSalleDeJeux\FrmBillard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\Billard.Designer.cs">
-      <DependentUpon>Billard.cs</DependentUpon>
+    <Compile Include="GestionSalleDeJeux\FrmBillard.Designer.cs">
+      <DependentUpon>FrmBillard.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSalleDeJeux\FrmAbout.cs">
       <SubType>Form</SubType>
@@ -113,24 +114,30 @@
     <Compile Include="GestionSalleDeJeux\FrmConnection.Designer.cs">
       <DependentUpon>FrmConnection.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmNewMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmNewMember.Designer.cs">
+      <DependentUpon>FrmNewMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionSalleDeJeux\FrmSupport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GestionSalleDeJeux\FrmSupport.Designer.cs">
       <DependentUpon>FrmSupport.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\MENU1.cs">
+    <Compile Include="GestionSalleDeJeux\FrmMENU1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\MENU1.Designer.cs">
-      <DependentUpon>MENU1.cs</DependentUpon>
+    <Compile Include="GestionSalleDeJeux\FrmMENU1.Designer.cs">
+      <DependentUpon>FrmMENU1.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSalleDeJeux\OccupationJ.cs" />
-    <Compile Include="GestionSalleDeJeux\PS4.cs">
+    <Compile Include="GestionSalleDeJeux\FrmPS4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\PS4.Designer.cs">
-      <DependentUpon>PS4.cs</DependentUpon>
+    <Compile Include="GestionSalleDeJeux\FrmPS4.Designer.cs">
+      <DependentUpon>FrmPS4.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSalleDeJeux\SalleDeJeux.cs" />
     <Compile Include="GestionSalleDeJeux\Jeux.cs" />
@@ -148,14 +155,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GestionSalleDeJeux\ARCARDE STREET.resx">
-      <DependentUpon>ARCARDE STREET.cs</DependentUpon>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmARCARDE STREET.resx">
+      <DependentUpon>FrmARCARDE STREET.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionSalleDeJeux\BabyFoot.resx">
-      <DependentUpon>BabyFoot.cs</DependentUpon>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmBabyFoot.resx">
+      <DependentUpon>FrmBabyFoot.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionSalleDeJeux\Billard.resx">
-      <DependentUpon>Billard.cs</DependentUpon>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmBillard.resx">
+      <DependentUpon>FrmBillard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeJeux\FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
@@ -163,11 +170,17 @@
     <EmbeddedResource Include="GestionSalleDeJeux\FrmConnection.resx">
       <DependentUpon>FrmConnection.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionSalleDeJeux\MENU1.resx">
-      <DependentUpon>MENU1.cs</DependentUpon>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmNewMember.resx">
+      <DependentUpon>FrmNewMember.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionSalleDeJeux\PS4.resx">
-      <DependentUpon>PS4.cs</DependentUpon>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmSupport.resx">
+      <DependentUpon>FrmSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmMENU1.resx">
+      <DependentUpon>FrmMENU1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmPS4.resx">
+      <DependentUpon>FrmPS4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

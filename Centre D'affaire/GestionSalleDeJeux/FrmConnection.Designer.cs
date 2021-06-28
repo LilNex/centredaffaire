@@ -29,113 +29,120 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lblNumero = new System.Windows.Forms.Label();
+            this.twtNumero = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblConnection = new System.Windows.Forms.Label();
+            this.btnForgetPassword = new System.Windows.Forms.Button();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.btnNewMember = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblNumero
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(48, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "EMAIL";
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Location = new System.Drawing.Point(25, 75);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(96, 25);
+            this.lblNumero.TabIndex = 1;
+            this.lblNumero.Text = "Numero";
             // 
-            // textBox1
+            // twtNumero
             // 
-            this.textBox1.Location = new System.Drawing.Point(216, 51);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 38);
-            this.textBox1.TabIndex = 2;
+            this.twtNumero.Location = new System.Drawing.Point(195, 62);
+            this.twtNumero.Multiline = true;
+            this.twtNumero.Name = "twtNumero";
+            this.twtNumero.Size = new System.Drawing.Size(173, 38);
+            this.twtNumero.TabIndex = 2;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(216, 109);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 38);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtPassword.Location = new System.Drawing.Point(195, 110);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(173, 38);
+            this.txtPassword.TabIndex = 4;
+            this.txtPassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // label2
+            // lblPassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(48, 118);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 29);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "PASSWORD";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(25, 123);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(151, 25);
+            this.lblPassword.TabIndex = 3;
+            this.lblPassword.Text = "PASSWORD";
             // 
-            // label3
+            // lblConnection
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(125, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 29);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Connection";
+            this.lblConnection.AutoSize = true;
+            this.lblConnection.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConnection.Location = new System.Drawing.Point(116, 19);
+            this.lblConnection.Name = "lblConnection";
+            this.lblConnection.Size = new System.Drawing.Size(155, 31);
+            this.lblConnection.TabIndex = 5;
+            this.lblConnection.Text = "Connection";
             // 
-            // button1
+            // btnForgetPassword
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(53, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 26);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Forget Password";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnForgetPassword.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnForgetPassword.FlatAppearance.BorderSize = 0;
+            this.btnForgetPassword.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnForgetPassword.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForgetPassword.Location = new System.Drawing.Point(53, 206);
+            this.btnForgetPassword.Name = "btnForgetPassword";
+            this.btnForgetPassword.Size = new System.Drawing.Size(141, 26);
+            this.btnForgetPassword.TabIndex = 6;
+            this.btnForgetPassword.Text = "Forget Password";
+            this.btnForgetPassword.UseVisualStyleBackColor = false;
+            this.btnForgetPassword.Click += new System.EventHandler(this.btnForgetPassword_Click);
             // 
-            // button2
+            // btnConnect
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(130, 165);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 35);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Connect";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnConnect.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnConnect.FlatAppearance.BorderSize = 0;
+            this.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConnect.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConnect.Location = new System.Drawing.Point(130, 165);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(141, 35);
+            this.btnConnect.TabIndex = 7;
+            this.btnConnect.Text = "Connect";
+            this.btnConnect.UseVisualStyleBackColor = false;
+            this.btnConnect.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnNewMember
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button3.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(200, 206);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 26);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "New Membre";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnNewMember.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnNewMember.FlatAppearance.BorderSize = 0;
+            this.btnNewMember.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNewMember.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewMember.Location = new System.Drawing.Point(195, 206);
+            this.btnNewMember.Name = "btnNewMember";
+            this.btnNewMember.Size = new System.Drawing.Size(141, 26);
+            this.btnNewMember.TabIndex = 8;
+            this.btnNewMember.Text = "New Membre";
+            this.btnNewMember.UseVisualStyleBackColor = false;
+            this.btnNewMember.Click += new System.EventHandler(this.btnNewMember_Click);
             // 
             // FrmConnection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(408, 244);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnNewMember);
+            this.Controls.Add(this.btnConnect);
+            this.Controls.Add(this.btnForgetPassword);
+            this.Controls.Add(this.lblConnection);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.twtNumero);
+            this.Controls.Add(this.lblNumero);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmConnection";
             this.Text = "FrmConnection";
             this.ResumeLayout(false);
@@ -145,13 +152,13 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lblNumero;
+        private System.Windows.Forms.TextBox twtNumero;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label lblConnection;
+        private System.Windows.Forms.Button btnForgetPassword;
+        private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnNewMember;
     }
 }

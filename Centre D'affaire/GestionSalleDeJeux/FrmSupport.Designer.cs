@@ -29,12 +29,34 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.WebSupport = new System.Windows.Forms.WebBrowser();
+            this.SuspendLayout();
+            // 
+            // WebSupport
+            // 
+            this.WebSupport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WebSupport.Location = new System.Drawing.Point(0, 0);
+            this.WebSupport.MinimumSize = new System.Drawing.Size(20, 20);
+            this.WebSupport.Name = "WebSupport";
+            this.WebSupport.Size = new System.Drawing.Size(857, 493);
+            this.WebSupport.TabIndex = 0;
+            this.WebSupport.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
+            // 
+            // FrmSupport
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(857, 493);
+            this.Controls.Add(this.WebSupport);
+            this.Name = "FrmSupport";
             this.Text = "FrmSupport";
+            this.Load += new System.EventHandler(this.FrmSupport_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.WebBrowser WebSupport;
     }
 }

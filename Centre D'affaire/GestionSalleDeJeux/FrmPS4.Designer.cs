@@ -1,7 +1,7 @@
 ﻿
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    partial class PS4
+    partial class FrmPS4
     {
         /// <summary>
         /// Required designer variable.

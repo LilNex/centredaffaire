@@ -1,7 +1,7 @@
 ﻿
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    partial class MENU1
+    partial class FrmMENU1
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button6 = new System.Windows.Forms.Button();
             this.FlpMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.picHome = new System.Windows.Forms.PictureBox();
             this.btnHome = new System.Windows.Forms.Button();
@@ -50,21 +49,21 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.PnlBillard = new System.Windows.Forms.Panel();
+            this.btnBillard = new System.Windows.Forms.Button();
+            this.btnImageBillard = new System.Windows.Forms.Button();
+            this.PnlPS4 = new System.Windows.Forms.Panel();
+            this.btnPS4 = new System.Windows.Forms.Button();
+            this.btnImagePS4 = new System.Windows.Forms.Button();
+            this.PnlAcracdeStreet = new System.Windows.Forms.Panel();
+            this.btnArcardeStreet = new System.Windows.Forms.Button();
+            this.btnImageArcardeStreet = new System.Windows.Forms.Button();
+            this.PnlBabyFoot = new System.Windows.Forms.Panel();
+            this.btnImageBabayFoot = new System.Windows.Forms.Button();
+            this.btnBabayFoot = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTitle.SuspendLayout();
             this.FlpMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             this.panel4.SuspendLayout();
@@ -75,10 +74,11 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
+            this.PnlBillard.SuspendLayout();
+            this.PnlPS4.SuspendLayout();
+            this.PnlAcracdeStreet.SuspendLayout();
+            this.PnlBabyFoot.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitle
@@ -86,9 +86,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pnlTitle.BackColor = System.Drawing.Color.LightSteelBlue;
             this.pnlTitle.Controls.Add(this.lblBillHot);
             this.pnlTitle.Controls.Add(this.button6);
-            this.pnlTitle.Location = new System.Drawing.Point(214, 1);
+            this.pnlTitle.Location = new System.Drawing.Point(64, 1);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(799, 99);
+            this.pnlTitle.Size = new System.Drawing.Size(949, 99);
             this.pnlTitle.TabIndex = 33;
             // 
             // lblBillHot
@@ -97,7 +97,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.lblBillHot.BackColor = System.Drawing.Color.Transparent;
             this.lblBillHot.Font = new System.Drawing.Font("Lucida Fax", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBillHot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblBillHot.Location = new System.Drawing.Point(93, 8);
+            this.lblBillHot.Location = new System.Drawing.Point(178, 8);
             this.lblBillHot.Name = "lblBillHot";
             this.lblBillHot.Size = new System.Drawing.Size(390, 74);
             this.lblBillHot.TabIndex = 25;
@@ -109,7 +109,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Lucida Bright", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(529, 29);
+            this.button6.Location = new System.Drawing.Point(678, 29);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(216, 47);
             this.button6.TabIndex = 30;
@@ -129,7 +129,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.FlpMenu.Controls.Add(this.panel5);
             this.FlpMenu.Location = new System.Drawing.Point(1, 1);
             this.FlpMenu.Name = "FlpMenu";
-            this.FlpMenu.Size = new System.Drawing.Size(215, 599);
+            this.FlpMenu.Size = new System.Drawing.Size(64, 599);
             this.FlpMenu.TabIndex = 32;
             this.FlpMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.FlpMenu_Paint);
             // 
@@ -149,15 +149,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 105);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -350,138 +341,156 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // panel6
+            // PnlBillard
             // 
-            this.panel6.Controls.Add(this.button3);
-            this.panel6.Controls.Add(this.button2);
-            this.panel6.Location = new System.Drawing.Point(259, 137);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(264, 171);
-            this.panel6.TabIndex = 34;
+            this.PnlBillard.Controls.Add(this.btnBillard);
+            this.PnlBillard.Controls.Add(this.btnImageBillard);
+            this.PnlBillard.Location = new System.Drawing.Point(120, 142);
+            this.PnlBillard.Name = "PnlBillard";
+            this.PnlBillard.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.PnlBillard.Size = new System.Drawing.Size(264, 171);
+            this.PnlBillard.TabIndex = 34;
             // 
-            // button3
+            // btnBillard
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(34, 119);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(202, 43);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "B i l l a r d";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBillard.BackColor = System.Drawing.Color.Transparent;
+            this.btnBillard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBillard.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillard.Location = new System.Drawing.Point(34, 119);
+            this.btnBillard.Name = "btnBillard";
+            this.btnBillard.Size = new System.Drawing.Size(202, 43);
+            this.btnBillard.TabIndex = 1;
+            this.btnBillard.Text = "B i l l a r d";
+            this.btnBillard.UseVisualStyleBackColor = false;
+            this.btnBillard.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnImageBillard
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Image = global::Centre_D_affaire.Properties.Resources.queue_de_billard;
-            this.button2.Location = new System.Drawing.Point(3, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(258, 112);
-            this.button2.TabIndex = 0;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnImageBillard.BackColor = System.Drawing.Color.Transparent;
+            this.btnImageBillard.FlatAppearance.BorderSize = 0;
+            this.btnImageBillard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnImageBillard.Image = global::Centre_D_affaire.Properties.Resources.queue_de_billard;
+            this.btnImageBillard.Location = new System.Drawing.Point(3, 1);
+            this.btnImageBillard.Name = "btnImageBillard";
+            this.btnImageBillard.Size = new System.Drawing.Size(258, 112);
+            this.btnImageBillard.TabIndex = 0;
+            this.btnImageBillard.UseVisualStyleBackColor = false;
+            this.btnImageBillard.Click += new System.EventHandler(this.button2_Click);
             // 
-            // panel7
+            // PnlPS4
             // 
-            this.panel7.Controls.Add(this.button4);
-            this.panel7.Controls.Add(this.button9);
-            this.panel7.Location = new System.Drawing.Point(256, 342);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(264, 171);
-            this.panel7.TabIndex = 35;
+            this.PnlPS4.Controls.Add(this.btnPS4);
+            this.PnlPS4.Controls.Add(this.btnImagePS4);
+            this.PnlPS4.Location = new System.Drawing.Point(120, 342);
+            this.PnlPS4.Name = "PnlPS4";
+            this.PnlPS4.Size = new System.Drawing.Size(264, 171);
+            this.PnlPS4.TabIndex = 35;
             // 
-            // button4
+            // btnPS4
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(34, 119);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(202, 43);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "P S 4";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnPS4.BackColor = System.Drawing.Color.Transparent;
+            this.btnPS4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPS4.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPS4.Location = new System.Drawing.Point(34, 119);
+            this.btnPS4.Name = "btnPS4";
+            this.btnPS4.Size = new System.Drawing.Size(202, 43);
+            this.btnPS4.TabIndex = 1;
+            this.btnPS4.Text = "P S 4";
+            this.btnPS4.UseVisualStyleBackColor = false;
+            this.btnPS4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button9
+            // btnImagePS4
             // 
-            this.button9.BackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Image = global::Centre_D_affaire.Properties.Resources._52c973cdb6787241d3c7a0360dc7d140;
-            this.button9.Location = new System.Drawing.Point(3, 0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(258, 112);
-            this.button9.TabIndex = 0;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnImagePS4.BackColor = System.Drawing.Color.Transparent;
+            this.btnImagePS4.FlatAppearance.BorderSize = 0;
+            this.btnImagePS4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnImagePS4.Image = global::Centre_D_affaire.Properties.Resources._52c973cdb6787241d3c7a0360dc7d140;
+            this.btnImagePS4.Location = new System.Drawing.Point(3, 0);
+            this.btnImagePS4.Name = "btnImagePS4";
+            this.btnImagePS4.Size = new System.Drawing.Size(258, 112);
+            this.btnImagePS4.TabIndex = 0;
+            this.btnImagePS4.UseVisualStyleBackColor = false;
+            this.btnImagePS4.Click += new System.EventHandler(this.btnImagePS4_Click);
             // 
-            // panel8
+            // PnlAcracdeStreet
             // 
-            this.panel8.Controls.Add(this.button10);
-            this.panel8.Controls.Add(this.button11);
-            this.panel8.Location = new System.Drawing.Point(659, 342);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(264, 171);
-            this.panel8.TabIndex = 37;
+            this.PnlAcracdeStreet.Controls.Add(this.btnArcardeStreet);
+            this.PnlAcracdeStreet.Controls.Add(this.btnImageArcardeStreet);
+            this.PnlAcracdeStreet.Location = new System.Drawing.Point(659, 342);
+            this.PnlAcracdeStreet.Name = "PnlAcracdeStreet";
+            this.PnlAcracdeStreet.Size = new System.Drawing.Size(264, 171);
+            this.PnlAcracdeStreet.TabIndex = 37;
             // 
-            // button10
+            // btnArcardeStreet
             // 
-            this.button10.BackColor = System.Drawing.Color.Transparent;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(34, 119);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(202, 43);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "Arcade Street";
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnArcardeStreet.BackColor = System.Drawing.Color.Transparent;
+            this.btnArcardeStreet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnArcardeStreet.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArcardeStreet.Location = new System.Drawing.Point(34, 119);
+            this.btnArcardeStreet.Name = "btnArcardeStreet";
+            this.btnArcardeStreet.Size = new System.Drawing.Size(202, 43);
+            this.btnArcardeStreet.TabIndex = 1;
+            this.btnArcardeStreet.Text = "Arcade Street";
+            this.btnArcardeStreet.UseVisualStyleBackColor = false;
+            this.btnArcardeStreet.Click += new System.EventHandler(this.btnArcardeStreet_Click);
             // 
-            // button11
+            // btnImageArcardeStreet
             // 
-            this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Image = global::Centre_D_affaire.Properties.Resources.icons8_cabinet_d__39_arcade_50;
-            this.button11.Location = new System.Drawing.Point(3, 0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(258, 112);
-            this.button11.TabIndex = 0;
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnImageArcardeStreet.BackColor = System.Drawing.Color.Transparent;
+            this.btnImageArcardeStreet.FlatAppearance.BorderSize = 0;
+            this.btnImageArcardeStreet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnImageArcardeStreet.Image = global::Centre_D_affaire.Properties.Resources.icons8_cabinet_d__39_arcade_50;
+            this.btnImageArcardeStreet.Location = new System.Drawing.Point(3, 0);
+            this.btnImageArcardeStreet.Name = "btnImageArcardeStreet";
+            this.btnImageArcardeStreet.Size = new System.Drawing.Size(258, 112);
+            this.btnImageArcardeStreet.TabIndex = 0;
+            this.btnImageArcardeStreet.UseVisualStyleBackColor = false;
+            this.btnImageArcardeStreet.Click += new System.EventHandler(this.btnImageArcardeStreet_Click);
             // 
-            // panel9
+            // PnlBabyFoot
             // 
-            this.panel9.Controls.Add(this.button13);
-            this.panel9.Controls.Add(this.button12);
-            this.panel9.Location = new System.Drawing.Point(662, 137);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(264, 171);
-            this.panel9.TabIndex = 36;
+            this.PnlBabyFoot.Controls.Add(this.btnImageBabayFoot);
+            this.PnlBabyFoot.Controls.Add(this.btnBabayFoot);
+            this.PnlBabyFoot.Location = new System.Drawing.Point(662, 137);
+            this.PnlBabyFoot.Name = "PnlBabyFoot";
+            this.PnlBabyFoot.Size = new System.Drawing.Size(264, 171);
+            this.PnlBabyFoot.TabIndex = 36;
             // 
-            // button13
+            // btnImageBabayFoot
             // 
-            this.button13.BackColor = System.Drawing.Color.Transparent;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button13.Image = global::Centre_D_affaire.Properties.Resources._61h8_jBiGgL__AC_SX425_;
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button13.Location = new System.Drawing.Point(3, 5);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(258, 112);
-            this.button13.TabIndex = 2;
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnImageBabayFoot.BackColor = System.Drawing.Color.Transparent;
+            this.btnImageBabayFoot.FlatAppearance.BorderSize = 0;
+            this.btnImageBabayFoot.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnImageBabayFoot.Image = global::Centre_D_affaire.Properties.Resources._61h8_jBiGgL__AC_SX425_;
+            this.btnImageBabayFoot.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnImageBabayFoot.Location = new System.Drawing.Point(3, 5);
+            this.btnImageBabayFoot.Name = "btnImageBabayFoot";
+            this.btnImageBabayFoot.Size = new System.Drawing.Size(258, 112);
+            this.btnImageBabayFoot.TabIndex = 2;
+            this.btnImageBabayFoot.UseVisualStyleBackColor = false;
+            this.btnImageBabayFoot.Click += new System.EventHandler(this.btnImageBabayFoot_Click);
             // 
-            // button12
+            // btnBabayFoot
             // 
-            this.button12.BackColor = System.Drawing.Color.Transparent;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button12.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(31, 119);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(202, 43);
-            this.button12.TabIndex = 1;
-            this.button12.Text = "Baby Foot";
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnBabayFoot.BackColor = System.Drawing.Color.Transparent;
+            this.btnBabayFoot.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBabayFoot.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBabayFoot.Location = new System.Drawing.Point(31, 119);
+            this.btnBabayFoot.Name = "btnBabayFoot";
+            this.btnBabayFoot.Size = new System.Drawing.Size(202, 43);
+            this.btnBabayFoot.TabIndex = 1;
+            this.btnBabayFoot.Text = "Baby Foot";
+            this.btnBabayFoot.UseVisualStyleBackColor = false;
+            this.btnBabayFoot.Click += new System.EventHandler(this.btnBabayFoot_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(3, 105);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(210, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
             // 
             // MENU1
             // 
@@ -489,10 +498,10 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(977, 540);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.PnlAcracdeStreet);
+            this.Controls.Add(this.PnlPS4);
+            this.Controls.Add(this.PnlBabyFoot);
+            this.Controls.Add(this.PnlBillard);
             this.Controls.Add(this.pnlTitle);
             this.Controls.Add(this.FlpMenu);
             this.Name = "MENU1";
@@ -501,7 +510,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
             this.FlpMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
@@ -516,10 +524,11 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
+            this.PnlBillard.ResumeLayout(false);
+            this.PnlPS4.ResumeLayout(false);
+            this.PnlAcracdeStreet.ResumeLayout(false);
+            this.PnlBabyFoot.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -530,7 +539,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private System.Windows.Forms.Label lblBillHot;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.FlowLayoutPanel FlpMenu;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox picHome;
@@ -547,17 +555,18 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Panel PnlBillard;
+        private System.Windows.Forms.Button btnImageBillard;
+        private System.Windows.Forms.Button btnBillard;
+        private System.Windows.Forms.Panel PnlPS4;
+        private System.Windows.Forms.Button btnPS4;
+        private System.Windows.Forms.Button btnImagePS4;
+        private System.Windows.Forms.Panel PnlAcracdeStreet;
+        private System.Windows.Forms.Button btnArcardeStreet;
+        private System.Windows.Forms.Button btnImageArcardeStreet;
+        private System.Windows.Forms.Panel PnlBabyFoot;
+        private System.Windows.Forms.Button btnBabayFoot;
+        private System.Windows.Forms.Button btnImageBabayFoot;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

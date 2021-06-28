@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    public partial class FrmArcardeStreet : Form
+    public partial class FrmPS4 : Form
     {
-        public FrmArcardeStreet()
+        public FrmPS4()
         {
             InitializeComponent();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            MENU1 menu = new MENU1();
+            FrmMENU1 menu = new FrmMENU1();
             menu.Show();
         }
 

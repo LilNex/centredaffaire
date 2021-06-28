@@ -26,5 +26,17 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
 
         }
+
+        private void btnForgetPassword_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Veuillez contacter la responsable pour retourner votre mot de passe , pour plus d'info 0606060606", "Realisation de mot de passe");
+            
+        }
+
+        private void btnNewMember_Click(object sender, EventArgs e)
+        {
+            FrmNewMember FNM = new FrmNewMember();
+            FNM.Show();
+        }
     }
 }

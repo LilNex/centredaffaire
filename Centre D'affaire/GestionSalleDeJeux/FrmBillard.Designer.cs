@@ -1,7 +1,7 @@
 ﻿
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    partial class Billard
+    partial class FrmBillard
     {
         /// <summary>
         /// Required designer variable.

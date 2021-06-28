@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    public partial class BabyFoot : Form
+    public partial class FrmArcardeStreet : Form
     {
-        public BabyFoot()
+        public FrmArcardeStreet()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FrmConnection FC = new FrmConnection();
-            FC.Show();
-        }
-
         private void btnHome_Click(object sender, EventArgs e)
         {
-            MENU1 menu = new MENU1();
+            FrmMENU1 menu = new FrmMENU1();
             menu.Show();
         }
 
@@ -33,6 +27,12 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
             FrmSupport FS = new FrmSupport();
             FS.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmConnection FC = new FrmConnection();
+            FC.Show();
         }
     }
 }

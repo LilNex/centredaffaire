@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    public partial class Billard : Form
+    public partial class FrmBillard : Form
     {
         Jeux J1 = new Jeux();
         Jeux J2 = new Jeux();
         Jeux J3 = new Jeux();
         Jeux J4 = new Jeux();
-        public Billard()
+        public FrmBillard()
         {
             InitializeComponent();
         }
@@ -100,7 +100,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            MENU1 menu = new MENU1();
+            FrmMENU1 menu = new FrmMENU1();
             menu.Show();
         }
 

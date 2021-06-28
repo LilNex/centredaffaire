@@ -11,5 +11,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         public static List<SalleDeJeux> ListSalle = new List<SalleDeJeux>();
         public static List<Jeux> ListJeux = new List<Jeux>();
         public static List<OccupationJ> ListOccupztion = new List<OccupationJ>();
+        public static List<clsEmployersSDJ> ListE = new List<clsEmployersSDJ>();
     }
 }
