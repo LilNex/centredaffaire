@@ -63,9 +63,10 @@ namespace Centre_D_affaire.GestionPersonnel
         public static void loadListeDeps()
         {
             XmlSerializer XS = new XmlSerializer(ListeDepartement.GetType());
-            try { 
-            StreamReader r_fileDeps = new StreamReader("Liste des departements.xml");
-            ClsDepartement.ListeDepartement = (List<ClsDepartement>)XS.Deserialize(r_fileDeps);
+            try
+            {
+                StreamReader r_fileDeps = new StreamReader("Liste des departements.xml");
+                ClsDepartement.ListeDepartement = (List<ClsDepartement>)XS.Deserialize(r_fileDeps);
 
             }
             catch (FileNotFoundException e)

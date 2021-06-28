@@ -33,7 +33,7 @@ namespace Centre_D_affaire.GestionPersonnel
         {   
             InitializeComponent();
             setupForm();
-            ClsDepartement.loadListeDeps();
+           ClsDepartement.loadListeDeps();
             Functions.setFont(this);
             //clsRFID rFID = new clsRFID();
             //rFID.connectArduino();
