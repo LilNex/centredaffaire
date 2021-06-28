@@ -14,6 +14,7 @@ public class Class1
         public string Num { get => Num; set => Num = value; }
         public string RIB { get => RIB; set => RIB = value; }
     }
+        public Class1() { }
         public Class1(string nom,int num,int rib)
         {
          this.Nom = nom;
