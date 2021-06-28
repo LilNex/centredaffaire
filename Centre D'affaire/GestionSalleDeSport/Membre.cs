@@ -20,7 +20,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         public Membre
         (
-            string ID, string NOmComplet, DateTime DAteREJoin, int TElephone,
+            string ID, string NOmComplet, DateTime DAteREJoin, string TElephone,
             string EMail, string ADresse, string SEx ,Package PAckage , 
             int POids , int FRais, int DUree , int TOTal  , string status 
         )
@@ -64,6 +64,18 @@ namespace Centre_D_affaire.GestionSalleDeSport
             return -1; 
         }
 
+        public int Rerchercher(string id )
+        {
+            for (int i = 0; i < Listes.fg.Count; i++)
+            {
+                if (Listes.fg[i].Id == id)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
 
         public bool Ajouter(Membre m)
         {
@@ -76,6 +88,15 @@ namespace Centre_D_affaire.GestionSalleDeSport
             {
                 return false;
             }
+        }
+
+
+        public void Ajozuter(Membre m)
+        {
+          
+                Listes.fg.Add(m);
+              
+            
         }
         public bool supprimer(string numero)
         {

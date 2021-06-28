@@ -191,6 +191,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.GridMembre.Size = new System.Drawing.Size(1492, 288);
             this.GridMembre.TabIndex = 157;
             this.GridMembre.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Purple;
+            this.GridMembre.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridMembre_CellContentClick);
             // 
             // IDMembre
             // 

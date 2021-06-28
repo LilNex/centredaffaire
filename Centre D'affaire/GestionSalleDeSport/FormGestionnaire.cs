@@ -97,5 +97,28 @@ namespace Centre_D_affaire.GestionSalleDeSport
             frm.Show(); 
             
         }
+
+        private void BTNfermer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNstatistique_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new UserControl1(), sender);
+            Panel2.BackgroundColor = Color.FromArgb(210, 180, 140);
+
+        }
+
+        private void BTNPrésence_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new uccPresence(), sender);
+        }
+
+        private void FormGestionnaire_Load(object sender, EventArgs e)
+        {
+            OpenChildForm(new UserControl1(), sender);
+            Panel2.BackgroundColor = Color.FromArgb(210, 180, 140);
+        }
     }
 }

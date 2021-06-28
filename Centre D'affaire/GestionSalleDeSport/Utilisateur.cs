@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    class Utilisateur : Personne
+    class Utilisateur
     {
         private string nomUtilisateur;
         private string motPasse;
@@ -14,7 +14,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private string reponse; 
 
         public Utilisateur() { }
-        public Utilisateur(string ID, string NOmComplet, DateTime DAteREJoin, int TElephone, string EMail, string ADresse, string SEx,string NOmUtilisateur , string MOtpass , string quetionSecurite , string reponse) : base(ID, NOmComplet, DAteREJoin, TElephone, EMail, ADresse, SEx)
+        public Utilisateur(string NOmUtilisateur , string MOtpass , string quetionSecurite , string reponse)
         {
             this.NomUtilisateur = NOmUtilisateur;
             this.MotPass = MOtpass;
@@ -29,7 +29,31 @@ namespace Centre_D_affaire.GestionSalleDeSport
         public string Quetion { get => questionSecurite; set => questionSecurite = value; }
         public string Reponse { get => reponse; set => reponse = value; }
 
+        public int Rechercher(string id)
+        {
+            for (int i = 0; i < Listes.utilisateurs.Count; i++)
+            {
+                if (Listes.utilisateurs[i].nomUtilisateur == id)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
 
+
+        public bool Ajouter(Utilisateur m)
+        {
+            if (Rechercher(m.nomUtilisateur) == -1)
+            {
+                Listes.utilisateurs.Add(m);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
 

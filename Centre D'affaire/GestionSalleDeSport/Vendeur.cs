@@ -13,7 +13,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         //Constructure
         public Vendeur() { }
 
-        public Vendeur(string ID, string NOmComplet, DateTime DAteREJoin, int TElephone, string EMail, string ADresse, string SEx)
+        public Vendeur(string ID, string NOmComplet, DateTime DAteREJoin, string TElephone, string EMail, string ADresse, string SEx)
             : base(ID, NOmComplet,  DAteREJoin, TElephone, EMail, ADresse, SEx)
         {
 

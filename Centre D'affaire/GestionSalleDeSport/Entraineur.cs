@@ -14,7 +14,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         //Constructure
         public Entraineur() { }
 
-        public Entraineur(string ID, string NOmComplet, DateTime DAteREJoin, int TElephone, string EMail, string ADresse, string SEx ,int SAlarie )
+        public Entraineur(string ID, string NOmComplet, DateTime DAteREJoin, string TElephone, string EMail, string ADresse, string SEx ,int SAlarie )
             : base(ID, NOmComplet, DAteREJoin, TElephone, EMail, ADresse, SEx)
         {
            
@@ -22,7 +22,10 @@ namespace Centre_D_affaire.GestionSalleDeSport
    
         }
 
-       
+        public Entraineur(string ID, string NOmComplet, DateTime DAteREJoin, string TElephone, string EMail, string ADresse, string SEx) : base(ID, NOmComplet, DAteREJoin, TElephone, EMail, ADresse, SEx)
+        {
+        }
+
         public int Salaire { get => salaire; set => salaire = value; }
 
 

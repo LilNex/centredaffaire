@@ -51,7 +51,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             DateTime df = Convert.ToDateTime(d);
 
 
-            Entraineur v = new Entraineur(TXTnumero.Text, TXTnomcomplet.Text , DPdate.Value , int.Parse(TXTtele.Text), TxtEmail.Text, TXTadresse.Text, TXTgenre.Text , int.Parse(TXtSalaire.Text));
+            Entraineur v = new Entraineur(TXTnumero.Text, TXTnomcomplet.Text , DPdate.Value ,TXTtele.Text, TxtEmail.Text, TXTadresse.Text, TXTgenre.Text , int.Parse(TXtSalaire.Text));
             if (v.Ajouter(v) == true)
             {
                 MessageBox.Show(TXTnomcomplet.Text + " ajouté avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -97,7 +97,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 found.NomComplet = TXTnomcomplet.Text;
                 found.Email = TxtEmail.Text;
                 found.Adresse = TXTadresse.Text;
-                found.Telephone = int.Parse(TXTtele.Text);
+                found.Telephone = TXTtele.Text;
                 found.Sex = TXTgenre.Text;
                 found.DateJoin = DPdate.Value;
                 TXtSalaire.Text = TXtSalaire.Text;

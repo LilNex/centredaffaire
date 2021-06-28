@@ -19,20 +19,21 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void UCgestionMemebre_Load(object sender, EventArgs e)
         {
-
+            TXTtotal.Enabled = false;
+            TxtFrais.Enabled = false;
         }
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             Package pack = new Package(cbPackage.Text);
 
-            Membre mbr = new Membre(TXTnumero.Text ,TXTnomcomplet.Text ,DPdate.Value , int.Parse(TXTtele.Text),TxtEmail.Text , TXTadresse.Text , Cbgenre.Text , pack, int.Parse(TXTXpoids.Text) , int.Parse(TxtFrais.Text) , int.Parse( TXTDUREE.Text ), int.Parse( TXTtotal.Text) ,cbStatus.Text   );
+            Membre mbr = new Membre(TXTnumero.Text ,TXTnomcomplet.Text ,DPdate.Value ,TXTtele.Text,TxtEmail.Text , TXTadresse.Text , Cbgenre.Text , pack , int.Parse(TXTXpoids.Text) , int.Parse(TxtFrais.Text) , int.Parse( TXTDUREE.Text ), int.Parse( TXTtotal.Text) ,cbStatus.Text );
             if (mbr.Ajouter(mbr) == true)
             {
                 MessageBox.Show(TXTnomcomplet.Text + " ajouté avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                
-                ClassInterface i = new ClassInterface();
-                i.viderform(this);
+                //ClassInterface i = new ClassInterface();
+                //i.viderform(this);
             }
             else
             {
@@ -62,6 +63,22 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private void cbPackage_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void TxtFrais_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Cbgenre_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TXTDUREE_TextChanged(object sender, EventArgs e)
+        {
+            int s = int.Parse(TxtFrais.Text) * int.Parse(TXTDUREE.Text);
+            TXTtotal.Text = s.ToString();
         }
     }
 }

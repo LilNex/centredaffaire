@@ -132,8 +132,11 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=5.0.7.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.0.7\lib\net40\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -143,6 +146,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AchatsLogistiquePatrimoine\frmALP.cs">
@@ -229,6 +233,12 @@
     <Compile Include="GestionSalleDeSport\Paiement.cs" />
     <Compile Include="GestionSalleDeSport\Personne.cs" />
     <Compile Include="GestionSalleDeSport\Produit.cs" />
+    <Compile Include="GestionSalleDeSport\uccPresence.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\uccPresence.Designer.cs">
+      <DependentUpon>uccPresence.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionSalleDeSport\UCgestionEntraineur.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -265,6 +275,12 @@
     <Compile Include="GestionSalleDeSport\UCGestionPaiment.Designer.cs">
       <DependentUpon>UCGestionPaiment.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSalleDeSport\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeSport\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionSalleDeSport\Utilisateur.cs" />
     <Compile Include="GestionSalleDeSport\Vendeur.cs" />
     <Compile Include="LocationEspacesSalleReunion\frmLESR.cs">
@@ -296,6 +312,9 @@
     <EmbeddedResource Include="GestionSalleDeSport\FormSignIn.resx">
       <DependentUpon>FormSignIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeSport\uccPresence.resx">
+      <DependentUpon>uccPresence.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeSport\UCgestionEntraineur.resx">
       <DependentUpon>UCgestionEntraineur.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeSport\UCGestionPaiment.resx">
       <DependentUpon>UCGestionPaiment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeSport\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -341,6 +363,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

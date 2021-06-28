@@ -32,6 +32,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.components = new System.ComponentModel.Container();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -40,15 +41,12 @@ namespace Centre_D_affaire.GestionSalleDeSport
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGestionnaire));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Panel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.BTNredire = new Bunifu.Framework.UI.BunifuTileButton();
-            this.BTNfermer = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTNQuitter = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BTNutilisateur = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.BTNAchat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BTNPrésence = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnPaiment = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BTNPackage = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -56,74 +54,19 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNEntraineur = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BTNMembre = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BTNstatistique = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.BTNfermer = new Bunifu.Framework.UI.BunifuTileButton();
+            this.BTNredire = new Bunifu.Framework.UI.BunifuTileButton();
+            this.Panel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.PAnelDesktop = new Bunifu.UI.WinForms.BunifuPanel();
-            this.BTNAchat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.Panel2.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // Panel2
-            // 
-            this.Panel2.BackgroundColor = System.Drawing.Color.Purple;
-            this.Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel2.BackgroundImage")));
-            this.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Panel2.BorderColor = System.Drawing.Color.Transparent;
-            this.Panel2.BorderRadius = 3;
-            this.Panel2.BorderThickness = 1;
-            this.Panel2.Controls.Add(this.BTNredire);
-            this.Panel2.Controls.Add(this.BTNfermer);
-            this.Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel2.Location = new System.Drawing.Point(0, 0);
-            this.Panel2.Name = "Panel2";
-            this.Panel2.ShowBorders = true;
-            this.Panel2.Size = new System.Drawing.Size(1367, 46);
-            this.Panel2.TabIndex = 155;
-            // 
-            // BTNredire
-            // 
-            this.BTNredire.BackColor = System.Drawing.Color.Transparent;
-            this.BTNredire.color = System.Drawing.Color.Transparent;
-            this.BTNredire.colorActive = System.Drawing.Color.Thistle;
-            this.BTNredire.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTNredire.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.BTNredire.ForeColor = System.Drawing.Color.White;
-            this.BTNredire.Image = ((System.Drawing.Image)(resources.GetObject("BTNredire.Image")));
-            this.BTNredire.ImagePosition = 5;
-            this.BTNredire.ImageZoom = 80;
-            this.BTNredire.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BTNredire.LabelPosition = 0;
-            this.BTNredire.LabelText = "";
-            this.BTNredire.Location = new System.Drawing.Point(1255, 0);
-            this.BTNredire.Margin = new System.Windows.Forms.Padding(6);
-            this.BTNredire.Name = "BTNredire";
-            this.BTNredire.Size = new System.Drawing.Size(49, 45);
-            this.BTNredire.TabIndex = 13;
-            // 
-            // BTNfermer
-            // 
-            this.BTNfermer.BackColor = System.Drawing.Color.Transparent;
-            this.BTNfermer.color = System.Drawing.Color.Transparent;
-            this.BTNfermer.colorActive = System.Drawing.Color.Red;
-            this.BTNfermer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTNfermer.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.BTNfermer.ForeColor = System.Drawing.Color.White;
-            this.BTNfermer.Image = ((System.Drawing.Image)(resources.GetObject("BTNfermer.Image")));
-            this.BTNfermer.ImagePosition = 5;
-            this.BTNfermer.ImageZoom = 80;
-            this.BTNfermer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BTNfermer.LabelPosition = 0;
-            this.BTNfermer.LabelText = "";
-            this.BTNfermer.Location = new System.Drawing.Point(1322, 0);
-            this.BTNfermer.Margin = new System.Windows.Forms.Padding(6);
-            this.BTNfermer.Name = "BTNfermer";
-            this.BTNfermer.Size = new System.Drawing.Size(46, 46);
-            this.BTNfermer.TabIndex = 12;
             // 
             // bunifuPanel1
             // 
@@ -340,6 +283,96 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNutilisateur.UseDefaultRadiusAndThickness = true;
             this.BTNutilisateur.Click += new System.EventHandler(this.BTNutilisateur_Click);
             // 
+            // BTNAchat
+            // 
+            this.BTNAchat.AllowAnimations = true;
+            this.BTNAchat.AllowMouseEffects = true;
+            this.BTNAchat.AllowToggling = false;
+            this.BTNAchat.AnimationSpeed = 200;
+            this.BTNAchat.AutoGenerateColors = false;
+            this.BTNAchat.AutoRoundBorders = false;
+            this.BTNAchat.AutoSizeLeftIcon = true;
+            this.BTNAchat.AutoSizeRightIcon = true;
+            this.BTNAchat.BackColor = System.Drawing.Color.Transparent;
+            this.BTNAchat.BackColor1 = System.Drawing.Color.White;
+            this.BTNAchat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNAchat.BackgroundImage")));
+            this.BTNAchat.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dot;
+            this.BTNAchat.ButtonText = "Achats";
+            this.BTNAchat.ButtonTextMarginLeft = 0;
+            this.BTNAchat.ColorContrastOnClick = 45;
+            this.BTNAchat.ColorContrastOnHover = 45;
+            this.BTNAchat.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.BTNAchat.CustomizableEdges = borderEdges3;
+            this.BTNAchat.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BTNAchat.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.BTNAchat.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.BTNAchat.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.BTNAchat.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.BTNAchat.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNAchat.ForeColor = System.Drawing.Color.DimGray;
+            this.BTNAchat.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNAchat.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.BTNAchat.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.BTNAchat.IconMarginLeft = 11;
+            this.BTNAchat.IconPadding = 10;
+            this.BTNAchat.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNAchat.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.BTNAchat.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.BTNAchat.IconSize = 25;
+            this.BTNAchat.IdleBorderColor = System.Drawing.Color.Transparent;
+            this.BTNAchat.IdleBorderRadius = 1;
+            this.BTNAchat.IdleBorderThickness = 1;
+            this.BTNAchat.IdleFillColor = System.Drawing.Color.White;
+            this.BTNAchat.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("BTNAchat.IdleIconLeftImage")));
+            this.BTNAchat.IdleIconRightImage = null;
+            this.BTNAchat.IndicateFocus = false;
+            this.BTNAchat.Location = new System.Drawing.Point(0, 539);
+            this.BTNAchat.Name = "BTNAchat";
+            this.BTNAchat.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.BTNAchat.OnDisabledState.BorderRadius = 1;
+            this.BTNAchat.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BTNAchat.OnDisabledState.BorderThickness = 1;
+            this.BTNAchat.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.BTNAchat.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.BTNAchat.OnDisabledState.IconLeftImage = null;
+            this.BTNAchat.OnDisabledState.IconRightImage = null;
+            this.BTNAchat.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.BTNAchat.onHoverState.BorderRadius = 1;
+            this.BTNAchat.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BTNAchat.onHoverState.BorderThickness = 1;
+            this.BTNAchat.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.BTNAchat.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.BTNAchat.onHoverState.IconLeftImage = null;
+            this.BTNAchat.onHoverState.IconRightImage = null;
+            this.BTNAchat.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.BTNAchat.OnIdleState.BorderRadius = 1;
+            this.BTNAchat.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dot;
+            this.BTNAchat.OnIdleState.BorderThickness = 1;
+            this.BTNAchat.OnIdleState.FillColor = System.Drawing.Color.White;
+            this.BTNAchat.OnIdleState.ForeColor = System.Drawing.Color.DimGray;
+            this.BTNAchat.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("BTNAchat.OnIdleState.IconLeftImage")));
+            this.BTNAchat.OnIdleState.IconRightImage = null;
+            this.BTNAchat.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.BTNAchat.OnPressedState.BorderRadius = 1;
+            this.BTNAchat.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BTNAchat.OnPressedState.BorderThickness = 1;
+            this.BTNAchat.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.BTNAchat.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.BTNAchat.OnPressedState.IconLeftImage = null;
+            this.BTNAchat.OnPressedState.IconRightImage = null;
+            this.BTNAchat.Size = new System.Drawing.Size(267, 53);
+            this.BTNAchat.TabIndex = 14;
+            this.BTNAchat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BTNAchat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BTNAchat.TextMarginLeft = 0;
+            this.BTNAchat.TextPadding = new System.Windows.Forms.Padding(0);
+            this.BTNAchat.UseDefaultRadiusAndThickness = true;
+            this.BTNAchat.Click += new System.EventHandler(this.BTNAchat_Click);
+            // 
             // BTNPrésence
             // 
             this.BTNPrésence.AllowAnimations = true;
@@ -428,6 +461,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNPrésence.TextMarginLeft = 0;
             this.BTNPrésence.TextPadding = new System.Windows.Forms.Padding(0);
             this.BTNPrésence.UseDefaultRadiusAndThickness = true;
+            this.BTNPrésence.Click += new System.EventHandler(this.BTNPrésence_Click);
             // 
             // btnPaiment
             // 
@@ -967,6 +1001,65 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNstatistique.TextMarginLeft = 0;
             this.BTNstatistique.TextPadding = new System.Windows.Forms.Padding(0);
             this.BTNstatistique.UseDefaultRadiusAndThickness = true;
+            this.BTNstatistique.Click += new System.EventHandler(this.BTNstatistique_Click);
+            // 
+            // BTNfermer
+            // 
+            this.BTNfermer.BackColor = System.Drawing.Color.Transparent;
+            this.BTNfermer.color = System.Drawing.Color.Transparent;
+            this.BTNfermer.colorActive = System.Drawing.Color.Red;
+            this.BTNfermer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNfermer.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BTNfermer.ForeColor = System.Drawing.Color.White;
+            this.BTNfermer.Image = ((System.Drawing.Image)(resources.GetObject("BTNfermer.Image")));
+            this.BTNfermer.ImagePosition = 5;
+            this.BTNfermer.ImageZoom = 80;
+            this.BTNfermer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BTNfermer.LabelPosition = 0;
+            this.BTNfermer.LabelText = "";
+            this.BTNfermer.Location = new System.Drawing.Point(1322, 0);
+            this.BTNfermer.Margin = new System.Windows.Forms.Padding(6);
+            this.BTNfermer.Name = "BTNfermer";
+            this.BTNfermer.Size = new System.Drawing.Size(46, 46);
+            this.BTNfermer.TabIndex = 12;
+            this.BTNfermer.Click += new System.EventHandler(this.BTNfermer_Click);
+            // 
+            // BTNredire
+            // 
+            this.BTNredire.BackColor = System.Drawing.Color.Transparent;
+            this.BTNredire.color = System.Drawing.Color.Transparent;
+            this.BTNredire.colorActive = System.Drawing.Color.Thistle;
+            this.BTNredire.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNredire.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BTNredire.ForeColor = System.Drawing.Color.White;
+            this.BTNredire.Image = ((System.Drawing.Image)(resources.GetObject("BTNredire.Image")));
+            this.BTNredire.ImagePosition = 5;
+            this.BTNredire.ImageZoom = 80;
+            this.BTNredire.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BTNredire.LabelPosition = 0;
+            this.BTNredire.LabelText = "";
+            this.BTNredire.Location = new System.Drawing.Point(1255, 0);
+            this.BTNredire.Margin = new System.Windows.Forms.Padding(6);
+            this.BTNredire.Name = "BTNredire";
+            this.BTNredire.Size = new System.Drawing.Size(49, 45);
+            this.BTNredire.TabIndex = 13;
+            // 
+            // Panel2
+            // 
+            this.Panel2.BackgroundColor = System.Drawing.Color.Purple;
+            this.Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel2.BackgroundImage")));
+            this.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Panel2.BorderColor = System.Drawing.Color.Transparent;
+            this.Panel2.BorderRadius = 3;
+            this.Panel2.BorderThickness = 1;
+            this.Panel2.Controls.Add(this.BTNredire);
+            this.Panel2.Controls.Add(this.BTNfermer);
+            this.Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel2.Location = new System.Drawing.Point(0, 0);
+            this.Panel2.Name = "Panel2";
+            this.Panel2.ShowBorders = true;
+            this.Panel2.Size = new System.Drawing.Size(1367, 46);
+            this.Panel2.TabIndex = 155;
             // 
             // PAnelDesktop
             // 
@@ -984,96 +1077,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.PAnelDesktop.TabIndex = 159;
             this.PAnelDesktop.Click += new System.EventHandler(this.PAnelDesktop_Click);
             // 
-            // BTNAchat
-            // 
-            this.BTNAchat.AllowAnimations = true;
-            this.BTNAchat.AllowMouseEffects = true;
-            this.BTNAchat.AllowToggling = false;
-            this.BTNAchat.AnimationSpeed = 200;
-            this.BTNAchat.AutoGenerateColors = false;
-            this.BTNAchat.AutoRoundBorders = false;
-            this.BTNAchat.AutoSizeLeftIcon = true;
-            this.BTNAchat.AutoSizeRightIcon = true;
-            this.BTNAchat.BackColor = System.Drawing.Color.Transparent;
-            this.BTNAchat.BackColor1 = System.Drawing.Color.White;
-            this.BTNAchat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNAchat.BackgroundImage")));
-            this.BTNAchat.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dot;
-            this.BTNAchat.ButtonText = "Achats";
-            this.BTNAchat.ButtonTextMarginLeft = 0;
-            this.BTNAchat.ColorContrastOnClick = 45;
-            this.BTNAchat.ColorContrastOnHover = 45;
-            this.BTNAchat.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.BTNAchat.CustomizableEdges = borderEdges3;
-            this.BTNAchat.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BTNAchat.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.BTNAchat.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.BTNAchat.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.BTNAchat.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.BTNAchat.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNAchat.ForeColor = System.Drawing.Color.DimGray;
-            this.BTNAchat.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNAchat.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.BTNAchat.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.BTNAchat.IconMarginLeft = 11;
-            this.BTNAchat.IconPadding = 10;
-            this.BTNAchat.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTNAchat.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.BTNAchat.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.BTNAchat.IconSize = 25;
-            this.BTNAchat.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.BTNAchat.IdleBorderRadius = 1;
-            this.BTNAchat.IdleBorderThickness = 1;
-            this.BTNAchat.IdleFillColor = System.Drawing.Color.White;
-            this.BTNAchat.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("BTNAchat.IdleIconLeftImage")));
-            this.BTNAchat.IdleIconRightImage = null;
-            this.BTNAchat.IndicateFocus = false;
-            this.BTNAchat.Location = new System.Drawing.Point(0, 539);
-            this.BTNAchat.Name = "BTNAchat";
-            this.BTNAchat.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.BTNAchat.OnDisabledState.BorderRadius = 1;
-            this.BTNAchat.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BTNAchat.OnDisabledState.BorderThickness = 1;
-            this.BTNAchat.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.BTNAchat.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.BTNAchat.OnDisabledState.IconLeftImage = null;
-            this.BTNAchat.OnDisabledState.IconRightImage = null;
-            this.BTNAchat.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.BTNAchat.onHoverState.BorderRadius = 1;
-            this.BTNAchat.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BTNAchat.onHoverState.BorderThickness = 1;
-            this.BTNAchat.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.BTNAchat.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.BTNAchat.onHoverState.IconLeftImage = null;
-            this.BTNAchat.onHoverState.IconRightImage = null;
-            this.BTNAchat.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
-            this.BTNAchat.OnIdleState.BorderRadius = 1;
-            this.BTNAchat.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dot;
-            this.BTNAchat.OnIdleState.BorderThickness = 1;
-            this.BTNAchat.OnIdleState.FillColor = System.Drawing.Color.White;
-            this.BTNAchat.OnIdleState.ForeColor = System.Drawing.Color.DimGray;
-            this.BTNAchat.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("BTNAchat.OnIdleState.IconLeftImage")));
-            this.BTNAchat.OnIdleState.IconRightImage = null;
-            this.BTNAchat.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.BTNAchat.OnPressedState.BorderRadius = 1;
-            this.BTNAchat.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BTNAchat.OnPressedState.BorderThickness = 1;
-            this.BTNAchat.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.BTNAchat.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.BTNAchat.OnPressedState.IconLeftImage = null;
-            this.BTNAchat.OnPressedState.IconRightImage = null;
-            this.BTNAchat.Size = new System.Drawing.Size(267, 53);
-            this.BTNAchat.TabIndex = 14;
-            this.BTNAchat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BTNAchat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BTNAchat.TextMarginLeft = 0;
-            this.BTNAchat.TextPadding = new System.Windows.Forms.Padding(0);
-            this.BTNAchat.UseDefaultRadiusAndThickness = true;
-            this.BTNAchat.Click += new System.EventHandler(this.BTNAchat_Click);
-            // 
             // FormGestionnaire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1085,9 +1088,9 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGestionnaire";
             this.Text = "FormGestionnaire";
-            this.Panel2.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1096,9 +1099,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private Bunifu.UI.WinForms.BunifuPanel Panel2;
-        private Bunifu.Framework.UI.BunifuTileButton BTNredire;
-        private Bunifu.Framework.UI.BunifuTileButton BTNfermer;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNPrésence;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnPaiment;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNPackage;
@@ -1109,7 +1109,10 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNutilisateur;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNQuitter;
-        private Bunifu.UI.WinForms.BunifuPanel PAnelDesktop;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNAchat;
+        private Bunifu.UI.WinForms.BunifuPanel Panel2;
+        private Bunifu.Framework.UI.BunifuTileButton BTNredire;
+        private Bunifu.Framework.UI.BunifuTileButton BTNfermer;
+        private Bunifu.UI.WinForms.BunifuPanel PAnelDesktop;
     }
 }

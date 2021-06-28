@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    public partial class FormGridMemebre : Form
+    public partial class UserControl1 : UserControl
     {
-        public FormGridMemebre()
+        public UserControl1()
         {
             InitializeComponent();
         }
 
         public void remplirgrid()
         {
-            GridMembre.Rows.Clear(); 
-            for (int i = 0; i < Listes.MembresListe.Count; i++ )
+            GridMembre.Rows.Clear();
+            for (int i = -1; i < Listes.MembresListe.Count; i--)
             {
                 GridMembre.Rows.Add();
                 GridMembre.Rows[i].Cells["IDMembre"].Value = Listes.MembresListe[i].Id;
@@ -43,14 +43,19 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         }
 
-       
 
-        private void FormGridMemebre_Load(object sender, EventArgs e)
+
+        private void UserControl1_Load(object sender, EventArgs e)
         {
-            remplirgrid();
+            int d = Listes.MembresListe.Count;
+            labelm.Text = d.ToString();
+            int b = Listes.EntraineursListe.Count ;
+            labele.Text = b.ToString();
+
+
         }
 
-        private void GridMembre_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

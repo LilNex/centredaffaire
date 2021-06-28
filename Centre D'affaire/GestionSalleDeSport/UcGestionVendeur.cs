@@ -47,7 +47,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         {
             string d = "01/01/1999";
             DateTime df = Convert.ToDateTime(d);
-            Vendeur v = new Vendeur(TXTnumero.Text, TXTnomcomplet.Text, df, int.Parse(TXTtele.Text), TxtEmail.Text, TXTadresse.Text, "ftzyrm");
+            Vendeur v = new Vendeur(TXTnumero.Text, TXTnomcomplet.Text, df,TXTtele.Text, TxtEmail.Text, TXTadresse.Text, "ftzyrm");
             if (v.Ajouter(v) == true)
             {
                 MessageBox.Show(TXTnomcomplet.Text +" ajouté avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -114,7 +114,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 found.NomComplet = TXTnomcomplet.Text;
                 found.Email = TxtEmail.Text;
                 found.Adresse = TXTadresse.Text;
-                found.Telephone = int.Parse(TXTtele.Text);
+                found.Telephone = TXTtele.Text;
                 grid();
                 ClassInterface i = new ClassInterface();
                 i.viderform(this);

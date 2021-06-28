@@ -14,7 +14,12 @@ namespace Centre_D_affaire.GestionSalleDeSport
         public static List<Package> PackagesListe = new List<Package>();
         public static List<Achat> achatliste = new List<Achat>();
         public static List<Produit> produit = new List<Produit>();
+        public static List<Membre> fg = new List<Membre>();
+        public static List<Paiement> paiment = new List<Paiement>();
+
+        public static List<Utilisateur> utilisateurs = new List<Utilisateur>();
+
 
     }
-    
+
 }

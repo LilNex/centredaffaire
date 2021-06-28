@@ -11,7 +11,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private string id;
         private string nomComplet;  
         private DateTime dateJoin;
-        private int telphone;
+        private string telphone;
         private string email;
         private string adresse;
         private string sex;
@@ -22,7 +22,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         public Personne() { }
 
         // le constructeur par default 
-        public Personne(string ID, string NOmComplet,DateTime DAteREJoin, int TElephone, string EMail, string ADresse, string SEx) 
+        public Personne(string ID, string NOmComplet,DateTime DAteREJoin, string TElephone, string EMail, string ADresse, string SEx) 
         {
             this.Id = ID;
             this.NomComplet = NOmComplet;
@@ -38,7 +38,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         public string Id { get => id; set => id = value; }
         public string NomComplet { get => nomComplet; set => nomComplet = value; }
         public DateTime DateJoin { get => dateJoin; set => dateJoin = value; }
-        public int Telephone { get => telphone; set => telphone = value; }
+        public string Telephone { get => telphone; set => telphone = value; }
         public string Email { get => email; set => email = value; }
         public string Adresse{ get => adresse; set => adresse = value; } 
         public string Sex { get => sex; set => sex = value; }

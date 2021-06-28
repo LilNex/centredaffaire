@@ -183,6 +183,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTDUREE.TextPlaceholder = "Enter text";
             this.TXTDUREE.UseSystemPasswordChar = false;
             this.TXTDUREE.WordWrap = true;
+            this.TXTDUREE.TextChanged += new System.EventHandler(this.TXTDUREE_TextChanged);
             // 
             // label6
             // 
@@ -267,7 +268,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTtotal.Padding = new System.Windows.Forms.Padding(3);
             this.TXTtotal.PasswordChar = '\0';
             this.TXTtotal.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TXTtotal.PlaceholderText = "Enter text";
+            this.TXTtotal.PlaceholderText = "0";
             this.TXTtotal.ReadOnly = false;
             this.TXTtotal.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TXTtotal.SelectedText = "";
@@ -281,7 +282,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTtotal.TextMarginBottom = 0;
             this.TXTtotal.TextMarginLeft = -9;
             this.TXTtotal.TextMarginTop = 0;
-            this.TXTtotal.TextPlaceholder = "Enter text";
+            this.TXTtotal.TextPlaceholder = "0";
             this.TXTtotal.UseSystemPasswordChar = false;
             this.TXTtotal.WordWrap = true;
             // 
@@ -329,7 +330,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TxtFrais.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.TxtFrais.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtFrais.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.TxtFrais.DefaultText = "";
+            this.TxtFrais.DefaultText = "500";
             this.TxtFrais.FillColor = System.Drawing.Color.White;
             this.TxtFrais.ForeColor = System.Drawing.Color.SteelBlue;
             this.TxtFrais.HideSelection = true;
@@ -338,7 +339,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TxtFrais.IconPadding = 10;
             this.TxtFrais.IconRight = null;
             this.TxtFrais.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtFrais.Lines = new string[0];
+            this.TxtFrais.Lines = new string[] {
+        "500"};
             this.TxtFrais.Location = new System.Drawing.Point(440, 516);
             this.TxtFrais.MaxLength = 32767;
             this.TxtFrais.MinimumSize = new System.Drawing.Size(1, 1);
@@ -385,6 +387,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TxtFrais.TextPlaceholder = "Enter text";
             this.TxtFrais.UseSystemPasswordChar = false;
             this.TxtFrais.WordWrap = true;
+            this.TxtFrais.TextChanged += new System.EventHandler(this.TxtFrais_TextChanged);
             // 
             // label2
             // 
@@ -1123,6 +1126,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Cbgenre.Name = "Cbgenre";
             this.Cbgenre.Size = new System.Drawing.Size(209, 28);
             this.Cbgenre.TabIndex = 219;
+            this.Cbgenre.SelectedIndexChanged += new System.EventHandler(this.Cbgenre_SelectedIndexChanged);
             // 
             // cbStatus
             // 
@@ -1192,7 +1196,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.btnAjouter.IdleIconLeftImage = null;
             this.btnAjouter.IdleIconRightImage = null;
             this.btnAjouter.IndicateFocus = false;
-            this.btnAjouter.Location = new System.Drawing.Point(16, 682);
+            this.btnAjouter.Location = new System.Drawing.Point(3, 682);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAjouter.OnDisabledState.BorderRadius = 1;
@@ -1282,7 +1286,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTnshow.IdleIconLeftImage = null;
             this.BTnshow.IdleIconRightImage = null;
             this.BTnshow.IndicateFocus = false;
-            this.BTnshow.Location = new System.Drawing.Point(197, 682);
+            this.BTnshow.Location = new System.Drawing.Point(191, 682);
             this.BTnshow.Name = "BTnshow";
             this.BTnshow.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BTnshow.OnDisabledState.BorderRadius = 1;
