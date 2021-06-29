@@ -99,6 +99,12 @@
     <Compile Include="GestionCreche\frmParents.Designer.cs">
       <DependentUpon>frmParents.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionCreche\FrmPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\FrmPersonnel.Designer.cs">
+      <DependentUpon>FrmPersonnel.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionParking\frmGParking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmParents.resx">
       <DependentUpon>frmParents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\FrmPersonnel.resx">
+      <DependentUpon>FrmPersonnel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
