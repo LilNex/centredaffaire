@@ -21,6 +21,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         public UCDepartements()
         {
             InitializeComponent();
+            ucListeDepartement.ModifierDepEvent += loadModifForm;
         }
 
         public void loadForm()
@@ -68,6 +69,12 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         {
             ucListeDepartement.dgvListDeps.DataSource = ClsDepartement.ListeDepartement;
 
+        }
+
+        private void loadModifForm(object sender, DepartementEventArgs e)
+        {
+            ucModifDepartement.Departement = e.departement;
+            ucModifDepartement.BringToFront();
         }
     }
 }

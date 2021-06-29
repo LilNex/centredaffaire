@@ -34,7 +34,7 @@ namespace Centre_D_affaire.GestionPersonnel
             Num = num;
         }
         public ClsDepartement(){}
-        public int rechercheNum(string num)
+        public int recherchePosteNum(string num)
         {
             for (int i = 0; i < ListePoste.Count(); i++)
             {
@@ -45,9 +45,20 @@ namespace Centre_D_affaire.GestionPersonnel
             }
             return -1;
         }
+        public int rechercheDepNum(string num)
+        {
+            for (int i = 0; i < ClsDepartement.ListeDepartement.Count(); i++)
+            {
+                if (ListeDepartement[i].Num == num)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
         public bool AjouterPoste(clsPoste poste)
         {
-            if (rechercheNum(poste.Num) != -1)
+            if (recherchePosteNum(poste.Num) != -1)
             {
                 return false;
             }
@@ -60,12 +71,27 @@ namespace Centre_D_affaire.GestionPersonnel
             }
         }
 
+        public bool ModifierDepartement(ClsDepartement Dep)
+        {
+            if (recherchePosteNum(Dep.Num) != -1)
+            {
+                ListeDepartement[recherchePosteNum(Dep.Num)] = Dep; 
+                saveListeDeps();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public static void loadListeDeps()
         {
             XmlSerializer XS = new XmlSerializer(ListeDepartement.GetType());
             try { 
-            StreamReader r_fileDeps = new StreamReader("Liste des departements.xml");
-            ClsDepartement.ListeDepartement = (List<ClsDepartement>)XS.Deserialize(r_fileDeps);
+                FileStream r_fileDeps = new FileStream("Liste des departements.xml", FileMode.OpenOrCreate, FileAccess.Read);
+                ClsDepartement.ListeDepartement = (List<ClsDepartement>)XS.Deserialize(r_fileDeps);
+                r_fileDeps.Close();
 
             }
             catch (FileNotFoundException e)
@@ -77,8 +103,9 @@ namespace Centre_D_affaire.GestionPersonnel
         public static void saveListeDeps()
         {
             XmlSerializer XS = new XmlSerializer(ListeDepartement.GetType());
-            StreamWriter w_fileDeps = new StreamWriter("Liste des departements.xml");
+            FileStream w_fileDeps = new FileStream("Liste des departements.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite);
             XS.Serialize(w_fileDeps, ListeDepartement);
+            w_fileDeps.Close();
         }
         public override string ToString()
         {
