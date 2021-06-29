@@ -3,31 +3,50 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    class ClsArticle
+    public enum ArticleType
     {
-        private string numero_categorie;
-        private string libele;
-        private string description;
-        private string photochemin;
+        Meuble, Bureau, SalleSport,SalleJeux, Autre,Service , Crèche , Uniforme , Caferestaurant,
+    }
 
-        public string Numero_categorie { get => numero_categorie; set => numero_categorie = value; }
-        public string Libele { get => libele; set => libele = value; }
+
+    [Serializable]
+    public class ClsArticle
+    {
+        private string nom;       
+        private ArticleType typeArticle;
+        private string description;
+        private Image photo;
+
+        public string Nom { get => nom; set => nom = value; }
+           
+       
         public string Description { get => description; set => description = value; }
-        public string Photochemin { get => photochemin; set => photochemin = value; }
+        public Image Photo { get => photo; set => photo = value; }
+        public ArticleType TypeArticle { get => typeArticle; set => typeArticle = value; }
 
         public ClsArticle() { }
 
-        public ClsArticle( string numerocategorie , string libele , string description , string photochemin  )
+        public ClsArticle(string nom ,ArticleType articletype, string description ,  Image photo  )
         {
-            this.numero_categorie = numerocategorie;
-            this.Libele = libele;
+            this.Nom = nom;
+            
             this.Description = description;
-            this.Photochemin = photochemin;
+            this.Photo = photo;
+            this.TypeArticle = articletype;
+            
+            
+            
+            
+            
 
 
         }
+
+
+       
     }
 }

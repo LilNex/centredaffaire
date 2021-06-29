@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    class ClsFournisseur
+    public class ClsFournisseur
     {
         private string nom_Societe;
         private string telephone_Four;

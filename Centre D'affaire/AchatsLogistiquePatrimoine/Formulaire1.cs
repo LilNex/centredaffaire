@@ -16,7 +16,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         {
             InitializeComponent();
         }
-        ClsListe l = new ClsListe() ;
+        
         ClsEmploye e = new ClsEmploye();
 
         

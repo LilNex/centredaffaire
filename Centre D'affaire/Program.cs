@@ -12,12 +12,14 @@ namespace Centre_D_affaire
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
-        static void Main()
+        [STAThread]  static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Formulaire1());
+            Application.Run(new Catalogue());
+
+            
+            
         }
     }
 }

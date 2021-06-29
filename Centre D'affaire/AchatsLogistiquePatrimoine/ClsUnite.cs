@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    class ClsUnite
+    public class ClsUnite
     {
         private string numero_unite;
         private string libele;

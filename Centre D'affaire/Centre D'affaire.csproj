@@ -46,8 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AchatsLogistiquePatrimoine\Catalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\Catalogue.Designer.cs">
+      <DependentUpon>Catalogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\CHOIX.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsArticle.cs" />
-    <Compile Include="AchatsLogistiquePatrimoine\ClsCategorie.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ListeCategorie.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsDemande.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsDetailLivraison.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsDetail_Demande.cs" />
@@ -58,13 +65,68 @@
     <Compile Include="AchatsLogistiquePatrimoine\ClsProfil.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsFournisseur.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsCommande.cs" />
-    <Compile Include="AchatsLogistiquePatrimoine\ClsService.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\ClsDepartement.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsUnite.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\Comerce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\Comerce.Designer.cs">
+      <DependentUpon>Comerce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\General.Designer.cs">
+      <DependentUpon>General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\.Designer.cs">
+      <DependentUpon>.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\FormPdir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\FormPdir.Designer.cs">
+      <DependentUpon>FormPdir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\FormPres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\FormPres.Designer.cs">
+      <DependentUpon>FormPres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\FormResDemande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\FormResDemande.Designer.cs">
+      <DependentUpon>FormResDemande.cs</DependentUpon>
+    </Compile>
     <Compile Include="AchatsLogistiquePatrimoine\Formulaire1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AchatsLogistiquePatrimoine\Formulaire1.Designer.cs">
       <DependentUpon>Formulaire1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\saisie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\saisie.Designer.cs">
+      <DependentUpon>saisie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\usercontrole\Uc1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\usercontrole\Uc1.Designer.cs">
+      <DependentUpon>Uc1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\usercontrole\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\usercontrole\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -116,8 +178,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Catalogue.resx">
+      <DependentUpon>Catalogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Comerce.resx">
+      <DependentUpon>Comerce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\General.resx">
+      <DependentUpon>General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\.resx">
+      <DependentUpon>.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\FormPdir.resx">
+      <DependentUpon>FormPdir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\FormPres.resx">
+      <DependentUpon>FormPres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\FormResDemande.resx">
+      <DependentUpon>FormResDemande.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire1.resx">
       <DependentUpon>Formulaire1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\saisie.resx">
+      <DependentUpon>saisie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\usercontrole\Uc1.resx">
+      <DependentUpon>Uc1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\usercontrole\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -138,6 +230,7 @@
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
+    <None Include="bin\Debug\Article" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -153,7 +246,35 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AchatsLogistiquePatrimoine\arriere-plan-afges-1024x728.jpg" />
+    <Content Include="Resources\cisco.png" />
+    <None Include="Resources\1384060.png" />
+    <None Include="Resources\centre-commercial-vide_1127-376.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\personnel.jpg" />
+    <None Include="Resources\achat.jpg" />
+    <None Include="Resources\location.jpg" />
+    <None Include="Resources\creche.jpg" />
+    <None Include="Resources\parking.jpg" />
+    <None Include="Resources\restau.jpg" />
+    <None Include="Resources\jeux.jpg" />
+    <None Include="Resources\vue-arriere-plan-abstraite-abstraite-interieur-regardant-vers-bureau-vide-portes-entree-mur-rideau-verre-cadre_1339-63701.jpg" />
+    <None Include="Resources\istockphoto-914982712-170667a.jpg" />
+    <None Include="Resources\vue-arriere-plan-abstraite-abstraite-interieur-regardant-vers-bureau-vide-portes-entree-mur-rideau-verre-cadre_1339-6370.jpg" />
+    <None Include="Resources\plateau-table-vide-bois-dessus-arriere-plan-flou_1253-1584.jpg" />
+    <None Include="Resources\caricature-homme-affaires_18591-40638.jpg" />
+    <None Include="Resources\persone1.png" />
+    <None Include="Resources\depositphotos_18595071-stock-photo-light-room.jpg" />
+    <None Include="Resources\3aa9b4f22c3ff9d4435e941af0090dca.jpg" />
+    <None Include="Resources\plan2.jpg" />
+    <None Include="Resources\persone.png" />
+    <None Include="Resources\plan11.jpg" />
+    <None Include="Resources\plan1.jpg" />
+    <None Include="Resources\plan.jpg" />
+    <None Include="Resources\csm_csm-frs-iberia-destinos-rabat_06cdf5682b.jpg" />
     <None Include="Resources\arriere-plan-afges-1024x728.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AchatsLogistiquePatrimoine\responsableAchat\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -122,6 +122,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             // btn_Login
             // 
             this.btn_Login.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Login.BackgroundImage = global::Centre_D_affaire.Properties.Resources._1384060;
             this.btn_Login.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Login.ForeColor = System.Drawing.Color.Blue;
             this.btn_Login.Location = new System.Drawing.Point(472, 298);

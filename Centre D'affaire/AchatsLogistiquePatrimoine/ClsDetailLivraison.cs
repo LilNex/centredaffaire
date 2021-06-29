@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    class ClsDetailLivraison
+    public class ClsDetailLivraison
     {
         private string numero_detail;
         private int quantite_livre;

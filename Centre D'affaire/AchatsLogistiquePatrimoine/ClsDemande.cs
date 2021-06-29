@@ -3,33 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    class ClsDemande
+    public enum EtatDemande { 
+        validé,
+        attente
+    }
+
+    public class ClsDemande
     {
         private string ID_demande;
         private string Libele;
-        private string Etat_demande;
+        private EtatDemande Etat_demande; // validé 
         private string urgence;
         private DateTime Date_demande;
+        private List<CHOIX> Listchoix = new List<CHOIX>();
+        private ClsDepartement departement = new ClsDepartement();
 
         public string ID_demande1 { get => ID_demande; set => ID_demande = value; }
         
-        public string Etat_demande1 { get => Etat_demande; set => Etat_demande = value; }
+        public EtatDemande Etat_demande1 { get => Etat_demande; set => Etat_demande = value; }
         public DateTime Date_demande1 { get => Date_demande; set => Date_demande = value; }
         public string Libele1 { get => Libele; set => Libele = value; }
         public string Urgence { get => urgence; set => urgence = value; }
+        public List<CHOIX> listchoix { get => Listchoix; set => Listchoix = value; }
+        public ClsDepartement Departement { get => departement; set => departement = value; }
 
         public ClsDemande() { }
 
-        public ClsDemande(string iddemande , string libele, string etatdemande, string urgence ,DateTime datedemande) 
+        public ClsDemande(string iddemande , string libele, EtatDemande etatdemande, string urgence ,DateTime datedemande, List<CHOIX> listchoix, ClsDepartement departement) 
         {
             this.ID_demande = iddemande;
             this.Libele = libele;
-            this.Etat_demande = etatdemande;
+            this.Etat_demande = EtatDemande.validé;
             this.Urgence = urgence;
             this.Date_demande = datedemande;
+            this.listchoix = listchoix;
+            this.Departement = departement;
         }
         public int Recherche_Dmd(string iddmd)
         {
@@ -82,12 +94,22 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             if (Recherche_Dmd(id) != -1)
             {
                 ClsListe.List_demande[Recherche_Dmd(id)] = dmd;
+                
                 return true;
             }
             else
             {
                 return false;
             }
+        }
+        
+        
+       
+        public static void affiche(List<ClsEmploye> L, ComboBox c)
+        {
+            c.Items.Add(L[0].Nom1);
+
+            
         }
 
 

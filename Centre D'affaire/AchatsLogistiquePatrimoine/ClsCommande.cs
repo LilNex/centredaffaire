@@ -6,21 +6,44 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    class ClsCommande
+    public enum etatcommande
+    {
+        encours,terminé,
+    }
+    public enum livraison
+    {
+        livré, nonlivré ,
+    }
+
+    public class ClsCommande
     {
         private string iD_cmd;
         private DateTime date_cmd;
+        private ClsDemande objDemande;
+        private float prix;
+        private etatcommande etatcommande ;
+        private livraison Livraison;
+        
         // autre attributs en relation avec type achat  
 
         public string ID_cmd { get => iD_cmd; set => iD_cmd = value; }
         public DateTime Date_cmd { get => date_cmd; set => date_cmd = value; }
+        public ClsDemande ObjDemande { get => objDemande; set => objDemande = value; }
+        public float Prix { get => prix; set => prix = value; }
+        public etatcommande Etatcommande { get => etatcommande; set => etatcommande = value; }
+        public livraison livraison { get => Livraison; set => Livraison = value; }
 
         public ClsCommande() { }
 
-        public ClsCommande(string idCmd,DateTime dateCmd) 
+        public ClsCommande(string idCmd,DateTime dateCmd, ClsDemande objdemande,float prix , etatcommande etatcmd, livraison livr) 
         {
             this.ID_cmd = idCmd;
             this.Date_cmd = dateCmd;
+            this.ObjDemande = objdemande;
+            this.Prix = prix;
+            this.Etatcommande = etatcmd;
+            this.Livraison = livr; 
+
 
 
         }

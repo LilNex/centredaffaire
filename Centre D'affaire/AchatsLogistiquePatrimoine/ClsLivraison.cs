@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    class ClsLivraison
+    public class ClsLivraison
     {
         private string num_livraison;
         private DateTime date_livraison;
