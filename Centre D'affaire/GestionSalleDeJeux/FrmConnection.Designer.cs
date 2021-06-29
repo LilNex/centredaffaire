@@ -29,14 +29,17 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblNumero = new System.Windows.Forms.Label();
             this.twtNumero = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.textPssword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblConnection = new System.Windows.Forms.Label();
             this.btnForgetPassword = new System.Windows.Forms.Button();
             this.btnConnect = new System.Windows.Forms.Button();
             this.btnNewMember = new System.Windows.Forms.Button();
+            this.errorProviderConnection = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderConnection)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNumero
@@ -56,15 +59,16 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.twtNumero.Name = "twtNumero";
             this.twtNumero.Size = new System.Drawing.Size(173, 38);
             this.twtNumero.TabIndex = 2;
+            this.twtNumero.TextChanged += new System.EventHandler(this.twtNumero_TextChanged);
             // 
-            // txtPassword
+            // textPssword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(195, 110);
-            this.txtPassword.Multiline = true;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(173, 38);
-            this.txtPassword.TabIndex = 4;
-            this.txtPassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textPssword.Location = new System.Drawing.Point(195, 110);
+            this.textPssword.Multiline = true;
+            this.textPssword.Name = "textPssword";
+            this.textPssword.Size = new System.Drawing.Size(173, 38);
+            this.textPssword.TabIndex = 4;
+            this.textPssword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lblPassword
             // 
@@ -128,6 +132,10 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnNewMember.UseVisualStyleBackColor = false;
             this.btnNewMember.Click += new System.EventHandler(this.btnNewMember_Click);
             // 
+            // errorProviderConnection
+            // 
+            this.errorProviderConnection.ContainerControl = this;
+            // 
             // FrmConnection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,13 +146,15 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.btnForgetPassword);
             this.Controls.Add(this.lblConnection);
-            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.textPssword);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.twtNumero);
             this.Controls.Add(this.lblNumero);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmConnection";
             this.Text = "FrmConnection";
+            this.Load += new System.EventHandler(this.FrmConnection_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderConnection)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,11 +164,12 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.TextBox twtNumero;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox textPssword;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblConnection;
         private System.Windows.Forms.Button btnForgetPassword;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btnNewMember;
+        private System.Windows.Forms.ErrorProvider errorProviderConnection;
     }
 }

@@ -44,9 +44,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button47 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button48 = new System.Windows.Forms.Button();
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.lblBillHot = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -114,8 +111,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.pnlTitle.SuspendLayout();
             this.GbJ1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -134,7 +129,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.FlpMenu.Controls.Add(this.panel4);
             this.FlpMenu.Controls.Add(this.panel2);
             this.FlpMenu.Controls.Add(this.panel3);
-            this.FlpMenu.Controls.Add(this.panel5);
             this.FlpMenu.Location = new System.Drawing.Point(2, 0);
             this.FlpMenu.Name = "FlpMenu";
             this.FlpMenu.Size = new System.Drawing.Size(213, 599);
@@ -161,7 +155,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox1.Image = global::Centre_D_affaire.Properties.Resources.regle_jeu_baby_foot1;
             this.pictureBox1.Location = new System.Drawing.Point(3, 105);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(210, 113);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
@@ -170,9 +164,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // 
             this.panel1.Controls.Add(this.picHome);
             this.panel1.Controls.Add(this.btnHome);
-            this.panel1.Location = new System.Drawing.Point(3, 189);
+            this.panel1.Location = new System.Drawing.Point(3, 224);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(207, 62);
+            this.panel1.Size = new System.Drawing.Size(207, 78);
             this.panel1.TabIndex = 40;
             // 
             // picHome
@@ -184,7 +178,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.picHome.Image = global::Centre_D_affaire.Properties.Resources.outline_home_black_24dp1;
             this.picHome.Location = new System.Drawing.Point(3, 3);
             this.picHome.Name = "picHome";
-            this.picHome.Size = new System.Drawing.Size(48, 48);
+            this.picHome.Size = new System.Drawing.Size(48, 64);
             this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picHome.TabIndex = 34;
             this.picHome.TabStop = false;
@@ -209,9 +203,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // 
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Controls.Add(this.button3);
-            this.panel4.Location = new System.Drawing.Point(3, 257);
+            this.panel4.Location = new System.Drawing.Point(3, 308);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(207, 62);
+            this.panel4.Size = new System.Drawing.Size(207, 78);
             this.panel4.TabIndex = 43;
             // 
             // pictureBox4
@@ -223,7 +217,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox4.Image = global::Centre_D_affaire.Properties.Resources.outline_help_black_24dp;
             this.pictureBox4.Location = new System.Drawing.Point(3, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox4.Size = new System.Drawing.Size(48, 64);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
@@ -247,9 +241,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // 
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.button46);
-            this.panel2.Location = new System.Drawing.Point(3, 325);
+            this.panel2.Location = new System.Drawing.Point(3, 392);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(207, 62);
+            this.panel2.Size = new System.Drawing.Size(207, 78);
             this.panel2.TabIndex = 42;
             // 
             // pictureBox2
@@ -261,7 +255,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_add_box_black_24dp;
             this.pictureBox2.Location = new System.Drawing.Point(3, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 64);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
@@ -285,9 +279,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // 
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.button47);
-            this.panel3.Location = new System.Drawing.Point(3, 393);
+            this.panel3.Location = new System.Drawing.Point(3, 476);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(207, 62);
+            this.panel3.Size = new System.Drawing.Size(207, 78);
             this.panel3.TabIndex = 44;
             // 
             // pictureBox3
@@ -299,7 +293,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox3.Image = global::Centre_D_affaire.Properties.Resources.outline_support_agent_black_24dp2;
             this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox3.Size = new System.Drawing.Size(48, 64);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 34;
             this.pictureBox3.TabStop = false;
@@ -319,44 +313,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button47.UseVisualStyleBackColor = false;
             this.button47.Click += new System.EventHandler(this.button47_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Controls.Add(this.button48);
-            this.panel5.Location = new System.Drawing.Point(3, 461);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(207, 62);
-            this.panel5.TabIndex = 45;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.Image = global::Centre_D_affaire.Properties.Resources.icons8_engrenage_60;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 34;
-            this.pictureBox5.TabStop = false;
-            // 
-            // button48
-            // 
-            this.button48.BackColor = System.Drawing.Color.Transparent;
-            this.button48.FlatAppearance.BorderSize = 0;
-            this.button48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button48.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button48.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button48.Location = new System.Drawing.Point(74, 3);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(138, 60);
-            this.button48.TabIndex = 30;
-            this.button48.Text = "SETTING";
-            this.button48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button48.UseVisualStyleBackColor = false;
             // 
             // pnlTitle
             // 
@@ -1120,7 +1076,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.label10.TabIndex = 0;
             this.label10.Text = "label1";
             // 
-            // BabyFoot
+            // FrmBabyFoot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1134,7 +1090,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.Controls.Add(this.GbJ1);
             this.Controls.Add(this.pnlTitle);
             this.Controls.Add(this.FlpMenu);
-            this.Name = "BabyFoot";
+            this.Name = "FrmBabyFoot";
             this.Text = "BabyFoot";
             this.FlpMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1150,8 +1106,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
             this.GbJ1.ResumeLayout(false);
@@ -1187,9 +1141,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button47;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.Label lblBillHot;
         private System.Windows.Forms.Button button1;

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    class Jeux
+    class clsJeux
     {
         public int NumeroJ;
         public string NomJ;
 
-        public Jeux() { }
+        public clsJeux() { }
 
-        public Jeux(int NumeroJ, string NomJ)
+        public clsJeux(int NumeroJ, string NomJ)
         {
             this.NomJ = NomJ;
             this.NumeroJ = NumeroJ;
@@ -40,7 +40,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
 
         //-------- LA METHODE DE MODIFICATION------------------
-        public bool modifierJeux(int numeroT, Jeux TA)
+        public bool modifierJeux(int numeroT, clsJeux TA)
         {
 
             if (rechercherJeux(numeroT) != -1)
@@ -74,7 +74,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
             if (rechercherJeux(NumeroJ) ==-1)
             {
-                Jeux TS = new Jeux();
+                clsJeux TS = new clsJeux();
                 //button = TS.NumeroT;
                 //button = TS.nomT;
                 ClsListeSDJ.ListJeux.Add(TS);

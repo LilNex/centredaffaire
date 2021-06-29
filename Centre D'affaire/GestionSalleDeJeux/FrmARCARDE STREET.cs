@@ -34,5 +34,10 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             FrmConnection FC = new FrmConnection();
             FC.Show();
         }
+
+        private void FrmArcardeStreet_Load(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

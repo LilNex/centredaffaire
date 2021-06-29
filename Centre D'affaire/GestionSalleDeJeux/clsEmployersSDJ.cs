@@ -11,17 +11,19 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private string nomE;
         private string prenomE;
         private int numeroE;
-        private int telephoneE;
+        private float telephoneE;
+        private string PasswordE;
         private DateTime dateNaissanceE;
 
         public string NomE { get => nomE; set => nomE = value; }
         public string PrenomE { get => prenomE; set => prenomE = value; }
-        public int TelephoneE { get => telephoneE; set => telephoneE = value; }
+        public float TelephoneE { get => telephoneE; set => telephoneE = value; }
         public DateTime DateNaissanceE { get => dateNaissanceE; set => dateNaissanceE = value; }
         public int NumeroE { get => numeroE; set => numeroE = value; }
+        public string PasswordE1 { get => PasswordE; set => PasswordE = value; }
 
         public clsEmployersSDJ() { }
-        public clsEmployersSDJ(string NomE,string PrenomE,int numeroE,int TelephoneE,DateTime DateNaissanceE)
+        public clsEmployersSDJ(string NomE,string PrenomE,int numeroE, float TelephoneE,DateTime DateNaissanceE)
         {
             this.NomE = NomE;
             this.PrenomE = PrenomE;
@@ -55,9 +57,8 @@ namespace Centre_D_affaire.GestionSalleDeJeux
                 }
             }
             return -1;
-        }
-        
 
-        
+        }
+
     }
 }

@@ -132,15 +132,15 @@
     <Compile Include="GestionSalleDeJeux\FrmMENU1.Designer.cs">
       <DependentUpon>FrmMENU1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\OccupationJ.cs" />
+    <Compile Include="GestionSalleDeJeux\ClsOccupationJ.cs" />
     <Compile Include="GestionSalleDeJeux\FrmPS4.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GestionSalleDeJeux\FrmPS4.Designer.cs">
       <DependentUpon>FrmPS4.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\SalleDeJeux.cs" />
-    <Compile Include="GestionSalleDeJeux\Jeux.cs" />
+    <Compile Include="GestionSalleDeJeux\ClsSalleDeJeux.cs" />
+    <Compile Include="GestionSalleDeJeux\clsJeux.cs" />
     <Compile Include="GestionSalleDeSport\frmGSS.cs">
       <SubType>Form</SubType>
     </Compile>

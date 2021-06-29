@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    class SalleDeJeux
+    class ClsSalleDeJeux
     {
         public int NumeroS;
         public string NomS;
         
-        public SalleDeJeux() { }
+        public ClsSalleDeJeux() { }
 
-        public SalleDeJeux(int NumeroS, string NomS)
+        public ClsSalleDeJeux(int NumeroS, string NomS)
         {
             this.NumeroS = NumeroS;
             this.NomS = NomS;
@@ -43,7 +43,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
             if (RechercheSDJ(NumeroS) == -1)
             {
-                SalleDeJeux SDJ = new SalleDeJeux();
+                ClsSalleDeJeux SDJ = new ClsSalleDeJeux();
                 //button = SDJ.NumeroT;
                 //button = SDJ.nomT;
                 ClsListeSDJ.ListSalle.Add(SDJ);

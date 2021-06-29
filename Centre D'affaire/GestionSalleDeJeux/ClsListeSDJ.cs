@@ -8,9 +8,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 {
     class ClsListeSDJ
     {
-        public static List<SalleDeJeux> ListSalle = new List<SalleDeJeux>();
-        public static List<Jeux> ListJeux = new List<Jeux>();
-        public static List<OccupationJ> ListOccupztion = new List<OccupationJ>();
+        public static List<ClsSalleDeJeux> ListSalle = new List<ClsSalleDeJeux>();
+        public static List<clsJeux> ListJeux = new List<clsJeux>();
+        public static List<ClsOccupationJ> ListOccupztion = new List<ClsOccupationJ>();
         public static List<clsEmployersSDJ> ListE = new List<clsEmployersSDJ>();
     }
 }

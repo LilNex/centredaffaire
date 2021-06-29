@@ -12,6 +12,8 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 {
     public partial class FrmConnection : Form
     {
+        
+        clsEmployersSDJ EDSJ = new clsEmployersSDJ();
         public FrmConnection()
         {
             InitializeComponent();
@@ -24,6 +26,17 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (EDSJ.rechercherE(EDSJ.NumeroE) != -1)
+            {
+                if (ClsListeSDJ.ListE[EDSJ.rechercherE(EDSJ.NumeroE)].PasswordE1 == textPssword.Text)
+                {
+                    
+                }
+            }
+            else
+            {
+                MessageBox.Show("votre mot de passe ou numero est incorect", "ERREUR");
+            }
 
         }
 
@@ -37,6 +50,25 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
             FrmNewMember FNM = new FrmNewMember();
             FNM.Show();
+        }
+
+        private void twtNumero_TextChanged(object sender, EventArgs e)
+        {
+            if ((twtNumero.Text).Any(char.IsLetter) )
+            {
+                errorProviderConnection.SetError(twtNumero, "Votre Telephone ne doit pas contien aucun letre.Et 10 nombre");
+                btnConnect.Enabled = false;
+            }
+            else
+            {
+                errorProviderConnection.SetError(twtNumero, "");
+                btnConnect.Enabled = true;
+            }
+        }
+
+        private void FrmConnection_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

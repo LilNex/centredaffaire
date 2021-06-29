@@ -47,7 +47,8 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void MENU1_Load(object sender, EventArgs e)
         {
-            
+            FrmMENU1 FM = new FrmMENU1();
+
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -108,6 +109,26 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
             FrmArcardeStreet FAS = new FrmArcardeStreet();
             FAS.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click_2(object sender, EventArgs e)
+        {
+            FrmAbout FAB = new FrmAbout();
+            FAB.Show();
         }
     }
 }

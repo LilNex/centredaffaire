@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    class OccupationJ
+    class ClsOccupationJ
     {
         private DateTime dateDeOccupation;
         private DateTime dateDeDebut;
@@ -16,9 +16,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         public DateTime DateDeDebut { get => dateDeDebut; set => dateDeDebut = value; }
         public DateTime DateDeFin { get => dateDeFin; set => dateDeFin = value; }
 
-        public OccupationJ() { }
+        public ClsOccupationJ() { }
 
-        public OccupationJ(DateTime DateDeOccupation,DateTime DateDeDebut,DateTime DateDeFin)
+        public ClsOccupationJ(DateTime DateDeOccupation,DateTime DateDeDebut,DateTime DateDeFin)
         {
             this.DateDeOccupation = DateDeOccupation;
             this.DateDeDebut = DateDeDebut;
