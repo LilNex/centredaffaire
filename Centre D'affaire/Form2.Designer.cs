@@ -1,7 +1,7 @@
 ﻿
-namespace Centre_D_affaire.GestionCreche
+namespace Centre_D_affaire
 {
-    partial class frmGC
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,10 @@ namespace Centre_D_affaire.GestionCreche
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // frmGC
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "frmGC";
-            this.Text = "frmGC";
-            this.ResumeLayout(false);
-
+            this.Text = "Form2";
         }
 
         #endregion
