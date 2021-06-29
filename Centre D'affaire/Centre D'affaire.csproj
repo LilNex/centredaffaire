@@ -67,7 +67,7 @@
     <Compile Include="GestionCreche\clsEnfant.cs" />
     <Compile Include="GestionCreche\clsGroupe.cs" />
     <Compile Include="GestionCreche\clsListe.cs" />
-    <Compile Include="GestionCreche\clsOrganisme.cs" />
+    <Compile Include="GestionCreche\clsResponsable.cs" />
     <Compile Include="GestionCreche\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionCreche
 {
-    class clsOrganisme
+    class clsResponsable
     {
         private string nom;
         private string prenom;
@@ -15,8 +15,8 @@ namespace Centre_D_affaire.GestionCreche
         private string adresseWeb;
         private string num;
 
-        public clsOrganisme() { }
-        public clsOrganisme(string NOM, string PRENOM, string TEL, string EMAIL, string ADRESSEWEB, string NUM)
+        public clsResponsable() { }
+        public clsResponsable(string NOM, string PRENOM, string TEL, string EMAIL, string ADRESSEWEB, string NUM)
         {
             this.Nom = NOM;
             this.Prenom = PRENOM;
@@ -47,7 +47,7 @@ namespace Centre_D_affaire.GestionCreche
         }
 
 
-        public bool Ajouter(clsOrganisme Organisme)
+        public bool Ajouter(clsResponsable Organisme)
         {
 
             if (Rechercher(Organisme.num) == -1)
@@ -63,7 +63,7 @@ namespace Centre_D_affaire.GestionCreche
         }
 
 
-        public bool supprimer(clsOrganisme Organisme)
+        public bool supprimer(clsResponsable Organisme)
         {
             if (Rechercher(Organisme.num) != -1)
             {
@@ -75,6 +75,8 @@ namespace Centre_D_affaire.GestionCreche
                 return false;
             }
         }
+
+
 
     }
 }
