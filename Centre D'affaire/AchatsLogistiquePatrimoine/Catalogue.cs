@@ -24,6 +24,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private void Catalogue_Load(object sender, EventArgs e)
 
         {
+            string a = Application.StartupPath;
             dgvCHoi.DataSource = null;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             ClsListe.chargerART();

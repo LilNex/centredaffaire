@@ -25,7 +25,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         {
             
             BinaryFormatter f = new BinaryFormatter();
-            FileStream fichierbin = new FileStream("Article", FileMode.OpenOrCreate);
+            FileStream fichierbin = new FileStream(@"..\..\Resources\Article", FileMode.OpenOrCreate);
             f.Serialize(fichierbin, List_article )   ;
             fichierbin.Close();
         }
@@ -34,7 +34,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         {
             BinaryFormatter f = new BinaryFormatter();
             //FileStream fichierbin = new FileStream("Article", FileMode.OpenOrCreate);
-            MemoryStream fichierbin = new MemoryStream(Centre_D_affaire.Properties.Resources.Article);
+            MemoryStream fichierbin = new MemoryStream(Centre_D_affaire.Properties.Resources.Article1);
             
 
             List_article = (List<ClsArticle>)f.Deserialize(fichierbin);

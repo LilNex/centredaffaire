@@ -248,6 +248,7 @@
     <Content Include="AchatsLogistiquePatrimoine\arriere-plan-afges-1024x728.jpg" />
     <Content Include="Resources\cisco.png" />
     <None Include="Resources\1384060.png" />
+    <None Include="Resources\Article" />
     <None Include="Resources\centre-commercial-vide_1127-376.jpg" />
     <None Include="Resources\1.jpg" />
     <None Include="Resources\personnel.jpg" />

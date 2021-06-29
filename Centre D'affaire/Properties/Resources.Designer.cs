@@ -113,9 +113,9 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] Article {
+        internal static byte[] Article1 {
             get {
-                object obj = ResourceManager.GetObject("Article", resourceCulture);
+                object obj = ResourceManager.GetObject("Article1", resourceCulture);
                 return ((byte[])(obj));
             }
         }
