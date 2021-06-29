@@ -23,5 +23,10 @@ namespace Centre_D_affaire.GestionCreche
             form1.Show();
             this.Hide();
         }
+
+        private void frmEnfant_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

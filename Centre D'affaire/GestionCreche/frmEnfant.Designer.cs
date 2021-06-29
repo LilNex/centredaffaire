@@ -265,6 +265,7 @@ namespace Centre_D_affaire.GestionCreche
             this.Controls.Add(this.label1);
             this.Name = "frmEnfant";
             this.Text = "frmEnfant";
+            this.Load += new System.EventHandler(this.frmEnfant_Load);
             this.gbSex.ResumeLayout(false);
             this.gbSex.PerformLayout();
             this.ResumeLayout(false);
