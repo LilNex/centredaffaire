@@ -23,12 +23,11 @@ namespace Centre_D_affaire.GestionPersonnel
         public int Num { get => num; set => num = value; }
 
         public Demission() { }
-        public Demission(DateTime d,  ClsEmploye ls, string Raison, string Etat)
+        public Demission(DateTime d,   string Raison, string Etat)
         {
             nombrecongés++;
             this.num = nombrecongés;
-            this.date = d;
-            this.Employe = ls;
+            this.date = d;       
             this.raison = Raison;
             this.etat = Etat;
         }

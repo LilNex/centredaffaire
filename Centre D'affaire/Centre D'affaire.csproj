@@ -216,6 +216,9 @@
     <EmbeddedResource Include="GestionPersonnel\FrmDemande.resx">
       <DependentUpon>FrmDemande.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\FrmDemission.resx">
+      <DependentUpon>FrmDemission.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\frmGPersonnel.resx">
       <DependentUpon>frmGPersonnel.cs</DependentUpon>
     </EmbeddedResource>

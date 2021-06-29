@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace Centre_D_affaire.GestionPersonnel
 {
@@ -16,5 +18,76 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             InitializeComponent();
         }
-    }
+        public void RemplirGridStagiaires()
+        {
+            dgvStagiaires.Rows.Clear();
+
+            for (int i = 0; i <Demission.ListeDesDemission.Count; i++)
+            {
+                dgvStagiaires.Rows.Add();
+
+
+                dgvStagiaires.Rows[i].Cells["date"].Value = Demission.ListeDesDemission[i].Date;
+                dgvStagiaires.Rows[i].Cells["raison"].Value = Demission.ListeDesDemission[i].Raison;
+                dgvStagiaires.Rows[i].Cells["etat"].Value = Demission.ListeDesDemission[i].Etat;
+                ;
+                dgvStagiaires.Rows[i].Cells["nm"].Value = textBox1.Text;
+                dgvStagiaires.Rows[i].Cells["cin"].Value = textBox2.Text;
+
+
+
+            }
+        }
+        private void FrmDemission_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmDemande f = new FrmDemande();
+            f.Show();
+        }
+
+      
+            private void button1_Click(object sender, EventArgs e)
+            {
+                if (ClsEmploye.ListeEmploye.Count() > 0)
+                {
+                    for (int i = 0; i < ClsEmploye.ListeEmploye.Count(); i++)
+                    {
+                        if (ClsEmploye.ListeEmploye[i].Cin == textBox2.Text && ClsEmploye.ListeEmploye[i].Nom == textBox1.Text)
+                        {
+                            Demission d = new Demission( dateTimePicker1.Value,textBox3.Text,textBox4.Text);
+                            Demission.ListeDesDemission.Add(d);
+                            RemplirGridStagiaires();
+                            break;
+                        }
+                        else
+                        {
+                            MessageBox.Show("le nom ou le cin est pas valide", "Errur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("la liste des employés est valide", "Errur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                XmlSerializer XS = new XmlSerializer(Demission.ListeDesDemission.GetType());
+                StreamWriter w_fileDeps = new StreamWriter("Liste des Demission.xml");
+                XS.Serialize(w_fileDeps, Demission.ListeDesDemission);
+
+            }
+        }
 }
