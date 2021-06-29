@@ -16,7 +16,7 @@ namespace Centre_D_affaire.GestionCreche
         private string num;
 
         public clsOrganisme() { }
-        public clsOrganisme(string NOM, string PRENOM, string TEL, string EMAIL, string ADRESSEWEB,string NUM)
+        public clsOrganisme(string NOM, string PRENOM, string TEL, string EMAIL, string ADRESSEWEB, string NUM)
         {
             this.Nom = NOM;
             this.Prenom = PRENOM;
@@ -61,5 +61,20 @@ namespace Centre_D_affaire.GestionCreche
             }
 
         }
+
+
+        public bool supprimer(clsOrganisme Organisme)
+        {
+            if (Rechercher(Organisme.num) != -1)
+            {
+                clsListe.ListeOrganismes.Remove(Organisme);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }

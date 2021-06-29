@@ -39,7 +39,7 @@ namespace Centre_D_affaire.GestionCreche
         public bool SUPPRIMERDansGroupe(clsEnfant EF)
         {
 
-            clsGroupe.ListeEnfant.Add(EF);
+            clsGroupe.ListeEnfant.Remove(EF);
             return true;
         }
 

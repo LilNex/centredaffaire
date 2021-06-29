@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionCreche
 {
-     class clsEnfant
+    class clsEnfant
     {
         private string nom;
         private string prenom;
@@ -18,7 +18,7 @@ namespace Centre_D_affaire.GestionCreche
 
 
         public clsEnfant() { }
-        public clsEnfant(string NOM,string PRENOM,char SEX ,DateTime dateN ,DateTime dateD ,string NUM ,int AGE)
+        public clsEnfant(string NOM, string PRENOM, char SEX, DateTime dateN, DateTime dateD, string NUM, int AGE)
         {
             this.Nom = NOM;
             this.Prenom = PRENOM;
@@ -91,11 +91,24 @@ namespace Centre_D_affaire.GestionCreche
             }
         }
         //---------------
-        public bool supprimer(string numero)
+        public bool supprimer(string num)
         {
-            if (rechercher(numero) != -1)
+            if (rechercher(num) != -1)
             {
-                clsListe.ListeEnfant.RemoveAt(rechercher(numero));
+                clsListe.ListeEnfant.RemoveAt(rechercher(num));
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool modifier(string num, clsEnfant EF)
+        {
+            if (rechercher(num) != -1)
+            {
+                clsListe.ListeEnfant[rechercher(num)] = EF;
                 return true;
             }
             else
