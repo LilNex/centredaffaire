@@ -1,26 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class Class1
+namespace Centre_D_affaire.GestionPersonnel
 {
-	public Class1()
-	{
-		private string Nom;
-	    private int Num;
-	    private int RIB;
-
-	}
-    { 
-	    public string Nom { get => Nom; set => Nom = value; }
-        public string Num { get => Num; set => Num = value; }
-        public string RIB { get => RIB; set => RIB = value; }
-    }
-        public Class1() { }
-        public Class1(string nom,int num,int rib)
-        {
-         this.Nom = nom;
-         this.Num = num;
-         this.RIB = rib;
-        }
+    class ClsCompteBancaire
     {
-}
+        private string NomSl;
+        private int NumSl;
+        private int RIB;
+        public string nomSl {get => nomSl; set => nomSl = value;}
+        public int numSl { get => numSl; set => numSl = value; }
+        public int Rib { get => Rib; set => Rib = value; }
+        
+        public ClsCompteBancaire()
+        {
+            this.NomSl = nomSl;
+            this.NumSl = numSl;
+            this.RIB = Rib;
+        }
+    }
+    
+        
+
+
+
+
 }

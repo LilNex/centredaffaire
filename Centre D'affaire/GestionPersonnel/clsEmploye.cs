@@ -8,6 +8,8 @@ namespace Centre_D_affaire.GestionPersonnel
 {
     public class ClsEmploye
     {
+
+        public static List<ClsEmploye> ListeEmploye = new List<ClsEmploye>();
         private string nom;
         private string prenom;
         private string num;
@@ -95,9 +97,9 @@ namespace Centre_D_affaire.GestionPersonnel
         public ClsEmploye() { }
         public int rechercher(string cin)
         {
-            for (int i = 0; i < Congé.ListeEmploye.Count(); i++)
+            for (int i = 0; i < ListeEmploye.Count(); i++)
             {
-                if (Congé.ListeEmploye[i].cin == cin)
+                if (ListeEmploye[i].cin == cin)
                 {
                     return i;
                 }
@@ -108,7 +110,7 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             if (rechercher(G.cin) == -1)
             {
-                Congé.ListeEmploye.Add(G);
+              ListeEmploye.Add(G);
                 return true;
             }
             return false;
@@ -117,7 +119,7 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             if (rechercher(cin) != -1)
             {
-                Congé.ListeEmploye.RemoveAt(rechercher(cin));
+               ListeEmploye.RemoveAt(rechercher(cin));
 
             }
 
@@ -126,7 +128,7 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             if (rechercher(cin) != -1)
             {
-                Congé.ListeEmploye[rechercher(cin)] = G ;
+                ListeEmploye[rechercher(cin)] = G ;
                 return true; 
             }
             return false;

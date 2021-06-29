@@ -51,11 +51,11 @@ namespace Centre_D_affaire.GestionPersonnel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(Congé.ListeEmploye.Count() > 0)
+            if(ClsEmploye. ListeEmploye.Count() > 0)
             {
-                for (int i = 0; i < Congé.ListeEmploye.Count(); i++)
+                for (int i = 0; i < ClsEmploye.ListeEmploye.Count(); i++)
                 {
-                    if (Congé.ListeEmploye[i].Cin == textBox2.Text && Congé.ListeEmploye[i].Nom == textBox1.Text)
+                    if (ClsEmploye.ListeEmploye[i].Cin == textBox2.Text && ClsEmploye.ListeEmploye[i].Nom == textBox1.Text)
                     {
                         Congé c = new Congé(DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text), (int)numericUpDown1.Value, textBox3.Text, textBox4.Text);
                         Congé.ListeDesCongé.Add(c);

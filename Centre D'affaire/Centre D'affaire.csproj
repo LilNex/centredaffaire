@@ -80,6 +80,7 @@
     <Compile Include="GestionParking\frmGParking.Designer.cs">
       <DependentUpon>frmGParking.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\ClsCompteBancaire.cs" />
     <Compile Include="GestionPersonnel\ClsDepartement.cs" />
     <Compile Include="GestionPersonnel\clsEmploye.cs" />
     <Compile Include="GestionPersonnel\clsExceptions.cs" />
