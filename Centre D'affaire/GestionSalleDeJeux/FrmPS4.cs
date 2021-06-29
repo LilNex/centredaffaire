@@ -34,5 +34,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             FrmConnection FC = new FrmConnection();
             FC.Show();
         }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRest_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
