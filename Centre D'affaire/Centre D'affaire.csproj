@@ -64,6 +64,10 @@
     <Compile Include="GestionCafeRestaurant\frmGCR.Designer.cs">
       <DependentUpon>frmGCR.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionCreche\clsEnfant.cs" />
+    <Compile Include="GestionCreche\clsGroupe.cs" />
+    <Compile Include="GestionCreche\clsListe.cs" />
+    <Compile Include="GestionCreche\clsOrganisme.cs" />
     <Compile Include="GestionCreche\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +143,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
