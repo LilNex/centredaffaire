@@ -52,6 +52,7 @@
     <Compile Include="AchatsLogistiquePatrimoine\frmALP.Designer.cs">
       <DependentUpon>frmALP.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +74,7 @@
     <Compile Include="GestionCreche\clsEnfant.cs" />
     <Compile Include="GestionCreche\clsGroupe.cs" />
     <Compile Include="GestionCreche\clsListe.cs" />
+    <Compile Include="GestionCreche\clsParents.cs" />
     <Compile Include="GestionCreche\ClsPersonnel.cs" />
     <Compile Include="GestionCreche\clsResponsable.cs" />
     <Compile Include="GestionCreche\Form1.cs">
@@ -92,6 +94,12 @@
     </Compile>
     <Compile Include="GestionCreche\frmGC.Designer.cs">
       <DependentUpon>frmGC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\frmGroupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\frmGroupe.Designer.cs">
+      <DependentUpon>frmGroupe.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionCreche\frmParents.cs">
       <SubType>Form</SubType>
@@ -148,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmGC.resx">
       <DependentUpon>frmGC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmGroupe.resx">
+      <DependentUpon>frmGroupe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmParents.resx">
       <DependentUpon>frmParents.cs</DependentUpon>
