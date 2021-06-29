@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
+using System.Xml.Serialization;
 namespace Centre_D_affaire.GestionPersonnel
 {
     public partial class FrmCongée : Form
@@ -71,7 +72,11 @@ namespace Centre_D_affaire.GestionPersonnel
             {
                 MessageBox.Show("la liste des employés est valide", "Errur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+           
+                XmlSerializer XS = new XmlSerializer(Congé.ListeDesCongé.GetType());
+                StreamWriter w_fileDeps = new StreamWriter("Liste des Congés.xml");
+                XS.Serialize(w_fileDeps, Congé.ListeDesCongé);
+
         }
 
         private void FrmCongée_Load(object sender, EventArgs e)
