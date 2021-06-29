@@ -42,13 +42,13 @@ namespace Centre_D_affaire.GestionPersonnel
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.dgvStagiaires = new System.Windows.Forms.DataGridView();
+            this.dgvDemission = new System.Windows.Forms.DataGridView();
             this.cin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.raison = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.etat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStagiaires)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDemission)).BeginInit();
             this.SuspendLayout();
             // 
             // Nom
@@ -168,23 +168,23 @@ namespace Centre_D_affaire.GestionPersonnel
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // dgvStagiaires
+            // dgvDemission
             // 
-            this.dgvStagiaires.BackgroundColor = System.Drawing.Color.DodgerBlue;
-            this.dgvStagiaires.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStagiaires.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDemission.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.dgvDemission.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDemission.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cin,
             this.nm,
             this.raison,
             this.date,
             this.etat});
-            this.dgvStagiaires.GridColor = System.Drawing.Color.Blue;
-            this.dgvStagiaires.Location = new System.Drawing.Point(13, 208);
-            this.dgvStagiaires.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvStagiaires.Name = "dgvStagiaires";
-            this.dgvStagiaires.RowHeadersWidth = 51;
-            this.dgvStagiaires.Size = new System.Drawing.Size(677, 222);
-            this.dgvStagiaires.TabIndex = 52;
+            this.dgvDemission.GridColor = System.Drawing.Color.Blue;
+            this.dgvDemission.Location = new System.Drawing.Point(13, 208);
+            this.dgvDemission.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDemission.Name = "dgvDemission";
+            this.dgvDemission.RowHeadersWidth = 51;
+            this.dgvDemission.Size = new System.Drawing.Size(678, 222);
+            this.dgvDemission.TabIndex = 52;
             // 
             // cin
             // 
@@ -226,7 +226,7 @@ namespace Centre_D_affaire.GestionPersonnel
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 430);
-            this.Controls.Add(this.dgvStagiaires);
+            this.Controls.Add(this.dgvDemission);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
@@ -243,7 +243,7 @@ namespace Centre_D_affaire.GestionPersonnel
             this.Name = "FrmDemission";
             this.Text = "FrmDemission";
             this.Load += new System.EventHandler(this.FrmDemission_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStagiaires)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDemission)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,7 +264,7 @@ namespace Centre_D_affaire.GestionPersonnel
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dgvStagiaires;
+        private System.Windows.Forms.DataGridView dgvDemission;
         private System.Windows.Forms.DataGridViewTextBoxColumn cin;
         private System.Windows.Forms.DataGridViewTextBoxColumn nm;
         private System.Windows.Forms.DataGridViewTextBoxColumn raison;

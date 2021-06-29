@@ -18,21 +18,21 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             InitializeComponent();
         }
-        public void RemplirGridStagiaires()
+        public void RemplirGridDemission()
         {
-            dgvStagiaires.Rows.Clear();
+            dgvDemission.Rows.Clear();
 
             for (int i = 0; i <Demission.ListeDesDemission.Count; i++)
             {
-                dgvStagiaires.Rows.Add();
+                dgvDemission.Rows.Add();
 
 
-                dgvStagiaires.Rows[i].Cells["date"].Value = Demission.ListeDesDemission[i].Date;
-                dgvStagiaires.Rows[i].Cells["raison"].Value = Demission.ListeDesDemission[i].Raison;
-                dgvStagiaires.Rows[i].Cells["etat"].Value = Demission.ListeDesDemission[i].Etat;
+                dgvDemission.Rows[i].Cells["date"].Value = Demission.ListeDesDemission[i].Date;
+                dgvDemission.Rows[i].Cells["raison"].Value = Demission.ListeDesDemission[i].Raison;
+                dgvDemission.Rows[i].Cells["etat"].Value = Demission.ListeDesDemission[i].Etat;
                 ;
-                dgvStagiaires.Rows[i].Cells["nm"].Value = textBox1.Text;
-                dgvStagiaires.Rows[i].Cells["cin"].Value = textBox2.Text;
+                dgvDemission.Rows[i].Cells["nm"].Value = textBox1.Text;
+                dgvDemission.Rows[i].Cells["cin"].Value = textBox2.Text;
 
 
 
@@ -70,18 +70,18 @@ namespace Centre_D_affaire.GestionPersonnel
                         {
                             Demission d = new Demission( dateTimePicker1.Value,textBox3.Text,textBox4.Text);
                             Demission.ListeDesDemission.Add(d);
-                            RemplirGridStagiaires();
+                            RemplirGridDemission();
                             break;
                         }
                         else
                         {
-                            MessageBox.Show("le nom ou le cin est pas valide", "Errur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("le nom ou le cin est pas valide", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
                 else
                 {
-                    MessageBox.Show("la liste des employés est valide", "Errur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("la liste des employés est valide", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
                 XmlSerializer XS = new XmlSerializer(Demission.ListeDesDemission.GetType());
@@ -89,5 +89,8 @@ namespace Centre_D_affaire.GestionPersonnel
                 XS.Serialize(w_fileDeps, Demission.ListeDesDemission);
 
             }
-        }
+
+       
+        
+    }
 }
