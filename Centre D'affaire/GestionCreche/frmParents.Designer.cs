@@ -54,7 +54,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(201, 102);
+            this.textBox3.Location = new System.Drawing.Point(191, 104);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(171, 20);
