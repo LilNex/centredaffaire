@@ -100,7 +100,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void BTNfermer_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void BTNstatistique_Click(object sender, EventArgs e)
@@ -119,6 +119,44 @@ namespace Centre_D_affaire.GestionSalleDeSport
         {
             OpenChildForm(new UserControl1(), sender);
             Panel2.BackgroundColor = Color.FromArgb(210, 180, 140);
+        }
+
+        private void BTNQuitter_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            btnSeconnecter f = new btnSeconnecter();
+            f.Show();
+        }
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+
+        private void Panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+          
+        
+        
+            
+    }
+
+        private void FormGestionnaire_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+
+        }
+
+        private void FormGestionnaire_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

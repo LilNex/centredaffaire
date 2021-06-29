@@ -54,10 +54,10 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNEntraineur = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BTNMembre = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BTNstatistique = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.PAnelDesktop = new Bunifu.UI.WinForms.BunifuPanel();
             this.BTNfermer = new Bunifu.Framework.UI.BunifuTileButton();
             this.BTNredire = new Bunifu.Framework.UI.BunifuTileButton();
             this.Panel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.PAnelDesktop = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel2.SuspendLayout();
@@ -192,6 +192,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNQuitter.TextMarginLeft = 0;
             this.BTNQuitter.TextPadding = new System.Windows.Forms.Padding(0);
             this.BTNQuitter.UseDefaultRadiusAndThickness = true;
+            this.BTNQuitter.Click += new System.EventHandler(this.BTNQuitter_Click);
             // 
             // BTNutilisateur
             // 
@@ -1003,6 +1004,22 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNstatistique.UseDefaultRadiusAndThickness = true;
             this.BTNstatistique.Click += new System.EventHandler(this.BTNstatistique_Click);
             // 
+            // PAnelDesktop
+            // 
+            this.PAnelDesktop.BackgroundColor = System.Drawing.Color.White;
+            this.PAnelDesktop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PAnelDesktop.BackgroundImage")));
+            this.PAnelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PAnelDesktop.BorderColor = System.Drawing.Color.Transparent;
+            this.PAnelDesktop.BorderRadius = 3;
+            this.PAnelDesktop.BorderThickness = 1;
+            this.PAnelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PAnelDesktop.Location = new System.Drawing.Point(267, 46);
+            this.PAnelDesktop.Name = "PAnelDesktop";
+            this.PAnelDesktop.ShowBorders = true;
+            this.PAnelDesktop.Size = new System.Drawing.Size(1100, 755);
+            this.PAnelDesktop.TabIndex = 159;
+            this.PAnelDesktop.Click += new System.EventHandler(this.PAnelDesktop_Click);
+            // 
             // BTNfermer
             // 
             this.BTNfermer.BackColor = System.Drawing.Color.Transparent;
@@ -1060,27 +1077,13 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Panel2.ShowBorders = true;
             this.Panel2.Size = new System.Drawing.Size(1367, 46);
             this.Panel2.TabIndex = 155;
-            // 
-            // PAnelDesktop
-            // 
-            this.PAnelDesktop.BackgroundColor = System.Drawing.Color.White;
-            this.PAnelDesktop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PAnelDesktop.BackgroundImage")));
-            this.PAnelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PAnelDesktop.BorderColor = System.Drawing.Color.Transparent;
-            this.PAnelDesktop.BorderRadius = 3;
-            this.PAnelDesktop.BorderThickness = 1;
-            this.PAnelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PAnelDesktop.Location = new System.Drawing.Point(267, 46);
-            this.PAnelDesktop.Name = "PAnelDesktop";
-            this.PAnelDesktop.ShowBorders = true;
-            this.PAnelDesktop.Size = new System.Drawing.Size(1100, 755);
-            this.PAnelDesktop.TabIndex = 159;
-            this.PAnelDesktop.Click += new System.EventHandler(this.PAnelDesktop_Click);
+            this.Panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel2_MouseDown);
             // 
             // FormGestionnaire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1367, 801);
             this.Controls.Add(this.PAnelDesktop);
             this.Controls.Add(this.bunifuPanel1);
@@ -1088,6 +1091,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGestionnaire";
             this.Text = "FormGestionnaire";
+            this.Load += new System.EventHandler(this.FormGestionnaire_Load_1);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormGestionnaire_MouseDown);
             this.bunifuPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Panel2.ResumeLayout(false);
@@ -1107,12 +1112,12 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNMembre;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNstatistique;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNutilisateur;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNQuitter;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BTNAchat;
+        private Bunifu.UI.WinForms.BunifuPanel PAnelDesktop;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuPanel Panel2;
         private Bunifu.Framework.UI.BunifuTileButton BTNredire;
         private Bunifu.Framework.UI.BunifuTileButton BTNfermer;
-        private Bunifu.UI.WinForms.BunifuPanel PAnelDesktop;
     }
 }

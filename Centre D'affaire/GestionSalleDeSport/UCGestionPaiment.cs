@@ -51,7 +51,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
             Package p = new Package(); 
             Membre f = new Membre(TXTnumero.Text, Cbnom.Text, DPdate.Value, "" , "", "", "", p,1 , int.Parse(TxtFrais.Text), int.Parse(TXTDUREE.Text), int.Parse(TXTtotal.Text), "");
             Paiement m = new Paiement(f,txtpaiment.Text);
-            Listes.paiment.Add(m); 
+            Listes.paiment.Add(m);
+            grid();
         }
 
         private void Cbnom_SelectedIndexChanged(object sender, EventArgs e)

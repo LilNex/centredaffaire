@@ -734,7 +734,7 @@
         ACi59wHYc6e0sjuakQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtLogin.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVkAAAAtCAYAAAAENhi4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAANbSURBVHhe7d2/axNhHMfxGzt27Ojo2LGjYydxERwdxb/A
@@ -755,7 +755,7 @@
         TkSuQmCC
 </value>
   </data>
-  <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnConnect.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAIsSURBVHhe7dwtU+NQGMXxyJUrkZVIJLISiVxZWYmsI98A
@@ -771,16 +771,6 @@
         QmCC
 </value>
   </data>
-  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAtSURBVHhe7cEBDQAAAMKg909tDwcEAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAK9qW48AAYJC5p8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Roboto Thin'; font-size: 10pt; width: 100%; height: 100%; font-style: italic; font-weight: bold; text-decoration: none; color: rgb(128, 0, 128); text-align: left; }</value>
-  </data>
   <data name="lblPassword.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Roboto Thin'; font-size: 10pt; width: 100%; height: 100%; font-style: italic; font-weight: bold; text-decoration: none; color: rgb(128, 0, 128); text-align: left; }</value>
   </data>
@@ -790,7 +780,7 @@
   <data name="lblLogin1.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Roboto Thin'; font-size: 10pt; width: 100%; height: 100%; font-style: italic; font-weight: bold; text-decoration: none; color: rgb(128, 0, 128); text-align: left; }</value>
   </data>
-  <data name="TXTmotPass.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TXTmotpasse.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVkAAAAtCAYAAAAENhi4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAANbSURBVHhe7d2/axNhHMfxGzt27Ojo2LGjYydxERwdxb/A
