@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionCafeRestaurant\frmGCR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,7 @@
     <Compile Include="GestionCreche\clsEnfant.cs" />
     <Compile Include="GestionCreche\clsGroupe.cs" />
     <Compile Include="GestionCreche\clsListe.cs" />
+    <Compile Include="GestionCreche\ClsPersonnel.cs" />
     <Compile Include="GestionCreche\clsResponsable.cs" />
     <Compile Include="GestionCreche\Form1.cs">
       <SubType>Form</SubType>
@@ -74,11 +81,23 @@
     <Compile Include="GestionCreche\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionCreche\frmEnfant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\frmEnfant.Designer.cs">
+      <DependentUpon>frmEnfant.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionCreche\frmGC.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GestionCreche\frmGC.Designer.cs">
       <DependentUpon>frmGC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\frmParents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\frmParents.Designer.cs">
+      <DependentUpon>frmParents.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionParking\frmGParking.cs">
       <SubType>Form</SubType>
@@ -112,11 +131,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmEnfant.resx">
+      <DependentUpon>frmEnfant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmGC.resx">
       <DependentUpon>frmGC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmParents.resx">
+      <DependentUpon>frmParents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

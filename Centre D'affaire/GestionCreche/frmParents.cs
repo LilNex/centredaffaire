@@ -10,21 +10,18 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionCreche
 {
-    public partial class Form1 : Form
+    public partial class frmParents : Form
     {
-        public Form1()
+        public frmParents()
         {
             InitializeComponent();
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void BtnPre_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
+            frmParents frm2 = new frmParents();
+            frm2.Show();
+            this.Hide();
         }
     }
 }
