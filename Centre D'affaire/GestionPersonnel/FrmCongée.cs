@@ -17,22 +17,22 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             InitializeComponent();
         }
-        public void RemplirGridStagiaires()
+        public void RemplirGridCongée()
         {
-            dgvStagiaires.Rows.Clear();
+            dgvCongé.Rows.Clear();
 
             for (int i = 0; i < Congé.ListeDesCongé.Count; i++)
             {
-                dgvStagiaires.Rows.Add();
+                dgvCongé.Rows.Add();
 
 
-                dgvStagiaires.Rows[i].Cells["db"].Value = Congé.ListeDesCongé[i].Dated;
-                dgvStagiaires.Rows[i].Cells["db"].Value = Congé.ListeDesCongé[i].Datef;
-                dgvStagiaires.Rows[i].Cells["durée"].Value = Congé.ListeDesCongé[i].Durée;
-                dgvStagiaires.Rows[i].Cells["etat"].Value = Congé.ListeDesCongé[i].Etat;
-                dgvStagiaires.Rows[i].Cells["catégorie"].Value = Congé.ListeDesCongé[i].Catégories;
-                dgvStagiaires.Rows[i].Cells["nom"].Value = textBox1.Text;
-                dgvStagiaires.Rows[i].Cells["cin"].Value = textBox2.Text;
+                dgvCongé.Rows[i].Cells["db"].Value = Congé.ListeDesCongé[i].Dated;
+                dgvCongé.Rows[i].Cells["db"].Value = Congé.ListeDesCongé[i].Datef;
+                dgvCongé.Rows[i].Cells["durée"].Value = Congé.ListeDesCongé[i].Durée;
+                dgvCongé.Rows[i].Cells["etat"].Value = Congé.ListeDesCongé[i].Etat;
+                dgvCongé.Rows[i].Cells["catégorie"].Value = Congé.ListeDesCongé[i].Catégories;
+                dgvCongé.Rows[i].Cells["nom"].Value = textBox1.Text;
+                dgvCongé.Rows[i].Cells["cin"].Value = textBox2.Text;
 
 
 
@@ -63,7 +63,7 @@ namespace Centre_D_affaire.GestionPersonnel
                     {
                         Congé c = new Congé(DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text), (int)numericUpDown1.Value, textBox3.Text, textBox4.Text);
                         Congé.ListeDesCongé.Add(c);
-                        RemplirGridStagiaires();
+                        RemplirGridCongée();
                         break;
                     }
                     else
@@ -93,9 +93,9 @@ namespace Centre_D_affaire.GestionPersonnel
             
         }
 
-        private void FrmCongée_FormClosing(object sender, FormClosingEventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-        
+
         }
     }
 }
