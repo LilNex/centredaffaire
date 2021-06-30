@@ -50,13 +50,17 @@ namespace Centre_D_affaire.GestionPersonnel
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            XmlSerializer XS = new XmlSerializer(Demission.ListeDesDemission.GetType());
+            StreamWriter w_fileDeps = new StreamWriter("Liste des Demission.xml");
+            XS.Serialize(w_fileDeps, Demission.ListeDesDemission);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             FrmDemande f = new FrmDemande();
             f.Show();
+            this.Hide();
         }
 
       

@@ -29,18 +29,25 @@ namespace Centre_D_affaire.GestionPersonnel
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(247, 13);
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(7, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(48, 20);
             this.label1.TabIndex = 0;
+            this.label1.Text = "Date";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // checkBox1
@@ -78,7 +85,9 @@ namespace Centre_D_affaire.GestionPersonnel
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
             this.Name = "FrmDemande";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDemande";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmDemande_FormClosing);
             this.Load += new System.EventHandler(this.FrmDemande_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -90,5 +99,7 @@ namespace Centre_D_affaire.GestionPersonnel
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -24,17 +24,44 @@ namespace Centre_D_affaire.GestionPersonnel
 
         private void FrmDemande_Load(object sender, EventArgs e)
         {
-            label1.Text = DateTime.Now.Day.ToString();
-            if(checkBox1.Checked == true)
+            timer1.Start();
+            label1.Text = DateTime.Now.ToLongDateString();
+             label2.Text = DateTime.Now.ToLongTimeString();
+
+
+
+
+        }
+
+        private void checkBox1_Click(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
             {
-                FrmCongée f = new FrmCongée();
-                f.Show();
+                FrmCongée f1 = new FrmCongée();
+                f1.Show();
             }
+            this.Hide();
+        }
+
+        private void Frm(object sender, EventArgs e)
+        {
             if (checkBox2.Checked == true)
             {
                 FrmDemission f1 = new FrmDemission();
                 f1.Show();
             }
+            this.Hide();
+        }
+
+        private void FrmDemande_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label2.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
         }
     }
 }

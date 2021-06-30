@@ -221,6 +221,41 @@ namespace Centre_D_affaire.GestionPersonnel
             this.Etat.Name = "Etat";
             this.Etat.Width = 125;
             // 
+            // cin
+            // 
+            this.cin.HeaderText = "CIN";
+            this.cin.Name = "cin";
+            // 
+            // nom
+            // 
+            this.nom.HeaderText = "NOM";
+            this.nom.Name = "nom";
+            // 
+            // Durée
+            // 
+            this.Durée.HeaderText = "Durée";
+            this.Durée.Name = "Durée";
+            // 
+            // db
+            // 
+            this.db.HeaderText = "Date Debut";
+            this.db.Name = "db";
+            // 
+            // df
+            // 
+            this.df.HeaderText = "Date Fin";
+            this.df.Name = "df";
+            // 
+            // catégorie
+            // 
+            this.catégorie.HeaderText = "Catégorie";
+            this.catégorie.Name = "catégorie";
+            // 
+            // Etat
+            // 
+            this.Etat.HeaderText = "Etat";
+            this.Etat.Name = "Etat";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -323,7 +358,9 @@ namespace Centre_D_affaire.GestionPersonnel
             this.Controls.Add(this.textBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmCongée";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCongée";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCongée_FormClosing);
             this.Load += new System.EventHandler(this.FrmCongée_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCongé)).EndInit();
