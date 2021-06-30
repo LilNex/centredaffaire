@@ -45,7 +45,7 @@ namespace Centre_D_affaire.GestionCreche
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnModifier = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnRechercher = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -200,17 +200,19 @@ namespace Centre_D_affaire.GestionCreche
             this.btnSupprimer.TabIndex = 14;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = false;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
-            // button4
+            // btnRechercher
             // 
-            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(8, 19);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(117, 26);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "ReChercher";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnRechercher.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRechercher.Location = new System.Drawing.Point(8, 19);
+            this.btnRechercher.Name = "btnRechercher";
+            this.btnRechercher.Size = new System.Drawing.Size(117, 26);
+            this.btnRechercher.TabIndex = 15;
+            this.btnRechercher.Text = "ReChercher";
+            this.btnRechercher.UseVisualStyleBackColor = false;
+            this.btnRechercher.Click += new System.EventHandler(this.btnRechercher_Click);
             // 
             // dataGridView1
             // 
@@ -281,7 +283,7 @@ namespace Centre_D_affaire.GestionCreche
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.btnRechercher);
             this.groupBox1.Controls.Add(this.txtNsearch);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -369,7 +371,7 @@ namespace Centre_D_affaire.GestionCreche
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnModifier;
         private System.Windows.Forms.Button btnSupprimer;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnRechercher;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
