@@ -20,8 +20,8 @@ namespace Centre_D_affaire.GestionCreche
             {
                 dgvGroupe.Rows.Add();
 
-                dgvGroupe.Rows[i].Cells["NumG"].Value = clsListe.listeGroupe[i].NumG;
-                dgvGroupe.Rows[i].Cells["NomG"].Value = clsListe.listeGroupe[i].NomG;
+                dgvGroupe.Rows[i].Cells["Column1"].Value = clsListe.listeGroupe[i].NumG;
+                dgvGroupe.Rows[i].Cells["Column2"].Value = clsListe.listeGroupe[i].NomG;
 
 
             }
@@ -31,7 +31,14 @@ namespace Centre_D_affaire.GestionCreche
         {
             InitializeComponent();
         }
-       
+        private void btnAjouter_Click_1(object sender, EventArgs e)
+        {
+            clsGroupe G = new clsGroupe();
+            G.NumG = int.Parse(nudnumero.Text);
+            G.NomG = txtnom.Text;
+            G.AjouterDansListeG(G);
+            RemplirGridEnfant();
+        }
 
         private void btnNouveau_Click(object sender, EventArgs e)
         {
