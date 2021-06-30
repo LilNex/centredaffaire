@@ -39,6 +39,13 @@ namespace Centre_D_affaire.GestionPersonnel
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.dgvStagiaires = new System.Windows.Forms.DataGridView();
+            this.cin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Durée = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.db = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.df = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.catégorie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Etat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -47,13 +54,6 @@ namespace Centre_D_affaire.GestionPersonnel
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.cin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Durée = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.db = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.df = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.catégorie = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Etat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStagiaires)).BeginInit();
             this.SuspendLayout();
@@ -160,6 +160,41 @@ namespace Centre_D_affaire.GestionPersonnel
             this.dgvStagiaires.Size = new System.Drawing.Size(740, 180);
             this.dgvStagiaires.TabIndex = 51;
             // 
+            // cin
+            // 
+            this.cin.HeaderText = "CIN";
+            this.cin.Name = "cin";
+            // 
+            // nom
+            // 
+            this.nom.HeaderText = "NOM";
+            this.nom.Name = "nom";
+            // 
+            // Durée
+            // 
+            this.Durée.HeaderText = "Durée";
+            this.Durée.Name = "Durée";
+            // 
+            // db
+            // 
+            this.db.HeaderText = "Date Debut";
+            this.db.Name = "db";
+            // 
+            // df
+            // 
+            this.df.HeaderText = "Date Fin";
+            this.df.Name = "df";
+            // 
+            // catégorie
+            // 
+            this.catégorie.HeaderText = "Catégorie";
+            this.catégorie.Name = "catégorie";
+            // 
+            // Etat
+            // 
+            this.Etat.HeaderText = "Etat";
+            this.Etat.Name = "Etat";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -229,45 +264,11 @@ namespace Centre_D_affaire.GestionPersonnel
             this.textBox4.Size = new System.Drawing.Size(199, 20);
             this.textBox4.TabIndex = 56;
             // 
-            // cin
-            // 
-            this.cin.HeaderText = "CIN";
-            this.cin.Name = "cin";
-            // 
-            // nom
-            // 
-            this.nom.HeaderText = "NOM";
-            this.nom.Name = "nom";
-            // 
-            // Durée
-            // 
-            this.Durée.HeaderText = "Durée";
-            this.Durée.Name = "Durée";
-            // 
-            // db
-            // 
-            this.db.HeaderText = "Date Debut";
-            this.db.Name = "db";
-            // 
-            // df
-            // 
-            this.df.HeaderText = "Date Fin";
-            this.df.Name = "df";
-            // 
-            // catégorie
-            // 
-            this.catégorie.HeaderText = "Catégorie";
-            this.catégorie.Name = "catégorie";
-            // 
-            // Etat
-            // 
-            this.Etat.HeaderText = "Etat";
-            this.Etat.Name = "Etat";
-            // 
             // FrmCongée
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(755, 411);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
@@ -288,7 +289,9 @@ namespace Centre_D_affaire.GestionPersonnel
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "FrmCongée";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCongée";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCongée_FormClosing);
             this.Load += new System.EventHandler(this.FrmCongée_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStagiaires)).EndInit();

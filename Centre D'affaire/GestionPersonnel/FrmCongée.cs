@@ -42,11 +42,15 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             FrmDemande f = new FrmDemande();
             f.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            XmlSerializer XS = new XmlSerializer(Congé.ListeDesCongé.GetType());
+            StreamWriter w_fileDeps = new StreamWriter("Liste des Congés.xml");
+            XS.Serialize(w_fileDeps, Congé.ListeDesCongé);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -87,6 +91,11 @@ namespace Centre_D_affaire.GestionPersonnel
         private void label5_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void FrmCongée_FormClosing(object sender, FormClosingEventArgs e)
+        {
+        
         }
     }
 }
