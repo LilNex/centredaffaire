@@ -172,6 +172,24 @@
       <DependentUpon>_UCDepartements.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionPersonnel\Demission.cs" />
+    <Compile Include="GestionPersonnel\FrmCongée.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmCongée.Designer.cs">
+      <DependentUpon>FrmCongée.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmDemande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmDemande.Designer.cs">
+      <DependentUpon>FrmDemande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmDemission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmDemission.Designer.cs">
+      <DependentUpon>FrmDemission.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionPersonnel\frmPrincipal_Directeur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +230,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\CustomControls\UCNotif.resx">
       <DependentUpon>UCNotif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\FrmCongée.resx">
+      <DependentUpon>FrmCongée.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\FrmDemande.resx">
+      <DependentUpon>FrmDemande.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\frmGPersonnel.resx">
       <DependentUpon>frmGPersonnel.cs</DependentUpon>

@@ -8,33 +8,36 @@ namespace Centre_D_affaire.GestionPersonnel
 {
     class Congé
     {
-        public List<Congé> ListeDesCongé = new List<Congé>();
-        private DateTime date;
+        public  static List<Congé> ListeDesCongé = new List<Congé>();
+        private DateTime dated;
+        private DateTime datef;
+
         private int durée;
         private static List<ClsEmploye> listeEmploye = new List<ClsEmploye>();
         private string catégories;
         private string etat;
 
-        public DateTime Date { get => date; set => date = value; }
+        public DateTime Dated { get => dated; set => dated = value; }
         public int Durée { get => durée; set => durée = value; }
         public static List<ClsEmploye> ListeEmploye { get => listeEmploye; set => listeEmploye = value; }
         public string Catégories { get => catégories; set => catégories = value; }
         public string Etat { get => etat; set => etat = value; }
+        public DateTime Datef { get => datef; set => datef = value; }
+
         public Congé() { }
-        public Congé(DateTime d, int duré,List<ClsEmploye>ls,string ca,string etats)    
+        public Congé(DateTime d, DateTime df, int duré,string ca,string etats)    
         {
-            this.date = d;
+            this.dated = d;
+            this.datef = df;
             this.durée = duré;
-            listeEmploye = ls;
             this.catégories = ca;
             this.etat= etats;
-
         }
         public int rechercher(DateTime date)
         {
             for (int i = 0; i < ListeDesCongé.Count(); i++)
             {
-                if (ListeDesCongé[i].date == date)
+                if (ListeDesCongé[i].dated == date)
                 {
                     return i;
                 }
@@ -43,7 +46,7 @@ namespace Centre_D_affaire.GestionPersonnel
         }
         public bool ajouter (Congé G)
         {
-            if(rechercher(G.date) == -1)
+            if(rechercher(G.dated) == -1)
             {
                 ListeDesCongé.Add(G);
                 return true;

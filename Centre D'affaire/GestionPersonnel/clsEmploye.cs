@@ -93,5 +93,43 @@ namespace Centre_D_affaire.GestionPersonnel
         }
 
         public ClsEmploye() { }
+        public int rechercher(string cin)
+        {
+            for (int i = 0; i < Congé.ListeEmploye.Count(); i++)
+            {
+                if (Congé.ListeEmploye[i].cin == cin)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        public bool ajouter(ClsEmploye G)
+        {
+            if (rechercher(G.cin) == -1)
+            {
+                Congé.ListeEmploye.Add(G);
+                return true;
+            }
+            return false;
+        }
+        public void supprimer(string cin)
+        {
+            if (rechercher(cin) != -1)
+            {
+                Congé.ListeEmploye.RemoveAt(rechercher(cin));
+
+            }
+
+        }
+        public bool modifier(string cin , ClsEmploye G)
+        {
+            if (rechercher(cin) != -1)
+            {
+                Congé.ListeEmploye[rechercher(cin)] = G ;
+                return true; 
+            }
+            return false;
+        }
     }
 }
