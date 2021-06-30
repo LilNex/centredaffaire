@@ -31,16 +31,7 @@ namespace Centre_D_affaire.GestionCreche
         {
             InitializeComponent();
         }
-        private void btnAjouter_Click_1(object sender, EventArgs e)
-        {
-            clsGroupe G = new clsGroupe
-            {
-                NumG = int.Parse(txtnum.Text),
-                NomG = txtnom.Text
-            };
-            G.AjouterDansListeG(G);
-            RemplirGridEnfant();
-        }
+        
 
         private void btnNouveau_Click(object sender, EventArgs e)
         {
@@ -79,11 +70,11 @@ namespace Centre_D_affaire.GestionCreche
 
         private void txtnum_TextChanged(object sender, EventArgs e)
         {
-            if ()
-            {
 
-            }
-                
+        }
+
+        private void txtnom_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

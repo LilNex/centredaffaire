@@ -121,14 +121,13 @@ namespace Centre_D_affaire.GestionCreche
 
         private void btnRechercher_Click(object sender, EventArgs e)
         {
-            Boolean R = false;
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
                 dataGridView1.Rows[i].Selected = false;
 
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
                 if (txtNsearch.Text.Equals(dataGridView1.Rows[i].Cells[5].Value))
                     dataGridView1.Rows[i].Selected = true;
-            R = true;
+            bool R = true;
             if (R == false) MessageBox.Show("Error");
         }
     }

@@ -14,7 +14,7 @@ namespace Centre_D_affaire.GestionCreche
 {
     public partial class frmEnfant : Form
     {
-        readonly frmEnfant Enfant = new frmEnfant();
+        private readonly frmEnfant Enfant = new frmEnfant();
 
         public frmEnfant()
         {
@@ -59,9 +59,9 @@ namespace Centre_D_affaire.GestionCreche
             };
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                XmlSerializer format = new XmlSerializer(typeof(frmEnfant));
-                StreamWriter fluxXML = new StreamWriter(saveFileDialog1.FileName);
-            //    format.Serialize(fluxXML, frmEnfant);
+                _ = new XmlSerializer(typeof(frmEnfant));
+                _ = new StreamWriter(saveFileDialog1.FileName);
+                //    format.Serialize(fluxXML, frmEnfant);
             }
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
@@ -71,8 +71,8 @@ namespace Centre_D_affaire.GestionCreche
             {
                 // le using using System.Runtime.Serialization.Formatters.Binary; est nécessaire 
 
-                BinaryFormatter format = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
-                FileStream fichierBin = new FileStream(saveFileDialog.FileName, FileMode.CreateNew);
+                _ = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
+                _ = new FileStream(saveFileDialog.FileName, FileMode.CreateNew);
             }
         }
 

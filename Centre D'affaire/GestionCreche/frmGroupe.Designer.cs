@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionCreche
 {
@@ -57,6 +58,7 @@ namespace Centre_D_affaire.GestionCreche
             this.dgvGroupe.RowTemplate.Height = 28;
             this.dgvGroupe.Size = new System.Drawing.Size(999, 505);
             this.dgvGroupe.TabIndex = 0;
+            this.dgvGroupe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGroupe_CellContentClick);
             // 
             // Column1
             // 
@@ -101,6 +103,7 @@ namespace Centre_D_affaire.GestionCreche
             this.txtnom.Name = "txtnom";
             this.txtnom.Size = new System.Drawing.Size(396, 26);
             this.txtnom.TabIndex = 3;
+            this.txtnom.TextChanged += new System.EventHandler(this.txtnom_TextChanged);
             // 
             // btnAjouter
             // 
@@ -187,9 +190,31 @@ namespace Centre_D_affaire.GestionCreche
 
         }
 
-        private void btnAjouter_Click(object sender, EventArgs e)
+        private void dgvGroupe_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             throw new NotImplementedException();
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+           if(txtnom.Text == "" || txtnum.Text == "")
+            {
+                MessageBox.Show("Attention !! une information est vide ");
+            }
+            else
+            {
+                try
+                {
+
+                    this.dgvGroupe.Rows.Add(txtnom.Text, int.Parse(txtnum.Text));
+                    this.txtnom.Text = " ";
+                    this.txtnum.Clear();
+                }
+                catch (FormatException )
+                {
+                    MessageBox.Show("NUM INVALIDE ! ");
+                }
+            }
         }
 
         #endregion
