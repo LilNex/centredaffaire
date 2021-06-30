@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
+using System.Xml.Serialization;
 namespace Centre_D_affaire.GestionPersonnel
 {
     public partial class FrmCongée : Form
@@ -41,20 +42,24 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             FrmDemande f = new FrmDemande();
             f.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            XmlSerializer XS = new XmlSerializer(Congé.ListeDesCongé.GetType());
+            StreamWriter w_fileDeps = new StreamWriter("Liste des Congés.xml");
+            XS.Serialize(w_fileDeps, Congé.ListeDesCongé);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(Congé.ListeEmploye.Count() > 0)
+            if(ClsEmploye. ListeEmploye.Count() > 0)
             {
-                for (int i = 0; i < Congé.ListeEmploye.Count(); i++)
+                for (int i = 0; i < ClsEmploye.ListeEmploye.Count(); i++)
                 {
-                    if (Congé.ListeEmploye[i].Cin == textBox2.Text && Congé.ListeEmploye[i].Nom == textBox1.Text)
+                    if (ClsEmploye.ListeEmploye[i].Cin == textBox2.Text && ClsEmploye.ListeEmploye[i].Nom == textBox1.Text)
                     {
                         Congé c = new Congé(DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text), (int)numericUpDown1.Value, textBox3.Text, textBox4.Text);
                         Congé.ListeDesCongé.Add(c);
@@ -71,7 +76,11 @@ namespace Centre_D_affaire.GestionPersonnel
             {
                 MessageBox.Show("la liste des employés est valide", "Errur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+           
+                XmlSerializer XS = new XmlSerializer(Congé.ListeDesCongé.GetType());
+                StreamWriter w_fileDeps = new StreamWriter("Liste des Congés.xml");
+                XS.Serialize(w_fileDeps, Congé.ListeDesCongé);
+
         }
 
         private void FrmCongée_Load(object sender, EventArgs e)
@@ -82,6 +91,11 @@ namespace Centre_D_affaire.GestionPersonnel
         private void label5_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void FrmCongée_FormClosing(object sender, FormClosingEventArgs e)
+        {
+        
         }
     }
 }
