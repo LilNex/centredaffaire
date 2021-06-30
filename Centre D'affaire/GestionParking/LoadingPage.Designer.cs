@@ -69,6 +69,7 @@ namespace Centre_D_affaire.GestionParking
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 14);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -100,6 +101,7 @@ namespace Centre_D_affaire.GestionParking
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoadingPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoadingPage";

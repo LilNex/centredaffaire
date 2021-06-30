@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.IO;
+using System.Xml;
 using System.Xml.Serialization;
 
 
@@ -78,7 +79,7 @@ namespace Centre_D_affaire.GestionParking
         {
 
         }
-        public void vide()
+        public void Empty()
         {
             UserName.Text = "";
             Password.Text = "";
@@ -102,12 +103,12 @@ namespace Centre_D_affaire.GestionParking
             {
                 if (UserName.Text == "")
                 {
-                    MessageBox.Show("User Name vide", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("User Name Empty", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     z = true;
                 }
                 else
                 {
-                    MessageBox.Show("Password vide", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Password Empty", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     z = true;
                 }
             }
@@ -188,7 +189,7 @@ namespace Centre_D_affaire.GestionParking
                     MessageBox.Show("Create an Account to Login", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
-                vide();
+                Empty();
                 
             }
 
@@ -252,23 +253,23 @@ namespace Centre_D_affaire.GestionParking
             {
                 if (username2.Text == "")
                 {
-                    MessageBox.Show("User Name vide", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("User Name Empty", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
                     if (password2.Text == "")
                     {
-                        MessageBox.Show("Password vide", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Password Empty", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
                         if (email.Text == "")
                         {
-                            MessageBox.Show("Email vide", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Email Empty", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
-                            MessageBox.Show("Telephone vide", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Telephone Empty", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
 
                     }
@@ -307,7 +308,7 @@ namespace Centre_D_affaire.GestionParking
 
                     panelSIGNUP.Hide();
                     PanelSIGNIN.Show();
-                    vide();
+                    Empty();
                 }
                 catch (Exception a)
                 {

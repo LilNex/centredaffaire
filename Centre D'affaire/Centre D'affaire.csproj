@@ -157,6 +157,12 @@
     <Compile Include="AchatsLogistiquePatrimoine\frmALP.Designer.cs">
       <DependentUpon>frmALP.cs</DependentUpon>
     </Compile>
+    <Compile Include="dgv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dgv.Designer.cs">
+      <DependentUpon>dgv.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,18 @@
     </Compile>
     <Compile Include="GestionParking\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionParking\dgvCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionParking\dgvCar.Designer.cs">
+      <DependentUpon>dgvCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionParking\dgvSpot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionParking\dgvSpot.Designer.cs">
+      <DependentUpon>dgvSpot.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionParking\LoadingPage.cs">
       <SubType>Form</SubType>
@@ -221,8 +239,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dgv.resx">
+      <DependentUpon>dgv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionParking\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionParking\dgvCar.resx">
+      <DependentUpon>dgvCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionParking\dgvSpot.resx">
+      <DependentUpon>dgvSpot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionParking\LoadingPage.resx">
       <DependentUpon>LoadingPage.cs</DependentUpon>

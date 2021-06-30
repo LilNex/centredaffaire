@@ -27,16 +27,24 @@ namespace Centre_D_affaire.GestionParking
         private string methode;
         private string holderName;
         private string ExperitionDate;
-        private int cardNumber;
+        private double cardNumber;
         private int cvvCode;
+
+        private string time2;
+        private string date;
+        private string cost;
         public info() { }
 
-        //public info(int time,int spot, string carname)
-        //{
-        //    this.time = time;
-        //    this.spotNumber = spot;
-        //    this.carname = carname;
-        //}
+        public info(string date,string time2, int time, int spotnum,string carnum,string cost,string payment)
+        {
+            this.date = date;
+            this.time2 = time2;
+            this.time = time;
+            this.spotNumber = spotnum;
+            this.carname = carnum;
+            this.cost = cost;
+            this.methode = payment;
+        }
 
         public info(string cn, string ct, int time)
         {
@@ -65,7 +73,7 @@ namespace Centre_D_affaire.GestionParking
             this.spotName = sname;
         }
 
-        public info(string pm, string hm, string ed, int cn, int cd)
+        public info(string pm, string hm, string ed, double cn, int cd)
         {
             this.methode = pm;
             this.holderName = hm;
@@ -96,7 +104,7 @@ namespace Centre_D_affaire.GestionParking
         public string Methode { get => methode; set => methode = value; }
         public string HolderName { get => holderName; set => holderName = value; }
         public string ExperitionDate1 { get => ExperitionDate; set => ExperitionDate = value; }
-        public int CardNumber { get => cardNumber; set => cardNumber = value; }
+        public double CardNumber { get => cardNumber; set => cardNumber = value; }
         public int CvvCode { get => cvvCode; set => cvvCode = value; }
 
 

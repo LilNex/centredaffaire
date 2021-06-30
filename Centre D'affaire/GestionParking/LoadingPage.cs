@@ -28,5 +28,10 @@ namespace Centre_D_affaire.GestionParking
                 form.Show();
             }
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
