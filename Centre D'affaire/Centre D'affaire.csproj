@@ -208,6 +208,7 @@
     <Compile Include="GestionPersonnel\FrmPaiement.Designer.cs">
       <DependentUpon>FrmPaiement.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\list.cs" />
     <Compile Include="GestionSalleDeJeux\frmGSJ.cs">
       <SubType>Form</SubType>
     </Compile>

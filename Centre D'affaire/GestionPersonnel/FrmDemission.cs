@@ -30,7 +30,6 @@ namespace Centre_D_affaire.GestionPersonnel
                 dgvDemission.Rows[i].Cells["date"].Value = Demission.ListeDesDemission[i].Date;
                 dgvDemission.Rows[i].Cells["raison"].Value = Demission.ListeDesDemission[i].Raison;
                 dgvDemission.Rows[i].Cells["etat"].Value = Demission.ListeDesDemission[i].Etat;
-                ;
                 dgvDemission.Rows[i].Cells["nm"].Value = textBox1.Text;
                 dgvDemission.Rows[i].Cells["cin"].Value = textBox2.Text;
 
@@ -94,7 +93,9 @@ namespace Centre_D_affaire.GestionPersonnel
 
             }
 
-       
-        
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

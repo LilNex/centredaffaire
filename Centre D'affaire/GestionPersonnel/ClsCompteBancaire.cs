@@ -8,23 +8,38 @@ namespace Centre_D_affaire.GestionPersonnel
 {
     class ClsCompteBancaire
     {
-        private string NomSl;
+        private string nomSl;
         private int NumSl;
         private int RIB;
-        public string nomSl {get => nomSl; set => nomSl = value;}
-        public int numSl { get => numSl; set => numSl = value; }
-        public int Rib { get => Rib; set => Rib = value; }
+        private int Total;
+        private DateTime dp;
         
-        public ClsCompteBancaire()
+        public string NomSl {get => nomSl; set => nomSl = value;}
+        public int numSl { get => NumSl; set => NumSl = value; }
+        public int Rib { get => RIB; set => RIB = value; }
+        public int total { get => Total; set => Total = value; }
+        public DateTime DP { get => dp; set => dp = value; }
+
+
+
+
+        public ClsCompteBancaire(string nom, int num, int RIb, int tot , DateTime d)
         {
-            this.NomSl = nomSl;
-            this.NumSl = numSl;
-            this.RIB = Rib;
+            this.NomSl = nom;
+            this.numSl = num;
+            this.Rib = RIb;
+            this.total = tot;
+            this.DP = d; 
+        }
+
+        public void Ajout(ClsCompteBancaire bnc)
+        {
+            list.bnq.Add(bnc);
         }
     }
     
         
-
+    
 
 
 

@@ -57,9 +57,9 @@ namespace Centre_D_affaire.GestionPersonnel
             // lblNom
             // 
             this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(22, 25);
+            this.lblNom.Location = new System.Drawing.Point(25, 31);
             this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(37, 17);
+            this.lblNom.Size = new System.Drawing.Size(42, 20);
             this.lblNom.TabIndex = 0;
             this.lblNom.Tag = "";
             this.lblNom.Text = "Nom";
@@ -67,9 +67,9 @@ namespace Centre_D_affaire.GestionPersonnel
             // lblNum
             // 
             this.lblNum.AutoSize = true;
-            this.lblNum.Location = new System.Drawing.Point(22, 67);
+            this.lblNum.Location = new System.Drawing.Point(25, 84);
             this.lblNum.Name = "lblNum";
-            this.lblNum.Size = new System.Drawing.Size(37, 17);
+            this.lblNum.Size = new System.Drawing.Size(42, 20);
             this.lblNum.TabIndex = 1;
             this.lblNum.Tag = "";
             this.lblNum.Text = "Num";
@@ -77,20 +77,19 @@ namespace Centre_D_affaire.GestionPersonnel
             // lblRIB
             // 
             this.lblRIB.AutoSize = true;
-            this.lblRIB.Location = new System.Drawing.Point(22, 107);
+            this.lblRIB.Location = new System.Drawing.Point(25, 134);
             this.lblRIB.Name = "lblRIB";
-            this.lblRIB.Size = new System.Drawing.Size(30, 17);
+            this.lblRIB.Size = new System.Drawing.Size(37, 20);
             this.lblRIB.TabIndex = 2;
             this.lblRIB.Tag = "";
             this.lblRIB.Text = "RIB";
-            this.lblRIB.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblHrt
             // 
             this.lblHrt.AutoSize = true;
-            this.lblHrt.Location = new System.Drawing.Point(22, 147);
+            this.lblHrt.Location = new System.Drawing.Point(25, 184);
             this.lblHrt.Name = "lblHrt";
-            this.lblHrt.Size = new System.Drawing.Size(108, 17);
+            this.lblHrt.Size = new System.Drawing.Size(119, 20);
             this.lblHrt.TabIndex = 3;
             this.lblHrt.Tag = "";
             this.lblHrt.Text = "Heurs de travail";
@@ -98,61 +97,65 @@ namespace Centre_D_affaire.GestionPersonnel
             // lblSt
             // 
             this.lblSt.AutoSize = true;
-            this.lblSt.Location = new System.Drawing.Point(22, 190);
+            this.lblSt.Location = new System.Drawing.Point(25, 238);
             this.lblSt.Name = "lblSt";
-            this.lblSt.Size = new System.Drawing.Size(88, 17);
+            this.lblSt.Size = new System.Drawing.Size(97, 20);
             this.lblSt.TabIndex = 4;
             this.lblSt.Tag = "";
             this.lblSt.Text = "Salaire Total";
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(232, 22);
+            this.txtNom.Location = new System.Drawing.Point(261, 28);
+            this.txtNom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(100, 22);
+            this.txtNom.Size = new System.Drawing.Size(112, 26);
             this.txtNom.TabIndex = 5;
             // 
             // txtRIB
             // 
-            this.txtRIB.Location = new System.Drawing.Point(232, 102);
+            this.txtRIB.Location = new System.Drawing.Point(261, 128);
+            this.txtRIB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtRIB.Name = "txtRIB";
-            this.txtRIB.Size = new System.Drawing.Size(100, 22);
+            this.txtRIB.Size = new System.Drawing.Size(112, 26);
             this.txtRIB.TabIndex = 6;
             // 
             // lblDp
             // 
             this.lblDp.AutoSize = true;
-            this.lblDp.Location = new System.Drawing.Point(22, 235);
+            this.lblDp.Location = new System.Drawing.Point(25, 294);
             this.lblDp.Name = "lblDp";
-            this.lblDp.Size = new System.Drawing.Size(120, 17);
+            this.lblDp.Size = new System.Drawing.Size(136, 20);
             this.lblDp.TabIndex = 10;
             this.lblDp.Text = "Date de paiement";
             // 
             // dateTimePickerDp
             // 
-            this.dateTimePickerDp.Location = new System.Drawing.Point(232, 230);
+            this.dateTimePickerDp.Location = new System.Drawing.Point(261, 288);
+            this.dateTimePickerDp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePickerDp.Name = "dateTimePickerDp";
-            this.dateTimePickerDp.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePickerDp.Size = new System.Drawing.Size(224, 26);
             this.dateTimePickerDp.TabIndex = 11;
             // 
             // BtnFermer
             // 
             this.BtnFermer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFermer.Location = new System.Drawing.Point(687, 2);
-            this.BtnFermer.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnFermer.Location = new System.Drawing.Point(773, 2);
+            this.BtnFermer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnFermer.Name = "BtnFermer";
-            this.BtnFermer.Size = new System.Drawing.Size(100, 42);
+            this.BtnFermer.Size = new System.Drawing.Size(112, 52);
             this.BtnFermer.TabIndex = 19;
             this.BtnFermer.Text = "Fermer";
             this.BtnFermer.UseVisualStyleBackColor = true;
+            this.BtnFermer.Click += new System.EventHandler(this.BtnFermer_Click);
             // 
             // BtnRetour
             // 
             this.BtnRetour.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRetour.Location = new System.Drawing.Point(687, 52);
-            this.BtnRetour.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnRetour.Location = new System.Drawing.Point(773, 65);
+            this.BtnRetour.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnRetour.Name = "BtnRetour";
-            this.BtnRetour.Size = new System.Drawing.Size(100, 31);
+            this.BtnRetour.Size = new System.Drawing.Size(112, 39);
             this.BtnRetour.TabIndex = 18;
             this.BtnRetour.Text = "<<<";
             this.BtnRetour.UseVisualStyleBackColor = true;
@@ -160,13 +163,14 @@ namespace Centre_D_affaire.GestionPersonnel
             // BtnAjout
             // 
             this.BtnAjout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAjout.Location = new System.Drawing.Point(676, 205);
-            this.BtnAjout.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnAjout.Location = new System.Drawing.Point(760, 256);
+            this.BtnAjout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnAjout.Name = "BtnAjout";
-            this.BtnAjout.Size = new System.Drawing.Size(111, 47);
+            this.BtnAjout.Size = new System.Drawing.Size(125, 59);
             this.BtnAjout.TabIndex = 20;
             this.BtnAjout.Text = "Ajouter";
             this.BtnAjout.UseVisualStyleBackColor = true;
+            this.BtnAjout.Click += new System.EventHandler(this.BtnAjout_Click);
             // 
             // dgvPaiement
             // 
@@ -180,11 +184,11 @@ namespace Centre_D_affaire.GestionPersonnel
             this.salairetotal,
             this.datepaie});
             this.dgvPaiement.GridColor = System.Drawing.Color.Blue;
-            this.dgvPaiement.Location = new System.Drawing.Point(2, 308);
-            this.dgvPaiement.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvPaiement.Location = new System.Drawing.Point(2, 385);
+            this.dgvPaiement.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvPaiement.Name = "dgvPaiement";
             this.dgvPaiement.RowHeadersWidth = 51;
-            this.dgvPaiement.Size = new System.Drawing.Size(803, 129);
+            this.dgvPaiement.Size = new System.Drawing.Size(903, 161);
             this.dgvPaiement.TabIndex = 53;
             // 
             // nomsl
@@ -231,30 +235,34 @@ namespace Centre_D_affaire.GestionPersonnel
             // 
             // txtNum
             // 
-            this.txtNum.Location = new System.Drawing.Point(232, 67);
+            this.txtNum.Location = new System.Drawing.Point(261, 84);
+            this.txtNum.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNum.Name = "txtNum";
-            this.txtNum.Size = new System.Drawing.Size(100, 22);
+            this.txtNum.Size = new System.Drawing.Size(112, 26);
             this.txtNum.TabIndex = 54;
             // 
             // txtHrt
             // 
-            this.txtHrt.Location = new System.Drawing.Point(232, 142);
+            this.txtHrt.Location = new System.Drawing.Point(261, 178);
+            this.txtHrt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHrt.Name = "txtHrt";
-            this.txtHrt.Size = new System.Drawing.Size(100, 22);
+            this.txtHrt.Size = new System.Drawing.Size(112, 26);
             this.txtHrt.TabIndex = 55;
+            this.txtHrt.TextChanged += new System.EventHandler(this.txtHrt_TextChanged);
             // 
             // txtSt
             // 
-            this.txtSt.Location = new System.Drawing.Point(232, 185);
+            this.txtSt.Location = new System.Drawing.Point(261, 231);
+            this.txtSt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSt.Name = "txtSt";
-            this.txtSt.Size = new System.Drawing.Size(100, 22);
+            this.txtSt.Size = new System.Drawing.Size(112, 26);
             this.txtSt.TabIndex = 56;
             // 
             // FrmPaiement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 450);
+            this.ClientSize = new System.Drawing.Size(908, 562);
             this.Controls.Add(this.txtSt);
             this.Controls.Add(this.txtHrt);
             this.Controls.Add(this.txtNum);
@@ -271,8 +279,10 @@ namespace Centre_D_affaire.GestionPersonnel
             this.Controls.Add(this.lblRIB);
             this.Controls.Add(this.lblNum);
             this.Controls.Add(this.lblNom);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmPaiement";
-            this.Text = "Paiement";
+            this.Text = "FrmPaiement";
+            this.Load += new System.EventHandler(this.FrmPaiement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPaiement)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
