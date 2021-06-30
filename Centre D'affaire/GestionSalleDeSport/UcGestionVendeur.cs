@@ -34,6 +34,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         }
 
+
         private void UcGestionVendeur_Load(object sender, EventArgs e)
         {
             btnSupprimer.Visible = false;
@@ -122,9 +123,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         }
 
-        private void GridVendeur_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
     }
 }

@@ -62,11 +62,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         }
 
-        private void PAnelDesktop_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void BTNVendeur_Click(object sender, EventArgs e)
         {
             OpenChildForm(new UcGestionVendeur(), sender);
@@ -79,16 +75,14 @@ namespace Centre_D_affaire.GestionSalleDeSport
             Panel2.BackgroundColor = Color.FromArgb(0, 250, 154);
         }
 
-        private void BTNVente_Click(object sender, EventArgs e)
-        {
-            
-        }
+      
+        
 
         private void BTNAchat_Click(object sender, EventArgs e)
         {
 
             OpenChildForm(new UCgetionAchats(), sender);
-            Panel2.BackgroundColor = Color.FromArgb(0, 250, 154);
+            Panel2.BackgroundColor = Color.FromArgb(128, 0, 0);
         }
 
         private void BTNutilisateur_Click(object sender, EventArgs e)
@@ -113,13 +107,10 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private void BTNPrésence_Click(object sender, EventArgs e)
         {
             OpenChildForm(new uccPresence(), sender);
+            Panel2.BackgroundColor = Color.FromArgb(255, 140, 0);
         }
 
-        private void FormGestionnaire_Load(object sender, EventArgs e)
-        {
-            OpenChildForm(new UserControl1(), sender);
-            Panel2.BackgroundColor = Color.FromArgb(210, 180, 140);
-        }
+      
 
         private void BTNQuitter_Click(object sender, EventArgs e)
         {
@@ -138,25 +129,17 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void Panel2_MouseDown(object sender, MouseEventArgs e)
         {
-          
-        
-        
-            
-    }
 
-        private void FormGestionnaire_MouseDown(object sender, MouseEventArgs e)
-        {
             if (e.Button == MouseButtons.Left)
             {
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
 
-        }
 
-        private void FormGestionnaire_Load_1(object sender, EventArgs e)
-        {
 
         }
+
+
     }
 }

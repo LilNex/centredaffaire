@@ -77,6 +77,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.bunifuPanel2.ShowBorders = true;
             this.bunifuPanel2.Size = new System.Drawing.Size(1492, 41);
             this.bunifuPanel2.TabIndex = 156;
+            this.bunifuPanel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuPanel2_MouseDown);
             // 
             // BTNredire
             // 

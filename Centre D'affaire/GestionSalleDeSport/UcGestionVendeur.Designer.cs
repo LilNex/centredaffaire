@@ -580,7 +580,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.GridVendeur.TabIndex = 191;
             this.GridVendeur.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
             this.GridVendeur.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVendeur_CellClick);
-            this.GridVendeur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVendeur_CellContentClick);
             // 
             // ID
             // 

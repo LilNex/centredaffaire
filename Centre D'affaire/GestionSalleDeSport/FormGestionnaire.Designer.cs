@@ -255,7 +255,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNutilisateur.onHoverState.BorderRadius = 1;
             this.BTNutilisateur.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.BTNutilisateur.onHoverState.BorderThickness = 1;
-            this.BTNutilisateur.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.BTNutilisateur.onHoverState.FillColor = System.Drawing.Color.Fuchsia;
             this.BTNutilisateur.onHoverState.ForeColor = System.Drawing.Color.White;
             this.BTNutilisateur.onHoverState.IconLeftImage = null;
             this.BTNutilisateur.onHoverState.IconRightImage = null;
@@ -345,7 +345,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNAchat.onHoverState.BorderRadius = 1;
             this.BTNAchat.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.BTNAchat.onHoverState.BorderThickness = 1;
-            this.BTNAchat.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.BTNAchat.onHoverState.FillColor = System.Drawing.Color.Maroon;
             this.BTNAchat.onHoverState.ForeColor = System.Drawing.Color.White;
             this.BTNAchat.onHoverState.IconLeftImage = null;
             this.BTNAchat.onHoverState.IconRightImage = null;
@@ -435,8 +435,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNPrésence.onHoverState.BorderRadius = 1;
             this.BTNPrésence.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.BTNPrésence.onHoverState.BorderThickness = 1;
-            this.BTNPrésence.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.BTNPrésence.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.BTNPrésence.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BTNPrésence.onHoverState.ForeColor = System.Drawing.Color.SeaShell;
             this.BTNPrésence.onHoverState.IconLeftImage = null;
             this.BTNPrésence.onHoverState.IconRightImage = null;
             this.BTNPrésence.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
@@ -525,7 +525,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.btnPaiment.onHoverState.BorderRadius = 1;
             this.btnPaiment.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnPaiment.onHoverState.BorderThickness = 1;
-            this.btnPaiment.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnPaiment.onHoverState.FillColor = System.Drawing.Color.LawnGreen;
             this.btnPaiment.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btnPaiment.onHoverState.IconLeftImage = null;
             this.btnPaiment.onHoverState.IconRightImage = null;
@@ -705,7 +705,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNVendeur.onHoverState.BorderRadius = 1;
             this.BTNVendeur.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.BTNVendeur.onHoverState.BorderThickness = 1;
-            this.BTNVendeur.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.BTNVendeur.onHoverState.FillColor = System.Drawing.Color.Salmon;
             this.BTNVendeur.onHoverState.ForeColor = System.Drawing.Color.White;
             this.BTNVendeur.onHoverState.IconLeftImage = null;
             this.BTNVendeur.onHoverState.IconRightImage = null;
@@ -795,7 +795,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNEntraineur.onHoverState.BorderRadius = 1;
             this.BTNEntraineur.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.BTNEntraineur.onHoverState.BorderThickness = 1;
-            this.BTNEntraineur.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.BTNEntraineur.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.BTNEntraineur.onHoverState.ForeColor = System.Drawing.Color.White;
             this.BTNEntraineur.onHoverState.IconLeftImage = null;
             this.BTNEntraineur.onHoverState.IconRightImage = null;
@@ -975,7 +975,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNstatistique.onHoverState.BorderRadius = 1;
             this.BTNstatistique.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.BTNstatistique.onHoverState.BorderThickness = 1;
-            this.BTNstatistique.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.BTNstatistique.onHoverState.FillColor = System.Drawing.Color.Chocolate;
             this.BTNstatistique.onHoverState.ForeColor = System.Drawing.Color.White;
             this.BTNstatistique.onHoverState.IconLeftImage = null;
             this.BTNstatistique.onHoverState.IconRightImage = null;
@@ -1018,7 +1018,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.PAnelDesktop.ShowBorders = true;
             this.PAnelDesktop.Size = new System.Drawing.Size(1100, 755);
             this.PAnelDesktop.TabIndex = 159;
-            this.PAnelDesktop.Click += new System.EventHandler(this.PAnelDesktop_Click);
             // 
             // BTNfermer
             // 
@@ -1091,8 +1090,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGestionnaire";
             this.Text = "FormGestionnaire";
-            this.Load += new System.EventHandler(this.FormGestionnaire_Load_1);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormGestionnaire_MouseDown);
             this.bunifuPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Panel2.ResumeLayout(false);
