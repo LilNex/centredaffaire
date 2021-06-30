@@ -69,7 +69,7 @@ namespace Centre_D_affaire.GestionCreche
 
                 BinaryFormatter format = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
                 FileStream fichierBin = new FileStream(saveFileDialog.FileName, FileMode.CreateNew);
-                format.Serialize(fichierBin, frmGroupe);
+                format.Serialize(fichierBin,frmGroupe);
             }
         }
 

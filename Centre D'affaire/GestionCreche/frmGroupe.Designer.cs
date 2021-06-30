@@ -49,20 +49,19 @@ namespace Centre_D_affaire.GestionCreche
             this.dgvGroupe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-<<<<<<< HEAD
+
             this.dgvGroupe.Location = new System.Drawing.Point(11, 220);
             this.dgvGroupe.Margin = new System.Windows.Forms.Padding(2);
             this.dgvGroupe.Name = "dgvGroupe";
             this.dgvGroupe.RowHeadersWidth = 62;
             this.dgvGroupe.RowTemplate.Height = 28;
             this.dgvGroupe.Size = new System.Drawing.Size(366, 140);
-=======
+
             this.dgvGroupe.Location = new System.Drawing.Point(374, 12);
             this.dgvGroupe.Name = "dgvGroupe";
             this.dgvGroupe.RowHeadersWidth = 62;
             this.dgvGroupe.RowTemplate.Height = 28;
             this.dgvGroupe.Size = new System.Drawing.Size(666, 328);
->>>>>>> 5e9df63af0a7a8cd446ff4bc81f0d40dee6eeb57
             this.dgvGroupe.TabIndex = 0;
             // 
             // Column1
@@ -165,9 +164,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(714, 448);
-=======
             this.ClientSize = new System.Drawing.Size(1071, 689);
             this.Controls.Add(this.txtnum);
             this.Controls.Add(this.btnQuitter);
@@ -177,7 +174,6 @@ namespace Centre_D_affaire.GestionCreche
             this.Controls.Add(this.txtnom);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
->>>>>>> 5e9df63af0a7a8cd446ff4bc81f0d40dee6eeb57
             this.Controls.Add(this.dgvGroupe);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmGroupe";
