@@ -36,29 +36,7 @@ namespace Centre_D_affaire.GestionCreche
         {
         }
 
-        private void Supprimer_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                DialogResult res = MessageBox.Show("voullez vous vraiment supprimer ce personnel)", "confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if (res == DialogResult.OK)
-                {
-                    int index = this.dataGridView1.CurrentRow.Index;
-                    this.dataGridView1.Rows.RemoveAt(index);
-                    MessageBox.Show("La suppretion avec succées");
-
-                }
-                else
-                {
-                    MessageBox.Show("La suppretion ignorées");
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("DatagridView est vide");
-            }
-
-        }
+        
 
         // private bool button4_Click(object sender, EventArgs e)
         // {
@@ -115,12 +93,38 @@ namespace Centre_D_affaire.GestionCreche
 
         }
 
-        private void Rechercher_Click(object sender, EventArgs e)
+       
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult res = MessageBox.Show("voullez vous vraiment supprimer ce personnel)", "confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (res == DialogResult.OK)
+                {
+                    int index = this.dataGridView1.CurrentRow.Index;
+                    this.dataGridView1.Rows.RemoveAt(index);
+                    MessageBox.Show("La suppretion avec succées");
+
+                }
+                else
+                {
+                    MessageBox.Show("La suppretion ignorées");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("DatagridView est vide");
+            }
+
+        }
+
+        private void btnRechercher_Click(object sender, EventArgs e)
         {
             Boolean R = false;
-            for (int i=0;i<dataGridView1.Rows.Count;i++)
-             dataGridView1.Rows[i].Selected = false;
-            
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                dataGridView1.Rows[i].Selected = false;
+
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
                 if (txtNsearch.Text.Equals(dataGridView1.Rows[i].Cells[5].Value))
                     dataGridView1.Rows[i].Selected = true;
@@ -128,5 +132,6 @@ namespace Centre_D_affaire.GestionCreche
             if (R == false) MessageBox.Show("Error");
         }
     }
+    
 }
 
