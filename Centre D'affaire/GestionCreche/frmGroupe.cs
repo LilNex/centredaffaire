@@ -33,9 +33,11 @@ namespace Centre_D_affaire.GestionCreche
         }
         private void btnAjouter_Click_1(object sender, EventArgs e)
         {
-            clsGroupe G = new clsGroupe();
-            G.NumG = int.Parse(txtnum.Text);
-            G.NomG = txtnom.Text;
+            clsGroupe G = new clsGroupe
+            {
+                NumG = int.Parse(txtnum.Text),
+                NomG = txtnom.Text
+            };
             G.AjouterDansListeG(G);
             RemplirGridEnfant();
         }
@@ -59,12 +61,7 @@ namespace Centre_D_affaire.GestionCreche
 
         }
 
-        private void btnAjouter_Click(object sender, EventArgs e)
-        {
-            if (txtnom.Text !="" && txtnum.Text !=" ")
-
-                dgvGroupe.Rows.Add(txtnom.Text, txtnum.Text);
-        }
+       
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
@@ -78,6 +75,16 @@ namespace Centre_D_affaire.GestionCreche
         private void btnQuitter_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtnum_TextChanged(object sender, EventArgs e)
+        {
+            if ()
+            {
+
+            }
+                
+
         }
     }
 }

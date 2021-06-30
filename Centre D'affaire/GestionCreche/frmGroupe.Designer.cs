@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Centre_D_affaire.GestionCreche
 {
     partial class frmGroupe
@@ -160,6 +162,7 @@ namespace Centre_D_affaire.GestionCreche
             this.txtnum.Name = "txtnum";
             this.txtnum.Size = new System.Drawing.Size(388, 26);
             this.txtnum.TabIndex = 9;
+            this.txtnum.TextChanged += new System.EventHandler(this.txtnum_TextChanged);
             // 
             // frmGroupe
             // 
@@ -182,6 +185,11 @@ namespace Centre_D_affaire.GestionCreche
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

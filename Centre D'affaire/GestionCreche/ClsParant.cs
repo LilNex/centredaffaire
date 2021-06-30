@@ -13,7 +13,7 @@ namespace Centre_D_affaire.GestionCreche
         private string Profession;
         private int telephone;
         private string departement;
-        private List<frmEnfant> EF = new List<frmEnfant>();
+        private readonly List<frmEnfant> EF = new List<frmEnfant>();
         public ClsParant() { }
         public List<frmEnfant> en{ get => EF; }
         

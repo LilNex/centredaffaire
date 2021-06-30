@@ -18,9 +18,9 @@ namespace Centre_D_affaire
                 {
                     ctl.Text = "";
                 }
-                if (ctl is RadioButton)
+                if (ctl is RadioButton button)
                 {
-                    ((RadioButton)ctl).Checked = false;
+                    button.Checked = false;
                 }
                 if (ctl.Controls.Count > 0)
                 {
