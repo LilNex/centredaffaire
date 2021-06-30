@@ -91,6 +91,7 @@
     <Compile Include="GestionParking\frmGParking.Designer.cs">
       <DependentUpon>frmGParking.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\ClsCompteBancaire.cs" />
     <Compile Include="GestionPersonnel\ClsDepartement.cs" />
     <Compile Include="GestionPersonnel\clsEmploye.cs" />
     <Compile Include="GestionPersonnel\clsEventHandler.cs" />
@@ -201,6 +202,12 @@
     <Compile Include="GestionPersonnel\frmGPersonnel.Designer.cs">
       <DependentUpon>frmGPersonnel.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\FrmPaiement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmPaiement.Designer.cs">
+      <DependentUpon>FrmPaiement.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionSalleDeJeux\frmGSJ.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,7 +279,9 @@
     <EmbeddedResource Include="GestionPersonnel\frmPrincipal_Directeur.resx">
       <DependentUpon>frmPrincipal_Directeur.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="GestionPersonnel\FrmPaiement.resx">
+      <DependentUpon>FrmPaiement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
