@@ -116,6 +116,7 @@ namespace Centre_D_affaire.GestionCreche
             this.btnAjouter.TabIndex = 5;
             this.btnAjouter.Text = "Ajouter :";
             this.btnAjouter.UseVisualStyleBackColor = false;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnSupprimer
             // 
@@ -168,6 +169,7 @@ namespace Centre_D_affaire.GestionCreche
             this.Controls.Add(this.dgvGroupe);
             this.Name = "frmGroupe";
             this.Text = "frmGroupe";
+            this.Load += new System.EventHandler(this.frmGroupe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).EndInit();
             this.ResumeLayout(false);

@@ -113,7 +113,6 @@
     <Compile Include="GestionCreche\FrmPersonnel.Designer.cs">
       <DependentUpon>FrmPersonnel.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCreche\interfaces.cs" />
     <Compile Include="GestionParking\frmGParking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +137,7 @@
     <Compile Include="GestionSalleDeSport\frmGSS.Designer.cs">
       <DependentUpon>frmGSS.cs</DependentUpon>
     </Compile>
+    <Compile Include="interfaces.cs" />
     <Compile Include="LocationEspacesSalleReunion\frmLESR.cs">
       <SubType>Form</SubType>
     </Compile>

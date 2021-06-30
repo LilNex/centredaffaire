@@ -31,14 +31,7 @@ namespace Centre_D_affaire.GestionCreche
         {
             InitializeComponent();
         }
-        private void btnAjouter_Click_1(object sender, EventArgs e)
-        {
-            clsGroupe G = new clsGroupe();
-            G.NumG = int.Parse(nudnumero.Text);
-            G.NomG = txtnom.Text;
-            G.AjouterDansListeG(G);
-            RemplirGridEnfant();
-        }
+       
 
         private void btnNouveau_Click(object sender, EventArgs e)
         {
@@ -52,6 +45,21 @@ namespace Centre_D_affaire.GestionCreche
                 interfaces f = new interfaces();
                 f.viderform(this);
           
+        }
+
+        private void frmGroupe_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            clsGroupe G = new clsGroupe();
+            G.NumG = int.Parse(nudnumero.Text);
+            G.NomG = txtnom.Text;
+            G.AjouterDansListeG(G);
+            RemplirGridEnfant();
+
         }
     }
 }
