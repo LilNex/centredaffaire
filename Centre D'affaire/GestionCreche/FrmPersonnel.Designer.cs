@@ -41,7 +41,7 @@ namespace Centre_D_affaire.GestionCreche
             this.txtAd = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtNum = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAjouter = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -178,16 +178,16 @@ namespace Centre_D_affaire.GestionCreche
             this.txtNum.Size = new System.Drawing.Size(100, 20);
             this.txtNum.TabIndex = 11;
             // 
-            // button1
+            // btnAjouter
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(665, 176);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Ajouter";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAjouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouter.Location = new System.Drawing.Point(665, 174);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(132, 23);
+            this.btnAjouter.TabIndex = 12;
+            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // button2
             // 
@@ -465,7 +465,7 @@ namespace Centre_D_affaire.GestionCreche
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.txtNum);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtAd);
@@ -502,7 +502,7 @@ namespace Centre_D_affaire.GestionCreche
         private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtNum;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button button4;

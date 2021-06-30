@@ -15,7 +15,9 @@ namespace Centre_D_affaire.GestionCreche
         private DateTime dateDadmission;
         private string num;
         private int age;
+        private ClsParant parant;
 
+        
 
         public clsEnfant() { }
         public clsEnfant(string NOM, string PRENOM, char SEX, DateTime dateN, DateTime dateD, string NUM, int AGE)
@@ -27,6 +29,7 @@ namespace Centre_D_affaire.GestionCreche
             this.DateDadmission = dateD;
             this.Num = NUM;
             this.Age = AGE;
+
         }
 
         public string Nom { get => nom; set => nom = value; }

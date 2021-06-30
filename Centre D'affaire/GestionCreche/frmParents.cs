@@ -23,5 +23,15 @@ namespace Centre_D_affaire.GestionCreche
             frm2.Show();
             this.Hide();
         }
+
+        private void frmParents_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

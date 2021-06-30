@@ -22,7 +22,7 @@ namespace Centre_D_affaire.GestionCreche
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAjouter_Click(object sender, EventArgs e)
         {
             if (txtnom.Text == " " || txtprenom.Text == "" || txtEmail.Text == "" || txtAd.Text == "" || txtNum.Text == "" || txttele.Text == "")
             {
@@ -41,6 +41,7 @@ namespace Centre_D_affaire.GestionCreche
                             txtAd.Clear();
                             txtNum.Clear();
                             txttele.Clear();
+                            
 
                         }
                     }
@@ -57,6 +58,7 @@ namespace Centre_D_affaire.GestionCreche
 
 
         }
+
 
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
