@@ -35,13 +35,12 @@ namespace Centre_D_affaire.GestionCreche
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtnom = new System.Windows.Forms.TextBox();
-            this.nudnumero = new System.Windows.Forms.NumericUpDown();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnNouveau = new System.Windows.Forms.Button();
             this.btnQuitter = new System.Windows.Forms.Button();
+            this.txtnum = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvGroupe
@@ -98,14 +97,6 @@ namespace Centre_D_affaire.GestionCreche
             this.txtnom.Size = new System.Drawing.Size(265, 26);
             this.txtnom.TabIndex = 3;
             // 
-            // nudnumero
-            // 
-            this.nudnumero.Location = new System.Drawing.Point(12, 113);
-            this.nudnumero.Name = "nudnumero";
-            this.nudnumero.Size = new System.Drawing.Size(265, 26);
-            this.nudnumero.TabIndex = 4;
-            this.nudnumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // btnAjouter
             // 
             this.btnAjouter.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -128,6 +119,7 @@ namespace Centre_D_affaire.GestionCreche
             this.btnSupprimer.TabIndex = 6;
             this.btnSupprimer.Text = "Supprimer : ";
             this.btnSupprimer.UseVisualStyleBackColor = false;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnNouveau
             // 
@@ -153,16 +145,23 @@ namespace Centre_D_affaire.GestionCreche
             this.btnQuitter.Text = "Quitter : ";
             this.btnQuitter.UseVisualStyleBackColor = false;
             // 
+            // txtnum
+            // 
+            this.txtnum.Location = new System.Drawing.Point(17, 112);
+            this.txtnum.Name = "txtnum";
+            this.txtnum.Size = new System.Drawing.Size(260, 26);
+            this.txtnum.TabIndex = 9;
+            // 
             // frmGroupe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 689);
+            this.Controls.Add(this.txtnum);
             this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnNouveau);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnAjouter);
-            this.Controls.Add(this.nudnumero);
             this.Controls.Add(this.txtnom);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -171,7 +170,6 @@ namespace Centre_D_affaire.GestionCreche
             this.Text = "frmGroupe";
             this.Load += new System.EventHandler(this.frmGroupe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,10 +183,10 @@ namespace Centre_D_affaire.GestionCreche
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtnom;
-        private System.Windows.Forms.NumericUpDown nudnumero;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnNouveau;
         private System.Windows.Forms.Button btnQuitter;
+        private System.Windows.Forms.TextBox txtnum;
     }
 }
