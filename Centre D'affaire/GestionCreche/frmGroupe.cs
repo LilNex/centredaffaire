@@ -74,5 +74,10 @@ namespace Centre_D_affaire.GestionCreche
 
             }
         }
+
+        private void btnQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

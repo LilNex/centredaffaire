@@ -49,19 +49,11 @@ namespace Centre_D_affaire.GestionCreche
             this.dgvGroupe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-
-            this.dgvGroupe.Location = new System.Drawing.Point(11, 220);
-            this.dgvGroupe.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvGroupe.Location = new System.Drawing.Point(561, 18);
             this.dgvGroupe.Name = "dgvGroupe";
             this.dgvGroupe.RowHeadersWidth = 62;
             this.dgvGroupe.RowTemplate.Height = 28;
-            this.dgvGroupe.Size = new System.Drawing.Size(366, 140);
-
-            this.dgvGroupe.Location = new System.Drawing.Point(374, 12);
-            this.dgvGroupe.Name = "dgvGroupe";
-            this.dgvGroupe.RowHeadersWidth = 62;
-            this.dgvGroupe.RowTemplate.Height = 28;
-            this.dgvGroupe.Size = new System.Drawing.Size(666, 328);
+            this.dgvGroupe.Size = new System.Drawing.Size(999, 505);
             this.dgvGroupe.TabIndex = 0;
             // 
             // Column1
@@ -82,7 +74,8 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 72);
+            this.label1.Location = new System.Drawing.Point(18, 111);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 26);
             this.label1.TabIndex = 1;
@@ -92,7 +85,8 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 165);
+            this.label2.Location = new System.Drawing.Point(18, 254);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 25);
             this.label2.TabIndex = 2;
@@ -100,18 +94,20 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // txtnom
             // 
-            this.txtnom.Location = new System.Drawing.Point(12, 214);
+            this.txtnom.Location = new System.Drawing.Point(18, 329);
+            this.txtnom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtnom.Name = "txtnom";
-            this.txtnom.Size = new System.Drawing.Size(265, 26);
+            this.txtnom.Size = new System.Drawing.Size(396, 26);
             this.txtnom.TabIndex = 3;
             // 
             // btnAjouter
             // 
             this.btnAjouter.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAjouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjouter.Location = new System.Drawing.Point(-1, 451);
+            this.btnAjouter.Location = new System.Drawing.Point(-2, 694);
+            this.btnAjouter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(237, 71);
+            this.btnAjouter.Size = new System.Drawing.Size(356, 109);
             this.btnAjouter.TabIndex = 5;
             this.btnAjouter.Text = "Ajouter :";
             this.btnAjouter.UseVisualStyleBackColor = false;
@@ -121,9 +117,10 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.btnSupprimer.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSupprimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupprimer.Location = new System.Drawing.Point(549, 451);
+            this.btnSupprimer.Location = new System.Drawing.Point(824, 694);
+            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(237, 71);
+            this.btnSupprimer.Size = new System.Drawing.Size(356, 109);
             this.btnSupprimer.TabIndex = 6;
             this.btnSupprimer.Text = "Supprimer : ";
             this.btnSupprimer.UseVisualStyleBackColor = false;
@@ -133,9 +130,10 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.btnNouveau.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnNouveau.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNouveau.Location = new System.Drawing.Point(269, 451);
+            this.btnNouveau.Location = new System.Drawing.Point(404, 694);
+            this.btnNouveau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNouveau.Name = "btnNouveau";
-            this.btnNouveau.Size = new System.Drawing.Size(237, 71);
+            this.btnNouveau.Size = new System.Drawing.Size(356, 109);
             this.btnNouveau.TabIndex = 7;
             this.btnNouveau.Text = "Nouveau : ";
             this.btnNouveau.UseVisualStyleBackColor = false;
@@ -146,26 +144,28 @@ namespace Centre_D_affaire.GestionCreche
             this.btnQuitter.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnQuitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuitter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnQuitter.Location = new System.Drawing.Point(828, 449);
+            this.btnQuitter.Location = new System.Drawing.Point(1242, 691);
+            this.btnQuitter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnQuitter.Name = "btnQuitter";
-            this.btnQuitter.Size = new System.Drawing.Size(237, 74);
+            this.btnQuitter.Size = new System.Drawing.Size(356, 114);
             this.btnQuitter.TabIndex = 8;
             this.btnQuitter.Text = "Quitter : ";
             this.btnQuitter.UseVisualStyleBackColor = false;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // txtnum
             // 
-            this.txtnum.Location = new System.Drawing.Point(17, 112);
+            this.txtnum.Location = new System.Drawing.Point(26, 172);
+            this.txtnum.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtnum.Name = "txtnum";
-            this.txtnum.Size = new System.Drawing.Size(260, 26);
+            this.txtnum.Size = new System.Drawing.Size(388, 26);
             this.txtnum.TabIndex = 9;
             // 
             // frmGroupe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 448);
-            this.ClientSize = new System.Drawing.Size(1071, 689);
+            this.ClientSize = new System.Drawing.Size(1606, 1050);
             this.Controls.Add(this.txtnum);
             this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnNouveau);
@@ -175,7 +175,6 @@ namespace Centre_D_affaire.GestionCreche
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvGroupe);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmGroupe";
             this.Text = "frmGroupe";
             this.Load += new System.EventHandler(this.frmGroupe_Load);
