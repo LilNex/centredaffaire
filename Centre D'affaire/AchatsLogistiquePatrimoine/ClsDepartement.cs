@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
+   
+
     public class ClsDepartement
     {
         private string numero_departement;

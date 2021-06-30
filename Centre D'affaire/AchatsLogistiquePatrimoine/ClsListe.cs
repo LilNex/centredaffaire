@@ -18,9 +18,15 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         public static List<ClsDemande> List_demande = new List<ClsDemande>();
         public static List<ClsFacture> List_facture = new List<ClsFacture>();
         public static List<ListeCategorie> List_categorie = new List<ListeCategorie>();
+        public static List<ClsDepartement> List_departmnt = new List<ClsDepartement>();
 
 
-        
+        //public void remplirDepartemnt()
+        //{
+        //    List_demande.Add()
+        //}
+
+
         public static void sauvegardeArt()
         {
             
@@ -55,7 +61,26 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             return la;
         }
 
-        
+        public static void sauvegardeDEMANDE()
+        {
+            BinaryFormatter f = new BinaryFormatter();
+            FileStream fichierbin = new FileStream("demande", FileMode.OpenOrCreate);
+            f.Serialize(fichierbin, List_demande);
+            fichierbin.Close();
+        }
+
+        public static void chargerDEMANDE()
+        {
+
+            BinaryFormatter f = new BinaryFormatter();
+            FileStream fichierbin = new FileStream("demande", FileMode.OpenOrCreate);
+           // MemoryStream fichierbin = new MemoryStream(Centre_D_affaire.Properties.Resources.Article1);
+
+
+            List_demande = (List<ClsDemande>)f.Deserialize(fichierbin);
+            fichierbin.Close();
+        }
+
 
 
 

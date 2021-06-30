@@ -16,18 +16,31 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         {
             InitializeComponent();
         }
-            
-        ClsListe cls = new ClsListe();
+
+        List<CHOIX> lc = new List<CHOIX>();
+        ClsDemande D = new ClsDemande();
+        
 
 
 
         private void Catalogue_Load(object sender, EventArgs e)
 
         {
-            string a = Application.StartupPath;
+            panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
+            pnlHaut.BackColor = Color.FromArgb(70, 0, 0, 0);
+            //charger fichier  choix dans liste choi 
+            ClsListe.List_choix.Clear();
+            ClsListe.chargerDEMANDE(); // pour ajouter une demande sur la liste precedente
+
+            //charger les article
+            ClsListe.List_article.Clear();
+            ClsListe.chargerART();
+
+
+            //string a = Application.StartupPath;
             dgvCHoi.DataSource = null;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            ClsListe.chargerART();
+           
             
             dgvCHoi.DataSource = ClsListe.List_article;
             dgvCHoi.Columns["nom"].Width = 150;
@@ -36,16 +49,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             dgvCHoi.Columns["photo"].Visible = false;
             
 
-
-
-            panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
-            pnlHaut.BackColor = Color.FromArgb(70, 0, 0, 0);
-
             cmbProduit.Text = "--Faites votre choix--";
-
-                        
-            
-
             cmbProduit.Items.Add("Bureau");
             cmbProduit.Items.Add("Meuble");
             cmbProduit.Items.Add("Materiel sportif");
@@ -55,6 +59,18 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             cmbProduit.Items.Add("Uniforme");
             cmbProduit.Items.Add("Service");
             cmbProduit.Items.Add("Autre");
+
+            //combo departement
+            cmbDepartemen.Items.Add("Personnel");
+            cmbDepartemen.Items.Add("Restaurant");
+            cmbDepartemen.Items.Add("Salle de sport");
+            cmbDepartemen.Items.Add("Salle de jeux");
+            cmbDepartemen.Items.Add("Crèche");
+            cmbDepartemen.Items.Add("Location ");
+            cmbDepartemen.Items.Add("Parking");
+
+            //liste departement
+            ClsListe.List_departmnt.Add(new ClsDepartement("1", "Personnel"));
 
         }
 
@@ -108,30 +124,44 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
 
 
-        
 
-        
-        
+
+
+
 
         private void dgvCHoi_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             pictureBox1.Image = ((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem).Photo;
         }
-        List<CHOIX> lc = new List<CHOIX>(); 
+         
 
 
         private void btnChoisir_Click(object sender, EventArgs e)
         {
-            CHOIX c = new CHOIX(((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem), ((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem).Nom, 0);
+            
+            bool exist = false;
+
+            string n = ((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem).Nom ;
+
+            CHOIX c = new CHOIX(((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem), n, 0);
             //ClsListe.List_choix.Add(c);
-            lc.Add(c);
+            for( int i = 0; i  < lc.Count; i++)
+            {
+                if(lc[i].Nom == n )
+                {
+                    exist = true;
+                }
 
-            //dgvFinal.Rows.Add(((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem));
-            dgvFinal.Rows.Add(lc);
+            }
+            if(exist == false)
+            {
+                lc.Add(c);
+            }
+            
 
-            //.Cells["Numéro"].Value = clsliste.ListeStagiaire[i].NumS1;
-
-          //  dgvFinal.DataSource = lc;
+           
+            dgvFinal.DataSource = null;
+            dgvFinal.DataSource = lc;
 
            
             foreach (DataGridViewColumn d in dgvFinal.Columns)
@@ -139,10 +169,92 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
                 d.Visible = false;
 
             }
+
             dgvFinal.Columns["nom"].Visible = true;
             dgvFinal.Columns["quantite"].Visible = true;
-            
+
+            dgvFinal.Columns["nom"].ReadOnly = true;
+            dgvFinal.Columns["quantite"].ReadOnly = false;
+
+
             //lc =(List<CHOIX>) dgvFinal.DataSource;
+        }
+
+        private void btnRetirer_Click(object sender, EventArgs e)
+        {
+            if( s==false)
+            {
+                MessageBox.Show("selectionnez un article");
+            }
+            else
+            {
+                string n = ((CHOIX)dgvFinal.CurrentRow.DataBoundItem).Nom;
+                for (int i = 0; i < lc.Count; i++)
+                {
+                    if (lc[i].Nom == n)
+                    {
+                        lc.Remove(lc[i]);
+                    }
+                }
+
+                dgvFinal.DataSource = null;
+                dgvFinal.DataSource = lc;
+
+                foreach (DataGridViewColumn d in dgvFinal.Columns)
+                {
+                    d.Visible = false;
+
+                }
+
+                dgvFinal.Columns["nom"].Visible = true;
+                dgvFinal.Columns["quantite"].Visible = true;
+
+                dgvFinal.Columns["nom"].ReadOnly = true;
+                dgvFinal.Columns["quantite"].ReadOnly = false;
+
+            }
+            s = false;
+
+
+        }
+        bool s= false;
+
+        private void dgvFinal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            s = true;
+        }
+
+        private void dgvFinal_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            pictureBox1.Image = ((CHOIX)dgvFinal.CurrentRow.DataBoundItem).Article.Photo ;
+        }
+
+        private void btnVider_Click(object sender, EventArgs e)
+        {
+            lc.Clear();
+            dgvFinal .DataSource = null;
+
+        }
+
+        private void btnValider_Click(object sender, EventArgs e)
+        {
+            //creer objet demande 
+            //ajouter a liste demande
+            ///serialisation fichier demande
+            ///
+            //string id = ClsListe.List_choix.Count.ToString();
+
+           // ClsListe.List_demande.Add(new ClsDemande(id, "", EtatDemande.attente, "", DateTime.Now, lc ,ClsListe.List_departmnt[0]));
+
+            //sauvgarde demande
+
+            
+
+            
+            //fonction serialiser vers ficher choiux depuis list choix generel
+
+
+            
         }
     }
 }
