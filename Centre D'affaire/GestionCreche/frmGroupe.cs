@@ -34,7 +34,7 @@ namespace Centre_D_affaire.GestionCreche
         private void btnAjouter_Click_1(object sender, EventArgs e)
         {
             clsGroupe G = new clsGroupe();
-            G.NumG = int.Parse(nudNum.Text);
+            G.NumG = int.Parse(nudnumero.Text);
             G.NomG = txtnom.Text;
             G.AjouterDansListeG(G);
             RemplirGridEnfant();
@@ -61,9 +61,9 @@ namespace Centre_D_affaire.GestionCreche
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            if (txtnom.Text !="" && nudNum.Value>=0)
+            if (txtnom.Text !="" && txtnum.>=0)
 
-                dgvGroupe.Rows.Add(txtnom.Text, nudNum.Value);
+                dgvGroupe.Rows.Add(txtnom.Text, txtnum.Text);
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)

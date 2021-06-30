@@ -13,7 +13,12 @@ namespace Centre_D_affaire.GestionCreche
         private string Profession;
         private int telephone;
         private string departement;
+        private List<frmEnfant> EF = new List<frmEnfant>();
         public ClsParant() { }
+        public List<frmEnfant> en{ get => EF; }
+        
+       
+
         public ClsParant(string Nom, string PRENOM, string Pro , int tele , string depar)
         {
             this.NomParant = Nom;
@@ -21,7 +26,9 @@ namespace Centre_D_affaire.GestionCreche
             this.Profession = Pro;
             this.telephone = tele;
             this.departement = depar;
-            
+       
+
+
         }
 
         public string Nom { get => NomParant; set => NomParant = value; }

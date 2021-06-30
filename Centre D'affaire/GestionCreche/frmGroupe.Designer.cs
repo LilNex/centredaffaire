@@ -34,14 +34,13 @@ namespace Centre_D_affaire.GestionCreche
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtnom = new System.Windows.Forms.TextBox();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnNouveau = new System.Windows.Forms.Button();
             this.btnQuitter = new System.Windows.Forms.Button();
-            this.txtnom = new System.Windows.Forms.TextBox();
-            this.nudNum = new System.Windows.Forms.NumericUpDown();
+            this.txtnum = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNum)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvGroupe
@@ -50,11 +49,20 @@ namespace Centre_D_affaire.GestionCreche
             this.dgvGroupe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
+<<<<<<< HEAD
+            this.dgvGroupe.Location = new System.Drawing.Point(11, 220);
+            this.dgvGroupe.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvGroupe.Name = "dgvGroupe";
+            this.dgvGroupe.RowHeadersWidth = 62;
+            this.dgvGroupe.RowTemplate.Height = 28;
+            this.dgvGroupe.Size = new System.Drawing.Size(366, 140);
+=======
             this.dgvGroupe.Location = new System.Drawing.Point(374, 12);
             this.dgvGroupe.Name = "dgvGroupe";
             this.dgvGroupe.RowHeadersWidth = 62;
             this.dgvGroupe.RowTemplate.Height = 28;
             this.dgvGroupe.Size = new System.Drawing.Size(666, 328);
+>>>>>>> 5e9df63af0a7a8cd446ff4bc81f0d40dee6eeb57
             this.dgvGroupe.TabIndex = 0;
             // 
             // Column1
@@ -90,6 +98,13 @@ namespace Centre_D_affaire.GestionCreche
             this.label2.Size = new System.Drawing.Size(75, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nom : ";
+            // 
+            // txtnom
+            // 
+            this.txtnom.Location = new System.Drawing.Point(12, 214);
+            this.txtnom.Name = "txtnom";
+            this.txtnom.Size = new System.Drawing.Size(265, 26);
+            this.txtnom.TabIndex = 3;
             // 
             // btnAjouter
             // 
@@ -139,39 +154,36 @@ namespace Centre_D_affaire.GestionCreche
             this.btnQuitter.Text = "Quitter : ";
             this.btnQuitter.UseVisualStyleBackColor = false;
             // 
-            // txtnom
+            // txtnum
             // 
-            this.txtnom.Location = new System.Drawing.Point(12, 217);
-            this.txtnom.Name = "txtnom";
-            this.txtnom.Size = new System.Drawing.Size(260, 26);
-            this.txtnom.TabIndex = 9;
-            // 
-            // nudNum
-            // 
-            this.nudNum.Location = new System.Drawing.Point(17, 118);
-            this.nudNum.Name = "nudNum";
-            this.nudNum.Size = new System.Drawing.Size(260, 26);
-            this.nudNum.TabIndex = 10;
+            this.txtnum.Location = new System.Drawing.Point(17, 112);
+            this.txtnum.Name = "txtnum";
+            this.txtnum.Size = new System.Drawing.Size(260, 26);
+            this.txtnum.TabIndex = 9;
             // 
             // frmGroupe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(714, 448);
+=======
             this.ClientSize = new System.Drawing.Size(1071, 689);
-            this.Controls.Add(this.nudNum);
-            this.Controls.Add(this.txtnom);
+            this.Controls.Add(this.txtnum);
             this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnNouveau);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnAjouter);
+            this.Controls.Add(this.txtnom);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+>>>>>>> 5e9df63af0a7a8cd446ff4bc81f0d40dee6eeb57
             this.Controls.Add(this.dgvGroupe);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmGroupe";
             this.Text = "frmGroupe";
             this.Load += new System.EventHandler(this.frmGroupe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroupe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,11 +196,11 @@ namespace Centre_D_affaire.GestionCreche
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtnom;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnNouveau;
         private System.Windows.Forms.Button btnQuitter;
-        private System.Windows.Forms.TextBox txtnom;
-        private System.Windows.Forms.NumericUpDown nudNum;
+        private System.Windows.Forms.TextBox txtnum;
     }
 }

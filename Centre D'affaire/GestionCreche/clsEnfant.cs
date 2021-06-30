@@ -15,7 +15,7 @@ namespace Centre_D_affaire.GestionCreche
         private DateTime dateDadmission;
         private string num;
         private int age;
-        private ClsParant parant;
+ 
 
         
 

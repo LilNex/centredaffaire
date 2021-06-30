@@ -12,6 +12,8 @@ namespace Centre_D_affaire.GestionCreche
 {
     public partial class FrmPersonnel : Form
     {
+        public string ClsPersonnel { get; private set; }
+
         public FrmPersonnel()
         {
             InitializeComponent();
@@ -23,49 +25,18 @@ namespace Centre_D_affaire.GestionCreche
         }
 
         private void btnAjouter_Click(object sender, EventArgs e)
+
         {
-            if (txtnom.Text == " " || txtprenom.Text == "" || txtEmail.Text == "" || txtAd.Text == "" || txtNum.Text == "" || txttele.Text == "")
-            {
-                MessageBox.Show("Attention!!une information est vide!!");
-            }
-            else
-            {
-                try
-                {
-                    dataGridView1.Rows.Add(txtnom.Text, txtprenom.Text, txtEmail.Text, txtAd.Text, txtNum.Text, int.Parse(txttele.Text));
-                    {
-
-                        {
-                            txtprenom.Clear();
-                            txtEmail.Clear();
-                            txtAd.Clear();
-                            txtNum.Clear();
-                            txttele.Clear();
-                            
-
-                        }
-                    }
-                }
-
-                catch (FormatException)
-                {
-                    MessageBox.Show("l'age invalide");
-
-                }
-
-
-            }
-
+            if(txtnom.Text!=""&& txtprenom.Text!=""&& txttele.Text!=""&& txtAd.Text!=""&& txtAd.Text!=""&& txtNum.Text!="")
+            dataGridView1.Rows.Add(txtnom.Text, txtprenom.Text, txttele.Text, txtAd.Text, txtAd.Text, txtNum.Text);
+           
 
         }
-
-
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Supprimer_Click(object sender, EventArgs e)
         {
             try
             {
@@ -111,28 +82,50 @@ namespace Centre_D_affaire.GestionCreche
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-           // int trouve = 0;
-           // int index;
-           //// for (int i = 0 < this.dataGridView1.Rows.Count - 1; i++)
-           //  //   if (this.dataGridView1.Rows[i].Cells[5].Value.ToString== txtNsearch.Text)
-           //     {
-           //       // index = i;
-           //        // trouve = 1;
-           //     }
-           //// if (trouve == 0)
+      
 
-           //     MessageBox.Show(" Cette personne n'existe pas dans la liste");
 
-           // else
-           //     this.Modification.Visible = true;
-
-        }
+            
+        
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void FrmPersonnel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModifier_Click(object sender, EventArgs e)
+        {
+            string Nom = txtnom.Text;
+            string Prenom = txtprenom.Text;
+            string Telephone = txttele.Text;
+            string Adresse = txtAd.Text;
+            string Email = txtEmail.Text;
+            string Numero = txtNum.Text;
+            dataGridView1.CurrentRow.Cells[0].Value = Nom;
+            dataGridView1.CurrentRow.Cells[1].Value = Prenom;
+            dataGridView1.CurrentRow.Cells[2].Value = Telephone;
+            dataGridView1.CurrentRow.Cells[3].Value = Adresse;
+            dataGridView1.CurrentRow.Cells[4].Value = Email;
+            dataGridView1.CurrentRow.Cells[5].Value = Numero;
+
+        }
+
+        private void Rechercher_Click(object sender, EventArgs e)
+        {
+            Boolean R = false;
+            for (int i=0;i<dataGridView1.Rows.Count;i++)
+             dataGridView1.Rows[i].Selected = false;
+            
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                if (txtNsearch.Text.Equals(dataGridView1.Rows[i].Cells[5].Value))
+                    dataGridView1.Rows[i].Selected = true;
+            R = true;
+            if (R == false) MessageBox.Show("Error");
         }
     }
 }
