@@ -8,21 +8,21 @@ namespace Centre_D_affaire.GestionCreche
 {
     class clsGroupe
     {
-        private int num;
-        private int numSalle;
+        private int numG;
+        private string nomG;
         private static List<clsEnfant> ListeEnfant = new List<clsEnfant>();
 
+        public int NumG { get => numG; set => numG = value; }
+        public string NomG { get => nomG; set => nomG = value; }
         public clsGroupe() { }
-        public clsGroupe(int NUM, int NUMSALLE)
+        public clsGroupe(int numG, string nomG)
         {
-            this.Num = NUM;
-            this.NumSalle = NUMSALLE;
-
+            this.numG = numG;
+            this.nomG = nomG;
         }
 
-        public int Num { get => num; set => num = value; }
-        public int NumSalle { get => numSalle; set => numSalle = value; }
 
+        
 
         public bool AjouterDansListeG(clsGroupe G)
         {

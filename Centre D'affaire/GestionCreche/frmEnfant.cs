@@ -28,5 +28,10 @@ namespace Centre_D_affaire.GestionCreche
         {
 
         }
+
+        private void gbSex_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
