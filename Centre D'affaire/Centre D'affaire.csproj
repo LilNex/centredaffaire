@@ -84,6 +84,7 @@
     <Compile Include="GestionCreche\frmEnfant.Designer.cs">
       <DependentUpon>frmEnfant.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionCreche\frmEnfantBase.cs" />
     <Compile Include="GestionCreche\frmGroupe.cs">
       <SubType>Form</SubType>
     </Compile>
