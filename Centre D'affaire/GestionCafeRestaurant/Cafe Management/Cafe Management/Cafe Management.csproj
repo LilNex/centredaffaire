@@ -90,7 +90,6 @@
       <DependentUpon>UC_Welcome.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\ClsList.cs" />
-    <Compile Include="Classes\ClsObjet.cs" />
     <Compile Include="DGVPrinter.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

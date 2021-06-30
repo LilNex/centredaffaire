@@ -15,86 +15,83 @@ using System.Collections;
 namespace Cafe_Management.AllUserControl
 {
 
-    //public class ClsObjet
-    //{
-    //    private string nomA;
-    //    private float prixA;
-    //    private string categorieA;
-
-    //    public ClsObjet(string nom, float prix, string categorie)
-    //    {
-    //        this.NomA = nom;
-    //        this.PrixA = prix;
-    //        this.CategorieA = categorie;
-    //    }
-
-    //    public string NomA { get => nomA; set => nomA = value; }
-    //    public float PrixA { get => prixA; set => prixA = value; }
-    //    public string CategorieA { get => categorieA; set => categorieA = value; }
-    //}
-    //public class ClsList
-    //{
-    //    //public static List<ClsEmployes> ListEmployes = new List<ClsEmployes>();
-    //    public static List<ClsObjet> ListArticle = new List<ClsObjet>();
-    //    //public static List<ClsCategorie> ListeCategorie = new List<ClsCategorie>();
-
-    //}
+    
+    [Serializable]
     public partial class UC_PlaceOrder : UserControl
     {
 
 
-        //function fn = new function();
-        //String query;
+        
+
         public UC_PlaceOrder()
         {
 
             InitializeComponent();
         }
-
+        string ca;
+        int p;
+        int quan;
         private void comboCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //String category = comboCategory.Text;
-            //query = "select name from item where category ='"+category+"'";
-            //ShowItemList(query);
-            
+           
+            listBox1.Items.Clear();
+            foreach (UC_Additems.ClsObjet clt in UC_Additems.ListArticle)
+            {
+                if (comboCategory.Text == clt.CategorieA)
+                {
+                    listBox1.Items.Add(clt.NomA);
+                    ca = clt.CategorieA;
+                    p = int.Parse(clt.PrixA.ToString());
+                }
+            }
+
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            //String category = comboCategory.Text;
-            //query = "select name from item where category ='" + category + "' and name like '"+txtSearch.Text+"%'";
-            //ShowItemList(query);
+            
+            
+            for (int i = 0; i < UC_Additems.ListArticle.Count; i++)
+            {
+                if (UC_Additems.ListArticle[i].NomA.StartsWith(txtSearch.Text)&&UC_Additems.ListArticle[i].CategorieA==comboCategory.Text)
+                {
+                    listBox1.Items.Clear();
+                    listBox1.Items.Add(UC_Additems.ListArticle[i].NomA);
+                }
+                if (txtSearch.Text == "")
+                {
+                    listBox1.Items.Clear();
+                    foreach (UC_Additems.ClsObjet clt in UC_Additems.ListArticle)
+                    {
+                        if (comboCategory.Text == clt.CategorieA)
+                        {
+                            listBox1.Items.Add(clt.NomA);
+                            ca = clt.CategorieA;
+                            p = int.Parse(clt.PrixA.ToString());
+                        }
+                    }
+                }
+            }
         }
-        //private void ShowItemList(String query)
-        //{
-        //    listBox1.Items.Clear();
-            //DataSet ds = fn.getData(query);
-            //for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
-            //{
-            //    listBox1.Items.Add(ds.Tables[0].Rows[i][0].ToString());
-            //}
-        //}
+        
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        { 
             txtquantityupdown.ResetText();
             txttotal.Clear();
             String text = listBox1.GetItemText(listBox1.SelectedItem);
             txtname.Text = text;
-            //query = "select price from item where name = '" + text + "'";
-            //DataSet ds = fn.getData(query);
-            //try
-            //{
-            //    txtprice.Text = ds.Tables[0].Rows[0][0].ToString();
-            //}
-            //catch { }
+            txtprice.Text = p.ToString();
+
+           
+
         }
 
         private void txtquantityupdown_ValueChanged(object sender, EventArgs e)
         {
-            Int64 quan = Int64.Parse(txtquantityupdown.Value.ToString());
-            Int64 price = Int64.Parse(txtprice.Text);
-            txttotal.Text = (quan * price).ToString();
+            
+            quan = int.Parse(txtquantityupdown.Value.ToString());
+            txttotal.Text = (quan * p).ToString();
         }
         protected int n, total = 0;
 
@@ -134,22 +131,13 @@ namespace Cafe_Management.AllUserControl
             printer.PrintDataGridView(guna2DataGridView1);
             total = 0;
             guna2DataGridView1.Rows.Clear();
+
             labeltotalamount.Text = total + " Dh";
         }
 
         private void UC_PlaceOrder_Load(object sender, EventArgs e)
         {
-            ArrayList cls = new ArrayList();
-            //Stream file = File.OpenRead(@"C:\Users\user\Desktop\sr\Objets.txt");
-            BinaryFormatter deser = new BinaryFormatter();
-            //cls = (ArrayList)(UC_Additems.ClsList)deser.Deserialize(file);
-            //foreach (UC_Additems.ClsObjet clt in cls)
-            //{
-            //    if (comboCategory.Text == clt.CategorieA)
-            //    {
-            //        listBox1.Items.Add(clt.NomA);
-            //    }
-            //}
+
         }
 
         private void btnaddtocart_Click(object sender, EventArgs e)
@@ -163,6 +151,9 @@ namespace Cafe_Management.AllUserControl
                 guna2DataGridView1.Rows[n].Cells["Column4"].Value = txttotal.Text;
                 total += int.Parse(txttotal.Text);
                 labeltotalamount.Text = total + " Dh";
+                txtquantityupdown.Value = 0;
+                txtname.Clear();
+                txtprice.Clear();
             }
             else
             {

@@ -7,49 +7,166 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 using System.Data.SqlClient;
 
 namespace Cafe_Management.AllUserControl
 {
+    [Serializable]
     public partial class UC_CreateNewUser : UserControl
     {
+        public void ser()
+        {
+            BinaryFormatter f = new BinaryFormatter();
+            FileStream fichierbin = new FileStream("User.txt", FileMode.OpenOrCreate);
+            f.Serialize(fichierbin, ListUser);
+            fichierbin.Close();
+        }
         public UC_CreateNewUser()
         {
             InitializeComponent();
         }
-        //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Cafedb.mdf;Integrated Security=True;Connect Timeout=30");
-        /*void populate()
+        
+        ClsUser STOLD = new ClsUser();
+
+        public int recherche(string libelle)
         {
-            con.Open();
-            string query = "select * from UsersTbl";
-            SqlDataAdapter sda = new SqlDataAdapter(query, con);
-            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            guna2DataGridView1.DataSource = ds.Tables[0];
-            con.Close();
-        }*/
+            for (int i = 0; i < ListUser.Count; i++)
+            {
+                if (ListUser[i].NomB == libelle)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        public bool modifier(string numero, ClsUser ST)
+        {
+            if (recherche(numero) != -1)
+            {
+                ListUser[recherche(numero)] = ST;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool supprimer(string num)
+        {
+
+            if (recherche(num) != -1)
+            {
+                ListUser.RemoveAt(recherche(num));
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
+        public void charger()
+        {
+            BinaryFormatter f = new BinaryFormatter();
+            FileStream fichierbin = new FileStream("User.txt", FileMode.OpenOrCreate);
+            ListUser = (List<ClsUser>)f.Deserialize(fichierbin);
+            fichierbin.Close();
+        }
+        [Serializable]
+        public class ClsUser
+        {
+            public static List<ClsUser> ListUser = new List<ClsUser>();
+            private string nomB;
+            private int phoneB;
+            private float mdpB;
+            public ClsUser() { }
+            public ClsUser(string n,int p,float m)
+            {
+                this.NomB = n;
+                this.PhoneB = p;
+                this.MdpB = m;
+            }
+
+            public string NomB { get => nomB; set => nomB = value; }
+            public int PhoneB { get => phoneB; set => phoneB = value; }
+            public float MdpB { get => mdpB; set => mdpB = value; }
+        }
+        public static List<ClsUser> ListUser = new List<ClsUser>();
+        public int rechercheA(string libelle)
+        {
+            for (int i = 0; i < ListUser.Count; i++)
+            {
+                if (ListUser[i].NomB == libelle)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        public bool AjouterA(ClsUser A)
+        {
+           
+            if (rechercheA(A.NomB) == -1)
+            {
+                ListUser.Add(A);
+                MessageBox.Show("Données d'utilisateur ajouter avec succès", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                return true;
+            }
+            else { return false; }
+        }
+        public void RemplirGridStagiaires()
+        {
+            guna2DataGridView1.Rows.Clear();
+            for (int i = 0; i < ListUser.Count; i++)
+            {
+                guna2DataGridView1.Rows.Add();
+                guna2DataGridView1.Rows[i].Cells[0].Value = ListUser[i].NomB;
+                guna2DataGridView1.Rows[i].Cells[1].Value = ListUser[i].PhoneB;
+                guna2DataGridView1.Rows[i].Cells[2].Value = ListUser[i].MdpB;
+            }
+        }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            //con.Open();
-            //string query = "insert into UsersTbl values('"+UnameTb.Text+"','"+UphoneTb.Text+"','"+UpasswordTb.Text+"')";
-            //SqlCommand cmd = new SqlCommand(query, con);
-            //cmd.ExecuteNonQuery();
-            //MessageBox.Show("Utilisateur créé avec succès", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //con.Close();
-            //populate();
+           
+            ClsUser s = new ClsUser(UnameTb.Text, int.Parse(UphoneTb.Text), float.Parse(UpasswordTb.Text));
+            AjouterA(s);
+            RemplirGridStagiaires();
+            UnameTb.Clear();
+            UphoneTb.Clear();
+            UpasswordTb.Clear();
+            ser();
         }
 
         private void UC_CreateNewUser_Load(object sender, EventArgs e)
         {
-            //populate();
+            
+            charger();
+            RemplirGridStagiaires();
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            UnameTb.Text = guna2DataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            UphoneTb.Text = guna2DataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            UpasswordTb.Text = guna2DataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            float password = float.Parse(guna2DataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString());
+            String name = guna2DataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            int phone = int.Parse(guna2DataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
+            UnameTb.Text = name;
+            UpasswordTb.Text = password.ToString();
+            UphoneTb.Text = phone.ToString();
+            
+        }
+        public ClsUser rechercherST(string numero)
+        {
+            for (int i = 0; i < ListUser.Count; i++)
+            {
+                if (ListUser[i].NomB == numero)
+                {
+                    return ListUser[i];
+                }
+            }
+            return null;
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -60,13 +177,16 @@ namespace Cafe_Management.AllUserControl
             }
             else
             {
-                //con.Open();
-                //string query = "delete from UsersTbl where Uname ='" + UnameTb.Text + "'";
-                //SqlCommand cmd = new SqlCommand(query, con);
-                //cmd.ExecuteNonQuery();
-                MessageBox.Show("Utilisateur supprimé avec succès", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //con.Close();
-                //populate();
+                if (MessageBox.Show("Supprimer l'article?", "Important", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                {
+                    string nom = guna2DataGridView1.CurrentRow.Cells[0].Value.ToString();
+                    supprimer(nom);
+                    MessageBox.Show("données d'utilisateur sont supprimé avec succès", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    RemplirGridStagiaires();
+                    ser();
+                   
+                }
+                
             }
         }
 
@@ -78,13 +198,18 @@ namespace Cafe_Management.AllUserControl
             }
             else
             {
-                //con.Open();
-                //string query = "update UsersTbl set Uname = '" + UnameTb.Text + "',Uphone = '" + UphoneTb.Text + "' ,Upassword = '" + UpasswordTb.Text + "' where Uphone ='"+UphoneTb.Text+"'";
-                //SqlCommand cmd = new SqlCommand(query, con);
-                //cmd.ExecuteNonQuery();
-                MessageBox.Show("Utilisateur modifié avec succès", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //con.Close();
-                //populate();
+                string num = guna2DataGridView1.CurrentRow.Cells[0].Value.ToString();
+                STOLD = rechercherST(num);
+                ClsUser s = new ClsUser(UnameTb.Text, int.Parse(UphoneTb.Text), float.Parse(UpasswordTb.Text));
+                modifier(STOLD.NomB, s);
+                RemplirGridStagiaires();
+                UnameTb.Clear();
+                UphoneTb.Clear();
+                UpasswordTb.Clear();
+                MessageBox.Show("Données d'utilisateur modifié avec succès", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RemplirGridStagiaires();
+                ser();
+                
             }
         }
     }

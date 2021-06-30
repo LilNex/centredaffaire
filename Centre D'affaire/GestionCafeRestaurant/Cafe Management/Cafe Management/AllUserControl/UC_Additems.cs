@@ -10,31 +10,24 @@ using System.Windows.Forms;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Collections;
+using System.Xml.Serialization;
 
 namespace Cafe_Management.AllUserControl
 {
     [Serializable]
+
+    
+
     public partial class UC_Additems : UserControl
     {
         [Serializable]
-        public class ClsList
-        {
-            //public static List<ClsEmployes> ListEmployes = new List<ClsEmployes>();
-            public static List<ClsObjet> ListArticle = new List<ClsObjet>();
-
-            public static explicit operator ArrayList(ClsList v)
-            {
-                throw new NotImplementedException();
-            }
-            //public static List<ClsCategorie> ListeCategorie = new List<ClsCategorie>();
-
-        }
-        [Serializable]
         public class ClsObjet
         {
+            public static List<ClsObjet> ListArticle = new List<ClsObjet>();
             private string nomA;
             private float prixA;
             private string categorieA;
+            public ClsObjet() { }
 
             public ClsObjet(string nom, float prix, string categorie)
             {
@@ -46,12 +39,32 @@ namespace Cafe_Management.AllUserControl
             public string NomA { get => nomA; set => nomA = value; }
             public float PrixA { get => prixA; set => prixA = value; }
             public string CategorieA { get => categorieA; set => categorieA = value; }
+
+            
+
         }
-        private int rechercheA(string libelle)
+       
+        public static List<ClsObjet> ListArticle = new List<ClsObjet>();
+
+        public void ser()
         {
-            for (int i = 0; i < ClsList.ListArticle.Count; i++)
+            BinaryFormatter f = new BinaryFormatter();
+            FileStream fichierbin = new FileStream("Objet.txt", FileMode.OpenOrCreate);
+            f.Serialize(fichierbin, ListArticle);
+            fichierbin.Close();
+        }
+        public void charger()
+        {
+            BinaryFormatter f = new BinaryFormatter();
+            FileStream fichierbin = new FileStream("Objet.txt", FileMode.OpenOrCreate);
+            ListArticle = (List<ClsObjet>)f.Deserialize(fichierbin);
+            fichierbin.Close();
+        }
+        public int rechercheA(string libelle)
+        {
+            for (int i = 0; i < ListArticle.Count; i++)
             {
-                if (ClsList.ListArticle[i].NomA == libelle)
+                if (ListArticle[i].NomA == libelle)
                 {
                     return i;
                 }
@@ -59,44 +72,45 @@ namespace Cafe_Management.AllUserControl
             return -1;
         }
 
-        public bool AjouterA(ClsObjet A)
-        {
-            if (rechercheA(A.NomA) == -1)
-            {
-                ClsList.ListArticle.Add(A);
-                return true;
-            }
-            else { return false; }
-        }
 
-
-        //function fn = new function();
-        //String query;
         public UC_Additems()
         {
             InitializeComponent();
         }
+         public bool AjouterA(ClsObjet A)
+        {
+            if (rechercheA(A.NomA) == -1)
+            {
 
+                ListArticle.Add(A);
+                MessageBox.Show("Objet ajouter avec succes", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ser();
+                return true;
+                
+            }
+            else { return false; }
+        }
+        
         private void btnAddItem_Click(object sender, EventArgs e)
         {
             ClsObjet s = new ClsObjet(txtItemName.Text, float.Parse(txtPrice.Text), txtCategorie.Text);
-            //query = "insert into item (name,category,price) values ('" + txtItemName.Text + "','" + txtCategorie.Text + "'," + txtPrice.Text + ")";
-            //fn.setdata(query);
             AjouterA(s);
-            MessageBox.Show("Objet ajouter avec succes","Succes",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            ClearAll();
-        }
-
-        public void ClearAll()
-        {
-            txtCategorie.SelectedIndex = -1;
             txtItemName.Clear();
+            txtCategorie.Text = "";
             txtPrice.Clear();
         }
 
+       
+
         private void UC_Additems_Leave(object sender, EventArgs e)
         {
-            ClearAll();
+            
+        }
+
+        private void UC_Additems_Load(object sender, EventArgs e)
+        {
+            
+            charger();
         }
     }
 }

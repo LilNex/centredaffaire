@@ -38,6 +38,7 @@ namespace Cafe_Management
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.btnGuest = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -163,12 +164,26 @@ namespace Cafe_Management
             this.rectangleShape1.Name = "rectangleShape1";
             this.rectangleShape1.Size = new System.Drawing.Size(364, 527);
             // 
+            // btnGuest
+            // 
+            this.btnGuest.AutoSize = true;
+            this.btnGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuest.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.btnGuest.Location = new System.Drawing.Point(144, 453);
+            this.btnGuest.Name = "btnGuest";
+            this.btnGuest.Size = new System.Drawing.Size(64, 20);
+            this.btnGuest.TabIndex = 8;
+            this.btnGuest.TabStop = true;
+            this.btnGuest.Text = "Servant";
+            this.btnGuest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnGuest_LinkClicked_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(373, 540);
+            this.Controls.Add(this.btnGuest);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
@@ -180,6 +195,7 @@ namespace Cafe_Management
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connexion";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -196,6 +212,7 @@ namespace Cafe_Management
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
+        private System.Windows.Forms.LinkLabel btnGuest;
     }
 }
 

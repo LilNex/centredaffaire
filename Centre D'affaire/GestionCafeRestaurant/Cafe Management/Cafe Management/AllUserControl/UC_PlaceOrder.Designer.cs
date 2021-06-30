@@ -97,7 +97,7 @@ namespace Cafe_Management.AllUserControl
             this.comboCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboCategory.FocusedState.Parent = this.comboCategory;
-            this.comboCategory.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboCategory.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.comboCategory.ForeColor = System.Drawing.Color.Black;
             this.comboCategory.HoverState.Parent = this.comboCategory;
             this.comboCategory.ItemHeight = 30;
@@ -107,7 +107,9 @@ namespace Cafe_Management.AllUserControl
             "Tacos",
             "Burger",
             "Plat",
-            "Salade"});
+            "Salade",
+            "Plat spéciaux",
+            "Sauce"});
             this.comboCategory.ItemsAppearance.Parent = this.comboCategory;
             this.comboCategory.Location = new System.Drawing.Point(20, 93);
             this.comboCategory.Name = "comboCategory";

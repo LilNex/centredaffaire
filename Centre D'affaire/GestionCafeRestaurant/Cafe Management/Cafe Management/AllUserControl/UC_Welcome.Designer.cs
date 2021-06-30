@@ -48,6 +48,7 @@ namespace Cafe_Management.AllUserControl
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -63,7 +64,7 @@ namespace Cafe_Management.AllUserControl
             // 
             this.labelBanner.AutoSize = true;
             this.labelBanner.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBanner.Location = new System.Drawing.Point(111, 367);
+            this.labelBanner.Location = new System.Drawing.Point(112, 370);
             this.labelBanner.Name = "labelBanner";
             this.labelBanner.Size = new System.Drawing.Size(535, 56);
             this.labelBanner.TabIndex = 2;

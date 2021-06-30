@@ -119,7 +119,8 @@ namespace Cafe_Management.AllUserControl
             "Burger",
             "Plat",
             "Salade",
-            ""});
+            "Plat spéciaux",
+            "Sauce"});
             this.txtCategorie.ItemsAppearance.Parent = this.txtCategorie;
             this.txtCategorie.Location = new System.Drawing.Point(189, 147);
             this.txtCategorie.Name = "txtCategorie";
@@ -221,6 +222,7 @@ namespace Cafe_Management.AllUserControl
             this.Controls.Add(this.shapeContainer1);
             this.Name = "UC_Additems";
             this.Size = new System.Drawing.Size(781, 514);
+            this.Load += new System.EventHandler(this.UC_Additems_Load);
             this.Leave += new System.EventHandler(this.UC_Additems_Leave);
             this.ResumeLayout(false);
             this.PerformLayout();
