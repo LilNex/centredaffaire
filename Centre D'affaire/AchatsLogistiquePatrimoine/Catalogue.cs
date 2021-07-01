@@ -164,9 +164,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private void Catalogue_Load(object sender, EventArgs e)
 
         {
-            
-            dgvFinal.Columns[0].Visible = false;
-            //panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
+             //panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
             pnlHaut.BackColor = Color.FromArgb(70, 0, 0, 0);
             //charger fichier  choix dans liste choi 
             ClsListe.List_choix.Clear();
@@ -405,6 +403,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private void btnsuivant_Click(object sender, EventArgs e)
         {
             UserInfo user = new UserInfo();
+            this.Controls.Add(user);
             user.Show();
         }
     }

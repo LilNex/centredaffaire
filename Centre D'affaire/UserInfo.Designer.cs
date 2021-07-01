@@ -30,15 +30,14 @@ namespace Centre_D_affaire
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserInfo));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlhaut = new System.Windows.Forms.Panel();
             this.lblinfo = new System.Windows.Forms.Label();
             this.bunifunom = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifudescription = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifutelephone = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifucombobox = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +63,7 @@ namespace Centre_D_affaire
             this.pnlhaut.Name = "pnlhaut";
             this.pnlhaut.Size = new System.Drawing.Size(1347, 88);
             this.pnlhaut.TabIndex = 0;
+            this.pnlhaut.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlhaut_Paint);
             // 
             // lblinfo
             // 
@@ -143,22 +143,6 @@ namespace Centre_D_affaire
             this.bunifutelephone.Text = "TELEPHONE";
             this.bunifutelephone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // bunifucombobox
-            // 
-            this.bunifucombobox.BackColor = System.Drawing.Color.Transparent;
-            this.bunifucombobox.BorderRadius = 3;
-            this.bunifucombobox.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifucombobox.ForeColor = System.Drawing.Color.White;
-            this.bunifucombobox.Items = new string[0];
-            this.bunifucombobox.Location = new System.Drawing.Point(86, 396);
-            this.bunifucombobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifucombobox.Name = "bunifucombobox";
-            this.bunifucombobox.NomalColor = System.Drawing.Color.SteelBlue;
-            this.bunifucombobox.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifucombobox.selectedIndex = -1;
-            this.bunifucombobox.Size = new System.Drawing.Size(382, 43);
-            this.bunifucombobox.TabIndex = 8;
-            // 
             // bunifuMetroTextbox2
             // 
             this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.Gray;
@@ -179,19 +163,19 @@ namespace Centre_D_affaire
             // 
             // bunifuCustomDataGrid1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nom,
@@ -283,7 +267,6 @@ namespace Centre_D_affaire
             this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Controls.Add(this.bunifuMetroTextbox2);
-            this.Controls.Add(this.bunifucombobox);
             this.Controls.Add(this.bunifutelephone);
             this.Controls.Add(this.bunifudescription);
             this.Controls.Add(this.bunifuImageButton1);
@@ -291,6 +274,7 @@ namespace Centre_D_affaire
             this.Controls.Add(this.pnlhaut);
             this.Name = "UserInfo";
             this.Size = new System.Drawing.Size(1347, 611);
+            this.Load += new System.EventHandler(this.UserInfo_Load);
             this.pnlhaut.ResumeLayout(false);
             this.pnlhaut.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
@@ -308,7 +292,6 @@ namespace Centre_D_affaire
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifudescription;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifutelephone;
-        private Bunifu.Framework.UI.BunifuDropdown bunifucombobox;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nom;

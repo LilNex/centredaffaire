@@ -26,5 +26,15 @@ namespace Centre_D_affaire
         {
             this.Hide();
         }
+
+        private void pnlhaut_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void UserInfo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
