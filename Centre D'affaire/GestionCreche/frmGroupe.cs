@@ -77,5 +77,36 @@ namespace Centre_D_affaire.GestionCreche
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModifier_Click(object sender, EventArgs e)
+        {
+            int trouve=0;
+            int index;
+            for (int i = 0; i < this.dgvGroupe.Rows.Count - 1; i++)
+
+                
+            {
+                if (this.dgvGroupe.Rows[i].Cells[1].Value.ToString() == txtNumSERCHE.Text)
+                {
+                    index = i;
+                    trouve = 1;
+                 
+
+                }
+
+            }
+            if (trouve == 0)
+
+                MessageBox.Show(" ce groupe N'existe pas dans la liste ")
+            else
+                this.grbModification.Visible = true;
+
+
+        }
     }
 }
