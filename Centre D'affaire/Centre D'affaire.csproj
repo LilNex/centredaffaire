@@ -84,12 +84,6 @@
     <Compile Include="GestionCreche\frmAffectationEnfants.Designer.cs">
       <DependentUpon>frmAffectationEnfants.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCreche\frmAffectationGroupe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionCreche\frmAffectationGroupe.Designer.cs">
-      <DependentUpon>frmAffectationGroupe.cs</DependentUpon>
-    </Compile>
     <Compile Include="GestionCreche\frmEnfant.cs">
       <SubType>Form</SubType>
     </Compile>
