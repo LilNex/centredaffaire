@@ -21,6 +21,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private DateTime Date_demande;
         private List<CHOIX> Listchoix = new List<CHOIX>();
         private ClsDepartement departement = new ClsDepartement();
+        
 
         public string ID_demande1 { get => ID_demande; set => ID_demande = value; }
         

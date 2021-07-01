@@ -19,18 +19,158 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         List<CHOIX> lc = new List<CHOIX>();
         ClsDemande D = new ClsDemande();
-        
 
+        //---AJOUTER LE TYPE  NUMERIC UP DOWN DANS LA LISTE DES TYPES DE COLONNE  DANS UNE DATAGRID-----------
+        public class NumericUpDownColumn : DataGridViewColumn
+        {
+            public NumericUpDownColumn()
+                : base(new NumericUpDownCell())
+            {
+            }
 
+            public override DataGridViewCell CellTemplate
+            {
+                get { return base.CellTemplate; }
+                set
+                {
+                    if (value != null && !value.GetType().IsAssignableFrom(typeof(NumericUpDownCell)))
+                    {
+                        throw new InvalidCastException("Must be a NumericUpDownCell");
+                    }
+                    base.CellTemplate = value;
+                }
+            }
+        }
+
+        public class NumericUpDownCell : DataGridViewTextBoxCell
+        {
+            private readonly decimal min;
+            private readonly decimal max;
+
+            public NumericUpDownCell()
+                : base()
+            {
+                Style.Format = "F0";
+            }
+            public NumericUpDownCell(decimal min, decimal max)
+                : base()
+            {
+                this.min = min;
+                this.max = max;
+                Style.Format = "F0";
+            }
+
+            public override void InitializeEditingControl(int rowIndex, object initialFormattedValue, DataGridViewCellStyle dataGridViewCellStyle)
+            {
+                base.InitializeEditingControl(rowIndex, initialFormattedValue, dataGridViewCellStyle);
+                NumericUpDownEditingControl ctl = DataGridView.EditingControl as NumericUpDownEditingControl;
+                ctl.Minimum = this.min;
+                ctl.Maximum = this.max;
+                ctl.Value = Convert.ToDecimal(this.Value);
+            }
+
+            public override Type EditType
+            {
+                get { return typeof(NumericUpDownEditingControl); }
+            }
+
+            public override Type ValueType
+            {
+                get { return typeof(Decimal); }
+            }
+
+            public override object DefaultNewRowValue
+            {
+                get { return null; } 
+            }
+        }
+
+        public class NumericUpDownEditingControl : NumericUpDown, IDataGridViewEditingControl
+        {
+            private DataGridView dataGridViewControl;
+            private bool valueIsChanged = false;
+            private int rowIndexNum;
+
+            public NumericUpDownEditingControl()
+                : base()
+            {
+                this.DecimalPlaces = 0;
+            }
+
+            public DataGridView EditingControlDataGridView
+            {
+                get { return dataGridViewControl; }
+                set { dataGridViewControl = value; }
+            }
+
+            public object EditingControlFormattedValue
+            {
+                get { return this.Value.ToString("F0"); }
+                set { this.Value = Decimal.Parse(value.ToString()); }
+            }
+            public int EditingControlRowIndex
+            {
+                get { return rowIndexNum; }
+                set { rowIndexNum = value; }
+            }
+            public bool EditingControlValueChanged
+            {
+                get { return valueIsChanged; }
+                set { valueIsChanged = value; }
+            }
+
+            public Cursor EditingPanelCursor
+            {
+                get { return base.Cursor; }
+            }
+
+            public bool RepositionEditingControlOnValueChange
+            {
+                get { return false; }
+            }
+
+            public void ApplyCellStyleToEditingControl(DataGridViewCellStyle dataGridViewCellStyle)
+            {
+                this.Font = dataGridViewCellStyle.Font;
+                this.ForeColor = dataGridViewCellStyle.ForeColor;
+                this.BackColor = dataGridViewCellStyle.BackColor;
+            }
+
+            public bool EditingControlWantsInputKey(Keys keyData, bool dataGridViewWantsInputKey)
+            {
+                return (keyData == Keys.Left || keyData == Keys.Right ||
+                    keyData == Keys.Up || keyData == Keys.Down ||
+                    keyData == Keys.Home || keyData == Keys.End ||
+                    keyData == Keys.PageDown || keyData == Keys.PageUp);
+            }
+
+            public object GetEditingControlFormattedValue(DataGridViewDataErrorContexts context)
+            {
+                return this.Value.ToString();
+            }
+
+            public void PrepareEditingControlForEdit(bool selectAll)
+            {
+            }
+
+            protected override void OnValueChanged(EventArgs e)
+            {
+                valueIsChanged = true;
+                this.EditingControlDataGridView.NotifyCurrentCellDirty(true);
+                base.OnValueChanged(e);
+            }
+        }
 
         private void Catalogue_Load(object sender, EventArgs e)
 
         {
-            panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
+            
+            dgvFinal.Columns[0].Visible = false;
+            //panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
             pnlHaut.BackColor = Color.FromArgb(70, 0, 0, 0);
             //charger fichier  choix dans liste choi 
             ClsListe.List_choix.Clear();
-            ClsListe.chargerDEMANDE(); // pour ajouter une demande sur la liste precedente
+            /*ClsListe.chargerDEMANDE();*/ // pour ajouter une demande sur la liste precedente
 
             //charger les article
             ClsListe.List_article.Clear();
@@ -172,7 +312,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
             dgvFinal.Columns["nom"].Visible = true;
             dgvFinal.Columns["quantite"].Visible = true;
-
+         
             dgvFinal.Columns["nom"].ReadOnly = true;
             dgvFinal.Columns["quantite"].ReadOnly = false;
 
@@ -255,6 +395,17 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
 
             
+        }
+
+        private void dgvFinal_ColumnAdded(object sender, DataGridViewColumnEventArgs e)
+        {
+
+        }
+
+        private void btnsuivant_Click(object sender, EventArgs e)
+        {
+            UserInfo user = new UserInfo();
+            user.Show();
         }
     }
 }
