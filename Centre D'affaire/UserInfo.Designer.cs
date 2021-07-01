@@ -30,8 +30,6 @@ namespace Centre_D_affaire
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserInfo));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlhaut = new System.Windows.Forms.Panel();
             this.lblinfo = new System.Windows.Forms.Label();
             this.bunifunom = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -39,24 +37,17 @@ namespace Centre_D_affaire
             this.bunifudescription = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifutelephone = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.article = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.urgence = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.quantite = new Centre_D_affaire.AchatsLogistiquePatrimoine.Catalogue.NumericUpDownColumn();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlhaut.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlhaut
             // 
             this.pnlhaut.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlhaut.Controls.Add(this.label1);
             this.pnlhaut.Controls.Add(this.lblinfo);
             this.pnlhaut.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlhaut.Location = new System.Drawing.Point(0, 0);
@@ -161,91 +152,6 @@ namespace Centre_D_affaire
             this.bunifuMetroTextbox2.Text = "E-MAIL";
             this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // bunifuCustomDataGrid1
-            // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nom,
-            this.article,
-            this.description,
-            this.telephone,
-            this.email,
-            this.urgence,
-            this.quantite});
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SteelBlue;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(569, 94);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
-            this.bunifuCustomDataGrid1.RowTemplate.Height = 24;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(756, 402);
-            this.bunifuCustomDataGrid1.TabIndex = 10;
-            // 
-            // nom
-            // 
-            this.nom.HeaderText = "NOM-DEMANDEUR";
-            this.nom.MinimumWidth = 6;
-            this.nom.Name = "nom";
-            this.nom.Width = 125;
-            // 
-            // article
-            // 
-            this.article.HeaderText = "NOM-ARTICLE";
-            this.article.MinimumWidth = 6;
-            this.article.Name = "article";
-            this.article.Width = 125;
-            // 
-            // description
-            // 
-            this.description.HeaderText = "DESCRIPTION";
-            this.description.MinimumWidth = 6;
-            this.description.Name = "description";
-            this.description.Width = 125;
-            // 
-            // telephone
-            // 
-            this.telephone.HeaderText = "TELEPHONE";
-            this.telephone.MinimumWidth = 6;
-            this.telephone.Name = "telephone";
-            this.telephone.Width = 125;
-            // 
-            // email
-            // 
-            this.email.HeaderText = "E-MAIL";
-            this.email.MinimumWidth = 6;
-            this.email.Name = "email";
-            this.email.Width = 125;
-            // 
-            // urgence
-            // 
-            this.urgence.HeaderText = "URGENCE";
-            this.urgence.MinimumWidth = 6;
-            this.urgence.Name = "urgence";
-            this.urgence.Width = 125;
-            // 
-            // quantite
-            // 
-            this.quantite.HeaderText = "QUANTITE";
-            this.quantite.MinimumWidth = 6;
-            this.quantite.Name = "quantite";
-            this.quantite.Width = 125;
-            // 
             // bunifuImageButton2
             // 
             this.bunifuImageButton2.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -260,12 +166,21 @@ namespace Centre_D_affaire
             this.bunifuImageButton2.Zoom = 10;
             this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(761, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(304, 40);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "DEMANDE FINAL";
+            // 
             // UserInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuImageButton2);
-            this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Controls.Add(this.bunifuMetroTextbox2);
             this.Controls.Add(this.bunifutelephone);
             this.Controls.Add(this.bunifudescription);
@@ -278,7 +193,6 @@ namespace Centre_D_affaire
             this.pnlhaut.ResumeLayout(false);
             this.pnlhaut.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             this.ResumeLayout(false);
 
@@ -293,14 +207,7 @@ namespace Centre_D_affaire
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifudescription;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifutelephone;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn article;
-        private System.Windows.Forms.DataGridViewTextBoxColumn description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telephone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewComboBoxColumn urgence;
-        private AchatsLogistiquePatrimoine.Catalogue.NumericUpDownColumn quantite;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
+        private System.Windows.Forms.Label label1;
     }
 }
