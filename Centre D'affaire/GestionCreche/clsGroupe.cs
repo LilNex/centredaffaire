@@ -10,21 +10,21 @@ namespace Centre_D_affaire.GestionCreche
     {
         private int numG;
         private string nomG;
-        private static List<clsEnfant> ListeEnfant = new List<clsEnfant>();
-        public static List<clsGroupe> listeGroupe = new List<clsGroupe>();
+        private static List<clsEnfant> LE = new List<clsEnfant>();
 
 
 
         public int NumG { get => numG; set => numG = value; }
         public string NomG { get => nomG; set => nomG = value; }
         public clsGroupe() { }
-        public clsGroupe(int numG, string nomG)
+        public clsGroupe(int numG, string nomG,List<clsEnfant> L)
         {
             this.numG = numG;
             this.nomG = nomG;
+            this.LE = L;
         }
 
-
+        
         
 
         public bool AjouterDansListeG(clsGroupe G)
