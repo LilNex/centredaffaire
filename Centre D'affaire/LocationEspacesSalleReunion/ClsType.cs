@@ -1,11 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class Class1
+namespace Centre_D_affaire.LocationEspacesSalleReunion
 {
-	public Class1()
-	{
-	}
-	private string numero;
-	private string libele;
+    [Serializable]
+    public class ClsType
+    {
+        private string numero;
+        private string libellé;
 
+        public string Numero { get => numero; set => numero = value; }
+        public string Libellé { get => libellé; set => libellé = value; }
+
+        public ClsType() { }
+    }
 }
