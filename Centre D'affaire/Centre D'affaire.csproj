@@ -192,7 +192,6 @@
       <DependentUpon>frmGSJ.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSalleDeSport\ClassInterface.cs" />
-    <Compile Include="GestionSalleDeSport\Client.cs" />
     <Compile Include="GestionSalleDeSport\Equipment.cs" />
     <Compile Include="GestionSalleDeSport\FormGestionnaire.cs">
       <SubType>Form</SubType>
@@ -206,7 +205,6 @@
     <Compile Include="GestionSalleDeSport\FormGridMemebre.Designer.cs">
       <DependentUpon>FormGridMemebre.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSalleDeSport\Interface.cs" />
     <Compile Include="GestionSalleDeSport\Listes.cs" />
     <Compile Include="GestionSalleDeSport\Entraineur.cs" />
     <Compile Include="GestionSalleDeSport\FormAccueil.cs">
@@ -344,6 +342,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
@@ -361,6 +360,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

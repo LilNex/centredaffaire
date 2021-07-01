@@ -23,13 +23,13 @@ namespace Centre_D_affaire.GestionSalleDeSport
             for (int i = 0; i < Listes.paiment.Count; i++)
             {
                 GridPaiment.Rows.Add();
-                GridPaiment.Rows[i].Cells["ID"].Value = Listes.paiment[i].membres.Id;
-                GridPaiment.Rows[i].Cells["Frais"].Value = Listes.paiment[i].membres.Frais;
-                GridPaiment.Rows[i].Cells["Total"].Value = Listes.paiment[i].membres.Total;
-                GridPaiment.Rows[i].Cells["Date"].Value = Listes.paiment[i].membres.DateJoin;
-                GridPaiment.Rows[i].Cells["Duree"].Value = Listes.paiment[i].membres.Duree;
-                GridPaiment.Rows[i].Cells["Nom"].Value = Listes.paiment[i].membres.NomComplet;
-                GridPaiment.Rows[i].Cells["Paiment1"].Value = Listes.paiment[i]._Paiement;
+                GridPaiment.Rows[i].Cells["ID"].Value = Listes.paiment[i].membres1.Id;
+                GridPaiment.Rows[i].Cells["Frais"].Value = Listes.paiment[i].membres1.Frais;
+                GridPaiment.Rows[i].Cells["Total"].Value = Listes.paiment[i].membres1.Total;
+                GridPaiment.Rows[i].Cells["Date"].Value = Listes.paiment[i].membres1.DateJoin;
+                GridPaiment.Rows[i].Cells["Duree"].Value = Listes.paiment[i].membres1.Duree;
+                GridPaiment.Rows[i].Cells["Nom"].Value = Listes.paiment[i].membres1.NomComplet;
+                GridPaiment.Rows[i].Cells["Paiment1"].Value = Listes.paiment[i].Paiement1;
               
 
             }
@@ -49,7 +49,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             Package p = new Package(); 
-            Membre f = new Membre(TXTnumero.Text, Cbnom.Text, DPdate.Value, "" , "", "", "", p,1 , int.Parse(TxtFrais.Text), int.Parse(TXTDUREE.Text), int.Parse(TXTtotal.Text), "");
+            Membre f = new Membre(TXTnumero.Text, Cbnom.Text, DPdate.Value, "" , "", "", "", p,1 , int.Parse(TxtFrais.Text), int.Parse(TXTDUREE.Text), int.Parse(TXTtotal.Text), "" , Properties.Resources.image);
             Paiement m = new Paiement(f,txtpaiment.Text);
             Listes.paiment.Add(m);
             grid();

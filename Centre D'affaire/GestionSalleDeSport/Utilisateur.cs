@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    class Utilisateur
+    public class Utilisateur
     {
         private string nomUtilisateur;
         private string motPasse;

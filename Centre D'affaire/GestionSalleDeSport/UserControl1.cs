@@ -20,23 +20,16 @@ namespace Centre_D_affaire.GestionSalleDeSport
         public void remplirgrid()
         {
             GridMembre.Rows.Clear();
-            for (int i = -1; i < Listes.MembresListe.Count; i--)
+            for (int i = Listes.MembresListe.Count ; i < 0; i--)
             {
                 GridMembre.Rows.Add();
                 GridMembre.Rows[i].Cells["IDMembre"].Value = Listes.MembresListe[i].Id;
-                GridMembre.Rows[i].Cells["Poids"].Value = Listes.MembresListe[i].Poids;
+               
                 GridMembre.Rows[i].Cells["Telephone"].Value = Listes.MembresListe[i].Telephone;
                 GridMembre.Rows[i].Cells["Nom"].Value = Listes.MembresListe[i].NomComplet;
                 GridMembre.Rows[i].Cells["Adresse"].Value = Listes.MembresListe[i].Adresse;
                 GridMembre.Rows[i].Cells["Email"].Value = Listes.MembresListe[i].Email;
-                GridMembre.Rows[i].Cells["Frais"].Value = Listes.MembresListe[i].Frais;
-                GridMembre.Rows[i].Cells["Total"].Value = Listes.MembresListe[i].Total;
-                GridMembre.Rows[i].Cells["Duree"].Value = Listes.MembresListe[i].Duree;
-                GridMembre.Rows[i].Cells["Statut"].Value = Listes.MembresListe[i].Statut;
-                GridMembre.Rows[i].Cells["Sex"].Value = Listes.MembresListe[i].Sex;
-                GridMembre.Rows[i].Cells["DateJoin"].Value = Listes.MembresListe[i].DateJoin;
-                GridMembre.Rows[i].Cells["Package"].Value = Listes.MembresListe[i].Package.Nom;
-
+        
 
 
             }
@@ -51,13 +44,20 @@ namespace Centre_D_affaire.GestionSalleDeSport
             labelm.Text = d.ToString();
             int b = Listes.EntraineursListe.Count ;
             labele.Text = b.ToString();
+            int t = 0; 
+            for (int i = 0; i < Listes.paiment.Count; i++)
+            {
+                t = int.Parse(Listes.paiment[i].Paiement1 ) + t ;
+                
 
-
+            }
+            labelb.Text = t.ToString();
+            remplirgrid();
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

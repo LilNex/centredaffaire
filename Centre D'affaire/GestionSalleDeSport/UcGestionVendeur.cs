@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
@@ -33,12 +35,13 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
 
         }
-
+         
 
         private void UcGestionVendeur_Load(object sender, EventArgs e)
         {
             btnSupprimer.Visible = false;
-            btnMise.Visible = false; 
+            btnMise.Visible = false;
+           
             grid();
         }
 
@@ -52,6 +55,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
             if (v.Ajouter(v) == true)
             {
                 MessageBox.Show(TXTnomcomplet.Text +" ajouté avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Serialize();
+                
                 grid();
                 ClassInterface i = new ClassInterface();
                 i.viderform(this);
@@ -94,6 +99,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 string num = GridVendeur.CurrentRow.Cells[0].Value.ToString();
                 Vendeur st = new Vendeur();
                 st.supprimer(TXTnumero.Text);
+                Serialize();
+                Deserialze();
                 grid();
                 btnSupprimer.Visible = false;
                 btnMise.Visible = false;
@@ -116,6 +123,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 found.Email = TxtEmail.Text;
                 found.Adresse = TXTadresse.Text;
                 found.Telephone = TXTtele.Text;
+                Serialize();
+                Deserialze();
                 grid();
                 ClassInterface i = new ClassInterface();
                 i.viderform(this);
@@ -123,6 +132,30 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         }
 
-       
+        public void Serialize()
+        {
+            XmlSerializer xml = new XmlSerializer(Listes.VendeursListe.GetType());
+            using (StreamWriter stream = System.IO.File.CreateText("vendeurs.xml"))
+            {
+                xml.Serialize(stream, Listes.VendeursListe);
+                stream.Close();
+            }
+        }
+
+        public void Deserialze()
+        {
+            XmlSerializer xml = new XmlSerializer(Listes.VendeursListe.GetType());
+            using (StreamReader stream = System.IO.File.OpenText("vendeurs.xml"))
+            {
+                Listes.VendeursListe = (List<Vendeur>)xml.Deserialize(stream);
+                grid();
+                stream.Close();
+            }
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            Deserialze();
+        }
     }
 }

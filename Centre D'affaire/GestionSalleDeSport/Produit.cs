@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    class Produit
+    public class Produit
     {
         private string idProduit;
         private int prix;

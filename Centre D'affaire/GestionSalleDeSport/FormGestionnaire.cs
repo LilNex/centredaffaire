@@ -140,6 +140,20 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         }
 
+        private void BTNredire_Click(object sender, EventArgs e)
+        {
+            
+        }
 
+        private void FormGestionnaire_Load(object sender, EventArgs e)
+        {
+            PAnelDesktop.BackgroundImage = Properties.Resources.image;
+            
+        }
+
+        private void PAnelDesktop_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

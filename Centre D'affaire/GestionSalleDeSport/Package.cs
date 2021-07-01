@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    class Package
+    public class Package
     {
         private string id;
         private string nom;

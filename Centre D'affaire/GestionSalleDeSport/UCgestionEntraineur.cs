@@ -51,7 +51,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             DateTime df = Convert.ToDateTime(d);
 
 
-            Entraineur v = new Entraineur(TXTnumero.Text, TXTnomcomplet.Text , DPdate.Value ,TXTtele.Text, TxtEmail.Text, TXTadresse.Text, TXTgenre.Text , int.Parse(TXtSalaire.Text));
+            Entraineur v = new Entraineur(TXTnumero.Text, TXTnomcomplet.Text, DPdate.Value, TXTtele.Text, TxtEmail.Text, TXTadresse.Text, TXTgenre.Text, int.Parse(TXtSalaire.Text), bunifuPictureBox1.Image);
             if (v.Ajouter(v) == true)
             {
                 MessageBox.Show(TXTnomcomplet.Text + " ajouté avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -78,12 +78,20 @@ namespace Centre_D_affaire.GestionSalleDeSport
             TXTadresse.Text = data.Cells[4].Value.ToString();
             TXTtele.Text = data.Cells[3].Value.ToString();
             TXTgenre.Text = data.Cells[1].Value.ToString();
-            DPdate.Value =Convert.ToDateTime(data.Cells[6].Value);
+            DPdate.Value = Convert.ToDateTime(data.Cells[6].Value);
             TXtSalaire.Text = data.Cells[7].Value.ToString();
 
             btnSave.Visible = false;
             btnMise.Visible = true;
             btnSupprimer.Visible = true;
+            for ( int f = 0; f < Listes.EntraineursListe.Count; f++)
+            {
+                if(Listes.EntraineursListe[f].Id == TXTnumero.Text)
+                {
+                    bunifuPictureBox1.Image = Listes.EntraineursListe[f].IM; 
+                }
+                
+            }
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
@@ -106,7 +114,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 i.viderform(this);
             }
 
-   
+
         }
 
         private void btnMise_Click(object sender, EventArgs e)
@@ -125,6 +133,18 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
                 ClassInterface i = new ClassInterface();
                 i.viderform(this);
+            }
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                // display image in picture box  
+                bunifuPictureBox1.Image = new Bitmap(open.FileName);
             }
         }
     }

@@ -26,9 +26,9 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
 
-
+            
             Package p = new Package();
-            Membre f= new Membre(TXTnumero.Text , Cbnom.Text, DPdate.Value ,Cbgenre.Text,"","","",p ,1 , 1,1,1, txtstatu.Text  ) ;
+            Membre f= new Membre(TXTnumero.Text , Cbnom.Text, DPdate.Value ,Cbgenre.Text,"","","",p ,1 , 1,1,1, txtstatu.Text , Properties.Resources.image) ;
             f.Ajozuter(f);
             MessageBox.Show("Resultat ajouter avec succes ");
             ClassInterface i = new ClassInterface();

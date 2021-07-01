@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    class Vendeur : Personne
+    public class Vendeur : Personne
     {
         
 

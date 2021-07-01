@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
@@ -55,7 +57,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void UCgetionAchats_Load(object sender, EventArgs e)
         {
-            txtTotal.Visible = false;
+            txtTotal.Enabled = false;
         }
 
         private void TXTnomcomplet_TextChanged(object sender, EventArgs e)
@@ -97,7 +99,25 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
             
         }
+        public void Serialize()
+        {
+            XmlSerializer xml = new XmlSerializer(Listes.VendeursListe.GetType());
+            using (StreamWriter stream = System.IO.File.CreateText("achat.xml"))
+            {
+                xml.Serialize(stream, Listes.achatliste);
+            }
+        }
 
+        public void Deserialze()
+        {
+            XmlSerializer xml = new XmlSerializer(Listes.VendeursListe.GetType());
+            using (StreamReader stream = System.IO.File.OpenText("vendeurs.xml"))
+            {
+                Listes.VendeursListe = (List<Vendeur>)xml.Deserialize(stream);
+                grid();
+                
+            }
+        }
         private void btnAcheter_Click(object sender, EventArgs e)
         {
             Vendeur f = new Vendeur(TXTnomcomplet.Text, bunifuTextBox3.Text, DPdate.Value, TXTtele.Text, "", "", "");

@@ -34,32 +34,24 @@ namespace Centre_D_affaire.GestionSalleDeSport
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.labelb = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.labelm = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.labele = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.GridMembre = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.IDMembre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Poids = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Adresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DAteJoin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Duree = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Frais = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Statut = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Package = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.labelb = new System.Windows.Forms.Label();
-            this.labelm = new System.Windows.Forms.Label();
-            this.labele = new System.Windows.Forms.Label();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
@@ -85,6 +77,18 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(317, 199);
             this.bunifuPanel1.TabIndex = 0;
+            // 
+            // labelb
+            // 
+            this.labelb.AutoSize = true;
+            this.labelb.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelb.Font = new System.Drawing.Font("Microsoft JhengHei Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelb.Location = new System.Drawing.Point(239, 75);
+            this.labelb.Name = "labelb";
+            this.labelb.Size = new System.Drawing.Size(44, 50);
+            this.labelb.TabIndex = 3;
+            this.labelb.Text = "0";
+            this.labelb.Click += new System.EventHandler(this.label4_Click);
             // 
             // lbl1
             // 
@@ -124,6 +128,17 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.bunifuPanel2.Size = new System.Drawing.Size(310, 199);
             this.bunifuPanel2.TabIndex = 1;
             // 
+            // labelm
+            // 
+            this.labelm.AutoSize = true;
+            this.labelm.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelm.Font = new System.Drawing.Font("Microsoft JhengHei Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelm.Location = new System.Drawing.Point(237, 75);
+            this.labelm.Name = "labelm";
+            this.labelm.Size = new System.Drawing.Size(44, 50);
+            this.labelm.TabIndex = 4;
+            this.labelm.Text = "0";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -161,6 +176,17 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.bunifuPanel3.ShowBorders = true;
             this.bunifuPanel3.Size = new System.Drawing.Size(310, 199);
             this.bunifuPanel3.TabIndex = 1;
+            // 
+            // labele
+            // 
+            this.labele.AutoSize = true;
+            this.labele.BackColor = System.Drawing.Color.Gainsboro;
+            this.labele.Font = new System.Drawing.Font("Microsoft JhengHei Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labele.Location = new System.Drawing.Point(236, 75);
+            this.labele.Name = "labele";
+            this.labele.Size = new System.Drawing.Size(44, 50);
+            this.labele.TabIndex = 5;
+            this.labele.Text = "0";
             // 
             // label3
             // 
@@ -205,18 +231,10 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.GridMembre.ColumnHeadersHeight = 40;
             this.GridMembre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDMembre,
-            this.Sex,
             this.Nom,
-            this.Poids,
             this.Telephone,
             this.Adresse,
-            this.Email,
-            this.DAteJoin,
-            this.Duree,
-            this.Frais,
-            this.Total,
-            this.Statut,
-            this.Package});
+            this.Email});
             this.GridMembre.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(232)))), ((int)(((byte)(191)))));
             this.GridMembre.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.GridMembre.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -258,29 +276,28 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.GridMembre.TabIndex = 158;
             this.GridMembre.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LightSalmon;
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 359);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(192, 30);
+            this.label1.TabIndex = 159;
+            this.label1.Text = "derniere ajoutee";
+            // 
             // IDMembre
             // 
             this.IDMembre.HeaderText = "IDMembre";
             this.IDMembre.MinimumWidth = 8;
             this.IDMembre.Name = "IDMembre";
             // 
-            // Sex
-            // 
-            this.Sex.HeaderText = "Sex";
-            this.Sex.MinimumWidth = 8;
-            this.Sex.Name = "Sex";
-            // 
             // Nom
             // 
             this.Nom.HeaderText = "Nom";
             this.Nom.MinimumWidth = 8;
             this.Nom.Name = "Nom";
-            // 
-            // Poids
-            // 
-            this.Poids.HeaderText = "Poids";
-            this.Poids.MinimumWidth = 8;
-            this.Poids.Name = "Poids";
             // 
             // Telephone
             // 
@@ -299,87 +316,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Email.HeaderText = "Email";
             this.Email.MinimumWidth = 8;
             this.Email.Name = "Email";
-            // 
-            // DAteJoin
-            // 
-            this.DAteJoin.HeaderText = "DateJoin";
-            this.DAteJoin.MinimumWidth = 8;
-            this.DAteJoin.Name = "DAteJoin";
-            // 
-            // Duree
-            // 
-            this.Duree.HeaderText = "Duree";
-            this.Duree.MinimumWidth = 8;
-            this.Duree.Name = "Duree";
-            // 
-            // Frais
-            // 
-            this.Frais.HeaderText = "Frais";
-            this.Frais.MinimumWidth = 8;
-            this.Frais.Name = "Frais";
-            // 
-            // Total
-            // 
-            this.Total.HeaderText = "Total";
-            this.Total.MinimumWidth = 8;
-            this.Total.Name = "Total";
-            // 
-            // Statut
-            // 
-            this.Statut.HeaderText = "Statut";
-            this.Statut.MinimumWidth = 8;
-            this.Statut.Name = "Statut";
-            // 
-            // Package
-            // 
-            this.Package.HeaderText = "Package";
-            this.Package.MinimumWidth = 8;
-            this.Package.Name = "Package";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LightSalmon;
-            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 359);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 30);
-            this.label1.TabIndex = 159;
-            this.label1.Text = "derniere ajoutee";
-            // 
-            // labelb
-            // 
-            this.labelb.AutoSize = true;
-            this.labelb.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelb.Font = new System.Drawing.Font("Microsoft JhengHei Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelb.Location = new System.Drawing.Point(239, 75);
-            this.labelb.Name = "labelb";
-            this.labelb.Size = new System.Drawing.Size(44, 50);
-            this.labelb.TabIndex = 3;
-            this.labelb.Text = "0";
-            this.labelb.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // labelm
-            // 
-            this.labelm.AutoSize = true;
-            this.labelm.BackColor = System.Drawing.Color.Gainsboro;
-            this.labelm.Font = new System.Drawing.Font("Microsoft JhengHei Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelm.Location = new System.Drawing.Point(237, 75);
-            this.labelm.Name = "labelm";
-            this.labelm.Size = new System.Drawing.Size(44, 50);
-            this.labelm.TabIndex = 4;
-            this.labelm.Text = "0";
-            // 
-            // labele
-            // 
-            this.labele.AutoSize = true;
-            this.labele.BackColor = System.Drawing.Color.Gainsboro;
-            this.labele.Font = new System.Drawing.Font("Microsoft JhengHei Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labele.Location = new System.Drawing.Point(236, 75);
-            this.labele.Name = "labele";
-            this.labele.Size = new System.Drawing.Size(44, 50);
-            this.labele.TabIndex = 5;
-            this.labele.Text = "0";
             // 
             // UserControl1
             // 
@@ -421,22 +357,14 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Bunifu.UI.WinForms.BunifuDataGridView GridMembre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDMembre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sex;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Poids;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telephone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Adresse;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DAteJoin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Duree;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Frais;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Total;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Statut;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Package;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelb;
         private System.Windows.Forms.Label labelm;
         private System.Windows.Forms.Label labele;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDMembre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telephone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Adresse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
     }
 }

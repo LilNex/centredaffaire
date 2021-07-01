@@ -24,7 +24,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-
+            Utilisateur u = new Utilisateur("mehdi", "123", "", "");
+            u.Ajouter(u);
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)

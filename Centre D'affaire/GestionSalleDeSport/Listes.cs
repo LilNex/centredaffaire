@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    class Listes
+    public class Listes
     {
         public static List<Membre> MembresListe = new List<Membre>();
         public static List<Entraineur> EntraineursListe = new List<Entraineur>();
@@ -18,6 +18,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
         public static List<Paiement> paiment = new List<Paiement>();
 
         public static List<Utilisateur> utilisateurs = new List<Utilisateur>();
+         
+
 
 
     }

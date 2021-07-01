@@ -1,25 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    class Entraineur : Personne
+    public class Entraineur : Personne
     {
        
         private int salaire ;
+        private Image image;
 
         //Constructure
         public Entraineur() { }
-
-        public Entraineur(string ID, string NOmComplet, DateTime DAteREJoin, string TElephone, string EMail, string ADresse, string SEx ,int SAlarie )
+        public Image IM { get => image; set => image = value; }
+        public Entraineur(string ID, string NOmComplet, DateTime DAteREJoin, string TElephone, string EMail, string ADresse, string SEx ,int SAlarie , Image im )
             : base(ID, NOmComplet, DAteREJoin, TElephone, EMail, ADresse, SEx)
         {
            
-            this.Salaire = SAlarie; 
-   
+            this.Salaire = SAlarie;
+            this.IM = im;
+
         }
 
         public Entraineur(string ID, string NOmComplet, DateTime DAteREJoin, string TElephone, string EMail, string ADresse, string SEx) : base(ID, NOmComplet, DAteREJoin, TElephone, EMail, ADresse, SEx)

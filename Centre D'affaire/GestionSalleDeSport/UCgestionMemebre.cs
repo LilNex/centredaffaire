@@ -27,7 +27,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         {
             Package pack = new Package(cbPackage.Text);
 
-            Membre mbr = new Membre(TXTnumero.Text ,TXTnomcomplet.Text ,DPdate.Value ,TXTtele.Text,TxtEmail.Text , TXTadresse.Text , Cbgenre.Text , pack , int.Parse(TXTXpoids.Text) , int.Parse(TxtFrais.Text) , int.Parse( TXTDUREE.Text ), int.Parse( TXTtotal.Text) ,cbStatus.Text );
+            Membre mbr = new Membre(TXTnumero.Text ,TXTnomcomplet.Text ,DPdate.Value ,TXTtele.Text,TxtEmail.Text , TXTadresse.Text , Cbgenre.Text , pack , int.Parse(TXTXpoids.Text) , int.Parse(TxtFrais.Text) , int.Parse( TXTDUREE.Text ), int.Parse( TXTtotal.Text) ,cbStatus.Text , pictureBox1.Image );
             if (mbr.Ajouter(mbr) == true)
             {
                 MessageBox.Show(TXTnomcomplet.Text + " ajouté avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -79,6 +79,18 @@ namespace Centre_D_affaire.GestionSalleDeSport
         {
             int s = int.Parse(TxtFrais.Text) * int.Parse(TXTDUREE.Text);
             TXTtotal.Text = s.ToString();
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                // display image in picture box  
+                bunifuPictureBox1.Image = new Bitmap(open.FileName);
+            }
         }
     }
 }

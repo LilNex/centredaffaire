@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    class Paiement  
+    public class Paiement
     {
-        private Membre membre;
+        private Membre membe;
         private string paiement;
-        
 
-        public Paiement() {}
 
-        public Paiement(Membre mbr , string PAiement  )
-            
+        public Paiement() { }
+
+        public Paiement(Membre mbr, string PAiement)
+
         {
-            this._Paiement = PAiement;
-            this.membres = mbr; 
+            this.Paiement1 = PAiement;
+            this.membres1 = mbr;
         }
 
 
-        public string _Paiement { get=>paiement;  set=>paiement=value; }
-        public Membre membres { get => membre; set => membre = value; }
-        
-        
-    
+        public string Paiement1 { get => paiement; set => paiement = value; }
+        public Membre membres1 { get => membe; set => membe = value; }
+
+
     }
+    
 }
