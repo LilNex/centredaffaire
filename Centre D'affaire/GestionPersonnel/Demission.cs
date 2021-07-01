@@ -14,7 +14,6 @@ namespace Centre_D_affaire.GestionPersonnel
         private ClsEmploye Employe;
         private string raison;
         private string etat;
-        private static int nombrecongés;
         public DateTime Date { get => date; set => date = value; }
 
         public string Etat { get => etat; set => etat = value; }
@@ -25,8 +24,8 @@ namespace Centre_D_affaire.GestionPersonnel
         public Demission() { }
         public Demission(DateTime d,   string Raison, string Etat)
         {
-            nombrecongés++;
-            this.num = nombrecongés;
+           
+            this.Num = num;
             this.date = d;       
             this.raison = Raison;
             this.etat = Etat;
