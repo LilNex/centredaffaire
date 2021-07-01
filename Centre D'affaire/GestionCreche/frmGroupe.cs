@@ -68,10 +68,11 @@ namespace Centre_D_affaire.GestionCreche
             Application.Exit();
         }
 
-        private void txtnum_TextChanged(object sender, EventArgs e)
-        {
+      
+        
+        int index;
 
-        }
+        
 
         private void txtnom_TextChanged(object sender, EventArgs e)
         {
@@ -86,8 +87,10 @@ namespace Centre_D_affaire.GestionCreche
         private void btnModifier_Click(object sender, EventArgs e)
         {
             int trouve=0;
-            int index;
+            
+
             for (int i = 0; i < this.dgvGroupe.Rows.Count - 1; i++)
+                
 
                 
             {
@@ -102,10 +105,20 @@ namespace Centre_D_affaire.GestionCreche
             }
             if (trouve == 0)
 
-                MessageBox.Show(" ce groupe N'existe pas dans la liste ")
+                MessageBox.Show(" ce groupe N'existe pas dans la liste ");
             else
                 this.grbModification.Visible = true;
 
+
+        }
+
+        private void btnAppliquer_Click(object sender, EventArgs e)
+        {
+
+            this.dgvGroupe.Rows[index].Cells[0].Value = txtNewNom.Text;
+            this.dgvGroupe.Rows[index].Cells[1].Value = txtNewNum.Text;
+            this.grbModification.Visible = false;
+            this.txtNumSERCHE.Text = string.Empty;
 
         }
     }

@@ -62,11 +62,11 @@ namespace Centre_D_affaire.GestionCreche
             this.dgvGroupe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dgvGroupe.Location = new System.Drawing.Point(725, -37);
+            this.dgvGroupe.Location = new System.Drawing.Point(975, 5);
             this.dgvGroupe.Name = "dgvGroupe";
             this.dgvGroupe.RowHeadersWidth = 62;
             this.dgvGroupe.RowTemplate.Height = 28;
-            this.dgvGroupe.Size = new System.Drawing.Size(999, 505);
+            this.dgvGroupe.Size = new System.Drawing.Size(466, 505);
             this.dgvGroupe.TabIndex = 0;
             this.dgvGroupe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGroupe_CellContentClick);
             // 
@@ -175,7 +175,6 @@ namespace Centre_D_affaire.GestionCreche
             this.txtnum.Name = "txtnum";
             this.txtnum.Size = new System.Drawing.Size(388, 26);
             this.txtnum.TabIndex = 9;
-            this.txtnum.TextChanged += new System.EventHandler(this.txtnum_TextChanged);
             // 
             // grbModification
             // 
@@ -185,7 +184,7 @@ namespace Centre_D_affaire.GestionCreche
             this.grbModification.Controls.Add(this.txtNewNom);
             this.grbModification.Controls.Add(this.txtNewNum);
             this.grbModification.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbModification.Location = new System.Drawing.Point(18, 448);
+            this.grbModification.Location = new System.Drawing.Point(96, 446);
             this.grbModification.Name = "grbModification";
             this.grbModification.Size = new System.Drawing.Size(727, 210);
             this.grbModification.TabIndex = 10;
@@ -203,6 +202,7 @@ namespace Centre_D_affaire.GestionCreche
             this.btnAppliquer.TabIndex = 14;
             this.btnAppliquer.Text = "Appliquer :  ";
             this.btnAppliquer.UseVisualStyleBackColor = false;
+            this.btnAppliquer.Click += new System.EventHandler(this.btnAppliquer_Click);
             // 
             // label4
             // 
@@ -247,7 +247,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.btnModifier.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnModifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModifier.Location = new System.Drawing.Point(306, 329);
+            this.btnModifier.Location = new System.Drawing.Point(477, 347);
             this.btnModifier.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(356, 109);
@@ -258,7 +258,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // txtNumSERCHE
             // 
-            this.txtNumSERCHE.Location = new System.Drawing.Point(13, 372);
+            this.txtNumSERCHE.Location = new System.Drawing.Point(108, 399);
             this.txtNumSERCHE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNumSERCHE.Name = "txtNumSERCHE";
             this.txtNumSERCHE.Size = new System.Drawing.Size(240, 26);
@@ -268,7 +268,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 309);
+            this.label5.Location = new System.Drawing.Point(103, 338);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 26);
@@ -285,6 +285,7 @@ namespace Centre_D_affaire.GestionCreche
             this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.grbModification);
             this.Controls.Add(this.txtnum);
+            this.Controls.Add(this.dgvGroupe);
             this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnNouveau);
             this.Controls.Add(this.btnSupprimer);
@@ -292,7 +293,6 @@ namespace Centre_D_affaire.GestionCreche
             this.Controls.Add(this.txtnom);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgvGroupe);
             this.Name = "frmGroupe";
             this.Text = "frmGroupe";
             this.Load += new System.EventHandler(this.frmGroupe_Load);

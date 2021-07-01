@@ -78,6 +78,12 @@
     <Compile Include="GestionCreche\ClsParant.cs" />
     <Compile Include="GestionCreche\ClsPersonnel.cs" />
     <Compile Include="GestionCreche\clsResponsable.cs" />
+    <Compile Include="GestionCreche\frmAffectationEnfants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\frmAffectationEnfants.Designer.cs">
+      <DependentUpon>frmAffectationEnfants.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionCreche\frmEnfant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmAffectationEnfants.resx">
+      <DependentUpon>frmAffectationEnfants.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmEnfant.resx">
       <DependentUpon>frmEnfant.cs</DependentUpon>
