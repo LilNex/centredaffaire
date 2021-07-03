@@ -46,18 +46,18 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.btnValider = new System.Windows.Forms.Button();
             this.rdbNomal = new System.Windows.Forms.RadioButton();
             this.rdbUrgent = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -126,7 +126,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.cmbDepartement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDepartement.FormattingEnabled = true;
             this.cmbDepartement.Location = new System.Drawing.Point(387, 151);
-            this.cmbDepartement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbDepartement.Margin = new System.Windows.Forms.Padding(4);
             this.cmbDepartement.Name = "cmbDepartement";
             this.cmbDepartement.Size = new System.Drawing.Size(229, 24);
             this.cmbDepartement.TabIndex = 7;
@@ -136,7 +136,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             // 
             this.txtLibele.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLibele.Location = new System.Drawing.Point(189, 390);
-            this.txtLibele.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLibele.Margin = new System.Windows.Forms.Padding(4);
             this.txtLibele.Multiline = true;
             this.txtLibele.Name = "txtLibele";
             this.txtLibele.Size = new System.Drawing.Size(427, 105);
@@ -145,7 +145,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             // txtresponsable
             // 
             this.txtresponsable.Location = new System.Drawing.Point(387, 214);
-            this.txtresponsable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtresponsable.Margin = new System.Windows.Forms.Padding(4);
             this.txtresponsable.Name = "txtresponsable";
             this.txtresponsable.Size = new System.Drawing.Size(229, 22);
             this.txtresponsable.TabIndex = 11;
@@ -171,7 +171,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.btnSignature.FlatAppearance.BorderSize = 0;
             this.btnSignature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignature.Location = new System.Drawing.Point(49, 706);
-            this.btnSignature.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSignature.Margin = new System.Windows.Forms.Padding(4);
             this.btnSignature.Name = "btnSignature";
             this.btnSignature.Size = new System.Drawing.Size(131, 86);
             this.btnSignature.TabIndex = 13;
@@ -182,7 +182,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.btnSigner.BackColor = System.Drawing.Color.Transparent;
             this.btnSigner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSigner.Location = new System.Drawing.Point(189, 645);
-            this.btnSigner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSigner.Margin = new System.Windows.Forms.Padding(4);
             this.btnSigner.Name = "btnSigner";
             this.btnSigner.Size = new System.Drawing.Size(71, 32);
             this.btnSigner.TabIndex = 14;
@@ -194,7 +194,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             // 
             this.dtp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp.Location = new System.Drawing.Point(189, 546);
-            this.dtp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtp.Margin = new System.Windows.Forms.Padding(4);
             this.dtp.Name = "dtp";
             this.dtp.Size = new System.Drawing.Size(144, 22);
             this.dtp.TabIndex = 15;
@@ -218,7 +218,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.btnRetour.BackgroundImage = global::Centre_D_affaire.Properties.Resources.WhatsApp_Image_2021_07_03_at_10_31_21;
             this.btnRetour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRetour.Location = new System.Drawing.Point(555, 790);
-            this.btnRetour.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRetour.Margin = new System.Windows.Forms.Padding(4);
             this.btnRetour.Name = "btnRetour";
             this.btnRetour.Size = new System.Drawing.Size(63, 50);
             this.btnRetour.TabIndex = 17;
@@ -231,7 +231,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.btnValider.BackgroundImage = global::Centre_D_affaire.Properties.Resources.WhatsApp_Image_2021_07_03_at_10_31_30;
             this.btnValider.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnValider.Location = new System.Drawing.Point(625, 790);
-            this.btnValider.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnValider.Margin = new System.Windows.Forms.Padding(4);
             this.btnValider.Name = "btnValider";
             this.btnValider.Size = new System.Drawing.Size(63, 50);
             this.btnValider.TabIndex = 18;
@@ -244,7 +244,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.rdbNomal.BackColor = System.Drawing.Color.Transparent;
             this.rdbNomal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbNomal.Location = new System.Drawing.Point(211, 294);
-            this.rdbNomal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbNomal.Margin = new System.Windows.Forms.Padding(4);
             this.rdbNomal.Name = "rdbNomal";
             this.rdbNomal.Size = new System.Drawing.Size(101, 25);
             this.rdbNomal.TabIndex = 19;
@@ -258,23 +258,13 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.rdbUrgent.BackColor = System.Drawing.Color.Transparent;
             this.rdbUrgent.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbUrgent.Location = new System.Drawing.Point(368, 294);
-            this.rdbUrgent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbUrgent.Margin = new System.Windows.Forms.Padding(4);
             this.rdbUrgent.Name = "rdbUrgent";
             this.rdbUrgent.Size = new System.Drawing.Size(87, 25);
             this.rdbUrgent.TabIndex = 20;
             this.rdbUrgent.TabStop = true;
             this.rdbUrgent.Text = "Urgent";
             this.rdbUrgent.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(625, 140);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 43);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -285,6 +275,26 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Location = new System.Drawing.Point(359, 535);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(48, 43);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 25;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Location = new System.Drawing.Point(285, 645);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(48, 43);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 26;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -306,25 +316,15 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.pictureBox4.TabIndex = 24;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox5
+            // pictureBox1
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Location = new System.Drawing.Point(359, 535);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(48, 43);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 25;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Location = new System.Drawing.Point(285, 645);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 43);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 26;
-            this.pictureBox6.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Location = new System.Drawing.Point(625, 140);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // FormDTldemande
             // 
@@ -358,17 +358,17 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(150, 100);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormDTldemande";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FormDTldemande";
             this.Load += new System.EventHandler(this.FormDTldemande_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,11 +393,11 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
         private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.RadioButton rdbNomal;
         private System.Windows.Forms.RadioButton rdbUrgent;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
