@@ -73,11 +73,13 @@
     </Compile>
     <Compile Include="GestionCreche\BinaryFormatter.cs" />
     <Compile Include="GestionCreche\clsEnfant.cs" />
+    <Compile Include="GestionCreche\clsFacteur.cs" />
     <Compile Include="GestionCreche\clsGroupe.cs" />
     <Compile Include="GestionCreche\clsListe.cs" />
     <Compile Include="GestionCreche\ClsParant.cs" />
     <Compile Include="GestionCreche\ClsPersonnel.cs" />
     <Compile Include="GestionCreche\clsResponsable.cs" />
+    <Compile Include="GestionCreche\dgvListeGroupe.cs" />
     <Compile Include="GestionCreche\frmAffectationEnfants.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,11 +93,23 @@
       <DependentUpon>frmEnfant.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionCreche\frmEnfantBase.cs" />
+    <Compile Include="GestionCreche\frmFacteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\frmFacteur.Designer.cs">
+      <DependentUpon>frmFacteur.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionCreche\frmGroupe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GestionCreche\frmGroupe.Designer.cs">
       <DependentUpon>frmGroupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\frmListeGroupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\frmListeGroupe.Designer.cs">
+      <DependentUpon>frmListeGroupe.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionCreche\FrmPersonnel.cs">
       <SubType>Form</SubType>
@@ -145,8 +159,14 @@
     <EmbeddedResource Include="GestionCreche\frmEnfant.resx">
       <DependentUpon>frmEnfant.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmFacteur.resx">
+      <DependentUpon>frmFacteur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmGroupe.resx">
       <DependentUpon>frmGroupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmListeGroupe.resx">
+      <DependentUpon>frmListeGroupe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\FrmPersonnel.resx">
       <DependentUpon>FrmPersonnel.cs</DependentUpon>
