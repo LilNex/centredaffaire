@@ -43,7 +43,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnAddBillard = new System.Windows.Forms.Button();
             this.Pnladd = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnEditMenu = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -123,7 +123,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.FlpMenu.Controls.Add(this.panel3);
             this.FlpMenu.Location = new System.Drawing.Point(1, 1);
             this.FlpMenu.Name = "FlpMenu";
-            this.FlpMenu.Size = new System.Drawing.Size(66, 599);
+            this.FlpMenu.Size = new System.Drawing.Size(87, 599);
             this.FlpMenu.TabIndex = 32;
             this.FlpMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.FlpMenu_Paint);
             // 
@@ -171,7 +171,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.picHome.Image = global::Centre_D_affaire.Properties.Resources.outline_home_black_24dp1;
             this.picHome.Location = new System.Drawing.Point(3, 3);
             this.picHome.Name = "picHome";
-            this.picHome.Size = new System.Drawing.Size(48, 64);
+            this.picHome.Size = new System.Drawing.Size(48, 48);
             this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picHome.TabIndex = 34;
             this.picHome.TabStop = false;
@@ -210,7 +210,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox4.Image = global::Centre_D_affaire.Properties.Resources.outline_help_black_24dp;
             this.pictureBox4.Location = new System.Drawing.Point(3, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 64);
+            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
@@ -234,7 +234,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // Pnladd
             // 
             this.Pnladd.Controls.Add(this.pictureBox2);
-            this.Pnladd.Controls.Add(this.button5);
+            this.Pnladd.Controls.Add(this.btnEditMenu);
             this.Pnladd.Location = new System.Drawing.Point(3, 376);
             this.Pnladd.Name = "Pnladd";
             this.Pnladd.Size = new System.Drawing.Size(207, 78);
@@ -246,28 +246,29 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_add_box_black_24dp;
+            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_edit_black_24dp;
             this.pictureBox2.Location = new System.Drawing.Point(3, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
-            // button5
+            // btnEditMenu
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(71, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(136, 60);
-            this.button5.TabIndex = 30;
-            this.button5.Text = "ADD";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnEditMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditMenu.FlatAppearance.BorderSize = 0;
+            this.btnEditMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditMenu.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditMenu.Location = new System.Drawing.Point(71, 2);
+            this.btnEditMenu.Name = "btnEditMenu";
+            this.btnEditMenu.Size = new System.Drawing.Size(136, 60);
+            this.btnEditMenu.TabIndex = 30;
+            this.btnEditMenu.Text = "Edit";
+            this.btnEditMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditMenu.UseVisualStyleBackColor = false;
+            this.btnEditMenu.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel3
             // 
@@ -287,7 +288,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox3.Image = global::Centre_D_affaire.Properties.Resources.outline_support_agent_black_24dp2;
             this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 64);
+            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 34;
             this.pictureBox3.TabStop = false;
@@ -455,7 +456,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(977, 540);
+            this.ClientSize = new System.Drawing.Size(977, 538);
             this.Controls.Add(this.PnlAcracdeStreet);
             this.Controls.Add(this.PnlPS4);
             this.Controls.Add(this.PnlBabyFoot);
@@ -503,7 +504,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private System.Windows.Forms.Button btnAddBillard;
         private System.Windows.Forms.Panel Pnladd;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnEditMenu;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button7;

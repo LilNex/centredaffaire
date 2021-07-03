@@ -20,17 +20,18 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void btnAjouterE_Click(object sender, EventArgs e)
         {
-            btnNumberView.Text = cpt.ToString();
             clsEmployersSDJ NE = new clsEmployersSDJ();
 
 
             NE.NomE = txtnomAdd.Text;
             NE.PrenomE = txtPrenomAdd.Text;
-            NE.NumeroE = int.Parse(btnNumberView.Text);
-            NE.TelephoneE = float.Parse(txtTelephoneAdd.Text);
+            NE.NumeroE = int.Parse(txtNuméroEView.Text);
+            NE.TelephoneE = int.Parse(txtTelephoneAdd.Text);
             NE.DateNaissanceE = dateTimeAdd.Value;
+            NE.PasswordE1 = txtPasswordAdd.Text;
 
             ClsListeSDJ.ListE.Add(NE);
+
             cpt += 0001;
             DgvAddE.DataSource = null;
             DgvAddE.DataSource = ClsListeSDJ.ListE;
@@ -39,6 +40,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             txtPrenomAdd.Text = null;
             txtTelephoneAdd.Text = null;
             txtPrenomAdd.Text = null;
+            txtPasswordAdd.Text = null;      
             cpt += 1;
 
 
@@ -46,11 +48,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void FrmNewMember_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < ClsListeSDJ.ListE.Count; i++)
-            {
-                cpt += 1;
-            }
-            btnNumberView.Text = cpt.ToString();
+
         }
 
         private void txtnomAdd_TextChanged(object sender, EventArgs e)
@@ -115,6 +113,24 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private void txtPasswordAdd_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnGenerationNuméro_Click(object sender, EventArgs e)
+        {
+            txtNuméroEView.Text = GenerateurNumero(3);
+        }
+
+        public static string GenerateurNumero(int length)
+        {
+            Random GN = new Random();
+            var x = GN.Next(0, 1000000);
+            string s = x.ToString("000000");
+            return s;
+        }
+
+        private void txtNuméroCView_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

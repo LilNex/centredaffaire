@@ -93,6 +93,46 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _162_1627477_number_of_employees_icon {
+            get {
+                object obj = ResourceManager.GetObject("162-1627477_number-of-employees-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1682559 {
+            get {
+                object obj = ResourceManager.GetObject("1682559", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _16825591 {
+            get {
+                object obj = ResourceManager.GetObject("16825591", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _16825592 {
+            get {
+                object obj = ResourceManager.GetObject("16825592", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1865398 {
             get {
                 object obj = ResourceManager.GetObject("1865398", resourceCulture);
@@ -156,6 +196,26 @@ namespace Centre_D_affaire.Properties {
         internal static System.Drawing.Bitmap _3544172 {
             get {
                 object obj = ResourceManager.GetObject("3544172", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3999583_middle {
+            get {
+                object obj = ResourceManager.GetObject("3999583-middle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3999583_middle1 {
+            get {
+                object obj = ResourceManager.GetObject("3999583-middle1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,6 +463,36 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap employee_icon_png_27 {
+            get {
+                object obj = ResourceManager.GetObject("employee-icon-png-27", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap employee_icon_png_271 {
+            get {
+                object obj = ResourceManager.GetObject("employee-icon-png-271", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap employee_icon_png_272 {
+            get {
+                object obj = ResourceManager.GetObject("employee-icon-png-272", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap game_pool {
             get {
                 object obj = ResourceManager.GetObject("game-pool", resourceCulture);
@@ -426,6 +516,16 @@ namespace Centre_D_affaire.Properties {
         internal static System.Drawing.Bitmap Home_1 {
             get {
                 object obj = ResourceManager.GetObject("Home 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_badge_d_employé_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-badge-d\'employé-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -619,6 +719,36 @@ namespace Centre_D_affaire.Properties {
         internal static System.Drawing.Bitmap outline_add_box_black_24dp {
             get {
                 object obj = ResourceManager.GetObject("outline_add_box_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_backspace_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("outline_backspace_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_backspace_black_24dp1 {
+            get {
+                object obj = ResourceManager.GetObject("outline_backspace_black_24dp1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_edit_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("outline_edit_black_24dp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

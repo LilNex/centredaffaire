@@ -15,9 +15,9 @@ namespace Centre_D_affaire
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+           Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmNewMember());
+            Application.Run(new FrmMENU1());
         }
     }
 }

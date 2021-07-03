@@ -29,59 +29,68 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPS4));
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.lblBillHot = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.picPs41 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnClearPs41 = new System.Windows.Forms.Button();
+            this.btnHourePs41 = new System.Windows.Forms.Button();
+            this.btnMinutePs41 = new System.Windows.Forms.Button();
+            this.btnPrixPs41 = new System.Windows.Forms.Button();
+            this.btnSecondePs41 = new System.Windows.Forms.Button();
+            this.btnStartPs41 = new System.Windows.Forms.Button();
+            this.btnRestPs41 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button47 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button47 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button46 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnEditPs4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
             this.picHome = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.FlpMenu = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnHoure = new System.Windows.Forms.Button();
-            this.btnMinute = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnSeconde = new System.Windows.Forms.Button();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.btnRest = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnClearPs43 = new System.Windows.Forms.Button();
+            this.btnHourePs43 = new System.Windows.Forms.Button();
+            this.btnMinutePs43 = new System.Windows.Forms.Button();
+            this.btnPrixPs43 = new System.Windows.Forms.Button();
+            this.btnSecondePs43 = new System.Windows.Forms.Button();
+            this.btnStartPs43 = new System.Windows.Forms.Button();
+            this.btnRestPs43 = new System.Windows.Forms.Button();
+            this.picPs43 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btnClearPs42 = new System.Windows.Forms.Button();
+            this.btnHourePs42 = new System.Windows.Forms.Button();
+            this.btnMinutePs42 = new System.Windows.Forms.Button();
+            this.btnPrixPs42 = new System.Windows.Forms.Button();
+            this.btnSecondePs42 = new System.Windows.Forms.Button();
+            this.btnStartPs42 = new System.Windows.Forms.Button();
+            this.btnRestPs42 = new System.Windows.Forms.Button();
+            this.picPs42 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.btnClearPs44 = new System.Windows.Forms.Button();
+            this.btnHourePs44 = new System.Windows.Forms.Button();
+            this.btnMinutePs44 = new System.Windows.Forms.Button();
+            this.btnPrixPs44 = new System.Windows.Forms.Button();
+            this.btnSecondePs44 = new System.Windows.Forms.Button();
+            this.btnStartPs44 = new System.Windows.Forms.Button();
+            this.btnRestPs44 = new System.Windows.Forms.Button();
+            this.picPs44 = new System.Windows.Forms.PictureBox();
+            this.timerPs41 = new System.Windows.Forms.Timer(this.components);
+            this.timerPs42 = new System.Windows.Forms.Timer(this.components);
+            this.timerPs43 = new System.Windows.Forms.Timer(this.components);
+            this.timerPs44 = new System.Windows.Forms.Timer(this.components);
             this.pnlTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPs41)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -94,11 +103,11 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.FlpMenu.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPs43)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPs42)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPs44)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitle
@@ -137,29 +146,128 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox6
+            // picPs41
             // 
-            this.pictureBox6.Image = global::Centre_D_affaire.Properties.Resources.video_screen;
-            this.pictureBox6.Location = new System.Drawing.Point(59, 5);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(203, 135);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 36;
-            this.pictureBox6.TabStop = false;
+            this.picPs41.Image = global::Centre_D_affaire.Properties.Resources.video_screen;
+            this.picPs41.Location = new System.Drawing.Point(59, 5);
+            this.picPs41.Name = "picPs41";
+            this.picPs41.Size = new System.Drawing.Size(203, 135);
+            this.picPs41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPs41.TabIndex = 36;
+            this.picPs41.TabStop = false;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.btnHoure);
-            this.panel6.Controls.Add(this.btnMinute);
-            this.panel6.Controls.Add(this.button2);
-            this.panel6.Controls.Add(this.btnSeconde);
-            this.panel6.Controls.Add(this.btnStart);
-            this.panel6.Controls.Add(this.btnRest);
-            this.panel6.Controls.Add(this.pictureBox6);
+            this.panel6.Controls.Add(this.btnClearPs41);
+            this.panel6.Controls.Add(this.btnHourePs41);
+            this.panel6.Controls.Add(this.btnMinutePs41);
+            this.panel6.Controls.Add(this.btnPrixPs41);
+            this.panel6.Controls.Add(this.btnSecondePs41);
+            this.panel6.Controls.Add(this.btnStartPs41);
+            this.panel6.Controls.Add(this.btnRestPs41);
+            this.panel6.Controls.Add(this.picPs41);
             this.panel6.Location = new System.Drawing.Point(222, 100);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(354, 197);
             this.panel6.TabIndex = 37;
+            // 
+            // btnClearPs41
+            // 
+            this.btnClearPs41.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearPs41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearPs41.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearPs41.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearPs41.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearPs41.Location = new System.Drawing.Point(139, 149);
+            this.btnClearPs41.Name = "btnClearPs41";
+            this.btnClearPs41.Size = new System.Drawing.Size(62, 38);
+            this.btnClearPs41.TabIndex = 43;
+            this.btnClearPs41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearPs41.UseVisualStyleBackColor = false;
+            this.btnClearPs41.Click += new System.EventHandler(this.btnClearPs41_Click);
+            // 
+            // btnHourePs41
+            // 
+            this.btnHourePs41.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnHourePs41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHourePs41.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHourePs41.ForeColor = System.Drawing.Color.Black;
+            this.btnHourePs41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHourePs41.Location = new System.Drawing.Point(281, 11);
+            this.btnHourePs41.Name = "btnHourePs41";
+            this.btnHourePs41.Size = new System.Drawing.Size(45, 39);
+            this.btnHourePs41.TabIndex = 42;
+            this.btnHourePs41.UseVisualStyleBackColor = false;
+            // 
+            // btnMinutePs41
+            // 
+            this.btnMinutePs41.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMinutePs41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinutePs41.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinutePs41.ForeColor = System.Drawing.Color.Black;
+            this.btnMinutePs41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinutePs41.Location = new System.Drawing.Point(281, 56);
+            this.btnMinutePs41.Name = "btnMinutePs41";
+            this.btnMinutePs41.Size = new System.Drawing.Size(45, 39);
+            this.btnMinutePs41.TabIndex = 41;
+            this.btnMinutePs41.UseVisualStyleBackColor = false;
+            // 
+            // btnPrixPs41
+            // 
+            this.btnPrixPs41.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixPs41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixPs41.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrixPs41.ForeColor = System.Drawing.Color.Black;
+            this.btnPrixPs41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixPs41.Location = new System.Drawing.Point(207, 149);
+            this.btnPrixPs41.Name = "btnPrixPs41";
+            this.btnPrixPs41.Size = new System.Drawing.Size(119, 38);
+            this.btnPrixPs41.TabIndex = 40;
+            this.btnPrixPs41.UseVisualStyleBackColor = false;
+            this.btnPrixPs41.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnSecondePs41
+            // 
+            this.btnSecondePs41.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSecondePs41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecondePs41.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSecondePs41.ForeColor = System.Drawing.Color.Black;
+            this.btnSecondePs41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondePs41.Location = new System.Drawing.Point(281, 101);
+            this.btnSecondePs41.Name = "btnSecondePs41";
+            this.btnSecondePs41.Size = new System.Drawing.Size(45, 39);
+            this.btnSecondePs41.TabIndex = 39;
+            this.btnSecondePs41.UseVisualStyleBackColor = false;
+            // 
+            // btnStartPs41
+            // 
+            this.btnStartPs41.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartPs41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartPs41.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartPs41.ForeColor = System.Drawing.Color.Black;
+            this.btnStartPs41.Image = ((System.Drawing.Image)(resources.GetObject("btnStartPs41.Image")));
+            this.btnStartPs41.Location = new System.Drawing.Point(3, 149);
+            this.btnStartPs41.Name = "btnStartPs41";
+            this.btnStartPs41.Size = new System.Drawing.Size(62, 38);
+            this.btnStartPs41.TabIndex = 38;
+            this.btnStartPs41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartPs41.UseVisualStyleBackColor = false;
+            this.btnStartPs41.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // btnRestPs41
+            // 
+            this.btnRestPs41.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestPs41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestPs41.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestPs41.ForeColor = System.Drawing.Color.Black;
+            this.btnRestPs41.Image = ((System.Drawing.Image)(resources.GetObject("btnRestPs41.Image")));
+            this.btnRestPs41.Location = new System.Drawing.Point(71, 149);
+            this.btnRestPs41.Name = "btnRestPs41";
+            this.btnRestPs41.Size = new System.Drawing.Size(62, 38);
+            this.btnRestPs41.TabIndex = 37;
+            this.btnRestPs41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestPs41.UseVisualStyleBackColor = false;
+            this.btnRestPs41.Click += new System.EventHandler(this.btnRest_Click);
             // 
             // panel3
             // 
@@ -169,6 +277,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(207, 78);
             this.panel3.TabIndex = 44;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Image = global::Centre_D_affaire.Properties.Resources.outline_support_agent_black_24dp2;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 34;
+            this.pictureBox3.TabStop = false;
             // 
             // button47
             // 
@@ -186,43 +308,14 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button47.UseVisualStyleBackColor = false;
             this.button47.Click += new System.EventHandler(this.button47_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = global::Centre_D_affaire.Properties.Resources.outline_support_agent_black_24dp2;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 64);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 34;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.button46);
+            this.panel2.Controls.Add(this.btnEditPs4);
             this.panel2.Location = new System.Drawing.Point(3, 377);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(207, 78);
             this.panel2.TabIndex = 42;
-            // 
-            // button46
-            // 
-            this.button46.BackColor = System.Drawing.Color.Transparent;
-            this.button46.FlatAppearance.BorderSize = 0;
-            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button46.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button46.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button46.Location = new System.Drawing.Point(71, 2);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(136, 60);
-            this.button46.TabIndex = 30;
-            this.button46.Text = "ADD";
-            this.button46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button46.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
@@ -230,13 +323,28 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_add_box_black_24dp;
+            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_edit_black_24dp;
             this.pictureBox2.Location = new System.Drawing.Point(3, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
+            // 
+            // btnEditPs4
+            // 
+            this.btnEditPs4.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditPs4.FlatAppearance.BorderSize = 0;
+            this.btnEditPs4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditPs4.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditPs4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditPs4.Location = new System.Drawing.Point(71, 2);
+            this.btnEditPs4.Name = "btnEditPs4";
+            this.btnEditPs4.Size = new System.Drawing.Size(136, 60);
+            this.btnEditPs4.TabIndex = 30;
+            this.btnEditPs4.Text = "Edit";
+            this.btnEditPs4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditPs4.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -246,6 +354,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(207, 78);
             this.panel4.TabIndex = 43;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Image = global::Centre_D_affaire.Properties.Resources.outline_help_black_24dp;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 34;
+            this.pictureBox4.TabStop = false;
             // 
             // button3
             // 
@@ -262,20 +384,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.Image = global::Centre_D_affaire.Properties.Resources.outline_help_black_24dp;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 64);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 34;
-            this.pictureBox4.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.picHome);
@@ -284,6 +392,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(207, 78);
             this.panel1.TabIndex = 40;
+            // 
+            // picHome
+            // 
+            this.picHome.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.picHome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picHome.Image = global::Centre_D_affaire.Properties.Resources.outline_home_black_24dp1;
+            this.picHome.Location = new System.Drawing.Point(3, 3);
+            this.picHome.Name = "picHome";
+            this.picHome.Size = new System.Drawing.Size(48, 48);
+            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picHome.TabIndex = 34;
+            this.picHome.TabStop = false;
             // 
             // btnHome
             // 
@@ -300,20 +422,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // picHome
-            // 
-            this.picHome.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.picHome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.picHome.Image = global::Centre_D_affaire.Properties.Resources.outline_home_black_24dp1;
-            this.picHome.Location = new System.Drawing.Point(3, 3);
-            this.picHome.Name = "picHome";
-            this.picHome.Size = new System.Drawing.Size(48, 64);
-            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picHome.TabIndex = 34;
-            this.picHome.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -355,416 +463,391 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.FlpMenu.Size = new System.Drawing.Size(213, 599);
             this.FlpMenu.TabIndex = 34;
             // 
-            // btnHoure
-            // 
-            this.btnHoure.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnHoure.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoure.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoure.ForeColor = System.Drawing.Color.White;
-            this.btnHoure.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoure.Location = new System.Drawing.Point(281, 11);
-            this.btnHoure.Name = "btnHoure";
-            this.btnHoure.Size = new System.Drawing.Size(45, 39);
-            this.btnHoure.TabIndex = 42;
-            this.btnHoure.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoure.UseVisualStyleBackColor = false;
-            // 
-            // btnMinute
-            // 
-            this.btnMinute.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnMinute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinute.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinute.ForeColor = System.Drawing.Color.White;
-            this.btnMinute.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMinute.Location = new System.Drawing.Point(281, 56);
-            this.btnMinute.Name = "btnMinute";
-            this.btnMinute.Size = new System.Drawing.Size(45, 39);
-            this.btnMinute.TabIndex = 41;
-            this.btnMinute.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMinute.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(151, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 38);
-            this.button2.TabIndex = 40;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnSeconde
-            // 
-            this.btnSeconde.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnSeconde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeconde.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeconde.ForeColor = System.Drawing.Color.White;
-            this.btnSeconde.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeconde.Location = new System.Drawing.Point(281, 101);
-            this.btnSeconde.Name = "btnSeconde";
-            this.btnSeconde.Size = new System.Drawing.Size(45, 39);
-            this.btnSeconde.TabIndex = 39;
-            this.btnSeconde.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeconde.UseVisualStyleBackColor = false;
-            // 
-            // btnStart
-            // 
-            this.btnStart.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.White;
-            this.btnStart.Image = ((System.Drawing.Image)(resources.GetObject("btnStart.Image")));
-            this.btnStart.Location = new System.Drawing.Point(3, 149);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(62, 38);
-            this.btnStart.TabIndex = 38;
-            this.btnStart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStart.UseVisualStyleBackColor = false;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // btnRest
-            // 
-            this.btnRest.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnRest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRest.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRest.ForeColor = System.Drawing.Color.White;
-            this.btnRest.Image = ((System.Drawing.Image)(resources.GetObject("btnRest.Image")));
-            this.btnRest.Location = new System.Drawing.Point(71, 149);
-            this.btnRest.Name = "btnRest";
-            this.btnRest.Size = new System.Drawing.Size(62, 38);
-            this.btnRest.TabIndex = 37;
-            this.btnRest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRest.UseVisualStyleBackColor = false;
-            this.btnRest.Click += new System.EventHandler(this.btnRest_Click);
-            // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.button4);
-            this.panel5.Controls.Add(this.button5);
-            this.panel5.Controls.Add(this.button6);
-            this.panel5.Controls.Add(this.button7);
-            this.panel5.Controls.Add(this.button8);
-            this.panel5.Controls.Add(this.button9);
-            this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.Controls.Add(this.btnClearPs43);
+            this.panel5.Controls.Add(this.btnHourePs43);
+            this.panel5.Controls.Add(this.btnMinutePs43);
+            this.panel5.Controls.Add(this.btnPrixPs43);
+            this.panel5.Controls.Add(this.btnSecondePs43);
+            this.panel5.Controls.Add(this.btnStartPs43);
+            this.panel5.Controls.Add(this.btnRestPs43);
+            this.panel5.Controls.Add(this.picPs43);
             this.panel5.Location = new System.Drawing.Point(222, 315);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(354, 197);
             this.panel5.TabIndex = 43;
             // 
-            // button4
+            // btnClearPs43
             // 
-            this.button4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(281, 11);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(45, 39);
-            this.button4.TabIndex = 42;
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnClearPs43.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearPs43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearPs43.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearPs43.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearPs43.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearPs43.Location = new System.Drawing.Point(139, 149);
+            this.btnClearPs43.Name = "btnClearPs43";
+            this.btnClearPs43.Size = new System.Drawing.Size(62, 38);
+            this.btnClearPs43.TabIndex = 44;
+            this.btnClearPs43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearPs43.UseVisualStyleBackColor = false;
+            this.btnClearPs43.Click += new System.EventHandler(this.btnClearPs43_Click);
             // 
-            // button5
+            // btnHourePs43
             // 
-            this.button5.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(281, 56);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(45, 39);
-            this.button5.TabIndex = 41;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnHourePs43.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnHourePs43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHourePs43.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHourePs43.ForeColor = System.Drawing.Color.Black;
+            this.btnHourePs43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHourePs43.Location = new System.Drawing.Point(281, 11);
+            this.btnHourePs43.Name = "btnHourePs43";
+            this.btnHourePs43.Size = new System.Drawing.Size(45, 39);
+            this.btnHourePs43.TabIndex = 42;
+            this.btnHourePs43.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnMinutePs43
             // 
-            this.button6.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(151, 149);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 38);
-            this.button6.TabIndex = 40;
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnMinutePs43.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMinutePs43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinutePs43.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinutePs43.ForeColor = System.Drawing.Color.Black;
+            this.btnMinutePs43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinutePs43.Location = new System.Drawing.Point(281, 56);
+            this.btnMinutePs43.Name = "btnMinutePs43";
+            this.btnMinutePs43.Size = new System.Drawing.Size(45, 39);
+            this.btnMinutePs43.TabIndex = 41;
+            this.btnMinutePs43.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnPrixPs43
             // 
-            this.button7.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(281, 101);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(45, 39);
-            this.button7.TabIndex = 39;
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnPrixPs43.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixPs43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixPs43.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrixPs43.ForeColor = System.Drawing.Color.Black;
+            this.btnPrixPs43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixPs43.Location = new System.Drawing.Point(207, 149);
+            this.btnPrixPs43.Name = "btnPrixPs43";
+            this.btnPrixPs43.Size = new System.Drawing.Size(119, 38);
+            this.btnPrixPs43.TabIndex = 40;
+            this.btnPrixPs43.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnSecondePs43
             // 
-            this.button8.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(3, 149);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(62, 38);
-            this.button8.TabIndex = 38;
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnSecondePs43.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSecondePs43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecondePs43.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSecondePs43.ForeColor = System.Drawing.Color.Black;
+            this.btnSecondePs43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondePs43.Location = new System.Drawing.Point(281, 101);
+            this.btnSecondePs43.Name = "btnSecondePs43";
+            this.btnSecondePs43.Size = new System.Drawing.Size(45, 39);
+            this.btnSecondePs43.TabIndex = 39;
+            this.btnSecondePs43.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // btnStartPs43
             // 
-            this.button9.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(71, 149);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(62, 38);
-            this.button9.TabIndex = 37;
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnStartPs43.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartPs43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartPs43.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartPs43.ForeColor = System.Drawing.Color.Black;
+            this.btnStartPs43.Image = ((System.Drawing.Image)(resources.GetObject("btnStartPs43.Image")));
+            this.btnStartPs43.Location = new System.Drawing.Point(3, 149);
+            this.btnStartPs43.Name = "btnStartPs43";
+            this.btnStartPs43.Size = new System.Drawing.Size(62, 38);
+            this.btnStartPs43.TabIndex = 38;
+            this.btnStartPs43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartPs43.UseVisualStyleBackColor = false;
+            this.btnStartPs43.Click += new System.EventHandler(this.btnStartPs43_Click);
             // 
-            // pictureBox5
+            // btnRestPs43
             // 
-            this.pictureBox5.Image = global::Centre_D_affaire.Properties.Resources.video_screen;
-            this.pictureBox5.Location = new System.Drawing.Point(59, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(203, 135);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 36;
-            this.pictureBox5.TabStop = false;
+            this.btnRestPs43.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestPs43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestPs43.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestPs43.ForeColor = System.Drawing.Color.Black;
+            this.btnRestPs43.Image = ((System.Drawing.Image)(resources.GetObject("btnRestPs43.Image")));
+            this.btnRestPs43.Location = new System.Drawing.Point(71, 149);
+            this.btnRestPs43.Name = "btnRestPs43";
+            this.btnRestPs43.Size = new System.Drawing.Size(62, 38);
+            this.btnRestPs43.TabIndex = 37;
+            this.btnRestPs43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestPs43.UseVisualStyleBackColor = false;
+            this.btnRestPs43.Click += new System.EventHandler(this.btnRestPs43_Click);
+            // 
+            // picPs43
+            // 
+            this.picPs43.Image = global::Centre_D_affaire.Properties.Resources.video_screen;
+            this.picPs43.Location = new System.Drawing.Point(59, 5);
+            this.picPs43.Name = "picPs43";
+            this.picPs43.Size = new System.Drawing.Size(203, 135);
+            this.picPs43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPs43.TabIndex = 36;
+            this.picPs43.TabStop = false;
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.button10);
-            this.panel7.Controls.Add(this.button11);
-            this.panel7.Controls.Add(this.button12);
-            this.panel7.Controls.Add(this.button13);
-            this.panel7.Controls.Add(this.button14);
-            this.panel7.Controls.Add(this.button15);
-            this.panel7.Controls.Add(this.pictureBox7);
+            this.panel7.Controls.Add(this.btnClearPs42);
+            this.panel7.Controls.Add(this.btnHourePs42);
+            this.panel7.Controls.Add(this.btnMinutePs42);
+            this.panel7.Controls.Add(this.btnPrixPs42);
+            this.panel7.Controls.Add(this.btnSecondePs42);
+            this.panel7.Controls.Add(this.btnStartPs42);
+            this.panel7.Controls.Add(this.btnRestPs42);
+            this.panel7.Controls.Add(this.picPs42);
             this.panel7.Location = new System.Drawing.Point(655, 100);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(354, 197);
             this.panel7.TabIndex = 43;
             // 
-            // button10
+            // btnClearPs42
             // 
-            this.button10.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(281, 11);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(45, 39);
-            this.button10.TabIndex = 42;
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnClearPs42.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearPs42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearPs42.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearPs42.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearPs42.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearPs42.Location = new System.Drawing.Point(138, 149);
+            this.btnClearPs42.Name = "btnClearPs42";
+            this.btnClearPs42.Size = new System.Drawing.Size(62, 38);
+            this.btnClearPs42.TabIndex = 46;
+            this.btnClearPs42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearPs42.UseVisualStyleBackColor = false;
+            this.btnClearPs42.Click += new System.EventHandler(this.btnClearPs42_Click);
             // 
-            // button11
+            // btnHourePs42
             // 
-            this.button11.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(281, 56);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(45, 39);
-            this.button11.TabIndex = 41;
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnHourePs42.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnHourePs42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHourePs42.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHourePs42.ForeColor = System.Drawing.Color.Black;
+            this.btnHourePs42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHourePs42.Location = new System.Drawing.Point(281, 11);
+            this.btnHourePs42.Name = "btnHourePs42";
+            this.btnHourePs42.Size = new System.Drawing.Size(45, 39);
+            this.btnHourePs42.TabIndex = 42;
+            this.btnHourePs42.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // btnMinutePs42
             // 
-            this.button12.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(151, 149);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(111, 38);
-            this.button12.TabIndex = 40;
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnMinutePs42.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMinutePs42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinutePs42.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinutePs42.ForeColor = System.Drawing.Color.Black;
+            this.btnMinutePs42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinutePs42.Location = new System.Drawing.Point(281, 56);
+            this.btnMinutePs42.Name = "btnMinutePs42";
+            this.btnMinutePs42.Size = new System.Drawing.Size(45, 39);
+            this.btnMinutePs42.TabIndex = 41;
+            this.btnMinutePs42.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // btnPrixPs42
             // 
-            this.button13.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(281, 101);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(45, 39);
-            this.button13.TabIndex = 39;
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnPrixPs42.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixPs42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixPs42.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrixPs42.ForeColor = System.Drawing.Color.Black;
+            this.btnPrixPs42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixPs42.Location = new System.Drawing.Point(206, 149);
+            this.btnPrixPs42.Name = "btnPrixPs42";
+            this.btnPrixPs42.Size = new System.Drawing.Size(120, 38);
+            this.btnPrixPs42.TabIndex = 40;
+            this.btnPrixPs42.UseVisualStyleBackColor = false;
             // 
-            // button14
+            // btnSecondePs42
             // 
-            this.button14.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.Location = new System.Drawing.Point(3, 149);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(62, 38);
-            this.button14.TabIndex = 38;
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.UseVisualStyleBackColor = false;
+            this.btnSecondePs42.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSecondePs42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecondePs42.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSecondePs42.ForeColor = System.Drawing.Color.Black;
+            this.btnSecondePs42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondePs42.Location = new System.Drawing.Point(281, 101);
+            this.btnSecondePs42.Name = "btnSecondePs42";
+            this.btnSecondePs42.Size = new System.Drawing.Size(45, 39);
+            this.btnSecondePs42.TabIndex = 39;
+            this.btnSecondePs42.UseVisualStyleBackColor = false;
             // 
-            // button15
+            // btnStartPs42
             // 
-            this.button15.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(71, 149);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(62, 38);
-            this.button15.TabIndex = 37;
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.UseVisualStyleBackColor = false;
+            this.btnStartPs42.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartPs42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartPs42.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartPs42.ForeColor = System.Drawing.Color.Black;
+            this.btnStartPs42.Image = ((System.Drawing.Image)(resources.GetObject("btnStartPs42.Image")));
+            this.btnStartPs42.Location = new System.Drawing.Point(3, 149);
+            this.btnStartPs42.Name = "btnStartPs42";
+            this.btnStartPs42.Size = new System.Drawing.Size(62, 38);
+            this.btnStartPs42.TabIndex = 38;
+            this.btnStartPs42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartPs42.UseVisualStyleBackColor = false;
+            this.btnStartPs42.Click += new System.EventHandler(this.btnStartPs42_Click);
             // 
-            // pictureBox7
+            // btnRestPs42
             // 
-            this.pictureBox7.Image = global::Centre_D_affaire.Properties.Resources.video_screen;
-            this.pictureBox7.Location = new System.Drawing.Point(59, 5);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(203, 135);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 36;
-            this.pictureBox7.TabStop = false;
+            this.btnRestPs42.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestPs42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestPs42.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestPs42.ForeColor = System.Drawing.Color.Black;
+            this.btnRestPs42.Image = ((System.Drawing.Image)(resources.GetObject("btnRestPs42.Image")));
+            this.btnRestPs42.Location = new System.Drawing.Point(71, 149);
+            this.btnRestPs42.Name = "btnRestPs42";
+            this.btnRestPs42.Size = new System.Drawing.Size(62, 38);
+            this.btnRestPs42.TabIndex = 37;
+            this.btnRestPs42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestPs42.UseVisualStyleBackColor = false;
+            this.btnRestPs42.Click += new System.EventHandler(this.btnRestPs42_Click);
+            // 
+            // picPs42
+            // 
+            this.picPs42.Image = global::Centre_D_affaire.Properties.Resources.video_screen;
+            this.picPs42.Location = new System.Drawing.Point(59, 5);
+            this.picPs42.Name = "picPs42";
+            this.picPs42.Size = new System.Drawing.Size(203, 135);
+            this.picPs42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPs42.TabIndex = 36;
+            this.picPs42.TabStop = false;
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.button22);
-            this.panel9.Controls.Add(this.button23);
-            this.panel9.Controls.Add(this.button24);
-            this.panel9.Controls.Add(this.button25);
-            this.panel9.Controls.Add(this.button26);
-            this.panel9.Controls.Add(this.button27);
-            this.panel9.Controls.Add(this.pictureBox9);
+            this.panel9.Controls.Add(this.btnClearPs44);
+            this.panel9.Controls.Add(this.btnHourePs44);
+            this.panel9.Controls.Add(this.btnMinutePs44);
+            this.panel9.Controls.Add(this.btnPrixPs44);
+            this.panel9.Controls.Add(this.btnSecondePs44);
+            this.panel9.Controls.Add(this.btnStartPs44);
+            this.panel9.Controls.Add(this.btnRestPs44);
+            this.panel9.Controls.Add(this.picPs44);
             this.panel9.Location = new System.Drawing.Point(655, 320);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(354, 197);
             this.panel9.TabIndex = 44;
             // 
-            // button22
+            // btnClearPs44
             // 
-            this.button22.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(281, 11);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(45, 39);
-            this.button22.TabIndex = 42;
-            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.UseVisualStyleBackColor = false;
+            this.btnClearPs44.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearPs44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearPs44.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearPs44.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearPs44.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearPs44.Location = new System.Drawing.Point(138, 149);
+            this.btnClearPs44.Name = "btnClearPs44";
+            this.btnClearPs44.Size = new System.Drawing.Size(62, 38);
+            this.btnClearPs44.TabIndex = 45;
+            this.btnClearPs44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearPs44.UseVisualStyleBackColor = false;
+            this.btnClearPs44.Click += new System.EventHandler(this.btnClearPs44_Click);
             // 
-            // button23
+            // btnHourePs44
             // 
-            this.button23.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.ForeColor = System.Drawing.Color.White;
-            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.Location = new System.Drawing.Point(281, 56);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(45, 39);
-            this.button23.TabIndex = 41;
-            this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.UseVisualStyleBackColor = false;
+            this.btnHourePs44.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnHourePs44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHourePs44.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHourePs44.ForeColor = System.Drawing.Color.Black;
+            this.btnHourePs44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHourePs44.Location = new System.Drawing.Point(281, 11);
+            this.btnHourePs44.Name = "btnHourePs44";
+            this.btnHourePs44.Size = new System.Drawing.Size(45, 39);
+            this.btnHourePs44.TabIndex = 42;
+            this.btnHourePs44.UseVisualStyleBackColor = false;
             // 
-            // button24
+            // btnMinutePs44
             // 
-            this.button24.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.ForeColor = System.Drawing.Color.White;
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.Location = new System.Drawing.Point(151, 149);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(111, 38);
-            this.button24.TabIndex = 40;
-            this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.UseVisualStyleBackColor = false;
+            this.btnMinutePs44.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMinutePs44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinutePs44.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinutePs44.ForeColor = System.Drawing.Color.Black;
+            this.btnMinutePs44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinutePs44.Location = new System.Drawing.Point(281, 56);
+            this.btnMinutePs44.Name = "btnMinutePs44";
+            this.btnMinutePs44.Size = new System.Drawing.Size(45, 39);
+            this.btnMinutePs44.TabIndex = 41;
+            this.btnMinutePs44.UseVisualStyleBackColor = false;
             // 
-            // button25
+            // btnPrixPs44
             // 
-            this.button25.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.ForeColor = System.Drawing.Color.White;
-            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.Location = new System.Drawing.Point(281, 101);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(45, 39);
-            this.button25.TabIndex = 39;
-            this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.UseVisualStyleBackColor = false;
+            this.btnPrixPs44.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixPs44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixPs44.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrixPs44.ForeColor = System.Drawing.Color.Black;
+            this.btnPrixPs44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixPs44.Location = new System.Drawing.Point(206, 149);
+            this.btnPrixPs44.Name = "btnPrixPs44";
+            this.btnPrixPs44.Size = new System.Drawing.Size(120, 38);
+            this.btnPrixPs44.TabIndex = 40;
+            this.btnPrixPs44.UseVisualStyleBackColor = false;
             // 
-            // button26
+            // btnSecondePs44
             // 
-            this.button26.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.ForeColor = System.Drawing.Color.White;
-            this.button26.Image = ((System.Drawing.Image)(resources.GetObject("button26.Image")));
-            this.button26.Location = new System.Drawing.Point(3, 149);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(62, 38);
-            this.button26.TabIndex = 38;
-            this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button26.UseVisualStyleBackColor = false;
+            this.btnSecondePs44.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSecondePs44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecondePs44.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSecondePs44.ForeColor = System.Drawing.Color.Black;
+            this.btnSecondePs44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondePs44.Location = new System.Drawing.Point(281, 101);
+            this.btnSecondePs44.Name = "btnSecondePs44";
+            this.btnSecondePs44.Size = new System.Drawing.Size(45, 39);
+            this.btnSecondePs44.TabIndex = 39;
+            this.btnSecondePs44.UseVisualStyleBackColor = false;
             // 
-            // button27
+            // btnStartPs44
             // 
-            this.button27.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.ForeColor = System.Drawing.Color.White;
-            this.button27.Image = ((System.Drawing.Image)(resources.GetObject("button27.Image")));
-            this.button27.Location = new System.Drawing.Point(71, 149);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(62, 38);
-            this.button27.TabIndex = 37;
-            this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button27.UseVisualStyleBackColor = false;
+            this.btnStartPs44.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartPs44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartPs44.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartPs44.ForeColor = System.Drawing.Color.Black;
+            this.btnStartPs44.Image = ((System.Drawing.Image)(resources.GetObject("btnStartPs44.Image")));
+            this.btnStartPs44.Location = new System.Drawing.Point(3, 149);
+            this.btnStartPs44.Name = "btnStartPs44";
+            this.btnStartPs44.Size = new System.Drawing.Size(62, 38);
+            this.btnStartPs44.TabIndex = 38;
+            this.btnStartPs44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartPs44.UseVisualStyleBackColor = false;
+            this.btnStartPs44.Click += new System.EventHandler(this.btnStartPs44_Click);
             // 
-            // pictureBox9
+            // btnRestPs44
             // 
-            this.pictureBox9.Image = global::Centre_D_affaire.Properties.Resources.video_screen;
-            this.pictureBox9.Location = new System.Drawing.Point(59, 5);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(203, 135);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 36;
-            this.pictureBox9.TabStop = false;
+            this.btnRestPs44.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestPs44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestPs44.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestPs44.ForeColor = System.Drawing.Color.Black;
+            this.btnRestPs44.Image = ((System.Drawing.Image)(resources.GetObject("btnRestPs44.Image")));
+            this.btnRestPs44.Location = new System.Drawing.Point(71, 149);
+            this.btnRestPs44.Name = "btnRestPs44";
+            this.btnRestPs44.Size = new System.Drawing.Size(62, 38);
+            this.btnRestPs44.TabIndex = 37;
+            this.btnRestPs44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestPs44.UseVisualStyleBackColor = false;
+            this.btnRestPs44.Click += new System.EventHandler(this.btnRestPs44_Click);
+            // 
+            // picPs44
+            // 
+            this.picPs44.Image = global::Centre_D_affaire.Properties.Resources.video_screen;
+            this.picPs44.Location = new System.Drawing.Point(59, 5);
+            this.picPs44.Name = "picPs44";
+            this.picPs44.Size = new System.Drawing.Size(203, 135);
+            this.picPs44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPs44.TabIndex = 36;
+            this.picPs44.TabStop = false;
+            // 
+            // timerPs41
+            // 
+            this.timerPs41.Interval = 1000;
+            this.timerPs41.Tick += new System.EventHandler(this.timerPs41_Tick);
+            // 
+            // timerPs42
+            // 
+            this.timerPs42.Interval = 1000;
+            this.timerPs42.Tick += new System.EventHandler(this.timerPs42_Tick);
+            // 
+            // timerPs43
+            // 
+            this.timerPs43.Interval = 1000;
+            this.timerPs43.Tick += new System.EventHandler(this.timerPs43_Tick);
+            // 
+            // timerPs44
+            // 
+            this.timerPs44.Interval = 1000;
+            this.timerPs44.Tick += new System.EventHandler(this.timerPs44_Tick);
             // 
             // FrmPS4
             // 
@@ -779,9 +862,10 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.Controls.Add(this.FlpMenu);
             this.Name = "FrmPS4";
             this.Text = "PS4";
+            this.Load += new System.EventHandler(this.FrmPS4_Load);
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPs41)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -798,11 +882,11 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.FlpMenu.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPs43)).EndInit();
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPs42)).EndInit();
             this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPs44)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -812,14 +896,14 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.Label lblBillHot;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox picPs41;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Button btnEditPs4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button3;
@@ -829,35 +913,43 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.FlowLayoutPanel FlpMenu;
-        private System.Windows.Forms.Button btnHoure;
-        private System.Windows.Forms.Button btnMinute;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnSeconde;
-        private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnRest;
+        private System.Windows.Forms.Button btnHourePs41;
+        private System.Windows.Forms.Button btnMinutePs41;
+        private System.Windows.Forms.Button btnPrixPs41;
+        private System.Windows.Forms.Button btnSecondePs41;
+        private System.Windows.Forms.Button btnStartPs41;
+        private System.Windows.Forms.Button btnRestPs41;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button btnHourePs43;
+        private System.Windows.Forms.Button btnMinutePs43;
+        private System.Windows.Forms.Button btnPrixPs43;
+        private System.Windows.Forms.Button btnSecondePs43;
+        private System.Windows.Forms.Button btnStartPs43;
+        private System.Windows.Forms.Button btnRestPs43;
+        private System.Windows.Forms.PictureBox picPs43;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button btnHourePs42;
+        private System.Windows.Forms.Button btnMinutePs42;
+        private System.Windows.Forms.Button btnPrixPs42;
+        private System.Windows.Forms.Button btnSecondePs42;
+        private System.Windows.Forms.Button btnStartPs42;
+        private System.Windows.Forms.Button btnRestPs42;
+        private System.Windows.Forms.PictureBox picPs42;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Button btnHourePs44;
+        private System.Windows.Forms.Button btnMinutePs44;
+        private System.Windows.Forms.Button btnPrixPs44;
+        private System.Windows.Forms.Button btnSecondePs44;
+        private System.Windows.Forms.Button btnStartPs44;
+        private System.Windows.Forms.Button btnRestPs44;
+        private System.Windows.Forms.PictureBox picPs44;
+        private System.Windows.Forms.Button btnClearPs41;
+        private System.Windows.Forms.Button btnClearPs43;
+        private System.Windows.Forms.Button btnClearPs42;
+        private System.Windows.Forms.Button btnClearPs44;
+        private System.Windows.Forms.Timer timerPs41;
+        private System.Windows.Forms.Timer timerPs42;
+        private System.Windows.Forms.Timer timerPs43;
+        private System.Windows.Forms.Timer timerPs44;
     }
 }

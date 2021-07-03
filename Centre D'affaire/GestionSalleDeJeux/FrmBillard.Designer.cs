@@ -32,12 +32,13 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBillard));
             this.GbJ1 = new System.Windows.Forms.GroupBox();
-            this.btnHoure = new System.Windows.Forms.Button();
-            this.btnMinute = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnSeconde = new System.Windows.Forms.Button();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.btnRest = new System.Windows.Forms.Button();
+            this.btnClearBillard1 = new System.Windows.Forms.Button();
+            this.TxtMinuteBillard1 = new System.Windows.Forms.TextBox();
+            this.txtHoursBillard1 = new System.Windows.Forms.TextBox();
+            this.txtSecondeBillard1 = new System.Windows.Forms.TextBox();
+            this.btnPrixBillard1 = new System.Windows.Forms.Button();
+            this.btnStartbillard1 = new System.Windows.Forms.Button();
+            this.btnRestBillard1 = new System.Windows.Forms.Button();
             this.LblNameJ1 = new System.Windows.Forms.Label();
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -53,67 +54,82 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnADDBillArd = new System.Windows.Forms.Button();
+            this.btnEditBillard = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button47 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnClearBillard4 = new System.Windows.Forms.Button();
+            this.txtHoursBillard4 = new System.Windows.Forms.Button();
+            this.TxtMinuteBillard4 = new System.Windows.Forms.Button();
+            this.btnPrixBillard4 = new System.Windows.Forms.Button();
+            this.txtSecondeBillard4 = new System.Windows.Forms.Button();
+            this.btnStartBillard4 = new System.Windows.Forms.Button();
+            this.btnRestBillard4 = new System.Windows.Forms.Button();
+            this.lblNameJ4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnClearBillard6 = new System.Windows.Forms.Button();
+            this.txtHoursBillard6 = new System.Windows.Forms.Button();
+            this.TxtMinuteBillard6 = new System.Windows.Forms.Button();
+            this.btnPrixBillard6 = new System.Windows.Forms.Button();
+            this.txtSecondeBillard6 = new System.Windows.Forms.Button();
+            this.btnStartBillard6 = new System.Windows.Forms.Button();
+            this.btnRestBillard6 = new System.Windows.Forms.Button();
+            this.lblNameJ6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnClearBillard7 = new System.Windows.Forms.Button();
+            this.txtHoursBillard7 = new System.Windows.Forms.Button();
+            this.TxtMinuteBillard7 = new System.Windows.Forms.Button();
+            this.btnPrixBillard7 = new System.Windows.Forms.Button();
+            this.txtSecondeBillard7 = new System.Windows.Forms.Button();
+            this.btnStartBillard7 = new System.Windows.Forms.Button();
+            this.btnRestBillard7 = new System.Windows.Forms.Button();
+            this.lblNameJ7 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btnClearBillard5 = new System.Windows.Forms.Button();
+            this.txtHoursBillard5 = new System.Windows.Forms.Button();
+            this.TxtMinuteBillard5 = new System.Windows.Forms.Button();
+            this.btnPrixBillard5 = new System.Windows.Forms.Button();
+            this.txtSecondeBillard5 = new System.Windows.Forms.Button();
+            this.btnStartBillard5 = new System.Windows.Forms.Button();
+            this.btnRestBillard5 = new System.Windows.Forms.Button();
+            this.lblNameJ5 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btnClearBillard2 = new System.Windows.Forms.Button();
+            this.txtHoursBillard2 = new System.Windows.Forms.Button();
+            this.TxtMinuteBillard2 = new System.Windows.Forms.Button();
+            this.btnPrixBillard2 = new System.Windows.Forms.Button();
+            this.txtSecondeBillard2 = new System.Windows.Forms.Button();
+            this.btnStartBillard2 = new System.Windows.Forms.Button();
+            this.btnRestBillard2 = new System.Windows.Forms.Button();
+            this.lblNameJ2 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.btnClearBillard3 = new System.Windows.Forms.Button();
+            this.txtHoursBillard3 = new System.Windows.Forms.Button();
+            this.TxtMinuteBillard3 = new System.Windows.Forms.Button();
+            this.btnPrixBillard3 = new System.Windows.Forms.Button();
+            this.txtSecondeBillard3 = new System.Windows.Forms.Button();
+            this.btnStartBillard3 = new System.Windows.Forms.Button();
+            this.btnRestBillard3 = new System.Windows.Forms.Button();
+            this.lblNameJ3 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button42 = new System.Windows.Forms.Button();
-            this.button43 = new System.Windows.Forms.Button();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.btnClearBillard8 = new System.Windows.Forms.Button();
+            this.txtHoursBillard8 = new System.Windows.Forms.Button();
+            this.TxtMinuteBillard8 = new System.Windows.Forms.Button();
+            this.btnPrixBillard8 = new System.Windows.Forms.Button();
+            this.txtSecondeBillard8 = new System.Windows.Forms.Button();
+            this.btnStartBillard8 = new System.Windows.Forms.Button();
+            this.btnRestBillard8 = new System.Windows.Forms.Button();
+            this.lblNameJ8 = new System.Windows.Forms.Label();
+            this.timerBillard = new System.Windows.Forms.Timer(this.components);
+            this.timerBillard2 = new System.Windows.Forms.Timer(this.components);
+            this.timerBillard3 = new System.Windows.Forms.Timer(this.components);
+            this.timerBillard4 = new System.Windows.Forms.Timer(this.components);
+            this.timerBillard5 = new System.Windows.Forms.Timer(this.components);
+            this.timerBillard6 = new System.Windows.Forms.Timer(this.components);
+            this.timerBillard7 = new System.Windows.Forms.Timer(this.components);
+            this.timerBillard8 = new System.Windows.Forms.Timer(this.components);
+            this.timerBillard1 = new System.Windows.Forms.Timer(this.components);
             this.GbJ1.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             this.FlpMenu.SuspendLayout();
@@ -137,14 +153,16 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // 
             // GbJ1
             // 
-            this.GbJ1.Controls.Add(this.btnHoure);
-            this.GbJ1.Controls.Add(this.btnMinute);
-            this.GbJ1.Controls.Add(this.button2);
-            this.GbJ1.Controls.Add(this.btnSeconde);
-            this.GbJ1.Controls.Add(this.btnStart);
-            this.GbJ1.Controls.Add(this.btnRest);
+            this.GbJ1.Controls.Add(this.btnClearBillard1);
+            this.GbJ1.Controls.Add(this.TxtMinuteBillard1);
+            this.GbJ1.Controls.Add(this.txtHoursBillard1);
+            this.GbJ1.Controls.Add(this.txtSecondeBillard1);
+            this.GbJ1.Controls.Add(this.btnPrixBillard1);
+            this.GbJ1.Controls.Add(this.btnStartbillard1);
+            this.GbJ1.Controls.Add(this.btnRestBillard1);
             this.GbJ1.Controls.Add(this.LblNameJ1);
             this.GbJ1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.GbJ1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.GbJ1.Location = new System.Drawing.Point(213, 100);
             this.GbJ1.Name = "GbJ1";
             this.GbJ1.Size = new System.Drawing.Size(281, 140);
@@ -152,104 +170,113 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.GbJ1.TabStop = false;
             this.GbJ1.Enter += new System.EventHandler(this.GbJ1_Enter);
             // 
-            // btnHoure
+            // btnClearBillard1
             // 
-            this.btnHoure.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnHoure.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoure.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoure.ForeColor = System.Drawing.Color.White;
-            this.btnHoure.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoure.Location = new System.Drawing.Point(128, 45);
-            this.btnHoure.Name = "btnHoure";
-            this.btnHoure.Size = new System.Drawing.Size(45, 39);
-            this.btnHoure.TabIndex = 22;
-            this.btnHoure.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoure.UseVisualStyleBackColor = false;
-            this.btnHoure.Click += new System.EventHandler(this.btnHoure_Click);
+            this.btnClearBillard1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearBillard1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearBillard1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearBillard1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearBillard1.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearBillard1.Location = new System.Drawing.Point(124, 94);
+            this.btnClearBillard1.Name = "btnClearBillard1";
+            this.btnClearBillard1.Size = new System.Drawing.Size(51, 38);
+            this.btnClearBillard1.TabIndex = 22;
+            this.btnClearBillard1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearBillard1.UseVisualStyleBackColor = false;
+            this.btnClearBillard1.Click += new System.EventHandler(this.btnClearBillard1_Click);
             // 
-            // btnMinute
+            // TxtMinuteBillard1
             // 
-            this.btnMinute.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnMinute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinute.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinute.ForeColor = System.Drawing.Color.White;
-            this.btnMinute.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMinute.Location = new System.Drawing.Point(179, 45);
-            this.btnMinute.Name = "btnMinute";
-            this.btnMinute.Size = new System.Drawing.Size(45, 39);
-            this.btnMinute.TabIndex = 21;
-            this.btnMinute.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMinute.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtMinuteBillard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMinuteBillard1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtMinuteBillard1.Location = new System.Drawing.Point(179, 46);
+            this.TxtMinuteBillard1.Multiline = true;
+            this.TxtMinuteBillard1.Name = "TxtMinuteBillard1";
+            this.TxtMinuteBillard1.Size = new System.Drawing.Size(45, 39);
+            this.TxtMinuteBillard1.TabIndex = 21;
+            this.TxtMinuteBillard1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button2
+            // txtHoursBillard1
             // 
-            this.button2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(164, 91);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 40);
-            this.button2.TabIndex = 19;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.txtHoursBillard1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtHoursBillard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoursBillard1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtHoursBillard1.Location = new System.Drawing.Point(130, 46);
+            this.txtHoursBillard1.Multiline = true;
+            this.txtHoursBillard1.Name = "txtHoursBillard1";
+            this.txtHoursBillard1.Size = new System.Drawing.Size(45, 39);
+            this.txtHoursBillard1.TabIndex = 21;
+            this.txtHoursBillard1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtHoursBillard1.TextChanged += new System.EventHandler(this.txtHoursBillard1_TextChanged);
             // 
-            // btnSeconde
+            // txtSecondeBillard1
             // 
-            this.btnSeconde.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnSeconde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeconde.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeconde.ForeColor = System.Drawing.Color.White;
-            this.btnSeconde.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeconde.Location = new System.Drawing.Point(230, 46);
-            this.btnSeconde.Name = "btnSeconde";
-            this.btnSeconde.Size = new System.Drawing.Size(45, 39);
-            this.btnSeconde.TabIndex = 17;
-            this.btnSeconde.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeconde.UseVisualStyleBackColor = false;
-            this.btnSeconde.Click += new System.EventHandler(this.btnPrixBillard_Click);
+            this.txtSecondeBillard1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtSecondeBillard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecondeBillard1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtSecondeBillard1.Location = new System.Drawing.Point(230, 45);
+            this.txtSecondeBillard1.Multiline = true;
+            this.txtSecondeBillard1.Name = "txtSecondeBillard1";
+            this.txtSecondeBillard1.Size = new System.Drawing.Size(45, 39);
+            this.txtSecondeBillard1.TabIndex = 20;
+            this.txtSecondeBillard1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnStart
+            // btnPrixBillard1
             // 
-            this.btnStart.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.White;
-            this.btnStart.Image = ((System.Drawing.Image)(resources.GetObject("btnStart.Image")));
-            this.btnStart.Location = new System.Drawing.Point(11, 93);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(62, 38);
-            this.btnStart.TabIndex = 14;
-            this.btnStart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStart.UseVisualStyleBackColor = false;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.btnPrixBillard1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBillard1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBillard1.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrixBillard1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPrixBillard1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBillard1.Location = new System.Drawing.Point(181, 91);
+            this.btnPrixBillard1.Name = "btnPrixBillard1";
+            this.btnPrixBillard1.Size = new System.Drawing.Size(94, 40);
+            this.btnPrixBillard1.TabIndex = 19;
+            this.btnPrixBillard1.UseVisualStyleBackColor = false;
+            this.btnPrixBillard1.Click += new System.EventHandler(this.btnPrixBillard1_Click);
             // 
-            // btnRest
+            // btnStartbillard1
             // 
-            this.btnRest.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnRest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRest.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRest.ForeColor = System.Drawing.Color.White;
-            this.btnRest.Image = ((System.Drawing.Image)(resources.GetObject("btnRest.Image")));
-            this.btnRest.Location = new System.Drawing.Point(87, 96);
-            this.btnRest.Name = "btnRest";
-            this.btnRest.Size = new System.Drawing.Size(62, 38);
-            this.btnRest.TabIndex = 13;
-            this.btnRest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRest.UseVisualStyleBackColor = false;
-            this.btnRest.Click += new System.EventHandler(this.btnRest_Click);
+            this.btnStartbillard1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartbillard1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartbillard1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartbillard1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnStartbillard1.Image = ((System.Drawing.Image)(resources.GetObject("btnStartbillard1.Image")));
+            this.btnStartbillard1.Location = new System.Drawing.Point(11, 93);
+            this.btnStartbillard1.Name = "btnStartbillard1";
+            this.btnStartbillard1.Size = new System.Drawing.Size(51, 38);
+            this.btnStartbillard1.TabIndex = 14;
+            this.btnStartbillard1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartbillard1.UseVisualStyleBackColor = false;
+            this.btnStartbillard1.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // btnRestBillard1
+            // 
+            this.btnRestBillard1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBillard1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBillard1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBillard1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRestBillard1.Image = ((System.Drawing.Image)(resources.GetObject("btnRestBillard1.Image")));
+            this.btnRestBillard1.Location = new System.Drawing.Point(68, 93);
+            this.btnRestBillard1.Name = "btnRestBillard1";
+            this.btnRestBillard1.Size = new System.Drawing.Size(51, 38);
+            this.btnRestBillard1.TabIndex = 13;
+            this.btnRestBillard1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBillard1.UseVisualStyleBackColor = false;
+            this.btnRestBillard1.Click += new System.EventHandler(this.btnRest_Click);
             // 
             // LblNameJ1
             // 
             this.LblNameJ1.AutoSize = true;
             this.LblNameJ1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.LblNameJ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNameJ1.Location = new System.Drawing.Point(7, 57);
+            this.LblNameJ1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LblNameJ1.Location = new System.Drawing.Point(9, 52);
             this.LblNameJ1.Name = "LblNameJ1";
-            this.LblNameJ1.Size = new System.Drawing.Size(66, 24);
+            this.LblNameJ1.Size = new System.Drawing.Size(68, 24);
             this.LblNameJ1.TabIndex = 0;
-            this.LblNameJ1.Text = "label1";
+            this.LblNameJ1.Text = "Billard";
             // 
             // pnlTitle
             // 
@@ -344,7 +371,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.picHome.Image = ((System.Drawing.Image)(resources.GetObject("picHome.Image")));
             this.picHome.Location = new System.Drawing.Point(3, 3);
             this.picHome.Name = "picHome";
-            this.picHome.Size = new System.Drawing.Size(48, 64);
+            this.picHome.Size = new System.Drawing.Size(48, 48);
             this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picHome.TabIndex = 34;
             this.picHome.TabStop = false;
@@ -383,7 +410,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(3, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 64);
+            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
@@ -406,7 +433,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.btnADDBillArd);
+            this.panel2.Controls.Add(this.btnEditBillard);
             this.panel2.Location = new System.Drawing.Point(3, 400);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(207, 78);
@@ -418,28 +445,29 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_edit_black_24dp;
             this.pictureBox2.Location = new System.Drawing.Point(3, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
-            // btnADDBillArd
+            // btnEditBillard
             // 
-            this.btnADDBillArd.BackColor = System.Drawing.Color.Transparent;
-            this.btnADDBillArd.FlatAppearance.BorderSize = 0;
-            this.btnADDBillArd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnADDBillArd.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnADDBillArd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnADDBillArd.Location = new System.Drawing.Point(71, 2);
-            this.btnADDBillArd.Name = "btnADDBillArd";
-            this.btnADDBillArd.Size = new System.Drawing.Size(136, 60);
-            this.btnADDBillArd.TabIndex = 30;
-            this.btnADDBillArd.Text = "ADD";
-            this.btnADDBillArd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnADDBillArd.UseVisualStyleBackColor = false;
+            this.btnEditBillard.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditBillard.FlatAppearance.BorderSize = 0;
+            this.btnEditBillard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditBillard.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditBillard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditBillard.Location = new System.Drawing.Point(71, 2);
+            this.btnEditBillard.Name = "btnEditBillard";
+            this.btnEditBillard.Size = new System.Drawing.Size(136, 60);
+            this.btnEditBillard.TabIndex = 30;
+            this.btnEditBillard.Text = "Edit";
+            this.btnEditBillard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditBillard.UseVisualStyleBackColor = false;
+            this.btnEditBillard.Click += new System.EventHandler(this.btnEditBillard_Click);
             // 
             // panel3
             // 
@@ -459,7 +487,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 64);
+            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 34;
             this.pictureBox3.TabStop = false;
@@ -480,131 +508,149 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button47.UseVisualStyleBackColor = false;
             this.button47.Click += new System.EventHandler(this.button47_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.button8);
-            this.groupBox1.Controls.Add(this.button9);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.btnClearBillard4);
+            this.groupBox1.Controls.Add(this.txtHoursBillard4);
+            this.groupBox1.Controls.Add(this.TxtMinuteBillard4);
+            this.groupBox1.Controls.Add(this.btnPrixBillard4);
+            this.groupBox1.Controls.Add(this.txtSecondeBillard4);
+            this.groupBox1.Controls.Add(this.btnStartBillard4);
+            this.groupBox1.Controls.Add(this.btnRestBillard4);
+            this.groupBox1.Controls.Add(this.lblNameJ4);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.Location = new System.Drawing.Point(213, 243);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(281, 140);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             // 
-            // button4
+            // btnClearBillard4
             // 
-            this.button4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(130, 46);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(45, 39);
-            this.button4.TabIndex = 22;
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnClearBillard4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearBillard4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearBillard4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearBillard4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearBillard4.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearBillard4.Location = new System.Drawing.Point(113, 93);
+            this.btnClearBillard4.Name = "btnClearBillard4";
+            this.btnClearBillard4.Size = new System.Drawing.Size(45, 38);
+            this.btnClearBillard4.TabIndex = 23;
+            this.btnClearBillard4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearBillard4.UseVisualStyleBackColor = false;
+            this.btnClearBillard4.Click += new System.EventHandler(this.btnClearBillard4_Click);
             // 
-            // button5
+            // txtHoursBillard4
             // 
-            this.button5.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(181, 46);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(45, 39);
-            this.button5.TabIndex = 21;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.txtHoursBillard4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtHoursBillard4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtHoursBillard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoursBillard4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtHoursBillard4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard4.Location = new System.Drawing.Point(130, 46);
+            this.txtHoursBillard4.Name = "txtHoursBillard4";
+            this.txtHoursBillard4.Size = new System.Drawing.Size(45, 39);
+            this.txtHoursBillard4.TabIndex = 22;
+            this.txtHoursBillard4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard4.UseVisualStyleBackColor = false;
+            this.txtHoursBillard4.Click += new System.EventHandler(this.txtHoursBillard4_Click);
             // 
-            // button6
+            // TxtMinuteBillard4
             // 
-            this.button6.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(164, 91);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 40);
-            this.button6.TabIndex = 19;
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtMinuteBillard4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TxtMinuteBillard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMinuteBillard4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtMinuteBillard4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard4.Location = new System.Drawing.Point(181, 46);
+            this.TxtMinuteBillard4.Name = "TxtMinuteBillard4";
+            this.TxtMinuteBillard4.Size = new System.Drawing.Size(45, 39);
+            this.TxtMinuteBillard4.TabIndex = 21;
+            this.TxtMinuteBillard4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard4.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard4.Click += new System.EventHandler(this.TxtMinuteBillard4_Click);
             // 
-            // button7
+            // btnPrixBillard4
             // 
-            this.button7.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(232, 47);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(45, 39);
-            this.button7.TabIndex = 17;
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnPrixBillard4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBillard4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBillard4.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold);
+            this.btnPrixBillard4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPrixBillard4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBillard4.Location = new System.Drawing.Point(164, 91);
+            this.btnPrixBillard4.Name = "btnPrixBillard4";
+            this.btnPrixBillard4.Size = new System.Drawing.Size(111, 40);
+            this.btnPrixBillard4.TabIndex = 19;
+            this.btnPrixBillard4.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // txtSecondeBillard4
             // 
-            this.button8.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(11, 93);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(62, 38);
-            this.button8.TabIndex = 14;
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
+            this.txtSecondeBillard4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtSecondeBillard4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSecondeBillard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecondeBillard4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtSecondeBillard4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard4.Location = new System.Drawing.Point(232, 47);
+            this.txtSecondeBillard4.Name = "txtSecondeBillard4";
+            this.txtSecondeBillard4.Size = new System.Drawing.Size(45, 39);
+            this.txtSecondeBillard4.TabIndex = 17;
+            this.txtSecondeBillard4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard4.UseVisualStyleBackColor = false;
+            this.txtSecondeBillard4.Click += new System.EventHandler(this.txtSecondeBillard4_Click);
             // 
-            // button9
+            // btnStartBillard4
             // 
-            this.button9.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(87, 96);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(62, 38);
-            this.button9.TabIndex = 13;
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnStartBillard4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartBillard4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartBillard4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartBillard4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnStartBillard4.Image = ((System.Drawing.Image)(resources.GetObject("btnStartBillard4.Image")));
+            this.btnStartBillard4.Location = new System.Drawing.Point(11, 93);
+            this.btnStartBillard4.Name = "btnStartBillard4";
+            this.btnStartBillard4.Size = new System.Drawing.Size(45, 38);
+            this.btnStartBillard4.TabIndex = 14;
+            this.btnStartBillard4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartBillard4.UseVisualStyleBackColor = false;
+            this.btnStartBillard4.Click += new System.EventHandler(this.btnStartBillard4_Click);
             // 
-            // label1
+            // btnRestBillard4
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.btnRestBillard4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBillard4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBillard4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBillard4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRestBillard4.Image = ((System.Drawing.Image)(resources.GetObject("btnRestBillard4.Image")));
+            this.btnRestBillard4.Location = new System.Drawing.Point(62, 93);
+            this.btnRestBillard4.Name = "btnRestBillard4";
+            this.btnRestBillard4.Size = new System.Drawing.Size(45, 38);
+            this.btnRestBillard4.TabIndex = 13;
+            this.btnRestBillard4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBillard4.UseVisualStyleBackColor = false;
+            this.btnRestBillard4.Click += new System.EventHandler(this.btnRestBillard4_Click);
+            // 
+            // lblNameJ4
+            // 
+            this.lblNameJ4.AutoSize = true;
+            this.lblNameJ4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblNameJ4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameJ4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNameJ4.Location = new System.Drawing.Point(9, 52);
+            this.lblNameJ4.Name = "lblNameJ4";
+            this.lblNameJ4.Size = new System.Drawing.Size(69, 24);
+            this.lblNameJ4.TabIndex = 0;
+            this.lblNameJ4.Text = "8 Bool";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button10);
-            this.groupBox2.Controls.Add(this.button11);
-            this.groupBox2.Controls.Add(this.button12);
-            this.groupBox2.Controls.Add(this.button13);
-            this.groupBox2.Controls.Add(this.button14);
-            this.groupBox2.Controls.Add(this.button15);
-            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.btnClearBillard6);
+            this.groupBox2.Controls.Add(this.txtHoursBillard6);
+            this.groupBox2.Controls.Add(this.TxtMinuteBillard6);
+            this.groupBox2.Controls.Add(this.btnPrixBillard6);
+            this.groupBox2.Controls.Add(this.txtSecondeBillard6);
+            this.groupBox2.Controls.Add(this.btnStartBillard6);
+            this.groupBox2.Controls.Add(this.btnRestBillard6);
+            this.groupBox2.Controls.Add(this.lblNameJ6);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox2.Location = new System.Drawing.Point(215, 389);
             this.groupBox2.Name = "groupBox2";
@@ -613,656 +659,824 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // button10
+            // btnClearBillard6
             // 
-            this.button10.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(128, 45);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(45, 39);
-            this.button10.TabIndex = 22;
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnClearBillard6.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearBillard6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearBillard6.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearBillard6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearBillard6.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearBillard6.Location = new System.Drawing.Point(111, 92);
+            this.btnClearBillard6.Name = "btnClearBillard6";
+            this.btnClearBillard6.Size = new System.Drawing.Size(42, 38);
+            this.btnClearBillard6.TabIndex = 24;
+            this.btnClearBillard6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearBillard6.UseVisualStyleBackColor = false;
+            this.btnClearBillard6.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button11
+            // txtHoursBillard6
             // 
-            this.button11.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(179, 45);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(45, 39);
-            this.button11.TabIndex = 21;
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = false;
+            this.txtHoursBillard6.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtHoursBillard6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtHoursBillard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoursBillard6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtHoursBillard6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard6.Location = new System.Drawing.Point(128, 45);
+            this.txtHoursBillard6.Name = "txtHoursBillard6";
+            this.txtHoursBillard6.Size = new System.Drawing.Size(45, 39);
+            this.txtHoursBillard6.TabIndex = 22;
+            this.txtHoursBillard6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard6.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // TxtMinuteBillard6
             // 
-            this.button12.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(164, 91);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(111, 40);
-            this.button12.TabIndex = 19;
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard6.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtMinuteBillard6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TxtMinuteBillard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMinuteBillard6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtMinuteBillard6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard6.Location = new System.Drawing.Point(179, 45);
+            this.TxtMinuteBillard6.Name = "TxtMinuteBillard6";
+            this.TxtMinuteBillard6.Size = new System.Drawing.Size(45, 39);
+            this.TxtMinuteBillard6.TabIndex = 21;
+            this.TxtMinuteBillard6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard6.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // btnPrixBillard6
             // 
-            this.button13.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(230, 46);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(45, 39);
-            this.button13.TabIndex = 17;
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnPrixBillard6.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBillard6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBillard6.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold);
+            this.btnPrixBillard6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPrixBillard6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBillard6.Location = new System.Drawing.Point(164, 91);
+            this.btnPrixBillard6.Name = "btnPrixBillard6";
+            this.btnPrixBillard6.Size = new System.Drawing.Size(111, 40);
+            this.btnPrixBillard6.TabIndex = 19;
+            this.btnPrixBillard6.UseVisualStyleBackColor = false;
             // 
-            // button14
+            // txtSecondeBillard6
             // 
-            this.button14.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.Location = new System.Drawing.Point(11, 93);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(62, 38);
-            this.button14.TabIndex = 14;
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.UseVisualStyleBackColor = false;
+            this.txtSecondeBillard6.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtSecondeBillard6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSecondeBillard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecondeBillard6.ForeColor = System.Drawing.Color.Black;
+            this.txtSecondeBillard6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard6.Location = new System.Drawing.Point(230, 46);
+            this.txtSecondeBillard6.Name = "txtSecondeBillard6";
+            this.txtSecondeBillard6.Size = new System.Drawing.Size(45, 39);
+            this.txtSecondeBillard6.TabIndex = 17;
+            this.txtSecondeBillard6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard6.UseVisualStyleBackColor = false;
             // 
-            // button15
+            // btnStartBillard6
             // 
-            this.button15.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(87, 96);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(62, 38);
-            this.button15.TabIndex = 13;
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.UseVisualStyleBackColor = false;
+            this.btnStartBillard6.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartBillard6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartBillard6.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartBillard6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnStartBillard6.Image = ((System.Drawing.Image)(resources.GetObject("btnStartBillard6.Image")));
+            this.btnStartBillard6.Location = new System.Drawing.Point(11, 93);
+            this.btnStartBillard6.Name = "btnStartBillard6";
+            this.btnStartBillard6.Size = new System.Drawing.Size(43, 38);
+            this.btnStartBillard6.TabIndex = 14;
+            this.btnStartBillard6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartBillard6.UseVisualStyleBackColor = false;
+            this.btnStartBillard6.Click += new System.EventHandler(this.btnStartBillard6_Click);
             // 
-            // label2
+            // btnRestBillard6
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "label2";
+            this.btnRestBillard6.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBillard6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBillard6.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBillard6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRestBillard6.Image = ((System.Drawing.Image)(resources.GetObject("btnRestBillard6.Image")));
+            this.btnRestBillard6.Location = new System.Drawing.Point(60, 93);
+            this.btnRestBillard6.Name = "btnRestBillard6";
+            this.btnRestBillard6.Size = new System.Drawing.Size(42, 38);
+            this.btnRestBillard6.TabIndex = 13;
+            this.btnRestBillard6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBillard6.UseVisualStyleBackColor = false;
+            this.btnRestBillard6.Click += new System.EventHandler(this.btnRestBillard6_Click);
+            // 
+            // lblNameJ6
+            // 
+            this.lblNameJ6.AutoSize = true;
+            this.lblNameJ6.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblNameJ6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameJ6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNameJ6.Location = new System.Drawing.Point(7, 52);
+            this.lblNameJ6.Name = "lblNameJ6";
+            this.lblNameJ6.Size = new System.Drawing.Size(68, 24);
+            this.lblNameJ6.TabIndex = 0;
+            this.lblNameJ6.Text = "Billard";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button16);
-            this.groupBox3.Controls.Add(this.button17);
-            this.groupBox3.Controls.Add(this.button18);
-            this.groupBox3.Controls.Add(this.button19);
-            this.groupBox3.Controls.Add(this.button20);
-            this.groupBox3.Controls.Add(this.button21);
-            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.btnClearBillard7);
+            this.groupBox3.Controls.Add(this.txtHoursBillard7);
+            this.groupBox3.Controls.Add(this.TxtMinuteBillard7);
+            this.groupBox3.Controls.Add(this.btnPrixBillard7);
+            this.groupBox3.Controls.Add(this.txtSecondeBillard7);
+            this.groupBox3.Controls.Add(this.btnStartBillard7);
+            this.groupBox3.Controls.Add(this.btnRestBillard7);
+            this.groupBox3.Controls.Add(this.lblNameJ7);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox3.Location = new System.Drawing.Point(513, 389);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(281, 140);
             this.groupBox3.TabIndex = 27;
             this.groupBox3.TabStop = false;
             // 
-            // button16
+            // btnClearBillard7
             // 
-            this.button16.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(128, 45);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(45, 39);
-            this.button16.TabIndex = 22;
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.UseVisualStyleBackColor = false;
+            this.btnClearBillard7.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearBillard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearBillard7.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearBillard7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearBillard7.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearBillard7.Location = new System.Drawing.Point(112, 93);
+            this.btnClearBillard7.Name = "btnClearBillard7";
+            this.btnClearBillard7.Size = new System.Drawing.Size(42, 38);
+            this.btnClearBillard7.TabIndex = 23;
+            this.btnClearBillard7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearBillard7.UseVisualStyleBackColor = false;
+            this.btnClearBillard7.Click += new System.EventHandler(this.btnClearBillard7_Click);
             // 
-            // button17
+            // txtHoursBillard7
             // 
-            this.button17.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(179, 45);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(45, 39);
-            this.button17.TabIndex = 21;
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.UseVisualStyleBackColor = false;
+            this.txtHoursBillard7.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtHoursBillard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtHoursBillard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoursBillard7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtHoursBillard7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard7.Location = new System.Drawing.Point(128, 45);
+            this.txtHoursBillard7.Name = "txtHoursBillard7";
+            this.txtHoursBillard7.Size = new System.Drawing.Size(45, 39);
+            this.txtHoursBillard7.TabIndex = 22;
+            this.txtHoursBillard7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard7.UseVisualStyleBackColor = false;
             // 
-            // button18
+            // TxtMinuteBillard7
             // 
-            this.button18.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(164, 91);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(111, 40);
-            this.button18.TabIndex = 19;
-            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard7.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtMinuteBillard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TxtMinuteBillard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMinuteBillard7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtMinuteBillard7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard7.Location = new System.Drawing.Point(179, 45);
+            this.TxtMinuteBillard7.Name = "TxtMinuteBillard7";
+            this.TxtMinuteBillard7.Size = new System.Drawing.Size(45, 39);
+            this.TxtMinuteBillard7.TabIndex = 21;
+            this.TxtMinuteBillard7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard7.UseVisualStyleBackColor = false;
             // 
-            // button19
+            // btnPrixBillard7
             // 
-            this.button19.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(230, 46);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(45, 39);
-            this.button19.TabIndex = 17;
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.UseVisualStyleBackColor = false;
+            this.btnPrixBillard7.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBillard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBillard7.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold);
+            this.btnPrixBillard7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPrixBillard7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBillard7.Location = new System.Drawing.Point(164, 91);
+            this.btnPrixBillard7.Name = "btnPrixBillard7";
+            this.btnPrixBillard7.Size = new System.Drawing.Size(111, 40);
+            this.btnPrixBillard7.TabIndex = 19;
+            this.btnPrixBillard7.UseVisualStyleBackColor = false;
+            this.btnPrixBillard7.Click += new System.EventHandler(this.btnPrixBillard7_Click);
             // 
-            // button20
+            // txtSecondeBillard7
             // 
-            this.button20.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Image = ((System.Drawing.Image)(resources.GetObject("button20.Image")));
-            this.button20.Location = new System.Drawing.Point(11, 93);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(62, 38);
-            this.button20.TabIndex = 14;
-            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.UseVisualStyleBackColor = false;
+            this.txtSecondeBillard7.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtSecondeBillard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSecondeBillard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecondeBillard7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtSecondeBillard7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard7.Location = new System.Drawing.Point(230, 46);
+            this.txtSecondeBillard7.Name = "txtSecondeBillard7";
+            this.txtSecondeBillard7.Size = new System.Drawing.Size(45, 39);
+            this.txtSecondeBillard7.TabIndex = 17;
+            this.txtSecondeBillard7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard7.UseVisualStyleBackColor = false;
             // 
-            // button21
+            // btnStartBillard7
             // 
-            this.button21.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.Color.White;
-            this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
-            this.button21.Location = new System.Drawing.Point(87, 96);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(62, 38);
-            this.button21.TabIndex = 13;
-            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.UseVisualStyleBackColor = false;
+            this.btnStartBillard7.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartBillard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartBillard7.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartBillard7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnStartBillard7.Image = ((System.Drawing.Image)(resources.GetObject("btnStartBillard7.Image")));
+            this.btnStartBillard7.Location = new System.Drawing.Point(11, 93);
+            this.btnStartBillard7.Name = "btnStartBillard7";
+            this.btnStartBillard7.Size = new System.Drawing.Size(42, 38);
+            this.btnStartBillard7.TabIndex = 14;
+            this.btnStartBillard7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartBillard7.UseVisualStyleBackColor = false;
+            this.btnStartBillard7.Click += new System.EventHandler(this.btnStartBillard7_Click);
             // 
-            // label3
+            // btnRestBillard7
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 24);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "label3";
+            this.btnRestBillard7.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBillard7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBillard7.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBillard7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRestBillard7.Image = ((System.Drawing.Image)(resources.GetObject("btnRestBillard7.Image")));
+            this.btnRestBillard7.Location = new System.Drawing.Point(59, 93);
+            this.btnRestBillard7.Name = "btnRestBillard7";
+            this.btnRestBillard7.Size = new System.Drawing.Size(42, 38);
+            this.btnRestBillard7.TabIndex = 13;
+            this.btnRestBillard7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBillard7.UseVisualStyleBackColor = false;
+            this.btnRestBillard7.Click += new System.EventHandler(this.btnRestBillard7_Click);
+            // 
+            // lblNameJ7
+            // 
+            this.lblNameJ7.AutoSize = true;
+            this.lblNameJ7.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblNameJ7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameJ7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNameJ7.Location = new System.Drawing.Point(7, 52);
+            this.lblNameJ7.Name = "lblNameJ7";
+            this.lblNameJ7.Size = new System.Drawing.Size(66, 24);
+            this.lblNameJ7.TabIndex = 0;
+            this.lblNameJ7.Text = "label3";
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button22);
-            this.groupBox4.Controls.Add(this.button23);
-            this.groupBox4.Controls.Add(this.button24);
-            this.groupBox4.Controls.Add(this.button25);
-            this.groupBox4.Controls.Add(this.button26);
-            this.groupBox4.Controls.Add(this.button27);
-            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.btnClearBillard5);
+            this.groupBox4.Controls.Add(this.txtHoursBillard5);
+            this.groupBox4.Controls.Add(this.TxtMinuteBillard5);
+            this.groupBox4.Controls.Add(this.btnPrixBillard5);
+            this.groupBox4.Controls.Add(this.txtSecondeBillard5);
+            this.groupBox4.Controls.Add(this.btnStartBillard5);
+            this.groupBox4.Controls.Add(this.btnRestBillard5);
+            this.groupBox4.Controls.Add(this.lblNameJ5);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox4.Location = new System.Drawing.Point(511, 243);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(281, 140);
             this.groupBox4.TabIndex = 26;
             this.groupBox4.TabStop = false;
             // 
-            // button22
+            // btnClearBillard5
             // 
-            this.button22.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(134, 45);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(45, 39);
-            this.button22.TabIndex = 22;
-            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.UseVisualStyleBackColor = false;
+            this.btnClearBillard5.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearBillard5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearBillard5.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearBillard5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearBillard5.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearBillard5.Location = new System.Drawing.Point(114, 93);
+            this.btnClearBillard5.Name = "btnClearBillard5";
+            this.btnClearBillard5.Size = new System.Drawing.Size(42, 38);
+            this.btnClearBillard5.TabIndex = 23;
+            this.btnClearBillard5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearBillard5.UseVisualStyleBackColor = false;
+            this.btnClearBillard5.Click += new System.EventHandler(this.btnClearBillard5_Click);
             // 
-            // button23
+            // txtHoursBillard5
             // 
-            this.button23.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.ForeColor = System.Drawing.Color.White;
-            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.Location = new System.Drawing.Point(185, 45);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(45, 39);
-            this.button23.TabIndex = 21;
-            this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.UseVisualStyleBackColor = false;
+            this.txtHoursBillard5.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtHoursBillard5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtHoursBillard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoursBillard5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtHoursBillard5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard5.Location = new System.Drawing.Point(128, 46);
+            this.txtHoursBillard5.Name = "txtHoursBillard5";
+            this.txtHoursBillard5.Size = new System.Drawing.Size(45, 39);
+            this.txtHoursBillard5.TabIndex = 22;
+            this.txtHoursBillard5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard5.UseVisualStyleBackColor = false;
+            this.txtHoursBillard5.Click += new System.EventHandler(this.txtHoursBillard5_Click);
             // 
-            // button24
+            // TxtMinuteBillard5
             // 
-            this.button24.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.ForeColor = System.Drawing.Color.White;
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.Location = new System.Drawing.Point(164, 91);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(111, 40);
-            this.button24.TabIndex = 19;
-            this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard5.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtMinuteBillard5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TxtMinuteBillard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMinuteBillard5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtMinuteBillard5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard5.Location = new System.Drawing.Point(179, 45);
+            this.TxtMinuteBillard5.Name = "TxtMinuteBillard5";
+            this.TxtMinuteBillard5.Size = new System.Drawing.Size(45, 39);
+            this.TxtMinuteBillard5.TabIndex = 21;
+            this.TxtMinuteBillard5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard5.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard5.Click += new System.EventHandler(this.TxtMinuteBillard5_Click);
             // 
-            // button25
+            // btnPrixBillard5
             // 
-            this.button25.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.ForeColor = System.Drawing.Color.White;
-            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.Location = new System.Drawing.Point(236, 46);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(45, 39);
-            this.button25.TabIndex = 17;
-            this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.UseVisualStyleBackColor = false;
+            this.btnPrixBillard5.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBillard5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBillard5.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold);
+            this.btnPrixBillard5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPrixBillard5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBillard5.Location = new System.Drawing.Point(164, 91);
+            this.btnPrixBillard5.Name = "btnPrixBillard5";
+            this.btnPrixBillard5.Size = new System.Drawing.Size(111, 40);
+            this.btnPrixBillard5.TabIndex = 19;
+            this.btnPrixBillard5.UseVisualStyleBackColor = false;
             // 
-            // button26
+            // txtSecondeBillard5
             // 
-            this.button26.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.ForeColor = System.Drawing.Color.White;
-            this.button26.Image = ((System.Drawing.Image)(resources.GetObject("button26.Image")));
-            this.button26.Location = new System.Drawing.Point(11, 93);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(62, 38);
-            this.button26.TabIndex = 14;
-            this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button26.UseVisualStyleBackColor = false;
+            this.txtSecondeBillard5.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtSecondeBillard5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSecondeBillard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecondeBillard5.ForeColor = System.Drawing.Color.Black;
+            this.txtSecondeBillard5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard5.Location = new System.Drawing.Point(230, 46);
+            this.txtSecondeBillard5.Name = "txtSecondeBillard5";
+            this.txtSecondeBillard5.Size = new System.Drawing.Size(45, 39);
+            this.txtSecondeBillard5.TabIndex = 17;
+            this.txtSecondeBillard5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard5.UseVisualStyleBackColor = false;
             // 
-            // button27
+            // btnStartBillard5
             // 
-            this.button27.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.ForeColor = System.Drawing.Color.White;
-            this.button27.Image = ((System.Drawing.Image)(resources.GetObject("button27.Image")));
-            this.button27.Location = new System.Drawing.Point(87, 96);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(62, 38);
-            this.button27.TabIndex = 13;
-            this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button27.UseVisualStyleBackColor = false;
+            this.btnStartBillard5.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartBillard5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartBillard5.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartBillard5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnStartBillard5.Image = ((System.Drawing.Image)(resources.GetObject("btnStartBillard5.Image")));
+            this.btnStartBillard5.Location = new System.Drawing.Point(11, 93);
+            this.btnStartBillard5.Name = "btnStartBillard5";
+            this.btnStartBillard5.Size = new System.Drawing.Size(42, 38);
+            this.btnStartBillard5.TabIndex = 14;
+            this.btnStartBillard5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartBillard5.UseVisualStyleBackColor = false;
+            this.btnStartBillard5.Click += new System.EventHandler(this.btnStartBillard5_Click);
             // 
-            // label4
+            // btnRestBillard5
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 52);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 24);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "label4";
+            this.btnRestBillard5.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBillard5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBillard5.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBillard5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRestBillard5.Image = ((System.Drawing.Image)(resources.GetObject("btnRestBillard5.Image")));
+            this.btnRestBillard5.Location = new System.Drawing.Point(63, 93);
+            this.btnRestBillard5.Name = "btnRestBillard5";
+            this.btnRestBillard5.Size = new System.Drawing.Size(42, 38);
+            this.btnRestBillard5.TabIndex = 13;
+            this.btnRestBillard5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBillard5.UseVisualStyleBackColor = false;
+            this.btnRestBillard5.Click += new System.EventHandler(this.btnRestBillard5_Click);
+            // 
+            // lblNameJ5
+            // 
+            this.lblNameJ5.AutoSize = true;
+            this.lblNameJ5.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblNameJ5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameJ5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNameJ5.Location = new System.Drawing.Point(13, 52);
+            this.lblNameJ5.Name = "lblNameJ5";
+            this.lblNameJ5.Size = new System.Drawing.Size(68, 24);
+            this.lblNameJ5.TabIndex = 0;
+            this.lblNameJ5.Text = "Billard";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.button28);
-            this.groupBox5.Controls.Add(this.button29);
-            this.groupBox5.Controls.Add(this.button30);
-            this.groupBox5.Controls.Add(this.button31);
-            this.groupBox5.Controls.Add(this.button32);
-            this.groupBox5.Controls.Add(this.button33);
-            this.groupBox5.Controls.Add(this.label5);
+            this.groupBox5.Controls.Add(this.btnClearBillard2);
+            this.groupBox5.Controls.Add(this.txtHoursBillard2);
+            this.groupBox5.Controls.Add(this.TxtMinuteBillard2);
+            this.groupBox5.Controls.Add(this.btnPrixBillard2);
+            this.groupBox5.Controls.Add(this.txtSecondeBillard2);
+            this.groupBox5.Controls.Add(this.btnStartBillard2);
+            this.groupBox5.Controls.Add(this.btnRestBillard2);
+            this.groupBox5.Controls.Add(this.lblNameJ2);
             this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox5.Location = new System.Drawing.Point(511, 100);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(281, 140);
             this.groupBox5.TabIndex = 25;
             this.groupBox5.TabStop = false;
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
-            // button28
+            // btnClearBillard2
             // 
-            this.button28.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.ForeColor = System.Drawing.Color.White;
-            this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button28.Location = new System.Drawing.Point(128, 45);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(45, 39);
-            this.button28.TabIndex = 22;
-            this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button28.UseVisualStyleBackColor = false;
+            this.btnClearBillard2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearBillard2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearBillard2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearBillard2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearBillard2.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearBillard2.Location = new System.Drawing.Point(114, 94);
+            this.btnClearBillard2.Name = "btnClearBillard2";
+            this.btnClearBillard2.Size = new System.Drawing.Size(44, 38);
+            this.btnClearBillard2.TabIndex = 23;
+            this.btnClearBillard2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearBillard2.UseVisualStyleBackColor = false;
+            this.btnClearBillard2.Click += new System.EventHandler(this.btnClearBillard2_Click);
             // 
-            // button29
+            // txtHoursBillard2
             // 
-            this.button29.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button29.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.ForeColor = System.Drawing.Color.White;
-            this.button29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button29.Location = new System.Drawing.Point(179, 45);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(45, 39);
-            this.button29.TabIndex = 21;
-            this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button29.UseVisualStyleBackColor = false;
+            this.txtHoursBillard2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtHoursBillard2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtHoursBillard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoursBillard2.ForeColor = System.Drawing.Color.Black;
+            this.txtHoursBillard2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard2.Location = new System.Drawing.Point(128, 45);
+            this.txtHoursBillard2.Name = "txtHoursBillard2";
+            this.txtHoursBillard2.Size = new System.Drawing.Size(45, 39);
+            this.txtHoursBillard2.TabIndex = 22;
+            this.txtHoursBillard2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard2.UseVisualStyleBackColor = false;
+            this.txtHoursBillard2.Click += new System.EventHandler(this.txtHoursBillard2_Click);
             // 
-            // button30
+            // TxtMinuteBillard2
             // 
-            this.button30.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(164, 91);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(111, 40);
-            this.button30.TabIndex = 19;
-            this.button30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtMinuteBillard2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TxtMinuteBillard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMinuteBillard2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtMinuteBillard2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard2.Location = new System.Drawing.Point(179, 45);
+            this.TxtMinuteBillard2.Name = "TxtMinuteBillard2";
+            this.TxtMinuteBillard2.Size = new System.Drawing.Size(45, 39);
+            this.TxtMinuteBillard2.TabIndex = 21;
+            this.TxtMinuteBillard2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard2.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard2.Click += new System.EventHandler(this.TxtMinuteBillard2_Click);
             // 
-            // button31
+            // btnPrixBillard2
             // 
-            this.button31.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button31.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button31.ForeColor = System.Drawing.Color.White;
-            this.button31.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button31.Location = new System.Drawing.Point(230, 46);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(45, 39);
-            this.button31.TabIndex = 17;
-            this.button31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button31.UseVisualStyleBackColor = false;
+            this.btnPrixBillard2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBillard2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBillard2.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold);
+            this.btnPrixBillard2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPrixBillard2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBillard2.Location = new System.Drawing.Point(164, 91);
+            this.btnPrixBillard2.Name = "btnPrixBillard2";
+            this.btnPrixBillard2.Size = new System.Drawing.Size(111, 40);
+            this.btnPrixBillard2.TabIndex = 19;
+            this.btnPrixBillard2.UseVisualStyleBackColor = false;
+            this.btnPrixBillard2.Click += new System.EventHandler(this.btnPrixBillard2_Click);
             // 
-            // button32
+            // txtSecondeBillard2
             // 
-            this.button32.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button32.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.ForeColor = System.Drawing.Color.White;
-            this.button32.Image = ((System.Drawing.Image)(resources.GetObject("button32.Image")));
-            this.button32.Location = new System.Drawing.Point(11, 93);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(62, 38);
-            this.button32.TabIndex = 14;
-            this.button32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button32.UseVisualStyleBackColor = false;
+            this.txtSecondeBillard2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtSecondeBillard2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSecondeBillard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecondeBillard2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtSecondeBillard2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard2.Location = new System.Drawing.Point(230, 46);
+            this.txtSecondeBillard2.Name = "txtSecondeBillard2";
+            this.txtSecondeBillard2.Size = new System.Drawing.Size(45, 39);
+            this.txtSecondeBillard2.TabIndex = 17;
+            this.txtSecondeBillard2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard2.UseVisualStyleBackColor = false;
+            this.txtSecondeBillard2.Click += new System.EventHandler(this.txtSecondeBillard2_Click);
             // 
-            // button33
+            // btnStartBillard2
             // 
-            this.button33.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button33.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button33.ForeColor = System.Drawing.Color.White;
-            this.button33.Image = ((System.Drawing.Image)(resources.GetObject("button33.Image")));
-            this.button33.Location = new System.Drawing.Point(87, 96);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(62, 38);
-            this.button33.TabIndex = 13;
-            this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button33.UseVisualStyleBackColor = false;
+            this.btnStartBillard2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartBillard2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartBillard2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartBillard2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnStartBillard2.Image = ((System.Drawing.Image)(resources.GetObject("btnStartBillard2.Image")));
+            this.btnStartBillard2.Location = new System.Drawing.Point(11, 93);
+            this.btnStartBillard2.Name = "btnStartBillard2";
+            this.btnStartBillard2.Size = new System.Drawing.Size(44, 38);
+            this.btnStartBillard2.TabIndex = 14;
+            this.btnStartBillard2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartBillard2.UseVisualStyleBackColor = false;
+            this.btnStartBillard2.Click += new System.EventHandler(this.btnStartBillard2_Click);
             // 
-            // label5
+            // btnRestBillard2
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 48);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 24);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "label1";
+            this.btnRestBillard2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBillard2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBillard2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBillard2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRestBillard2.Image = ((System.Drawing.Image)(resources.GetObject("btnRestBillard2.Image")));
+            this.btnRestBillard2.Location = new System.Drawing.Point(61, 94);
+            this.btnRestBillard2.Name = "btnRestBillard2";
+            this.btnRestBillard2.Size = new System.Drawing.Size(44, 38);
+            this.btnRestBillard2.TabIndex = 13;
+            this.btnRestBillard2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBillard2.UseVisualStyleBackColor = false;
+            this.btnRestBillard2.Click += new System.EventHandler(this.button33_Click);
+            // 
+            // lblNameJ2
+            // 
+            this.lblNameJ2.AutoSize = true;
+            this.lblNameJ2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblNameJ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameJ2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNameJ2.Location = new System.Drawing.Point(7, 48);
+            this.lblNameJ2.Name = "lblNameJ2";
+            this.lblNameJ2.Size = new System.Drawing.Size(69, 24);
+            this.lblNameJ2.TabIndex = 0;
+            this.lblNameJ2.Text = "8 Bool";
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.button34);
-            this.groupBox6.Controls.Add(this.button35);
-            this.groupBox6.Controls.Add(this.button36);
-            this.groupBox6.Controls.Add(this.button37);
-            this.groupBox6.Controls.Add(this.button38);
-            this.groupBox6.Controls.Add(this.button39);
-            this.groupBox6.Controls.Add(this.label6);
+            this.groupBox6.Controls.Add(this.btnClearBillard3);
+            this.groupBox6.Controls.Add(this.txtHoursBillard3);
+            this.groupBox6.Controls.Add(this.TxtMinuteBillard3);
+            this.groupBox6.Controls.Add(this.btnPrixBillard3);
+            this.groupBox6.Controls.Add(this.txtSecondeBillard3);
+            this.groupBox6.Controls.Add(this.btnStartBillard3);
+            this.groupBox6.Controls.Add(this.btnRestBillard3);
+            this.groupBox6.Controls.Add(this.lblNameJ3);
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox6.Location = new System.Drawing.Point(798, 116);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(281, 186);
             this.groupBox6.TabIndex = 26;
             this.groupBox6.TabStop = false;
             // 
-            // button34
+            // btnClearBillard3
             // 
-            this.button34.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button34.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.ForeColor = System.Drawing.Color.White;
-            this.button34.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button34.Location = new System.Drawing.Point(96, 27);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(45, 39);
-            this.button34.TabIndex = 22;
-            this.button34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button34.UseVisualStyleBackColor = false;
+            this.btnClearBillard3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearBillard3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearBillard3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearBillard3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearBillard3.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearBillard3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearBillard3.Location = new System.Drawing.Point(198, 67);
+            this.btnClearBillard3.Name = "btnClearBillard3";
+            this.btnClearBillard3.Size = new System.Drawing.Size(45, 39);
+            this.btnClearBillard3.TabIndex = 23;
+            this.btnClearBillard3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearBillard3.UseVisualStyleBackColor = false;
+            this.btnClearBillard3.Click += new System.EventHandler(this.btnClearBillard3_Click);
             // 
-            // button35
+            // txtHoursBillard3
             // 
-            this.button35.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button35.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button35.ForeColor = System.Drawing.Color.White;
-            this.button35.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button35.Location = new System.Drawing.Point(147, 27);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(45, 39);
-            this.button35.TabIndex = 21;
-            this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button35.UseVisualStyleBackColor = false;
+            this.txtHoursBillard3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtHoursBillard3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtHoursBillard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoursBillard3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtHoursBillard3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard3.Location = new System.Drawing.Point(96, 23);
+            this.txtHoursBillard3.Name = "txtHoursBillard3";
+            this.txtHoursBillard3.Size = new System.Drawing.Size(45, 39);
+            this.txtHoursBillard3.TabIndex = 22;
+            this.txtHoursBillard3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard3.UseVisualStyleBackColor = false;
+            this.txtHoursBillard3.Click += new System.EventHandler(this.txtHoursBillard3_Click);
             // 
-            // button36
+            // TxtMinuteBillard3
             // 
-            this.button36.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button36.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button36.ForeColor = System.Drawing.Color.White;
-            this.button36.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button36.Location = new System.Drawing.Point(10, 118);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(232, 39);
-            this.button36.TabIndex = 19;
-            this.button36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button36.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtMinuteBillard3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TxtMinuteBillard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMinuteBillard3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtMinuteBillard3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard3.Location = new System.Drawing.Point(147, 23);
+            this.TxtMinuteBillard3.Name = "TxtMinuteBillard3";
+            this.TxtMinuteBillard3.Size = new System.Drawing.Size(45, 39);
+            this.TxtMinuteBillard3.TabIndex = 21;
+            this.TxtMinuteBillard3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard3.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard3.Click += new System.EventHandler(this.TxtMinuteBillard3_Click);
             // 
-            // button37
+            // btnPrixBillard3
             // 
-            this.button37.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button37.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button37.ForeColor = System.Drawing.Color.White;
-            this.button37.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button37.Location = new System.Drawing.Point(198, 27);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(45, 39);
-            this.button37.TabIndex = 17;
-            this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button37.UseVisualStyleBackColor = false;
+            this.btnPrixBillard3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBillard3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBillard3.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold);
+            this.btnPrixBillard3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPrixBillard3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBillard3.Location = new System.Drawing.Point(10, 114);
+            this.btnPrixBillard3.Name = "btnPrixBillard3";
+            this.btnPrixBillard3.Size = new System.Drawing.Size(232, 39);
+            this.btnPrixBillard3.TabIndex = 19;
+            this.btnPrixBillard3.UseVisualStyleBackColor = false;
             // 
-            // button38
+            // txtSecondeBillard3
             // 
-            this.button38.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button38.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button38.ForeColor = System.Drawing.Color.White;
-            this.button38.Image = ((System.Drawing.Image)(resources.GetObject("button38.Image")));
-            this.button38.Location = new System.Drawing.Point(10, 72);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(96, 38);
-            this.button38.TabIndex = 14;
-            this.button38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button38.UseVisualStyleBackColor = false;
+            this.txtSecondeBillard3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtSecondeBillard3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSecondeBillard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecondeBillard3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtSecondeBillard3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard3.Location = new System.Drawing.Point(198, 23);
+            this.txtSecondeBillard3.Name = "txtSecondeBillard3";
+            this.txtSecondeBillard3.Size = new System.Drawing.Size(45, 39);
+            this.txtSecondeBillard3.TabIndex = 17;
+            this.txtSecondeBillard3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard3.UseVisualStyleBackColor = false;
+            this.txtSecondeBillard3.Click += new System.EventHandler(this.txtSecondeBillard3_Click);
             // 
-            // button39
+            // btnStartBillard3
             // 
-            this.button39.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button39.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button39.ForeColor = System.Drawing.Color.White;
-            this.button39.Image = ((System.Drawing.Image)(resources.GetObject("button39.Image")));
-            this.button39.Location = new System.Drawing.Point(147, 72);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(96, 38);
-            this.button39.TabIndex = 13;
-            this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button39.UseVisualStyleBackColor = false;
-            this.button39.Click += new System.EventHandler(this.button39_Click);
+            this.btnStartBillard3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartBillard3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartBillard3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartBillard3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnStartBillard3.Image = ((System.Drawing.Image)(resources.GetObject("btnStartBillard3.Image")));
+            this.btnStartBillard3.Location = new System.Drawing.Point(10, 68);
+            this.btnStartBillard3.Name = "btnStartBillard3";
+            this.btnStartBillard3.Size = new System.Drawing.Size(63, 38);
+            this.btnStartBillard3.TabIndex = 14;
+            this.btnStartBillard3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartBillard3.UseVisualStyleBackColor = false;
+            this.btnStartBillard3.Click += new System.EventHandler(this.btnStartBillard3_Click);
             // 
-            // label6
+            // btnRestBillard3
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 33);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 24);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "label1";
+            this.btnRestBillard3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBillard3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBillard3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBillard3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRestBillard3.Image = ((System.Drawing.Image)(resources.GetObject("btnRestBillard3.Image")));
+            this.btnRestBillard3.Location = new System.Drawing.Point(96, 68);
+            this.btnRestBillard3.Name = "btnRestBillard3";
+            this.btnRestBillard3.Size = new System.Drawing.Size(96, 39);
+            this.btnRestBillard3.TabIndex = 13;
+            this.btnRestBillard3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBillard3.UseVisualStyleBackColor = false;
+            this.btnRestBillard3.Click += new System.EventHandler(this.button39_Click);
+            // 
+            // lblNameJ3
+            // 
+            this.lblNameJ3.AutoSize = true;
+            this.lblNameJ3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblNameJ3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameJ3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNameJ3.Location = new System.Drawing.Point(6, 29);
+            this.lblNameJ3.Name = "lblNameJ3";
+            this.lblNameJ3.Size = new System.Drawing.Size(68, 24);
+            this.lblNameJ3.TabIndex = 0;
+            this.lblNameJ3.Text = "Billard";
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.button40);
-            this.groupBox7.Controls.Add(this.button41);
-            this.groupBox7.Controls.Add(this.button42);
-            this.groupBox7.Controls.Add(this.button43);
-            this.groupBox7.Controls.Add(this.button44);
-            this.groupBox7.Controls.Add(this.button45);
-            this.groupBox7.Controls.Add(this.label7);
+            this.groupBox7.Controls.Add(this.btnClearBillard8);
+            this.groupBox7.Controls.Add(this.txtHoursBillard8);
+            this.groupBox7.Controls.Add(this.TxtMinuteBillard8);
+            this.groupBox7.Controls.Add(this.btnPrixBillard8);
+            this.groupBox7.Controls.Add(this.txtSecondeBillard8);
+            this.groupBox7.Controls.Add(this.btnStartBillard8);
+            this.groupBox7.Controls.Add(this.btnRestBillard8);
+            this.groupBox7.Controls.Add(this.lblNameJ8);
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox7.Location = new System.Drawing.Point(798, 334);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(281, 192);
             this.groupBox7.TabIndex = 27;
             this.groupBox7.TabStop = false;
             // 
-            // button40
+            // btnClearBillard8
             // 
-            this.button40.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button40.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button40.ForeColor = System.Drawing.Color.White;
-            this.button40.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button40.Location = new System.Drawing.Point(96, 55);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(45, 39);
-            this.button40.TabIndex = 22;
-            this.button40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button40.UseVisualStyleBackColor = false;
+            this.btnClearBillard8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearBillard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearBillard8.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearBillard8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearBillard8.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearBillard8.Location = new System.Drawing.Point(198, 100);
+            this.btnClearBillard8.Name = "btnClearBillard8";
+            this.btnClearBillard8.Size = new System.Drawing.Size(45, 39);
+            this.btnClearBillard8.TabIndex = 24;
+            this.btnClearBillard8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearBillard8.UseVisualStyleBackColor = false;
+            this.btnClearBillard8.Click += new System.EventHandler(this.btnClearBillard8_Click);
             // 
-            // button41
+            // txtHoursBillard8
             // 
-            this.button41.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button41.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button41.ForeColor = System.Drawing.Color.White;
-            this.button41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button41.Location = new System.Drawing.Point(147, 55);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(45, 39);
-            this.button41.TabIndex = 21;
-            this.button41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button41.UseVisualStyleBackColor = false;
+            this.txtHoursBillard8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtHoursBillard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtHoursBillard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoursBillard8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtHoursBillard8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard8.Location = new System.Drawing.Point(96, 55);
+            this.txtHoursBillard8.Name = "txtHoursBillard8";
+            this.txtHoursBillard8.Size = new System.Drawing.Size(45, 39);
+            this.txtHoursBillard8.TabIndex = 22;
+            this.txtHoursBillard8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtHoursBillard8.UseVisualStyleBackColor = false;
             // 
-            // button42
+            // TxtMinuteBillard8
             // 
-            this.button42.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button42.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button42.ForeColor = System.Drawing.Color.White;
-            this.button42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button42.Location = new System.Drawing.Point(11, 146);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(232, 40);
-            this.button42.TabIndex = 19;
-            this.button42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button42.UseVisualStyleBackColor = false;
+            this.TxtMinuteBillard8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtMinuteBillard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TxtMinuteBillard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMinuteBillard8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtMinuteBillard8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard8.Location = new System.Drawing.Point(147, 55);
+            this.TxtMinuteBillard8.Name = "TxtMinuteBillard8";
+            this.TxtMinuteBillard8.Size = new System.Drawing.Size(45, 39);
+            this.TxtMinuteBillard8.TabIndex = 21;
+            this.TxtMinuteBillard8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtMinuteBillard8.UseVisualStyleBackColor = false;
             // 
-            // button43
+            // btnPrixBillard8
             // 
-            this.button43.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button43.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button43.ForeColor = System.Drawing.Color.White;
-            this.button43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button43.Location = new System.Drawing.Point(198, 55);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(45, 39);
-            this.button43.TabIndex = 17;
-            this.button43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button43.UseVisualStyleBackColor = false;
+            this.btnPrixBillard8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBillard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBillard8.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold);
+            this.btnPrixBillard8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPrixBillard8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBillard8.Location = new System.Drawing.Point(11, 146);
+            this.btnPrixBillard8.Name = "btnPrixBillard8";
+            this.btnPrixBillard8.Size = new System.Drawing.Size(232, 40);
+            this.btnPrixBillard8.TabIndex = 19;
+            this.btnPrixBillard8.UseVisualStyleBackColor = false;
             // 
-            // button44
+            // txtSecondeBillard8
             // 
-            this.button44.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button44.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button44.ForeColor = System.Drawing.Color.White;
-            this.button44.Image = ((System.Drawing.Image)(resources.GetObject("button44.Image")));
-            this.button44.Location = new System.Drawing.Point(11, 100);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(96, 38);
-            this.button44.TabIndex = 14;
-            this.button44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button44.UseVisualStyleBackColor = false;
+            this.txtSecondeBillard8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtSecondeBillard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSecondeBillard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecondeBillard8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtSecondeBillard8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard8.Location = new System.Drawing.Point(198, 55);
+            this.txtSecondeBillard8.Name = "txtSecondeBillard8";
+            this.txtSecondeBillard8.Size = new System.Drawing.Size(45, 39);
+            this.txtSecondeBillard8.TabIndex = 17;
+            this.txtSecondeBillard8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtSecondeBillard8.UseVisualStyleBackColor = false;
             // 
-            // button45
+            // btnStartBillard8
             // 
-            this.button45.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button45.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button45.ForeColor = System.Drawing.Color.White;
-            this.button45.Image = ((System.Drawing.Image)(resources.GetObject("button45.Image")));
-            this.button45.Location = new System.Drawing.Point(147, 100);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(96, 38);
-            this.button45.TabIndex = 13;
-            this.button45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button45.UseVisualStyleBackColor = false;
+            this.btnStartBillard8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartBillard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartBillard8.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartBillard8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnStartBillard8.Image = ((System.Drawing.Image)(resources.GetObject("btnStartBillard8.Image")));
+            this.btnStartBillard8.Location = new System.Drawing.Point(11, 100);
+            this.btnStartBillard8.Name = "btnStartBillard8";
+            this.btnStartBillard8.Size = new System.Drawing.Size(62, 38);
+            this.btnStartBillard8.TabIndex = 14;
+            this.btnStartBillard8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartBillard8.UseVisualStyleBackColor = false;
+            this.btnStartBillard8.Click += new System.EventHandler(this.btnStartBillard8_Click);
             // 
-            // label7
+            // btnRestBillard8
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(7, 61);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 24);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "label1";
+            this.btnRestBillard8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBillard8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBillard8.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBillard8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRestBillard8.Image = ((System.Drawing.Image)(resources.GetObject("btnRestBillard8.Image")));
+            this.btnRestBillard8.Location = new System.Drawing.Point(96, 100);
+            this.btnRestBillard8.Name = "btnRestBillard8";
+            this.btnRestBillard8.Size = new System.Drawing.Size(96, 38);
+            this.btnRestBillard8.TabIndex = 13;
+            this.btnRestBillard8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBillard8.UseVisualStyleBackColor = false;
+            this.btnRestBillard8.Click += new System.EventHandler(this.btnRestBillard8_Click);
+            // 
+            // lblNameJ8
+            // 
+            this.lblNameJ8.AutoSize = true;
+            this.lblNameJ8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblNameJ8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameJ8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNameJ8.Location = new System.Drawing.Point(7, 61);
+            this.lblNameJ8.Name = "lblNameJ8";
+            this.lblNameJ8.Size = new System.Drawing.Size(66, 24);
+            this.lblNameJ8.TabIndex = 0;
+            this.lblNameJ8.Text = "label1";
+            // 
+            // timerBillard
+            // 
+            this.timerBillard.Interval = 1000;
+            this.timerBillard.Tick += new System.EventHandler(this.timerBillard_Tick);
+            // 
+            // timerBillard2
+            // 
+            this.timerBillard2.Interval = 1000;
+            this.timerBillard2.Tick += new System.EventHandler(this.timerBillard2_Tick);
+            // 
+            // timerBillard3
+            // 
+            this.timerBillard3.Interval = 1000;
+            this.timerBillard3.Tick += new System.EventHandler(this.timerBillard3_Tick);
+            // 
+            // timerBillard4
+            // 
+            this.timerBillard4.Interval = 1000;
+            this.timerBillard4.Tick += new System.EventHandler(this.timerBillard4_Tick);
+            // 
+            // timerBillard5
+            // 
+            this.timerBillard5.Interval = 1000;
+            this.timerBillard5.Tick += new System.EventHandler(this.timerBillard5_Tick);
+            // 
+            // timerBillard6
+            // 
+            this.timerBillard6.Interval = 1000;
+            this.timerBillard6.Tick += new System.EventHandler(this.timerBillard6_Tick);
+            // 
+            // timerBillard7
+            // 
+            this.timerBillard7.Interval = 1000;
+            this.timerBillard7.Tick += new System.EventHandler(this.timerBillard7_Tick);
+            // 
+            // timerBillard8
+            // 
+            this.timerBillard8.Interval = 1000;
+            this.timerBillard8.Tick += new System.EventHandler(this.timerBillard8_Tick);
+            // 
+            // timerBillard1
+            // 
+            this.timerBillard1.Interval = 1000;
+            this.timerBillard1.Tick += new System.EventHandler(this.timerBillard1_Tick);
             // 
             // FrmBillard
             // 
@@ -1324,10 +1538,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         #endregion
         private System.Windows.Forms.GroupBox GbJ1;
         private System.Windows.Forms.Label LblNameJ1;
-        private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnRest;
-        private System.Windows.Forms.Button btnSeconde;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnStartbillard1;
+        private System.Windows.Forms.Button btnRestBillard1;
+        private System.Windows.Forms.Button btnPrixBillard1;
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.Label lblBillHot;
         private System.Windows.Forms.Button button1;
@@ -1342,68 +1555,85 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnADDBillArd;
+        private System.Windows.Forms.Button btnEditBillard;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button47;
-        private System.Windows.Forms.Button btnHoure;
-        private System.Windows.Forms.Button btnMinute;
-        public System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button txtHoursBillard4;
+        private System.Windows.Forms.Button TxtMinuteBillard4;
+        private System.Windows.Forms.Button btnPrixBillard4;
+        private System.Windows.Forms.Button txtSecondeBillard4;
+        private System.Windows.Forms.Button btnStartBillard4;
+        private System.Windows.Forms.Button btnRestBillard4;
+        private System.Windows.Forms.Label lblNameJ4;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button txtHoursBillard6;
+        private System.Windows.Forms.Button TxtMinuteBillard6;
+        private System.Windows.Forms.Button btnPrixBillard6;
+        private System.Windows.Forms.Button txtSecondeBillard6;
+        private System.Windows.Forms.Button btnStartBillard6;
+        private System.Windows.Forms.Button btnRestBillard6;
+        private System.Windows.Forms.Label lblNameJ6;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button txtHoursBillard7;
+        private System.Windows.Forms.Button TxtMinuteBillard7;
+        private System.Windows.Forms.Button btnPrixBillard7;
+        private System.Windows.Forms.Button txtSecondeBillard7;
+        private System.Windows.Forms.Button btnStartBillard7;
+        private System.Windows.Forms.Button btnRestBillard7;
+        private System.Windows.Forms.Label lblNameJ7;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button txtHoursBillard5;
+        private System.Windows.Forms.Button TxtMinuteBillard5;
+        private System.Windows.Forms.Button btnPrixBillard5;
+        private System.Windows.Forms.Button txtSecondeBillard5;
+        private System.Windows.Forms.Button btnStartBillard5;
+        private System.Windows.Forms.Button btnRestBillard5;
+        private System.Windows.Forms.Label lblNameJ5;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button txtHoursBillard2;
+        private System.Windows.Forms.Button TxtMinuteBillard2;
+        private System.Windows.Forms.Button btnPrixBillard2;
+        private System.Windows.Forms.Button txtSecondeBillard2;
+        private System.Windows.Forms.Button btnStartBillard2;
+        private System.Windows.Forms.Button btnRestBillard2;
+        private System.Windows.Forms.Label lblNameJ2;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button txtHoursBillard3;
+        private System.Windows.Forms.Button TxtMinuteBillard3;
+        private System.Windows.Forms.Button btnPrixBillard3;
+        private System.Windows.Forms.Button txtSecondeBillard3;
+        private System.Windows.Forms.Button btnStartBillard3;
+        private System.Windows.Forms.Button btnRestBillard3;
+        private System.Windows.Forms.Label lblNameJ3;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Button button42;
-        private System.Windows.Forms.Button button43;
-        private System.Windows.Forms.Button button44;
-        private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button txtHoursBillard8;
+        private System.Windows.Forms.Button TxtMinuteBillard8;
+        private System.Windows.Forms.Button btnPrixBillard8;
+        private System.Windows.Forms.Button txtSecondeBillard8;
+        private System.Windows.Forms.Button btnStartBillard8;
+        private System.Windows.Forms.Button btnRestBillard8;
+        private System.Windows.Forms.Label lblNameJ8;
+        private System.Windows.Forms.TextBox TxtMinuteBillard1;
+        private System.Windows.Forms.TextBox txtHoursBillard1;
+        private System.Windows.Forms.TextBox txtSecondeBillard1;
+        private System.Windows.Forms.Timer timerBillard;
+        private System.Windows.Forms.Button btnClearBillard1;
+        private System.Windows.Forms.Button btnClearBillard2;
+        private System.Windows.Forms.Button btnClearBillard3;
+        private System.Windows.Forms.Button btnClearBillard4;
+        private System.Windows.Forms.Button btnClearBillard6;
+        private System.Windows.Forms.Button btnClearBillard5;
+        private System.Windows.Forms.Button btnClearBillard7;
+        private System.Windows.Forms.Button btnClearBillard8;
+        private System.Windows.Forms.Timer timerBillard2;
+        private System.Windows.Forms.Timer timerBillard3;
+        private System.Windows.Forms.Timer timerBillard4;
+        private System.Windows.Forms.Timer timerBillard5;
+        private System.Windows.Forms.Timer timerBillard6;
+        private System.Windows.Forms.Timer timerBillard7;
+        private System.Windows.Forms.Timer timerBillard8;
+        private System.Windows.Forms.Timer timerBillard1;
     }
 }

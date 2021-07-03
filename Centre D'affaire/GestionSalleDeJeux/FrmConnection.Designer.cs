@@ -37,7 +37,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.lblConnection = new System.Windows.Forms.Label();
             this.btnForgetPassword = new System.Windows.Forms.Button();
             this.btnConnect = new System.Windows.Forms.Button();
-            this.btnNewMember = new System.Windows.Forms.Button();
             this.errorProviderConnection = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderConnection)).BeginInit();
             this.SuspendLayout();
@@ -96,7 +95,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnForgetPassword.FlatAppearance.BorderSize = 0;
             this.btnForgetPassword.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnForgetPassword.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnForgetPassword.Location = new System.Drawing.Point(53, 206);
+            this.btnForgetPassword.Location = new System.Drawing.Point(130, 206);
             this.btnForgetPassword.Name = "btnForgetPassword";
             this.btnForgetPassword.Size = new System.Drawing.Size(141, 26);
             this.btnForgetPassword.TabIndex = 6;
@@ -118,20 +117,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnConnect.UseVisualStyleBackColor = false;
             this.btnConnect.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnNewMember
-            // 
-            this.btnNewMember.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnNewMember.FlatAppearance.BorderSize = 0;
-            this.btnNewMember.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNewMember.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewMember.Location = new System.Drawing.Point(195, 206);
-            this.btnNewMember.Name = "btnNewMember";
-            this.btnNewMember.Size = new System.Drawing.Size(141, 26);
-            this.btnNewMember.TabIndex = 8;
-            this.btnNewMember.Text = "New Membre";
-            this.btnNewMember.UseVisualStyleBackColor = false;
-            this.btnNewMember.Click += new System.EventHandler(this.btnNewMember_Click);
-            // 
             // errorProviderConnection
             // 
             this.errorProviderConnection.ContainerControl = this;
@@ -142,7 +127,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(408, 244);
-            this.Controls.Add(this.btnNewMember);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.btnForgetPassword);
             this.Controls.Add(this.lblConnection);
@@ -169,7 +153,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private System.Windows.Forms.Label lblConnection;
         private System.Windows.Forms.Button btnForgetPassword;
         private System.Windows.Forms.Button btnConnect;
-        private System.Windows.Forms.Button btnNewMember;
         private System.Windows.Forms.ErrorProvider errorProviderConnection;
     }
 }

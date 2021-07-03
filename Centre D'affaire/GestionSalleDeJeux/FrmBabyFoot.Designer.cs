@@ -29,6 +29,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.FlpMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -40,7 +41,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button46 = new System.Windows.Forms.Button();
+            this.btnEditBabyFoot = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button47 = new System.Windows.Forms.Button();
@@ -48,40 +49,44 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.lblBillHot = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.btnClearArcardS1 = new System.Windows.Forms.Button();
+            this.btnHoursBabyFoot1 = new System.Windows.Forms.Button();
+            this.btnMinuteBabyFoot1 = new System.Windows.Forms.Button();
+            this.btnSecondeBabyFoot1 = new System.Windows.Forms.Button();
+            this.btnPrixBabyFoot1 = new System.Windows.Forms.Button();
+            this.btnStarBabyFoot1 = new System.Windows.Forms.Button();
+            this.btnRestBabyFoot1 = new System.Windows.Forms.Button();
+            this.lblNameBabyFoot1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnClearArcardS3 = new System.Windows.Forms.Button();
+            this.btnHoursBabyFoot3 = new System.Windows.Forms.Button();
+            this.btnMinuteBabyFoot3 = new System.Windows.Forms.Button();
+            this.btnSecondeBabyFoot3 = new System.Windows.Forms.Button();
+            this.btnPrixBabyFoot3 = new System.Windows.Forms.Button();
+            this.btnStarBabyFoot3 = new System.Windows.Forms.Button();
+            this.btnRestBabyFoot3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnClearArcardS4 = new System.Windows.Forms.Button();
+            this.btnHoursBabyFoot4 = new System.Windows.Forms.Button();
+            this.btnMinuteBabyFoot4 = new System.Windows.Forms.Button();
+            this.btnSecondeBabyFoot4 = new System.Windows.Forms.Button();
+            this.btnPrixBabyFoot4 = new System.Windows.Forms.Button();
+            this.btnStarBabyFoot4 = new System.Windows.Forms.Button();
+            this.btnRestBabyFoot4 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.btnClearArcardS2 = new System.Windows.Forms.Button();
+            this.btnHoursBabyFoot2 = new System.Windows.Forms.Button();
+            this.btnMinuteBabyFoot2 = new System.Windows.Forms.Button();
+            this.btnSecondeBabyFoot2 = new System.Windows.Forms.Button();
+            this.btnPrixBabyFoot2 = new System.Windows.Forms.Button();
+            this.btnStarBabyFoot2 = new System.Windows.Forms.Button();
+            this.btnRestBabyFoot2 = new System.Windows.Forms.Button();
+            this.timerBabyFoot1 = new System.Windows.Forms.Timer(this.components);
+            this.timerBabyFoot2 = new System.Windows.Forms.Timer(this.components);
+            this.timerBabyFoot3 = new System.Windows.Forms.Timer(this.components);
+            this.timerBabyFoot4 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.FlpMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,13 +100,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlTitle.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // FlpMenu
@@ -162,7 +163,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.picHome.Image = global::Centre_D_affaire.Properties.Resources.outline_home_black_24dp1;
             this.picHome.Location = new System.Drawing.Point(3, 3);
             this.picHome.Name = "picHome";
-            this.picHome.Size = new System.Drawing.Size(48, 64);
+            this.picHome.Size = new System.Drawing.Size(48, 48);
             this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picHome.TabIndex = 34;
             this.picHome.TabStop = false;
@@ -201,7 +202,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox4.Image = global::Centre_D_affaire.Properties.Resources.outline_help_black_24dp;
             this.pictureBox4.Location = new System.Drawing.Point(3, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 64);
+            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
@@ -224,7 +225,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.button46);
+            this.panel2.Controls.Add(this.btnEditBabyFoot);
             this.panel2.Location = new System.Drawing.Point(3, 392);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(207, 78);
@@ -236,28 +237,28 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_add_box_black_24dp;
+            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_edit_black_24dp;
             this.pictureBox2.Location = new System.Drawing.Point(3, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
-            // button46
+            // btnEditBabyFoot
             // 
-            this.button46.BackColor = System.Drawing.Color.Transparent;
-            this.button46.FlatAppearance.BorderSize = 0;
-            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button46.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button46.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button46.Location = new System.Drawing.Point(71, 2);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(136, 60);
-            this.button46.TabIndex = 30;
-            this.button46.Text = "ADD";
-            this.button46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button46.UseVisualStyleBackColor = false;
+            this.btnEditBabyFoot.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditBabyFoot.FlatAppearance.BorderSize = 0;
+            this.btnEditBabyFoot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditBabyFoot.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditBabyFoot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditBabyFoot.Location = new System.Drawing.Point(71, 2);
+            this.btnEditBabyFoot.Name = "btnEditBabyFoot";
+            this.btnEditBabyFoot.Size = new System.Drawing.Size(136, 60);
+            this.btnEditBabyFoot.TabIndex = 30;
+            this.btnEditBabyFoot.Text = "Edit";
+            this.btnEditBabyFoot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditBabyFoot.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -277,7 +278,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox3.Image = global::Centre_D_affaire.Properties.Resources.outline_support_agent_black_24dp2;
             this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 64);
+            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 34;
             this.pictureBox3.TabStop = false;
@@ -336,138 +337,149 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.button2);
-            this.groupBox6.Controls.Add(this.button34);
-            this.groupBox6.Controls.Add(this.pictureBox7);
-            this.groupBox6.Controls.Add(this.button35);
-            this.groupBox6.Controls.Add(this.button36);
-            this.groupBox6.Controls.Add(this.button37);
-            this.groupBox6.Controls.Add(this.button38);
-            this.groupBox6.Controls.Add(this.label11);
+            this.groupBox6.Controls.Add(this.btnClearArcardS1);
+            this.groupBox6.Controls.Add(this.btnHoursBabyFoot1);
+            this.groupBox6.Controls.Add(this.btnMinuteBabyFoot1);
+            this.groupBox6.Controls.Add(this.btnSecondeBabyFoot1);
+            this.groupBox6.Controls.Add(this.btnPrixBabyFoot1);
+            this.groupBox6.Controls.Add(this.btnStarBabyFoot1);
+            this.groupBox6.Controls.Add(this.btnRestBabyFoot1);
+            this.groupBox6.Controls.Add(this.lblNameBabyFoot1);
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox6.Location = new System.Drawing.Point(221, 120);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(386, 140);
             this.groupBox6.TabIndex = 37;
             this.groupBox6.TabStop = false;
+            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
-            // button2
+            // btnClearArcardS1
             // 
-            this.button2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(117, 92);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(37, 38);
-            this.button2.TabIndex = 37;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnClearArcardS1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearArcardS1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearArcardS1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearArcardS1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearArcardS1.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearArcardS1.Location = new System.Drawing.Point(113, 93);
+            this.btnClearArcardS1.Name = "btnClearArcardS1";
+            this.btnClearArcardS1.Size = new System.Drawing.Size(45, 38);
+            this.btnClearArcardS1.TabIndex = 39;
+            this.btnClearArcardS1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearArcardS1.UseVisualStyleBackColor = false;
+            this.btnClearArcardS1.Click += new System.EventHandler(this.btnClearArcardS1_Click);
             // 
-            // button34
+            // btnHoursBabyFoot1
             // 
-            this.button34.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button34.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.ForeColor = System.Drawing.Color.White;
-            this.button34.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button34.Location = new System.Drawing.Point(160, 92);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(37, 38);
-            this.button34.TabIndex = 36;
-            this.button34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button34.UseVisualStyleBackColor = false;
+            this.btnHoursBabyFoot1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnHoursBabyFoot1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoursBabyFoot1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoursBabyFoot1.ForeColor = System.Drawing.Color.Black;
+            this.btnHoursBabyFoot1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoursBabyFoot1.Location = new System.Drawing.Point(164, 30);
+            this.btnHoursBabyFoot1.Name = "btnHoursBabyFoot1";
+            this.btnHoursBabyFoot1.Size = new System.Drawing.Size(37, 38);
+            this.btnHoursBabyFoot1.TabIndex = 37;
+            this.btnHoursBabyFoot1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoursBabyFoot1.UseVisualStyleBackColor = false;
+            this.btnHoursBabyFoot1.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox7
+            // btnMinuteBabyFoot1
             // 
-            this.pictureBox7.Image = global::Centre_D_affaire.Properties.Resources.regle_jeu_baby_foot1;
-            this.pictureBox7.InitialImage = null;
-            this.pictureBox7.Location = new System.Drawing.Point(164, 13);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(216, 72);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 35;
-            this.pictureBox7.TabStop = false;
+            this.btnMinuteBabyFoot1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMinuteBabyFoot1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinuteBabyFoot1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinuteBabyFoot1.ForeColor = System.Drawing.Color.Black;
+            this.btnMinuteBabyFoot1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinuteBabyFoot1.Location = new System.Drawing.Point(207, 30);
+            this.btnMinuteBabyFoot1.Name = "btnMinuteBabyFoot1";
+            this.btnMinuteBabyFoot1.Size = new System.Drawing.Size(37, 38);
+            this.btnMinuteBabyFoot1.TabIndex = 36;
+            this.btnMinuteBabyFoot1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinuteBabyFoot1.UseVisualStyleBackColor = false;
+            this.btnMinuteBabyFoot1.Click += new System.EventHandler(this.button34_Click);
             // 
-            // button35
+            // btnSecondeBabyFoot1
             // 
-            this.button35.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button35.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button35.ForeColor = System.Drawing.Color.White;
-            this.button35.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button35.Location = new System.Drawing.Point(203, 91);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(37, 40);
-            this.button35.TabIndex = 19;
-            this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button35.UseVisualStyleBackColor = false;
+            this.btnSecondeBabyFoot1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSecondeBabyFoot1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecondeBabyFoot1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSecondeBabyFoot1.ForeColor = System.Drawing.Color.Black;
+            this.btnSecondeBabyFoot1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondeBabyFoot1.Location = new System.Drawing.Point(250, 29);
+            this.btnSecondeBabyFoot1.Name = "btnSecondeBabyFoot1";
+            this.btnSecondeBabyFoot1.Size = new System.Drawing.Size(37, 40);
+            this.btnSecondeBabyFoot1.TabIndex = 19;
+            this.btnSecondeBabyFoot1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondeBabyFoot1.UseVisualStyleBackColor = false;
+            this.btnSecondeBabyFoot1.Click += new System.EventHandler(this.button35_Click);
             // 
-            // button36
+            // btnPrixBabyFoot1
             // 
-            this.button36.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button36.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button36.ForeColor = System.Drawing.Color.White;
-            this.button36.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button36.Location = new System.Drawing.Point(246, 91);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(134, 38);
-            this.button36.TabIndex = 17;
-            this.button36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button36.UseVisualStyleBackColor = false;
+            this.btnPrixBabyFoot1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBabyFoot1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBabyFoot1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrixBabyFoot1.ForeColor = System.Drawing.Color.Black;
+            this.btnPrixBabyFoot1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBabyFoot1.Location = new System.Drawing.Point(164, 93);
+            this.btnPrixBabyFoot1.Name = "btnPrixBabyFoot1";
+            this.btnPrixBabyFoot1.Size = new System.Drawing.Size(123, 38);
+            this.btnPrixBabyFoot1.TabIndex = 17;
+            this.btnPrixBabyFoot1.UseVisualStyleBackColor = false;
+            this.btnPrixBabyFoot1.Click += new System.EventHandler(this.button36_Click);
             // 
-            // button37
+            // btnStarBabyFoot1
             // 
-            this.button37.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button37.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button37.ForeColor = System.Drawing.Color.White;
-            this.button37.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.button37.Location = new System.Drawing.Point(11, 93);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(45, 38);
-            this.button37.TabIndex = 14;
-            this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button37.UseVisualStyleBackColor = false;
+            this.btnStarBabyFoot1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStarBabyFoot1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStarBabyFoot1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStarBabyFoot1.ForeColor = System.Drawing.Color.Black;
+            this.btnStarBabyFoot1.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.btnStarBabyFoot1.Location = new System.Drawing.Point(11, 93);
+            this.btnStarBabyFoot1.Name = "btnStarBabyFoot1";
+            this.btnStarBabyFoot1.Size = new System.Drawing.Size(45, 38);
+            this.btnStarBabyFoot1.TabIndex = 14;
+            this.btnStarBabyFoot1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStarBabyFoot1.UseVisualStyleBackColor = false;
+            this.btnStarBabyFoot1.Click += new System.EventHandler(this.btnStarBabyFoot1_Click);
             // 
-            // button38
+            // btnRestBabyFoot1
             // 
-            this.button38.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button38.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button38.ForeColor = System.Drawing.Color.White;
-            this.button38.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.button38.Location = new System.Drawing.Point(62, 92);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(45, 38);
-            this.button38.TabIndex = 13;
-            this.button38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button38.UseVisualStyleBackColor = false;
+            this.btnRestBabyFoot1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBabyFoot1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBabyFoot1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBabyFoot1.ForeColor = System.Drawing.Color.Black;
+            this.btnRestBabyFoot1.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.btnRestBabyFoot1.Location = new System.Drawing.Point(62, 93);
+            this.btnRestBabyFoot1.Name = "btnRestBabyFoot1";
+            this.btnRestBabyFoot1.Size = new System.Drawing.Size(45, 38);
+            this.btnRestBabyFoot1.TabIndex = 13;
+            this.btnRestBabyFoot1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBabyFoot1.UseVisualStyleBackColor = false;
+            this.btnRestBabyFoot1.Click += new System.EventHandler(this.btnRestBabyFoot1_Click);
             // 
-            // label11
+            // lblNameBabyFoot1
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(7, 20);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 24);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "label1";
+            this.lblNameBabyFoot1.AutoSize = true;
+            this.lblNameBabyFoot1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lblNameBabyFoot1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameBabyFoot1.ForeColor = System.Drawing.Color.Black;
+            this.lblNameBabyFoot1.Location = new System.Drawing.Point(9, 36);
+            this.lblNameBabyFoot1.Name = "lblNameBabyFoot1";
+            this.lblNameBabyFoot1.Size = new System.Drawing.Size(98, 24);
+            this.lblNameBabyFoot1.TabIndex = 0;
+            this.lblNameBabyFoot1.Tag = "";
+            this.lblNameBabyFoot1.Text = "BabyFoot";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button22);
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button8);
-            this.groupBox1.Controls.Add(this.button9);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.btnClearArcardS3);
+            this.groupBox1.Controls.Add(this.btnHoursBabyFoot3);
+            this.groupBox1.Controls.Add(this.btnMinuteBabyFoot3);
+            this.groupBox1.Controls.Add(this.btnSecondeBabyFoot3);
+            this.groupBox1.Controls.Add(this.btnPrixBabyFoot3);
+            this.groupBox1.Controls.Add(this.btnStarBabyFoot3);
+            this.groupBox1.Controls.Add(this.btnRestBabyFoot3);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Location = new System.Drawing.Point(232, 330);
             this.groupBox1.Name = "groupBox1";
@@ -475,123 +487,116 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             // 
-            // button22
+            // btnClearArcardS3
             // 
-            this.button22.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(117, 92);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(37, 38);
-            this.button22.TabIndex = 37;
-            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.UseVisualStyleBackColor = false;
+            this.btnClearArcardS3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearArcardS3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearArcardS3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearArcardS3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearArcardS3.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearArcardS3.Location = new System.Drawing.Point(102, 92);
+            this.btnClearArcardS3.Name = "btnClearArcardS3";
+            this.btnClearArcardS3.Size = new System.Drawing.Size(45, 38);
+            this.btnClearArcardS3.TabIndex = 40;
+            this.btnClearArcardS3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearArcardS3.UseVisualStyleBackColor = false;
+            this.btnClearArcardS3.Click += new System.EventHandler(this.btnClearArcardS3_Click);
             // 
-            // button7
+            // btnHoursBabyFoot3
             // 
-            this.button7.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(160, 92);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(37, 38);
-            this.button7.TabIndex = 36;
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnHoursBabyFoot3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnHoursBabyFoot3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoursBabyFoot3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoursBabyFoot3.ForeColor = System.Drawing.Color.Black;
+            this.btnHoursBabyFoot3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoursBabyFoot3.Location = new System.Drawing.Point(164, 29);
+            this.btnHoursBabyFoot3.Name = "btnHoursBabyFoot3";
+            this.btnHoursBabyFoot3.Size = new System.Drawing.Size(37, 38);
+            this.btnHoursBabyFoot3.TabIndex = 37;
+            this.btnHoursBabyFoot3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoursBabyFoot3.UseVisualStyleBackColor = false;
             // 
-            // pictureBox5
+            // btnMinuteBabyFoot3
             // 
-            this.pictureBox5.Image = global::Centre_D_affaire.Properties.Resources.regle_jeu_baby_foot1;
-            this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(164, 13);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(216, 72);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 35;
-            this.pictureBox5.TabStop = false;
+            this.btnMinuteBabyFoot3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMinuteBabyFoot3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinuteBabyFoot3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinuteBabyFoot3.ForeColor = System.Drawing.Color.Black;
+            this.btnMinuteBabyFoot3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinuteBabyFoot3.Location = new System.Drawing.Point(207, 29);
+            this.btnMinuteBabyFoot3.Name = "btnMinuteBabyFoot3";
+            this.btnMinuteBabyFoot3.Size = new System.Drawing.Size(37, 38);
+            this.btnMinuteBabyFoot3.TabIndex = 36;
+            this.btnMinuteBabyFoot3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinuteBabyFoot3.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnSecondeBabyFoot3
             // 
-            this.button4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(203, 91);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(37, 40);
-            this.button4.TabIndex = 19;
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnSecondeBabyFoot3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSecondeBabyFoot3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecondeBabyFoot3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSecondeBabyFoot3.ForeColor = System.Drawing.Color.Black;
+            this.btnSecondeBabyFoot3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondeBabyFoot3.Location = new System.Drawing.Point(250, 28);
+            this.btnSecondeBabyFoot3.Name = "btnSecondeBabyFoot3";
+            this.btnSecondeBabyFoot3.Size = new System.Drawing.Size(37, 40);
+            this.btnSecondeBabyFoot3.TabIndex = 19;
+            this.btnSecondeBabyFoot3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondeBabyFoot3.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnPrixBabyFoot3
             // 
-            this.button6.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(246, 91);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(134, 38);
-            this.button6.TabIndex = 17;
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnPrixBabyFoot3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBabyFoot3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBabyFoot3.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrixBabyFoot3.ForeColor = System.Drawing.Color.Black;
+            this.btnPrixBabyFoot3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBabyFoot3.Location = new System.Drawing.Point(153, 91);
+            this.btnPrixBabyFoot3.Name = "btnPrixBabyFoot3";
+            this.btnPrixBabyFoot3.Size = new System.Drawing.Size(123, 38);
+            this.btnPrixBabyFoot3.TabIndex = 17;
+            this.btnPrixBabyFoot3.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnStarBabyFoot3
             // 
-            this.button8.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.button8.Location = new System.Drawing.Point(11, 93);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(45, 38);
-            this.button8.TabIndex = 14;
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnStarBabyFoot3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStarBabyFoot3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStarBabyFoot3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStarBabyFoot3.ForeColor = System.Drawing.Color.Black;
+            this.btnStarBabyFoot3.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.btnStarBabyFoot3.Location = new System.Drawing.Point(0, 92);
+            this.btnStarBabyFoot3.Name = "btnStarBabyFoot3";
+            this.btnStarBabyFoot3.Size = new System.Drawing.Size(45, 38);
+            this.btnStarBabyFoot3.TabIndex = 14;
+            this.btnStarBabyFoot3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStarBabyFoot3.UseVisualStyleBackColor = false;
+            this.btnStarBabyFoot3.Click += new System.EventHandler(this.btnStarBabyFoot3_Click);
             // 
-            // button9
+            // btnRestBabyFoot3
             // 
-            this.button9.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.button9.Location = new System.Drawing.Point(62, 92);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(45, 38);
-            this.button9.TabIndex = 13;
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(7, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "label1";
+            this.btnRestBabyFoot3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBabyFoot3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBabyFoot3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBabyFoot3.ForeColor = System.Drawing.Color.Black;
+            this.btnRestBabyFoot3.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.btnRestBabyFoot3.Location = new System.Drawing.Point(51, 92);
+            this.btnRestBabyFoot3.Name = "btnRestBabyFoot3";
+            this.btnRestBabyFoot3.Size = new System.Drawing.Size(45, 38);
+            this.btnRestBabyFoot3.TabIndex = 13;
+            this.btnRestBabyFoot3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBabyFoot3.UseVisualStyleBackColor = false;
+            this.btnRestBabyFoot3.Click += new System.EventHandler(this.btnRestBabyFoot3_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button10);
-            this.groupBox2.Controls.Add(this.pictureBox6);
-            this.groupBox2.Controls.Add(this.button11);
-            this.groupBox2.Controls.Add(this.button12);
-            this.groupBox2.Controls.Add(this.button13);
-            this.groupBox2.Controls.Add(this.button14);
-            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.btnClearArcardS4);
+            this.groupBox2.Controls.Add(this.btnHoursBabyFoot4);
+            this.groupBox2.Controls.Add(this.btnMinuteBabyFoot4);
+            this.groupBox2.Controls.Add(this.btnSecondeBabyFoot4);
+            this.groupBox2.Controls.Add(this.btnPrixBabyFoot4);
+            this.groupBox2.Controls.Add(this.btnStarBabyFoot4);
+            this.groupBox2.Controls.Add(this.btnRestBabyFoot4);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox2.Location = new System.Drawing.Point(628, 330);
             this.groupBox2.Name = "groupBox2";
@@ -599,123 +604,116 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
             // 
-            // button5
+            // btnClearArcardS4
             // 
-            this.button5.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(117, 92);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(37, 38);
-            this.button5.TabIndex = 37;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnClearArcardS4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearArcardS4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearArcardS4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearArcardS4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearArcardS4.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearArcardS4.Location = new System.Drawing.Point(113, 93);
+            this.btnClearArcardS4.Name = "btnClearArcardS4";
+            this.btnClearArcardS4.Size = new System.Drawing.Size(45, 38);
+            this.btnClearArcardS4.TabIndex = 41;
+            this.btnClearArcardS4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearArcardS4.UseVisualStyleBackColor = false;
+            this.btnClearArcardS4.Click += new System.EventHandler(this.btnClearArcardS4_Click);
             // 
-            // button10
+            // btnHoursBabyFoot4
             // 
-            this.button10.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(160, 92);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(37, 38);
-            this.button10.TabIndex = 36;
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnHoursBabyFoot4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnHoursBabyFoot4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoursBabyFoot4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoursBabyFoot4.ForeColor = System.Drawing.Color.Black;
+            this.btnHoursBabyFoot4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoursBabyFoot4.Location = new System.Drawing.Point(164, 29);
+            this.btnHoursBabyFoot4.Name = "btnHoursBabyFoot4";
+            this.btnHoursBabyFoot4.Size = new System.Drawing.Size(37, 38);
+            this.btnHoursBabyFoot4.TabIndex = 37;
+            this.btnHoursBabyFoot4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoursBabyFoot4.UseVisualStyleBackColor = false;
             // 
-            // pictureBox6
+            // btnMinuteBabyFoot4
             // 
-            this.pictureBox6.Image = global::Centre_D_affaire.Properties.Resources.regle_jeu_baby_foot1;
-            this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(164, 13);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(216, 72);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 35;
-            this.pictureBox6.TabStop = false;
+            this.btnMinuteBabyFoot4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMinuteBabyFoot4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinuteBabyFoot4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinuteBabyFoot4.ForeColor = System.Drawing.Color.Black;
+            this.btnMinuteBabyFoot4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinuteBabyFoot4.Location = new System.Drawing.Point(207, 29);
+            this.btnMinuteBabyFoot4.Name = "btnMinuteBabyFoot4";
+            this.btnMinuteBabyFoot4.Size = new System.Drawing.Size(37, 38);
+            this.btnMinuteBabyFoot4.TabIndex = 36;
+            this.btnMinuteBabyFoot4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinuteBabyFoot4.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // btnSecondeBabyFoot4
             // 
-            this.button11.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(203, 91);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(37, 40);
-            this.button11.TabIndex = 19;
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnSecondeBabyFoot4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSecondeBabyFoot4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecondeBabyFoot4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSecondeBabyFoot4.ForeColor = System.Drawing.Color.Black;
+            this.btnSecondeBabyFoot4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondeBabyFoot4.Location = new System.Drawing.Point(250, 28);
+            this.btnSecondeBabyFoot4.Name = "btnSecondeBabyFoot4";
+            this.btnSecondeBabyFoot4.Size = new System.Drawing.Size(37, 40);
+            this.btnSecondeBabyFoot4.TabIndex = 19;
+            this.btnSecondeBabyFoot4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondeBabyFoot4.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // btnPrixBabyFoot4
             // 
-            this.button12.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(246, 91);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(134, 38);
-            this.button12.TabIndex = 17;
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnPrixBabyFoot4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBabyFoot4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBabyFoot4.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrixBabyFoot4.ForeColor = System.Drawing.Color.Black;
+            this.btnPrixBabyFoot4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBabyFoot4.Location = new System.Drawing.Point(164, 93);
+            this.btnPrixBabyFoot4.Name = "btnPrixBabyFoot4";
+            this.btnPrixBabyFoot4.Size = new System.Drawing.Size(123, 38);
+            this.btnPrixBabyFoot4.TabIndex = 17;
+            this.btnPrixBabyFoot4.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // btnStarBabyFoot4
             // 
-            this.button13.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.button13.Location = new System.Drawing.Point(11, 93);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(45, 38);
-            this.button13.TabIndex = 14;
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnStarBabyFoot4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStarBabyFoot4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStarBabyFoot4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStarBabyFoot4.ForeColor = System.Drawing.Color.Black;
+            this.btnStarBabyFoot4.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.btnStarBabyFoot4.Location = new System.Drawing.Point(11, 93);
+            this.btnStarBabyFoot4.Name = "btnStarBabyFoot4";
+            this.btnStarBabyFoot4.Size = new System.Drawing.Size(45, 38);
+            this.btnStarBabyFoot4.TabIndex = 14;
+            this.btnStarBabyFoot4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStarBabyFoot4.UseVisualStyleBackColor = false;
+            this.btnStarBabyFoot4.Click += new System.EventHandler(this.btnStarBabyFoot4_Click);
             // 
-            // button14
+            // btnRestBabyFoot4
             // 
-            this.button14.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.button14.Location = new System.Drawing.Point(62, 92);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(45, 38);
-            this.button14.TabIndex = 13;
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.btnRestBabyFoot4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBabyFoot4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBabyFoot4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBabyFoot4.ForeColor = System.Drawing.Color.Black;
+            this.btnRestBabyFoot4.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.btnRestBabyFoot4.Location = new System.Drawing.Point(62, 92);
+            this.btnRestBabyFoot4.Name = "btnRestBabyFoot4";
+            this.btnRestBabyFoot4.Size = new System.Drawing.Size(45, 38);
+            this.btnRestBabyFoot4.TabIndex = 13;
+            this.btnRestBabyFoot4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBabyFoot4.UseVisualStyleBackColor = false;
+            this.btnRestBabyFoot4.Click += new System.EventHandler(this.btnRestBabyFoot4_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button15);
-            this.groupBox3.Controls.Add(this.button16);
-            this.groupBox3.Controls.Add(this.pictureBox8);
-            this.groupBox3.Controls.Add(this.button17);
-            this.groupBox3.Controls.Add(this.button18);
-            this.groupBox3.Controls.Add(this.button19);
-            this.groupBox3.Controls.Add(this.button20);
-            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.btnClearArcardS2);
+            this.groupBox3.Controls.Add(this.btnHoursBabyFoot2);
+            this.groupBox3.Controls.Add(this.btnMinuteBabyFoot2);
+            this.groupBox3.Controls.Add(this.btnSecondeBabyFoot2);
+            this.groupBox3.Controls.Add(this.btnPrixBabyFoot2);
+            this.groupBox3.Controls.Add(this.btnStarBabyFoot2);
+            this.groupBox3.Controls.Add(this.btnRestBabyFoot2);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox3.Location = new System.Drawing.Point(628, 120);
             this.groupBox3.Name = "groupBox3";
@@ -723,100 +721,151 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox3.TabIndex = 39;
             this.groupBox3.TabStop = false;
             // 
-            // button15
+            // btnClearArcardS2
             // 
-            this.button15.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(117, 92);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(37, 38);
-            this.button15.TabIndex = 37;
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.UseVisualStyleBackColor = false;
+            this.btnClearArcardS2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearArcardS2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearArcardS2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearArcardS2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearArcardS2.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearArcardS2.Location = new System.Drawing.Point(113, 93);
+            this.btnClearArcardS2.Name = "btnClearArcardS2";
+            this.btnClearArcardS2.Size = new System.Drawing.Size(45, 38);
+            this.btnClearArcardS2.TabIndex = 40;
+            this.btnClearArcardS2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearArcardS2.UseVisualStyleBackColor = false;
+            this.btnClearArcardS2.Click += new System.EventHandler(this.btnClearArcardS2_Click);
             // 
-            // button16
+            // btnHoursBabyFoot2
             // 
-            this.button16.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(160, 92);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(37, 38);
-            this.button16.TabIndex = 36;
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.UseVisualStyleBackColor = false;
+            this.btnHoursBabyFoot2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnHoursBabyFoot2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoursBabyFoot2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoursBabyFoot2.ForeColor = System.Drawing.Color.Black;
+            this.btnHoursBabyFoot2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoursBabyFoot2.Location = new System.Drawing.Point(164, 29);
+            this.btnHoursBabyFoot2.Name = "btnHoursBabyFoot2";
+            this.btnHoursBabyFoot2.Size = new System.Drawing.Size(37, 38);
+            this.btnHoursBabyFoot2.TabIndex = 37;
+            this.btnHoursBabyFoot2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoursBabyFoot2.UseVisualStyleBackColor = false;
             // 
-            // pictureBox8
+            // btnMinuteBabyFoot2
             // 
-            this.pictureBox8.Image = global::Centre_D_affaire.Properties.Resources.regle_jeu_baby_foot1;
-            this.pictureBox8.InitialImage = null;
-            this.pictureBox8.Location = new System.Drawing.Point(164, 13);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(216, 72);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 35;
-            this.pictureBox8.TabStop = false;
+            this.btnMinuteBabyFoot2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMinuteBabyFoot2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinuteBabyFoot2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinuteBabyFoot2.ForeColor = System.Drawing.Color.Black;
+            this.btnMinuteBabyFoot2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinuteBabyFoot2.Location = new System.Drawing.Point(207, 29);
+            this.btnMinuteBabyFoot2.Name = "btnMinuteBabyFoot2";
+            this.btnMinuteBabyFoot2.Size = new System.Drawing.Size(37, 38);
+            this.btnMinuteBabyFoot2.TabIndex = 36;
+            this.btnMinuteBabyFoot2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinuteBabyFoot2.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // btnSecondeBabyFoot2
             // 
-            this.button17.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(203, 91);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(37, 40);
-            this.button17.TabIndex = 19;
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnSecondeBabyFoot2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSecondeBabyFoot2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecondeBabyFoot2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSecondeBabyFoot2.ForeColor = System.Drawing.Color.Black;
+            this.btnSecondeBabyFoot2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondeBabyFoot2.Location = new System.Drawing.Point(250, 28);
+            this.btnSecondeBabyFoot2.Name = "btnSecondeBabyFoot2";
+            this.btnSecondeBabyFoot2.Size = new System.Drawing.Size(37, 40);
+            this.btnSecondeBabyFoot2.TabIndex = 19;
+            this.btnSecondeBabyFoot2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecondeBabyFoot2.UseVisualStyleBackColor = false;
             // 
-            // button18
+            // btnPrixBabyFoot2
             // 
-            this.button18.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(246, 91);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(134, 38);
-            this.button18.TabIndex = 17;
-            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.UseVisualStyleBackColor = false;
+            this.btnPrixBabyFoot2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPrixBabyFoot2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrixBabyFoot2.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrixBabyFoot2.ForeColor = System.Drawing.Color.Black;
+            this.btnPrixBabyFoot2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrixBabyFoot2.Location = new System.Drawing.Point(164, 93);
+            this.btnPrixBabyFoot2.Name = "btnPrixBabyFoot2";
+            this.btnPrixBabyFoot2.Size = new System.Drawing.Size(123, 38);
+            this.btnPrixBabyFoot2.TabIndex = 17;
+            this.btnPrixBabyFoot2.UseVisualStyleBackColor = false;
             // 
-            // button19
+            // btnStarBabyFoot2
             // 
-            this.button19.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.button19.Location = new System.Drawing.Point(11, 93);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(45, 38);
-            this.button19.TabIndex = 14;
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.UseVisualStyleBackColor = false;
+            this.btnStarBabyFoot2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStarBabyFoot2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStarBabyFoot2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStarBabyFoot2.ForeColor = System.Drawing.Color.Black;
+            this.btnStarBabyFoot2.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.btnStarBabyFoot2.Location = new System.Drawing.Point(11, 93);
+            this.btnStarBabyFoot2.Name = "btnStarBabyFoot2";
+            this.btnStarBabyFoot2.Size = new System.Drawing.Size(45, 38);
+            this.btnStarBabyFoot2.TabIndex = 14;
+            this.btnStarBabyFoot2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStarBabyFoot2.UseVisualStyleBackColor = false;
+            this.btnStarBabyFoot2.Click += new System.EventHandler(this.btnStarBabyFoot2_Click);
             // 
-            // button20
+            // btnRestBabyFoot2
             // 
-            this.button20.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.button20.Location = new System.Drawing.Point(62, 92);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(45, 38);
-            this.button20.TabIndex = 13;
-            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.UseVisualStyleBackColor = false;
+            this.btnRestBabyFoot2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestBabyFoot2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestBabyFoot2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestBabyFoot2.ForeColor = System.Drawing.Color.Black;
+            this.btnRestBabyFoot2.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.btnRestBabyFoot2.Location = new System.Drawing.Point(62, 93);
+            this.btnRestBabyFoot2.Name = "btnRestBabyFoot2";
+            this.btnRestBabyFoot2.Size = new System.Drawing.Size(45, 38);
+            this.btnRestBabyFoot2.TabIndex = 13;
+            this.btnRestBabyFoot2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestBabyFoot2.UseVisualStyleBackColor = false;
+            this.btnRestBabyFoot2.Click += new System.EventHandler(this.btnRestBabyFoot2_Click);
+            // 
+            // timerBabyFoot1
+            // 
+            this.timerBabyFoot1.Interval = 1000;
+            this.timerBabyFoot1.Tick += new System.EventHandler(this.timerBabyFoot1_Tick);
+            // 
+            // timerBabyFoot2
+            // 
+            this.timerBabyFoot2.Interval = 1000;
+            this.timerBabyFoot2.Tick += new System.EventHandler(this.timerBabyFoot2_Tick);
+            // 
+            // timerBabyFoot3
+            // 
+            this.timerBabyFoot3.Interval = 1000;
+            this.timerBabyFoot3.Tick += new System.EventHandler(this.timerBabyFoot3_Tick);
+            // 
+            // timerBabyFoot4
+            // 
+            this.timerBabyFoot4.Interval = 1000;
+            this.timerBabyFoot4.Tick += new System.EventHandler(this.timerBabyFoot4_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(9, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 24);
+            this.label1.TabIndex = 40;
+            this.label1.Tag = "";
+            this.label1.Text = "BabyFoot";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(-2, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 24);
+            this.label2.TabIndex = 41;
+            this.label2.Tag = "";
+            this.label2.Text = "BabyFoot";
             // 
             // label3
             // 
@@ -824,11 +873,12 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.label3.BackColor = System.Drawing.Color.LightSteelBlue;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(7, 20);
+            this.label3.Location = new System.Drawing.Point(7, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 24);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "label1";
+            this.label3.Size = new System.Drawing.Size(98, 24);
+            this.label3.TabIndex = 42;
+            this.label3.Tag = "";
+            this.label3.Text = "BabyFoot";
             // 
             // FrmBabyFoot
             // 
@@ -844,6 +894,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.Controls.Add(this.FlpMenu);
             this.Name = "FrmBabyFoot";
             this.Text = "BabyFoot";
+            this.Load += new System.EventHandler(this.FrmBabyFoot_Load);
             this.FlpMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -862,16 +913,12 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pnlTitle.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -889,7 +936,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Button btnEditBabyFoot;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button47;
@@ -897,40 +944,44 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private System.Windows.Forms.Label lblBillHot;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnHoursBabyFoot1;
+        private System.Windows.Forms.Button btnMinuteBabyFoot1;
+        private System.Windows.Forms.Button btnSecondeBabyFoot1;
+        private System.Windows.Forms.Button btnPrixBabyFoot1;
+        private System.Windows.Forms.Button btnStarBabyFoot1;
+        private System.Windows.Forms.Button btnRestBabyFoot1;
+        private System.Windows.Forms.Label lblNameBabyFoot1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnHoursBabyFoot3;
+        private System.Windows.Forms.Button btnMinuteBabyFoot3;
+        private System.Windows.Forms.Button btnSecondeBabyFoot3;
+        private System.Windows.Forms.Button btnPrixBabyFoot3;
+        private System.Windows.Forms.Button btnStarBabyFoot3;
+        private System.Windows.Forms.Button btnRestBabyFoot3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnHoursBabyFoot4;
+        private System.Windows.Forms.Button btnMinuteBabyFoot4;
+        private System.Windows.Forms.Button btnSecondeBabyFoot4;
+        private System.Windows.Forms.Button btnPrixBabyFoot4;
+        private System.Windows.Forms.Button btnStarBabyFoot4;
+        private System.Windows.Forms.Button btnRestBabyFoot4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button btnHoursBabyFoot2;
+        private System.Windows.Forms.Button btnMinuteBabyFoot2;
+        private System.Windows.Forms.Button btnSecondeBabyFoot2;
+        private System.Windows.Forms.Button btnPrixBabyFoot2;
+        private System.Windows.Forms.Button btnStarBabyFoot2;
+        private System.Windows.Forms.Button btnRestBabyFoot2;
+        private System.Windows.Forms.Button btnClearArcardS1;
+        private System.Windows.Forms.Button btnClearArcardS3;
+        private System.Windows.Forms.Button btnClearArcardS4;
+        private System.Windows.Forms.Button btnClearArcardS2;
+        private System.Windows.Forms.Timer timerBabyFoot1;
+        private System.Windows.Forms.Timer timerBabyFoot2;
+        private System.Windows.Forms.Timer timerBabyFoot3;
+        private System.Windows.Forms.Timer timerBabyFoot4;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
     }
 }

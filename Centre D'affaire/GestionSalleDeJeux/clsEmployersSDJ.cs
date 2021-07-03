@@ -8,29 +8,32 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 {
     public class clsEmployersSDJ
     {
-        private string nomE;
-        private string prenomE;
-        private int numeroE;
-        private float telephoneE;
-        private string PasswordE;
-        private DateTime dateNaissanceE;
+        public string nomE;
+        public string prenomE;
+        public int numeroE;
+        public int telephoneE;
+        public string PasswordE;
+        public DateTime dateNaissanceE;
 
-        public string NomE { get => nomE; set => nomE = value; }
-        public string PrenomE { get => prenomE; set => prenomE = value; }
-        public float TelephoneE { get => telephoneE; set => telephoneE = value; }
-        public DateTime DateNaissanceE { get => dateNaissanceE; set => dateNaissanceE = value; }
-        public int NumeroE { get => numeroE; set => numeroE = value; }
-        public string PasswordE1 { get => PasswordE; set => PasswordE = value; }
+
 
         public clsEmployersSDJ() { }
-        public clsEmployersSDJ(string NomE,string PrenomE,int numeroE, float TelephoneE,DateTime DateNaissanceE)
+        public clsEmployersSDJ(string NomE,string PrenomE,int numeroE, int TelephoneE,DateTime DateNaissanceE, string PasswordE1)
         {
             this.NomE = NomE;
             this.PrenomE = PrenomE;
             this.TelephoneE = TelephoneE;
             this.numeroE = numeroE;
             this.DateNaissanceE = DateNaissanceE;
+            this.PasswordE1 = PasswordE1;
         }
+
+        public string NomE { get => nomE; set => nomE = value; }
+        public string PrenomE { get => prenomE; set => prenomE = value; }
+        public int TelephoneE { get => telephoneE; set => telephoneE = value; }
+        public DateTime DateNaissanceE { get => dateNaissanceE; set => dateNaissanceE = value; }
+        public int NumeroE { get => numeroE; set => numeroE = value; }
+        public string PasswordE1 { get => PasswordE; set => PasswordE = value; }
 
         //public bool AjouterE()
         //{

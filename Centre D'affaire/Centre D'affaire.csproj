@@ -82,6 +82,22 @@
     <Compile Include="GestionPersonnel\frmGPersonnel.Designer.cs">
       <DependentUpon>frmGPersonnel.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmAddGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmAddGame.Designer.cs">
+      <DependentUpon>FrmAddGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\clsArcArdStreet.cs" />
+    <Compile Include="GestionSalleDeJeux\clsBillard.cs" />
+    <Compile Include="GestionSalleDeJeux\clsBabyFoot.cs" />
+    <Compile Include="GestionSalleDeJeux\clsPs4.cs" />
+    <Compile Include="GestionSalleDeJeux\FrmAddAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmAddAll.Designer.cs">
+      <DependentUpon>FrmAddAll.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionSalleDeJeux\FrmARCARDE STREET.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +129,12 @@
     </Compile>
     <Compile Include="GestionSalleDeJeux\FrmConnection.Designer.cs">
       <DependentUpon>FrmConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmInfoGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmInfoGame.Designer.cs">
+      <DependentUpon>FrmInfoGame.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSalleDeJeux\FrmNewMember.cs">
       <SubType>Form</SubType>
@@ -155,6 +177,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmAddGame.resx">
+      <DependentUpon>FrmAddGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmAddt.resx">
+      <DependentUpon>FrmAddAll.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeJeux\FrmARCARDE STREET.resx">
       <DependentUpon>FrmARCARDE STREET.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeJeux\FrmConnection.resx">
       <DependentUpon>FrmConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmInfoGame.resx">
+      <DependentUpon>FrmInfoGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeJeux\FrmNewMember.resx">
       <DependentUpon>FrmNewMember.cs</DependentUpon>
@@ -459,6 +490,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\video-screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_backspace_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_backspace_black_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-badge-d%27employé-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1682559.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3999583-middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3999583-middle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16825591.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16825592.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\162-1627477_number-of-employees-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee-icon-png-27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee-icon-png-271.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee-icon-png-272.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_edit_black_24dp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
