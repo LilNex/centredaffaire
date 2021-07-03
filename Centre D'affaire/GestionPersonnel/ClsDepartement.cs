@@ -88,8 +88,9 @@ namespace Centre_D_affaire.GestionPersonnel
         public static void loadListeDeps()
         {
             XmlSerializer XS = new XmlSerializer(ListeDepartement.GetType());
-            try { 
-                FileStream r_fileDeps = new FileStream("Liste des departements.xml", FileMode.OpenOrCreate, FileAccess.Read);
+            try
+            {
+                FileStream r_fileDeps = new FileStream("Liste des departements.xml", FileMode.Open, FileAccess.ReadWrite);
                 ClsDepartement.ListeDepartement = (List<ClsDepartement>)XS.Deserialize(r_fileDeps);
                 r_fileDeps.Close();
 
@@ -103,7 +104,7 @@ namespace Centre_D_affaire.GestionPersonnel
         public static void saveListeDeps()
         {
             XmlSerializer XS = new XmlSerializer(ListeDepartement.GetType());
-            FileStream w_fileDeps = new FileStream("Liste des departements.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            FileStream w_fileDeps = new FileStream("Liste des departements.xml", FileMode.OpenOrCreate, FileAccess.Write);
             XS.Serialize(w_fileDeps, ListeDepartement);
             w_fileDeps.Close();
         }

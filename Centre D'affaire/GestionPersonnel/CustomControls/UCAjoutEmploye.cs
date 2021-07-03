@@ -101,5 +101,11 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         {
 
         }
+
+        private void pictureBox_DoubleClick(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = ""
+        }
     }
 }

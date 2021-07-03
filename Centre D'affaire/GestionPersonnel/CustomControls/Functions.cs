@@ -14,7 +14,7 @@ namespace Centre_D_affaire.GestionPersonnel
     class Functions
     {
         private static PrivateFontCollection pfc = new PrivateFontCollection();
-
+        
         public static void clearForm(Control form) 
         { 
             foreach(Control x in form.Controls)
@@ -107,6 +107,7 @@ namespace Centre_D_affaire.GestionPersonnel
 
         public static void setFont(Control control)
         {
+            //pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
             pfc.AddFontFile(Path.Combine(Application.StartupPath, "..\\..\\GestionPersonnel\\Resources\\Fonts\\Poppins\\Poppins-Regular.ttf"));
             //pfc.AddFontFile("Poppins-Regular.ttf");
 

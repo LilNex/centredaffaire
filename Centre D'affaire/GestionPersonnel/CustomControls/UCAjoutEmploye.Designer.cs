@@ -149,11 +149,15 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             // 
             // pictureBox
             // 
+            this.pictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox.Image = global::Centre_D_affaire.Properties.Resources.icons8_male_user_32px1;
             this.pictureBox.Location = new System.Drawing.Point(8, 28);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox.Size = new System.Drawing.Size(131, 125);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 23;
             this.pictureBox.TabStop = false;
+            this.pictureBox.DoubleClick += new System.EventHandler(this.pictureBox_DoubleClick);
             // 
             // datePicker
             // 
@@ -162,9 +166,9 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.datePicker.ForeColor = System.Drawing.Color.White;
             this.datePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.datePicker.FormatCustom = null;
-            this.datePicker.Location = new System.Drawing.Point(8, 179);
+            this.datePicker.Location = new System.Drawing.Point(7, 175);
             this.datePicker.Name = "datePicker";
-            this.datePicker.Size = new System.Drawing.Size(274, 36);
+            this.datePicker.Size = new System.Drawing.Size(274, 33);
             this.datePicker.TabIndex = 24;
             this.datePicker.Value = new System.DateTime(2021, 5, 5, 16, 29, 53, 912);
             // 
@@ -172,7 +176,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             // 
             this.lblText_DateNaissance.AutoSize = true;
             this.lblText_DateNaissance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText_DateNaissance.Location = new System.Drawing.Point(5, 159);
+            this.lblText_DateNaissance.Location = new System.Drawing.Point(5, 156);
             this.lblText_DateNaissance.Name = "lblText_DateNaissance";
             this.lblText_DateNaissance.Size = new System.Drawing.Size(127, 16);
             this.lblText_DateNaissance.TabIndex = 25;
@@ -244,7 +248,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             // 
             this.lblText_Coords.AutoSize = true;
             this.lblText_Coords.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText_Coords.Location = new System.Drawing.Point(6, 218);
+            this.lblText_Coords.Location = new System.Drawing.Point(4, 211);
             this.lblText_Coords.Name = "lblText_Coords";
             this.lblText_Coords.Size = new System.Drawing.Size(125, 24);
             this.lblText_Coords.TabIndex = 33;
@@ -295,7 +299,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             // 
             this.lblText_CB.AutoSize = true;
             this.lblText_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText_CB.Location = new System.Drawing.Point(299, 218);
+            this.lblText_CB.Location = new System.Drawing.Point(299, 211);
             this.lblText_CB.Name = "lblText_CB";
             this.lblText_CB.Size = new System.Drawing.Size(165, 24);
             this.lblText_CB.TabIndex = 40;
