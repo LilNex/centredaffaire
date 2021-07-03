@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionCreche
 {
-    public partial class frmFacteur : Form
+    public partial class Jeux : UserControl
     {
-        public frmFacteur()
+        public Jeux()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

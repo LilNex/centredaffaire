@@ -9,7 +9,7 @@ namespace Centre_D_affaire.GestionCreche
     class ClsParant
     {
         private string NomParant;
-        private string prenomParant;
+        
         private string Profession;
         private int telephone;
         private string departement;
@@ -19,11 +19,11 @@ namespace Centre_D_affaire.GestionCreche
         
        
 
-        public ClsParant(string Nom, string PRENOM, string Pro , int tele , string depar)
+        public ClsParant(string Nom, string Prof , int tele , string depar)
         {
             this.NomParant = Nom;
-            this.prenomParant = PRENOM;
-            this.Profession = Pro;
+            
+            this.Profession = Prof;
             this.telephone = tele;
             this.departement = depar;
        
@@ -32,7 +32,7 @@ namespace Centre_D_affaire.GestionCreche
         }
 
         public string Nom { get => NomParant; set => NomParant = value; }
-        public string Prenom { get => prenomParant; set => prenomParant= value; }
+        
         public string Pro { get => Profession; set => Profession = value; }
         public int tele { get => telephone; set => telephone = value; }
         public string depar { get => departement; set => departement = value; }

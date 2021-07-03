@@ -130,6 +130,11 @@ namespace Centre_D_affaire.GestionCreche
             bool R = true;
             if (R == false) MessageBox.Show("Error");
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

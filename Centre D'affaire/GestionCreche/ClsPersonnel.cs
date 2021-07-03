@@ -6,48 +6,53 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionCreche
 {
-    
-    
-        public class ClsPersonnel
+
+
+    public class ClsPersonnel
+    {
+
+
+        private string Nom;
+        private string Prenom;
+
+        private string Email;
+        private string Telephone;
+        // private string Numero;
+        private string profil;
+        public ClsPersonnel() { }
+
+
+        public ClsPersonnel(string Name, string prenom, string EmailE, string Phone, string Profil)
         {
+            this.Nom = Name;
+            this.Prenom = prenom;
+            this.profil = Profil;
+            this.Email = EmailE;
+            this.Telephone = Phone;
+            //  this.Numero = NUM;
 
 
-            private string Nom;
-            private string Prenom;
-            private string AdresseWeb;
-            private string Email;
-            private string Telephone;
-        private string Numero;
-            public ClsPersonnel() { }
 
 
-            public ClsPersonnel(string Name, string Surname, String Adresse, string EmailE, string Phone , string NUM)
-            {
-                this.Nom = Name;
-                this.Prenom = Surname;
-                this.AdresseWeb = Adresse;
-                this.Email = EmailE;
-                this.Telephone = Phone;
-            this.Numero = NUM;
-                 
-      
-
-                 
 
         }
 
-            public string Nom1 { get => Nom; set => Nom = value; }
-            public string Prenom1 { get => Prenom; set => Prenom = value; }
-            public string Adresseweb1 { get => AdresseWeb; set => AdresseWeb = value; }
-            public string Email1 { get => Email; set => Email = value; }
-            public string Telephone1 { get => Telephone; set => Telephone = value; }
-        public string Numero1 { get => Numero; set => Numero = value; }
+        public string Nom1 { get => Nom; set => Nom = value; }
+        public string Prenom1 { get => Prenom; set => Prenom = value; }
 
+        public string Email1 { get => Email; set => Email = value; }
+        public string Telephone1 { get => Telephone; set => Telephone = value; }
+        //public string Numero1 { get => Numero; set => Numero = value; }
+        public string profiL1 { get => profil; set => profil = value; }
 
         public static implicit operator string(ClsPersonnel v)
+
+
         {
             throw new NotImplementedException();
         }
     }
- }
+}
+    
+ 
 

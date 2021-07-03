@@ -81,5 +81,9 @@ namespace Centre_D_affaire.GestionCreche
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

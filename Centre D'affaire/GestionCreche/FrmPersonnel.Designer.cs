@@ -168,7 +168,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // btnAjouter
             // 
-            this.btnAjouter.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAjouter.BackColor = System.Drawing.Color.Transparent;
             this.btnAjouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouter.Location = new System.Drawing.Point(471, 215);
             this.btnAjouter.Name = "btnAjouter";
@@ -180,7 +180,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // btnModifier
             // 
-            this.btnModifier.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnModifier.BackColor = System.Drawing.Color.Transparent;
             this.btnModifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModifier.Location = new System.Drawing.Point(325, 216);
             this.btnModifier.Name = "btnModifier";
@@ -192,7 +192,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSupprimer.BackColor = System.Drawing.Color.Transparent;
             this.btnSupprimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupprimer.Location = new System.Drawing.Point(186, 216);
             this.btnSupprimer.Name = "btnSupprimer";
@@ -204,7 +204,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // btnRechercher
             // 
-            this.btnRechercher.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRechercher.BackColor = System.Drawing.Color.Transparent;
             this.btnRechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRechercher.Location = new System.Drawing.Point(8, 19);
             this.btnRechercher.Name = "btnRechercher";
@@ -314,6 +314,7 @@ namespace Centre_D_affaire.GestionCreche
             this.groupBox2.Size = new System.Drawing.Size(585, 113);
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // label8
             // 

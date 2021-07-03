@@ -10,8 +10,23 @@
     <AssemblyName>Centre D%27affaire</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +48,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +62,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AchatsLogistiquePatrimoine\frmALP.cs">
@@ -53,6 +72,12 @@
       <DependentUpon>frmALP.cs</DependentUpon>
     </Compile>
     <Compile Include="ADO.cs" />
+    <Compile Include="Catalogue_User.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Catalogue_User.Designer.cs">
+      <DependentUpon>Catalogue_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,20 +96,36 @@
     <Compile Include="GestionCafeRestaurant\frmGCR.Designer.cs">
       <DependentUpon>frmGCR.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionCreche\Activité.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Activité.Designer.cs">
+      <DependentUpon>Activité.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionCreche\BinaryFormatter.cs" />
     <Compile Include="GestionCreche\clsEnfant.cs" />
-    <Compile Include="GestionCreche\clsFacteur.cs" />
     <Compile Include="GestionCreche\clsGroupe.cs" />
     <Compile Include="GestionCreche\clsListe.cs" />
     <Compile Include="GestionCreche\ClsParant.cs" />
     <Compile Include="GestionCreche\ClsPersonnel.cs" />
     <Compile Include="GestionCreche\clsResponsable.cs" />
-    <Compile Include="GestionCreche\dgvListeGroupe.cs" />
+    <Compile Include="GestionCreche\FrmAccul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\FrmAccul.Designer.cs">
+      <DependentUpon>FrmAccul.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionCreche\frmAffectationEnfants.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GestionCreche\frmAffectationEnfants.Designer.cs">
       <DependentUpon>frmAffectationEnfants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\frmCatalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\frmCatalogue.Designer.cs">
+      <DependentUpon>frmCatalogue.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionCreche\frmEnfant.cs">
       <SubType>Form</SubType>
@@ -92,30 +133,55 @@
     <Compile Include="GestionCreche\frmEnfant.Designer.cs">
       <DependentUpon>frmEnfant.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCreche\frmEnfantBase.cs" />
-    <Compile Include="GestionCreche\frmFacteur.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionCreche\frmFacteur.Designer.cs">
-      <DependentUpon>frmFacteur.cs</DependentUpon>
-    </Compile>
     <Compile Include="GestionCreche\frmGroupe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GestionCreche\frmGroupe.Designer.cs">
       <DependentUpon>frmGroupe.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCreche\frmListeGroupe.cs">
+    <Compile Include="GestionCreche\frmInscription.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionCreche\frmListeGroupe.Designer.cs">
-      <DependentUpon>frmListeGroupe.cs</DependentUpon>
+    <Compile Include="GestionCreche\frmInscription.Designer.cs">
+      <DependentUpon>frmInscription.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCreche\FrmPersonnel.cs">
+    <Compile Include="..\..\..\..\Desktop\FrmPersonnel.cs">
       <SubType>Form</SubType>
+      <Link>GestionCreche\FrmPersonnel.cs</Link>
     </Compile>
-    <Compile Include="GestionCreche\FrmPersonnel.Designer.cs">
+    <Compile Include="..\..\..\..\Desktop\FrmPersonnel.Designer.cs">
       <DependentUpon>FrmPersonnel.cs</DependentUpon>
+      <Link>GestionCreche\FrmPersonnel.Designer.cs</Link>
+    </Compile>
+    <Compile Include="GestionCreche\Dejeuner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Dejeuner.Designer.cs">
+      <DependentUpon>Dejeuner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\Jeux.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Jeux.Designer.cs">
+      <DependentUpon>Jeux.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\Pdejeuner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Pdejeuner.Designer.cs">
+      <DependentUpon>Pdejeuner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\Gouter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Gouter.Designer.cs">
+      <DependentUpon>Gouter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\Sport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Sport.Designer.cs">
+      <DependentUpon>Sport.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionParking\frmGParking.cs">
       <SubType>Form</SubType>
@@ -150,26 +216,51 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Catalogue_User.resx">
+      <DependentUpon>Catalogue_User.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Activité.resx">
+      <DependentUpon>Activité.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\FrmAccul.resx">
+      <DependentUpon>FrmAccul.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmAffectationEnfants.resx">
       <DependentUpon>frmAffectationEnfants.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmCatalogue.resx">
+      <DependentUpon>frmCatalogue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmEnfant.resx">
       <DependentUpon>frmEnfant.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionCreche\frmFacteur.resx">
-      <DependentUpon>frmFacteur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmGroupe.resx">
       <DependentUpon>frmGroupe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionCreche\frmListeGroupe.resx">
-      <DependentUpon>frmListeGroupe.cs</DependentUpon>
+    <EmbeddedResource Include="GestionCreche\frmInscription.resx">
+      <DependentUpon>frmInscription.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionCreche\FrmPersonnel.resx">
+    <EmbeddedResource Include="..\..\..\..\Desktop\FrmPersonnel.resx">
       <DependentUpon>FrmPersonnel.cs</DependentUpon>
+      <Link>GestionCreche\FrmPersonnel.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Dejeuner.resx">
+      <DependentUpon>Dejeuner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Jeux.resx">
+      <DependentUpon>Jeux.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Pdejeuner.resx">
+      <DependentUpon>Pdejeuner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Gouter.resx">
+      <DependentUpon>Gouter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Sport.resx">
+      <DependentUpon>Sport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -195,6 +286,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
