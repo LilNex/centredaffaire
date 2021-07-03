@@ -49,6 +49,7 @@ namespace Centre_D_affaire.GestionCreche
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btncalcule = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNumFacteur
@@ -109,7 +110,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(496, 362);
+            this.label4.Location = new System.Drawing.Point(492, 463);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(177, 26);
             this.label4.TabIndex = 6;
@@ -183,10 +184,11 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(501, 391);
+            this.textBox6.Location = new System.Drawing.Point(496, 492);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(185, 26);
             this.textBox6.TabIndex = 17;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // checkBox1
             // 
@@ -230,13 +232,25 @@ namespace Centre_D_affaire.GestionCreche
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(432, 108);
             this.label8.TabIndex = 22;
-            this.label8.Text = "Facteur :";
+            this.label8.Text = "Facture :";
+            // 
+            // btncalcule
+            // 
+            this.btncalcule.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btncalcule.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcule.Location = new System.Drawing.Point(496, 378);
+            this.btncalcule.Name = "btncalcule";
+            this.btncalcule.Size = new System.Drawing.Size(296, 48);
+            this.btncalcule.TabIndex = 23;
+            this.btncalcule.Text = "Calculer Le Montant";
+            this.btncalcule.UseVisualStyleBackColor = false;
             // 
             // frmFacteur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1117, 656);
+            this.Controls.Add(this.btncalcule);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
@@ -286,5 +300,6 @@ namespace Centre_D_affaire.GestionCreche
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btncalcule;
     }
 }

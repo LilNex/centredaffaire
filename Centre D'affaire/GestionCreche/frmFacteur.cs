@@ -16,5 +16,10 @@ namespace Centre_D_affaire.GestionCreche
         {
             InitializeComponent();
         }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
