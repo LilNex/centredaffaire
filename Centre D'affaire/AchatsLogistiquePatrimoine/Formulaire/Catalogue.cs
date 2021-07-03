@@ -198,9 +198,9 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
 
 
-           lc.Clear();
+           //lc.Clear();
            dgvFinal.DataSource = ClsListe.List_choix;
-           lc = ClsListe.List_choix;
+           //lc = ClsListe.List_choix;
            
 
             //panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
@@ -321,7 +321,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             string n = ((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem).Nom;
 
             CHOIX c = new CHOIX(((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem), n, 0);
-            ClsListe.List_choix.Add(c);
+          
             for (int i = 0; i < lc.Count; i++)
             {
                 if (lc[i].Nom == n)
