@@ -195,12 +195,12 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
             }
             //animation
-            
 
 
 
-                dgvFinal.DataSource = ClsListe.List_choix;
-
+           lc.Clear();
+           dgvFinal.DataSource = ClsListe.List_choix;
+           lc = ClsListe.List_choix;
            
 
             //panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
@@ -321,7 +321,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             string n = ((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem).Nom;
 
             CHOIX c = new CHOIX(((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem), n, 0);
-            //ClsListe.List_choix.Add(c);
+            ClsListe.List_choix.Add(c);
             for (int i = 0; i < lc.Count; i++)
             {
                 if (lc[i].Nom == n)
@@ -354,7 +354,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             dgvFinal.Columns["quantite"].ReadOnly = false;
 
 
-            //lc =(List<CHOIX>) dgvFinal.DataSource;
+            lc =(List<CHOIX>) dgvFinal.DataSource;
         }
 
         private void btnRetirer_Click(object sender, EventArgs e)
@@ -503,6 +503,11 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             {
                 timer1.Stop();
             }
+        }
+
+        private void pnlHaut_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

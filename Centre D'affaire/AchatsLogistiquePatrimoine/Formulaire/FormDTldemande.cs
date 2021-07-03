@@ -62,7 +62,10 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
         }
 
         ClsDepartement depar;
+        public void Regexp(string s,TextBox tb,PictureBox pc)
+        {
 
+        }
         private void btnValider_Click(object sender, EventArgs e)
         {
             

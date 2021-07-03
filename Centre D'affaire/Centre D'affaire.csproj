@@ -75,12 +75,6 @@
     <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormDTldemande.Designer.cs">
       <DependentUpon>FormDTldemande.cs</DependentUpon>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\formuser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\formuser.Designer.cs">
-      <DependentUpon>formuser.cs</DependentUpon>
-    </Compile>
     <Compile Include="AchatsLogistiquePatrimoine\ListeCategorie.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsDemande.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsDetailLivraison.cs" />
@@ -205,9 +199,6 @@
     <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\FormDTldemande.resx">
       <DependentUpon>FormDTldemande.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\formuser.resx">
-      <DependentUpon>formuser.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\General.resx">
       <DependentUpon>General.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +255,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AchatsLogistiquePatrimoine\arriere-plan-afges-1024x728.jpg" />
+    <None Include="Resources\close_window_48px.png" />
     <None Include="Resources\image.png" />
     <None Include="Resources\WhatsApp Image 2021-07-03 at 12.23.06.jpeg" />
     <None Include="Resources\WhatsApp Image 2021-07-03 at 12.17.51.jpeg" />
@@ -275,6 +267,7 @@
     <None Include="Resources\signature.png" />
     <None Include="Resources\dtlDemande.png" />
     <None Include="Resources\back1.png" />
+    <None Include="Resources\checked_checkbox_50px.png" />
     <Content Include="Resources\cisco.png" />
     <None Include="Resources\feuille.jpg" />
     <None Include="Resources\1384060.png" />
