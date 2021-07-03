@@ -7,16 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+   
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
     public partial class Catalogue : Form
     {
+
+        
         public Catalogue()
         {
             InitializeComponent();
-        }
+            timer1.Interval = 10;
+            timer1.Tick += new EventHandler(timer1_Tick);
+            // 381; 256
+            //22; 143
+            //982; 638
+            
 
+            
+
+
+        }
+        Formulaire.FormDTldemande a = new Formulaire.FormDTldemande();
+        Formulaire.FormDtl2 b = new Formulaire.FormDtl2();
         List<CHOIX> lc = new List<CHOIX>();
         ClsDemande D = new ClsDemande();
 
@@ -81,7 +96,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
             public override object DefaultNewRowValue
             {
-                get { return null; } 
+                get { return null; }
             }
         }
 
@@ -164,10 +179,34 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private void Catalogue_Load(object sender, EventArgs e)
 
         {
-             //panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
+            if(ClsListe.List_choix.Count == 0)
+            {
+                pictureBox2.Show();
+                timer1.Start();
+
+                btnVider.Visible = false;
+                btnsuivant.Visible = false;
+                btnRetirer.Visible = false;
+                lblFinal.Visible = false;
+                lblChoi.Visible = false;
+                btnChoisir.Visible = false;
+                dgvCHoi.Visible = false;
+                dgvFinal.Visible = false;
+
+            }
+            //animation
+            
+
+
+
+                dgvFinal.DataSource = ClsListe.List_choix;
+
+           
+
+            //panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
             pnlHaut.BackColor = Color.FromArgb(70, 0, 0, 0);
             //charger fichier  choix dans liste choi 
-            ClsListe.List_choix.Clear();
+            
             /*ClsListe.chargerDEMANDE();*/ // pour ajouter une demande sur la liste precedente
 
             //charger les article
@@ -178,14 +217,14 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             //string a = Application.StartupPath;
             dgvCHoi.DataSource = null;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-           
-            
+
+
             dgvCHoi.DataSource = ClsListe.List_article;
             dgvCHoi.Columns["nom"].Width = 150;
             dgvCHoi.Columns["typearticle"].Width = 80;
-            dgvCHoi.Columns["description"].Visible = false;
+
             dgvCHoi.Columns["photo"].Visible = false;
-            
+
 
             cmbProduit.Text = "--Faites votre choix--";
             cmbProduit.Items.Add("Bureau");
@@ -198,14 +237,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             cmbProduit.Items.Add("Service");
             cmbProduit.Items.Add("Autre");
 
-            //combo departement
-            cmbDepartemen.Items.Add("Personnel");
-            cmbDepartemen.Items.Add("Restaurant");
-            cmbDepartemen.Items.Add("Salle de sport");
-            cmbDepartemen.Items.Add("Salle de jeux");
-            cmbDepartemen.Items.Add("Crèche");
-            cmbDepartemen.Items.Add("Location ");
-            cmbDepartemen.Items.Add("Parking");
+
 
             //liste departement
             ClsListe.List_departmnt.Add(new ClsDepartement("1", "Personnel"));
@@ -219,22 +251,24 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            pictureBox2.Visible = false;
             //List<ClsArticle> la = new List<ClsArticle>();
-
+            dgvCHoi.Visible = true;
+            lblChoi.Visible = true;
             ClsListe a = new ClsListe();
-            if (cmbProduit.SelectedItem == "Bureau")
+            if (cmbProduit.SelectedItem.ToString() == "Bureau")
             {
 
                 dgvCHoi.DataSource = null;
-                dgvCHoi.DataSource = ClsListe.getlisteART(ArticleType.Bureau ); 
-                
+                dgvCHoi.DataSource = ClsListe.getlisteART(ArticleType.Bureau);
+
                 dgvCHoi.Columns["nom"].Width = 170;
                 dgvCHoi.Columns["nom"].ReadOnly = true;
 
 
             }
 
-            if (cmbProduit.SelectedItem == "MEUBLE")
+            if (cmbProduit.SelectedItem.ToString() == "MEUBLE")
             {
 
 
@@ -245,13 +279,13 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
                 dgvCHoi.Columns["nom"].Width = 170;
                 dgvCHoi.Columns["nom"].ReadOnly = true;
 
-                
+
 
 
             }
 
             cmbProduit.Text = "--Faites votre choix--";
-            foreach( DataGridViewColumn d in dgvCHoi.Columns)
+            foreach (DataGridViewColumn d in dgvCHoi.Columns)
             {
                 d.Visible = false;
 
@@ -271,37 +305,42 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         {
             pictureBox1.Image = ((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem).Photo;
         }
-         
+
 
 
         private void btnChoisir_Click(object sender, EventArgs e)
         {
-            
+            lblFinal.Visible = true;
+            dgvFinal.Visible = true;
+            btnRetirer.Visible = true;
+            btnVider.Visible = true;
+            btnsuivant.Visible = true;
+
             bool exist = false;
 
-            string n = ((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem).Nom ;
+            string n = ((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem).Nom;
 
             CHOIX c = new CHOIX(((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem), n, 0);
             //ClsListe.List_choix.Add(c);
-            for( int i = 0; i  < lc.Count; i++)
+            for (int i = 0; i < lc.Count; i++)
             {
-                if(lc[i].Nom == n )
+                if (lc[i].Nom == n)
                 {
                     exist = true;
                 }
 
             }
-            if(exist == false)
+            if (exist == false)
             {
                 lc.Add(c);
             }
-            
 
-           
+
+
             dgvFinal.DataSource = null;
             dgvFinal.DataSource = lc;
 
-           
+
             foreach (DataGridViewColumn d in dgvFinal.Columns)
             {
                 d.Visible = false;
@@ -310,7 +349,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
             dgvFinal.Columns["nom"].Visible = true;
             dgvFinal.Columns["quantite"].Visible = true;
-         
+
             dgvFinal.Columns["nom"].ReadOnly = true;
             dgvFinal.Columns["quantite"].ReadOnly = false;
 
@@ -320,7 +359,8 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private void btnRetirer_Click(object sender, EventArgs e)
         {
-            if( s==false)
+
+            if (s == false)
             {
                 MessageBox.Show("selectionnez un article");
             }
@@ -355,7 +395,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
 
         }
-        bool s= false;
+        bool s = false;
 
         private void dgvFinal_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -364,13 +404,14 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private void dgvFinal_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            pictureBox1.Image = ((CHOIX)dgvFinal.CurrentRow.DataBoundItem).Article.Photo ;
+            pictureBox1.Image = ((CHOIX)dgvFinal.CurrentRow.DataBoundItem).Article.Photo;
         }
 
         private void btnVider_Click(object sender, EventArgs e)
         {
+            dgvFinal.Visible = false;
             lc.Clear();
-            dgvFinal .DataSource = null;
+            dgvFinal.DataSource = null;
 
         }
 
@@ -382,29 +423,86 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             ///
             //string id = ClsListe.List_choix.Count.ToString();
 
-           // ClsListe.List_demande.Add(new ClsDemande(id, "", EtatDemande.attente, "", DateTime.Now, lc ,ClsListe.List_departmnt[0]));
+            // ClsListe.List_demande.Add(new ClsDemande(id, "", EtatDemande.attente, "", DateTime.Now, lc ,ClsListe.List_departmnt[0]));
 
             //sauvgarde demande
 
-            
 
-            
+
+
             //fonction serialiser vers ficher choiux depuis list choix generel
 
 
-            
+
         }
 
         private void dgvFinal_ColumnAdded(object sender, DataGridViewColumnEventArgs e)
         {
 
         }
-
+        
         private void btnsuivant_Click(object sender, EventArgs e)
         {
-            UserInfo user = new UserInfo();
-            this.Controls.Add(user);
-            user.Show();
+            this.Hide();
+            ClsListe.List_choix = lc;
+            
+            a.Show();
+            b.Show();
+            
+            
+
+            
+            
+
+        }
+
+        private void cmbProduit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Catalogue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvCHoi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvCHoi_Click(object sender, EventArgs e)
+        {
+            btnChoisir.Visible = true;
+
+        }
+
+        private void lblChoi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_LocationChanged(object sender, EventArgs e)
+        {
+           
+
+
+
+            //pictureBox1.Location = new Point(x, y);
+        }
+        private int cpt = 0;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int x = pictureBox2.Location.X;
+            int y = pictureBox2.Location.Y;
+            pictureBox2.Location = new Point(x + 4, y+2);
+
+            
+            if (x> 400 )
+            {
+                timer1.Stop();
+            }
         }
     }
 }

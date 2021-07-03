@@ -18,23 +18,23 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
     {
         private string nom;       
         private ArticleType typeArticle;
-        private string description;
+        
         private Image photo;
 
         public string Nom { get => nom; set => nom = value; }
            
        
-        public string Description { get => description; set => description = value; }
+       
         public Image Photo { get => photo; set => photo = value; }
         public ArticleType TypeArticle { get => typeArticle; set => typeArticle = value; }
 
         public ClsArticle() { }
 
-        public ClsArticle(string nom ,ArticleType articletype, string description ,  Image photo  )
+        public ClsArticle(string nom ,ArticleType articletype, Image photo  )
         {
             this.Nom = nom;
             
-            this.Description = description;
+            
             this.Photo = photo;
             this.TypeArticle = articletype;
             

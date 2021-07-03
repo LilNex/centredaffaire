@@ -123,6 +123,16 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back1 {
+            get {
+                object obj = ResourceManager.GetObject("back1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap caricature_homme_affaires_18591_40638 {
             get {
                 object obj = ResourceManager.GetObject("caricature-homme-affaires_18591-40638", resourceCulture);
@@ -166,6 +176,56 @@ namespace Centre_D_affaire.Properties {
         internal static System.Drawing.Bitmap depositphotos_18595071_stock_photo_light_room {
             get {
                 object obj = ResourceManager.GetObject("depositphotos_18595071-stock-photo-light-room", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dtlDemande {
+            get {
+                object obj = ResourceManager.GetObject("dtlDemande", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap feuille {
+            get {
+                object obj = ResourceManager.GetObject("feuille", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap feuille_page {
+            get {
+                object obj = ResourceManager.GetObject("feuille page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap feuille_page1 {
+            get {
+                object obj = ResourceManager.GetObject("feuille page1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image {
+            get {
+                object obj = ResourceManager.GetObject("image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,6 +363,16 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap signature {
+            get {
+                object obj = ResourceManager.GetObject("signature", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vue_arriere_plan_abstraite_abstraite_interieur_regardant_vers_bureau_vide_portes_entree_mur_rideau_verre_cadre_1339_6370 {
             get {
                 object obj = ResourceManager.GetObject("vue-arriere-plan-abstraite-abstraite-interieur-regardant-vers-bureau-vide-portes-" +
@@ -318,6 +388,56 @@ namespace Centre_D_affaire.Properties {
             get {
                 object obj = ResourceManager.GetObject("vue-arriere-plan-abstraite-abstraite-interieur-regardant-vers-bureau-vide-portes-" +
                         "entree-mur-rideau-verre-cadre_1339-63701", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_07_03_at_10_31_21 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-07-03 at 10.31.21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_07_03_at_10_31_30 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-07-03 at 10.31.30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_07_03_at_10_311 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-07-03 at 10.311", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_07_03_at_12_17_51 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-07-03 at 12.17.51", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_07_03_at_12_23_06 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-07-03 at 12.23.06", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

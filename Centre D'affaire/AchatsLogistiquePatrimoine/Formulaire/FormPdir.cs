@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Centre_D_affaire.AchatsLogistiquePatrimoine.usercontrole
+namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    public partial class Uc1 : UserControl
+    public partial class FormPdir : Form
     {
-        public Uc1()
+        public FormPdir()
         {
             InitializeComponent();
         }
@@ -20,10 +20,11 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.usercontrole
 
        
 
-        private void Uc1_Load(object sender, EventArgs e)
+       
+
+        private void FormPdir_Load(object sender, EventArgs e)
         {
             
         }
-
     }
 }

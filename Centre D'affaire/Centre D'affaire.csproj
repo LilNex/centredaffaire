@@ -49,14 +49,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AchatsLogistiquePatrimoine\Catalogue.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\aa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\Catalogue.Designer.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\aa.Designer.cs">
+      <DependentUpon>aa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\Catalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\Catalogue.Designer.cs">
       <DependentUpon>Catalogue.cs</DependentUpon>
     </Compile>
     <Compile Include="AchatsLogistiquePatrimoine\CHOIX.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsArticle.cs" />
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormDtl2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormDtl2.Designer.cs">
+      <DependentUpon>FormDtl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormDTldemande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormDTldemande.Designer.cs">
+      <DependentUpon>FormDTldemande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\formuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\formuser.Designer.cs">
+      <DependentUpon>formuser.cs</DependentUpon>
+    </Compile>
     <Compile Include="AchatsLogistiquePatrimoine\ListeCategorie.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsDemande.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsDetailLivraison.cs" />
@@ -70,16 +94,16 @@
     <Compile Include="AchatsLogistiquePatrimoine\ClsCommande.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsDepartement.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsUnite.cs" />
-    <Compile Include="AchatsLogistiquePatrimoine\Comerce.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\Comerce.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\Comerce.Designer.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\Comerce.Designer.cs">
       <DependentUpon>Comerce.cs</DependentUpon>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\General.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\General.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\General.Designer.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\General.Designer.cs">
       <DependentUpon>General.cs</DependentUpon>
     </Compile>
     <Compile Include="AchatsLogistiquePatrimoine\.cs">
@@ -89,47 +113,35 @@
       <DependentUpon>.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\FormPdir.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormPdir.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\FormPdir.Designer.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormPdir.Designer.cs">
       <DependentUpon>FormPdir.cs</DependentUpon>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\FormPres.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormPres.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\FormPres.Designer.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormPres.Designer.cs">
       <DependentUpon>FormPres.cs</DependentUpon>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\FormResDemande.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormResDemande.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\FormResDemande.Designer.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormResDemande.Designer.cs">
       <DependentUpon>FormResDemande.cs</DependentUpon>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\Formulaire1.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\Formulaire1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\Formulaire1.Designer.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\Formulaire1.Designer.cs">
       <DependentUpon>Formulaire1.cs</DependentUpon>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\saisie.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\saisie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\saisie.Designer.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\saisie.Designer.cs">
       <DependentUpon>saisie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\usercontrole\Uc1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\usercontrole\Uc1.Designer.cs">
-      <DependentUpon>Uc1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\usercontrole\UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\usercontrole\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -181,44 +193,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserInfo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserInfo.Designer.cs">
-      <DependentUpon>UserInfo.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Catalogue.resx">
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\Catalogue.resx">
       <DependentUpon>Catalogue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Comerce.resx">
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\Comerce.resx">
       <DependentUpon>Comerce.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\General.resx">
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\FormDtl2.resx">
+      <DependentUpon>FormDtl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\FormDTldemande.resx">
+      <DependentUpon>FormDTldemande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\formuser.resx">
+      <DependentUpon>formuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\General.resx">
       <DependentUpon>General.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AchatsLogistiquePatrimoine\.resx">
       <DependentUpon>.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\FormPdir.resx">
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\FormPdir.resx">
       <DependentUpon>FormPdir.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\FormPres.resx">
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\FormPres.resx">
       <DependentUpon>FormPres.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\FormResDemande.resx">
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\FormResDemande.resx">
       <DependentUpon>FormResDemande.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire1.resx">
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\Formulaire1.resx">
       <DependentUpon>Formulaire1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\saisie.resx">
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\saisie.resx">
       <DependentUpon>saisie.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\usercontrole\Uc1.resx">
-      <DependentUpon>Uc1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\usercontrole\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -236,9 +245,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserInfo.resx">
-      <DependentUpon>UserInfo.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
@@ -258,7 +264,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AchatsLogistiquePatrimoine\arriere-plan-afges-1024x728.jpg" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\WhatsApp Image 2021-07-03 at 12.23.06.jpeg" />
+    <None Include="Resources\WhatsApp Image 2021-07-03 at 12.17.51.jpeg" />
+    <None Include="Resources\WhatsApp Image 2021-07-03 at 10.31.301.jpeg" />
+    <None Include="Resources\feuille page1.png" />
+    <None Include="Resources\feuille page.png" />
+    <None Include="Resources\WhatsApp Image 2021-07-03 at 10.31.30.jpeg" />
+    <None Include="Resources\WhatsApp Image 2021-07-03 at 10.31.21.jpeg" />
+    <None Include="Resources\signature.png" />
+    <None Include="Resources\dtlDemande.png" />
+    <None Include="Resources\back1.png" />
     <Content Include="Resources\cisco.png" />
+    <None Include="Resources\feuille.jpg" />
     <None Include="Resources\1384060.png" />
     <None Include="Resources\Article" />
     <None Include="Resources\centre-commercial-vide_1127-376.jpg" />
@@ -290,6 +308,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AchatsLogistiquePatrimoine\responsableAchat\" />
+    <Folder Include="AchatsLogistiquePatrimoine\usercontrole\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

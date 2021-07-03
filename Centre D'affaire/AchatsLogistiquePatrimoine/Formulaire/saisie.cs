@@ -68,7 +68,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             }
             ClsListe.chargerART(); 
 
-            ClsArticle a = new ClsArticle(nom.Text,type,"",picb.Image);
+            ClsArticle a = new ClsArticle(nom.Text,type,picb.Image);
             ClsListe.List_article.Add(a);
 
 

@@ -8,20 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Centre_D_affaire.AchatsLogistiquePatrimoine
+namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
 {
-    public partial class Comerce : Form
+    public partial class aa : Form
     {
-        public Comerce()
+        public aa()
         {
             InitializeComponent();
-        }
-
-        private void Comerce_Load(object sender, EventArgs e)
-        {
-            panel1.BackColor = Color.FromArgb(50, 0, 0, 0); 
-           
-
         }
     }
 }

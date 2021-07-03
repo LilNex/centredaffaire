@@ -14,7 +14,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
     public class ClsDemande
     {
-        private string ID_demande;
+        private int ID_demande;
         private string Libele;
         private EtatDemande Etat_demande; // validé 
         private string urgence;
@@ -23,7 +23,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private ClsDepartement departement = new ClsDepartement();
         
 
-        public string ID_demande1 { get => ID_demande; set => ID_demande = value; }
+        public int ID_demande1 { get => ID_demande; set => ID_demande = value; }
         
         public EtatDemande Etat_demande1 { get => Etat_demande; set => Etat_demande = value; }
         public DateTime Date_demande1 { get => Date_demande; set => Date_demande = value; }
@@ -34,7 +34,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         public ClsDemande() { }
 
-        public ClsDemande(string iddemande , string libele, EtatDemande etatdemande, string urgence ,DateTime datedemande, List<CHOIX> listchoix, ClsDepartement departement) 
+        public ClsDemande(int iddemande , string libele, EtatDemande etatdemande, string urgence ,DateTime datedemande, List<CHOIX> listchoix, ClsDepartement departement) 
         {
             this.ID_demande = iddemande;
             this.Libele = libele;
@@ -44,7 +44,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.listchoix = listchoix;
             this.Departement = departement;
         }
-        public int Recherche_Dmd(string iddmd)
+        public int Recherche_Dmd(int iddmd)
         {
             for (int i = 0; i < ClsListe.List_demande.Count(); i++)
             {
@@ -55,7 +55,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             }
             return -1;
         }
-        public ClsDemande Recherche_Dmd_O(string iddmd)
+        public ClsDemande Recherche_Dmd_O(int iddmd)
         {
             for (int i = 0; i < ClsListe.List_demande.Count(); i++)
             {
@@ -90,7 +90,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
                 return false;
             }
         }
-        public bool Modifier_Acha(string id, ClsDemande dmd)
+        public bool Modifier_Acha(int id, ClsDemande dmd)
         {
             if (Recherche_Dmd(id) != -1)
             {

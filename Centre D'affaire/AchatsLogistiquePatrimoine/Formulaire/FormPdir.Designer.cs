@@ -41,6 +41,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPdir";
             this.Text = "FormPdir";
+            this.Load += new System.EventHandler(this.FormPdir_Load);
             this.ResumeLayout(false);
 
         }
