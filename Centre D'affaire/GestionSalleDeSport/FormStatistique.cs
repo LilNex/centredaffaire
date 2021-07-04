@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Centre_D_affaire
+namespace Centre_D_affaire.GestionSalleDeSport
 {
-    public partial class Form1 : Form
+    public partial class FormStatistique : Form
     {
-        public Form1()
+        public FormStatistique()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

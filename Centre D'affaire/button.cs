@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire
 {
-    public partial class Form1 : Form
+    public partial class button : UserControl
     {
-        public Form1()
+        public button()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

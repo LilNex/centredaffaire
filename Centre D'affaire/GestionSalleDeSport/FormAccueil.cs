@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    public partial class frmGSS : Form
+    public partial class FormAccueil : Form
     {
-        public frmGSS()
+        public FormAccueil()
         {
             InitializeComponent();
+        }
+
+        private void BTNmembres_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNequipment_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace Centre_D_affaire.GestionSalleDeSport
 {
-    partial class frmGSS
+    partial class FormStatistique
     {
         /// <summary>
         /// Required designer variable.
@@ -30,11 +30,28 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.SuspendLayout();
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // FormStatistique
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmGSS";
+            this.ClientSize = new System.Drawing.Size(1100, 755);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FormStatistique";
+            this.Text = "FormStatistique";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
