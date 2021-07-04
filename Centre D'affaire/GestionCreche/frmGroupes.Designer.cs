@@ -149,7 +149,7 @@ namespace Centre_D_affaire.GestionCreche
             this.lsvGroupe.ContextMenuStrip = this.contextMenuStrip1;
             this.lsvGroupe.GridLines = true;
             this.lsvGroupe.HideSelection = false;
-            this.lsvGroupe.Location = new System.Drawing.Point(391, 216);
+            this.lsvGroupe.Location = new System.Drawing.Point(381, 216);
             this.lsvGroupe.Name = "lsvGroupe";
             this.lsvGroupe.Size = new System.Drawing.Size(906, 210);
             this.lsvGroupe.TabIndex = 4;

@@ -108,7 +108,7 @@ namespace Centre_D_affaire.GestionCreche
             this.DateNaissance,
             this.DateAdmission});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(236, 337);
+            this.listView1.Location = new System.Drawing.Point(236, 346);
             this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(682, 230);

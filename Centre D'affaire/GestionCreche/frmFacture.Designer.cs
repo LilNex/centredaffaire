@@ -87,7 +87,7 @@ namespace Centre_D_affaire.GestionCreche
             this.lsvFacture.ContextMenuStrip = this.contextMenuStrip1;
             this.lsvFacture.GridLines = true;
             this.lsvFacture.HideSelection = false;
-            this.lsvFacture.Location = new System.Drawing.Point(638, 339);
+            this.lsvFacture.Location = new System.Drawing.Point(641, 339);
             this.lsvFacture.Name = "lsvFacture";
             this.lsvFacture.Size = new System.Drawing.Size(1074, 215);
             this.lsvFacture.TabIndex = 0;
