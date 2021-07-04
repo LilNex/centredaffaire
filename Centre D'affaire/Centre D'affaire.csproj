@@ -356,11 +356,47 @@
     </Compile>
     <Compile Include="GestionSalleDeSport\Utilisateur.cs" />
     <Compile Include="GestionSalleDeSport\Vendeur.cs" />
+    <Compile Include="LocationEspacesSalleReunion\AjoutEspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationEspacesSalleReunion\AjoutEspace.Designer.cs">
+      <DependentUpon>AjoutEspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationEspacesSalleReunion\AjoutLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationEspacesSalleReunion\AjoutLocation.Designer.cs">
+      <DependentUpon>AjoutLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationEspacesSalleReunion\ClsFacture.cs" />
+    <Compile Include="LocationEspacesSalleReunion\ClsLocation.cs" />
+    <Compile Include="LocationEspacesSalleReunion\ClsLocataire.cs" />
+    <Compile Include="LocationEspacesSalleReunion\ClsType.cs" />
+    <Compile Include="LocationEspacesSalleReunion\ClsEspaces.cs" />
+    <Compile Include="LocationEspacesSalleReunion\ClsTest.cs" />
+    <Compile Include="LocationEspacesSalleReunion\ArchiveFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationEspacesSalleReunion\ArchiveFacture.Designer.cs">
+      <DependentUpon>ArchiveFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationEspacesSalleReunion\Facturation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationEspacesSalleReunion\Facturation.Designer.cs">
+      <DependentUpon>Facturation.cs</DependentUpon>
+    </Compile>
     <Compile Include="LocationEspacesSalleReunion\frmLESR.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LocationEspacesSalleReunion\frmLESR.Designer.cs">
       <DependentUpon>frmLESR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationEspacesSalleReunion\ListeFactures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationEspacesSalleReunion\ListeFactures.Designer.cs">
+      <DependentUpon>ListeFactures.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -448,6 +484,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeJeux\FrmPS4.resx">
       <DependentUpon>FrmPS4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationEspacesSalleReunion\AjoutEspace.resx">
+      <DependentUpon>AjoutEspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationEspacesSalleReunion\AjoutLocation.resx">
+      <DependentUpon>AjoutLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationEspacesSalleReunion\ArchiveFacture.resx">
+      <DependentUpon>ArchiveFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationEspacesSalleReunion\Facturation.resx">
+      <DependentUpon>Facturation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationEspacesSalleReunion\frmLESR.resx">
+      <DependentUpon>frmLESR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationEspacesSalleReunion\ListeFactures.resx">
+      <DependentUpon>ListeFactures.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -769,6 +826,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Untitled-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_manager_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_minus_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_office_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_pin_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_plus_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_unpin_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_add_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_bill_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_calendar_plus_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_new_document_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_organization_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_cancel_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LocationEspacesSalleReunion\Resouces\icons8_receipt_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
