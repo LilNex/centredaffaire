@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-   public class CHOIX
+    [Serializable]
+    public class CHOIX
     {
         private ClsArticle article;
         private string nom;

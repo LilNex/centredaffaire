@@ -14,7 +14,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
     {
         livré, nonlivré ,
     }
-
+    [Serializable]
     public class ClsCommande
     {
         private string iD_cmd;
@@ -24,6 +24,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private etatcommande etatcommande ;
         private livraison Livraison;
         
+        
         // autre attributs en relation avec type achat  
 
         public string ID_cmd { get => iD_cmd; set => iD_cmd = value; }
@@ -32,18 +33,20 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         public float Prix { get => prix; set => prix = value; }
         public etatcommande Etatcommande { get => etatcommande; set => etatcommande = value; }
         public livraison livraison { get => Livraison; set => Livraison = value; }
+        
 
         public ClsCommande() { }
 
-        public ClsCommande(string idCmd,DateTime dateCmd, ClsDemande objdemande,float prix , etatcommande etatcmd, livraison livr) 
+        public ClsCommande(string idCmd,DateTime dateCmd, ClsDemande objdemande,float prix , etatcommande etatcmd, livraison livr,ClsFournisseur fournsr
+            ) 
         {
             this.ID_cmd = idCmd;
             this.Date_cmd = dateCmd;
             this.ObjDemande = objdemande;
             this.Prix = prix;
             this.Etatcommande = etatcmd;
-            this.Livraison = livr; 
-
+            this.Livraison = livr;
+            
 
 
         }

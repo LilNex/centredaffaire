@@ -248,8 +248,8 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
 
 
-            //liste departement
-            ClsListe.List_departmnt.Add(new ClsDepartement("1", "Personnel"));
+           
+
 
         }
 
@@ -452,6 +452,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         
         private void btnsuivant_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
 
             

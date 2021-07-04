@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
+    [Serializable]
     public class ClsFournisseur
     {
         private string nom_Societe;

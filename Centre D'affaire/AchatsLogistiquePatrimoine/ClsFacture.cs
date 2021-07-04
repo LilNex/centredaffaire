@@ -10,6 +10,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
     {
         payé, nonpayé,
     }
+    [Serializable]
     public class ClsFacture
     {
         private string Id_facture;

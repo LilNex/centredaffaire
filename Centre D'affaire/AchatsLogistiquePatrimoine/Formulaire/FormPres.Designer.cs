@@ -48,11 +48,26 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.button6 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pnlDemande = new System.Windows.Forms.Panel();
+            this.dgvDmdNV = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbID = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cmbARticle = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.rdbNormal = new System.Windows.Forms.RadioButton();
+            this.rdbUrgent = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cmbDeprt = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pnlDemande.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDmdNV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -201,11 +216,104 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             // 
+            // pnlDemande
+            // 
+            this.pnlDemande.Controls.Add(this.cmbDeprt);
+            this.pnlDemande.Controls.Add(this.label11);
+            this.pnlDemande.Controls.Add(this.rdbUrgent);
+            this.pnlDemande.Controls.Add(this.rdbNormal);
+            this.pnlDemande.Controls.Add(this.label10);
+            this.pnlDemande.Controls.Add(this.label9);
+            this.pnlDemande.Controls.Add(this.cmbARticle);
+            this.pnlDemande.Controls.Add(this.label8);
+            this.pnlDemande.Controls.Add(this.cmbID);
+            this.pnlDemande.Controls.Add(this.label7);
+            this.pnlDemande.Controls.Add(this.label6);
+            this.pnlDemande.Controls.Add(this.dgvDmdNV);
+            resources.ApplyResources(this.pnlDemande, "pnlDemande");
+            this.pnlDemande.Name = "pnlDemande";
+            // 
+            // dgvDmdNV
+            // 
+            this.dgvDmdNV.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.dgvDmdNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgvDmdNV, "dgvDmdNV");
+            this.dgvDmdNV.Name = "dgvDmdNV";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Name = "label7";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // cmbID
+            // 
+            resources.ApplyResources(this.cmbID, "cmbID");
+            this.cmbID.FormattingEnabled = true;
+            this.cmbID.Name = "cmbID";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Name = "label8";
+            // 
+            // cmbARticle
+            // 
+            resources.ApplyResources(this.cmbARticle, "cmbARticle");
+            this.cmbARticle.FormattingEnabled = true;
+            this.cmbARticle.Name = "cmbARticle";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Name = "label9";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Name = "label10";
+            // 
+            // rdbNormal
+            // 
+            resources.ApplyResources(this.rdbNormal, "rdbNormal");
+            this.rdbNormal.Name = "rdbNormal";
+            this.rdbNormal.TabStop = true;
+            this.rdbNormal.UseVisualStyleBackColor = true;
+            // 
+            // rdbUrgent
+            // 
+            resources.ApplyResources(this.rdbUrgent, "rdbUrgent");
+            this.rdbUrgent.Name = "rdbUrgent";
+            this.rdbUrgent.TabStop = true;
+            this.rdbUrgent.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Name = "label11";
+            // 
+            // cmbDeprt
+            // 
+            resources.ApplyResources(this.cmbDeprt, "cmbDeprt");
+            this.cmbDeprt.FormattingEnabled = true;
+            this.cmbDeprt.Name = "cmbDeprt";
+            // 
             // FormPres
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Centre_D_affaire.Properties.Resources.depositphotos_18595071_stock_photo_light_room;
+            this.Controls.Add(this.pnlDemande);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -220,6 +328,9 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.pnlDemande.ResumeLayout(false);
+            this.pnlDemande.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDmdNV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +356,18 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Panel pnlDemande;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dgvDmdNV;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cmbID;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbARticle;
+        private System.Windows.Forms.RadioButton rdbUrgent;
+        private System.Windows.Forms.RadioButton rdbNormal;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cmbDeprt;
+        private System.Windows.Forms.Label label11;
     }
 }

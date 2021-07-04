@@ -11,7 +11,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         validé,
         attente
     }
-
+    [Serializable]
     public class ClsDemande
     {
         private int ID_demande;
@@ -38,7 +38,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         {
             this.ID_demande = iddemande;
             this.Libele = libele;
-            this.Etat_demande = EtatDemande.validé;
+            this.Etat_demande = etatdemande ;
             this.Urgence = urgence;
             this.Date_demande = datedemande;
             this.listchoix = listchoix;

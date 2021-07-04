@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
    
-
+    [Serializable]
     public class ClsDepartement
     {
         private string email;
@@ -24,10 +24,13 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         public ClsDepartement() { }
 
-        public ClsDepartement( string numerodepartement , string nomdepartement)
+        public ClsDepartement( string numerodepartement , string nomdepartement,string nomdmdeur ,string telephone ,string email)
         {
             this.numero_departement =numerodepartement ;
             this.nom_departement = nomdepartement ;
+            this.Nom_demandeur = nomdmdeur;
+            this.Telephone = telephone;
+            this.Email = email;
 
         }
 
