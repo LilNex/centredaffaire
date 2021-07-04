@@ -129,7 +129,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label3.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(25, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 22);
+            this.label3.Size = new System.Drawing.Size(89, 33);
             this.label3.TabIndex = 9;
             this.label3.Text = "profil";
             // 
@@ -140,7 +140,7 @@ namespace Centre_D_affaire.GestionCreche
             this.cmbPF.FormattingEnabled = true;
             this.cmbPF.Location = new System.Drawing.Point(168, 8);
             this.cmbPF.Name = "cmbPF";
-            this.cmbPF.Size = new System.Drawing.Size(128, 28);
+            this.cmbPF.Size = new System.Drawing.Size(128, 37);
             this.cmbPF.TabIndex = 8;
             this.cmbPF.SelectedIndexChanged += new System.EventHandler(this.cmbPF_SelectedIndexChanged);
             // 
@@ -151,7 +151,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label2.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(25, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 22);
+            this.label2.Size = new System.Drawing.Size(193, 33);
             this.label2.TabIndex = 7;
             this.label2.Text = "Mot de passe";
             // 
@@ -162,7 +162,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(25, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 22);
+            this.label1.Size = new System.Drawing.Size(78, 33);
             this.label1.TabIndex = 5;
             this.label1.Text = "Nom";
             // 
@@ -171,7 +171,7 @@ namespace Centre_D_affaire.GestionCreche
             this.txtMDP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMDP.Location = new System.Drawing.Point(168, 81);
             this.txtMDP.Name = "txtMDP";
-            this.txtMDP.Size = new System.Drawing.Size(128, 19);
+            this.txtMDP.Size = new System.Drawing.Size(128, 28);
             this.txtMDP.TabIndex = 6;
             // 
             // txtName
@@ -179,17 +179,17 @@ namespace Centre_D_affaire.GestionCreche
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtName.Location = new System.Drawing.Point(168, 44);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(128, 19);
+            this.txtName.Size = new System.Drawing.Size(128, 28);
             this.txtName.TabIndex = 5;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // FrmAccul
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(670, 478);
+            this.ClientSize = new System.Drawing.Size(673, 478);
             this.Controls.Add(this.pnlPersonnel);
             this.Controls.Add(this.btnPersonnel);
             this.Controls.Add(this.pnlAcceuil);
