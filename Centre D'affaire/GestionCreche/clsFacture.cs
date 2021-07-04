@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionCreche
 {
-    class clsFacture
+    public class clsFacture
     {
+        private int NumF;
+        private DateTime dateF;
+        
     }
 }

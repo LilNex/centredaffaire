@@ -67,7 +67,7 @@ namespace Centre_D_affaire.GestionCreche
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(199, 174);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(247, 22);
@@ -76,7 +76,7 @@ namespace Centre_D_affaire.GestionCreche
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(199, 110);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(247, 22);
@@ -89,7 +89,7 @@ namespace Centre_D_affaire.GestionCreche
             this.lblFamille.Location = new System.Drawing.Point(373, 86);
             this.lblFamille.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFamille.Name = "lblFamille";
-            this.lblFamille.Size = new System.Drawing.Size(117, 16);
+            this.lblFamille.Size = new System.Drawing.Size(161, 25);
             this.lblFamille.TabIndex = 22;
             this.lblFamille.Text = "Nom de Famille";
             // 
@@ -100,7 +100,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label1.Location = new System.Drawing.Point(203, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(491, 37);
+            this.label1.Size = new System.Drawing.Size(729, 55);
             this.label1.TabIndex = 20;
             this.label1.Text = "FORMULAIRE D\'INSCRIPTION";
             // 
@@ -111,7 +111,7 @@ namespace Centre_D_affaire.GestionCreche
             this.lbln.Location = new System.Drawing.Point(56, 82);
             this.lbln.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbln.Name = "lbln";
-            this.lbln.Size = new System.Drawing.Size(127, 20);
+            this.lbln.Size = new System.Drawing.Size(185, 29);
             this.lbln.TabIndex = 42;
             this.lbln.Text = "Nom du parent";
             // 
@@ -122,7 +122,7 @@ namespace Centre_D_affaire.GestionCreche
             this.lblA.Location = new System.Drawing.Point(56, 133);
             this.lblA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(94, 20);
+            this.lblA.Size = new System.Drawing.Size(138, 29);
             this.lblA.TabIndex = 45;
             this.lblA.Text = "Profession";
             // 
@@ -142,7 +142,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label3.Location = new System.Drawing.Point(48, 174);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 16);
+            this.label3.Size = new System.Drawing.Size(86, 25);
             this.label3.TabIndex = 22;
             this.label3.Text = "Prenom";
             // 
@@ -162,7 +162,7 @@ namespace Centre_D_affaire.GestionCreche
             this.lblTele.Location = new System.Drawing.Point(56, 190);
             this.lblTele.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTele.Name = "lblTele";
-            this.lblTele.Size = new System.Drawing.Size(98, 20);
+            this.lblTele.Size = new System.Drawing.Size(147, 29);
             this.lblTele.TabIndex = 49;
             this.lblTele.Text = "Telephone ";
             // 
@@ -191,7 +191,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label2.Location = new System.Drawing.Point(48, 114);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 16);
+            this.label2.Size = new System.Drawing.Size(56, 25);
             this.label2.TabIndex = 21;
             this.label2.Text = "Nom";
             // 
@@ -211,7 +211,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label4.Location = new System.Drawing.Point(23, 46);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 16);
+            this.label4.Size = new System.Drawing.Size(50, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Sex";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -232,16 +232,17 @@ namespace Centre_D_affaire.GestionCreche
             this.label5.Location = new System.Drawing.Point(48, 378);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 16);
+            this.label5.Size = new System.Drawing.Size(164, 25);
             this.label5.TabIndex = 23;
             this.label5.Text = "Date Naissance";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(371, 277);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(279, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(279, 30);
             this.dateTimePicker1.TabIndex = 67;
             // 
             // label6
@@ -251,7 +252,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label6.Location = new System.Drawing.Point(48, 434);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 16);
+            this.label6.Size = new System.Drawing.Size(180, 25);
             this.label6.TabIndex = 24;
             this.label6.Text = "Date D\'admission";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -261,7 +262,7 @@ namespace Centre_D_affaire.GestionCreche
             this.dateTimePicker2.Location = new System.Drawing.Point(52, 331);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(278, 22);
+            this.dateTimePicker2.Size = new System.Drawing.Size(278, 30);
             this.dateTimePicker2.TabIndex = 69;
             // 
             // label8
@@ -271,7 +272,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label8.Location = new System.Drawing.Point(372, 303);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(218, 20);
+            this.label8.Size = new System.Drawing.Size(317, 29);
             this.label8.TabIndex = 70;
             this.label8.Text = "Jours d\'accueil souhaités*";
             // 
@@ -282,7 +283,7 @@ namespace Centre_D_affaire.GestionCreche
             this.checkBox1.Location = new System.Drawing.Point(371, 331);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(57, 17);
+            this.checkBox1.Size = new System.Drawing.Size(81, 24);
             this.checkBox1.TabIndex = 71;
             this.checkBox1.Text = "Lundi";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -294,7 +295,7 @@ namespace Centre_D_affaire.GestionCreche
             this.checkBox2.Location = new System.Drawing.Point(371, 354);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(57, 17);
+            this.checkBox2.Size = new System.Drawing.Size(82, 24);
             this.checkBox2.TabIndex = 72;
             this.checkBox2.Text = "Mardi";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -306,7 +307,7 @@ namespace Centre_D_affaire.GestionCreche
             this.checkBox3.Location = new System.Drawing.Point(371, 376);
             this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(75, 17);
+            this.checkBox3.Size = new System.Drawing.Size(109, 24);
             this.checkBox3.TabIndex = 73;
             this.checkBox3.Text = "Mercredi";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -318,7 +319,7 @@ namespace Centre_D_affaire.GestionCreche
             this.checkBox4.Location = new System.Drawing.Point(371, 400);
             this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(59, 17);
+            this.checkBox4.Size = new System.Drawing.Size(85, 24);
             this.checkBox4.TabIndex = 74;
             this.checkBox4.Text = "Jeudii";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -330,7 +331,7 @@ namespace Centre_D_affaire.GestionCreche
             this.checkBox5.Location = new System.Drawing.Point(371, 422);
             this.checkBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(76, 17);
+            this.checkBox5.Size = new System.Drawing.Size(109, 24);
             this.checkBox5.TabIndex = 75;
             this.checkBox5.Text = "Vendredi";
             this.checkBox5.UseVisualStyleBackColor = true;
@@ -342,7 +343,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label9.Location = new System.Drawing.Point(47, 367);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(231, 20);
+            this.label9.Size = new System.Drawing.Size(334, 29);
             this.label9.TabIndex = 76;
             this.label9.Text = "Date d\'admission souhaitée";
             // 
@@ -401,16 +402,16 @@ namespace Centre_D_affaire.GestionCreche
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(86, 11);
+            this.label10.Location = new System.Drawing.Point(-7, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(518, 60);
+            this.label10.Size = new System.Drawing.Size(789, 87);
             this.label10.TabIndex = 37;
             this.label10.Text = resources.GetString("label10.Text");
             // 
             // frmEnfant
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -430,7 +431,7 @@ namespace Centre_D_affaire.GestionCreche
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEnfant";
             this.Text = "frmEnfant";
             this.Load += new System.EventHandler(this.frmEnfant_Load);

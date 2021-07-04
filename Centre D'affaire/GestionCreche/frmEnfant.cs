@@ -85,5 +85,10 @@ namespace Centre_D_affaire.GestionCreche
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
