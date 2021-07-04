@@ -8,31 +8,33 @@ namespace Centre_D_affaire.GestionPersonnel
 {
     class Demission
     {
-        public List<Demission> ListeDesDemission = new List<Demission>();
+        public static List<Demission> ListeDesDemission = new List<Demission>();
         private DateTime date;
-        private static List<ClsEmploye> listeEmploye = new List<ClsEmploye>();
+        private int num;
+        private ClsEmploye Employe;
         private string raison;
         private string etat;
-
         public DateTime Date { get => date; set => date = value; }
-        public static List<ClsEmploye> ListeEmploye { get => listeEmploye; set => listeEmploye = value; }
+
         public string Etat { get => etat; set => etat = value; }
         public string Raison { get => raison; set => raison = value; }
+        public ClsEmploye Employe1 { get => Employe; set => Employe = value; }
+        public int Num { get => num; set => num = value; }
 
         public Demission() { }
-        public Demission(DateTime d,  List<ClsEmploye> ls, string Raison, string Etat)
+        public Demission(DateTime d,   string Raison, string Etat)
         {
-            this.date = d;
-            listeEmploye = ls;
+           
+            this.Num = num;
+            this.date = d;       
             this.raison = Raison;
             this.etat = Etat;
-
         }
-        public int rechercher(DateTime date)
+        public int rechercher(int num)
         {
             for (int i = 0; i < ListeDesDemission.Count(); i++)
             {
-                if (ListeDesDemission[i].date == date)
+                if (ListeDesDemission[i].num == num)
                 {
                     return i;
                 }
@@ -41,18 +43,18 @@ namespace Centre_D_affaire.GestionPersonnel
         }
         public bool ajouter(Demission G)
         {
-            if (rechercher(G.date) == -1)
+            if (rechercher(G.num) == -1)
             {
                 ListeDesDemission.Add(G);
                 return true;
             }
             return false;
         }
-        public void supprimer(DateTime date)
+        public void supprimer(int num )
         {
-            if (rechercher(date) != -1)
+            if (rechercher(num) != -1)
             {
-                ListeDesDemission.RemoveAt(rechercher(date));
+                ListeDesDemission.RemoveAt(rechercher(num));
 
             }
 

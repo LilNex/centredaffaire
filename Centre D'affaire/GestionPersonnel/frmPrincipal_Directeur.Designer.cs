@@ -50,6 +50,7 @@ namespace Centre_D_affaire.GestionPersonnel
             this.ucDashboard = new Centre_D_affaire.GestionPersonnel.CustomControls.UCDashboard();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.workerError = new System.ComponentModel.BackgroundWorker();
             this.pnlGauche.SuspendLayout();
             this.pnlDrag.SuspendLayout();
             this.pnlMain.SuspendLayout();
@@ -413,6 +414,10 @@ namespace Centre_D_affaire.GestionPersonnel
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // workerError
+            // 
+            this.workerError.DoWork += new System.ComponentModel.DoWorkEventHandler(this.workerError_DoWork);
+            // 
             // frmPrincipal_Directeur
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -455,5 +460,6 @@ namespace Centre_D_affaire.GestionPersonnel
         private CustomControls.UCEmployes ucEmployes;
         private CustomControls.UCDashboard ucDashboard;
         private CustomControls.UCDepartements ucDepartements;
+        private System.ComponentModel.BackgroundWorker workerError;
     }
 }

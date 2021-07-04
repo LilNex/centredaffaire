@@ -15,6 +15,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         public event Action reloadForm;
 
         public DataGridView dgvListDeps { get => dgvListeDeps; set => dgvListeDeps = value; }
+        public event EventHandler<DepartementEventArgs> ModifierDepEvent;
         public UCListeDepartement()
         {
             InitializeComponent();
@@ -88,6 +89,22 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             catch(Exception ex)
             {
                 dgvListePoste.DataSource = null;
+            }
+        }
+
+        private void btnModifier_Click(object sender, EventArgs e)
+        {
+            DepartementEventArgs args = new DepartementEventArgs();
+            args.departement = dgvListDeps.CurrentRow.DataBoundItem as ClsDepartement ;
+            ModifierDepEvent(this, args);
+
+        }
+        protected virtual void Modifier_Event(DepartementEventArgs e)
+        {
+            EventHandler<DepartementEventArgs> handler = ModifierDepEvent;
+            if (handler != null)
+            {
+                handler(this, e);
             }
         }
     }

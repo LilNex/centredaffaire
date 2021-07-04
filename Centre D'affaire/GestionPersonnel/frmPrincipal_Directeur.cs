@@ -26,14 +26,14 @@ namespace Centre_D_affaire.GestionPersonnel
         }
 
         public CultureInfo cultureInfo = new CultureInfo("fr-FR");
-
+        public CustomControls.frmAlert alert = new CustomControls.frmAlert();
         
 
         public frmPrincipal_Directeur()
         {   
             InitializeComponent();
             setupForm();
-            ClsDepartement.loadListeDeps();
+           ClsDepartement.loadListeDeps();
             Functions.setFont(this);
             //clsRFID rFID = new clsRFID();
             //rFID.connectArduino();
@@ -45,6 +45,8 @@ namespace Centre_D_affaire.GestionPersonnel
             pnlActive.Top = btnDashboard.Top;
             ucDashboard.BringToFront();
             //pnlError.BringToFront();
+            //alert.showError("test", CustomControls.frmAlert.errorType.Error);
+            
         }
         
         private void btnClose_Click(object sender, EventArgs e)
@@ -68,7 +70,7 @@ namespace Centre_D_affaire.GestionPersonnel
         {
             pnlActive.Top = btnEmployes.Top;
             ucEmployes.BringToFront();
-
+            ucEmployes.UCListeEmployes.reloadForm();
 
         }
 
@@ -100,6 +102,9 @@ namespace Centre_D_affaire.GestionPersonnel
 
         }
 
+        private void workerError_DoWork(object sender, DoWorkEventArgs e)
+        {
 
+        }
     }
 }

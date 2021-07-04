@@ -33,12 +33,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>GestionPersonnel\Resources\Bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>GestionPersonnel\Resources\Bunifu\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating">
+      <HintPath>GestionPersonnel\Resources\Bunifu\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>GestionPersonnel\Resources\Bunifu_UI_v1.52.dll</HintPath>
       <!--<HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>-->
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -80,12 +91,19 @@
     <Compile Include="GestionParking\frmGParking.Designer.cs">
       <DependentUpon>frmGParking.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionPersonnel\ClsCompteBanquaire.cs" />
+    <Compile Include="GestionPersonnel\ClsCompteBancaire.cs" />
     <Compile Include="GestionPersonnel\ClsDepartement.cs" />
     <Compile Include="GestionPersonnel\clsEmploye.cs" />
+    <Compile Include="GestionPersonnel\clsEventHandler.cs" />
     <Compile Include="GestionPersonnel\clsExceptions.cs" />
     <Compile Include="GestionPersonnel\clsPoste.cs" />
     <Compile Include="GestionPersonnel\Congé.cs" />
+    <Compile Include="GestionPersonnel\CustomControls\frmAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\frmAlert.Designer.cs">
+      <DependentUpon>frmAlert.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionPersonnel\CustomControls\Functions.cs" />
     <Compile Include="GestionPersonnel\CustomControls\UCAjoutPoste.cs">
       <SubType>UserControl</SubType>
@@ -135,6 +153,12 @@
     <Compile Include="GestionPersonnel\CustomControls\UCListePoste.Designer.cs">
       <DependentUpon>UCListePoste.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCModifDepartement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCModifDepartement.Designer.cs">
+      <DependentUpon>UCModifDepartement.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionPersonnel\CustomControls\UCNotif.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -154,6 +178,24 @@
       <DependentUpon>_UCDepartements.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionPersonnel\Demission.cs" />
+    <Compile Include="GestionPersonnel\FrmCongée.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmCongée.Designer.cs">
+      <DependentUpon>FrmCongée.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmDemande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmDemande.Designer.cs">
+      <DependentUpon>FrmDemande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmDemission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmDemission.Designer.cs">
+      <DependentUpon>FrmDemission.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionPersonnel\frmPrincipal_Directeur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +208,13 @@
     <Compile Include="GestionPersonnel\frmGPersonnel.Designer.cs">
       <DependentUpon>frmGPersonnel.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\FrmPaiement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\FrmPaiement.Designer.cs">
+      <DependentUpon>FrmPaiement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\list.cs" />
     <Compile Include="GestionSalleDeJeux\frmGSJ.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,8 +238,23 @@
     <EmbeddedResource Include="GestionPersonnel\CustomControls\UCAjoutPoste.resx">
       <DependentUpon>UCAjoutPoste.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\frmAlert.resx">
+      <DependentUpon>frmAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCModifDepartement.resx">
+      <DependentUpon>UCModifDepartement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\CustomControls\UCNotif.resx">
       <DependentUpon>UCNotif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\FrmCongée.resx">
+      <DependentUpon>FrmCongée.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\FrmDemande.resx">
+      <DependentUpon>FrmDemande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\FrmDemission.resx">
+      <DependentUpon>FrmDemission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\frmGPersonnel.resx">
       <DependentUpon>frmGPersonnel.cs</DependentUpon>
@@ -225,6 +289,9 @@
     <EmbeddedResource Include="GestionPersonnel\frmPrincipal_Directeur.resx">
       <DependentUpon>frmPrincipal_Directeur.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\FrmPaiement.resx">
+      <DependentUpon>FrmPaiement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -238,6 +305,7 @@
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -340,6 +408,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Liste des departements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_error_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_info_96px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

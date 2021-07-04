@@ -32,10 +32,10 @@
             this.btnAjouterDeps = new System.Windows.Forms.Button();
             this.btnListeDeps = new System.Windows.Forms.Button();
             this.btnListePostes = new System.Windows.Forms.Button();
-            this.ucAjoutPoste1 = new Centre_D_affaire.GestionPersonnel.CustomControls.UCAjoutPoste();
             this.ucListeDepartement = new Centre_D_affaire.GestionPersonnel.CustomControls.UCListeDepartement();
             this.ucListePoste = new Centre_D_affaire.GestionPersonnel.CustomControls.UCListePoste();
             this.ucAjoutDepartement = new Centre_D_affaire.GestionPersonnel.CustomControls.UCAjoutDepartement();
+            this.ucModifDepartement = new Centre_D_affaire.GestionPersonnel.CustomControls.UCModifDepartement();
             this.SuspendLayout();
             // 
             // btnAjouterPoste
@@ -119,7 +119,7 @@
             // 
             // ucListeDepartement
             // 
-            this.ucListeDepartement.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ucListeDepartement.BackColor = System.Drawing.Color.White;
             this.ucListeDepartement.Location = new System.Drawing.Point(0, 42);
             this.ucListeDepartement.Name = "ucListeDepartement";
             this.ucListeDepartement.Size = new System.Drawing.Size(952, 529);
@@ -141,10 +141,18 @@
             this.ucAjoutDepartement.TabIndex = 12;
             this.ucAjoutDepartement.Load += new System.EventHandler(this.ucAjoutDepartement_Load);
             // 
+            // ucModifDepartement
+            // 
+            this.ucModifDepartement.BackColor = System.Drawing.Color.White;
+            this.ucModifDepartement.Location = new System.Drawing.Point(0, 40);
+            this.ucModifDepartement.Name = "ucModifDepartement";
+            this.ucModifDepartement.Size = new System.Drawing.Size(952, 529);
+            this.ucModifDepartement.TabIndex = 13;
+            // 
             // UCDepartements
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.ucAjoutPoste1);
+            this.Controls.Add(this.ucModifDepartement);
             this.Controls.Add(this.btnAjouterPoste);
             this.Controls.Add(this.btnAjouterDeps);
             this.Controls.Add(this.btnListeDeps);
@@ -168,6 +176,6 @@
         private UCListeDepartement ucListeDepartement;
         private UCListePoste ucListePoste;
         private UCAjoutDepartement ucAjoutDepartement;
-        private UCAjoutPoste ucAjoutPoste1;
+        private UCModifDepartement ucModifDepartement;
     }
 }

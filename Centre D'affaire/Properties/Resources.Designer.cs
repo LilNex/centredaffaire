@@ -133,7 +133,17 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap icons8_euro_money_32px {
+        internal static System.Drawing.Bitmap icons8_error_60px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_error_60px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_euro_money_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_euro_money_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +213,17 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap icons8_male_user_32px {
+        internal static System.Drawing.Bitmap icons8_info_96px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_info_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_male_user_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_male_user_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -327,6 +347,26 @@ namespace Centre_D_affaire.Properties {
             get {
                 object obj = ResourceManager.GetObject("icons8_user_male_32px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Poppins_Light {
+            get {
+                object obj = ResourceManager.GetObject("Poppins_Light", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Poppins_Regular {
+            get {
+                object obj = ResourceManager.GetObject("Poppins_Regular", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
