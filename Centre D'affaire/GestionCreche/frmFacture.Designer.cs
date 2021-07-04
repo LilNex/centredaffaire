@@ -87,9 +87,9 @@ namespace Centre_D_affaire.GestionCreche
             this.lsvFacture.ContextMenuStrip = this.contextMenuStrip1;
             this.lsvFacture.GridLines = true;
             this.lsvFacture.HideSelection = false;
-            this.lsvFacture.Location = new System.Drawing.Point(823, 54);
+            this.lsvFacture.Location = new System.Drawing.Point(638, 339);
             this.lsvFacture.Name = "lsvFacture";
-            this.lsvFacture.Size = new System.Drawing.Size(396, 215);
+            this.lsvFacture.Size = new System.Drawing.Size(1074, 215);
             this.lsvFacture.TabIndex = 0;
             this.lsvFacture.UseCompatibleStateImageBehavior = false;
             this.lsvFacture.View = System.Windows.Forms.View.Details;
@@ -161,7 +161,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.btnAjouter.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAjouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjouter.Location = new System.Drawing.Point(387, 476);
+            this.btnAjouter.Location = new System.Drawing.Point(350, 568);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(191, 46);
             this.btnAjouter.TabIndex = 1;
@@ -173,7 +173,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.btnEnregitrer.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnEnregitrer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnregitrer.Location = new System.Drawing.Point(635, 476);
+            this.btnEnregitrer.Location = new System.Drawing.Point(598, 568);
             this.btnEnregitrer.Name = "btnEnregitrer";
             this.btnEnregitrer.Size = new System.Drawing.Size(191, 46);
             this.btnEnregitrer.TabIndex = 3;
@@ -197,10 +197,10 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(298, 9);
+            this.label1.Font = new System.Drawing.Font("Stencil", 27F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(517, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(432, 108);
+            this.label1.Size = new System.Drawing.Size(303, 64);
             this.label1.TabIndex = 5;
             this.label1.Text = "Facture :";
             // 
@@ -300,7 +300,7 @@ namespace Centre_D_affaire.GestionCreche
             this.Rechercher.Controls.Add(this.txtNumRecherche);
             this.Rechercher.Controls.Add(this.label2);
             this.Rechercher.Controls.Add(this.btnRechercher);
-            this.Rechercher.Location = new System.Drawing.Point(916, 348);
+            this.Rechercher.Location = new System.Drawing.Point(1032, 101);
             this.Rechercher.Name = "Rechercher";
             this.Rechercher.Size = new System.Drawing.Size(314, 206);
             this.Rechercher.TabIndex = 16;
@@ -420,7 +420,7 @@ namespace Centre_D_affaire.GestionCreche
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.cbxPaiementde);
-            this.groupBox2.Location = new System.Drawing.Point(362, 189);
+            this.groupBox2.Location = new System.Drawing.Point(325, 281);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(274, 253);
             this.groupBox2.TabIndex = 26;
@@ -440,6 +440,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1469, 889);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dtpDateF);
