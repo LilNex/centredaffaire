@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionParking
 {
-    public partial class frmGParking : Form
+    public partial class dgvSpot : Form
     {
-        public frmGParking()
+        public dgvSpot()
         {
             InitializeComponent();
+        }
+
+        private void bunifuButton5_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
