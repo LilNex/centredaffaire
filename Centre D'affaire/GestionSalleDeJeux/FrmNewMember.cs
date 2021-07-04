@@ -12,7 +12,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 {
     public partial class FrmNewMember : Form
     {
-        int cpt = 1001;
+        
         public FrmNewMember()
         {
             InitializeComponent();

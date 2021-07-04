@@ -92,11 +92,11 @@
     <Compile Include="GestionSalleDeJeux\clsBillard.cs" />
     <Compile Include="GestionSalleDeJeux\clsBabyFoot.cs" />
     <Compile Include="GestionSalleDeJeux\clsPs4.cs" />
-    <Compile Include="GestionSalleDeJeux\FrmAddGAndE.cs">
+    <Compile Include="GestionSalleDeJeux\frmAddGameAndEmployer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\FrmAddGAndE.Designer.cs">
-      <DependentUpon>FrmAddGAndE.cs</DependentUpon>
+    <Compile Include="GestionSalleDeJeux\frmAddGameAndEmployer.Designer.cs">
+      <DependentUpon>frmAddGameAndEmployer.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSalleDeJeux\FrmARCARDE STREET.cs">
       <SubType>Form</SubType>
@@ -177,14 +177,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GestionSalleDeJeux\FrmAddGAndE.resx">
-      <DependentUpon>FrmAddGAndE.cs</DependentUpon>
+    <EmbeddedResource Include="GestionSalleDeJeux\frmAddGameAndEmployer.resx">
+      <DependentUpon>frmAddGameAndEmployer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeJeux\FrmAddGame.resx">
       <DependentUpon>FrmAddGame.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionSalleDeJeux\FrmAddt.resx">
-      <DependentUpon>FrmAddGAndE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSalleDeJeux\FrmARCARDE STREET.resx">
       <DependentUpon>FrmARCARDE STREET.cs</DependentUpon>

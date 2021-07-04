@@ -313,7 +313,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void btnEditPs4_Click(object sender, EventArgs e)
         {
-            FrmAddGAndE FRMAA34 = new FrmAddGAndE();
+            frmAddGameAndEmployer FRMAA34 = new frmAddGameAndEmployer();
             FRMAA34.Show();
         }
     }

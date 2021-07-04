@@ -58,6 +58,15 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
             DgvBillard.DataSource = null;
             DgvBillard.DataSource = ClsListeSDJ.ListBillard;
+
+            DgvArcardStreet.DataSource = null;
+            DgvArcardStreet.DataSource = ClsListeSDJ.listArcardS;
+
+            DgvBabyFoot.DataSource = null;
+            DgvBabyFoot.DataSource = ClsListeSDJ.ListBabyFoot;
+
+            DgvPs4.DataSource = null;
+            DgvPs4.DataSource = ClsListeSDJ.ListPs4;
         }
 
         private void btnDeleteGame_Click(object sender, EventArgs e)

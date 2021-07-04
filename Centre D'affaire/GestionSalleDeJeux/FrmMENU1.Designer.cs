@@ -33,47 +33,47 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.lblBillHot = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.FlpMenu = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picHome = new System.Windows.Forms.PictureBox();
             this.btnHome = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnAddBillard = new System.Windows.Forms.Button();
             this.Pnladd = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnEditMenu = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.PnlBillard = new System.Windows.Forms.Panel();
             this.btnBillard = new System.Windows.Forms.Button();
-            this.btnImageBillard = new System.Windows.Forms.Button();
             this.PnlPS4 = new System.Windows.Forms.Panel();
             this.btnPS4 = new System.Windows.Forms.Button();
-            this.btnImagePS4 = new System.Windows.Forms.Button();
             this.PnlAcracdeStreet = new System.Windows.Forms.Panel();
             this.btnArcardeStreet = new System.Windows.Forms.Button();
-            this.btnImageArcardeStreet = new System.Windows.Forms.Button();
             this.PnlBabyFoot = new System.Windows.Forms.Panel();
-            this.btnImageBabayFoot = new System.Windows.Forms.Button();
             this.btnBabayFoot = new System.Windows.Forms.Button();
+            this.btnImageArcardeStreet = new System.Windows.Forms.Button();
+            this.btnImagePS4 = new System.Windows.Forms.Button();
+            this.btnImageBabayFoot = new System.Windows.Forms.Button();
+            this.btnImageBillard = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picHome = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlTitle.SuspendLayout();
             this.FlpMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Pnladd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.PnlBillard.SuspendLayout();
             this.PnlPS4.SuspendLayout();
             this.PnlAcracdeStreet.SuspendLayout();
             this.PnlBabyFoot.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitle
@@ -123,35 +123,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.FlpMenu.Controls.Add(this.panel3);
             this.FlpMenu.Location = new System.Drawing.Point(1, 1);
             this.FlpMenu.Name = "FlpMenu";
-            this.FlpMenu.Size = new System.Drawing.Size(87, 599);
+            this.FlpMenu.Size = new System.Drawing.Size(65, 599);
             this.FlpMenu.TabIndex = 32;
             this.FlpMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.FlpMenu_Paint);
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.Image = global::Centre_D_affaire.Properties.Resources.outline_menu_black_24dp1;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(3, 3);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(215, 96);
-            this.btnDashboard.TabIndex = 35;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 105);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 97);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -161,20 +135,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(207, 78);
             this.panel1.TabIndex = 34;
-            // 
-            // picHome
-            // 
-            this.picHome.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.picHome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.picHome.Image = global::Centre_D_affaire.Properties.Resources.outline_home_black_24dp1;
-            this.picHome.Location = new System.Drawing.Point(3, 3);
-            this.picHome.Name = "picHome";
-            this.picHome.Size = new System.Drawing.Size(48, 48);
-            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picHome.TabIndex = 34;
-            this.picHome.TabStop = false;
             // 
             // btnHome
             // 
@@ -202,20 +162,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel4.TabIndex = 36;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.Image = global::Centre_D_affaire.Properties.Resources.outline_help_black_24dp;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 34;
-            this.pictureBox4.TabStop = false;
-            // 
             // btnAddBillard
             // 
             this.btnAddBillard.BackColor = System.Drawing.Color.Transparent;
@@ -241,20 +187,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.Pnladd.Size = new System.Drawing.Size(207, 78);
             this.Pnladd.TabIndex = 35;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_edit_black_24dp;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 34;
-            this.pictureBox2.TabStop = false;
-            // 
             // btnEditMenu
             // 
             this.btnEditMenu.BackColor = System.Drawing.Color.Transparent;
@@ -279,20 +211,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(207, 78);
             this.panel3.TabIndex = 37;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = global::Centre_D_affaire.Properties.Resources.outline_support_agent_black_24dp2;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 34;
-            this.pictureBox3.TabStop = false;
             // 
             // button7
             // 
@@ -333,19 +251,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnBillard.UseVisualStyleBackColor = false;
             this.btnBillard.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btnImageBillard
-            // 
-            this.btnImageBillard.BackColor = System.Drawing.Color.Transparent;
-            this.btnImageBillard.FlatAppearance.BorderSize = 0;
-            this.btnImageBillard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnImageBillard.Image = global::Centre_D_affaire.Properties.Resources.queue_de_billard;
-            this.btnImageBillard.Location = new System.Drawing.Point(3, 1);
-            this.btnImageBillard.Name = "btnImageBillard";
-            this.btnImageBillard.Size = new System.Drawing.Size(258, 112);
-            this.btnImageBillard.TabIndex = 0;
-            this.btnImageBillard.UseVisualStyleBackColor = false;
-            this.btnImageBillard.Click += new System.EventHandler(this.button2_Click);
-            // 
             // PnlPS4
             // 
             this.PnlPS4.Controls.Add(this.btnPS4);
@@ -367,19 +272,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnPS4.Text = "P S 4";
             this.btnPS4.UseVisualStyleBackColor = false;
             this.btnPS4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // btnImagePS4
-            // 
-            this.btnImagePS4.BackColor = System.Drawing.Color.Transparent;
-            this.btnImagePS4.FlatAppearance.BorderSize = 0;
-            this.btnImagePS4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnImagePS4.Image = global::Centre_D_affaire.Properties.Resources._52c973cdb6787241d3c7a0360dc7d140;
-            this.btnImagePS4.Location = new System.Drawing.Point(3, 0);
-            this.btnImagePS4.Name = "btnImagePS4";
-            this.btnImagePS4.Size = new System.Drawing.Size(258, 112);
-            this.btnImagePS4.TabIndex = 0;
-            this.btnImagePS4.UseVisualStyleBackColor = false;
-            this.btnImagePS4.Click += new System.EventHandler(this.btnImagePS4_Click);
             // 
             // PnlAcracdeStreet
             // 
@@ -403,6 +295,28 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnArcardeStreet.UseVisualStyleBackColor = false;
             this.btnArcardeStreet.Click += new System.EventHandler(this.btnArcardeStreet_Click);
             // 
+            // PnlBabyFoot
+            // 
+            this.PnlBabyFoot.Controls.Add(this.btnImageBabayFoot);
+            this.PnlBabyFoot.Controls.Add(this.btnBabayFoot);
+            this.PnlBabyFoot.Location = new System.Drawing.Point(662, 137);
+            this.PnlBabyFoot.Name = "PnlBabyFoot";
+            this.PnlBabyFoot.Size = new System.Drawing.Size(264, 171);
+            this.PnlBabyFoot.TabIndex = 36;
+            // 
+            // btnBabayFoot
+            // 
+            this.btnBabayFoot.BackColor = System.Drawing.Color.Transparent;
+            this.btnBabayFoot.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBabayFoot.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBabayFoot.Location = new System.Drawing.Point(31, 119);
+            this.btnBabayFoot.Name = "btnBabayFoot";
+            this.btnBabayFoot.Size = new System.Drawing.Size(202, 43);
+            this.btnBabayFoot.TabIndex = 1;
+            this.btnBabayFoot.Text = "Baby Foot";
+            this.btnBabayFoot.UseVisualStyleBackColor = false;
+            this.btnBabayFoot.Click += new System.EventHandler(this.btnBabayFoot_Click);
+            // 
             // btnImageArcardeStreet
             // 
             this.btnImageArcardeStreet.BackColor = System.Drawing.Color.Transparent;
@@ -416,14 +330,18 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnImageArcardeStreet.UseVisualStyleBackColor = false;
             this.btnImageArcardeStreet.Click += new System.EventHandler(this.btnImageArcardeStreet_Click);
             // 
-            // PnlBabyFoot
+            // btnImagePS4
             // 
-            this.PnlBabyFoot.Controls.Add(this.btnImageBabayFoot);
-            this.PnlBabyFoot.Controls.Add(this.btnBabayFoot);
-            this.PnlBabyFoot.Location = new System.Drawing.Point(662, 137);
-            this.PnlBabyFoot.Name = "PnlBabyFoot";
-            this.PnlBabyFoot.Size = new System.Drawing.Size(264, 171);
-            this.PnlBabyFoot.TabIndex = 36;
+            this.btnImagePS4.BackColor = System.Drawing.Color.Transparent;
+            this.btnImagePS4.FlatAppearance.BorderSize = 0;
+            this.btnImagePS4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnImagePS4.Image = global::Centre_D_affaire.Properties.Resources._52c973cdb6787241d3c7a0360dc7d140;
+            this.btnImagePS4.Location = new System.Drawing.Point(3, 0);
+            this.btnImagePS4.Name = "btnImagePS4";
+            this.btnImagePS4.Size = new System.Drawing.Size(258, 112);
+            this.btnImagePS4.TabIndex = 0;
+            this.btnImagePS4.UseVisualStyleBackColor = false;
+            this.btnImagePS4.Click += new System.EventHandler(this.btnImagePS4_Click);
             // 
             // btnImageBabayFoot
             // 
@@ -439,25 +357,107 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnImageBabayFoot.UseVisualStyleBackColor = false;
             this.btnImageBabayFoot.Click += new System.EventHandler(this.btnImageBabayFoot_Click);
             // 
-            // btnBabayFoot
+            // btnImageBillard
             // 
-            this.btnBabayFoot.BackColor = System.Drawing.Color.Transparent;
-            this.btnBabayFoot.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBabayFoot.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBabayFoot.Location = new System.Drawing.Point(31, 119);
-            this.btnBabayFoot.Name = "btnBabayFoot";
-            this.btnBabayFoot.Size = new System.Drawing.Size(202, 43);
-            this.btnBabayFoot.TabIndex = 1;
-            this.btnBabayFoot.Text = "Baby Foot";
-            this.btnBabayFoot.UseVisualStyleBackColor = false;
-            this.btnBabayFoot.Click += new System.EventHandler(this.btnBabayFoot_Click);
+            this.btnImageBillard.BackColor = System.Drawing.Color.Transparent;
+            this.btnImageBillard.FlatAppearance.BorderSize = 0;
+            this.btnImageBillard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnImageBillard.Image = global::Centre_D_affaire.Properties.Resources.queue_de_billard;
+            this.btnImageBillard.Location = new System.Drawing.Point(3, 1);
+            this.btnImageBillard.Name = "btnImageBillard";
+            this.btnImageBillard.Size = new System.Drawing.Size(258, 112);
+            this.btnImageBillard.TabIndex = 0;
+            this.btnImageBillard.UseVisualStyleBackColor = false;
+            this.btnImageBillard.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Image = global::Centre_D_affaire.Properties.Resources.outline_menu_black_24dp1;
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.Location = new System.Drawing.Point(3, 3);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(215, 96);
+            this.btnDashboard.TabIndex = 35;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(3, 105);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(210, 97);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picHome
+            // 
+            this.picHome.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.picHome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picHome.Image = global::Centre_D_affaire.Properties.Resources.outline_home_black_24dp1;
+            this.picHome.Location = new System.Drawing.Point(3, 3);
+            this.picHome.Name = "picHome";
+            this.picHome.Size = new System.Drawing.Size(48, 48);
+            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picHome.TabIndex = 34;
+            this.picHome.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Image = global::Centre_D_affaire.Properties.Resources.outline_help_black_24dp;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 34;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_edit_black_24dp;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 34;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Image = global::Centre_D_affaire.Properties.Resources.outline_support_agent_black_24dp2;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 34;
+            this.pictureBox3.TabStop = false;
             // 
             // FrmMENU1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(977, 538);
+            this.ClientSize = new System.Drawing.Size(977, 522);
             this.Controls.Add(this.PnlAcracdeStreet);
             this.Controls.Add(this.PnlPS4);
             this.Controls.Add(this.PnlBabyFoot);
@@ -470,23 +470,23 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
             this.FlpMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Pnladd.ResumeLayout(false);
             this.Pnladd.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.PnlBillard.ResumeLayout(false);
             this.PnlPS4.ResumeLayout(false);
             this.PnlAcracdeStreet.ResumeLayout(false);
             this.PnlBabyFoot.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -620,7 +620,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void btnEditBillard_Click(object sender, EventArgs e)
         {
-            FrmAddGame FRMAG = new FrmAddGame();
+            frmAddGameAndEmployer FRMAG = new frmAddGameAndEmployer();
             FRMAG.Show();
         }
 

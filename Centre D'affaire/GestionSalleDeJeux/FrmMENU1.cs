@@ -183,8 +183,8 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void button5_Click(object sender, EventArgs e)
         {
-            FrmAddGAndE FRMAA = new FrmAddGAndE();
-            FRMAA.Show();
+            frmAddGameAndEmployer frmagae = new frmAddGameAndEmployer();
+            frmagae.Show();
         }
 
         private void btnHome_Click(object sender, EventArgs e)

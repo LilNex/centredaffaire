@@ -339,7 +339,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void btnEditBabyFoot_Click(object sender, EventArgs e)
         {
-            FrmAddGAndE FRMAA12 = new FrmAddGAndE();
+            frmAddGameAndEmployer FRMAA12 = new frmAddGameAndEmployer();
             FRMAA12.Show();
         }
     }
