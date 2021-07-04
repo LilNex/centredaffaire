@@ -13,7 +13,7 @@ namespace Centre_D_affaire.GestionCreche
 {
     public partial class frmFacture : Form
     {
-        private int indice;
+        private readonly int indice;
 
         public frmFacture()
         {

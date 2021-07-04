@@ -122,12 +122,6 @@
     <Compile Include="GestionCreche\frmCatalogue.Designer.cs">
       <DependentUpon>frmCatalogue.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCreche\frmEnfant.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionCreche\frmEnfant.Designer.cs">
-      <DependentUpon>frmEnfant.cs</DependentUpon>
-    </Compile>
     <Compile Include="GestionCreche\frmFacture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,9 +217,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmCatalogue.resx">
       <DependentUpon>frmCatalogue.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionCreche\frmEnfant.resx">
-      <DependentUpon>frmEnfant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmFacture.resx">
       <DependentUpon>frmFacture.cs</DependentUpon>
