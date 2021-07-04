@@ -18,17 +18,19 @@ namespace Centre_D_affaire.GestionCreche
         private string Email;
         private string Telephone;
         // private string Numero;
-        private string profil;
+
+        private string niveau;
         public ClsPersonnel() { }
 
 
-        public ClsPersonnel(string Name, string prenom, string EmailE, string Phone, string Profil)
+        public ClsPersonnel(string Name, string prenom, string EmailE, string Phone, string niveau)
         {
             this.Nom = Name;
             this.Prenom = prenom;
-            this.profil = Profil;
+            this.niveau = niveau;
             this.Email = EmailE;
             this.Telephone = Phone;
+
             //  this.Numero = NUM;
 
 
@@ -43,7 +45,7 @@ namespace Centre_D_affaire.GestionCreche
         public string Email1 { get => Email; set => Email = value; }
         public string Telephone1 { get => Telephone; set => Telephone = value; }
         //public string Numero1 { get => Numero; set => Numero = value; }
-        public string profiL1 { get => profil; set => profil = value; }
+        public string profiL1 { get => niveau; set => niveau = value; }
 
         public static implicit operator string(ClsPersonnel v)
 

@@ -10,7 +10,7 @@ namespace Centre_D_affaire.GestionCreche
             throw new NotImplementedException();
         }
 
-        internal void Serialize(FileStream fichierBin, frmEnfant frmEnfant)
+        internal void Serialize(FileStream fichierBin, frmInscription frmEnfant)
         {
             throw new NotImplementedException();
         }

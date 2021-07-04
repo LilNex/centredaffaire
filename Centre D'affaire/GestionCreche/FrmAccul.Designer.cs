@@ -142,7 +142,7 @@ namespace Centre_D_affaire.GestionCreche
             this.cmbPF.Name = "cmbPF";
             this.cmbPF.Size = new System.Drawing.Size(128, 28);
             this.cmbPF.TabIndex = 8;
-            this.cmbPF.SelectedIndexChanged += new System.EventHandler(this.cmbPF_SelectedIndexChanged);
+           
             // 
             // label2
             // 
