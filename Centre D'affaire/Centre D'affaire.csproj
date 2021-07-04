@@ -206,6 +206,15 @@
     <EmbeddedResource Include="GestionCreche\frmCatalogue.resx">
       <DependentUpon>frmCatalogue.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmEnfant.resx">
+      <DependentUpon>frmEnfant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmFacture.resx">
+      <DependentUpon>frmFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmGroupe.resx">
+      <DependentUpon>frmGroupe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmInscription.resx">
       <DependentUpon>frmInscription.cs</DependentUpon>
     </EmbeddedResource>
