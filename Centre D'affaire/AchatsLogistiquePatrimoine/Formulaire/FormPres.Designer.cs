@@ -49,15 +49,15 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pnlDemande = new System.Windows.Forms.Panel();
-            this.dgvDmdNV = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmbID = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cmbDeprt = new System.Windows.Forms.ComboBox();
             this.cmbUtgnce = new System.Windows.Forms.ComboBox();
+            this.cmbDeprt = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cmbID = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dgvDmdNV = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -227,52 +227,12 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             resources.ApplyResources(this.pnlDemande, "pnlDemande");
             this.pnlDemande.Name = "pnlDemande";
             // 
-            // dgvDmdNV
+            // cmbUtgnce
             // 
-            this.dgvDmdNV.BackgroundColor = System.Drawing.SystemColors.Menu;
-            this.dgvDmdNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgvDmdNV, "dgvDmdNV");
-            this.dgvDmdNV.Name = "dgvDmdNV";
-            this.dgvDmdNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDmdNV_CellContentClick);
-            this.dgvDmdNV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDmdNV_CellDoubleClick);
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Name = "label7";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // cmbID
-            // 
-            resources.ApplyResources(this.cmbID, "cmbID");
-            this.cmbID.FormattingEnabled = true;
-            this.cmbID.Name = "cmbID";
-            this.cmbID.SelectedIndexChanged += new System.EventHandler(this.cmbID_SelectedIndexChanged);
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.ForeColor = System.Drawing.Color.Maroon;
-            this.label9.Name = "label9";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Name = "label10";
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Name = "label11";
+            resources.ApplyResources(this.cmbUtgnce, "cmbUtgnce");
+            this.cmbUtgnce.FormattingEnabled = true;
+            this.cmbUtgnce.Name = "cmbUtgnce";
+            this.cmbUtgnce.SelectedIndexChanged += new System.EventHandler(this.cmbUtgnce_SelectedIndexChanged);
             // 
             // cmbDeprt
             // 
@@ -281,12 +241,52 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.cmbDeprt.Name = "cmbDeprt";
             this.cmbDeprt.SelectedIndexChanged += new System.EventHandler(this.cmbDeprt_SelectedIndexChanged);
             // 
-            // cmbUtgnce
+            // label11
             // 
-            resources.ApplyResources(this.cmbUtgnce, "cmbUtgnce");
-            this.cmbUtgnce.FormattingEnabled = true;
-            this.cmbUtgnce.Name = "cmbUtgnce";
-            this.cmbUtgnce.SelectedIndexChanged += new System.EventHandler(this.cmbUtgnce_SelectedIndexChanged);
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Name = "label11";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Name = "label10";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.ForeColor = System.Drawing.Color.Maroon;
+            this.label9.Name = "label9";
+            // 
+            // cmbID
+            // 
+            resources.ApplyResources(this.cmbID, "cmbID");
+            this.cmbID.FormattingEnabled = true;
+            this.cmbID.Name = "cmbID";
+            this.cmbID.SelectedIndexChanged += new System.EventHandler(this.cmbID_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Name = "label7";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // dgvDmdNV
+            // 
+            this.dgvDmdNV.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.dgvDmdNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgvDmdNV, "dgvDmdNV");
+            this.dgvDmdNV.Name = "dgvDmdNV";
+            this.dgvDmdNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDmdNV_CellContentClick);
+            this.dgvDmdNV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDmdNV_CellDoubleClick);
             // 
             // FormPres
             // 

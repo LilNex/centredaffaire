@@ -26,9 +26,21 @@ namespace Centre_D_affaire
             ClsListe.List_departmnt.Add(new ClsDepartement("6", "Gestion personnel", "chaiq ismail", "0666666666", "chaiqismail@gmail.com"));
             ClsListe.List_departmnt.Add(new ClsDepartement("7", "Location salle et espace", "el fadil imad", "066666666", "elfadilimad@gmail.com"));
             ClsListe.List_departmnt.Add(new ClsDepartement("8", "Service achats", "walaa allam", "06666666", "walaaallam@gmail.com"));
+            //-------------------------------------------------------------------------------------------------------------------------------
+            //------------------CASABLANCA------------------------------------------------------------------------------------------------
+            ClsListe.List_fournisseur.Add(new ClsFournisseur("GENEREUX BUREAU", "+212598745632", "genereuxbureau@gmail.com", "CASABLANCA/MAARIF", "KAMAL AYOUBI", "CASABLANCA"));
+            ClsListe.List_fournisseur.Add(new ClsFournisseur("MEUBLE", "+212522335049", "meuble@gmail.com", "CASABLANCA/CASAANFA", "BLARBI AHMED", "CASABLANCA"));
+            ClsListe.List_fournisseur.Add(new ClsFournisseur("DIAMANT UNIFORME", "+212522335049", "diamantunifrome@gmail.com", "CASABLANCA/AINSEBAA", "MERYEM LHLOU", "CASABLANCA"));
+            //-----------------------------------RABAT------------------------------------------------
+            ClsListe.List_fournisseur.Add(new ClsFournisseur("BUREAU FESTIVAL", "+212523668899", "bureaufestival@gmail.com", "RABAT/HAY RIAD", "SAMIRA KADMIRI", "RABAT"));
+            ClsListe.List_fournisseur.Add(new ClsFournisseur("GARDE MEUBLE", "+212525664480", "gardemeuble@gmail.com", "RABAT/TAKADOUM", "BLAMINE TAHA", "RABAT"));
+            ClsListe.List_fournisseur.Add(new ClsFournisseur("HONNETE UNIFORME", "+212525905044","honneteuniforme@gmail.com", "RABAT/AGDAL", "SOFIA HARATI", "RABAT"));
+            //----------------------------------TANGER-------------------------------------------------------------------------------------------------
+            ClsListe.List_fournisseur.Add(new ClsFournisseur("RANGEER BUREAU", "+212525607722", "rangerbureau@gmail.com", "TANGER/MEDINA", "SAMIR LYAKOUBI", "TANGER"));
+            ClsListe.List_fournisseur.Add(new ClsFournisseur("GARDE MEUBLE", "+212525867788", "gardemeuble@gmail.com", "TANGER/OLD CITY", "HAFID LYAMANI", "TANGER"));
+            ClsListe.List_fournisseur.Add(new ClsFournisseur("HONNETE UNIFORME", "+212525905044", "honneteuniforme@gmail.com", "TANGER/PORT", "SOFIA LYOUSSI", "TANGER"));
 
-
-            Application.Run(new saisie());
+            Application.Run(new Comerce());
 
             
             

@@ -38,17 +38,6 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btncommande = new System.Windows.Forms.Button();
-            this.pnlcommande = new System.Windows.Forms.Panel();
-            this.cmbdepartement = new System.Windows.Forms.ComboBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.cmbidcommande = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbltitre = new System.Windows.Forms.Label();
-            this.dgvDmdV = new System.Windows.Forms.DataGridView();
             this.pnlconfirmation = new System.Windows.Forms.Panel();
             this.btnvalider = new System.Windows.Forms.Button();
             this.lblpri = new System.Windows.Forms.Label();
@@ -61,11 +50,31 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.lbldatecommande = new System.Windows.Forms.Label();
             this.lblfournisseur = new System.Windows.Forms.Label();
             this.lblid = new System.Windows.Forms.Label();
+            this.dgvDmdV = new System.Windows.Forms.DataGridView();
+            this.lbltitre = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmbidcommande = new System.Windows.Forms.ComboBox();
+            this.cmbdepartement = new System.Windows.Forms.ComboBox();
+            this.cmbUrgnce = new System.Windows.Forms.ComboBox();
+            this.pnlcommande = new System.Windows.Forms.Panel();
+            this.pnlfournisseur = new System.Windows.Forms.Panel();
+            this.dgvfour = new System.Windows.Forms.DataGridView();
+            this.lblfour = new System.Windows.Forms.Label();
+            this.lblrecherche = new System.Windows.Forms.Label();
+            this.lblville = new System.Windows.Forms.Label();
+            this.cmbville = new System.Windows.Forms.ComboBox();
+            this.lblnomS = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlcommande.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDmdV)).BeginInit();
             this.pnlconfirmation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDmdV)).BeginInit();
+            this.pnlcommande.SuspendLayout();
+            this.pnlfournisseur.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvfour)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -165,6 +174,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.button3.TabIndex = 2;
             this.button3.Text = "Fournisseur";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -197,134 +207,6 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.btncommande.Text = "Commande à traiter";
             this.btncommande.UseVisualStyleBackColor = false;
             this.btncommande.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pnlcommande
-            // 
-            this.pnlcommande.BackColor = System.Drawing.Color.Transparent;
-            this.pnlcommande.Controls.Add(this.cmbdepartement);
-            this.pnlcommande.Controls.Add(this.radioButton2);
-            this.pnlcommande.Controls.Add(this.radioButton1);
-            this.pnlcommande.Controls.Add(this.cmbidcommande);
-            this.pnlcommande.Controls.Add(this.label6);
-            this.pnlcommande.Controls.Add(this.label4);
-            this.pnlcommande.Controls.Add(this.label3);
-            this.pnlcommande.Controls.Add(this.label2);
-            this.pnlcommande.Controls.Add(this.lbltitre);
-            this.pnlcommande.Controls.Add(this.dgvDmdV);
-            this.pnlcommande.Location = new System.Drawing.Point(279, 56);
-            this.pnlcommande.Name = "pnlcommande";
-            this.pnlcommande.Size = new System.Drawing.Size(877, 580);
-            this.pnlcommande.TabIndex = 1;
-            this.pnlcommande.Paint += new System.Windows.Forms.PaintEventHandler(this.pnldemande_Paint);
-            // 
-            // cmbdepartement
-            // 
-            this.cmbdepartement.BackColor = System.Drawing.SystemColors.Menu;
-            this.cmbdepartement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbdepartement.FormattingEnabled = true;
-            this.cmbdepartement.Location = new System.Drawing.Point(619, 318);
-            this.cmbdepartement.Name = "cmbdepartement";
-            this.cmbdepartement.Size = new System.Drawing.Size(180, 24);
-            this.cmbdepartement.TabIndex = 11;
-            this.cmbdepartement.SelectedIndexChanged += new System.EventHandler(this.cmbdepartement_SelectedIndexChanged);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(717, 220);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(92, 27);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Urgent";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(585, 220);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(99, 27);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Normal";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // cmbidcommande
-            // 
-            this.cmbidcommande.BackColor = System.Drawing.SystemColors.Menu;
-            this.cmbidcommande.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbidcommande.FormattingEnabled = true;
-            this.cmbidcommande.Location = new System.Drawing.Point(627, 125);
-            this.cmbidcommande.Name = "cmbidcommande";
-            this.cmbidcommande.Size = new System.Drawing.Size(180, 24);
-            this.cmbidcommande.TabIndex = 7;
-            this.cmbidcommande.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(455, 127);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(146, 22);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "ID Commande";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(455, 223);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 22);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Urgence";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(455, 319);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 22);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Département";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(560, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 28);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Recherche Par :";
-            // 
-            // lbltitre
-            // 
-            this.lbltitre.AutoSize = true;
-            this.lbltitre.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitre.Location = new System.Drawing.Point(89, 41);
-            this.lbltitre.Name = "lbltitre";
-            this.lbltitre.Size = new System.Drawing.Size(296, 28);
-            this.lbltitre.TabIndex = 1;
-            this.lbltitre.Text = "Demande valider à triter";
-            this.lbltitre.Click += new System.EventHandler(this.lbltitre_Click);
-            // 
-            // dgvDmdV
-            // 
-            this.dgvDmdV.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvDmdV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvDmdV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDmdV.Location = new System.Drawing.Point(35, 87);
-            this.dgvDmdV.Name = "dgvDmdV";
-            this.dgvDmdV.RowHeadersWidth = 51;
-            this.dgvDmdV.RowTemplate.Height = 24;
-            this.dgvDmdV.Size = new System.Drawing.Size(405, 423);
-            this.dgvDmdV.TabIndex = 0;
             // 
             // pnlconfirmation
             // 
@@ -453,6 +335,207 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.lblid.TabIndex = 0;
             this.lblid.Text = "ID Commande";
             // 
+            // dgvDmdV
+            // 
+            this.dgvDmdV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvDmdV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvDmdV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDmdV.Location = new System.Drawing.Point(35, 87);
+            this.dgvDmdV.Name = "dgvDmdV";
+            this.dgvDmdV.RowHeadersWidth = 51;
+            this.dgvDmdV.RowTemplate.Height = 24;
+            this.dgvDmdV.Size = new System.Drawing.Size(405, 423);
+            this.dgvDmdV.TabIndex = 0;
+            // 
+            // lbltitre
+            // 
+            this.lbltitre.AutoSize = true;
+            this.lbltitre.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitre.Location = new System.Drawing.Point(89, 41);
+            this.lbltitre.Name = "lbltitre";
+            this.lbltitre.Size = new System.Drawing.Size(296, 28);
+            this.lbltitre.TabIndex = 1;
+            this.lbltitre.Text = "Demande valider à triter";
+            this.lbltitre.Click += new System.EventHandler(this.lbltitre_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(560, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(195, 28);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Recherche Par :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(455, 373);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 22);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Département";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(455, 250);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 22);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Urgence";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(455, 127);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(146, 22);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "ID Commande";
+            // 
+            // cmbidcommande
+            // 
+            this.cmbidcommande.BackColor = System.Drawing.SystemColors.Menu;
+            this.cmbidcommande.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbidcommande.FormattingEnabled = true;
+            this.cmbidcommande.Location = new System.Drawing.Point(627, 125);
+            this.cmbidcommande.Name = "cmbidcommande";
+            this.cmbidcommande.Size = new System.Drawing.Size(180, 24);
+            this.cmbidcommande.TabIndex = 7;
+            this.cmbidcommande.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // cmbdepartement
+            // 
+            this.cmbdepartement.BackColor = System.Drawing.SystemColors.Menu;
+            this.cmbdepartement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbdepartement.FormattingEnabled = true;
+            this.cmbdepartement.Location = new System.Drawing.Point(627, 373);
+            this.cmbdepartement.Name = "cmbdepartement";
+            this.cmbdepartement.Size = new System.Drawing.Size(180, 24);
+            this.cmbdepartement.TabIndex = 11;
+            this.cmbdepartement.SelectedIndexChanged += new System.EventHandler(this.cmbdepartement_SelectedIndexChanged);
+            // 
+            // cmbUrgnce
+            // 
+            this.cmbUrgnce.BackColor = System.Drawing.SystemColors.Menu;
+            this.cmbUrgnce.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbUrgnce.FormattingEnabled = true;
+            this.cmbUrgnce.Location = new System.Drawing.Point(627, 251);
+            this.cmbUrgnce.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbUrgnce.Name = "cmbUrgnce";
+            this.cmbUrgnce.Size = new System.Drawing.Size(180, 24);
+            this.cmbUrgnce.TabIndex = 16;
+            this.cmbUrgnce.SelectedIndexChanged += new System.EventHandler(this.cmbUrgnce_SelectedIndexChanged);
+            // 
+            // pnlcommande
+            // 
+            this.pnlcommande.BackColor = System.Drawing.Color.Transparent;
+            this.pnlcommande.Controls.Add(this.cmbUrgnce);
+            this.pnlcommande.Controls.Add(this.cmbdepartement);
+            this.pnlcommande.Controls.Add(this.cmbidcommande);
+            this.pnlcommande.Controls.Add(this.label6);
+            this.pnlcommande.Controls.Add(this.label4);
+            this.pnlcommande.Controls.Add(this.label3);
+            this.pnlcommande.Controls.Add(this.label2);
+            this.pnlcommande.Controls.Add(this.lbltitre);
+            this.pnlcommande.Controls.Add(this.dgvDmdV);
+            this.pnlcommande.Location = new System.Drawing.Point(321, 660);
+            this.pnlcommande.Name = "pnlcommande";
+            this.pnlcommande.Size = new System.Drawing.Size(877, 580);
+            this.pnlcommande.TabIndex = 1;
+            this.pnlcommande.Paint += new System.Windows.Forms.PaintEventHandler(this.pnldemande_Paint);
+            // 
+            // pnlfournisseur
+            // 
+            this.pnlfournisseur.BackColor = System.Drawing.Color.Transparent;
+            this.pnlfournisseur.Controls.Add(this.comboBox1);
+            this.pnlfournisseur.Controls.Add(this.lblnomS);
+            this.pnlfournisseur.Controls.Add(this.cmbville);
+            this.pnlfournisseur.Controls.Add(this.lblville);
+            this.pnlfournisseur.Controls.Add(this.lblrecherche);
+            this.pnlfournisseur.Controls.Add(this.lblfour);
+            this.pnlfournisseur.Controls.Add(this.dgvfour);
+            this.pnlfournisseur.Location = new System.Drawing.Point(321, 78);
+            this.pnlfournisseur.Name = "pnlfournisseur";
+            this.pnlfournisseur.Size = new System.Drawing.Size(877, 505);
+            this.pnlfournisseur.TabIndex = 3;
+            // 
+            // dgvfour
+            // 
+            this.dgvfour.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvfour.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvfour.Location = new System.Drawing.Point(62, 69);
+            this.dgvfour.Name = "dgvfour";
+            this.dgvfour.RowHeadersWidth = 51;
+            this.dgvfour.RowTemplate.Height = 24;
+            this.dgvfour.Size = new System.Drawing.Size(380, 388);
+            this.dgvfour.TabIndex = 0;
+            // 
+            // lblfour
+            // 
+            this.lblfour.AutoSize = true;
+            this.lblfour.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfour.Location = new System.Drawing.Point(138, 25);
+            this.lblfour.Name = "lblfour";
+            this.lblfour.Size = new System.Drawing.Size(222, 28);
+            this.lblfour.TabIndex = 1;
+            this.lblfour.Text = "LISTE FOURNISSEUR";
+            // 
+            // lblrecherche
+            // 
+            this.lblrecherche.AutoSize = true;
+            this.lblrecherche.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrecherche.Location = new System.Drawing.Point(535, 25);
+            this.lblrecherche.Name = "lblrecherche";
+            this.lblrecherche.Size = new System.Drawing.Size(198, 28);
+            this.lblrecherche.TabIndex = 2;
+            this.lblrecherche.Text = "RECHERCHE PAR";
+            // 
+            // lblville
+            // 
+            this.lblville.AutoSize = true;
+            this.lblville.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblville.Location = new System.Drawing.Point(450, 141);
+            this.lblville.Name = "lblville";
+            this.lblville.Size = new System.Drawing.Size(70, 28);
+            this.lblville.TabIndex = 3;
+            this.lblville.Text = "VILLE";
+            // 
+            // cmbville
+            // 
+            this.cmbville.BackColor = System.Drawing.SystemColors.Menu;
+            this.cmbville.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbville.FormattingEnabled = true;
+            this.cmbville.Location = new System.Drawing.Point(637, 141);
+            this.cmbville.Name = "cmbville";
+            this.cmbville.Size = new System.Drawing.Size(220, 24);
+            this.cmbville.TabIndex = 4;
+            // 
+            // lblnomS
+            // 
+            this.lblnomS.AutoSize = true;
+            this.lblnomS.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnomS.Location = new System.Drawing.Point(448, 235);
+            this.lblnomS.Name = "lblnomS";
+            this.lblnomS.Size = new System.Drawing.Size(171, 28);
+            this.lblnomS.TabIndex = 5;
+            this.lblnomS.Text = "NOM SOCIETE";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(637, 235);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(220, 24);
+            this.comboBox1.TabIndex = 6;
+            // 
             // Comerce
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -460,6 +543,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.BackgroundImage = global::Centre_D_affaire.Properties.Resources.depositphotos_18595071_stock_photo_light_room;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1309, 745);
+            this.Controls.Add(this.pnlfournisseur);
             this.Controls.Add(this.pnlconfirmation);
             this.Controls.Add(this.pnlcommande);
             this.Controls.Add(this.panel1);
@@ -471,11 +555,14 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlcommande.ResumeLayout(false);
-            this.pnlcommande.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDmdV)).EndInit();
             this.pnlconfirmation.ResumeLayout(false);
             this.pnlconfirmation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDmdV)).EndInit();
+            this.pnlcommande.ResumeLayout(false);
+            this.pnlcommande.PerformLayout();
+            this.pnlfournisseur.ResumeLayout(false);
+            this.pnlfournisseur.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvfour)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -491,17 +578,6 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel pnlcommande;
-        private System.Windows.Forms.Label lbltitre;
-        private System.Windows.Forms.DataGridView dgvDmdV;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbidcommande;
-        private System.Windows.Forms.ComboBox cmbdepartement;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel pnlconfirmation;
         private System.Windows.Forms.Button btnvalider;
         private System.Windows.Forms.Label lblpri;
@@ -514,5 +590,23 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private System.Windows.Forms.Label lbldatecommande;
         private System.Windows.Forms.Label lblfournisseur;
         private System.Windows.Forms.Label lblid;
+        private System.Windows.Forms.DataGridView dgvDmdV;
+        private System.Windows.Forms.Label lbltitre;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbidcommande;
+        private System.Windows.Forms.ComboBox cmbdepartement;
+        private System.Windows.Forms.ComboBox cmbUrgnce;
+        private System.Windows.Forms.Panel pnlcommande;
+        private System.Windows.Forms.Panel pnlfournisseur;
+        private System.Windows.Forms.Label lblrecherche;
+        private System.Windows.Forms.Label lblfour;
+        private System.Windows.Forms.DataGridView dgvfour;
+        private System.Windows.Forms.ComboBox cmbville;
+        private System.Windows.Forms.Label lblville;
+        private System.Windows.Forms.Label lblnomS;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
