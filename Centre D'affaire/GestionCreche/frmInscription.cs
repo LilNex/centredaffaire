@@ -7,9 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.IO;
-using System.Xml.Serialization;
 
 namespace Centre_D_affaire.GestionCreche
 {
@@ -19,7 +16,6 @@ namespace Centre_D_affaire.GestionCreche
         {
             InitializeComponent();
         }
-        ADO d = new ADO();
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -51,37 +47,10 @@ namespace Centre_D_affaire.GestionCreche
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            if ((txtNom.Text == "" || txtProfession.Text == "" || txtTelephone.Text == "" || txtDepartement.Text == "" || txtNomEN.Text == "" || txtAge.Text == ""|| txtDad.Text==""|| txtDN.Text==""))
-            {
-                MessageBox.Show("ATTENTION !! Une information est vide");
-            }
-            else
-            {
-                try
-                {
-
-                   string[] t =new string[] { txtNom.Text, txtProfession.Text, txtTelephone.Text, txtDepartement.Text, txtNomEN.Text, txtAge.Text };
-                    this.txtNom.Text = "";
-                    this.txtNom.Clear();
-                    this.txtProfession.Clear();
-                    this.txtDepartement.Clear();
-                    this.txtNomEN.Clear();
-                    this.txtTelephone.Clear();
-                    this.txtAge.Clear();
-                    this.txtDN.Clear();
-                    this.txtDad.Clear();
-                    ListViewItem IS = new ListViewItem(t);
-                    listView1.Items.Add(IS);
-                }
-                catch (FormatException)
-                {
-                    MessageBox.Show("invalide!!");
-                }
-               
+            dataGridView1.Rows.Add(txtNom.Text, txtProfession.Text, txtTelephone.Text, txtDepartement.Text, txtNomEN.Text, txtAge.Text) ;
+            
 
 
-
-            }
         }
 
         private void frmInscription_Load(object sender, EventArgs e)
@@ -92,20 +61,7 @@ namespace Centre_D_affaire.GestionCreche
             accul.Hide();
             IN.BringToFront();
             this.Hide();
-
-
-            //StreamReader sr = new StreamReader("inscription.txt");
-            //string ligne = string.Empty;
-            //while ((ligne =sr.ReadLine()) != null)
-            //{
-            //    string[] t = ligne.Split();
-            //    ListViewItem it = new ListViewItem(t);
-            //    listView1.Items.Add(it);
-
-
-            //}
-            //sr.Close();
-
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -116,29 +72,6 @@ namespace Centre_D_affaire.GestionCreche
         private void btnFermer_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmAccul accul = new FrmAccul();
-            accul.Show();
-        }
-
-        private void btnValider_Click(object sender, EventArgs e)
-        {
-            
-        }
-        public void sauvegarder(object sender, EventArgs e)
-        {
-            StreamWriter sr = new StreamWriter("inscription.txt", false);
-            foreach (ListViewItem li in listView1.Items)
-            {
-                sr.WriteLine(li.SubItems[0].Text + li.SubItems[1].Text + li.SubItems[2].Text + li.SubItems[3].Text + li.SubItems[4].Text + li.SubItems[5].Text + li.SubItems[6].Text + li.SubItems[7].Text);
-            }
-            sr.Close();
-            
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

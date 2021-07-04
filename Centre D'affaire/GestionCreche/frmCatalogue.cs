@@ -159,8 +159,6 @@ namespace Centre_D_affaire.GestionCreche
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmAccul accul = new FrmAccul();
-            accul.Show();
             
         }
 

@@ -10,10 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database1", "..\..\..\source\repos\Database1\Database1.sqlproj", "{46D4191C-40B4-4815-8AE6-3EB3A9F1ED57}"
-EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database2", "..\..\..\source\repos\Database2\Database2.sqlproj", "{F81D23CB-502C-450F-B28E-F733CBE03274}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,18 +20,6 @@ Global
 		{B5D79113-2E71-4F0A-BFD1-D53B39AFB7C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5D79113-2E71-4F0A-BFD1-D53B39AFB7C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5D79113-2E71-4F0A-BFD1-D53B39AFB7C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46D4191C-40B4-4815-8AE6-3EB3A9F1ED57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46D4191C-40B4-4815-8AE6-3EB3A9F1ED57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46D4191C-40B4-4815-8AE6-3EB3A9F1ED57}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{46D4191C-40B4-4815-8AE6-3EB3A9F1ED57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46D4191C-40B4-4815-8AE6-3EB3A9F1ED57}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46D4191C-40B4-4815-8AE6-3EB3A9F1ED57}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{F81D23CB-502C-450F-B28E-F733CBE03274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F81D23CB-502C-450F-B28E-F733CBE03274}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F81D23CB-502C-450F-B28E-F733CBE03274}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{F81D23CB-502C-450F-B28E-F733CBE03274}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F81D23CB-502C-450F-B28E-F733CBE03274}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F81D23CB-502C-450F-B28E-F733CBE03274}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

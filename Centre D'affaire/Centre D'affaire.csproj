@@ -12,7 +12,6 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,6 +24,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -104,7 +104,6 @@
     </Compile>
     <Compile Include="GestionCreche\BinaryFormatter.cs" />
     <Compile Include="GestionCreche\clsEnfant.cs" />
-    <Compile Include="GestionCreche\clsFacture.cs" />
     <Compile Include="GestionCreche\clsGroupe.cs" />
     <Compile Include="GestionCreche\clsListe.cs" />
     <Compile Include="GestionCreche\ClsParant.cs" />
@@ -116,29 +115,43 @@
     <Compile Include="GestionCreche\FrmAccul.Designer.cs">
       <DependentUpon>FrmAccul.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionCreche\frmAffectationEnfants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\frmAffectationEnfants.Designer.cs">
+      <DependentUpon>frmAffectationEnfants.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionCreche\frmCatalogue.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GestionCreche\frmCatalogue.Designer.cs">
       <DependentUpon>frmCatalogue.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCreche\frmFacture.cs">
+    <Compile Include="GestionCreche\frmEnfant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionCreche\frmFacture.Designer.cs">
-      <DependentUpon>frmFacture.cs</DependentUpon>
+    <Compile Include="GestionCreche\frmEnfant.Designer.cs">
+      <DependentUpon>frmEnfant.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCreche\frmGroupes.cs">
+    <Compile Include="GestionCreche\frmGroupe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionCreche\frmGroupes.Designer.cs">
-      <DependentUpon>frmGroupes.cs</DependentUpon>
+    <Compile Include="GestionCreche\frmGroupe.Designer.cs">
+      <DependentUpon>frmGroupe.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionCreche\frmInscription.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GestionCreche\frmInscription.Designer.cs">
       <DependentUpon>frmInscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\..\Desktop\FrmPersonnel.cs">
+      <SubType>Form</SubType>
+      <Link>GestionCreche\FrmPersonnel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Desktop\FrmPersonnel.Designer.cs">
+      <DependentUpon>FrmPersonnel.cs</DependentUpon>
+      <Link>GestionCreche\FrmPersonnel.Designer.cs</Link>
     </Compile>
     <Compile Include="GestionCreche\Dejeuner.cs">
       <SubType>UserControl</SubType>
@@ -170,7 +183,6 @@
     <Compile Include="GestionCreche\Sport.Designer.cs">
       <DependentUpon>Sport.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCreche\states.cs" />
     <Compile Include="GestionParking\frmGParking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,17 +228,24 @@
     <EmbeddedResource Include="GestionCreche\FrmAccul.resx">
       <DependentUpon>FrmAccul.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmAffectationEnfants.resx">
+      <DependentUpon>frmAffectationEnfants.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmCatalogue.resx">
       <DependentUpon>frmCatalogue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionCreche\frmFacture.resx">
-      <DependentUpon>frmFacture.cs</DependentUpon>
+    <EmbeddedResource Include="GestionCreche\frmEnfant.resx">
+      <DependentUpon>frmEnfant.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionCreche\frmGroupes.resx">
-      <DependentUpon>frmGroupes.cs</DependentUpon>
+    <EmbeddedResource Include="GestionCreche\frmGroupe.resx">
+      <DependentUpon>frmGroupe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmInscription.resx">
       <DependentUpon>frmInscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\Desktop\FrmPersonnel.resx">
+      <DependentUpon>FrmPersonnel.cs</DependentUpon>
+      <Link>GestionCreche\FrmPersonnel.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\Dejeuner.resx">
       <DependentUpon>Dejeuner.cs</DependentUpon>
@@ -279,15 +298,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="GestionCreche\Database1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="GestionCreche\Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
