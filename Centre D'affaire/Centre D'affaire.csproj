@@ -44,6 +44,12 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Guna.UI2">
+      <HintPath>..\packages\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks">
+      <HintPath>..\packages\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AchatsLogistiquePatrimoine\frmALP.cs">
@@ -95,6 +101,7 @@
       <DependentUpon>UC_Welcome.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionCafeRestaurant\Class1.cs" />
+    <Compile Include="GestionCafeRestaurant\DGVPrinter.cs" />
     <Compile Include="GestionCafeRestaurant\frmGCR.cs">
       <SubType>Form</SubType>
     </Compile>
