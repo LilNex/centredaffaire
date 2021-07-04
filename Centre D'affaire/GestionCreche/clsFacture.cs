@@ -9,7 +9,12 @@ namespace Centre_D_affaire.GestionCreche
     public class clsFacture
     {
         private int NumF;
-        private DateTime dateF;
+        private DateTime DateF;
+        private DateTime DateE;
+        private double Montant;
+
+        public clsFacture() { }
+        public clsFacture(int num,DateTime datef,DateTime datee,double montant)
         
     }
 }
