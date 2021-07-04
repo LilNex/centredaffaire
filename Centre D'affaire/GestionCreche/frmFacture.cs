@@ -35,73 +35,12 @@ namespace Centre_D_affaire.GestionCreche
 
         }
 
-        private void cbxPaiementde_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbxPaiementde.SelectedItem == "Mois")
-            {
-                _ = lblMontant.Text == "LE MONTANT TOTAL EST 1300 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "  Assurance  400 DH")
-            {
-                _ = lblMontant.Text == "LE MONTANT TOTAL EST 400 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "Fais d'inscription 500 DH") 
- 
-            {
-                _ = lblMontant.Text == " LE MONTANT TOTAL EST 500 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "Transport 200 DH")
-            {
-                _ = lblMontant.Text == " LE MONTANT TOTAL EST 200 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "Repas 200DH")
-            {
-                _ = lblMontant.Text == "LE MONTANT TOTAL EST 200 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "Mois et Assurance 1700 DH")
-            {
-                _ = lblMontant.Text == "LE MONTANT TOTAL EST 1700 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "Mois et Fais d'inscription 1800 DH")
-            {
-                _ = lblMontant.Text == "LE MONTANT TOTAL EST 1800 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "Mois et Fais d'inscription et Assurance 2200 DH")
-            {
-                _ = lblMontant.Text == "LE MONTANT TOTAL EST 2200 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "Mois et Repas 1500 DH")
-            {
-                _ = lblMontant.Text == "LE MONTANT TOTAL EST 1500 DH";
-
-            }
-            if (cbxPaiementde.SelectedItem == "Mois et Transport 1500 DH")
-            {
-                _ = lblMontant.Text == "LE MONTANT TOTAL EST 1500 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "Mois et Repas et Transport 1700 DH")
-            {
-                _ = lblMontant.Text == "LE MONTANT TOTAL EST 1700 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "Mois et Fais d'inscription et Assurance et Transport et Repas 2600 DH")
-            {
-                _ = lblMontant.Text == "LE MONTANT TOTAL EST 2600 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "Mois et Fais d'inscription et Assurance et Transport 2400 DH")
-            {
-                _ = lblMontant.Text == "2400 DH";
-            }
-            if (cbxPaiementde.SelectedItem == "Mois et Fais d'inscription et Assurance  et Repas 2400 DH")
-            {
-                _ = lblMontant.Text == "LE MONTANT TOTAL EST 2400 DH";
-            }
-        }
-
+        
                 private void btnAjouter_Click(object sender, EventArgs e)
               {
             if (btnAjouter.Text == "Ajouter")
             {
-                string[] t = new string[] { txtnum.Text, txtnom.Text, cbxMois.Text, dtpDateF.Text, txtAdresse.Text, dtpDateEcheance.Text, cbxPaiementde.Text, lblMontant.Text };
+                string[] t = new string[] { txtnum.Text, txtnom.Text, cbxMois.Text, dtpDateF.Text, txtAdresse.Text, dtpDateEcheance.Text, lblM.Text };
                 ListViewItem LS = new ListViewItem(t);
                 lsvFacture.Items.Add(LS);
 
@@ -114,11 +53,12 @@ namespace Centre_D_affaire.GestionCreche
                 lsvFacture.Items[indice].SubItems[3].Text = dtpDateF.Text;
                 lsvFacture.Items[indice].SubItems[4].Text = txtAdresse.Text;
                 lsvFacture.Items[indice].SubItems[5].Text = dtpDateEcheance.Text;
-                lsvFacture.Items[indice].SubItems[6].Text = cbxPaiementde.Text;
-                lsvFacture.Items[indice].SubItems[7].Text = lblMontant.Text;
-
+                lsvFacture.Items[indice].SubItems[6].Text =lblM.Text;
 
                 btnAjouter.Text = "Ajouter";
+
+
+
             }
         }
 
@@ -148,8 +88,8 @@ namespace Centre_D_affaire.GestionCreche
                 dtpDateF.Text = lsvFacture.Items[indice].SubItems[4].Text;
                 txtAdresse.Text = lsvFacture.Items[indice].SubItems[5].Text;
                 dtpDateEcheance.Text = lsvFacture.Items[indice].SubItems[6].Text;
-                cbxPaiementde.Text = lsvFacture.Items[indice].SubItems[7].Text;
-                lblMontant.Text = lsvFacture.Items[indice].SubItems[8].Text;
+                lblM.Text = lsvFacture.Items[indice].SubItems[7].Text;
+
                 btnAjouter.Text = "Modifier";
             }
 
@@ -198,5 +138,61 @@ namespace Centre_D_affaire.GestionCreche
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int p1;
+            int p2;
+            int p3;
+            int p4;
+            int p5;
+            Double Facture;
+            if (chbxMois.Checked)
+            {
+                p1 = 1300;
+            }
+            else
+            {
+                p1 = 0;
+            }
+
+            if (chbxAssurances.Checked)
+            {
+                p2 = 3000;
+            }
+            else
+            {
+                p2 = 0;
+            }
+
+            if (chbxinscription.Checked)
+            {
+                p3 = 250;
+            }
+            else
+            {
+                p3 = 0;
+            }
+            if (chbxTransporte.Checked)
+            {
+                p4 = 200;
+            }
+            else
+            {
+                p4 = 0;
+            }
+
+            if (chbxRepas.Checked)
+            {
+                p5 = 200;
+            }
+            else
+            {
+                p5 = 0;
+            }
+
+            Facture = p1 + p2 + p3 + p4 + p5 ;
+             lblM.Text = Facture.ToString();
+            ;
+        }
     }
 }
