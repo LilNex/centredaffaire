@@ -74,8 +74,8 @@ namespace Centre_D_affaire.GestionCreche
             
             if (cmbPF.Text == "Responsable")
             {
-                FrmPersonnel f = new FrmPersonnel();
-                f.Show();
+              //  FrmPersonnel f = new FrmPersonnel();
+              //  f.Show();
                 this.Hide();
             }
             

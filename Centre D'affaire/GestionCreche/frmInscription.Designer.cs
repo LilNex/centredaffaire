@@ -107,23 +107,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // lblNom
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.NomParent,
-            this.Profession,
-            this.telephone,
-            this.Departement,
-            this.NomEnfant,
-            this.Age,
-            this.DateNaissance,
-            this.DateAdmission});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(236, 346);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(682, 230);
-            this.listView1.TabIndex = 23;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+           //
             // 
             // lblProfession
             // 
