@@ -22,7 +22,16 @@ namespace Centre_D_affaire.GestionPersonnel
         private List<clsPoste> listePoste = new List<clsPoste>();
         private int id;
 
-        public string Num { get => num; set => num = value; }
+        public string Num { get => num; set {
+                if (value.Substring(0, 3).All(char.IsLetter) && value.Substring(3, 3).All(char.IsNumber)) {
+                    num = value;
+                }
+                else
+                {
+                    throw new DepartementNumInvalideException();
+                }
+
+                } }
         // CONDITION format : XXX000
         public string Nom { get => nom; set => nom = value; }
         public List<clsPoste> ListePoste { get => listePoste; set => listePoste = value; }
@@ -39,6 +48,17 @@ namespace Centre_D_affaire.GestionPersonnel
             for (int i = 0; i < ListePoste.Count(); i++)
             {
                 if (ListePoste[i].Num == num)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        public static int indexByNum(string num)
+        {
+            for (int i = 0; i < ListeDepartement.Count; i++)
+            {
+                if (ListeDepartement[i].Num == num)
                 {
                     return i;
                 }
@@ -63,9 +83,9 @@ namespace Centre_D_affaire.GestionPersonnel
         public static void loadListeDeps()
         {
             XmlSerializer XS = new XmlSerializer(ListeDepartement.GetType());
-            try { 
-            StreamReader r_fileDeps = new StreamReader("Liste des departements.xml");
-            ClsDepartement.ListeDepartement = (List<ClsDepartement>)XS.Deserialize(r_fileDeps);
+            try {
+                StreamReader r_fileDeps = new StreamReader("Liste des departements.xml");
+                ClsDepartement.ListeDepartement = (List<ClsDepartement>)XS.Deserialize(r_fileDeps);
 
             }
             catch (FileNotFoundException e)

@@ -87,6 +87,12 @@
     <Compile Include="GestionPersonnel\clsPoste.cs" />
     <Compile Include="GestionPersonnel\Congé.cs" />
     <Compile Include="GestionPersonnel\CustomControls\Functions.cs" />
+    <Compile Include="GestionPersonnel\CustomControls\UCAjoutPoste.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCAjoutPoste.Designer.cs">
+      <DependentUpon>UCAjoutPoste.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionPersonnel\CustomControls\UCAjoutDepartement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCAjoutPoste.resx">
+      <DependentUpon>UCAjoutPoste.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\CustomControls\UCNotif.resx">
       <DependentUpon>UCNotif.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,7 +226,7 @@
       <DependentUpon>frmPrincipal_Directeur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -329,6 +338,8 @@
   <ItemGroup>
     <None Include="GestionPersonnel\Resources\Fonts\Poppins\Poppins-Light.ttf" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="bin\Debug\Liste des departements.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

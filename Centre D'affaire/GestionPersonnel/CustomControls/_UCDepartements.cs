@@ -69,5 +69,11 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             ucListeDepartement.dgvListDeps.DataSource = ClsDepartement.ListeDepartement;
 
         }
+
+        private void btnAjouterPoste_Click(object sender, EventArgs e)
+        {
+            Functions.clearForm(ucAjoutPoste1);
+            ucAjoutPoste1.BringToFront();
+        }
     }
 }

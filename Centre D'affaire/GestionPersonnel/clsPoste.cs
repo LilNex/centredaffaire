@@ -12,7 +12,21 @@ namespace Centre_D_affaire.GestionPersonnel
         private string num;
         public List<ClsEmploye> listeDesEmployé = new List<ClsEmploye>();
 
-        public string Num { get => num; set => num = value; }
+        public string Num
+        {
+            get => num; set
+            {
+                if (value.Substring(0, 3).All(char.IsLetter) && value.Substring(3, 3).All(char.IsNumber))
+                {
+                    num = value;
+                }
+                else
+                {
+                    throw new PosteNumInvalideException();
+                }
+
+            }
+        }
         public string Nom { get => nom; set => nom = value; }
 
         public clsPoste(string nom, string num)

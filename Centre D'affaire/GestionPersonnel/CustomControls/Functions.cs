@@ -53,6 +53,7 @@ namespace Centre_D_affaire.GestionPersonnel
                 }
             }
             ListePostes.Add(Poste);
+            ClsDepartement.saveListeDeps();
             return true;
         }
         public static bool AjouterDepartement(ClsDepartement departement)
@@ -107,7 +108,7 @@ namespace Centre_D_affaire.GestionPersonnel
 
         public static void setFont(Control control)
         {
-            pfc.AddFontFile("Poppins-Regular.ttf");
+            pfc.AddFontFile(@"..\..\GestionPersonnel\Resources\Fonts\Poppins\Poppins-Regular.ttf");
 
             foreach (Control c in control.Controls)
             {
@@ -216,6 +217,15 @@ namespace Centre_D_affaire.GestionPersonnel
             }
             return null;
 
+        }
+        public static Stream ToStream(string str)
+        {
+            MemoryStream stream = new MemoryStream();
+            StreamWriter writer = new StreamWriter(stream);
+            writer.Write(str);
+            writer.Flush();
+            stream.Position = 0;
+            return stream;
         }
     }
     

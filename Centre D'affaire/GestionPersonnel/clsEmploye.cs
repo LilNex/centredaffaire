@@ -80,12 +80,22 @@ namespace Centre_D_affaire.GestionPersonnel
         public string Userlogin { get => userlogin; set => userlogin = value; }
         public string Mdp { get => mdp; set => mdp = value; }
 
-        public ClsEmploye(string num, string nom,string prenom,string cin)
+        public ClsEmploye(string num, string nom,string prenom,string cin, string tel, string email, char Sit, string comp, DateTime DateDajout,DateTime DateNaissance, char sex, string adresse)
         {
             this.Nom = nom;
             this.Prenom = prenom;
             this.Num = num;
             this.Cin = cin;
+            this.Télephone = tel;
+            this.Email = email;
+            this.Situation_familiale = Sit;
+            this.Competence = comp;
+            this.Date_debut = DateDajout;
+            this.Date_naissance = DateNaissance;
+            this.Sex = sex;
+            this.Adresse = adresse;
+            
+
 
 
             this.Userlogin = Nom + "." + Prenom;

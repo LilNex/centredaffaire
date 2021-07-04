@@ -32,6 +32,7 @@
             this.btnAjouterDeps = new System.Windows.Forms.Button();
             this.btnListeDeps = new System.Windows.Forms.Button();
             this.btnListePostes = new System.Windows.Forms.Button();
+            this.ucAjoutPoste1 = new Centre_D_affaire.GestionPersonnel.CustomControls.UCAjoutPoste();
             this.ucListeDepartement = new Centre_D_affaire.GestionPersonnel.CustomControls.UCListeDepartement();
             this.ucListePoste = new Centre_D_affaire.GestionPersonnel.CustomControls.UCListePoste();
             this.ucAjoutDepartement = new Centre_D_affaire.GestionPersonnel.CustomControls.UCAjoutDepartement();
@@ -53,6 +54,7 @@
             this.btnAjouterPoste.Text = "Ajouter un poste";
             this.btnAjouterPoste.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAjouterPoste.UseVisualStyleBackColor = false;
+            this.btnAjouterPoste.Click += new System.EventHandler(this.btnAjouterPoste_Click);
             // 
             // btnAjouterDeps
             // 
@@ -108,6 +110,13 @@
             this.btnListePostes.UseVisualStyleBackColor = false;
             this.btnListePostes.Click += new System.EventHandler(this.btnListePostes_Click);
             // 
+            // ucAjoutPoste1
+            // 
+            this.ucAjoutPoste1.Location = new System.Drawing.Point(0, 42);
+            this.ucAjoutPoste1.Name = "ucAjoutPoste1";
+            this.ucAjoutPoste1.Size = new System.Drawing.Size(952, 529);
+            this.ucAjoutPoste1.TabIndex = 13;
+            // 
             // ucListeDepartement
             // 
             this.ucListeDepartement.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -135,6 +144,7 @@
             // UCDepartements
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.ucAjoutPoste1);
             this.Controls.Add(this.btnAjouterPoste);
             this.Controls.Add(this.btnAjouterDeps);
             this.Controls.Add(this.btnListeDeps);
@@ -158,5 +168,6 @@
         private UCListeDepartement ucListeDepartement;
         private UCListePoste ucListePoste;
         private UCAjoutDepartement ucAjoutDepartement;
+        private UCAjoutPoste ucAjoutPoste1;
     }
 }
