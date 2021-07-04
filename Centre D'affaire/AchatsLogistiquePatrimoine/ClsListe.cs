@@ -56,6 +56,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             fichierbin.Close();
 
         }
+
         //charger article selon type
         public static List<ClsArticle> getlisteART(ArticleType l)
         {
@@ -69,6 +70,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             }
             return la;
         }
+
 
         public static void sauvegardeDEMANDE()
         {
@@ -97,6 +99,9 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             finally { fichierbin.Close(); }
 
         }
+
+
+
 
 
 

@@ -34,6 +34,11 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         }
 
+        public override string ToString()
+        {
+            return this.Nom_service;
+        }
+
 
 
 
