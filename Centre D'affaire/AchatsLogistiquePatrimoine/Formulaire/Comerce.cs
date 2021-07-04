@@ -19,7 +19,21 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private void Comerce_Load(object sender, EventArgs e)
         {
+            pnlcommande.Visible = false;
+            ///-----REMPLICAGE DES COMBOS
+            for(int i=0;i< ClsListe.List_commande.Count;i++)
+            {
+                if(ClsListe.List_commande[i].Etatcommande==etatcommande.encours)
+                {
+                    cmbcommande.Items.Add(ClsListe.List_commande[i].ID_cmd);
+                }
+            }
            
+            for(int i=0;i<ClsListe.List_article.Count;i++)
+            {
+                cmbarticle.Items.Add(ClsListe.List_article[i].TypeArticle);
+
+            }
                 
            
 
@@ -27,7 +41,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            pnlcommande.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,6 +60,21 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
                     c.Hide();
                 }
             }
+        }
+
+        private void lbltitre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnldemande_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
