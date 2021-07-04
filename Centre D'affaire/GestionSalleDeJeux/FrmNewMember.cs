@@ -26,8 +26,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             NE.NomE = txtnomAdd.Text;
             NE.PrenomE = txtPrenomAdd.Text;
             NE.NumeroE = int.Parse(txtNuméroEView.Text);
-            NE.TelephoneE = int.Parse(txtTelephoneAdd.Text);
-            NE.DateNaissanceE = dateTimeAdd.Value;
+ NE.DateNaissanceE = dateTimeAdd.Value;
             NE.PasswordE1 = txtPasswordAdd.Text;
 
             ClsListeSDJ.ListE.Add(NE);
@@ -37,7 +36,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
             txtnomAdd.Text = null;
             txtPrenomAdd.Text = null;
-            txtTelephoneAdd.Text = null;
             txtPrenomAdd.Text = null;
             txtPasswordAdd.Text = null;
             MessageBox.Show("your modification is successfully", "Add");
@@ -79,16 +77,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void txtTelephoneAdd_TextChanged(object sender, EventArgs e)
         {
-            if ((txtTelephoneAdd.Text).Any(char.IsLetter) || (txtTelephoneAdd.Text).Length < 10)
-            {
-                EreurPNomAdd.SetError(txtTelephoneAdd, "Votre Telephone ne doit pas contien aucun letre.Et 10 nombre");
-                btnAjouterE.Enabled = false;
-            }
-            else
-            {
-                EreurPNomAdd.SetError(txtTelephoneAdd, "");
-                btnAjouterE.Enabled = true;
-            }
+
         }
 
         private void btnNumberView_Click(object sender, EventArgs e)

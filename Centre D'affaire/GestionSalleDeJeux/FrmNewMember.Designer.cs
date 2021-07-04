@@ -34,17 +34,15 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.txtnomAdd = new System.Windows.Forms.TextBox();
             this.txtPrenomAdd = new System.Windows.Forms.TextBox();
             this.lblPrenomE = new System.Windows.Forms.Label();
-            this.txtTelephoneAdd = new System.Windows.Forms.TextBox();
-            this.lblTelphoneE = new System.Windows.Forms.Label();
             this.dateTimeAdd = new System.Windows.Forms.DateTimePicker();
             this.DateNaissance = new System.Windows.Forms.Label();
             this.btnAjouterE = new System.Windows.Forms.Button();
             this.DgvAddE = new System.Windows.Forms.DataGridView();
             this.EreurPNomAdd = new System.Windows.Forms.ErrorProvider(this.components);
             this.txtPasswordAdd = new System.Windows.Forms.TextBox();
-            this.lblPasswordADD = new System.Windows.Forms.Label();
             this.btnGenerationNuméro = new System.Windows.Forms.Button();
             this.txtNuméroEView = new System.Windows.Forms.TextBox();
+            this.lblPasswordADD = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAddE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EreurPNomAdd)).BeginInit();
             this.SuspendLayout();
@@ -89,29 +87,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.lblPrenomE.TabIndex = 2;
             this.lblPrenomE.Text = "Last name";
             // 
-            // txtTelephoneAdd
-            // 
-            this.txtTelephoneAdd.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.txtTelephoneAdd.Location = new System.Drawing.Point(194, 110);
-            this.txtTelephoneAdd.Multiline = true;
-            this.txtTelephoneAdd.Name = "txtTelephoneAdd";
-            this.txtTelephoneAdd.Size = new System.Drawing.Size(190, 29);
-            this.txtTelephoneAdd.TabIndex = 5;
-            this.txtTelephoneAdd.TextChanged += new System.EventHandler(this.txtTelephoneAdd_TextChanged);
-            // 
-            // lblTelphoneE
-            // 
-            this.lblTelphoneE.AutoSize = true;
-            this.lblTelphoneE.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold);
-            this.lblTelphoneE.Location = new System.Drawing.Point(12, 106);
-            this.lblTelphoneE.Name = "lblTelphoneE";
-            this.lblTelphoneE.Size = new System.Drawing.Size(100, 33);
-            this.lblTelphoneE.TabIndex = 4;
-            this.lblTelphoneE.Text = "Phone";
-            // 
             // dateTimeAdd
             // 
-            this.dateTimeAdd.Location = new System.Drawing.Point(185, 258);
+            this.dateTimeAdd.Location = new System.Drawing.Point(184, 225);
             this.dateTimeAdd.Name = "dateTimeAdd";
             this.dateTimeAdd.Size = new System.Drawing.Size(200, 20);
             this.dateTimeAdd.TabIndex = 8;
@@ -120,7 +98,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // 
             this.DateNaissance.AutoSize = true;
             this.DateNaissance.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateNaissance.Location = new System.Drawing.Point(7, 252);
+            this.DateNaissance.Location = new System.Drawing.Point(6, 219);
             this.DateNaissance.Name = "DateNaissance";
             this.DateNaissance.Size = new System.Drawing.Size(172, 28);
             this.DateNaissance.TabIndex = 9;
@@ -153,29 +131,18 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // txtPasswordAdd
             // 
             this.txtPasswordAdd.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.txtPasswordAdd.Location = new System.Drawing.Point(194, 156);
+            this.txtPasswordAdd.Location = new System.Drawing.Point(193, 108);
             this.txtPasswordAdd.Multiline = true;
             this.txtPasswordAdd.Name = "txtPasswordAdd";
             this.txtPasswordAdd.Size = new System.Drawing.Size(190, 29);
             this.txtPasswordAdd.TabIndex = 15;
             this.txtPasswordAdd.TextChanged += new System.EventHandler(this.txtPasswordAdd_TextChanged);
             // 
-            // lblPasswordADD
-            // 
-            this.lblPasswordADD.AutoSize = true;
-            this.lblPasswordADD.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPasswordADD.Location = new System.Drawing.Point(12, 153);
-            this.lblPasswordADD.Name = "lblPasswordADD";
-            this.lblPasswordADD.Size = new System.Drawing.Size(127, 28);
-            this.lblPasswordADD.TabIndex = 14;
-            this.lblPasswordADD.Text = "Password";
-            this.lblPasswordADD.Click += new System.EventHandler(this.lblPasswordADD_Click);
-            // 
             // btnGenerationNuméro
             // 
             this.btnGenerationNuméro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerationNuméro.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerationNuméro.Location = new System.Drawing.Point(12, 204);
+            this.btnGenerationNuméro.Location = new System.Drawing.Point(11, 156);
             this.btnGenerationNuméro.Name = "btnGenerationNuméro";
             this.btnGenerationNuméro.Size = new System.Drawing.Size(247, 34);
             this.btnGenerationNuméro.TabIndex = 16;
@@ -187,12 +154,23 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // 
             this.txtNuméroEView.BackColor = System.Drawing.Color.LightSteelBlue;
             this.txtNuméroEView.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtNuméroEView.Location = new System.Drawing.Point(265, 204);
+            this.txtNuméroEView.Location = new System.Drawing.Point(264, 156);
             this.txtNuméroEView.Multiline = true;
             this.txtNuméroEView.Name = "txtNuméroEView";
             this.txtNuméroEView.Size = new System.Drawing.Size(119, 34);
             this.txtNuméroEView.TabIndex = 17;
             this.txtNuméroEView.TextChanged += new System.EventHandler(this.txtNuméroCView_TextChanged);
+            // 
+            // lblPasswordADD
+            // 
+            this.lblPasswordADD.AutoSize = true;
+            this.lblPasswordADD.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPasswordADD.Location = new System.Drawing.Point(11, 105);
+            this.lblPasswordADD.Name = "lblPasswordADD";
+            this.lblPasswordADD.Size = new System.Drawing.Size(127, 28);
+            this.lblPasswordADD.TabIndex = 14;
+            this.lblPasswordADD.Text = "Password";
+            this.lblPasswordADD.Click += new System.EventHandler(this.lblPasswordADD_Click);
             // 
             // FrmNewMember
             // 
@@ -208,8 +186,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.Controls.Add(this.btnAjouterE);
             this.Controls.Add(this.DateNaissance);
             this.Controls.Add(this.dateTimeAdd);
-            this.Controls.Add(this.txtTelephoneAdd);
-            this.Controls.Add(this.lblTelphoneE);
             this.Controls.Add(this.txtPrenomAdd);
             this.Controls.Add(this.lblPrenomE);
             this.Controls.Add(this.txtnomAdd);
@@ -230,16 +206,14 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         private System.Windows.Forms.TextBox txtnomAdd;
         private System.Windows.Forms.TextBox txtPrenomAdd;
         private System.Windows.Forms.Label lblPrenomE;
-        private System.Windows.Forms.TextBox txtTelephoneAdd;
-        private System.Windows.Forms.Label lblTelphoneE;
         private System.Windows.Forms.DateTimePicker dateTimeAdd;
         private System.Windows.Forms.Label DateNaissance;
         private System.Windows.Forms.Button btnAjouterE;
         private System.Windows.Forms.DataGridView DgvAddE;
         private System.Windows.Forms.ErrorProvider EreurPNomAdd;
         private System.Windows.Forms.TextBox txtPasswordAdd;
-        private System.Windows.Forms.Label lblPasswordADD;
         private System.Windows.Forms.TextBox txtNuméroEView;
         private System.Windows.Forms.Button btnGenerationNuméro;
+        private System.Windows.Forms.Label lblPasswordADD;
     }
 }
