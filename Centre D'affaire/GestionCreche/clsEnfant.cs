@@ -10,15 +10,15 @@ namespace Centre_D_affaire.GestionCreche
     {
         private string nom;
         
-        private string dateNaiss;
-        private string dateDadmission;
+        private DateTime dateNaiss;
+        private DateTime dateDadmission;
         private int age;
  
 
         
 
         public clsEnfant() { }
-        public clsEnfant(string NOM, string dateN, string dateD,  int AGE)
+        public clsEnfant(string NOM, DateTime dateN, DateTime dateD,  int AGE)
         {
             this.Nom = NOM;
            
@@ -33,8 +33,8 @@ namespace Centre_D_affaire.GestionCreche
         public string Nom { get => nom; set => nom = value; }
         
        
-        public string DateNaiss { get => dateNaiss; set => dateNaiss = value; }
-        public string DateDadmission { get => dateDadmission; set => dateDadmission = value; }
+        public DateTime DateNaiss { get => dateNaiss; set => dateNaiss = value; }
+        public DateTime DateDadmission { get => dateDadmission; set => dateDadmission = value; }
        
         public int Age { get => age; set => age = value; }
 
