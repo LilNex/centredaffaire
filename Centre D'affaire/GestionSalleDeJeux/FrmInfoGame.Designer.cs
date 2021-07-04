@@ -29,14 +29,19 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblNameInfoGame = new System.Windows.Forms.Label();
             this.txtNameNewGame = new System.Windows.Forms.TextBox();
-            this.txtNumberNewGame = new System.Windows.Forms.TextBox();
             this.checkBoxPs4InfoGame = new System.Windows.Forms.CheckBox();
             this.checkBoxBillardInfoGame = new System.Windows.Forms.CheckBox();
             this.checkBoxBabyFootInfoGame = new System.Windows.Forms.CheckBox();
             this.checkBoxArcardStreetInfoGame = new System.Windows.Forms.CheckBox();
             this.btnAddNewGame = new System.Windows.Forms.Button();
+            this.EPAddGame = new System.Windows.Forms.ErrorProvider(this.components);
+            this.NUDNumberAddGame = new System.Windows.Forms.NumericUpDown();
+            this.lblumberAddGame = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.EPAddGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDNumberAddGame)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNameInfoGame
@@ -56,14 +61,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.txtNameNewGame.Name = "txtNameNewGame";
             this.txtNameNewGame.Size = new System.Drawing.Size(190, 28);
             this.txtNameNewGame.TabIndex = 1;
-            // 
-            // txtNumberNewGame
-            // 
-            this.txtNumberNewGame.Location = new System.Drawing.Point(166, 146);
-            this.txtNumberNewGame.Multiline = true;
-            this.txtNumberNewGame.Name = "txtNumberNewGame";
-            this.txtNumberNewGame.Size = new System.Drawing.Size(190, 28);
-            this.txtNumberNewGame.TabIndex = 3;
             // 
             // checkBoxPs4InfoGame
             // 
@@ -122,21 +119,51 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnAddNewGame.UseVisualStyleBackColor = false;
             this.btnAddNewGame.Click += new System.EventHandler(this.btnAddNewGame_Click);
             // 
+            // EPAddGame
+            // 
+            this.EPAddGame.ContainerControl = this;
+            // 
+            // NUDNumberAddGame
+            // 
+            this.NUDNumberAddGame.Location = new System.Drawing.Point(166, 152);
+            this.NUDNumberAddGame.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.NUDNumberAddGame.Name = "NUDNumberAddGame";
+            this.NUDNumberAddGame.Size = new System.Drawing.Size(133, 20);
+            this.NUDNumberAddGame.TabIndex = 45;
+            this.NUDNumberAddGame.ValueChanged += new System.EventHandler(this.NUDNumberAddGame_ValueChanged);
+            // 
+            // lblumberAddGame
+            // 
+            this.lblumberAddGame.AutoSize = true;
+            this.lblumberAddGame.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblumberAddGame.Location = new System.Drawing.Point(25, 143);
+            this.lblumberAddGame.Name = "lblumberAddGame";
+            this.lblumberAddGame.Size = new System.Drawing.Size(108, 29);
+            this.lblumberAddGame.TabIndex = 46;
+            this.lblumberAddGame.Text = "Number";
+            // 
             // FrmInfoGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 298);
+            this.Controls.Add(this.lblumberAddGame);
+            this.Controls.Add(this.NUDNumberAddGame);
             this.Controls.Add(this.btnAddNewGame);
             this.Controls.Add(this.checkBoxArcardStreetInfoGame);
             this.Controls.Add(this.checkBoxBabyFootInfoGame);
             this.Controls.Add(this.checkBoxBillardInfoGame);
             this.Controls.Add(this.checkBoxPs4InfoGame);
-            this.Controls.Add(this.txtNumberNewGame);
             this.Controls.Add(this.txtNameNewGame);
             this.Controls.Add(this.lblNameInfoGame);
             this.Name = "FrmInfoGame";
             this.Text = "FrmInfoGame";
+            ((System.ComponentModel.ISupportInitialize)(this.EPAddGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDNumberAddGame)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,11 +173,13 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private System.Windows.Forms.Label lblNameInfoGame;
         private System.Windows.Forms.TextBox txtNameNewGame;
-        private System.Windows.Forms.TextBox txtNumberNewGame;
         private System.Windows.Forms.CheckBox checkBoxPs4InfoGame;
         private System.Windows.Forms.CheckBox checkBoxBillardInfoGame;
         private System.Windows.Forms.CheckBox checkBoxBabyFootInfoGame;
         private System.Windows.Forms.CheckBox checkBoxArcardStreetInfoGame;
         private System.Windows.Forms.Button btnAddNewGame;
+        private System.Windows.Forms.ErrorProvider EPAddGame;
+        private System.Windows.Forms.Label lblumberAddGame;
+        private System.Windows.Forms.NumericUpDown NUDNumberAddGame;
     }
 }

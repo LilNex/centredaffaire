@@ -624,6 +624,12 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             FRMAG.Show();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmAbout FRMA22 = new FrmAbout();
+            FRMA22.Show();
+        }
+
         private void label4_Click(object sender, EventArgs e)
         {
             FrmAddGame FRMAG = new FrmAddGame();

@@ -1,7 +1,7 @@
 ﻿
 namespace Centre_D_affaire.GestionSalleDeJeux
 {
-    partial class FrmEditArcardStreet
+    partial class FrmAddGAndE
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,8 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.PnlBillard = new System.Windows.Forms.Panel();
             this.btnAddGame = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnImageBillard = new System.Windows.Forms.Button();
             this.PnlBillard.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -61,6 +61,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnAddGame.TabIndex = 1;
             this.btnAddGame.Text = "Game";
             this.btnAddGame.UseVisualStyleBackColor = false;
+            this.btnAddGame.Click += new System.EventHandler(this.btnAddGame_Click);
             // 
             // panel1
             // 
@@ -71,18 +72,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panel1.Size = new System.Drawing.Size(264, 171);
             this.panel1.TabIndex = 35;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(34, 119);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 43);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Employee";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -97,6 +86,19 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(34, 119);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 43);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Employee";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnImageBillard
             // 
             this.btnImageBillard.BackColor = System.Drawing.Color.Transparent;
@@ -107,17 +109,19 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnImageBillard.Name = "btnImageBillard";
             this.btnImageBillard.Size = new System.Drawing.Size(258, 112);
             this.btnImageBillard.TabIndex = 0;
+            this.btnImageBillard.Text = "<";
             this.btnImageBillard.UseVisualStyleBackColor = false;
+            this.btnImageBillard.Click += new System.EventHandler(this.btnImageBillard_Click);
             // 
-            // FrmEditArcardStreet
+            // FrmAddGAndE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 198);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PnlBillard);
-            this.Name = "FrmEditArcardStreet";
-            this.Text = "FrmAddArcardStreet";
+            this.Name = "FrmAddGAndE";
+            this.Load += new System.EventHandler(this.FrmAddAll_Load);
             this.PnlBillard.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -129,9 +133,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private System.Windows.Forms.Panel PnlBillard;
         private System.Windows.Forms.Button btnAddGame;
-        private System.Windows.Forms.Button btnImageBillard;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnImageBillard;
     }
 }

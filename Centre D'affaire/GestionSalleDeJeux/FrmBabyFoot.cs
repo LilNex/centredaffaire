@@ -330,5 +330,17 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             btnMinuteBabyFoot4.Text = string.Format("{0:00}", MinuteBabyFoot4);
             btnHoursBabyFoot4.Text = string.Format("{0:00}", HoursBabyFoot4);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmAbout FRMA1 = new FrmAbout();
+            FRMA1.Show();
+        }
+
+        private void btnEditBabyFoot_Click(object sender, EventArgs e)
+        {
+            FrmAddGAndE FRMAA12 = new FrmAddGAndE();
+            FRMAA12.Show();
+        }
     }
 }

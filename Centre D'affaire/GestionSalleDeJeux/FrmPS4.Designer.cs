@@ -345,6 +345,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnEditPs4.Text = "Edit";
             this.btnEditPs4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditPs4.UseVisualStyleBackColor = false;
+            this.btnEditPs4.Click += new System.EventHandler(this.btnEditPs4_Click);
             // 
             // panel4
             // 
@@ -383,6 +384,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button3.Text = "ABOUT";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel1
             // 

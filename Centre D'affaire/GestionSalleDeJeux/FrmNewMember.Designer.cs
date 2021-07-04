@@ -55,9 +55,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.lblNomE.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomE.Location = new System.Drawing.Point(11, 22);
             this.lblNomE.Name = "lblNomE";
-            this.lblNomE.Size = new System.Drawing.Size(78, 33);
+            this.lblNomE.Size = new System.Drawing.Size(94, 33);
             this.lblNomE.TabIndex = 0;
-            this.lblNomE.Text = "Nom";
+            this.lblNomE.Text = "Name";
             // 
             // txtnomAdd
             // 
@@ -85,9 +85,9 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.lblPrenomE.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold);
             this.lblPrenomE.Location = new System.Drawing.Point(11, 64);
             this.lblPrenomE.Name = "lblPrenomE";
-            this.lblPrenomE.Size = new System.Drawing.Size(120, 33);
+            this.lblPrenomE.Size = new System.Drawing.Size(159, 33);
             this.lblPrenomE.TabIndex = 2;
-            this.lblPrenomE.Text = "Prenom";
+            this.lblPrenomE.Text = "Last name";
             // 
             // txtTelephoneAdd
             // 
@@ -105,13 +105,13 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.lblTelphoneE.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold);
             this.lblTelphoneE.Location = new System.Drawing.Point(12, 106);
             this.lblTelphoneE.Name = "lblTelphoneE";
-            this.lblTelphoneE.Size = new System.Drawing.Size(157, 33);
+            this.lblTelphoneE.Size = new System.Drawing.Size(100, 33);
             this.lblTelphoneE.TabIndex = 4;
-            this.lblTelphoneE.Text = "Telephone";
+            this.lblTelphoneE.Text = "Phone";
             // 
             // dateTimeAdd
             // 
-            this.dateTimeAdd.Location = new System.Drawing.Point(184, 270);
+            this.dateTimeAdd.Location = new System.Drawing.Point(185, 258);
             this.dateTimeAdd.Name = "dateTimeAdd";
             this.dateTimeAdd.Size = new System.Drawing.Size(200, 20);
             this.dateTimeAdd.TabIndex = 8;
@@ -119,12 +119,12 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // DateNaissance
             // 
             this.DateNaissance.AutoSize = true;
-            this.DateNaissance.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold);
-            this.DateNaissance.Location = new System.Drawing.Point(12, 234);
+            this.DateNaissance.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateNaissance.Location = new System.Drawing.Point(7, 252);
             this.DateNaissance.Name = "DateNaissance";
-            this.DateNaissance.Size = new System.Drawing.Size(274, 33);
+            this.DateNaissance.Size = new System.Drawing.Size(172, 28);
             this.DateNaissance.TabIndex = 9;
-            this.DateNaissance.Text = "Date De Naissance";
+            this.DateNaissance.Text = "Date of Birth";
             // 
             // btnAjouterE
             // 
@@ -166,20 +166,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.lblPasswordADD.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPasswordADD.Location = new System.Drawing.Point(12, 153);
             this.lblPasswordADD.Name = "lblPasswordADD";
-            this.lblPasswordADD.Size = new System.Drawing.Size(176, 28);
+            this.lblPasswordADD.Size = new System.Drawing.Size(127, 28);
             this.lblPasswordADD.TabIndex = 14;
-            this.lblPasswordADD.Text = "Mot De Passe";
+            this.lblPasswordADD.Text = "Password";
             this.lblPasswordADD.Click += new System.EventHandler(this.lblPasswordADD_Click);
             // 
             // btnGenerationNuméro
             // 
             this.btnGenerationNuméro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerationNuméro.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerationNuméro.Location = new System.Drawing.Point(12, 197);
+            this.btnGenerationNuméro.Location = new System.Drawing.Point(12, 204);
             this.btnGenerationNuméro.Name = "btnGenerationNuméro";
             this.btnGenerationNuméro.Size = new System.Drawing.Size(247, 34);
             this.btnGenerationNuméro.TabIndex = 16;
-            this.btnGenerationNuméro.Text = "Click pour avoir vote numéro";
+            this.btnGenerationNuméro.Text = "Get number";
             this.btnGenerationNuméro.UseVisualStyleBackColor = true;
             this.btnGenerationNuméro.Click += new System.EventHandler(this.btnGenerationNuméro_Click);
             // 
@@ -187,7 +187,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // 
             this.txtNuméroEView.BackColor = System.Drawing.Color.LightSteelBlue;
             this.txtNuméroEView.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtNuméroEView.Location = new System.Drawing.Point(265, 197);
+            this.txtNuméroEView.Location = new System.Drawing.Point(265, 204);
             this.txtNuméroEView.Multiline = true;
             this.txtNuméroEView.Name = "txtNuméroEView";
             this.txtNuméroEView.Size = new System.Drawing.Size(119, 34);

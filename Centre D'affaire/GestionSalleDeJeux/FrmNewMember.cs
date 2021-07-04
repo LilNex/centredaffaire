@@ -32,7 +32,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
             ClsListeSDJ.ListE.Add(NE);
 
-            cpt += 0001;
             DgvAddE.DataSource = null;
             DgvAddE.DataSource = ClsListeSDJ.ListE;
 
@@ -40,9 +39,8 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             txtPrenomAdd.Text = null;
             txtTelephoneAdd.Text = null;
             txtPrenomAdd.Text = null;
-            txtPasswordAdd.Text = null;      
-            cpt += 1;
-
+            txtPasswordAdd.Text = null;
+            MessageBox.Show("your modification is successfully", "Add");
 
         }
 

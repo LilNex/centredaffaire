@@ -44,7 +44,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void FrmArcardeStreet_Load(object sender, EventArgs e)
         {
-
+            
             //bool t = false;
             //foreach (FrmAbout frm in this.mdichildren()
             //{
@@ -329,7 +329,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
 
         private void button46_Click(object sender, EventArgs e)
         {
-            FrmEditArcardStreet FRMAAS = new FrmEditArcardStreet();
+            FrmAddGAndE FRMAAS = new FrmAddGAndE();
             FRMAAS.Show();
         }
 

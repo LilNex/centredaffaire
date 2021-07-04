@@ -58,6 +58,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnRestBabyFoot1 = new System.Windows.Forms.Button();
             this.lblNameBabyFoot1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnClearArcardS3 = new System.Windows.Forms.Button();
             this.btnHoursBabyFoot3 = new System.Windows.Forms.Button();
             this.btnMinuteBabyFoot3 = new System.Windows.Forms.Button();
@@ -66,6 +67,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnStarBabyFoot3 = new System.Windows.Forms.Button();
             this.btnRestBabyFoot3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnClearArcardS4 = new System.Windows.Forms.Button();
             this.btnHoursBabyFoot4 = new System.Windows.Forms.Button();
             this.btnMinuteBabyFoot4 = new System.Windows.Forms.Button();
@@ -74,6 +76,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnStarBabyFoot4 = new System.Windows.Forms.Button();
             this.btnRestBabyFoot4 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnClearArcardS2 = new System.Windows.Forms.Button();
             this.btnHoursBabyFoot2 = new System.Windows.Forms.Button();
             this.btnMinuteBabyFoot2 = new System.Windows.Forms.Button();
@@ -85,9 +88,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.timerBabyFoot2 = new System.Windows.Forms.Timer(this.components);
             this.timerBabyFoot3 = new System.Windows.Forms.Timer(this.components);
             this.timerBabyFoot4 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.FlpMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -221,6 +221,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.button3.Text = "ABOUT";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel2
             // 
@@ -259,6 +260,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnEditBabyFoot.Text = "Edit";
             this.btnEditBabyFoot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditBabyFoot.UseVisualStyleBackColor = false;
+            this.btnEditBabyFoot.Click += new System.EventHandler(this.btnEditBabyFoot_Click);
             // 
             // panel3
             // 
@@ -487,6 +489,19 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(-2, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 24);
+            this.label2.TabIndex = 41;
+            this.label2.Tag = "";
+            this.label2.Text = "BabyFoot";
+            // 
             // btnClearArcardS3
             // 
             this.btnClearArcardS3.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -604,6 +619,19 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(7, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 24);
+            this.label3.TabIndex = 42;
+            this.label3.Tag = "";
+            this.label3.Text = "BabyFoot";
+            // 
             // btnClearArcardS4
             // 
             this.btnClearArcardS4.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -720,6 +748,19 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox3.Size = new System.Drawing.Size(386, 140);
             this.groupBox3.TabIndex = 39;
             this.groupBox3.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(9, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 24);
+            this.label1.TabIndex = 40;
+            this.label1.Tag = "";
+            this.label1.Text = "BabyFoot";
             // 
             // btnClearArcardS2
             // 
@@ -840,45 +881,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             // 
             this.timerBabyFoot4.Interval = 1000;
             this.timerBabyFoot4.Tick += new System.EventHandler(this.timerBabyFoot4_Tick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(9, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 24);
-            this.label1.TabIndex = 40;
-            this.label1.Tag = "";
-            this.label1.Text = "BabyFoot";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(-2, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 24);
-            this.label2.TabIndex = 41;
-            this.label2.Tag = "";
-            this.label2.Text = "BabyFoot";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(7, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 24);
-            this.label3.TabIndex = 42;
-            this.label3.Tag = "";
-            this.label3.Text = "BabyFoot";
             // 
             // FrmBabyFoot
             // 

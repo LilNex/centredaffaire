@@ -59,5 +59,10 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             DgvBillard.DataSource = null;
             DgvBillard.DataSource = ClsListeSDJ.ListBillard;
         }
+
+        private void btnDeleteGame_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

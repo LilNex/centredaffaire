@@ -265,6 +265,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnDeleteGame.TabIndex = 45;
             this.btnDeleteGame.Text = "Delete Game";
             this.btnDeleteGame.UseVisualStyleBackColor = false;
+            this.btnDeleteGame.Click += new System.EventHandler(this.btnDeleteGame_Click);
             // 
             // btnNewGameRefresh
             // 

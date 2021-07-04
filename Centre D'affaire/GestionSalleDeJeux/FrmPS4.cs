@@ -304,5 +304,17 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             btnMinutePs44.Text = string.Format("{0:00}", MinutePs44);
             btnHourePs44.Text = string.Format("{0:00}", HourPs44);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmAbout FRMA23 = new FrmAbout();
+            FRMA23.Show();
+        }
+
+        private void btnEditPs4_Click(object sender, EventArgs e)
+        {
+            FrmAddGAndE FRMAA34 = new FrmAddGAndE();
+            FRMAA34.Show();
+        }
     }
 }
