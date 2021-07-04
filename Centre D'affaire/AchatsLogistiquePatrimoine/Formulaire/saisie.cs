@@ -22,7 +22,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private void button2_Click(object sender, EventArgs e)
         {
             OpenFileDialog o = new OpenFileDialog();
-            o.InitialDirectory = @"C:\Users\PRAGMESS\Desktop\aaa";
+            o.InitialDirectory = @"C:\Users\DELL\Desktop\Image";
             //o.Filter = "aaaa (*.jpeg)|*.jpeg | aaaa (*.png)|*.png | All files (*.*)|*.*";
             if( o.ShowDialog() == DialogResult.OK)
             {
@@ -108,6 +108,12 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             comboBox1.Items.Add("Service");
             comboBox1.Items.Add("Autre");
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Catalogue C = new Catalogue();
+            C.Show();
         }
     }
 }

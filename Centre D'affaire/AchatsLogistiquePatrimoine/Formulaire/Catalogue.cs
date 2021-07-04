@@ -277,22 +277,80 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
             }
 
-            if (cmbProduit.SelectedItem.ToString() == "MEUBLE")
+            if (cmbProduit.SelectedItem.ToString() == "Meuble")
             {
 
+                dgvCHoi.DataSource = null;
+                dgvCHoi.DataSource = ClsListe.getlisteART(ArticleType.Meuble);
 
+                dgvCHoi.Columns["nom"].Width = 170;
+                dgvCHoi.Columns["nom"].ReadOnly = true;
 
+            }
+            if (cmbProduit.SelectedItem.ToString() == "Materiel sportif")
+            {
 
                 dgvCHoi.DataSource = null;
-                //dgvCHoi.DataSource = a.articleMeuble();
+                dgvCHoi.DataSource = ClsListe.getlisteART(ArticleType.SalleSport);
+
+                dgvCHoi.Columns["nom"].Width = 170;
+                dgvCHoi.Columns["nom"].ReadOnly = true;
+
+            }
+            if (cmbProduit.SelectedItem.ToString() == "Salle de jeux")
+            {
+
+                dgvCHoi.DataSource = null;
+                dgvCHoi.DataSource = ClsListe.getlisteART(ArticleType.SalleJeux);
+
+                dgvCHoi.Columns["nom"].Width = 170;
+                dgvCHoi.Columns["nom"].ReadOnly = true;
+
+            }
+            if (cmbProduit.SelectedItem.ToString() == "Cafe/restaurant")
+            {
+
+                dgvCHoi.DataSource = null;
+                dgvCHoi.DataSource = ClsListe.getlisteART(ArticleType.Caferestaurant);
+
+                dgvCHoi.Columns["nom"].Width = 170;
+                dgvCHoi.Columns["nom"].ReadOnly = true;
+
+            }
+            if (cmbProduit.SelectedItem.ToString() == "Crèche")
+            {
+
+                dgvCHoi.DataSource = null;
+                dgvCHoi.DataSource = ClsListe.getlisteART(ArticleType.Crèche);
+
                 dgvCHoi.Columns["nom"].Width = 170;
                 dgvCHoi.Columns["nom"].ReadOnly = true;
 
 
+            }
+            if (cmbProduit.SelectedItem.ToString() == "Service")
+            {
+
+                dgvCHoi.DataSource = null;
+                dgvCHoi.DataSource = ClsListe.getlisteART(ArticleType.Service);
+
+                dgvCHoi.Columns["nom"].Width = 170;
+                dgvCHoi.Columns["nom"].ReadOnly = true;
 
 
             }
+            if (cmbProduit.SelectedItem.ToString() == "Autre")
+            {
 
+                dgvCHoi.DataSource = null;
+                dgvCHoi.DataSource = ClsListe.getlisteART(ArticleType.Autre);
+
+                dgvCHoi.Columns["nom"].Width = 170;
+                dgvCHoi.Columns["nom"].ReadOnly = true;
+
+
+            }
+ 
             cmbProduit.Text = "--Faites votre choix--";
             foreach (DataGridViewColumn d in dgvCHoi.Columns)
             {
@@ -301,6 +359,8 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             }
             dgvCHoi.Columns["nom"].Visible = true;
             dgvCHoi.Columns["nom"].Width = 220;
+
+            cmbProduit.Text = "--Faites votre choix--";
         }
 
 
