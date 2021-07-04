@@ -186,11 +186,11 @@
     <Compile Include="GestionPersonnel\frmGPersonnel.Designer.cs">
       <DependentUpon>frmGPersonnel.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\frmGSJ.cs">
+    <Compile Include="GestionSalleDeJeux\FrmAddGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionSalleDeJeux\frmGSJ.Designer.cs">
-      <DependentUpon>frmGSJ.cs</DependentUpon>
+    <Compile Include="GestionSalleDeJeux\FrmAddGame.Designer.cs">
+      <DependentUpon>FrmAddGame.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSalleDeSport\ClassInterface.cs" />
     <Compile Include="GestionSalleDeSport\Equipment.cs" />
@@ -215,6 +215,82 @@
       <DependentUpon>FormAccueil.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSalleDeSport\FormLogin.cs">
+    <Compile Include="GestionSalleDeJeux\clsArcArdStreet.cs" />
+    <Compile Include="GestionSalleDeJeux\clsBillard.cs" />
+    <Compile Include="GestionSalleDeJeux\clsBabyFoot.cs" />
+    <Compile Include="GestionSalleDeJeux\clsPs4.cs" />
+    <Compile Include="GestionSalleDeJeux\frmAddGameAndEmployer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\frmAddGameAndEmployer.Designer.cs">
+      <DependentUpon>frmAddGameAndEmployer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmARCARDE STREET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmARCARDE STREET.Designer.cs">
+      <DependentUpon>FrmARCARDE STREET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmBabyFoot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmBabyFoot.Designer.cs">
+      <DependentUpon>FrmBabyFoot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\clsEmployersSDJ.cs" />
+    <Compile Include="GestionSalleDeJeux\ClsListeSDJ.cs" />
+    <Compile Include="GestionSalleDeJeux\FrmBillard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmBillard.Designer.cs">
+      <DependentUpon>FrmBillard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmConnection.Designer.cs">
+      <DependentUpon>FrmConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmInfoGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmInfoGame.Designer.cs">
+      <DependentUpon>FrmInfoGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmNewMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmNewMember.Designer.cs">
+      <DependentUpon>FrmNewMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmSupport.Designer.cs">
+      <DependentUpon>FrmSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmMENU1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmMENU1.Designer.cs">
+      <DependentUpon>FrmMENU1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\ClsOccupationJ.cs" />
+    <Compile Include="GestionSalleDeJeux\FrmPS4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\FrmPS4.Designer.cs">
+      <DependentUpon>FrmPS4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSalleDeJeux\ClsSalleDeJeux.cs" />
+    <Compile Include="GestionSalleDeJeux\clsJeux.cs" />
+    <Compile Include="GestionSalleDeSport\frmGSS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GestionSalleDeSport\FormLogin.Designer.cs">
@@ -338,6 +414,42 @@
     <EmbeddedResource Include="GestionCafeRestaurant\frmGCR.resx">
       <DependentUpon>frmGCR.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\frmAddGameAndEmployer.resx">
+      <DependentUpon>frmAddGameAndEmployer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmAddGame.resx">
+      <DependentUpon>FrmAddGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmARCARDE STREET.resx">
+      <DependentUpon>FrmARCARDE STREET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmBabyFoot.resx">
+      <DependentUpon>FrmBabyFoot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmBillard.resx">
+      <DependentUpon>FrmBillard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmConnection.resx">
+      <DependentUpon>FrmConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmInfoGame.resx">
+      <DependentUpon>FrmInfoGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmNewMember.resx">
+      <DependentUpon>FrmNewMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmSupport.resx">
+      <DependentUpon>FrmSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmMENU1.resx">
+      <DependentUpon>FrmMENU1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalleDeJeux\FrmPS4.resx">
+      <DependentUpon>FrmPS4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -364,6 +476,297 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-help-desk-technical-support-symbol-png-download-help-desk-icon-5ab0dcb404fe53.6458065015215402760205.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-online-support-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-home-clip-art-black-home-icon-5ab0be3121a1f5.8709230015215324651378.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\582807-steevy84-istock-456906257.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_home_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_home_black_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_add_box_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_help_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_play_arrow_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_pause_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_restart_alt_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_restart_alt_black_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_play_arrow_black_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_pause_black_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billiard-ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billiard-ball1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-billiards-computer-icons-billiard-balls-eight-ball-8-ball-pool-5accb508721f40.6250710415233651284675.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game-pool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3401193.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3544172.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3205207.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3544115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1865398.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18653981.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billiard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billiard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billiard %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_menu_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_menu_black_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_home_black_24dp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-letter-interface-sign %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-letter-interface-sign %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\care-about-environment %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-information-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-information-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-engrenage-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-engrenage-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-engrenage-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_support_agent_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_support_agent_black_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_support_agent_black_24dp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1423825.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queue-de-billard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Babyfoot-personnalise-finition-mate-Blackball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baby-foot-personnalise-sur-mesure-Pure-debuchy-Toulet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14238251.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baby-foot-personnalise-sur-mesure-Pure-debuchy-Toulet1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Babyfoot-recadré.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\babyfoot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61h8-jBiGgL._AC_SX425_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71b7616dee_50157963_2-noel-console-ps4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52c973cdb6787241d3c7a0360dc7d140.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RepliCade_Street_Fighter_II_Arcade_03_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RepliCade_Street_Fighter_II_Arcade_03_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40-405613_arcade-data-src-classic-arcade-wallpaper-cell-phone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcade.Fighting.Street-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1588774394_407_Rues-de-Rage-4-est-genial-mais-c39est-autre-chose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\street-fighter-ii-micro-player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aleksei-bachinskii-screenshot004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a3d9750b15423c43a7321147e9e9bb9a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cabinet-d&amp;#39%3barcade-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regle-jeu-baby-foot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regle-jeu-baby-foot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-street-fighter-v-xbox-360-arcade-controller-playstation-4-playstation-3-playstation-electronics-playstation-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-joystick-controller-stencil-joystick-game-controllers-atari-2600-computer-icons-video-games-electronics-video-game-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple-arcade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65687.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65687 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7fc6672ddb99cac9c038efcb5f502a76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-neon-style-game-room-with-console-png-image_2964659.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-neon-style-game-room-with-console-png-image_29646591.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-neon-style-game-room-with-console-png-image_29646592.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neonsigneffects_behance_arcade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-neon-game-zone-with-console-and-triangle-png-image_6030413.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_backspace_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_backspace_black_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-badge-d%27employé-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1682559.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3999583-middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3999583-middle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16825591.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16825592.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\162-1627477_number-of-employees-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee-icon-png-27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee-icon-png-271.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee-icon-png-272.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_edit_black_24dp.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Untitled-1 %281%29.png" />

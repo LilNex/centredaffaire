@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Centre_D_affaire.GestionSalleDeSport;
+using Centre_D_affaire.GestionSalleDeJeux;
 
 namespace Centre_D_affaire
 {
@@ -18,7 +19,7 @@ namespace Centre_D_affaire
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new btnSeconnecter());
+            Application.Run(new FrmMENU1());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
