@@ -17,6 +17,9 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         {
             InitializeComponent();
         }
+        List<ClsDemande> ld = new List<ClsDemande>();
+        List<CHOIX> lc = new List<CHOIX>();
+        List<ClsDepartement> ldep = new List<ClsDepartement>();
 
         private void FormPres_Load(object sender, EventArgs e)
         {
@@ -38,16 +41,23 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
                 }               
             }
 
-            for (int i = 0; i < ClsListe.List_article.Count; i++)
-            {
-                cmbARticle.Items.Add(ClsListe.List_article[i].TypeArticle);
-            }
-
-
+            //for (int i = 0; i < ClsListe.List_article.Count; i++)
+            //{
+            //    cmbARticle.Items.Add(ClsListe.List_article[i].TypeArticle);
+            //}
+           
+                
+          
+            
+            //combo departement
             for (int i = 0; i < ClsListe.List_departmnt.Count; i++)
             {
-                cmbDeprt.Items.Add(ClsListe.List_departmnt[i].Nom_service );
+                cmbDeprt.Items.Add(ClsListe.List_departmnt[i] );
             }
+
+            //combo urgence
+            cmbUtgnce.Items.Add("urgent");
+            cmbUtgnce.Items.Add("normal");
 
 
 
@@ -94,6 +104,88 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+            for (int i = 0; i < ClsListe.List_demande.Count; i++)
+            {
+               
+               if (ClsListe.List_demande[i].ID_demande1 == int.Parse(cmbID.SelectedItem.ToString()))
+               {
+                     lc.Clear();
+                     lc = ClsListe.List_demande[i].listchoix;
+
+
+               }
+ 
+            }
+            dgvDmdNV.DataSource = null;
+            dgvDmdNV.DataSource = lc;
+
+        }
+
+        private void dgvDmdNV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvDmdNV_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pnlValidDmd_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cmbARticle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+         
+
+        }
+
+        private void cmbDeprt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            for (int i = 0; i < ClsListe.List_demande.Count ; i++)
+            {
+
+                if (ClsListe.List_demande[i].Departement == (ClsDepartement) cmbDeprt.SelectedItem )
+                {
+                    lc.Clear();
+                    //for(int j=0;ClsListe.List_demande[i].)
+                    lc.AddRange(ClsListe.List_demande[i].listchoix);
+
+
+                }
+
+            }
+
+            dgvDmdNV.DataSource = null;
+            dgvDmdNV.DataSource = lc;
+        }
+
+        private void cmbUtgnce_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            for (int i = 0; i < ClsListe.List_demande.Count; i++)
+            {
+
+                if (ClsListe.List_demande[i].Urgence == cmbUtgnce.SelectedItem.ToString())
+                {
+                    lc.Clear();
+                    //for(int j=0;ClsListe.List_demande[i].)
+                    lc.AddRange(ClsListe.List_demande[i].listchoix); 
+
+                }
+
+            }
+
+            dgvDmdNV.DataSource = null;
+            dgvDmdNV.DataSource = lc;
         }
     }
 }

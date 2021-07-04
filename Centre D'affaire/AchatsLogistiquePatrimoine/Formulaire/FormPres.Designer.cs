@@ -53,14 +53,11 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbID = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.cmbARticle = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.rdbNormal = new System.Windows.Forms.RadioButton();
-            this.rdbUrgent = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.cmbDeprt = new System.Windows.Forms.ComboBox();
+            this.cmbUtgnce = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -218,14 +215,11 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             // 
             // pnlDemande
             // 
+            this.pnlDemande.Controls.Add(this.cmbUtgnce);
             this.pnlDemande.Controls.Add(this.cmbDeprt);
             this.pnlDemande.Controls.Add(this.label11);
-            this.pnlDemande.Controls.Add(this.rdbUrgent);
-            this.pnlDemande.Controls.Add(this.rdbNormal);
             this.pnlDemande.Controls.Add(this.label10);
             this.pnlDemande.Controls.Add(this.label9);
-            this.pnlDemande.Controls.Add(this.cmbARticle);
-            this.pnlDemande.Controls.Add(this.label8);
             this.pnlDemande.Controls.Add(this.cmbID);
             this.pnlDemande.Controls.Add(this.label7);
             this.pnlDemande.Controls.Add(this.label6);
@@ -239,6 +233,8 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.dgvDmdNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgvDmdNV, "dgvDmdNV");
             this.dgvDmdNV.Name = "dgvDmdNV";
+            this.dgvDmdNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDmdNV_CellContentClick);
+            this.dgvDmdNV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDmdNV_CellDoubleClick);
             // 
             // label6
             // 
@@ -257,23 +253,13 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             resources.ApplyResources(this.cmbID, "cmbID");
             this.cmbID.FormattingEnabled = true;
             this.cmbID.Name = "cmbID";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Name = "label8";
-            // 
-            // cmbARticle
-            // 
-            resources.ApplyResources(this.cmbARticle, "cmbARticle");
-            this.cmbARticle.FormattingEnabled = true;
-            this.cmbARticle.Name = "cmbARticle";
+            this.cmbID.SelectedIndexChanged += new System.EventHandler(this.cmbID_SelectedIndexChanged);
             // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.ForeColor = System.Drawing.Color.Maroon;
             this.label9.Name = "label9";
             // 
             // label10
@@ -281,20 +267,6 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             resources.ApplyResources(this.label10, "label10");
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Name = "label10";
-            // 
-            // rdbNormal
-            // 
-            resources.ApplyResources(this.rdbNormal, "rdbNormal");
-            this.rdbNormal.Name = "rdbNormal";
-            this.rdbNormal.TabStop = true;
-            this.rdbNormal.UseVisualStyleBackColor = true;
-            // 
-            // rdbUrgent
-            // 
-            resources.ApplyResources(this.rdbUrgent, "rdbUrgent");
-            this.rdbUrgent.Name = "rdbUrgent";
-            this.rdbUrgent.TabStop = true;
-            this.rdbUrgent.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -307,6 +279,14 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             resources.ApplyResources(this.cmbDeprt, "cmbDeprt");
             this.cmbDeprt.FormattingEnabled = true;
             this.cmbDeprt.Name = "cmbDeprt";
+            this.cmbDeprt.SelectedIndexChanged += new System.EventHandler(this.cmbDeprt_SelectedIndexChanged);
+            // 
+            // cmbUtgnce
+            // 
+            resources.ApplyResources(this.cmbUtgnce, "cmbUtgnce");
+            this.cmbUtgnce.FormattingEnabled = true;
+            this.cmbUtgnce.Name = "cmbUtgnce";
+            this.cmbUtgnce.SelectedIndexChanged += new System.EventHandler(this.cmbUtgnce_SelectedIndexChanged);
             // 
             // FormPres
             // 
@@ -360,14 +340,11 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dgvDmdNV;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cmbID;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cmbARticle;
-        private System.Windows.Forms.RadioButton rdbUrgent;
-        private System.Windows.Forms.RadioButton rdbNormal;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cmbDeprt;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cmbUtgnce;
     }
 }

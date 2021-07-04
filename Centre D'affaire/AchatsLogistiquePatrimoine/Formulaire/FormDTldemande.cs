@@ -54,11 +54,14 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
 
 
             
+            // combobox departement
 
             for(int i=0;i<ClsListe.List_departmnt.Count; i++)
             {
                 cmbDepartement.Items.Add(ClsListe.List_departmnt[i].Nom_service);
             }
+
+
             
 
 
@@ -128,8 +131,95 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
                 }
 
             }
+            
+            
+            if (cmbDepartement.SelectedItem.ToString() == "Salle de sport")
+                 {
+                for (int i = 0; i < ClsListe.List_departmnt.Count; i++)
+                {
+                    if (ClsListe.List_departmnt[i].Nom_service == "Salle de sport")
+                    {
+                        depar = ClsListe.List_departmnt[i];
+                    }
+                }
 
-            if(ClsListe.List_demande.Count== 0)
+            }
+
+
+            if (cmbDepartement.SelectedItem.ToString() == "Salle de jeux")
+            {
+                for (int i = 0; i < ClsListe.List_departmnt.Count; i++)
+                {
+                    if (ClsListe.List_departmnt[i].Nom_service == "Salle de jeux")
+                    {
+                        depar = ClsListe.List_departmnt[i];
+                    }
+                }
+
+            }
+
+            if (cmbDepartement.SelectedItem.ToString() == "Crèche")
+            {
+                for (int i = 0; i < ClsListe.List_departmnt.Count; i++)
+                {
+                    if (ClsListe.List_departmnt[i].Nom_service == "Crèche")
+                    {
+                        depar = ClsListe.List_departmnt[i];
+                    }
+                }
+
+            }
+            if (cmbDepartement.SelectedItem.ToString() == "Parking")
+            {
+                for (int i = 0; i < ClsListe.List_departmnt.Count; i++)
+                {
+                    if (ClsListe.List_departmnt[i].Nom_service == "Parking")
+                    {
+                        depar = ClsListe.List_departmnt[i];
+                    }
+                }
+
+            }
+            
+
+            if (cmbDepartement.SelectedItem.ToString() == "Gestion personnel")
+            {
+                for (int i = 0; i < ClsListe.List_departmnt.Count; i++)
+                {
+                    if (ClsListe.List_departmnt[i].Nom_service == "Gestion personnel")
+                    {
+                        depar = ClsListe.List_departmnt[i];
+                    }
+                }
+
+            }
+
+            if (cmbDepartement.SelectedItem.ToString() == "Location salle et espace")
+            {
+                for (int i = 0; i < ClsListe.List_departmnt.Count; i++)
+                {
+                    if (ClsListe.List_departmnt[i].Nom_service == "Location salle et espace")
+                    {
+                        depar = ClsListe.List_departmnt[i];
+                    }
+                }
+
+            }
+
+            if (cmbDepartement.SelectedItem.ToString() == "Service achats")
+            {
+                for (int i = 0; i < ClsListe.List_departmnt.Count; i++)
+                {
+                    if (ClsListe.List_departmnt[i].Nom_service == "Service achats")
+                    {
+                        depar = ClsListe.List_departmnt[i];
+                    }
+                }
+
+            }
+
+
+            if (ClsListe.List_demande.Count== 0)
             {
                 IDdmd = 1 ;
             }
