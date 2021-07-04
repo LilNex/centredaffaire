@@ -135,5 +135,10 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         }
 
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            FormSignIn frmSignIn = new FormSignIn();
+            frmSignIn.Show();
+        }
     }
 }

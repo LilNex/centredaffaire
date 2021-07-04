@@ -30,7 +30,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -40,6 +40,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(btnSeconnecter));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblpretA = new Bunifu.UI.WinForms.BunifuLabel();
@@ -51,6 +52,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.BTNredire = new Bunifu.Framework.UI.BunifuTileButton();
             this.BTNfermer = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnSignup = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -63,9 +65,10 @@ namespace Centre_D_affaire.GestionSalleDeSport
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(751, 673);
+            this.pictureBox1.Size = new System.Drawing.Size(501, 437);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
@@ -77,10 +80,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.lblpretA.CursorType = null;
             this.lblpretA.Font = new System.Drawing.Font("Segoe Script", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpretA.ForeColor = System.Drawing.Color.Purple;
-            this.lblpretA.Location = new System.Drawing.Point(842, 106);
+            this.lblpretA.Location = new System.Drawing.Point(561, 69);
+            this.lblpretA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblpretA.Name = "lblpretA";
             this.lblpretA.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblpretA.Size = new System.Drawing.Size(355, 46);
+            this.lblpretA.Size = new System.Drawing.Size(245, 31);
             this.lblpretA.TabIndex = 28;
             this.lblpretA.Text = "prêt à vous connecter ??   ";
             this.lblpretA.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -105,11 +109,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BtnConnect.ColorContrastOnClick = 45;
             this.BtnConnect.ColorContrastOnHover = 45;
             this.BtnConnect.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.BtnConnect.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.BtnConnect.CustomizableEdges = borderEdges2;
             this.BtnConnect.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnConnect.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BtnConnect.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -127,13 +131,14 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BtnConnect.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.BtnConnect.IconSize = 25;
             this.BtnConnect.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.BtnConnect.IdleBorderRadius = 37;
+            this.BtnConnect.IdleBorderRadius = 23;
             this.BtnConnect.IdleBorderThickness = 1;
             this.BtnConnect.IdleFillColor = System.Drawing.Color.Purple;
             this.BtnConnect.IdleIconLeftImage = null;
             this.BtnConnect.IdleIconRightImage = null;
             this.BtnConnect.IndicateFocus = false;
-            this.BtnConnect.Location = new System.Drawing.Point(815, 466);
+            this.BtnConnect.Location = new System.Drawing.Point(543, 303);
+            this.BtnConnect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnConnect.Name = "BtnConnect";
             this.BtnConnect.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BtnConnect.OnDisabledState.BorderRadius = 1;
@@ -167,7 +172,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BtnConnect.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.BtnConnect.OnPressedState.IconLeftImage = null;
             this.BtnConnect.OnPressedState.IconRightImage = null;
-            this.BtnConnect.Size = new System.Drawing.Size(150, 39);
+            this.BtnConnect.Size = new System.Drawing.Size(100, 25);
             this.BtnConnect.TabIndex = 32;
             this.BtnConnect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnConnect.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -203,7 +208,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTmotpasse.IconRight = null;
             this.TXTmotpasse.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.TXTmotpasse.Lines = new string[0];
-            this.TXTmotpasse.Location = new System.Drawing.Point(815, 402);
+            this.TXTmotpasse.Location = new System.Drawing.Point(543, 261);
+            this.TXTmotpasse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TXTmotpasse.MaxLength = 32767;
             this.TXTmotpasse.MinimumSize = new System.Drawing.Size(1, 1);
             this.TXTmotpasse.Modified = false;
@@ -229,7 +235,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.TXTmotpasse.OnIdleState = stateProperties8;
-            this.TXTmotpasse.Padding = new System.Windows.Forms.Padding(3);
+            this.TXTmotpasse.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TXTmotpasse.PasswordChar = '*';
             this.TXTmotpasse.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.TXTmotpasse.PlaceholderText = "Mot Passe";
@@ -239,7 +245,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTmotpasse.SelectionLength = 0;
             this.TXTmotpasse.SelectionStart = 0;
             this.TXTmotpasse.ShortcutsEnabled = true;
-            this.TXTmotpasse.Size = new System.Drawing.Size(345, 45);
+            this.TXTmotpasse.Size = new System.Drawing.Size(230, 29);
             this.TXTmotpasse.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.TXTmotpasse.TabIndex = 25;
             this.TXTmotpasse.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -255,12 +261,13 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.lblLogin1.AllowParentOverrides = false;
             this.lblLogin1.AutoEllipsis = true;
             this.lblLogin1.CursorType = null;
-            this.lblLogin1.Font = new System.Drawing.Font("Roboto Thin", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin1.ForeColor = System.Drawing.Color.Purple;
-            this.lblLogin1.Location = new System.Drawing.Point(815, 275);
+            this.lblLogin1.Location = new System.Drawing.Point(543, 179);
+            this.lblLogin1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblLogin1.Name = "lblLogin1";
             this.lblLogin1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblLogin1.Size = new System.Drawing.Size(63, 24);
+            this.lblLogin1.Size = new System.Drawing.Size(46, 16);
             this.lblLogin1.TabIndex = 26;
             this.lblLogin1.Text = "Login :";
             this.lblLogin1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -271,12 +278,13 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.lblPassword.AllowParentOverrides = false;
             this.lblPassword.AutoEllipsis = true;
             this.lblPassword.CursorType = null;
-            this.lblPassword.Font = new System.Drawing.Font("Roboto Thin", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.Purple;
-            this.lblPassword.Location = new System.Drawing.Point(815, 372);
+            this.lblPassword.Location = new System.Drawing.Point(543, 242);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblPassword.Size = new System.Drawing.Size(105, 24);
+            this.lblPassword.Size = new System.Drawing.Size(77, 16);
             this.lblPassword.TabIndex = 29;
             this.lblPassword.Text = "Paasword :";
             this.lblPassword.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -309,7 +317,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.txtLogin.IconRight = null;
             this.txtLogin.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLogin.Lines = new string[0];
-            this.txtLogin.Location = new System.Drawing.Point(812, 305);
+            this.txtLogin.Location = new System.Drawing.Point(541, 198);
+            this.txtLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLogin.MaxLength = 32767;
             this.txtLogin.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtLogin.Modified = false;
@@ -335,7 +344,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtLogin.OnIdleState = stateProperties4;
-            this.txtLogin.Padding = new System.Windows.Forms.Padding(3);
+            this.txtLogin.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLogin.PasswordChar = '\0';
             this.txtLogin.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtLogin.PlaceholderText = "Login";
@@ -345,7 +354,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.txtLogin.SelectionLength = 0;
             this.txtLogin.SelectionStart = 0;
             this.txtLogin.ShortcutsEnabled = true;
-            this.txtLogin.Size = new System.Drawing.Size(345, 45);
+            this.txtLogin.Size = new System.Drawing.Size(230, 29);
             this.txtLogin.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtLogin.TabIndex = 33;
             this.txtLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -368,9 +377,10 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.bunifuPanel2.Controls.Add(this.BTNfermer);
             this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuPanel2.Location = new System.Drawing.Point(0, 0);
+            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(1281, 46);
+            this.bunifuPanel2.Size = new System.Drawing.Size(854, 30);
             this.bunifuPanel2.TabIndex = 34;
             this.bunifuPanel2.Click += new System.EventHandler(this.bunifuPanel2_Click);
             this.bunifuPanel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuPanel2_MouseDown);
@@ -381,7 +391,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNredire.color = System.Drawing.Color.Transparent;
             this.BTNredire.colorActive = System.Drawing.Color.Thistle;
             this.BTNredire.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTNredire.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BTNredire.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.BTNredire.ForeColor = System.Drawing.Color.White;
             this.BTNredire.Image = ((System.Drawing.Image)(resources.GetObject("BTNredire.Image")));
             this.BTNredire.ImagePosition = 5;
@@ -389,10 +399,10 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNredire.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BTNredire.LabelPosition = 0;
             this.BTNredire.LabelText = "";
-            this.BTNredire.Location = new System.Drawing.Point(1170, -2);
-            this.BTNredire.Margin = new System.Windows.Forms.Padding(6);
+            this.BTNredire.Location = new System.Drawing.Point(780, -1);
+            this.BTNredire.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTNredire.Name = "BTNredire";
-            this.BTNredire.Size = new System.Drawing.Size(49, 45);
+            this.BTNredire.Size = new System.Drawing.Size(33, 29);
             this.BTNredire.TabIndex = 13;
             // 
             // BTNfermer
@@ -401,7 +411,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNfermer.color = System.Drawing.Color.Transparent;
             this.BTNfermer.colorActive = System.Drawing.Color.Red;
             this.BTNfermer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTNfermer.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BTNfermer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.BTNfermer.ForeColor = System.Drawing.Color.White;
             this.BTNfermer.Image = ((System.Drawing.Image)(resources.GetObject("BTNfermer.Image")));
             this.BTNfermer.ImagePosition = 5;
@@ -409,18 +419,110 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.BTNfermer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BTNfermer.LabelPosition = 0;
             this.BTNfermer.LabelText = "";
-            this.BTNfermer.Location = new System.Drawing.Point(1233, -2);
-            this.BTNfermer.Margin = new System.Windows.Forms.Padding(6);
+            this.BTNfermer.Location = new System.Drawing.Point(822, -1);
+            this.BTNfermer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTNfermer.Name = "BTNfermer";
-            this.BTNfermer.Size = new System.Drawing.Size(49, 46);
+            this.BTNfermer.Size = new System.Drawing.Size(33, 30);
             this.BTNfermer.TabIndex = 12;
             this.BTNfermer.Click += new System.EventHandler(this.BTNfermer_Click);
             // 
+            // btnSignup
+            // 
+            this.btnSignup.AllowAnimations = true;
+            this.btnSignup.AllowMouseEffects = true;
+            this.btnSignup.AllowToggling = false;
+            this.btnSignup.AnimationSpeed = 200;
+            this.btnSignup.AutoGenerateColors = false;
+            this.btnSignup.AutoRoundBorders = true;
+            this.btnSignup.AutoSizeLeftIcon = true;
+            this.btnSignup.AutoSizeRightIcon = true;
+            this.btnSignup.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignup.BackColor1 = System.Drawing.Color.Purple;
+            this.btnSignup.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignup.BackgroundImage")));
+            this.btnSignup.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSignup.ButtonText = "S\'inscrire";
+            this.btnSignup.ButtonTextMarginLeft = 0;
+            this.btnSignup.ColorContrastOnClick = 45;
+            this.btnSignup.ColorContrastOnHover = 45;
+            this.btnSignup.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnSignup.CustomizableEdges = borderEdges1;
+            this.btnSignup.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSignup.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnSignup.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnSignup.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnSignup.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnSignup.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSignup.ForeColor = System.Drawing.Color.White;
+            this.btnSignup.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSignup.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnSignup.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnSignup.IconMarginLeft = 11;
+            this.btnSignup.IconPadding = 10;
+            this.btnSignup.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSignup.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnSignup.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnSignup.IconSize = 25;
+            this.btnSignup.IdleBorderColor = System.Drawing.Color.Transparent;
+            this.btnSignup.IdleBorderRadius = 23;
+            this.btnSignup.IdleBorderThickness = 1;
+            this.btnSignup.IdleFillColor = System.Drawing.Color.Purple;
+            this.btnSignup.IdleIconLeftImage = null;
+            this.btnSignup.IdleIconRightImage = null;
+            this.btnSignup.IndicateFocus = false;
+            this.btnSignup.Location = new System.Drawing.Point(673, 303);
+            this.btnSignup.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSignup.Name = "btnSignup";
+            this.btnSignup.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnSignup.OnDisabledState.BorderRadius = 1;
+            this.btnSignup.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSignup.OnDisabledState.BorderThickness = 1;
+            this.btnSignup.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnSignup.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnSignup.OnDisabledState.IconLeftImage = null;
+            this.btnSignup.OnDisabledState.IconRightImage = null;
+            this.btnSignup.onHoverState.BorderColor = System.Drawing.Color.Violet;
+            this.btnSignup.onHoverState.BorderRadius = 1;
+            this.btnSignup.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSignup.onHoverState.BorderThickness = 1;
+            this.btnSignup.onHoverState.FillColor = System.Drawing.Color.Violet;
+            this.btnSignup.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnSignup.onHoverState.IconLeftImage = null;
+            this.btnSignup.onHoverState.IconRightImage = null;
+            this.btnSignup.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnSignup.OnIdleState.BorderRadius = 1;
+            this.btnSignup.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSignup.OnIdleState.BorderThickness = 1;
+            this.btnSignup.OnIdleState.FillColor = System.Drawing.Color.Purple;
+            this.btnSignup.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnSignup.OnIdleState.IconLeftImage = null;
+            this.btnSignup.OnIdleState.IconRightImage = null;
+            this.btnSignup.OnPressedState.BorderColor = System.Drawing.Color.Purple;
+            this.btnSignup.OnPressedState.BorderRadius = 1;
+            this.btnSignup.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSignup.OnPressedState.BorderThickness = 1;
+            this.btnSignup.OnPressedState.FillColor = System.Drawing.Color.Purple;
+            this.btnSignup.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnSignup.OnPressedState.IconLeftImage = null;
+            this.btnSignup.OnPressedState.IconRightImage = null;
+            this.btnSignup.Size = new System.Drawing.Size(100, 25);
+            this.btnSignup.TabIndex = 35;
+            this.btnSignup.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSignup.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSignup.TextMarginLeft = 0;
+            this.btnSignup.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnSignup.UseDefaultRadiusAndThickness = true;
+            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
+            // 
             // btnSeconnecter
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1281, 603);
+            this.ClientSize = new System.Drawing.Size(854, 392);
+            this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.BtnConnect);
@@ -430,6 +532,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.Controls.Add(this.TXTmotpasse);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "btnSeconnecter";
             this.Text = "FormGeneral";
             this.Load += new System.EventHandler(this.FormLogin_Load);
@@ -453,5 +556,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private Bunifu.Framework.UI.BunifuTileButton BTNredire;
         private Bunifu.Framework.UI.BunifuTileButton BTNfermer;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSignup;
     }
 }
