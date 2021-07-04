@@ -712,7 +712,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXtSalaire.IconRight = null;
             this.TXtSalaire.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.TXtSalaire.Lines = new string[0];
-            this.TXtSalaire.Location = new System.Drawing.Point(362, 317);
+            this.TXtSalaire.Location = new System.Drawing.Point(438, 424);
             this.TXtSalaire.MaxLength = 32767;
             this.TXtSalaire.MinimumSize = new System.Drawing.Size(1, 1);
             this.TXtSalaire.Modified = false;
@@ -758,6 +758,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXtSalaire.TextPlaceholder = "Tapez ici ";
             this.TXtSalaire.UseSystemPasswordChar = false;
             this.TXtSalaire.WordWrap = true;
+            this.TXtSalaire.TextChanged += new System.EventHandler(this.TXtSalaire_TextChanged);
             // 
             // Salaire
             // 

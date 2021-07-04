@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
@@ -26,25 +28,34 @@ namespace Centre_D_affaire.GestionSalleDeSport
         {
             Utilisateur u = new Utilisateur("mehdi", "123", "", "");
             u.Ajouter(u);
+            Deserialze();
         }
+        bool x;
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i< Listes.utilisateurs.Count; i++)
+           
+            for (int i = 0; i < Listes.utilisateurs.Count; i++)
             {
-                if (Listes.utilisateurs[i].NomUtilisateur == txtLogin.Text && Listes.utilisateurs[i].MotPass == TXTmotpasse.Text) {
-
-                    FormGestionnaire f = new FormGestionnaire();
-                    f.Show();
-                    this.Hide();
-
-
-                }
-                else
+                if (Listes.utilisateurs[i].NomUtilisateur == txtLogin.Text && Listes.utilisateurs[i].MotPass == TXTmotpasse.Text)
                 {
-                    MessageBox.Show("Votre Nom d'utilisateur ou votre Mot de passe n'est pas correct , veulliez resseyer : " + MessageBoxButtons.OK);
-                }
 
+                    x = true;
+
+
+                }
+               
+
+            }
+            if ( x == true)
+            {
+                FormGestionnaire f = new FormGestionnaire();
+                f.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("votre mote passe ou username est incorrect ! " + MessageBoxButtons.OK);
             }
         }
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -80,5 +91,49 @@ namespace Centre_D_affaire.GestionSalleDeSport
             }
 
         }
+
+        public void Deserialze()
+        {
+            XmlSerializer xml = new XmlSerializer(Listes.utilisateurs.GetType());
+
+
+
+
+
+
+
+            if (File.Exists("util.xml"))
+            {
+                try
+                {
+                    StreamReader stream = System.IO.File.OpenText("util.xml");
+
+                    try
+                    {
+
+                        Listes.utilisateurs = (List<Utilisateur>)xml.Deserialize(stream);
+                        
+                    }
+                    catch (Exception)
+                    {
+                        throw new Exception("Problème de lecture !!!");
+                    }
+                    stream.Close();
+                }
+                catch (Exception)
+                {
+                    throw new Exception("Problème d'ouverture !!!");
+                }
+            }
+
+
+
+
+
+
+
+
+        }
+
     }
 }

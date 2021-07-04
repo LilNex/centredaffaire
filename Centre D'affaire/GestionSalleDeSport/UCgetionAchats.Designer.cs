@@ -76,6 +76,9 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTnomcomplet = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.GriAchat = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.NomProduit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label10 = new System.Windows.Forms.Label();
             this.TXTProduitNom = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -88,9 +91,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.btntrouver = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuTextBox3 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.NomProduit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GriAchat)).BeginInit();
             this.SuspendLayout();
             // 
@@ -462,6 +462,24 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.GriAchat.TabIndex = 267;
             this.GriAchat.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Maroon;
             // 
+            // NomProduit
+            // 
+            this.NomProduit.HeaderText = "Nom du produit";
+            this.NomProduit.MinimumWidth = 8;
+            this.NomProduit.Name = "NomProduit";
+            // 
+            // Prix
+            // 
+            this.Prix.HeaderText = "Prix";
+            this.Prix.MinimumWidth = 8;
+            this.Prix.Name = "Prix";
+            // 
+            // Total
+            // 
+            this.Total.HeaderText = "Total";
+            this.Total.MinimumWidth = 8;
+            this.Total.Name = "Total";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -722,6 +740,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.TXTquantite.TextPlaceholder = "Tapez ici ";
             this.TXTquantite.UseSystemPasswordChar = false;
             this.TXTquantite.WordWrap = true;
+            this.TXTquantite.TextChanged += new System.EventHandler(this.TXTquantite_TextChanged);
             // 
             // label3
             // 
@@ -1077,24 +1096,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.label9.Size = new System.Drawing.Size(142, 27);
             this.label9.TabIndex = 275;
             this.label9.Text = "Nom Complet";
-            // 
-            // NomProduit
-            // 
-            this.NomProduit.HeaderText = "Nom du produit";
-            this.NomProduit.MinimumWidth = 8;
-            this.NomProduit.Name = "NomProduit";
-            // 
-            // Prix
-            // 
-            this.Prix.HeaderText = "Prix";
-            this.Prix.MinimumWidth = 8;
-            this.Prix.Name = "Prix";
-            // 
-            // Total
-            // 
-            this.Total.HeaderText = "Total";
-            this.Total.MinimumWidth = 8;
-            this.Total.Name = "Total";
             // 
             // UCgetionAchats
             // 

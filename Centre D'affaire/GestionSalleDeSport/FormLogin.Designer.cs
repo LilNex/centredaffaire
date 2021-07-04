@@ -230,7 +230,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.TXTmotpasse.OnIdleState = stateProperties8;
             this.TXTmotpasse.Padding = new System.Windows.Forms.Padding(3);
-            this.TXTmotpasse.PasswordChar = '\0';
+            this.TXTmotpasse.PasswordChar = '*';
             this.TXTmotpasse.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.TXTmotpasse.PlaceholderText = "Mot Passe";
             this.TXTmotpasse.ReadOnly = false;
@@ -309,7 +309,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.txtLogin.IconRight = null;
             this.txtLogin.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLogin.Lines = new string[0];
-            this.txtLogin.Location = new System.Drawing.Point(815, 305);
+            this.txtLogin.Location = new System.Drawing.Point(812, 305);
             this.txtLogin.MaxLength = 32767;
             this.txtLogin.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtLogin.Modified = false;
@@ -338,7 +338,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.txtLogin.Padding = new System.Windows.Forms.Padding(3);
             this.txtLogin.PasswordChar = '\0';
             this.txtLogin.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtLogin.PlaceholderText = "Mot Passe";
+            this.txtLogin.PlaceholderText = "Login";
             this.txtLogin.ReadOnly = false;
             this.txtLogin.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtLogin.SelectedText = "";
@@ -352,7 +352,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             this.txtLogin.TextMarginBottom = 0;
             this.txtLogin.TextMarginLeft = 3;
             this.txtLogin.TextMarginTop = 0;
-            this.txtLogin.TextPlaceholder = "Mot Passe";
+            this.txtLogin.TextPlaceholder = "Login";
             this.txtLogin.UseSystemPasswordChar = false;
             this.txtLogin.WordWrap = true;
             // 

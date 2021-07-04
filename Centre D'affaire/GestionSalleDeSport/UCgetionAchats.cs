@@ -54,10 +54,64 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 }
             }
         }
+   
 
+        public void Serialize()
+        {
+            XmlSerializer xml = new XmlSerializer(Listes.achatliste.GetType());
+            using (StreamWriter stream = System.IO.File.CreateText("achat.xml"))
+            {
+                xml.Serialize(stream, Listes.achatliste);
+                stream.Close();
+            }
+        }
+
+        public void Deserialze()
+        {
+            XmlSerializer xml = new XmlSerializer(Listes.achatliste.GetType());
+
+
+
+
+
+
+
+            if (File.Exists("achat.xml"))
+            {
+                try
+                {
+                    StreamReader stream = System.IO.File.OpenText("achat.xml");
+
+                    try
+                    {
+
+                        Listes.achatliste = (List<Produit>)xml.Deserialize(stream);
+                        grid();
+                    }
+                    catch (Exception)
+                    {
+                        throw new Exception("Problème de lecture !!!");
+                    }
+                    stream.Close();
+                }
+                catch (Exception)
+                {
+                    throw new Exception("Problème d'ouverture !!!");
+                }
+            }
+
+
+
+
+
+
+
+
+        }
         private void UCgetionAchats_Load(object sender, EventArgs e)
         {
             txtTotal.Enabled = false;
+            Deserialze();
         }
 
         private void TXTnomcomplet_TextChanged(object sender, EventArgs e)
@@ -99,25 +153,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
             
         }
-        public void Serialize()
-        {
-            XmlSerializer xml = new XmlSerializer(Listes.VendeursListe.GetType());
-            using (StreamWriter stream = System.IO.File.CreateText("achat.xml"))
-            {
-                xml.Serialize(stream, Listes.achatliste);
-            }
-        }
-
-        public void Deserialze()
-        {
-            XmlSerializer xml = new XmlSerializer(Listes.VendeursListe.GetType());
-            using (StreamReader stream = System.IO.File.OpenText("vendeurs.xml"))
-            {
-                Listes.VendeursListe = (List<Vendeur>)xml.Deserialize(stream);
-                grid();
-                
-            }
-        }
+  
         private void btnAcheter_Click(object sender, EventArgs e)
         {
             Vendeur f = new Vendeur(TXTnomcomplet.Text, bunifuTextBox3.Text, DPdate.Value, TXTtele.Text, "", "", "");
@@ -126,6 +162,8 @@ namespace Centre_D_affaire.GestionSalleDeSport
             {
                 MessageBox.Show(TXTProduitNom.Text + " ajouté avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 grid();
+                Serialize();
+               
                 
             }
             else
@@ -135,6 +173,12 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
 
             }
+        }
+
+        private void TXTquantite_TextChanged(object sender, EventArgs e)
+        {
+            int s = int.Parse(TXTquantite.Text) * int.Parse(TXTprix.Text);
+            txtTotal.Text = s.ToString();
         }
     }
 }

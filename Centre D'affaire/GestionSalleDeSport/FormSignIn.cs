@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
@@ -20,6 +22,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         private void FormSignIn_Load(object sender, EventArgs e)
         {
            TXTmotPass.Enabled = false;
+            Deserialze();
             gridUtilisateur.Visible = false; 
         }
 
@@ -52,6 +55,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             if (m.Ajouter(m)== true)
             {
                 MessageBox.Show(TXTNOmUtilisateur.Text + " ajouté avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Serialize();
                 grid();
                 ClassInterface i = new ClassInterface();
                 i.viderform(this);
@@ -121,6 +125,60 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+
+        }
+       
+
+        public void Serialize()
+        {
+            XmlSerializer xml = new XmlSerializer(Listes.utilisateurs.GetType());
+            using (StreamWriter stream = System.IO.File.CreateText("util.xml"))
+            {
+                xml.Serialize(stream, Listes.utilisateurs);
+                stream.Close();
+            }
+        }
+
+        public void Deserialze()
+        {
+            XmlSerializer xml = new XmlSerializer(Listes.utilisateurs.GetType());
+
+
+
+
+
+
+
+            if (File.Exists("util.xml"))
+            {
+                try
+                {
+                    StreamReader stream = System.IO.File.OpenText("util.xml");
+
+                    try
+                    {
+
+                        Listes.utilisateurs = (List<Utilisateur>)xml.Deserialize(stream);
+                        grid();
+                    }
+                    catch (Exception)
+                    {
+                        throw new Exception("Problème de lecture !!!");
+                    }
+                    stream.Close();
+                }
+                catch (Exception)
+                {
+                    throw new Exception("Problème d'ouverture !!!");
+                }
+            }
+
+
+
+
+
+
+
 
         }
     }

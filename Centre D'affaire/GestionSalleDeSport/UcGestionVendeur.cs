@@ -35,28 +35,28 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
 
         }
-         
+
 
         private void UcGestionVendeur_Load(object sender, EventArgs e)
         {
             btnSupprimer.Visible = false;
             btnMise.Visible = false;
-           
-            grid();
+
+            Deserialze();
         }
 
-  
+
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             string d = "01/01/1999";
             DateTime df = Convert.ToDateTime(d);
-            Vendeur v = new Vendeur(TXTnumero.Text, TXTnomcomplet.Text, df,TXTtele.Text, TxtEmail.Text, TXTadresse.Text, "ftzyrm");
+            Vendeur v = new Vendeur(TXTnumero.Text, TXTnomcomplet.Text, df, TXTtele.Text, TxtEmail.Text, TXTadresse.Text, "ftzyrm");
             if (v.Ajouter(v) == true)
             {
-                MessageBox.Show(TXTnomcomplet.Text +" ajouté avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(TXTnomcomplet.Text + " ajouté avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Serialize();
-                
+
                 grid();
                 ClassInterface i = new ClassInterface();
                 i.viderform(this);
@@ -68,13 +68,13 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
 
             }
-            
-            
+
+
 
 
         }
 
-   
+
 
         private void GridVendeur_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -83,11 +83,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
             TXTnumero.Text = data.Cells[0].Value.ToString();
             TXTnomcomplet.Text = data.Cells[1].Value.ToString();
             TxtEmail.Text = data.Cells[2].Value.ToString();
-            TXTadresse.Text =data.Cells[3].Value.ToString();
+            TXTadresse.Text = data.Cells[3].Value.ToString();
             TXTtele.Text = data.Cells[4].Value.ToString();
             btnSave.Visible = false;
             btnMise.Visible = true;
-            btnSupprimer.Visible = true; 
+            btnSupprimer.Visible = true;
         }
 
         private void btnMise_Click(object sender, EventArgs e)
@@ -100,7 +100,6 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 Vendeur st = new Vendeur();
                 st.supprimer(TXTnumero.Text);
                 Serialize();
-                Deserialze();
                 grid();
                 btnSupprimer.Visible = false;
                 btnMise.Visible = false;
@@ -113,7 +112,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            DialogResult D = MessageBox.Show("Voulez vous vraiment modifier "+ TXTnomcomplet.Text , "Avertissement", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult D = MessageBox.Show("Voulez vous vraiment modifier " + TXTnomcomplet.Text, "Avertissement", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (D == DialogResult.Yes)
             {
                 var found = Listes.VendeursListe.FirstOrDefault(c => c.Id == TXTnumero.Text);
@@ -124,8 +123,9 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 found.Adresse = TXTadresse.Text;
                 found.Telephone = TXTtele.Text;
                 Serialize();
-                Deserialze();
                 grid();
+
+              
                 ClassInterface i = new ClassInterface();
                 i.viderform(this);
             }
@@ -145,17 +145,49 @@ namespace Centre_D_affaire.GestionSalleDeSport
         public void Deserialze()
         {
             XmlSerializer xml = new XmlSerializer(Listes.VendeursListe.GetType());
-            using (StreamReader stream = System.IO.File.OpenText("vendeurs.xml"))
+
+
+
+
+
+
+
+            if (File.Exists("vendeurs.xml"))
             {
-                Listes.VendeursListe = (List<Vendeur>)xml.Deserialize(stream);
-                grid();
-                stream.Close();
+                try
+                {
+                    StreamReader stream = System.IO.File.OpenText("vendeurs.xml");
+
+                   try
+                    {
+
+                        Listes.VendeursListe = (List<Vendeur>)xml.Deserialize(stream);
+                        grid();
+                    }
+                    catch (Exception)
+                    {
+                        throw new Exception("Problème de lecture !!!");
+                    }
+                    stream.Close();
+                }
+                catch (Exception)
+                {
+                    throw new Exception("Problème d'ouverture !!!");
+                }
             }
+
+
+
+
+
+
+
+
         }
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
-        {
-            Deserialze();
-        }
+
+       
+
+
     }
 }

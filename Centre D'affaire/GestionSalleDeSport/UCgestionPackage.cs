@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Centre_D_affaire.GestionSalleDeSport
 {
@@ -19,7 +21,61 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
         private void UCgestionPackage_Load(object sender, EventArgs e)
         {
-            remplirgrid();
+            Deserialze();
+         }
+     
+
+        public void Serialize()
+        {
+            XmlSerializer xml = new XmlSerializer(Listes.PackagesListe.GetType());
+            using (StreamWriter stream = System.IO.File.CreateText("package.xml"))
+            {
+                xml.Serialize(stream, Listes.PackagesListe);
+                stream.Close();
+            }
+        }
+
+        public void Deserialze()
+        {
+            XmlSerializer xml = new XmlSerializer(Listes.PackagesListe.GetType());
+
+
+
+
+
+
+
+            if (File.Exists("package.xml"))
+            {
+                try
+                {
+                    StreamReader stream = System.IO.File.OpenText("package.xml");
+
+                    try
+                    {
+
+                        Listes.PackagesListe = (List<Package>)xml.Deserialize(stream);
+                        remplirgrid();
+                    }
+                    catch (Exception)
+                    {
+                        throw new Exception("Problème de lecture !!!");
+                    }
+                    stream.Close();
+                }
+                catch (Exception)
+                {
+                    throw new Exception("Problème d'ouverture !!!");
+                }
+            }
+
+
+
+
+
+
+
+
         }
 
         private void TXTnomcomplet_TextChanged(object sender, EventArgs e)
@@ -41,6 +97,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
                     Package pack = new Package(TXTnumero.Text, TXTnomcomplet.Text, TXTprix.Text, TXTdetails.Text);
                     pack.Ajouter(pack);
                     remplirgrid();
+                    Serialize();
                 }
             }
            

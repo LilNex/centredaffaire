@@ -17,25 +17,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
             InitializeComponent();
         }
 
-        public void remplirgrid()
-        {
-            GridMembre.Rows.Clear();
-            for (int i = Listes.MembresListe.Count ; i < 0; i--)
-            {
-                GridMembre.Rows.Add();
-                GridMembre.Rows[i].Cells["IDMembre"].Value = Listes.MembresListe[i].Id;
-               
-                GridMembre.Rows[i].Cells["Telephone"].Value = Listes.MembresListe[i].Telephone;
-                GridMembre.Rows[i].Cells["Nom"].Value = Listes.MembresListe[i].NomComplet;
-                GridMembre.Rows[i].Cells["Adresse"].Value = Listes.MembresListe[i].Adresse;
-                GridMembre.Rows[i].Cells["Email"].Value = Listes.MembresListe[i].Email;
-        
-
-
-            }
-
-        }
-
+      
 
 
         private void UserControl1_Load(object sender, EventArgs e)
@@ -52,12 +34,17 @@ namespace Centre_D_affaire.GestionSalleDeSport
 
             }
             labelb.Text = t.ToString();
-            remplirgrid();
+         
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

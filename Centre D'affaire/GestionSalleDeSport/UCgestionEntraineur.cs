@@ -42,6 +42,7 @@ namespace Centre_D_affaire.GestionSalleDeSport
         {
             btnSupprimer.Visible = false;
             btnMise.Visible = false;
+            TXtSalaire.Visible = true; 
             grid();
         }
 
@@ -146,6 +147,11 @@ namespace Centre_D_affaire.GestionSalleDeSport
                 // display image in picture box  
                 bunifuPictureBox1.Image = new Bitmap(open.FileName);
             }
+        }
+
+        private void TXtSalaire_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
    
