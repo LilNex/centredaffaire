@@ -20,7 +20,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
 
             cmbDepartement.Items.Add("Restaurant");
             cmbDepartement.Items.Add("Location ");
-            btnSignature.Visible = false;
+            
 
 
 
@@ -43,14 +43,14 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
 
         private void btnSigner_Click(object sender, EventArgs e)
         {
-            btnSignature.Visible = true;
+            
         }
 
         private void btnRetour_Click(object sender, EventArgs e)
         {
             
-            Formulaire.FormDtl2 f = new FormDtl2();
-            f.Hide();
+           
+           
 
             this.Hide();
 

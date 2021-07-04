@@ -31,8 +31,11 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         }
         Formulaire.FormDTldemande a = new Formulaire.FormDTldemande();
-        Formulaire.FormDtl2 b = new Formulaire.FormDtl2();
+      
+
         List<CHOIX> lc = new List<CHOIX>();
+        
+
         ClsDemande D = new ClsDemande();
 
         //---AJOUTER LE TYPE  NUMERIC UP DOWN DANS LA LISTE DES TYPES DE COLONNE  DANS UNE DATAGRID-----------
@@ -179,7 +182,9 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private void Catalogue_Load(object sender, EventArgs e)
 
         {
-            if(ClsListe.List_choix.Count == 0)
+            
+
+            if (ClsListe.List_choix.Count == 0)
             {
                 pictureBox2.Show();
                 timer1.Start();
@@ -194,13 +199,17 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
                 dgvFinal.Visible = false;
 
             }
+            else
+            {
+                dgvFinal.Visible = true;
+
+            }
             //animation
 
 
 
-           //lc.Clear();
-           dgvFinal.DataSource = ClsListe.List_choix;
-           //lc = ClsListe.List_choix;
+           
+           
            
 
             //panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
@@ -322,9 +331,9 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
             CHOIX c = new CHOIX(((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem), n, 0);
           
-            for (int i = 0; i < lc.Count; i++)
+            for (int i = 0; i < ClsListe.List_choix.Count; i++)
             {
-                if (lc[i].Nom == n)
+                if (ClsListe.List_choix[i].Nom == n)
                 {
                     exist = true;
                 }
@@ -332,13 +341,13 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             }
             if (exist == false)
             {
-                lc.Add(c);
+                ClsListe.List_choix.Add(c);
             }
 
 
 
             dgvFinal.DataSource = null;
-            dgvFinal.DataSource = lc;
+            dgvFinal.DataSource = ClsListe.List_choix;
 
 
             foreach (DataGridViewColumn d in dgvFinal.Columns)
@@ -354,7 +363,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             dgvFinal.Columns["quantite"].ReadOnly = false;
 
 
-            lc =(List<CHOIX>) dgvFinal.DataSource;
+            
         }
 
         private void btnRetirer_Click(object sender, EventArgs e)
@@ -367,16 +376,16 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             else
             {
                 string n = ((CHOIX)dgvFinal.CurrentRow.DataBoundItem).Nom;
-                for (int i = 0; i < lc.Count; i++)
+                for (int i = 0; i < ClsListe.List_choix.Count; i++)
                 {
-                    if (lc[i].Nom == n)
+                    if (ClsListe.List_choix[i].Nom == n)
                     {
-                        lc.Remove(lc[i]);
+                        ClsListe.List_choix.Remove(ClsListe.List_choix[i]);
                     }
                 }
 
                 dgvFinal.DataSource = null;
-                dgvFinal.DataSource = lc;
+                dgvFinal.DataSource = ClsListe.List_choix;
 
                 foreach (DataGridViewColumn d in dgvFinal.Columns)
                 {
@@ -410,7 +419,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private void btnVider_Click(object sender, EventArgs e)
         {
             dgvFinal.Visible = false;
-            lc.Clear();
+            ClsListe.List_choix.Clear();
             dgvFinal.DataSource = null;
 
         }
@@ -444,10 +453,11 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private void btnsuivant_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ClsListe.List_choix = lc;
+
+            
             
             a.Show();
-            b.Show();
+            
             
             
 
@@ -491,6 +501,8 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             //pictureBox1.Location = new Point(x, y);
         }
         private int cpt = 0;
+
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {

@@ -63,12 +63,6 @@
     </Compile>
     <Compile Include="AchatsLogistiquePatrimoine\CHOIX.cs" />
     <Compile Include="AchatsLogistiquePatrimoine\ClsArticle.cs" />
-    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormDtl2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormDtl2.Designer.cs">
-      <DependentUpon>FormDtl2.cs</DependentUpon>
-    </Compile>
     <Compile Include="AchatsLogistiquePatrimoine\Formulaire\FormDTldemande.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,9 +186,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\Comerce.resx">
       <DependentUpon>Comerce.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\FormDtl2.resx">
-      <DependentUpon>FormDtl2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\FormDTldemande.resx">
       <DependentUpon>FormDTldemande.cs</DependentUpon>
