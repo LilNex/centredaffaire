@@ -350,7 +350,18 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
 
             }
- 
+            if (cmbProduit.SelectedItem.ToString() == "Uniforme")
+            {
+
+                dgvCHoi.DataSource = null;
+                dgvCHoi.DataSource = ClsListe.getlisteART(ArticleType.Uniforme);
+
+                dgvCHoi.Columns["nom"].Width = 170;
+                dgvCHoi.Columns["nom"].ReadOnly = true;
+
+
+            }
+
             cmbProduit.Text = "--Faites votre choix--";
             foreach (DataGridViewColumn d in dgvCHoi.Columns)
             {
