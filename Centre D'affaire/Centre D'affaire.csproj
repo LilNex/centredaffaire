@@ -485,9 +485,6 @@
     <EmbeddedResource Include="GestionSalleDeJeux\FrmPS4.resx">
       <DependentUpon>FrmPS4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LocationEspacesSalleReunion\AjoutEspace.resx">
       <DependentUpon>AjoutEspace.cs</DependentUpon>
     </EmbeddedResource>
