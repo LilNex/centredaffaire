@@ -65,13 +65,13 @@ namespace Centre_D_affaire.GestionCreche
             this.dtpDateEcheance = new System.Windows.Forms.DateTimePicker();
             this.dtpDateF = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblMontant = new System.Windows.Forms.Label();
-            this.chbxMois = new System.Windows.Forms.CheckBox();
-            this.chbxTransporte = new System.Windows.Forms.CheckBox();
-            this.chbxinscription = new System.Windows.Forms.CheckBox();
-            this.chbxAssurances = new System.Windows.Forms.CheckBox();
-            this.chbxRepas = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.chbxRepas = new System.Windows.Forms.CheckBox();
+            this.chbxAssurances = new System.Windows.Forms.CheckBox();
+            this.chbxinscription = new System.Windows.Forms.CheckBox();
+            this.chbxTransporte = new System.Windows.Forms.CheckBox();
+            this.chbxMois = new System.Windows.Forms.CheckBox();
+            this.lblMontant = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.Rechercher.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -90,7 +90,7 @@ namespace Centre_D_affaire.GestionCreche
             this.lsvFacture.ContextMenuStrip = this.contextMenuStrip1;
             this.lsvFacture.GridLines = true;
             this.lsvFacture.HideSelection = false;
-            this.lsvFacture.Location = new System.Drawing.Point(644, 329);
+            this.lsvFacture.Location = new System.Drawing.Point(619, 329);
             this.lsvFacture.Name = "lsvFacture";
             this.lsvFacture.Size = new System.Drawing.Size(1074, 215);
             this.lsvFacture.TabIndex = 0;
@@ -406,65 +406,6 @@ namespace Centre_D_affaire.GestionCreche
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Facture";
             // 
-            // lblMontant
-            // 
-            this.lblMontant.AutoSize = true;
-            this.lblMontant.Location = new System.Drawing.Point(31, 209);
-            this.lblMontant.Name = "lblMontant";
-            this.lblMontant.Size = new System.Drawing.Size(33, 20);
-            this.lblMontant.TabIndex = 27;
-            this.lblMontant.Text = "      ";
-            // 
-            // chbxMois
-            // 
-            this.chbxMois.AutoSize = true;
-            this.chbxMois.Location = new System.Drawing.Point(35, 67);
-            this.chbxMois.Name = "chbxMois";
-            this.chbxMois.Size = new System.Drawing.Size(136, 24);
-            this.chbxMois.TabIndex = 28;
-            this.chbxMois.Text = "Mois 1300 DH";
-            this.chbxMois.UseVisualStyleBackColor = true;
-            // 
-            // chbxTransporte
-            // 
-            this.chbxTransporte.AutoSize = true;
-            this.chbxTransporte.Location = new System.Drawing.Point(35, 161);
-            this.chbxTransporte.Name = "chbxTransporte";
-            this.chbxTransporte.Size = new System.Drawing.Size(171, 24);
-            this.chbxTransporte.TabIndex = 29;
-            this.chbxTransporte.Text = "Transporte 200 DH";
-            this.chbxTransporte.UseVisualStyleBackColor = true;
-            // 
-            // chbxinscription
-            // 
-            this.chbxinscription.AutoSize = true;
-            this.chbxinscription.Location = new System.Drawing.Point(35, 127);
-            this.chbxinscription.Name = "chbxinscription";
-            this.chbxinscription.Size = new System.Drawing.Size(167, 24);
-            this.chbxinscription.TabIndex = 30;
-            this.chbxinscription.Text = "Inscription 250 DH";
-            this.chbxinscription.UseVisualStyleBackColor = true;
-            // 
-            // chbxAssurances
-            // 
-            this.chbxAssurances.AutoSize = true;
-            this.chbxAssurances.Location = new System.Drawing.Point(35, 97);
-            this.chbxAssurances.Name = "chbxAssurances";
-            this.chbxAssurances.Size = new System.Drawing.Size(178, 24);
-            this.chbxAssurances.TabIndex = 31;
-            this.chbxAssurances.Text = "Assurances 300 DH";
-            this.chbxAssurances.UseVisualStyleBackColor = true;
-            // 
-            // chbxRepas
-            // 
-            this.chbxRepas.AutoSize = true;
-            this.chbxRepas.Location = new System.Drawing.Point(35, 191);
-            this.chbxRepas.Name = "chbxRepas";
-            this.chbxRepas.Size = new System.Drawing.Size(141, 24);
-            this.chbxRepas.TabIndex = 32;
-            this.chbxRepas.Text = "Repas 200 DH";
-            this.chbxRepas.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -476,6 +417,65 @@ namespace Centre_D_affaire.GestionCreche
             this.button1.Text = "Montant Total";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // chbxRepas
+            // 
+            this.chbxRepas.AutoSize = true;
+            this.chbxRepas.Location = new System.Drawing.Point(35, 191);
+            this.chbxRepas.Name = "chbxRepas";
+            this.chbxRepas.Size = new System.Drawing.Size(141, 24);
+            this.chbxRepas.TabIndex = 32;
+            this.chbxRepas.Text = "Repas 200 DH";
+            this.chbxRepas.UseVisualStyleBackColor = true;
+            // 
+            // chbxAssurances
+            // 
+            this.chbxAssurances.AutoSize = true;
+            this.chbxAssurances.Location = new System.Drawing.Point(35, 97);
+            this.chbxAssurances.Name = "chbxAssurances";
+            this.chbxAssurances.Size = new System.Drawing.Size(178, 24);
+            this.chbxAssurances.TabIndex = 31;
+            this.chbxAssurances.Text = "Assurances 300 DH";
+            this.chbxAssurances.UseVisualStyleBackColor = true;
+            // 
+            // chbxinscription
+            // 
+            this.chbxinscription.AutoSize = true;
+            this.chbxinscription.Location = new System.Drawing.Point(35, 127);
+            this.chbxinscription.Name = "chbxinscription";
+            this.chbxinscription.Size = new System.Drawing.Size(167, 24);
+            this.chbxinscription.TabIndex = 30;
+            this.chbxinscription.Text = "Inscription 250 DH";
+            this.chbxinscription.UseVisualStyleBackColor = true;
+            // 
+            // chbxTransporte
+            // 
+            this.chbxTransporte.AutoSize = true;
+            this.chbxTransporte.Location = new System.Drawing.Point(35, 161);
+            this.chbxTransporte.Name = "chbxTransporte";
+            this.chbxTransporte.Size = new System.Drawing.Size(171, 24);
+            this.chbxTransporte.TabIndex = 29;
+            this.chbxTransporte.Text = "Transporte 200 DH";
+            this.chbxTransporte.UseVisualStyleBackColor = true;
+            // 
+            // chbxMois
+            // 
+            this.chbxMois.AutoSize = true;
+            this.chbxMois.Location = new System.Drawing.Point(35, 67);
+            this.chbxMois.Name = "chbxMois";
+            this.chbxMois.Size = new System.Drawing.Size(136, 24);
+            this.chbxMois.TabIndex = 28;
+            this.chbxMois.Text = "Mois 1300 DH";
+            this.chbxMois.UseVisualStyleBackColor = true;
+            // 
+            // lblMontant
+            // 
+            this.lblMontant.AutoSize = true;
+            this.lblMontant.Location = new System.Drawing.Point(31, 209);
+            this.lblMontant.Name = "lblMontant";
+            this.lblMontant.Size = new System.Drawing.Size(33, 20);
+            this.lblMontant.TabIndex = 27;
+            this.lblMontant.Text = "      ";
             // 
             // frmFacture
             // 
