@@ -15,6 +15,9 @@ namespace Centre_D_affaire.GestionCreche
 
         public clsFacture() { }
         public clsFacture(int num,DateTime datef,DateTime datee,double montant)
+        {
+
+        }
         
     }
 }

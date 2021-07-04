@@ -19,53 +19,94 @@ namespace Centre_D_affaire.GestionCreche
             InitializeComponent();
         }
 
-        private void frmGroupe_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            string[] tInfos = new string[] { cbxGroupe.Text, txtNom.Text, txtNum.Text };
-            ListViewItem List = new ListViewItem(tInfos);
+            if (txtNom.Text==""|| txtNum.Text==""|| cbxGroupe.Text == "")
+            {
+                MessageBox.Show("attention !! une information est vide !!");
+            }
+            else
+            {
+                try
+                {
+                    this.dataGridView1.Rows.Add(int.Parse(txtNum.Text), txtNom.Text, cbxGroupe.Text);
+                    this.txtNum.Clear();
+                    this.txtNom.Clear();
+                    this.cbxGroupe.Text=" ";
+                }
+                catch(FormatException)
+                {
+                    MessageBox.Show("Num Invalid ");
 
-            lsvGroupe.Items.Add(List);
+                }
+            }
            
+
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-           if (lsvGroupe.SelectedIndices.Count > 0)
-               lsvGroupe.Items.RemoveAt(lsvGroupe.SelectedIndices[0]);
+            try
+            {
+                DialogResult res = MessageBox.Show("Voulez Vous Vraiment Supprimer cette ligne ? ", "confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (res == DialogResult.OK)
+                {
+                    int index = this.dataGridView1.CurrentRow.Index;
+                    this.dataGridView1.Rows.RemoveAt(index);
+                    MessageBox.Show("la suppression avec succées ");
+                }
+                else
+                    MessageBox.Show("la suppression ign");
 
-           else
-                MessageBox.Show("selectionnez un ligne");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("DataGridView est vide ");
+            }
+
         }
 
-        private void supprimerToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnRechercher_Click(object sender, EventArgs e)
         {
-            if (lsvGroupe.SelectedIndices.Count > 0)
+            int cmp = 0;
+            for (int i = 0; i < this.dataGridView1.Rows.Count - 1; i++)
             {
-                DialogResult result = MessageBox.Show("voulez vous vraiment supprimer la ligne", "suppression", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-                if (result == DialogResult.Yes)
+                if(this.dataGridView1.Rows[i].Cells[2].Value.ToString()== this.txtNomR.Text)
                 {
-                    lsvGroupe.Items.RemoveAt(lsvGroupe.SelectedIndices[0]);
+                    MessageBox.Show("il existe!!");
+                    cmp = 1;
+                    
                 }
             }
-
+            if (cmp == 0)
+                MessageBox.Show("n'existe pas");
+        }
+        int index;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int trouve = 0;
+            
+            for (int i = 0; i < this.dataGridView1.Rows.Count - 1; i++)
+            {
+                if (this.dataGridView1.Rows[i].Cells[2].Value.ToString() == txtSerch.Text)
+                {
+                    index = i;
+                    trouve = 1;
+                }
+            }
+            if (trouve == 0)
+                MessageBox.Show("cette personne N'existe pas dans la liste ");
+            else
+                this.groupBox1.Visible = true;
         }
 
-        private void modifierToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnAppliquer_Click(object sender, EventArgs e)
         {
-            if (lsvGroupe.SelectedIndices.Count > 0)
-            {
-                int indice = lsvGroupe.SelectedIndices[0];
-                cbxGroupe.Text = lsvGroupe.Items[indice].SubItems[0].Text;
-                txtNom.Text = lsvGroupe.Items[indice].SubItems[1].Text;
-                txtNum.Text = lsvGroupe.Items[indice].SubItems[2].Text;
-            }
-
-
+            this.dataGridView1.Rows[index].Cells[0].Value = txtNum.Text;
+            this.dataGridView1.Rows[index].Cells[1].Value = txtNom.Text;
+            this.dataGridView1.Rows[index].Cells[2].Value = cbxGroupe.Text;
+            this.groupBox1.Visible = false;
+            this.txtSerch.Text = string.Empty;
         }
     }
 }
