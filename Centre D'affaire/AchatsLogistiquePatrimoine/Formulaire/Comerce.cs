@@ -16,22 +16,24 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         {
             InitializeComponent();
         }
-
+        List<ClsDemande> ld = new List<ClsDemande>();
+        List<ClsCommande> l = new List<ClsCommande>();
+        List<CHOIX> lc = new List<CHOIX>();
         private void Comerce_Load(object sender, EventArgs e)
         {
             pnlcommande.Visible = false;
             ///-----REMPLICAGE DES COMBOS
-            for(int i=0;i< ClsListe.List_commande.Count;i++)
+            for(int i=0;i< ClsListe.List_demande.Count;i++)
             {
-                if(ClsListe.List_commande[i].Etatcommande==etatcommande.encours)
+                if(ClsListe.List_demande[i].Etat_demande1==EtatDemande.validé)
                 {
-                    cmbcommande.Items.Add(ClsListe.List_commande[i].ID_cmd);
+                    cmbidcommande.Items.Add(ClsListe.List_demande[i].ID_demande1);
                 }
             }
            
             for(int i=0;i<ClsListe.List_article.Count;i++)
             {
-                cmbarticle.Items.Add(ClsListe.List_article[i].TypeArticle);
+                //cmbarticle.Items.Add(ClsListe.List_article[i].TypeArticle);
 
             }
                 
@@ -73,6 +75,33 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < ClsListe.List_demande.Count; i++)
+            {
+                if (ClsListe.List_demande[i].ID_demande1 == int.Parse(cmbidcommande.SelectedItem.ToString()))
+                {
+                    lc.Clear();
+                    lc = ClsListe.List_demande[i].listchoix;
+
+                    dgvDmdV.DataSource = lc;
+                }
+            }
+
+        }
+        
+                    
+        private void cmbarticle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //ArticleType Type;
+            //Enum.TryParse<ArticleType>(cmbarticle.SelectedIndex.ToString(), out Type);
+            //var id = from x in ClsListe.List_choix
+            //         where x.Article == (ClsArticle)cmbarticle.SelectedItem
+            //         from Enum.
+            //         where y.Article.TypeArticle == Type
+            //         select y;
+        }
+
+        private void cmbdepartement_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

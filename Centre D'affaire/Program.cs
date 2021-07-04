@@ -28,7 +28,7 @@ namespace Centre_D_affaire
             ClsListe.List_departmnt.Add(new ClsDepartement("8", "Service achats", "walaa allam", "06666666", "walaaallam@gmail.com"));
 
 
-            Application.Run(new Catalogue());
+            Application.Run(new saisie());
 
             
             
