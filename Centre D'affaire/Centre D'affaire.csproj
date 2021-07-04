@@ -215,6 +215,8 @@
       <DependentUpon>FormAccueil.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSalleDeSport\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GestionSalleDeJeux\clsArcArdStreet.cs" />
     <Compile Include="GestionSalleDeJeux\clsBillard.cs" />
     <Compile Include="GestionSalleDeJeux\clsBabyFoot.cs" />
@@ -290,9 +292,6 @@
     </Compile>
     <Compile Include="GestionSalleDeJeux\ClsSalleDeJeux.cs" />
     <Compile Include="GestionSalleDeJeux\clsJeux.cs" />
-    <Compile Include="GestionSalleDeSport\frmGSS.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="GestionSalleDeSport\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
