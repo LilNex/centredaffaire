@@ -13,17 +13,19 @@ namespace Centre_D_affaire.GestionCreche
         private string tel;
         private string email;
         private string adresseWeb;
-        private string num;
+        private string type;
+        private string Mdp;
 
         public clsResponsable() { }
-        public clsResponsable(string NOM, string PRENOM, string TEL, string EMAIL, string ADRESSEWEB, string NUM)
+        public clsResponsable(string NOM, string PRENOM, string TEL, string EMAIL, string ADRESSEWEB, string type, string Mdp)
         {
             this.Nom = NOM;
             this.Prenom = PRENOM;
             this.Tel = TEL;
             this.Email = EMAIL;
             this.AdresseWeb = ADRESSEWEB;
-            this.Num = NUM;
+            this.type = type;
+            this.Mdp = Mdp;
         }
 
         public string Nom { get => nom; set => nom = value; }
@@ -31,50 +33,50 @@ namespace Centre_D_affaire.GestionCreche
         public string Tel { get => tel; set => tel = value; }
         public string Email { get => email; set => email = value; }
         public string AdresseWeb { get => adresseWeb; set => adresseWeb = value; }
-        public string Num { get => num; set => num = value; }
+        public string type1 { get => type; set => type = value; }
+        public string Mdp1 { get => Mdp; set => Mdp = value; }
+
+        //public int Rechercher(string num)
+        //{
+        //    for (int i = 0; i < clsListe.ListeResponsable.Count; i++)
+        //    {
+        //        if (clsListe.ListeResponsable[i].Num == num)
+        //        {
+        //            return i;
+        //        }
+        //    }
+        //    return -1;
+        //}
 
 
-        public int Rechercher(string num)
-        {
-            for (int i = 0; i < clsListe.ListeOrganismes.Count; i++)
-            {
-                if (clsListe.ListeOrganismes[i].Num == num)
-                {
-                    return i;
-                }
-            }
-            return -1;
-        }
+        //public bool Ajouter(clsResponsable Organisme)
+        //{
+
+        //    if (Rechercher(Organisme.num) == -1)
+        //    {
+        //        clsListe.ListeResponsable.Add(Organisme);
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+
+        //}
 
 
-        public bool Ajouter(clsResponsable Organisme)
-        {
-
-            if (Rechercher(Organisme.num) == -1)
-            {
-                clsListe.ListeOrganismes.Add(Organisme);
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-        }
-
-
-        public bool supprimer(clsResponsable Organisme)
-        {
-            if (Rechercher(Organisme.num) != -1)
-            {
-                clsListe.ListeOrganismes.Remove(Organisme);
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+        //public bool supprimer(clsResponsable Organisme)
+        //{
+        //    if (Rechercher(Organisme.num) != -1)
+        //    {
+        //        clsListe.ListeResponsable.Remove(Organisme);
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+       // }
 
 
 

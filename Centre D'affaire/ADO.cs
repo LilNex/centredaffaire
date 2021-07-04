@@ -11,6 +11,7 @@ namespace Centre_D_affaire
 {
     public class ADO
     {
+        internal readonly object dap;
         public SqlConnection con = new SqlConnection();
         public SqlCommand cmd = new SqlCommand();
         public SqlDataAdapter da = new SqlDataAdapter();

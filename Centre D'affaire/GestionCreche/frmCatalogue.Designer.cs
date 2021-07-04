@@ -39,22 +39,22 @@ namespace Centre_D_affaire.GestionCreche
             this.label1 = new System.Windows.Forms.Label();
             this.Repaspic = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.rp32 = new Centre_D_affaire.GestionCreche.Rp3();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlCatalog = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pcr = new System.Windows.Forms.PictureBox();
-            this.btnPrecedent1 = new System.Windows.Forms.Button();
-            this.btnNext1 = new System.Windows.Forms.Button();
-            this.btnPrecedent2 = new System.Windows.Forms.Button();
-            this.btnNext2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.activité1 = new Centre_D_affaire.GestionCreche.Activité();
             this.jeux1 = new Centre_D_affaire.GestionCreche.Jeux();
             this.sport1 = new Centre_D_affaire.GestionCreche.Sport();
             this.rp31 = new Centre_D_affaire.GestionCreche.Rp3();
             this.rp21 = new Centre_D_affaire.GestionCreche.Rp2();
             this.rp11 = new Centre_D_affaire.GestionCreche.Rp1();
-            this.rp32 = new Centre_D_affaire.GestionCreche.Rp3();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pcr = new System.Windows.Forms.PictureBox();
+            this.btnPrecedent1 = new System.Windows.Forms.Button();
+            this.btnNext1 = new System.Windows.Forms.Button();
+            this.btnPrecedent2 = new System.Windows.Forms.Button();
+            this.btnNext2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Repaspic)).BeginInit();
             this.panel3.SuspendLayout();
@@ -176,6 +176,25 @@ namespace Centre_D_affaire.GestionCreche
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(540, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(48, 37);
+            this.button1.TabIndex = 7;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // rp32
+            // 
+            this.rp32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.rp32.Location = new System.Drawing.Point(6, 41);
+            this.rp32.Name = "rp32";
+            this.rp32.Size = new System.Drawing.Size(582, 466);
+            this.rp32.TabIndex = 8;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -201,6 +220,54 @@ namespace Centre_D_affaire.GestionCreche
             this.pnlCatalog.Name = "pnlCatalog";
             this.pnlCatalog.Size = new System.Drawing.Size(588, 457);
             this.pnlCatalog.TabIndex = 2;
+            // 
+            // activité1
+            // 
+            this.activité1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.activité1.Location = new System.Drawing.Point(0, 3);
+            this.activité1.Name = "activité1";
+            this.activité1.Size = new System.Drawing.Size(588, 454);
+            this.activité1.TabIndex = 7;
+            // 
+            // jeux1
+            // 
+            this.jeux1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.jeux1.Location = new System.Drawing.Point(0, 3);
+            this.jeux1.Name = "jeux1";
+            this.jeux1.Size = new System.Drawing.Size(582, 454);
+            this.jeux1.TabIndex = 6;
+            // 
+            // sport1
+            // 
+            this.sport1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.sport1.Location = new System.Drawing.Point(0, 0);
+            this.sport1.Name = "sport1";
+            this.sport1.Size = new System.Drawing.Size(591, 459);
+            this.sport1.TabIndex = 5;
+            // 
+            // rp31
+            // 
+            this.rp31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.rp31.Location = new System.Drawing.Point(3, 0);
+            this.rp31.Name = "rp31";
+            this.rp31.Size = new System.Drawing.Size(585, 454);
+            this.rp31.TabIndex = 4;
+            // 
+            // rp21
+            // 
+            this.rp21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.rp21.Location = new System.Drawing.Point(-3, 0);
+            this.rp21.Name = "rp21";
+            this.rp21.Size = new System.Drawing.Size(591, 454);
+            this.rp21.TabIndex = 3;
+            // 
+            // rp11
+            // 
+            this.rp11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.rp11.Location = new System.Drawing.Point(0, 0);
+            this.rp11.Name = "rp11";
+            this.rp11.Size = new System.Drawing.Size(588, 459);
+            this.rp11.TabIndex = 2;
             // 
             // label3
             // 
@@ -272,73 +339,6 @@ namespace Centre_D_affaire.GestionCreche
             this.btnNext2.UseVisualStyleBackColor = true;
             this.btnNext2.Click += new System.EventHandler(this.btnNext2_Click);
             // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(540, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 37);
-            this.button1.TabIndex = 7;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // activité1
-            // 
-            this.activité1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.activité1.Location = new System.Drawing.Point(0, 3);
-            this.activité1.Name = "activité1";
-            this.activité1.Size = new System.Drawing.Size(588, 454);
-            this.activité1.TabIndex = 7;
-            // 
-            // jeux1
-            // 
-            this.jeux1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.jeux1.Location = new System.Drawing.Point(0, 3);
-            this.jeux1.Name = "jeux1";
-            this.jeux1.Size = new System.Drawing.Size(582, 454);
-            this.jeux1.TabIndex = 6;
-            // 
-            // sport1
-            // 
-            this.sport1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.sport1.Location = new System.Drawing.Point(0, 0);
-            this.sport1.Name = "sport1";
-            this.sport1.Size = new System.Drawing.Size(591, 459);
-            this.sport1.TabIndex = 5;
-            // 
-            // rp31
-            // 
-            this.rp31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.rp31.Location = new System.Drawing.Point(3, 0);
-            this.rp31.Name = "rp31";
-            this.rp31.Size = new System.Drawing.Size(585, 454);
-            this.rp31.TabIndex = 4;
-            // 
-            // rp21
-            // 
-            this.rp21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.rp21.Location = new System.Drawing.Point(-3, 0);
-            this.rp21.Name = "rp21";
-            this.rp21.Size = new System.Drawing.Size(591, 454);
-            this.rp21.TabIndex = 3;
-            // 
-            // rp11
-            // 
-            this.rp11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.rp11.Location = new System.Drawing.Point(0, 0);
-            this.rp11.Name = "rp11";
-            this.rp11.Size = new System.Drawing.Size(588, 459);
-            this.rp11.TabIndex = 2;
-            // 
-            // rp32
-            // 
-            this.rp32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.rp32.Location = new System.Drawing.Point(6, 41);
-            this.rp32.Name = "rp32";
-            this.rp32.Size = new System.Drawing.Size(582, 466);
-            this.rp32.TabIndex = 8;
-            // 
             // catalogue111
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -357,6 +357,7 @@ namespace Centre_D_affaire.GestionCreche
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "catalogue111";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCatalogue";
             this.Load += new System.EventHandler(this.frmCatalogue_Load);
             this.panel2.ResumeLayout(false);

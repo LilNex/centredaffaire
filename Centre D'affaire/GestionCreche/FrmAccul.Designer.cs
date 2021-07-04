@@ -127,7 +127,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(92, 81);
+            this.label3.Location = new System.Drawing.Point(25, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 22);
             this.label3.TabIndex = 9;
@@ -138,7 +138,7 @@ namespace Centre_D_affaire.GestionCreche
             this.cmbPF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cmbPF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbPF.FormattingEnabled = true;
-            this.cmbPF.Location = new System.Drawing.Point(168, 75);
+            this.cmbPF.Location = new System.Drawing.Point(168, 8);
             this.cmbPF.Name = "cmbPF";
             this.cmbPF.Size = new System.Drawing.Size(128, 28);
             this.cmbPF.TabIndex = 8;
@@ -149,7 +149,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 41);
+            this.label2.Location = new System.Drawing.Point(25, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 22);
             this.label2.TabIndex = 7;
@@ -160,7 +160,7 @@ namespace Centre_D_affaire.GestionCreche
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 9);
+            this.label1.Location = new System.Drawing.Point(25, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 22);
             this.label1.TabIndex = 5;
@@ -169,7 +169,7 @@ namespace Centre_D_affaire.GestionCreche
             // txtMDP
             // 
             this.txtMDP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMDP.Location = new System.Drawing.Point(168, 41);
+            this.txtMDP.Location = new System.Drawing.Point(168, 81);
             this.txtMDP.Name = "txtMDP";
             this.txtMDP.Size = new System.Drawing.Size(128, 19);
             this.txtMDP.TabIndex = 6;
@@ -177,10 +177,11 @@ namespace Centre_D_affaire.GestionCreche
             // txtName
             // 
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtName.Location = new System.Drawing.Point(168, 9);
+            this.txtName.Location = new System.Drawing.Point(168, 44);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(128, 19);
             this.txtName.TabIndex = 5;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // FrmAccul
             // 
@@ -196,6 +197,7 @@ namespace Centre_D_affaire.GestionCreche
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmAccul";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAccul";
             this.Load += new System.EventHandler(this.FrmAccul_Load);
             this.pnlAcceuil.ResumeLayout(false);
