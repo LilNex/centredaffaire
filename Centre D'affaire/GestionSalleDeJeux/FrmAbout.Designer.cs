@@ -50,7 +50,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 216);
             this.Controls.Add(this.richTextBox1);
-            this.IsMdiContainer = true;
             this.Name = "FrmAbout";
             this.Text = "FrmAbout";
             this.ResumeLayout(false);

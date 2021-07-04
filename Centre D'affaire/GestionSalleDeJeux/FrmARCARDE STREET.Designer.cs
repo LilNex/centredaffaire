@@ -34,75 +34,75 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.lblBillHot = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.FlpMenu = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picHome = new System.Windows.Forms.PictureBox();
             this.btnHome = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnEditArcardStreet = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button47 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnClearArcardS1 = new System.Windows.Forms.Button();
             this.btnHoursArcardS1 = new System.Windows.Forms.Button();
             this.btnMinuteArcardS1 = new System.Windows.Forms.Button();
             this.btnSecondeArcardS1 = new System.Windows.Forms.Button();
             this.btnPrixArcardS1 = new System.Windows.Forms.Button();
+            this.btnStartArcardS1 = new System.Windows.Forms.Button();
+            this.btnRestArcardS1 = new System.Windows.Forms.Button();
             this.lblNameArcardS1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnClearArcardS3 = new System.Windows.Forms.Button();
             this.btnsHoursArcardS3 = new System.Windows.Forms.Button();
             this.btnMinuteArcardS3 = new System.Windows.Forms.Button();
             this.btnSecondeArcardS3 = new System.Windows.Forms.Button();
             this.btnPrixArcardS3 = new System.Windows.Forms.Button();
+            this.btnStartArcardS3 = new System.Windows.Forms.Button();
+            this.btnRestArcardS3 = new System.Windows.Forms.Button();
             this.lblNameArcardS3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnClearArcardS4 = new System.Windows.Forms.Button();
             this.btnHoursArcardS4 = new System.Windows.Forms.Button();
             this.btnMinuteArcardS4 = new System.Windows.Forms.Button();
             this.btnSecondeArcardS4 = new System.Windows.Forms.Button();
             this.btnPrixArcardS4 = new System.Windows.Forms.Button();
+            this.btnStartArcardS4 = new System.Windows.Forms.Button();
+            this.btnRestArcardS4 = new System.Windows.Forms.Button();
             this.lblNameArcardS4 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnClearArcardS2 = new System.Windows.Forms.Button();
             this.btnsHoursArcardS2 = new System.Windows.Forms.Button();
             this.btnMinuteArcardS2 = new System.Windows.Forms.Button();
             this.btnsSecondeArcardS2 = new System.Windows.Forms.Button();
             this.btnPrixArcardS2 = new System.Windows.Forms.Button();
+            this.btnStartArcardS2 = new System.Windows.Forms.Button();
+            this.btnRestArcardS2 = new System.Windows.Forms.Button();
             this.lblNameArcardS2 = new System.Windows.Forms.Label();
             this.timerStartArcardS1 = new System.Windows.Forms.Timer(this.components);
             this.timerStartArcardS2 = new System.Windows.Forms.Timer(this.components);
             this.timerStartArcardS3 = new System.Windows.Forms.Timer(this.components);
             this.timerStartArcardS4 = new System.Windows.Forms.Timer(this.components);
-            this.btnClearArcardS4 = new System.Windows.Forms.Button();
-            this.btnStartArcardS4 = new System.Windows.Forms.Button();
-            this.btnRestArcardS4 = new System.Windows.Forms.Button();
-            this.btnClearArcardS2 = new System.Windows.Forms.Button();
-            this.btnStartArcardS2 = new System.Windows.Forms.Button();
-            this.btnRestArcardS2 = new System.Windows.Forms.Button();
-            this.btnClearArcardS3 = new System.Windows.Forms.Button();
-            this.btnStartArcardS3 = new System.Windows.Forms.Button();
-            this.btnRestArcardS3 = new System.Windows.Forms.Button();
-            this.btnClearArcardS1 = new System.Windows.Forms.Button();
-            this.btnStartArcardS1 = new System.Windows.Forms.Button();
-            this.btnRestArcardS1 = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picHome = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlTitle.SuspendLayout();
             this.FlpMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitle
@@ -155,6 +155,32 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.FlpMenu.Size = new System.Drawing.Size(213, 599);
             this.FlpMenu.TabIndex = 34;
             // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Image = global::Centre_D_affaire.Properties.Resources.outline_menu_black_24dp1;
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.Location = new System.Drawing.Point(3, 3);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(213, 96);
+            this.btnDashboard.TabIndex = 41;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Centre_D_affaire.Properties.Resources.apple_arcade;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 105);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(210, 107);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.picHome);
@@ -164,6 +190,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel1.Size = new System.Drawing.Size(207, 78);
             this.panel1.TabIndex = 40;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // picHome
+            // 
+            this.picHome.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.picHome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picHome.Image = global::Centre_D_affaire.Properties.Resources.outline_home_black_24dp1;
+            this.picHome.Location = new System.Drawing.Point(3, 3);
+            this.picHome.Name = "picHome";
+            this.picHome.Size = new System.Drawing.Size(48, 48);
+            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picHome.TabIndex = 34;
+            this.picHome.TabStop = false;
             // 
             // btnHome
             // 
@@ -191,6 +231,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel4.TabIndex = 43;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Image = global::Centre_D_affaire.Properties.Resources.outline_help_black_24dp;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 34;
+            this.pictureBox4.TabStop = false;
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
@@ -216,6 +270,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel2.Size = new System.Drawing.Size(207, 78);
             this.panel2.TabIndex = 42;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_edit_black_24dp;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 34;
+            this.pictureBox2.TabStop = false;
+            // 
             // btnEditArcardStreet
             // 
             this.btnEditArcardStreet.BackColor = System.Drawing.Color.Transparent;
@@ -240,6 +308,20 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(207, 78);
             this.panel3.TabIndex = 44;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Image = global::Centre_D_affaire.Properties.Resources.outline_support_agent_black_24dp2;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 34;
+            this.pictureBox3.TabStop = false;
             // 
             // button47
             // 
@@ -273,6 +355,21 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox1.Size = new System.Drawing.Size(325, 140);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
+            // 
+            // btnClearArcardS1
+            // 
+            this.btnClearArcardS1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearArcardS1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearArcardS1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearArcardS1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearArcardS1.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearArcardS1.Location = new System.Drawing.Point(113, 93);
+            this.btnClearArcardS1.Name = "btnClearArcardS1";
+            this.btnClearArcardS1.Size = new System.Drawing.Size(45, 38);
+            this.btnClearArcardS1.TabIndex = 38;
+            this.btnClearArcardS1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearArcardS1.UseVisualStyleBackColor = false;
+            this.btnClearArcardS1.Click += new System.EventHandler(this.btnClearBillard1_Click);
             // 
             // btnHoursArcardS1
             // 
@@ -330,6 +427,36 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnPrixArcardS1.TabIndex = 17;
             this.btnPrixArcardS1.UseVisualStyleBackColor = false;
             // 
+            // btnStartArcardS1
+            // 
+            this.btnStartArcardS1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartArcardS1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartArcardS1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartArcardS1.ForeColor = System.Drawing.Color.Black;
+            this.btnStartArcardS1.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.btnStartArcardS1.Location = new System.Drawing.Point(11, 93);
+            this.btnStartArcardS1.Name = "btnStartArcardS1";
+            this.btnStartArcardS1.Size = new System.Drawing.Size(45, 38);
+            this.btnStartArcardS1.TabIndex = 14;
+            this.btnStartArcardS1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartArcardS1.UseVisualStyleBackColor = false;
+            this.btnStartArcardS1.Click += new System.EventHandler(this.btnStartArcardS1_Click);
+            // 
+            // btnRestArcardS1
+            // 
+            this.btnRestArcardS1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestArcardS1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestArcardS1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestArcardS1.ForeColor = System.Drawing.Color.Black;
+            this.btnRestArcardS1.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.btnRestArcardS1.Location = new System.Drawing.Point(62, 93);
+            this.btnRestArcardS1.Name = "btnRestArcardS1";
+            this.btnRestArcardS1.Size = new System.Drawing.Size(45, 38);
+            this.btnRestArcardS1.TabIndex = 13;
+            this.btnRestArcardS1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestArcardS1.UseVisualStyleBackColor = false;
+            this.btnRestArcardS1.Click += new System.EventHandler(this.btnRestArcardS1_Click);
+            // 
             // lblNameArcardS1
             // 
             this.lblNameArcardS1.AutoSize = true;
@@ -358,6 +485,21 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox2.Size = new System.Drawing.Size(325, 140);
             this.groupBox2.TabIndex = 38;
             this.groupBox2.TabStop = false;
+            // 
+            // btnClearArcardS3
+            // 
+            this.btnClearArcardS3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearArcardS3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearArcardS3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearArcardS3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearArcardS3.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearArcardS3.Location = new System.Drawing.Point(113, 93);
+            this.btnClearArcardS3.Name = "btnClearArcardS3";
+            this.btnClearArcardS3.Size = new System.Drawing.Size(45, 38);
+            this.btnClearArcardS3.TabIndex = 40;
+            this.btnClearArcardS3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearArcardS3.UseVisualStyleBackColor = false;
+            this.btnClearArcardS3.Click += new System.EventHandler(this.btnClearArcardS3_Click);
             // 
             // btnsHoursArcardS3
             // 
@@ -414,6 +556,36 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnPrixArcardS3.TabIndex = 17;
             this.btnPrixArcardS3.UseVisualStyleBackColor = false;
             // 
+            // btnStartArcardS3
+            // 
+            this.btnStartArcardS3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartArcardS3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartArcardS3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartArcardS3.ForeColor = System.Drawing.Color.Black;
+            this.btnStartArcardS3.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.btnStartArcardS3.Location = new System.Drawing.Point(11, 93);
+            this.btnStartArcardS3.Name = "btnStartArcardS3";
+            this.btnStartArcardS3.Size = new System.Drawing.Size(45, 38);
+            this.btnStartArcardS3.TabIndex = 14;
+            this.btnStartArcardS3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartArcardS3.UseVisualStyleBackColor = false;
+            this.btnStartArcardS3.Click += new System.EventHandler(this.btnStartArcardS3_Click);
+            // 
+            // btnRestArcardS3
+            // 
+            this.btnRestArcardS3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestArcardS3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestArcardS3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestArcardS3.ForeColor = System.Drawing.Color.Black;
+            this.btnRestArcardS3.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.btnRestArcardS3.Location = new System.Drawing.Point(62, 93);
+            this.btnRestArcardS3.Name = "btnRestArcardS3";
+            this.btnRestArcardS3.Size = new System.Drawing.Size(45, 38);
+            this.btnRestArcardS3.TabIndex = 13;
+            this.btnRestArcardS3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestArcardS3.UseVisualStyleBackColor = false;
+            this.btnRestArcardS3.Click += new System.EventHandler(this.btnRestArcardS3_Click);
+            // 
             // lblNameArcardS3
             // 
             this.lblNameArcardS3.AutoSize = true;
@@ -442,6 +614,21 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox3.Size = new System.Drawing.Size(325, 140);
             this.groupBox3.TabIndex = 40;
             this.groupBox3.TabStop = false;
+            // 
+            // btnClearArcardS4
+            // 
+            this.btnClearArcardS4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearArcardS4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearArcardS4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearArcardS4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearArcardS4.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearArcardS4.Location = new System.Drawing.Point(113, 93);
+            this.btnClearArcardS4.Name = "btnClearArcardS4";
+            this.btnClearArcardS4.Size = new System.Drawing.Size(45, 38);
+            this.btnClearArcardS4.TabIndex = 41;
+            this.btnClearArcardS4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearArcardS4.UseVisualStyleBackColor = false;
+            this.btnClearArcardS4.Click += new System.EventHandler(this.btnClearArcardS4_Click);
             // 
             // btnHoursArcardS4
             // 
@@ -498,6 +685,36 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnPrixArcardS4.TabIndex = 17;
             this.btnPrixArcardS4.UseVisualStyleBackColor = false;
             // 
+            // btnStartArcardS4
+            // 
+            this.btnStartArcardS4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartArcardS4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartArcardS4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartArcardS4.ForeColor = System.Drawing.Color.Black;
+            this.btnStartArcardS4.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.btnStartArcardS4.Location = new System.Drawing.Point(11, 93);
+            this.btnStartArcardS4.Name = "btnStartArcardS4";
+            this.btnStartArcardS4.Size = new System.Drawing.Size(45, 38);
+            this.btnStartArcardS4.TabIndex = 14;
+            this.btnStartArcardS4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartArcardS4.UseVisualStyleBackColor = false;
+            this.btnStartArcardS4.Click += new System.EventHandler(this.btnStartArcardS4_Click);
+            // 
+            // btnRestArcardS4
+            // 
+            this.btnRestArcardS4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestArcardS4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestArcardS4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestArcardS4.ForeColor = System.Drawing.Color.Black;
+            this.btnRestArcardS4.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.btnRestArcardS4.Location = new System.Drawing.Point(62, 93);
+            this.btnRestArcardS4.Name = "btnRestArcardS4";
+            this.btnRestArcardS4.Size = new System.Drawing.Size(45, 38);
+            this.btnRestArcardS4.TabIndex = 13;
+            this.btnRestArcardS4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestArcardS4.UseVisualStyleBackColor = false;
+            this.btnRestArcardS4.Click += new System.EventHandler(this.btnRestArcardS4_Click);
+            // 
             // lblNameArcardS4
             // 
             this.lblNameArcardS4.AutoSize = true;
@@ -526,6 +743,21 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox4.Size = new System.Drawing.Size(325, 140);
             this.groupBox4.TabIndex = 39;
             this.groupBox4.TabStop = false;
+            // 
+            // btnClearArcardS2
+            // 
+            this.btnClearArcardS2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClearArcardS2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearArcardS2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearArcardS2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClearArcardS2.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
+            this.btnClearArcardS2.Location = new System.Drawing.Point(113, 93);
+            this.btnClearArcardS2.Name = "btnClearArcardS2";
+            this.btnClearArcardS2.Size = new System.Drawing.Size(45, 38);
+            this.btnClearArcardS2.TabIndex = 39;
+            this.btnClearArcardS2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClearArcardS2.UseVisualStyleBackColor = false;
+            this.btnClearArcardS2.Click += new System.EventHandler(this.btnClearArcardS2_Click);
             // 
             // btnsHoursArcardS2
             // 
@@ -582,6 +814,36 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnPrixArcardS2.TabIndex = 17;
             this.btnPrixArcardS2.UseVisualStyleBackColor = false;
             // 
+            // btnStartArcardS2
+            // 
+            this.btnStartArcardS2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStartArcardS2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartArcardS2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartArcardS2.ForeColor = System.Drawing.Color.Black;
+            this.btnStartArcardS2.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
+            this.btnStartArcardS2.Location = new System.Drawing.Point(11, 93);
+            this.btnStartArcardS2.Name = "btnStartArcardS2";
+            this.btnStartArcardS2.Size = new System.Drawing.Size(45, 38);
+            this.btnStartArcardS2.TabIndex = 14;
+            this.btnStartArcardS2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStartArcardS2.UseVisualStyleBackColor = false;
+            this.btnStartArcardS2.Click += new System.EventHandler(this.btnStartArcardS2_Click);
+            // 
+            // btnRestArcardS2
+            // 
+            this.btnRestArcardS2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRestArcardS2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestArcardS2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestArcardS2.ForeColor = System.Drawing.Color.Black;
+            this.btnRestArcardS2.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
+            this.btnRestArcardS2.Location = new System.Drawing.Point(62, 93);
+            this.btnRestArcardS2.Name = "btnRestArcardS2";
+            this.btnRestArcardS2.Size = new System.Drawing.Size(45, 38);
+            this.btnRestArcardS2.TabIndex = 13;
+            this.btnRestArcardS2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestArcardS2.UseVisualStyleBackColor = false;
+            this.btnRestArcardS2.Click += new System.EventHandler(this.btnRestArcardS2_Click);
+            // 
             // lblNameArcardS2
             // 
             this.lblNameArcardS2.AutoSize = true;
@@ -614,268 +876,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.timerStartArcardS4.Interval = 1000;
             this.timerStartArcardS4.Tick += new System.EventHandler(this.timerStartArcardS4_Tick);
             // 
-            // btnClearArcardS4
-            // 
-            this.btnClearArcardS4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnClearArcardS4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearArcardS4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearArcardS4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnClearArcardS4.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
-            this.btnClearArcardS4.Location = new System.Drawing.Point(113, 93);
-            this.btnClearArcardS4.Name = "btnClearArcardS4";
-            this.btnClearArcardS4.Size = new System.Drawing.Size(45, 38);
-            this.btnClearArcardS4.TabIndex = 41;
-            this.btnClearArcardS4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClearArcardS4.UseVisualStyleBackColor = false;
-            this.btnClearArcardS4.Click += new System.EventHandler(this.btnClearArcardS4_Click);
-            // 
-            // btnStartArcardS4
-            // 
-            this.btnStartArcardS4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnStartArcardS4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStartArcardS4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStartArcardS4.ForeColor = System.Drawing.Color.Black;
-            this.btnStartArcardS4.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.btnStartArcardS4.Location = new System.Drawing.Point(11, 93);
-            this.btnStartArcardS4.Name = "btnStartArcardS4";
-            this.btnStartArcardS4.Size = new System.Drawing.Size(45, 38);
-            this.btnStartArcardS4.TabIndex = 14;
-            this.btnStartArcardS4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStartArcardS4.UseVisualStyleBackColor = false;
-            this.btnStartArcardS4.Click += new System.EventHandler(this.btnStartArcardS4_Click);
-            // 
-            // btnRestArcardS4
-            // 
-            this.btnRestArcardS4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnRestArcardS4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestArcardS4.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestArcardS4.ForeColor = System.Drawing.Color.Black;
-            this.btnRestArcardS4.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.btnRestArcardS4.Location = new System.Drawing.Point(62, 93);
-            this.btnRestArcardS4.Name = "btnRestArcardS4";
-            this.btnRestArcardS4.Size = new System.Drawing.Size(45, 38);
-            this.btnRestArcardS4.TabIndex = 13;
-            this.btnRestArcardS4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRestArcardS4.UseVisualStyleBackColor = false;
-            this.btnRestArcardS4.Click += new System.EventHandler(this.btnRestArcardS4_Click);
-            // 
-            // btnClearArcardS2
-            // 
-            this.btnClearArcardS2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnClearArcardS2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearArcardS2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearArcardS2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnClearArcardS2.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
-            this.btnClearArcardS2.Location = new System.Drawing.Point(113, 93);
-            this.btnClearArcardS2.Name = "btnClearArcardS2";
-            this.btnClearArcardS2.Size = new System.Drawing.Size(45, 38);
-            this.btnClearArcardS2.TabIndex = 39;
-            this.btnClearArcardS2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClearArcardS2.UseVisualStyleBackColor = false;
-            this.btnClearArcardS2.Click += new System.EventHandler(this.btnClearArcardS2_Click);
-            // 
-            // btnStartArcardS2
-            // 
-            this.btnStartArcardS2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnStartArcardS2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStartArcardS2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStartArcardS2.ForeColor = System.Drawing.Color.Black;
-            this.btnStartArcardS2.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.btnStartArcardS2.Location = new System.Drawing.Point(11, 93);
-            this.btnStartArcardS2.Name = "btnStartArcardS2";
-            this.btnStartArcardS2.Size = new System.Drawing.Size(45, 38);
-            this.btnStartArcardS2.TabIndex = 14;
-            this.btnStartArcardS2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStartArcardS2.UseVisualStyleBackColor = false;
-            this.btnStartArcardS2.Click += new System.EventHandler(this.btnStartArcardS2_Click);
-            // 
-            // btnRestArcardS2
-            // 
-            this.btnRestArcardS2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnRestArcardS2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestArcardS2.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestArcardS2.ForeColor = System.Drawing.Color.Black;
-            this.btnRestArcardS2.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.btnRestArcardS2.Location = new System.Drawing.Point(62, 93);
-            this.btnRestArcardS2.Name = "btnRestArcardS2";
-            this.btnRestArcardS2.Size = new System.Drawing.Size(45, 38);
-            this.btnRestArcardS2.TabIndex = 13;
-            this.btnRestArcardS2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRestArcardS2.UseVisualStyleBackColor = false;
-            this.btnRestArcardS2.Click += new System.EventHandler(this.btnRestArcardS2_Click);
-            // 
-            // btnClearArcardS3
-            // 
-            this.btnClearArcardS3.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnClearArcardS3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearArcardS3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearArcardS3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnClearArcardS3.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
-            this.btnClearArcardS3.Location = new System.Drawing.Point(113, 93);
-            this.btnClearArcardS3.Name = "btnClearArcardS3";
-            this.btnClearArcardS3.Size = new System.Drawing.Size(45, 38);
-            this.btnClearArcardS3.TabIndex = 40;
-            this.btnClearArcardS3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClearArcardS3.UseVisualStyleBackColor = false;
-            this.btnClearArcardS3.Click += new System.EventHandler(this.btnClearArcardS3_Click);
-            // 
-            // btnStartArcardS3
-            // 
-            this.btnStartArcardS3.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnStartArcardS3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStartArcardS3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStartArcardS3.ForeColor = System.Drawing.Color.Black;
-            this.btnStartArcardS3.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.btnStartArcardS3.Location = new System.Drawing.Point(11, 93);
-            this.btnStartArcardS3.Name = "btnStartArcardS3";
-            this.btnStartArcardS3.Size = new System.Drawing.Size(45, 38);
-            this.btnStartArcardS3.TabIndex = 14;
-            this.btnStartArcardS3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStartArcardS3.UseVisualStyleBackColor = false;
-            this.btnStartArcardS3.Click += new System.EventHandler(this.btnStartArcardS3_Click);
-            // 
-            // btnRestArcardS3
-            // 
-            this.btnRestArcardS3.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnRestArcardS3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestArcardS3.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestArcardS3.ForeColor = System.Drawing.Color.Black;
-            this.btnRestArcardS3.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.btnRestArcardS3.Location = new System.Drawing.Point(62, 93);
-            this.btnRestArcardS3.Name = "btnRestArcardS3";
-            this.btnRestArcardS3.Size = new System.Drawing.Size(45, 38);
-            this.btnRestArcardS3.TabIndex = 13;
-            this.btnRestArcardS3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRestArcardS3.UseVisualStyleBackColor = false;
-            this.btnRestArcardS3.Click += new System.EventHandler(this.btnRestArcardS3_Click);
-            // 
-            // btnClearArcardS1
-            // 
-            this.btnClearArcardS1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnClearArcardS1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearArcardS1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearArcardS1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnClearArcardS1.Image = global::Centre_D_affaire.Properties.Resources.outline_backspace_black_24dp1;
-            this.btnClearArcardS1.Location = new System.Drawing.Point(113, 93);
-            this.btnClearArcardS1.Name = "btnClearArcardS1";
-            this.btnClearArcardS1.Size = new System.Drawing.Size(45, 38);
-            this.btnClearArcardS1.TabIndex = 38;
-            this.btnClearArcardS1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClearArcardS1.UseVisualStyleBackColor = false;
-            this.btnClearArcardS1.Click += new System.EventHandler(this.btnClearBillard1_Click);
-            // 
-            // btnStartArcardS1
-            // 
-            this.btnStartArcardS1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnStartArcardS1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStartArcardS1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStartArcardS1.ForeColor = System.Drawing.Color.Black;
-            this.btnStartArcardS1.Image = global::Centre_D_affaire.Properties.Resources.outline_play_arrow_black_24dp1;
-            this.btnStartArcardS1.Location = new System.Drawing.Point(11, 93);
-            this.btnStartArcardS1.Name = "btnStartArcardS1";
-            this.btnStartArcardS1.Size = new System.Drawing.Size(45, 38);
-            this.btnStartArcardS1.TabIndex = 14;
-            this.btnStartArcardS1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStartArcardS1.UseVisualStyleBackColor = false;
-            this.btnStartArcardS1.Click += new System.EventHandler(this.btnStartArcardS1_Click);
-            // 
-            // btnRestArcardS1
-            // 
-            this.btnRestArcardS1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnRestArcardS1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestArcardS1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestArcardS1.ForeColor = System.Drawing.Color.Black;
-            this.btnRestArcardS1.Image = global::Centre_D_affaire.Properties.Resources.outline_restart_alt_black_24dp1;
-            this.btnRestArcardS1.Location = new System.Drawing.Point(62, 93);
-            this.btnRestArcardS1.Name = "btnRestArcardS1";
-            this.btnRestArcardS1.Size = new System.Drawing.Size(45, 38);
-            this.btnRestArcardS1.TabIndex = 13;
-            this.btnRestArcardS1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRestArcardS1.UseVisualStyleBackColor = false;
-            this.btnRestArcardS1.Click += new System.EventHandler(this.btnRestArcardS1_Click);
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.Image = global::Centre_D_affaire.Properties.Resources.outline_menu_black_24dp1;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(3, 3);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(213, 96);
-            this.btnDashboard.TabIndex = 41;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Centre_D_affaire.Properties.Resources.apple_arcade;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 105);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 107);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
-            // 
-            // picHome
-            // 
-            this.picHome.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.picHome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.picHome.Image = global::Centre_D_affaire.Properties.Resources.outline_home_black_24dp1;
-            this.picHome.Location = new System.Drawing.Point(3, 3);
-            this.picHome.Name = "picHome";
-            this.picHome.Size = new System.Drawing.Size(48, 48);
-            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picHome.TabIndex = 34;
-            this.picHome.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.Image = global::Centre_D_affaire.Properties.Resources.outline_help_black_24dp;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 34;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::Centre_D_affaire.Properties.Resources.outline_edit_black_24dp;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 34;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = global::Centre_D_affaire.Properties.Resources.outline_support_agent_black_24dp2;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 34;
-            this.pictureBox3.TabStop = false;
-            // 
             // FrmArcardeStreet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -887,21 +887,25 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pnlTitle);
             this.Controls.Add(this.FlpMenu);
-            this.IsMdiContainer = true;
             this.Name = "FrmArcardeStreet";
             this.Text = "Arcarde Street";
             this.Load += new System.EventHandler(this.FrmArcardeStreet_Load);
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
             this.FlpMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -910,11 +914,6 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }

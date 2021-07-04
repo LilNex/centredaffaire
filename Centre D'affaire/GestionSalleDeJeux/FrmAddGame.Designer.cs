@@ -253,6 +253,7 @@ namespace Centre_D_affaire.GestionSalleDeJeux
             this.btnEditGame.TabIndex = 44;
             this.btnEditGame.Text = "Edit Game";
             this.btnEditGame.UseVisualStyleBackColor = false;
+            this.btnEditGame.Click += new System.EventHandler(this.btnEditGame_Click);
             // 
             // btnDeleteGame
             // 

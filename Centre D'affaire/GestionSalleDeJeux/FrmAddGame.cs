@@ -73,5 +73,14 @@ namespace Centre_D_affaire.GestionSalleDeJeux
         {
 
         }
+
+        private void btnEditGame_Click(object sender, EventArgs e)
+        {
+            FrmInfoGame FRMIG = new FrmInfoGame();
+            FRMIG.Show();
+            
+        }
+
+
     }
 }
