@@ -123,6 +123,10 @@ namespace Centre_D_affaire.GestionPersonnel
                 {
                     ((DataGridView)c).ColumnHeadersDefaultCellStyle.Font = new Font(pfc.Families[0], /*((DataGridView)c).ColumnHeadersDefaultCellStyle.Font.Size*/12, ((DataGridView)c).Font.Style) ;
                 }
+                else if(c is ComboBox)
+                {
+                    ((ComboBox)c).Font = new System.Drawing.Font(pfc.Families[0], 10, c.Font.Style);
+                }
 
                 else if (!(c is TextBox || c is Bunifu.Framework.UI.BunifuDatepicker))
                 {
@@ -132,6 +136,7 @@ namespace Centre_D_affaire.GestionPersonnel
                     //    c.BringToFront();
                     //}
                 } 
+                
                 
                 if (c.Controls.Count > 0)
                 {

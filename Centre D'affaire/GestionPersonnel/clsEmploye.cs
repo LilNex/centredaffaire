@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace Centre_D_affaire.GestionPersonnel
 {
+    public enum EmployeType
+    {
+        Employe,
+        Secretaire,
+        Directeur,
+    }
+
     public class ClsEmploye
     {
 
@@ -24,6 +31,7 @@ namespace Centre_D_affaire.GestionPersonnel
         private string adresse;
         private int salaire;
         private string rfid;
+        private EmployeType type;
 
         //login
         private string userlogin;
@@ -81,8 +89,9 @@ namespace Centre_D_affaire.GestionPersonnel
         public string Rfid { get => rfid; set => rfid = value; }
         public string Userlogin { get => userlogin; set => userlogin = value; }
         public string Mdp { get => mdp; set => mdp = value; }
+        public EmployeType Type { get => type; set => type = value; }
 
-        public ClsEmploye(string num, string nom,string prenom,string cin, string tel, string email, char Sit, string comp, DateTime DateDajout,DateTime DateNaissance, char sex, string adresse)
+        public ClsEmploye(string num, string nom,string prenom,string cin, string tel, string email, char Sit, string comp, DateTime DateDajout,DateTime DateNaissance, char sex, string adresse, EmployeType empType)
         {
             this.Nom = nom;
             this.Prenom = prenom;
@@ -96,8 +105,8 @@ namespace Centre_D_affaire.GestionPersonnel
             this.Date_naissance = DateNaissance;
             this.Sex = sex;
             this.Adresse = adresse;
-            
 
+            this.Type = empType;
 
 
             this.Userlogin = Nom + "." + Prenom;
@@ -142,6 +151,10 @@ namespace Centre_D_affaire.GestionPersonnel
                 return true; 
             }
             return false;
+        }
+        public override string ToString()
+        {
+            return this.Nom + " " + this.Prenom;
         }
     }
 }

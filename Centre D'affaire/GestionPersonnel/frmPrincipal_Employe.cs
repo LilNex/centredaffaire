@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionPersonnel
 {
-    public partial class frmPrincipal_Directeur : Form
+    public partial class frmPrincipal_Employe : Form
     {
         private ClsEmploye userLogged;
         public ClsEmploye UserLogged
@@ -21,6 +21,7 @@ namespace Centre_D_affaire.GestionPersonnel
             {
                 userLogged = value;
                 ucProfil1.loggedUser = value;
+                ucDemandesEmp1.EmployeLogged = value;
             }
 
         }
@@ -29,7 +30,7 @@ namespace Centre_D_affaire.GestionPersonnel
         public CustomControls.frmAlert alert = new CustomControls.frmAlert();
         
 
-        public frmPrincipal_Directeur()
+        public frmPrincipal_Employe()
         {   
             InitializeComponent();
             setupForm();
@@ -45,7 +46,7 @@ namespace Centre_D_affaire.GestionPersonnel
             timer.Start();
             pnlActive.Height = btnDashboard.Height;
             pnlActive.Top = btnDashboard.Top;
-            ucDashboard.BringToFront();
+            
             //pnlError.BringToFront();
             //alert.showError("test", CustomControls.frmAlert.errorType.Error);
             
@@ -65,39 +66,20 @@ namespace Centre_D_affaire.GestionPersonnel
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             pnlActive.Top = btnDashboard.Top;
-            ucDashboard.BringToFront();
+            //ucDashboard.BringToFront();
         }
 
-        private void btnEmployes_Click(object sender, EventArgs e)
-        {
-            pnlActive.Top = btnEmployes.Top;
-            ucEmployes.BringToFront();
-            ucEmployes.UCListeEmployes.reloadForm();
-
-        }
-
-        private void btnGstPaie_Click(object sender, EventArgs e)
-        {
-            pnlActive.Top = btnGstPaie.Top;
-        }
+        
 
         private void btnDemandes_Click(object sender, EventArgs e)
         {
             pnlActive.Top = btnDemandes.Top;
-            ucDemandes.BringToFront();
+            
         }
 
-        private void btnDeparts_Click(object sender, EventArgs e)
-        {
-            pnlActive.Top = btnDeparts.Top;
-            ucDepartements.loadForm();
-            ucDepartements.BringToFront();
-        }
+       
 
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            ucDashboard.DateNow = DateTime.Now.ToString("F", cultureInfo).ToUpper();
-        }
+        
 
         private void btnParametre_Click(object sender, EventArgs e)
         {

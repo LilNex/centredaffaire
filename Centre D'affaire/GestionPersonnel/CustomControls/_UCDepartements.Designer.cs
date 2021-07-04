@@ -36,6 +36,7 @@
             this.ucListePoste = new Centre_D_affaire.GestionPersonnel.CustomControls.UCListePoste();
             this.ucAjoutDepartement = new Centre_D_affaire.GestionPersonnel.CustomControls.UCAjoutDepartement();
             this.ucModifDepartement = new Centre_D_affaire.GestionPersonnel.CustomControls.UCModifDepartement();
+            this.ucModifPoste = new Centre_D_affaire.GestionPersonnel.CustomControls.UCModifPoste();
             this.SuspendLayout();
             // 
             // btnAjouterPoste
@@ -110,13 +111,6 @@
             this.btnListePostes.UseVisualStyleBackColor = false;
             this.btnListePostes.Click += new System.EventHandler(this.btnListePostes_Click);
             // 
-            // ucAjoutPoste1
-            // 
-            this.ucAjoutPoste1.Location = new System.Drawing.Point(0, 42);
-            this.ucAjoutPoste1.Name = "ucAjoutPoste1";
-            this.ucAjoutPoste1.Size = new System.Drawing.Size(952, 529);
-            this.ucAjoutPoste1.TabIndex = 13;
-            // 
             // ucListeDepartement
             // 
             this.ucListeDepartement.BackColor = System.Drawing.Color.White;
@@ -144,22 +138,33 @@
             // ucModifDepartement
             // 
             this.ucModifDepartement.BackColor = System.Drawing.Color.White;
+            this.ucModifDepartement.Departement = null;
             this.ucModifDepartement.Location = new System.Drawing.Point(0, 40);
             this.ucModifDepartement.Name = "ucModifDepartement";
             this.ucModifDepartement.Size = new System.Drawing.Size(952, 529);
             this.ucModifDepartement.TabIndex = 13;
             // 
+            // ucModifPoste
+            // 
+            this.ucModifPoste.BackColor = System.Drawing.Color.White;
+            this.ucModifPoste.Poste = null;
+            this.ucModifPoste.Location = new System.Drawing.Point(0, 40);
+            this.ucModifPoste.Name = "ucModifPoste";
+            this.ucModifPoste.Size = new System.Drawing.Size(952, 529);
+            this.ucModifPoste.TabIndex = 14;
+            // 
             // UCDepartements
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.ucModifDepartement);
             this.Controls.Add(this.btnAjouterPoste);
             this.Controls.Add(this.btnAjouterDeps);
             this.Controls.Add(this.btnListeDeps);
             this.Controls.Add(this.btnListePostes);
+            this.Controls.Add(this.ucAjoutDepartement);
+            this.Controls.Add(this.ucModifDepartement);
             this.Controls.Add(this.ucListeDepartement);
             this.Controls.Add(this.ucListePoste);
-            this.Controls.Add(this.ucAjoutDepartement);
+            this.Controls.Add(this.ucModifPoste);
             this.Name = "UCDepartements";
             this.Size = new System.Drawing.Size(952, 569);
             this.Load += new System.EventHandler(this.UCDepartements_Load);
@@ -177,5 +182,6 @@
         private UCListePoste ucListePoste;
         private UCAjoutDepartement ucAjoutDepartement;
         private UCModifDepartement ucModifDepartement;
+        private UCModifPoste ucModifPoste;
     }
 }

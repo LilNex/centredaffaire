@@ -10,65 +10,61 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionPersonnel.CustomControls
 {
-    public partial class UCDepartements : UserControl
+    public partial class UCDemandes : UserControl
     {
         private List<ClsDepartement> listDeparts = new List<ClsDepartement>();
 
-        private List<clsPoste> tempPostes = new List<clsPoste>();
 
-        internal List<ClsDepartement> ListDeparts { get => listDeparts; set => listDeparts = value; }
 
-        public UCDepartements()
+        public UCDemandes()
         {
             InitializeComponent();
-            ucListeDepartement.ModifierDepEvent += loadModifForm;
-            ucListePoste.ModifierPosteEvent += loadModifPoste;
         }
 
         public void loadForm()
         {
-            tempPostes.Clear();
-            Functions.clearForm(ucListeDepartement);
+            //Functions.clearForm(ucListeDepartement);
             Functions.setupDgv(this);
             //ucListeDepartement.dgvListeEmploye.DataSource = ClsDepartement.ListeDepartement;
-            ucListeDepartement.loadForm();
+            //ucListeDepartement.loadForm();
             //Functions.setCellStyle(ucListeDepartement);
         }
         private void UCDepartements_Load(object sender, EventArgs e)
         {
             loadForm();
-            ucListeDepartement.BringToFront();
+            //ucListeDepartement.BringToFront();
         }
 
-        private void btnListeDeps_Click(object sender, EventArgs e)
+        private void btnListeDemandes_Click(object sender, EventArgs e)
         {
-            Functions.clearForm(ucListeDepartement);
-            ucListeDepartement.loadForm();
-            ucListeDepartement.BringToFront();
+            ucListeDemandes1.BringToFront();
+            //Functions.clearForm(ucListeDepartement);
+            //ucListeDepartement.loadForm();
+            //ucListeDepartement.BringToFront();
         }
 
         private void btnAjouterDeps_Click(object sender, EventArgs e)
         {
-            Functions.clearForm(ucAjoutDepartement);
-            ucAjoutDepartement.BringToFront();
+            //Functions.clearForm(ucAjoutDepartement);
+            //ucAjoutDepartement.BringToFront();
         }
 
         private void btnListePostes_Click(object sender, EventArgs e)
         {
-            Functions.clearForm(ucListePoste);
-            //Functions.setCellStyle(ucListePoste);
-            ucListePoste.reloadForm();
-            ucListePoste.BringToFront();
+            //Functions.clearForm(ucListePoste);
+            ////Functions.setCellStyle(ucListePoste);
+            //ucListePoste.reloadForm();
+            //ucListePoste.BringToFront();
         }
 
         private void ucAjoutDepartement_Load(object sender, EventArgs e)
         {
-            ucListeDepartement.dgvListDeps.DataSource = ClsDepartement.ListeDepartement;
+            //ucListeDepartement.dgvListDeps.DataSource = ClsDepartement.ListeDepartement;
         }
 
         private void ucListeDepartement_Load(object sender, EventArgs e)
         {
-            ucListeDepartement.dgvListDeps.DataSource = ClsDepartement.ListeDepartement;
+            //ucListeDepartement.dgvListDeps.DataSource = ClsDepartement.ListeDepartement;
 
         }
 
@@ -80,14 +76,14 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
 
         private void loadModifForm(object sender, DepartementEventArgs e)
         {
-            ucModifDepartement.Departement = e.departement;
-            ucModifDepartement.BringToFront();
+            //ucModifDepartement.Departement = e.departement;
+            //ucModifDepartement.BringToFront();
         }
 
         private void loadModifPoste(object sender , PosteModifEventArgs e)
         {
-            ucModifPoste.Poste = e.poste;
-            ucModifPoste.BringToFront();
+            //ucModifPoste.Poste = e.poste;
+            //ucModifPoste.BringToFront();
         }
     }
 }

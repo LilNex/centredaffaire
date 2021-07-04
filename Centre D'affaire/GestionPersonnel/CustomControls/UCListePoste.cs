@@ -12,6 +12,8 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
 {
     public partial class UCListePoste : UserControl
     {
+        public event EventHandler<PosteModifEventArgs> ModifierPosteEvent;
+
         public UCListePoste()
         {
             InitializeComponent();
@@ -77,6 +79,13 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
                          where x.Num.Contains(txtPosteNum.Text.ToLower()) && x.Nom.ToLower().Contains(txtPosteNom.Text.ToLower())
                          select x;
             dgvListePostes.DataSource = querry.ToList();
+        }
+
+        private void btnModifPoste_Click(object sender, EventArgs e)
+        {
+            PosteModifEventArgs args = new PosteModifEventArgs();
+            args.poste = dgvListePostes.CurrentRow.DataBoundItem as clsPoste;
+            ModifierPosteEvent(this, args);
         }
     }
 }

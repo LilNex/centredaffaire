@@ -10,4 +10,10 @@ namespace Centre_D_affaire.GestionPersonnel
     {
         public ClsDepartement departement { get; set; }
     }
+
+    public class PosteModifEventArgs : EventArgs
+    {
+        public ClsDepartement departement { get; set; }
+        public clsPoste poste { get; set; }
+    }
 }

@@ -11,6 +11,7 @@ namespace Centre_D_affaire.GestionPersonnel
         private string nom;
         private string num;
         public List<ClsEmploye> listeDesEmployé = new List<ClsEmploye>();
+        private ClsEmploye manager;
 
         public string Num
         {
@@ -28,6 +29,7 @@ namespace Centre_D_affaire.GestionPersonnel
             }
         }
         public string Nom { get => nom; set => nom = value; }
+        public ClsEmploye Manager { get => manager; set => manager = value; }
 
         public clsPoste(string nom, string num)
         {
@@ -64,5 +66,27 @@ namespace Centre_D_affaire.GestionPersonnel
             return this.Nom;
         }
 
+
+        public static void ModifierPoste(clsPoste Poste)
+        {
+            foreach(ClsDepartement dep in ClsDepartement.ListeDepartement)
+            {
+                for (int i = 0; i < dep.ListePoste.Count; i++)
+                {
+                    if (Poste.Num == dep.ListePoste[i].Num)
+                    {
+                        dep.ListePoste[i] = Poste;
+                        ClsDepartement.saveListeDeps();
+                    }
+                }
+            }
+        }
+        //public static int indexOfPoste(clsPoste Poste)
+        //{
+        //    for (int i = 0; i < ; i++)
+        //    {
+
+        //    }
+        //}
     }
 }

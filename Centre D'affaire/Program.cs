@@ -17,7 +17,7 @@ namespace Centre_D_affaire
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrincipal_Directeur());
+            Application.Run(new frmGPersonnel());
         }
     }
 }

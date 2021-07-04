@@ -26,8 +26,8 @@ namespace Centre_D_affaire.GestionPersonnel
                 dgvCongé.Rows.Add();
 
 
-                dgvCongé.Rows[i].Cells["db"].Value = Congé.ListeDesCongé[i].Dated;
-                dgvCongé.Rows[i].Cells["db"].Value = Congé.ListeDesCongé[i].Datef;
+                dgvCongé.Rows[i].Cells["db"].Value = Congé.ListeDesCongé[i].DateDebut;
+                dgvCongé.Rows[i].Cells["db"].Value = Congé.ListeDesCongé[i].DateFin;
                 dgvCongé.Rows[i].Cells["durée"].Value = Congé.ListeDesCongé[i].Durée;
                 dgvCongé.Rows[i].Cells["etat"].Value = Congé.ListeDesCongé[i].Etat;
                 dgvCongé.Rows[i].Cells["catégorie"].Value = Congé.ListeDesCongé[i].Catégories;
@@ -61,8 +61,11 @@ namespace Centre_D_affaire.GestionPersonnel
                 {
                     if (ClsEmploye.ListeEmploye[i].Cin == textBox2.Text && ClsEmploye.ListeEmploye[i].Nom == textBox1.Text)
                     {
-                        Congé c = new Congé(DateTime.Parse(dateTimePicker1.Text), DateTime.Parse(dateTimePicker2.Text), (int)numericUpDown1.Value, textBox3.Text, textBox4.Text);
+                        TypeConge status;
+                        Enum.TryParse<TypeConge>(comboBox1.SelectedValue.ToString(), out status);
+                        Congé c = new Congé(DateTime.Parse(dateTimePicker1.Text),  (int)numericUpDown1.Value, status);
                         Congé.ListeDesCongé.Add(c);
+                        Congé.saveListeConge();
                         RemplirGridCongée();
                         break;
                     }
@@ -72,20 +75,13 @@ namespace Centre_D_affaire.GestionPersonnel
                     }
                 }
             }
-            else
-            {
-                MessageBox.Show("la liste des employés est valide", "Errur", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-           
-                XmlSerializer XS = new XmlSerializer(Congé.ListeDesCongé.GetType());
-                StreamWriter w_fileDeps = new StreamWriter("Liste des Congés.xml");
-                XS.Serialize(w_fileDeps, Congé.ListeDesCongé);
+            
 
         }
 
         private void FrmCongée_Load(object sender, EventArgs e)
         {
-
+            comboBox1.DataSource = Enum.GetNames(typeof(TypeConge));
         }
 
         private void label5_Click(object sender, EventArgs e)

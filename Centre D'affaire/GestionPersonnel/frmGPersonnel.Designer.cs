@@ -39,7 +39,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 31);
+            this.label1.Location = new System.Drawing.Point(63, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 57);
+            this.label2.Location = new System.Drawing.Point(25, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 13);
             this.label2.TabIndex = 1;
@@ -56,21 +56,21 @@
             // 
             // txtLogin
             // 
-            this.txtLogin.Location = new System.Drawing.Point(91, 28);
+            this.txtLogin.Location = new System.Drawing.Point(104, 44);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(100, 20);
             this.txtLogin.TabIndex = 2;
             // 
             // txtMdp
             // 
-            this.txtMdp.Location = new System.Drawing.Point(91, 54);
+            this.txtMdp.Location = new System.Drawing.Point(104, 70);
             this.txtMdp.Name = "txtMdp";
             this.txtMdp.Size = new System.Drawing.Size(100, 20);
             this.txtMdp.TabIndex = 3;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(91, 156);
+            this.btnLogin.Location = new System.Drawing.Point(104, 172);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 4;
@@ -81,7 +81,7 @@
             // lblNotif
             // 
             this.lblNotif.AutoSize = true;
-            this.lblNotif.Location = new System.Drawing.Point(111, 140);
+            this.lblNotif.Location = new System.Drawing.Point(115, 119);
             this.lblNotif.Name = "lblNotif";
             this.lblNotif.Size = new System.Drawing.Size(35, 13);
             this.lblNotif.TabIndex = 5;
@@ -91,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(290, 296);
+            this.ClientSize = new System.Drawing.Size(291, 299);
             this.Controls.Add(this.lblNotif);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtMdp);

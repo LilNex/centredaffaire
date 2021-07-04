@@ -60,7 +60,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private void btnAjouterPoste_Click(object sender, EventArgs e)
         {
             clsPoste tempPoste = new clsPoste(txtTempPosteNom.Text, txtTempPosteNum.Text);
-            if (Functions.addPoste(ClsDepartement.ListeDepartement[ClsDepartement.indexByNum(((ClsDepartement)cmbDeparts.SelectedItem).Num)].ListePoste, tempPoste))
+            if (Functions.addPoste(ClsDepartement.ListeDepartement[ClsDepartement.rechercheDepNum(((ClsDepartement)cmbDeparts.SelectedItem).Num)].ListePoste, tempPoste))
             {
                 N.ShowBalloonTip(1100, "Poste ajouté", "Le poste a été ajouté à la liste avec succès", ToolTipIcon.Info);
                  

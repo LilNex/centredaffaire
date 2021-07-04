@@ -60,20 +60,23 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.grpSexe = new System.Windows.Forms.GroupBox();
             this.rdbF = new System.Windows.Forms.RadioButton();
             this.rdbH = new System.Windows.Forms.RadioButton();
-            this.lblText_Contrats = new System.Windows.Forms.Label();
             this.lblText_Dep = new System.Windows.Forms.Label();
             this.lblText_Poste = new System.Windows.Forms.Label();
             this.cmbDeparts = new System.Windows.Forms.ComboBox();
             this.cmbPoste = new System.Windows.Forms.ComboBox();
-            this.cmbContrats = new System.Windows.Forms.ComboBox();
             this.lblText_Badge = new System.Windows.Forms.Label();
             this.txtIdBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnEffacer = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbTSecretaire = new System.Windows.Forms.RadioButton();
+            this.rdbTEmp = new System.Windows.Forms.RadioButton();
+            this.rdbTDirecteur = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.grpSexe.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtPrenom
@@ -157,6 +160,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 23;
             this.pictureBox.TabStop = false;
+            this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
             this.pictureBox.DoubleClick += new System.EventHandler(this.pictureBox_DoubleClick);
             // 
             // datePicker
@@ -405,16 +409,6 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.rdbH.UseVisualStyleBackColor = true;
             this.rdbH.CheckedChanged += new System.EventHandler(this.rdbH_CheckedChanged);
             // 
-            // lblText_Contrats
-            // 
-            this.lblText_Contrats.AutoSize = true;
-            this.lblText_Contrats.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText_Contrats.Location = new System.Drawing.Point(299, 374);
-            this.lblText_Contrats.Name = "lblText_Contrats";
-            this.lblText_Contrats.Size = new System.Drawing.Size(88, 24);
-            this.lblText_Contrats.TabIndex = 48;
-            this.lblText_Contrats.Text = "Contrats :";
-            // 
             // lblText_Dep
             // 
             this.lblText_Dep.AutoSize = true;
@@ -457,17 +451,6 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.cmbPoste.Name = "cmbPoste";
             this.cmbPoste.Size = new System.Drawing.Size(145, 21);
             this.cmbPoste.TabIndex = 52;
-            // 
-            // cmbContrats
-            // 
-            this.cmbContrats.BackColor = System.Drawing.SystemColors.Control;
-            this.cmbContrats.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbContrats.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbContrats.FormattingEnabled = true;
-            this.cmbContrats.Location = new System.Drawing.Point(304, 402);
-            this.cmbContrats.Name = "cmbContrats";
-            this.cmbContrats.Size = new System.Drawing.Size(281, 21);
-            this.cmbContrats.TabIndex = 53;
             // 
             // lblText_Badge
             // 
@@ -555,21 +538,72 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.btnAjouter.UseVisualStyleBackColor = false;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rdbTDirecteur);
+            this.groupBox1.Controls.Add(this.rdbTSecretaire);
+            this.groupBox1.Controls.Add(this.rdbTEmp);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(609, 73);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(287, 42);
+            this.groupBox1.TabIndex = 48;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Sexe";
+            // 
+            // rdbTSecretaire
+            // 
+            this.rdbTSecretaire.AutoSize = true;
+            this.rdbTSecretaire.FlatAppearance.BorderSize = 0;
+            this.rdbTSecretaire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rdbTSecretaire.Location = new System.Drawing.Point(84, 17);
+            this.rdbTSecretaire.Name = "rdbTSecretaire";
+            this.rdbTSecretaire.Size = new System.Drawing.Size(87, 20);
+            this.rdbTSecretaire.TabIndex = 1;
+            this.rdbTSecretaire.TabStop = true;
+            this.rdbTSecretaire.Text = "Secretaire";
+            this.rdbTSecretaire.UseVisualStyleBackColor = true;
+            // 
+            // rdbTEmp
+            // 
+            this.rdbTEmp.AutoSize = true;
+            this.rdbTEmp.FlatAppearance.BorderSize = 0;
+            this.rdbTEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rdbTEmp.Location = new System.Drawing.Point(6, 17);
+            this.rdbTEmp.Name = "rdbTEmp";
+            this.rdbTEmp.Size = new System.Drawing.Size(79, 20);
+            this.rdbTEmp.TabIndex = 0;
+            this.rdbTEmp.TabStop = true;
+            this.rdbTEmp.Text = "Employe";
+            this.rdbTEmp.UseVisualStyleBackColor = true;
+            // 
+            // rdbTDirecteur
+            // 
+            this.rdbTDirecteur.AutoSize = true;
+            this.rdbTDirecteur.FlatAppearance.BorderSize = 0;
+            this.rdbTDirecteur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rdbTDirecteur.Location = new System.Drawing.Point(177, 16);
+            this.rdbTDirecteur.Name = "rdbTDirecteur";
+            this.rdbTDirecteur.Size = new System.Drawing.Size(79, 20);
+            this.rdbTDirecteur.TabIndex = 2;
+            this.rdbTDirecteur.TabStop = true;
+            this.rdbTDirecteur.Text = "Directeur";
+            this.rdbTDirecteur.UseVisualStyleBackColor = true;
+            // 
             // UCAjoutEmploye
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnEffacer);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtIdBox);
             this.Controls.Add(this.lblText_Badge);
-            this.Controls.Add(this.cmbContrats);
             this.Controls.Add(this.cmbPoste);
             this.Controls.Add(this.cmbDeparts);
             this.Controls.Add(this.lblText_Poste);
             this.Controls.Add(this.lblText_Dep);
-            this.Controls.Add(this.lblText_Contrats);
             this.Controls.Add(this.grpSexe);
             this.Controls.Add(this.txtBanque);
             this.Controls.Add(this.txtRIB);
@@ -605,6 +639,8 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.grpSexe.ResumeLayout(false);
             this.grpSexe.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -643,17 +679,19 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private System.Windows.Forms.GroupBox grpSexe;
         private System.Windows.Forms.RadioButton rdbF;
         private System.Windows.Forms.RadioButton rdbH;
-        private System.Windows.Forms.Label lblText_Contrats;
         private System.Windows.Forms.Label lblText_Dep;
         private System.Windows.Forms.Label lblText_Poste;
         private System.Windows.Forms.ComboBox cmbDeparts;
         private System.Windows.Forms.ComboBox cmbPoste;
-        private System.Windows.Forms.ComboBox cmbContrats;
         private System.Windows.Forms.Label lblText_Badge;
         private System.Windows.Forms.TextBox txtIdBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEffacer;
         private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rdbTDirecteur;
+        private System.Windows.Forms.RadioButton rdbTSecretaire;
+        private System.Windows.Forms.RadioButton rdbTEmp;
     }
 }

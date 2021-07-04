@@ -21,6 +21,7 @@ namespace Centre_D_affaire.GestionPersonnel
         private string nom;
         private List<clsPoste> listePoste = new List<clsPoste>();
         private int id;
+        private ClsEmploye manager;
 
         public string Num { get => num; set {
                 if (value.Substring(0, 3).All(char.IsLetter) && value.Substring(3, 3).All(char.IsNumber)) {
@@ -36,6 +37,7 @@ namespace Centre_D_affaire.GestionPersonnel
         public string Nom { get => nom; set => nom = value; }
         public List<clsPoste> ListePoste { get => listePoste; set => listePoste = value; }
         public int Id { get => id; set => id = value; }
+        public ClsEmploye Manager { get => manager; set => manager = value; }
 
         public ClsDepartement(string nom, string num)
         {
@@ -54,7 +56,7 @@ namespace Centre_D_affaire.GestionPersonnel
             }
             return -1;
         }
-        public int rechercheDepNum(string num)
+        public static int rechercheDepNum(string num)
         {
             for (int i = 0; i < ClsDepartement.ListeDepartement.Count(); i++)
             {
@@ -93,6 +95,22 @@ namespace Centre_D_affaire.GestionPersonnel
                 return false;
             }
         }
+        public List<ClsEmploye> getListemployes()
+        {
+            List<ClsEmploye> _listEmployes = new List<ClsEmploye>();
+            for (int i = 0; i < this.ListePoste.Count; i++)
+            {
+                
+
+                    foreach (ClsEmploye employe in this.ListePoste[i].listeDesEmployé)
+                    {
+                        _listEmployes.Add(employe);
+                    
+                }
+            }
+            return _listEmployes;
+        }
+
 
         public static void loadListeDeps()
         {

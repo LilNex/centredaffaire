@@ -27,9 +27,19 @@ namespace Centre_D_affaire.GestionPersonnel
             ClsEmploye logged = Functions.login(txtLogin.Text, txtMdp.Text);
             if (logged != null)
             {
-                frmPrincipal_Directeur frm = new frmPrincipal_Directeur();
-                frm.UserLogged = logged;
-                frm.Show();
+                if(logged.Type == EmployeType.Directeur)
+                {
+                    frmPrincipal_Directeur frm = new frmPrincipal_Directeur();
+                    frm.UserLogged = logged;
+                    frm.Show();
+                }
+                if (logged.Type == EmployeType.Employe)
+                {
+                    frmPrincipal_Employe frm = new frmPrincipal_Employe();
+                    frm.UserLogged = logged;
+                    frm.Show();
+                }
+
             }
             else
             {

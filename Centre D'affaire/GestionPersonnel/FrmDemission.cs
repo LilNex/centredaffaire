@@ -71,8 +71,9 @@ namespace Centre_D_affaire.GestionPersonnel
                     {
                         if (ClsEmploye.ListeEmploye[i].Cin == textBox2.Text && ClsEmploye.ListeEmploye[i].Nom == textBox1.Text)
                         {
-                            Demission d = new Demission( dateTimePicker1.Value,textBox3.Text,textBox4.Text);
+                            Demission d = new Demission( dateTimePicker1.Value,textBox3.Text);
                             Demission.ListeDesDemission.Add(d);
+                            Demission.saveListeDemission();
                             RemplirGridDemission();
                             break;
                         }
@@ -87,9 +88,7 @@ namespace Centre_D_affaire.GestionPersonnel
                     MessageBox.Show("la liste des employés est valide", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                XmlSerializer XS = new XmlSerializer(Demission.ListeDesDemission.GetType());
-                StreamWriter w_fileDeps = new StreamWriter("Liste des Demission.xml");
-                XS.Serialize(w_fileDeps, Demission.ListeDesDemission);
+                
 
             }
 

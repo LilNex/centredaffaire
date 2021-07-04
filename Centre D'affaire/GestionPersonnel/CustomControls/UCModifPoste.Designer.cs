@@ -1,7 +1,7 @@
 ﻿
 namespace Centre_D_affaire.GestionPersonnel.CustomControls
 {
-    partial class UCModifDepartement
+    partial class UCModifPoste
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,92 +29,26 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtEmailDep = new System.Windows.Forms.TextBox();
-            this.txtDepFax = new System.Windows.Forms.TextBox();
-            this.txtNumDep = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtDepNom = new System.Windows.Forms.TextBox();
             this.txtDepNum = new System.Windows.Forms.TextBox();
             this.lblText_Prenom = new System.Windows.Forms.Label();
             this.lblText_Nom = new System.Windows.Forms.Label();
             this.lblText_Numero = new System.Windows.Forms.Label();
             this.lblText_Ajout = new System.Windows.Forms.Label();
-            this.dgvListePoste = new System.Windows.Forms.DataGridView();
+            this.dgvListeEmploye = new System.Windows.Forms.DataGridView();
             this.btnMofidDep = new System.Windows.Forms.Button();
             this.btnEffacer = new System.Windows.Forms.Button();
-            this.btnSuppPoste = new System.Windows.Forms.Button();
+            this.btnSuppEmp = new System.Windows.Forms.Button();
             this.cmbEmpManager = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListePoste)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListeEmploye)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtEmailDep
-            // 
-            this.txtEmailDep.BackColor = System.Drawing.Color.DarkGray;
-            this.txtEmailDep.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmailDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtEmailDep.Location = new System.Drawing.Point(355, 105);
-            this.txtEmailDep.Name = "txtEmailDep";
-            this.txtEmailDep.Size = new System.Drawing.Size(137, 19);
-            this.txtEmailDep.TabIndex = 129;
-            // 
-            // txtDepFax
-            // 
-            this.txtDepFax.BackColor = System.Drawing.Color.DarkGray;
-            this.txtDepFax.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDepFax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtDepFax.Location = new System.Drawing.Point(355, 74);
-            this.txtDepFax.Name = "txtDepFax";
-            this.txtDepFax.Size = new System.Drawing.Size(137, 19);
-            this.txtDepFax.TabIndex = 128;
-            // 
-            // txtNumDep
-            // 
-            this.txtNumDep.BackColor = System.Drawing.Color.DarkGray;
-            this.txtNumDep.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNumDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumDep.Location = new System.Drawing.Point(355, 42);
-            this.txtNumDep.Name = "txtNumDep";
-            this.txtNumDep.Size = new System.Drawing.Size(137, 19);
-            this.txtNumDep.TabIndex = 127;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(286, 108);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 16);
-            this.label4.TabIndex = 126;
-            this.label4.Text = "Email :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(286, 77);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 16);
-            this.label5.TabIndex = 125;
-            this.label5.Text = "Fax :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(286, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 16);
-            this.label6.TabIndex = 124;
-            this.label6.Text = "Tel :";
             // 
             // txtDepNom
             // 
             this.txtDepNom.BackColor = System.Drawing.Color.DarkGray;
             this.txtDepNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDepNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtDepNom.Location = new System.Drawing.Point(81, 74);
+            this.txtDepNom.Location = new System.Drawing.Point(314, 42);
             this.txtDepNom.Name = "txtDepNom";
             this.txtDepNom.Size = new System.Drawing.Size(137, 19);
             this.txtDepNom.TabIndex = 122;
@@ -133,7 +67,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             // 
             this.lblText_Prenom.AutoSize = true;
             this.lblText_Prenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText_Prenom.Location = new System.Drawing.Point(12, 108);
+            this.lblText_Prenom.Location = new System.Drawing.Point(12, 79);
             this.lblText_Prenom.Name = "lblText_Prenom";
             this.lblText_Prenom.Size = new System.Drawing.Size(68, 16);
             this.lblText_Prenom.TabIndex = 120;
@@ -143,7 +77,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             // 
             this.lblText_Nom.AutoSize = true;
             this.lblText_Nom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText_Nom.Location = new System.Drawing.Point(12, 77);
+            this.lblText_Nom.Location = new System.Drawing.Point(245, 45);
             this.lblText_Nom.Name = "lblText_Nom";
             this.lblText_Nom.Size = new System.Drawing.Size(43, 16);
             this.lblText_Nom.TabIndex = 119;
@@ -165,20 +99,20 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.lblText_Ajout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText_Ajout.Location = new System.Drawing.Point(12, 11);
             this.lblText_Ajout.Name = "lblText_Ajout";
-            this.lblText_Ajout.Size = new System.Drawing.Size(258, 24);
+            this.lblText_Ajout.Size = new System.Drawing.Size(199, 24);
             this.lblText_Ajout.TabIndex = 117;
-            this.lblText_Ajout.Text = "Modification du département :";
+            this.lblText_Ajout.Text = "Modification du Poste :";
             // 
-            // dgvListePoste
+            // dgvListeEmploye
             // 
-            this.dgvListePoste.BackgroundColor = System.Drawing.Color.White;
-            this.dgvListePoste.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvListePoste.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvListePoste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListePoste.Location = new System.Drawing.Point(16, 145);
-            this.dgvListePoste.Name = "dgvListePoste";
-            this.dgvListePoste.Size = new System.Drawing.Size(477, 341);
-            this.dgvListePoste.TabIndex = 130;
+            this.dgvListeEmploye.BackgroundColor = System.Drawing.Color.White;
+            this.dgvListeEmploye.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvListeEmploye.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvListeEmploye.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListeEmploye.Location = new System.Drawing.Point(16, 145);
+            this.dgvListeEmploye.Name = "dgvListeEmploye";
+            this.dgvListeEmploye.Size = new System.Drawing.Size(477, 341);
+            this.dgvListeEmploye.TabIndex = 130;
             // 
             // btnMofidDep
             // 
@@ -217,82 +151,69 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.btnEffacer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEffacer.UseVisualStyleBackColor = false;
             // 
-            // btnSuppPoste
+            // btnSuppEmp
             // 
-            this.btnSuppPoste.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSuppPoste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            this.btnSuppPoste.FlatAppearance.BorderSize = 0;
-            this.btnSuppPoste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuppPoste.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuppPoste.ForeColor = System.Drawing.Color.White;
-            this.btnSuppPoste.Image = global::Centre_D_affaire.Properties.Resources.icons8_add_user_male_32px;
-            this.btnSuppPoste.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuppPoste.Location = new System.Drawing.Point(499, 145);
-            this.btnSuppPoste.Name = "btnSuppPoste";
-            this.btnSuppPoste.Size = new System.Drawing.Size(113, 39);
-            this.btnSuppPoste.TabIndex = 133;
-            this.btnSuppPoste.Text = "Supprimer le poste";
-            this.btnSuppPoste.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSuppPoste.UseVisualStyleBackColor = false;
-            this.btnSuppPoste.Click += new System.EventHandler(this.btnSuppPoste_Click);
+            this.btnSuppEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSuppEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnSuppEmp.FlatAppearance.BorderSize = 0;
+            this.btnSuppEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuppEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuppEmp.ForeColor = System.Drawing.Color.White;
+            this.btnSuppEmp.Image = global::Centre_D_affaire.Properties.Resources.icons8_add_user_male_32px;
+            this.btnSuppEmp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSuppEmp.Location = new System.Drawing.Point(499, 145);
+            this.btnSuppEmp.Name = "btnSuppEmp";
+            this.btnSuppEmp.Size = new System.Drawing.Size(113, 39);
+            this.btnSuppEmp.TabIndex = 133;
+            this.btnSuppEmp.Text = "Supprimer l\'employé";
+            this.btnSuppEmp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSuppEmp.UseVisualStyleBackColor = false;
+            this.btnSuppEmp.Click += new System.EventHandler(this.btnSuppEmp_Click);
             // 
             // cmbEmpManager
             // 
             this.cmbEmpManager.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEmpManager.FormattingEnabled = true;
-            this.cmbEmpManager.Location = new System.Drawing.Point(81, 107);
+            this.cmbEmpManager.Location = new System.Drawing.Point(81, 78);
             this.cmbEmpManager.Name = "cmbEmpManager";
             this.cmbEmpManager.Size = new System.Drawing.Size(121, 21);
             this.cmbEmpManager.TabIndex = 134;
             // 
-            // UCModifDepartement
+            // UCModifPoste
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.cmbEmpManager);
-            this.Controls.Add(this.btnSuppPoste);
+            this.Controls.Add(this.btnSuppEmp);
             this.Controls.Add(this.btnMofidDep);
             this.Controls.Add(this.btnEffacer);
-            this.Controls.Add(this.dgvListePoste);
-            this.Controls.Add(this.txtEmailDep);
-            this.Controls.Add(this.txtDepFax);
-            this.Controls.Add(this.txtNumDep);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dgvListeEmploye);
             this.Controls.Add(this.txtDepNom);
             this.Controls.Add(this.txtDepNum);
             this.Controls.Add(this.lblText_Prenom);
             this.Controls.Add(this.lblText_Nom);
             this.Controls.Add(this.lblText_Numero);
             this.Controls.Add(this.lblText_Ajout);
-            this.Name = "UCModifDepartement";
+            this.Name = "UCModifPoste";
             this.Size = new System.Drawing.Size(952, 529);
             this.Load += new System.EventHandler(this.UCModifDepartement_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListePoste)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListeEmploye)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtEmailDep;
-        private System.Windows.Forms.TextBox txtDepFax;
-        private System.Windows.Forms.TextBox txtNumDep;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtDepNom;
         private System.Windows.Forms.TextBox txtDepNum;
         private System.Windows.Forms.Label lblText_Prenom;
         private System.Windows.Forms.Label lblText_Nom;
         private System.Windows.Forms.Label lblText_Numero;
         private System.Windows.Forms.Label lblText_Ajout;
-        private System.Windows.Forms.DataGridView dgvListePoste;
+        private System.Windows.Forms.DataGridView dgvListeEmploye;
         private System.Windows.Forms.Button btnMofidDep;
         private System.Windows.Forms.Button btnEffacer;
-        private System.Windows.Forms.Button btnSuppPoste;
+        private System.Windows.Forms.Button btnSuppEmp;
         private System.Windows.Forms.ComboBox cmbEmpManager;
     }
 }

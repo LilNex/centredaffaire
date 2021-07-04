@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 
 using System.Windows.Forms;
 
@@ -72,8 +73,33 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            //ClsEmploye employe = new ClsEmploye(txtNum.Text,txtNom.Text, txtPrenom.Text,txtCIN.Text);
-            ClsEmploye employe = new ClsEmploye();
+            char sexe = 'H';
+            if (rdbH.Checked)
+            {
+                sexe = 'H';
+            }
+            if (rdbF.Checked)
+            {
+                sexe = 'F';
+                
+
+            }
+            EmployeType empType = EmployeType.Employe;
+            if (rdbTEmp.Checked)
+            {
+                empType = EmployeType.Employe;
+            }
+            if (rdbTSecretaire.Checked)
+            {
+                empType = EmployeType.Secretaire;
+            }
+            if (rdbTDirecteur.Checked)
+            {
+                empType = EmployeType.Directeur;
+            }
+
+            ClsEmploye employe = new ClsEmploye(txtNum.Text, txtNom.Text, txtPrenom.Text, txtCIN.Text, txtNumTel.Text, txtEmail.Text, 'M', textBox5.Text, DateTime.Now , datePicker.Value,sexe,txtAdresse.Text,empType);
+            //ClsEmploye employe = new ClsEmploye();
             if(cmbDeparts.SelectedItem is ClsDepartement)
             {
                 if (cmbPoste.SelectedItem is clsPoste)
@@ -106,7 +132,16 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private void pictureBox_DoubleClick(object sender, EventArgs e)
         {
             OpenFileDialog opf = new OpenFileDialog();
-            opf.Filter = ""
+            opf.Filter = "PNG Image (*.png)|*.png|JPEG Image (*.jpg)|*.jpg|All files (*.*)|*.*";
+            if(opf.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox.Image = Image.FromFile(opf.FileName);
+            }
+        }
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

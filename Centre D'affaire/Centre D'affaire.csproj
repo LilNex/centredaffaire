@@ -135,6 +135,18 @@
     <Compile Include="GestionPersonnel\CustomControls\UCEmployes.Designer.cs">
       <DependentUpon>UCEmployes.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCListeDemandesEmp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCListeDemandesEmp.Designer.cs">
+      <DependentUpon>UCListeDemandesEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCListeDemandes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCListeDemandes.Designer.cs">
+      <DependentUpon>UCListeDemandes.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionPersonnel\CustomControls\UCListeDepartement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -153,6 +165,12 @@
     <Compile Include="GestionPersonnel\CustomControls\UCListePoste.Designer.cs">
       <DependentUpon>UCListePoste.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCModifPoste.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\UCModifPoste.Designer.cs">
+      <DependentUpon>UCModifPoste.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionPersonnel\CustomControls\UCModifDepartement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -170,6 +188,18 @@
     </Compile>
     <Compile Include="GestionPersonnel\CustomControls\UCProfil.Designer.cs">
       <DependentUpon>UCProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\_UCDemandesEmp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\_UCDemandesEmp.Designer.cs">
+      <DependentUpon>_UCDemandesEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\_UCDemandes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\CustomControls\_UCDemandes.Designer.cs">
+      <DependentUpon>_UCDemandes.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionPersonnel\CustomControls\_UCDepartements.cs">
       <SubType>UserControl</SubType>
@@ -195,6 +225,12 @@
     </Compile>
     <Compile Include="GestionPersonnel\FrmDemission.Designer.cs">
       <DependentUpon>FrmDemission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonnel\frmPrincipal_Employe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonnel\frmPrincipal_Employe.Designer.cs">
+      <DependentUpon>frmPrincipal_Employe.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionPersonnel\frmPrincipal_Directeur.cs">
       <SubType>Form</SubType>
@@ -241,11 +277,26 @@
     <EmbeddedResource Include="GestionPersonnel\CustomControls\frmAlert.resx">
       <DependentUpon>frmAlert.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCListeDemandesEmp.resx">
+      <DependentUpon>UCListeDemandesEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCListeDemandes.resx">
+      <DependentUpon>UCListeDemandes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\UCModifPoste.resx">
+      <DependentUpon>UCModifPoste.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\CustomControls\UCModifDepartement.resx">
       <DependentUpon>UCModifDepartement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\CustomControls\UCNotif.resx">
       <DependentUpon>UCNotif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\_UCDemandesEmp.resx">
+      <DependentUpon>_UCDemandesEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\CustomControls\_UCDemandes.resx">
+      <DependentUpon>_UCDemandes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\FrmCongée.resx">
       <DependentUpon>FrmCongée.cs</DependentUpon>
@@ -285,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\CustomControls\_UCDepartements.resx">
       <DependentUpon>_UCDepartements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonnel\frmPrincipal_Employe.resx">
+      <DependentUpon>frmPrincipal_Employe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\frmPrincipal_Directeur.resx">
       <DependentUpon>frmPrincipal_Directeur.cs</DependentUpon>
