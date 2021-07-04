@@ -140,14 +140,6 @@
     <Compile Include="GestionCreche\frmInscription.Designer.cs">
       <DependentUpon>frmInscription.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\..\..\..\Desktop\FrmPersonnel.cs">
-      <SubType>Form</SubType>
-      <Link>GestionCreche\FrmPersonnel.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\Desktop\FrmPersonnel.Designer.cs">
-      <DependentUpon>FrmPersonnel.cs</DependentUpon>
-      <Link>GestionCreche\FrmPersonnel.Designer.cs</Link>
-    </Compile>
     <Compile Include="GestionCreche\Dejeuner.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -235,10 +227,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmInscription.resx">
       <DependentUpon>frmInscription.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\..\..\Desktop\FrmPersonnel.resx">
-      <DependentUpon>FrmPersonnel.cs</DependentUpon>
-      <Link>GestionCreche\FrmPersonnel.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\Dejeuner.resx">
       <DependentUpon>Dejeuner.cs</DependentUpon>

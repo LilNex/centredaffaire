@@ -174,10 +174,11 @@ namespace Centre_D_affaire.GestionCreche
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(286, 38);
+            this.label3.Font = new System.Drawing.Font("Stencil", 27F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label3.Location = new System.Drawing.Point(348, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(708, 108);
+            this.label3.Size = new System.Drawing.Size(470, 64);
             this.label3.TabIndex = 5;
             this.label3.Text = "Liste Groupes :";
             // 
@@ -213,7 +214,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // btnRechercher
             // 
-            this.btnRechercher.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRechercher.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnRechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRechercher.Location = new System.Drawing.Point(227, 25);
             this.btnRechercher.Name = "btnRechercher";
@@ -235,7 +236,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // btnAjouter
             // 
-            this.btnAjouter.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAjouter.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnAjouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouter.Location = new System.Drawing.Point(381, 507);
             this.btnAjouter.Name = "btnAjouter";
@@ -247,7 +248,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             // btnEnregitrer
             // 
-            this.btnEnregitrer.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnEnregitrer.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnEnregitrer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnregitrer.Location = new System.Drawing.Point(610, 507);
             this.btnEnregitrer.Name = "btnEnregitrer";
@@ -291,6 +292,7 @@ namespace Centre_D_affaire.GestionCreche
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(1321, 722);
             this.Controls.Add(this.txtNUm);
             this.Controls.Add(this.btnEnregitrer);
