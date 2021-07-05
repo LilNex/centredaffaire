@@ -235,14 +235,12 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label6.ForeColor = System.Drawing.Color.Navy;
             this.label6.Name = "label6";
             // 
-            // dgvDmdNV
+            // cmbUtgnce
             // 
-            this.dgvDmdNV.BackgroundColor = System.Drawing.SystemColors.Menu;
-            this.dgvDmdNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgvDmdNV, "dgvDmdNV");
-            this.dgvDmdNV.Name = "dgvDmdNV";
-            this.dgvDmdNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDmdNV_CellContentClick);
-            this.dgvDmdNV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDmdNV_CellDoubleClick);
+            resources.ApplyResources(this.cmbUtgnce, "cmbUtgnce");
+            this.cmbUtgnce.FormattingEnabled = true;
+            this.cmbUtgnce.Name = "cmbUtgnce";
+            this.cmbUtgnce.SelectedIndexChanged += new System.EventHandler(this.cmbUtgnce_SelectedIndexChanged);
             // 
             // pnlDTLdmd
             // 
@@ -261,6 +259,10 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             resources.ApplyResources(this.pnlDTLdmd, "pnlDTLdmd");
             this.pnlDTLdmd.Name = "pnlDTLdmd";
             // 
+            resources.ApplyResources(this.cmbDeprt, "cmbDeprt");
+            this.cmbDeprt.FormattingEnabled = true;
+            this.cmbDeprt.Name = "cmbDeprt";
+            this.cmbDeprt.SelectedIndexChanged += new System.EventHandler(this.cmbDeprt_SelectedIndexChanged);
             // lbldepartm
             // 
             resources.ApplyResources(this.lbldepartm, "lbldepartm");
@@ -268,12 +270,18 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.lbldepartm.ForeColor = System.Drawing.Color.DarkRed;
             this.lbldepartm.Name = "lbldepartm";
             // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Name = "label11";
             // label15
             // 
             resources.ApplyResources(this.label15, "label15");
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Name = "label15";
             // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Name = "label10";
             // lblNonAfich
             // 
             resources.ApplyResources(this.lblNonAfich, "lblNonAfich");
@@ -317,11 +325,16 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             // 
             // label4
             // 
+            resources.ApplyResources(this.cmbID, "cmbID");
+            this.cmbID.FormattingEnabled = true;
+            this.cmbID.Name = "cmbID";
+            this.cmbID.SelectedIndexChanged += new System.EventHandler(this.cmbID_SelectedIndexChanged);
             resources.ApplyResources(this.label4, "label4");
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.Maroon;
             this.label4.Name = "label4";
             // 
+            // label7
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");

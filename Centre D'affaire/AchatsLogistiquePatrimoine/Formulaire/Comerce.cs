@@ -21,6 +21,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         List<CHOIX> lc = new List<CHOIX>();
         private void Comerce_Load(object sender, EventArgs e)
         {
+            pnlfournisseur.Visible = false;
             pnlcommande.Visible = false;
             ///-----REMPLICAGE DES COMBOS
             for(int i=0;i< ClsListe.List_demande.Count;i++)
@@ -76,16 +77,21 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             for (int i = 0; i < ClsListe.List_demande.Count; i++)
             {
+
                 if (ClsListe.List_demande[i].ID_demande1 == int.Parse(cmbidcommande.SelectedItem.ToString()))
                 {
                     lc.Clear();
                     lc = ClsListe.List_demande[i].listchoix;
 
-                    dgvDmdV.DataSource = lc;
+
                 }
+
             }
+            dgvDmdV.DataSource = null;
+            dgvDmdV.DataSource = lc;
 
         }
         
@@ -95,15 +101,56 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             //ArticleType Type;
             //Enum.TryParse<ArticleType>(cmbarticle.SelectedIndex.ToString(), out Type);
             //var id = from x in ClsListe.List_choix
-            //         where x.Article == (ClsArticle)cmbarticle.SelectedItem
-            //         from Enum.
+            //         where x.Article== (ch)cmbarticle.SelectedIndex
+            //         from y in x.listchoix
             //         where y.Article.TypeArticle == Type
             //         select y;
         }
 
         private void cmbdepartement_SelectedIndexChanged(object sender, EventArgs e)
         {
+            for (int i = 0; i < ClsListe.List_demande.Count; i++)
+            {
 
+                if (ClsListe.List_demande[i].Departement == (ClsDepartement)cmbdepartement.SelectedItem)
+                {
+                    lc.Clear();
+                    //for(int j=0;ClsListe.List_demande[i].)
+                    lc.AddRange(ClsListe.List_demande[i].listchoix);
+
+
+                }
+
+            }
+
+            dgvDmdV.DataSource = null;
+            dgvDmdV.DataSource = lc;
+        }
+
+       
+
+        private void cmbUrgnce_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < ClsListe.List_demande.Count; i++)
+            {
+
+                if (ClsListe.List_demande[i].Urgence == cmbUrgnce.SelectedItem.ToString())
+                {
+                    lc.Clear();
+                    //for(int j=0;ClsListe.List_demande[i].)
+                    lc.AddRange(ClsListe.List_demande[i].listchoix);
+
+                }
+
+            }
+
+            dgvDmdV.DataSource = null;
+            dgvDmdV.DataSource = lc;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pnlfournisseur.Visible = true;
         }
     }
 }

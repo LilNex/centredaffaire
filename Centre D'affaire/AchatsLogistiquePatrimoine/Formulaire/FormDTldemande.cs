@@ -243,10 +243,10 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             //Catalogue f = new Catalogue();
             //f.Show();
 
-            FormPres d = new FormPres();
-            d.Show();
+            Comerce c = new Comerce();
+            c.Show();
+            
 
-            ClsListe.List_choix.Clear();
             this.Close();
 
 
