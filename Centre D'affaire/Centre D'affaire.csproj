@@ -64,50 +64,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_Additems.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_Additems.Designer.cs">
-      <DependentUpon>UC_Additems.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_CreateNewUser.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_CreateNewUser.Designer.cs">
-      <DependentUpon>UC_CreateNewUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_PlaceOrder.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_PlaceOrder.Designer.cs">
-      <DependentUpon>UC_PlaceOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_RemoveItem.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_RemoveItem.Designer.cs">
-      <DependentUpon>UC_RemoveItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_UpdateItems.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_UpdateItems.Designer.cs">
-      <DependentUpon>UC_UpdateItems.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_Welcome.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_Welcome.Designer.cs">
-      <DependentUpon>UC_Welcome.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\Class1.cs" />
-    <Compile Include="GestionCafeRestaurant\DGVPrinter.cs" />
-    <Compile Include="GestionCafeRestaurant\frmGCR.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionCafeRestaurant\frmGCR.Designer.cs">
-      <DependentUpon>frmGCR.cs</DependentUpon>
-    </Compile>
+    
     <Compile Include="GestionCreche\frmGC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +103,60 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_Additems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_Additems.Designer.cs">
+      <DependentUpon>UC_Additems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_CreateNewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_CreateNewUser.Designer.cs">
+      <DependentUpon>UC_CreateNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_PlaceOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_PlaceOrder.Designer.cs">
+      <DependentUpon>UC_PlaceOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_RemoveItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_RemoveItem.Designer.cs">
+      <DependentUpon>UC_RemoveItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_UpdateItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_UpdateItems.Designer.cs">
+      <DependentUpon>UC_UpdateItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_Welcome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\AllUserControl\UC_Welcome.Designer.cs">
+      <DependentUpon>UC_Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\Classes\ClsList.cs" />
+    <Compile Include="GestionCafeRestaurant\DGVPrinter.cs" />
+    <Compile Include="GestionCafeRestaurant\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\function.cs" />
+    <Compile Include="GestionCafeRestaurant\PageMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCafeRestaurant\PageMenu.Designer.cs">
+      <DependentUpon>PageMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GestionCafeRestaurant\PageMenu.resx">
+      <DependentUpon>PageMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionCafeRestaurant\AllUserControl\UC_Additems.resx">
       <DependentUpon>UC_Additems.cs</DependentUpon>
     </EmbeddedResource>

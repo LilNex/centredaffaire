@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Cafe_Management.AllUserControl
+namespace Centre_D_affaire.GestionCafeRestaurant.AllUserControl
 {
     public partial class UC_Welcome : UserControl
     {

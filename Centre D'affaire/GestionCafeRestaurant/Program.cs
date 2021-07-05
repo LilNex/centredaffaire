@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Centre_D_affaire.GestionCafeRestaurant;
 
-namespace Centre_D_affaire
+namespace Cafe_Management
 {
     static class Program
     {
@@ -17,7 +16,7 @@ namespace Centre_D_affaire
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Centre_D_affaire.GestionCafeRestaurant.Form1());
+            Application.Run(new Form1());
         }
     }
 }

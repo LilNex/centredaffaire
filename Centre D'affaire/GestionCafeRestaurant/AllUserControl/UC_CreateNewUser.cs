@@ -11,7 +11,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Data.SqlClient;
 
-namespace Cafe_Management.AllUserControl
+namespace Centre_D_affaire.GestionCafeRestaurant.AllUserControl
 {
     [Serializable]
     public partial class UC_CreateNewUser : UserControl

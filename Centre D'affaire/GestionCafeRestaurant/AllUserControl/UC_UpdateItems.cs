@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
-namespace Cafe_Management.AllUserControl
+namespace Centre_D_affaire.GestionCafeRestaurant.AllUserControl
 {
     [Serializable]
     public partial class UC_UpdateItems : UserControl

@@ -1,5 +1,5 @@
 ﻿
-namespace Cafe_Management.AllUserControl
+namespace Centre_D_affaire.GestionCafeRestaurant.AllUserControl
 {
     partial class UC_RemoveItem
     {

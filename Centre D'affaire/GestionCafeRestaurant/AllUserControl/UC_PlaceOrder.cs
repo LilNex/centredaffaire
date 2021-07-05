@@ -12,7 +12,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Collections;
 
-namespace Cafe_Management.AllUserControl
+namespace Centre_D_affaire.GestionCafeRestaurant.AllUserControl
 {
 
     

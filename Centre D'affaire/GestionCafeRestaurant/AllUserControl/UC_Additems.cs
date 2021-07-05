@@ -12,7 +12,7 @@ using System.IO;
 using System.Collections;
 using System.Xml.Serialization;
 
-namespace Cafe_Management.AllUserControl
+namespace Centre_D_affaire.GestionCafeRestaurant.AllUserControl
 {
     [Serializable]
 
