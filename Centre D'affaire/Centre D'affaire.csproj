@@ -565,7 +565,6 @@
     <EmbeddedResource Include="GestionParking\Login-SignUp-Form.resx">
       <DependentUpon>Login-SignUp-Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <Compile Include="GestionCafeRestaurant\AllUserControl\UC_Additems.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -637,9 +636,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCafeRestaurant\AllUserControl\UC_Welcome.resx">
       <DependentUpon>UC_Welcome.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionCafeRestaurant\frmGCR.resx">
-      <DependentUpon>frmGCR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
