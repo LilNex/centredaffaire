@@ -148,7 +148,7 @@ namespace Centre_D_affaire.GestionCreche
             // btnRechercher
             // 
             this.btnRechercher.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRechercher.Location = new System.Drawing.Point(52, 118);
+            this.btnRechercher.Location = new System.Drawing.Point(42, 117);
             this.btnRechercher.Name = "btnRechercher";
             this.btnRechercher.Size = new System.Drawing.Size(154, 57);
             this.btnRechercher.TabIndex = 7;
