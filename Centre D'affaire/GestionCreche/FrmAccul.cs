@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 
 namespace Centre_D_affaire.GestionCreche
@@ -26,7 +27,7 @@ namespace Centre_D_affaire.GestionCreche
 
         }
 
-       
+
 
         private void btnCatalogue_Click(object sender, EventArgs e)
         {
@@ -35,23 +36,24 @@ namespace Centre_D_affaire.GestionCreche
             me.Dock = DockStyle.Fill;
             me.BringToFront();
             me.Show();
-            
-            
+
+
         }
 
         private void btnInscription_Click(object sender, EventArgs e)
         {
             frmInscription me = new frmInscription();
-            
-           // me.MdiParent = this;
+
+            // me.MdiParent = this;
             me.Dock = DockStyle.Fill;
             me.BringToFront();
             me.Show();
-           
+            
+
         }
         private void affichage(object sender, EventArgs e)
         {
-           // foreach forms As Form in  
+            // foreach forms As Form in  
         }
 
         private void FrmAccul_Load(object sender, EventArgs e)
@@ -71,17 +73,25 @@ namespace Centre_D_affaire.GestionCreche
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
-            if (cmbPF.Text == "Responsable")
+            if (cmbPF.Text == "Responsable" && txtName.Text == "Hafsa" && txtMDP.Text == "mnopqr00")
+
             {
-              //  FrmPersonnel f = new FrmPersonnel();
-              //  f.Show();
+                FrmPersonnel f = new FrmPersonnel();
+                f.Show();
                 this.Hide();
             }
-            
+
+            if(cmbPF.Text == "Personnel" && txtName.Text == "ihssane" && txtMDP.Text == "1234")
+            {
+
+            }
+
+
         }
 
-        private void cmbPF_SelectedIndexChanged(object sender, EventArgs e)
+
+
+    private void cmbPF_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
