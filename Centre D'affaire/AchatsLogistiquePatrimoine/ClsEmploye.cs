@@ -9,12 +9,13 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
     public class ClsEmploye
     {
         private string ID_emp;
-        //private string MDP_emp;
+        private string MDP_emp;
         private string Nom;
         private string Prenom;
         private int Telephone;
         private string E_mail;
-        private ClsProfil Profil;
+        private String  TypeProfil;
+        
 
 
         public string Nom1 { get => Nom; set => Nom = value; }
@@ -24,23 +25,24 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         public int Telephone1 { get => Telephone; set => Telephone = value; }
         public string ID_emp1{ get => ID_emp; set => ID_emp = value; }
         public string E_mail1 { get => E_mail; set => E_mail = value; }
-        public ClsProfil Profil1 { get => this.Profil; set => this.Profil = value; }
-        
+        public string TypeProfil1 { get => TypeProfil; set => TypeProfil = value; }
+        public string MDP_emp1 { get => MDP_emp; set => MDP_emp = value; }
+
 
 
         //----------constructeur par default---------------
         public ClsEmploye() { }
         //--------------constructeur renseigné-----------------
-        public ClsEmploye(string id_emp, string nom,string prenom,int telephone,string email,ClsProfil profil)            
+        public ClsEmploye(string id_emp, string nom,string prenom,int telephone,string email,string profil,string mdp)            
 
         {
             this.ID_emp = id_emp;
-            
+            this.MDP_emp1 = mdp;
             this.Nom = nom;
             this.Prenom = prenom;
             this.Telephone = telephone;
-            this.E_mail = email;          
-            this.Profil1 = profil ;
+            this.E_mail = email;
+            this.TypeProfil1 = profil;
         }
         public int Recherche_Emp(string idemp)
         {
