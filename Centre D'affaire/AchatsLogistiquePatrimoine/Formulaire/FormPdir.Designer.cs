@@ -1,7 +1,7 @@
 ﻿
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    partial class frmALP
+    partial class FormPdir
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,21 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FormPdir
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmALP";
+            this.BackgroundImage = global::Centre_D_affaire.Properties.Resources.depositphotos_18595071_stock_photo_light_room;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(822, 456);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FormPdir";
+            this.Text = "FormPdir";
+            this.Load += new System.EventHandler(this.FormPdir_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
-    public partial class frmALP : Form
+    public partial class FormResDemande : Form
     {
-        public frmALP()
+        public FormResDemande()
         {
             InitializeComponent();
         }
