@@ -22,7 +22,7 @@ namespace Centre_D_affaire
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Centre_D_affaire.GestionCafeRestaurant.Form1());
+            Application.Run(new Centre_D_affaire.GestionPersonnel.frmGPersonnel());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

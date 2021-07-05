@@ -95,7 +95,9 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private void btnModifier_Click(object sender, EventArgs e)
         {
             DepartementEventArgs args = new DepartementEventArgs();
-            args.departement = dgvListDeps.CurrentRow.DataBoundItem as ClsDepartement ;
+            if(dgvListDeps.CurrentRow!= null)
+                if(dgvListDeps.CurrentRow.DataBoundItem != null)
+                args.departement = dgvListDeps.CurrentRow.DataBoundItem as ClsDepartement ;
             ModifierDepEvent(this, args);
 
         }

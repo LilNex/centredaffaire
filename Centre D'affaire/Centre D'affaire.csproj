@@ -378,6 +378,8 @@
       <DependentUpon>frmGPersonnel.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSalleDeJeux\FrmAddGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GestionPersonnel\FrmPaiement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -385,9 +387,6 @@
       <DependentUpon>FrmPaiement.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionPersonnel\list.cs" />
-    <Compile Include="GestionSalleDeJeux\frmGSJ.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="GestionSalleDeJeux\FrmAddGame.Designer.cs">
       <DependentUpon>FrmAddGame.cs</DependentUpon>
     </Compile>
@@ -792,9 +791,6 @@
     <EmbeddedResource Include="GestionCafeRestaurant\AllUserControl\UC_Welcome.resx">
       <DependentUpon>UC_Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\CustomControls\UCAjoutPoste.resx">
       <DependentUpon>UCAjoutPoste.cs</DependentUpon>
     </EmbeddedResource>
@@ -831,9 +827,7 @@
     <EmbeddedResource Include="GestionPersonnel\FrmDemission.resx">
       <DependentUpon>FrmDemission.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionPersonnel\frmGPersonnel.resx">
-      <DependentUpon>frmGPersonnel.cs</DependentUpon>
-    </EmbeddedResource>
+
     <EmbeddedResource Include="GestionPersonnel\CustomControls\UCAjoutDepartement.resx">
       <DependentUpon>UCAjoutDepartement.cs</DependentUpon>
     </EmbeddedResource>
