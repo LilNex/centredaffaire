@@ -401,7 +401,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
             string n = ((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem).Nom;
 
-            CHOIX c = new CHOIX(((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem), n, 0);
+            CHOIX c = new CHOIX(((ClsArticle)dgvCHoi.CurrentRow.DataBoundItem), n, 1);
           
             for (int i = 0; i < ClsListe.List_choix.Count; i++)
             {
