@@ -120,6 +120,8 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             {
                 urgence = "urgent";
             }
+            
+
             if(cmbDepartement.SelectedItem.ToString() == "Restaurant")
             {
                 for(int i= 0; i < ClsListe.List_departmnt.Count; i++)
@@ -158,6 +160,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
 
             }
 
+
             if (cmbDepartement.SelectedItem.ToString() == "Crèche")
             {
                 for (int i = 0; i < ClsListe.List_departmnt.Count; i++)
@@ -169,6 +172,8 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
                 }
 
             }
+
+
             if (cmbDepartement.SelectedItem.ToString() == "Parking")
             {
                 for (int i = 0; i < ClsListe.List_departmnt.Count; i++)
@@ -231,7 +236,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
 
             ClsListe.List_demande.Add(new ClsDemande(IDdmd, txtLibele.Text, EtatDemande.attente, urgence, dtp.Value, ClsListe.List_choix,depar));
 
-            ClsListe.List_choix.Clear();
+            
 
             ClsListe.sauvegardeDEMANDE();
 
@@ -240,8 +245,8 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
 
             FormPres d = new FormPres();
             d.Show();
-            
 
+            ClsListe.List_choix.Clear();
             this.Close();
 
 

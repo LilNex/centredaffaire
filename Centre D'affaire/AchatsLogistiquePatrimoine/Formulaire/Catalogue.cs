@@ -497,22 +497,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private void btnValider_Click(object sender, EventArgs e)
         {
-            //creer objet demande 
-            //ajouter a liste demande
-            ///serialisation fichier demande
-            ///
-            //string id = ClsListe.List_choix.Count.ToString();
-
-            // ClsListe.List_demande.Add(new ClsDemande(id, "", EtatDemande.attente, "", DateTime.Now, lc ,ClsListe.List_departmnt[0]));
-
-            //sauvgarde demande
-
-
-
-
-            //fonction serialiser vers ficher choiux depuis list choix generel
-
-
+            
 
         }
 

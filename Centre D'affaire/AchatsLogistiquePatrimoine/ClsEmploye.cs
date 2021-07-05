@@ -8,8 +8,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 {
     public class ClsEmploye
     {
-        private string ID_emp;
-        //private string MDP_emp;
+        private string ID_emp;      
         private string Nom;
         private string Prenom;
         private int Telephone;

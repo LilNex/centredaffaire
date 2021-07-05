@@ -20,20 +20,26 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         List<ClsDemande> ld = new List<ClsDemande>();
         List<CHOIX> lc = new List<CHOIX>();
         List<ClsDepartement> ldep = new List<ClsDepartement>();
-
+        
         private void FormPres_Load(object sender, EventArgs e)
         {
             ClsListe.List_demande.Clear();
             ClsListe.chargerDEMANDE();
 
-            panel1.BackColor = Color.FromArgb(50, 0, 0, 0);
-            panel2.BackColor = Color.FromArgb(50, 0, 0, 0);
-            pnlDemande.BackColor = Color.FromArgb(50, 0, 0, 0);
 
+            panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
+            
+            pnlDemande.BackColor = Color.FromArgb(30, 0, 0, 0);
+            pnlDTLdmd.BackColor = Color.FromArgb(30, 0, 0, 0);
+
+
+            pnlDTLdmd.Visible = false;
             pnlDemande.Visible = false;
 
+            picboxDTLchoix.BackgroundImageLayout = ImageLayout.Stretch;
+
             // les combobo remplir
-            for(int i = 0; i < ClsListe.List_demande.Count; i++)
+            for (int i = 0; i < ClsListe.List_demande.Count; i++)
             {
                 if(ClsListe.List_demande[i].Etat_demande1 == EtatDemande.attente)
                 {
@@ -66,10 +72,10 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
 
 
+            cmbDeprt.Text = "    faites votre choix      ";
+            // visibilite
 
-
-
-
+            
 
 
         }
@@ -83,8 +89,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private void btnDemande_Click(object sender, EventArgs e)
         {
-            ClsListe.List_demande.Clear();
-            ClsListe.chargerDEMANDE();
+            
 
             pnlDemande.Visible = true;
             dgvDmdNV.DataSource = ClsListe.List_demande;
@@ -115,7 +120,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
                if (ClsListe.List_demande[i].ID_demande1 == int.Parse(cmbID.SelectedItem.ToString()))
                {
                      lc.Clear();
-                     lc = ClsListe.List_demande[i].listchoix;
+                     lc.AddRange(ClsListe.List_demande[i].listchoix);
 
 
                }
@@ -123,6 +128,18 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             }
             dgvDmdNV.DataSource = null;
             dgvDmdNV.DataSource = lc;
+
+            foreach (DataGridViewColumn d in dgvDmdNV.Columns)
+            {
+                d.Visible = false;
+
+            }
+            dgvDmdNV.Columns["nom"].Visible = true;
+            dgvDmdNV.Columns["quantite"].Visible = true;
+            
+
+
+            cmbID.Text = "    faites votre choix      ";
 
         }
 
@@ -133,6 +150,43 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private void dgvDmdNV_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+
+
+            
+            
+            if( dgvDmdNV.CurrentRow.DataBoundItem is CHOIX)
+            {
+                pnlDTLdmd.Visible = true;
+                pnlDTLdmd.BringToFront();
+
+
+                picboxDTLchoix.Image = ((CHOIX)dgvDmdNV.CurrentRow.DataBoundItem).Article.Photo;
+                lblNonAfich.Text = ((CHOIX)dgvDmdNV.CurrentRow.DataBoundItem).Nom;
+                for (int i = 0; i < ClsListe.List_demande.Count; i++)
+                {
+                    for (int j = 0; j < ClsListe.List_demande[i].listchoix.Count; j++)
+                    {
+                        if (ClsListe.List_demande[i].listchoix[j] == (CHOIX)dgvDmdNV.CurrentRow.DataBoundItem)
+                        {
+                            lbldepartm.Text = ClsListe.List_demande[i].Departement.Nom_service ;
+                            lblQuantite.Text = ClsListe.List_demande[i].listchoix[j].Quantite.ToString();
+                        }
+                    }
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selectionnez le choix et non pas la demande ");
+            }
+
+            
+           
+
+
+
+
 
         }
 
@@ -166,6 +220,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
             dgvDmdNV.DataSource = null;
             dgvDmdNV.DataSource = lc;
+            cmbDeprt.Text = "    faites votre choix      ";
         }
 
         private void cmbUtgnce_SelectedIndexChanged(object sender, EventArgs e)
@@ -186,6 +241,18 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
             dgvDmdNV.DataSource = null;
             dgvDmdNV.DataSource = lc;
+
+            cmbUtgnce.Text = "    faites votre choix      ";
+        }
+
+        private void pnlDemande_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            pnlDTLdmd.Hide();
         }
     }
 }
