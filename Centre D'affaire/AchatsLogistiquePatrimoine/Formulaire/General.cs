@@ -60,7 +60,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private void btnCreche_Click(object sender, EventArgs e)
         {
-            GestionCreche.frmGC frm = new GestionCreche.frmGC();
+            GestionCreche.FrmAccul frm = new GestionCreche.FrmAccul();
             frm.ShowDialog();
             this.Hide();
 

@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Centre_D_affaire
+namespace Centre_D_affaire.GestionCreche
 {
-    public partial class Form1 : Form
+    public partial class Jeux : UserControl
     {
-        public Form1()
+        public Jeux()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
 
         }

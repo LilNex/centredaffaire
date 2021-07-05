@@ -1,7 +1,7 @@
 ﻿
 namespace Centre_D_affaire
 {
-    partial class Form1
+    partial class clsGroupe
     {
         /// <summary>
         /// Required designer variable.
@@ -44,10 +44,10 @@ namespace Centre_D_affaire
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Form1";
-            this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
             this.ResumeLayout(false);
 
+            this.Text = "clsGroupe";
         }
 
         #endregion
@@ -56,4 +56,3 @@ namespace Centre_D_affaire
         private System.Diagnostics.EventLog eventLog1;
     }
 }
-

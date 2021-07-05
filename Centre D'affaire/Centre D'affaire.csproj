@@ -10,8 +10,23 @@
     <AssemblyName>Centre D%27affaire</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -249,11 +264,12 @@
     <Compile Include="AchatsLogistiquePatrimoine\Formulaire\saisie.Designer.cs">
       <DependentUpon>saisie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
+    <Compile Include="ADO.cs" />
+    <Compile Include="Catalogue_User.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Catalogue_User.Designer.cs">
+      <DependentUpon>Catalogue_User.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionCafeRestaurant\clsGCR.cs" />
     <Compile Include="GestionCafeRestaurant\frmGCR.cs">
@@ -262,15 +278,77 @@
     <Compile Include="GestionCafeRestaurant\frmGCR.Designer.cs">
       <DependentUpon>frmGCR.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCreche\frmGC.cs">
+    <Compile Include="GestionCreche\Activité.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Activité.Designer.cs">
+      <DependentUpon>Activité.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\BinaryFormatter.cs" />
+    <Compile Include="GestionCreche\clsEnfant.cs" />
+    <Compile Include="GestionCreche\clsFacture.cs" />
+    <Compile Include="GestionCreche\clsGroupe.cs" />
+    <Compile Include="GestionCreche\clsListe.cs" />
+    <Compile Include="GestionCreche\ClsParant.cs" />
+    <Compile Include="GestionCreche\ClsPersonnel.cs" />
+    <Compile Include="GestionCreche\clsResponsable.cs" />
+    <Compile Include="GestionCreche\FrmAccul.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionCreche\frmGC.Designer.cs">
-      <DependentUpon>frmGC.cs</DependentUpon>
+    <Compile Include="GestionCreche\FrmAccul.Designer.cs">
+      <DependentUpon>FrmAccul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\frmCatalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\frmCatalogue.Designer.cs">
+      <DependentUpon>frmCatalogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\frmInscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\frmInscription.Designer.cs">
+      <DependentUpon>frmInscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\Dejeuner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Dejeuner.Designer.cs">
+      <DependentUpon>Dejeuner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\FrmPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\FrmPersonnel.Designer.cs">
+      <DependentUpon>FrmPersonnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\Jeux.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GestionParking\Client.cs" />
     <Compile Include="GestionParking\Dashboard.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Jeux.Designer.cs">
+      <DependentUpon>Jeux.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\Pdejeuner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Pdejeuner.Designer.cs">
+      <DependentUpon>Pdejeuner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\Gouter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Gouter.Designer.cs">
+      <DependentUpon>Gouter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\Sport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\Sport.Designer.cs">
+      <DependentUpon>Sport.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionParking\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -660,6 +738,7 @@
     <Compile Include="LocationEspacesSalleReunion\Facturation.Designer.cs">
       <DependentUpon>Facturation.cs</DependentUpon>
     </Compile>
+    <Compile Include="interfaces.cs" />
     <Compile Include="LocationEspacesSalleReunion\frmLESR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -680,9 +759,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\frmGPersonnel.resx">
       <DependentUpon>frmGPersonnel.cs</DependentUpon>
     </EmbeddedResource>
@@ -976,6 +1052,39 @@
       <DependentUpon>saisie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\LOGIN.resx" />
+    <EmbeddedResource Include="Catalogue_User.resx">
+      <DependentUpon>Catalogue_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Activité.resx">
+      <DependentUpon>Activité.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\FrmAccul.resx">
+      <DependentUpon>FrmAccul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmCatalogue.resx">
+      <DependentUpon>frmCatalogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\frmInscription.resx">
+      <DependentUpon>frmInscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Dejeuner.resx">
+      <DependentUpon>Dejeuner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\FrmPersonnel.resx">
+      <DependentUpon>FrmPersonnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Jeux.resx">
+      <DependentUpon>Jeux.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Pdejeuner.resx">
+      <DependentUpon>Pdejeuner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Gouter.resx">
+      <DependentUpon>Gouter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\Sport.resx">
+      <DependentUpon>Sport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -1597,6 +1706,18 @@
   <ItemGroup>
     <Folder Include="AchatsLogistiquePatrimoine\responsableAchat\" />
     <Folder Include="AchatsLogistiquePatrimoine\usercontrole\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

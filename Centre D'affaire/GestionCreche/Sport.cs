@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Centre_D_affaire.GestionCreche
 {
-    public partial class frmGC : Form
+    public partial class Sport : UserControl
     {
-        public frmGC()
+        public Sport()
         {
             InitializeComponent();
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
