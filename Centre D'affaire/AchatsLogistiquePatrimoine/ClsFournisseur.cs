@@ -20,6 +20,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
 
 
+
         public string Nom_Societe { get => nom_Societe; set => nom_Societe = value; }
         public string Telephone_Four { get => telephone_Four; set => telephone_Four = value; }
         public string Email_Four { get => email_Four; set => email_Four = value; }

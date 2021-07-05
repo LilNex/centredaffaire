@@ -102,41 +102,41 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         }
 
 
-        public void sauvegardeDMD()
-        {
-            
-            
-                XmlSerializer xs = new XmlSerializer(ClsListe.List_demande.GetType());
-                using (StreamWriter wr = new StreamWriter("demande.xml"))
-                {
-                    xs.Serialize(wr, ClsListe.List_demande);
-                }
+        //public static void sauvegardeDMD()
+        //{
+
+
+        //        XmlSerializer xs = new XmlSerializer(ClsListe.List_demande.GetType());
+        //        using (StreamWriter wr = new StreamWriter("demande.xml"))
+        //        {
+        //            xs.Serialize(wr, ClsListe.List_demande);
+        //        }
 
 
 
-        }
+        //}
 
-        public void chargerDMD()
-        {
-            try
-            {
-                XmlSerializer xs = new XmlSerializer(ClsListe.List_demande.GetType());
-                using ( StreamReader rd = new StreamReader("demande.xml") )
-                {
-                    xs.Deserialize(rd);
+        //public static void chargerDMD()
+        //{
+        //    try
+        //    {
+        //        XmlSerializer xs = new XmlSerializer(ClsListe.List_demande.GetType());
+        //        using ( StreamReader rd = new StreamReader("demande.xml") )
+        //        {
+        //            xs.Deserialize(rd);
 
-                }
-            }
-            catch(FileNotFoundException e)
-            {
-                ClsListe.List_demande = new List<ClsDemande>();
-            }
-
-            
+        //        }
+        //    }
+        //    catch(FileNotFoundException e)
+        //    {
+        //        ClsListe.List_demande = new List<ClsDemande>();
+        //    }
 
 
 
-        }
+
+
+        //}
 
 
 

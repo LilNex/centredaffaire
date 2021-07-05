@@ -30,48 +30,63 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         {
             GestionPersonnel.frmGPersonnel frmGPersonnel = new GestionPersonnel.frmGPersonnel();
             frmGPersonnel.ShowDialog();
+            this.Hide();
+
         }
 
         private void btnCafeRestaurant_Click(object sender, EventArgs e)
         {
             GestionCafeRestaurant.Form1 form1 = new GestionCafeRestaurant.Form1();
             form1.ShowDialog();
+            this.Hide();
+
         }
 
         private void btnLocEspaces_Click(object sender, EventArgs e)
         {
             LocationEspacesSalleReunion.frmLESR frmLESR = new LocationEspacesSalleReunion.frmLESR();
             frmLESR.ShowDialog();
+            this.Hide();
+
         }
 
         private void btnSalleDeJeux_Click(object sender, EventArgs e)
         {
             GestionSalleDeJeux.FrmMENU1 frmMENU = new GestionSalleDeJeux.FrmMENU1();
             frmMENU.ShowDialog();
+            this.Hide();
+
         }
 
         private void btnCreche_Click(object sender, EventArgs e)
         {
             GestionCreche.frmGC frm = new GestionCreche.frmGC();
             frm.ShowDialog();
+            this.Hide();
+
         }
 
         private void btnAchatService_Click(object sender, EventArgs e)
         {
             AchatsLogistiquePatrimoine.Catalogue catalogue = new Catalogue();
             catalogue.ShowDialog();
+            this.Hide();
+
         }
 
         private void btnParking_Click(object sender, EventArgs e)
         {
             GestionParking.LoadingPage loadingPage = new GestionParking.LoadingPage();
             loadingPage.ShowDialog();
+            this.Hide();
+
         }
 
         private void btnSalledeSport_Click(object sender, EventArgs e)
         {
             GestionSalleDeSport.btnSeconnecter frm = new GestionSalleDeSport.btnSeconnecter();
             frm.ShowDialog();
+            this.Hide();
         }
     }
 }

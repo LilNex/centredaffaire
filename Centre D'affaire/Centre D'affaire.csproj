@@ -672,10 +672,10 @@
     <Compile Include="LocationEspacesSalleReunion\ListeFactures.Designer.cs">
       <DependentUpon>ListeFactures.cs</DependentUpon>
     </Compile>
-    <Compile Include="LOGIN.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOGIN.Designer.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -975,9 +975,7 @@
     <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\saisie.resx">
       <DependentUpon>saisie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN.resx">
-      <DependentUpon>LOGIN.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\LOGIN.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
