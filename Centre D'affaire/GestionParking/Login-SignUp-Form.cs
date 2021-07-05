@@ -201,7 +201,7 @@ namespace Centre_D_affaire.GestionParking
             if (ShowPasswordToggleSwitch1.Checked == true)
             {
                 Password.UseSystemPasswordChar = false;
-                Password.PasswordChar = default;
+                Password.PasswordChar = '*';
             }
             if (ShowPasswordToggleSwitch1.Checked == false)
             {
@@ -238,7 +238,7 @@ namespace Centre_D_affaire.GestionParking
             if (bunifuToggleSwitch2.Checked == true)
             {
                 password2.UseSystemPasswordChar = false;
-                password2.PasswordChar = default;
+                password2.PasswordChar = '*';
             }
             if (bunifuToggleSwitch2.Checked == false)
             {
