@@ -47,6 +47,8 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnSalledeSport = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +64,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.btnSalleDeJeux.TabIndex = 0;
             this.btnSalleDeJeux.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSalleDeJeux.UseVisualStyleBackColor = true;
+            this.btnSalleDeJeux.Click += new System.EventHandler(this.btnSalleDeJeux_Click);
             // 
             // btnCafeRestaurant
             // 
@@ -75,26 +78,29 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.btnCafeRestaurant.TabIndex = 1;
             this.btnCafeRestaurant.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCafeRestaurant.UseVisualStyleBackColor = true;
+            this.btnCafeRestaurant.Click += new System.EventHandler(this.btnCafeRestaurant_Click);
             // 
             // btnParking
             // 
             this.btnParking.BackgroundImage = global::Centre_D_affaire.Properties.Resources.parking;
             this.btnParking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnParking.Location = new System.Drawing.Point(684, 364);
+            this.btnParking.Location = new System.Drawing.Point(572, 312);
             this.btnParking.Name = "btnParking";
             this.btnParking.Size = new System.Drawing.Size(131, 85);
             this.btnParking.TabIndex = 2;
             this.btnParking.UseVisualStyleBackColor = true;
+            this.btnParking.Click += new System.EventHandler(this.btnParking_Click);
             // 
             // btnCreche
             // 
             this.btnCreche.BackgroundImage = global::Centre_D_affaire.Properties.Resources.creche;
             this.btnCreche.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCreche.Location = new System.Drawing.Point(221, 364);
+            this.btnCreche.Location = new System.Drawing.Point(106, 312);
             this.btnCreche.Name = "btnCreche";
             this.btnCreche.Size = new System.Drawing.Size(131, 85);
             this.btnCreche.TabIndex = 3;
             this.btnCreche.UseVisualStyleBackColor = true;
+            this.btnCreche.Click += new System.EventHandler(this.btnCreche_Click);
             // 
             // btnLocEspaces
             // 
@@ -105,16 +111,18 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.btnLocEspaces.Size = new System.Drawing.Size(131, 85);
             this.btnLocEspaces.TabIndex = 4;
             this.btnLocEspaces.UseVisualStyleBackColor = true;
+            this.btnLocEspaces.Click += new System.EventHandler(this.btnLocEspaces_Click);
             // 
             // btnAchatService
             // 
             this.btnAchatService.BackgroundImage = global::Centre_D_affaire.Properties.Resources.achat;
             this.btnAchatService.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAchatService.Location = new System.Drawing.Point(434, 364);
+            this.btnAchatService.Location = new System.Drawing.Point(331, 312);
             this.btnAchatService.Name = "btnAchatService";
             this.btnAchatService.Size = new System.Drawing.Size(131, 85);
             this.btnAchatService.TabIndex = 5;
             this.btnAchatService.UseVisualStyleBackColor = true;
+            this.btnAchatService.Click += new System.EventHandler(this.btnAchatService_Click);
             // 
             // btnGPersonnel
             // 
@@ -125,6 +133,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.btnGPersonnel.Size = new System.Drawing.Size(131, 85);
             this.btnGPersonnel.TabIndex = 6;
             this.btnGPersonnel.UseVisualStyleBackColor = true;
+            this.btnGPersonnel.Click += new System.EventHandler(this.btnGPersonnel_Click);
             // 
             // panel1
             // 
@@ -190,7 +199,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(714, 452);
+            this.label4.Location = new System.Drawing.Point(606, 400);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 20);
             this.label4.TabIndex = 10;
@@ -202,7 +211,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(259, 452);
+            this.label5.Location = new System.Drawing.Point(144, 400);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 20);
             this.label5.TabIndex = 11;
@@ -239,7 +248,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(430, 452);
+            this.label8.Location = new System.Drawing.Point(335, 400);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(127, 20);
             this.label8.TabIndex = 14;
@@ -253,6 +262,32 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.panel2.Size = new System.Drawing.Size(1005, 85);
             this.panel2.TabIndex = 15;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(800, 400);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(106, 20);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Salle de sport";
+            // 
+            // btnSalledeSport
+            // 
+            this.btnSalledeSport.BackgroundImage = global::Centre_D_affaire.Properties.Resources.sallesport;
+            this.btnSalledeSport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSalledeSport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalledeSport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSalledeSport.Location = new System.Drawing.Point(792, 312);
+            this.btnSalledeSport.Name = "btnSalledeSport";
+            this.btnSalledeSport.Size = new System.Drawing.Size(131, 85);
+            this.btnSalledeSport.TabIndex = 16;
+            this.btnSalledeSport.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalledeSport.UseVisualStyleBackColor = true;
+            this.btnSalledeSport.Click += new System.EventHandler(this.btnSalledeSport_Click);
+            // 
             // General
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,6 +295,8 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.BackgroundImage = global::Centre_D_affaire.Properties.Resources.centre_commercial_vide_1127_376;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1005, 625);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.btnSalledeSport);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -307,5 +344,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnSalledeSport;
     }
 }

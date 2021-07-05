@@ -909,7 +909,6 @@
     <EmbeddedResource Include="GestionPersonnel\FrmDemission.resx">
       <DependentUpon>FrmDemission.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="GestionPersonnel\CustomControls\UCAjoutDepartement.resx">
       <DependentUpon>UCAjoutDepartement.cs</DependentUpon>
     </EmbeddedResource>
@@ -1557,6 +1556,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AchatsLogistiquePatrimoine\arriere-plan-afges-1024x728.jpg" />
+    <None Include="Resources\sallesport.jpg" />
     <None Include="Resources\close_window_48px.png" />
     <None Include="Resources\image.png" />
     <None Include="Resources\WhatsApp Image 2021-07-03 at 12.23.06.jpeg" />

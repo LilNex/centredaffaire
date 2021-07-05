@@ -49,11 +49,11 @@ namespace Centre_D_affaire
             Centre_D_affaire.AchatsLogistiquePatrimoine.ClsListe.List_employe.Add(new Centre_D_affaire.AchatsLogistiquePatrimoine.ClsEmploye("2", "BOULIF", "SAFAA",0618475015, "boulifsafaa@gmail.com", "DIRECTRICE","0000"));
             Centre_D_affaire.AchatsLogistiquePatrimoine.ClsListe.List_employe.Add(new Centre_D_affaire.AchatsLogistiquePatrimoine.ClsEmploye("3", "ALLAM","WALAA",0617929719, "walaaallam@gmail.com","RESPONSABLE ACHAT","0000"));
 
-            Application.Run(new LOGIN());
+
 
             
             //Centre_D_affaire.AchatsLogistiquePatrimoine
-            Application.Run(new Centre_D_affaire.GestionPersonnel.frmGPersonnel());
+            Application.Run(new Centre_D_affaire.AchatsLogistiquePatrimoine.General());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
