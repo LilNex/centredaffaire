@@ -119,6 +119,10 @@ namespace Centre_D_affaire
             this.cmbprofil.BackColor = System.Drawing.SystemColors.Menu;
             this.cmbprofil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbprofil.FormattingEnabled = true;
+            this.cmbprofil.Items.AddRange(new object[] {
+            "Directeur",
+            "Responsable Achat",
+            "Responsable Commercial"});
             this.cmbprofil.Location = new System.Drawing.Point(146, 232);
             this.cmbprofil.Name = "cmbprofil";
             this.cmbprofil.Size = new System.Drawing.Size(158, 24);

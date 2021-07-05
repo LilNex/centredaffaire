@@ -52,6 +52,9 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label6 = new System.Windows.Forms.Label();
             this.dgvDmdNV = new System.Windows.Forms.DataGridView();
             this.pnlDTLdmd = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.lbldepartm = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.lblNonAfich = new System.Windows.Forms.Label();
@@ -60,17 +63,14 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label8 = new System.Windows.Forms.Label();
             this.picboxDTLchoix = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlDemande.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDmdNV)).BeginInit();
             this.pnlDTLdmd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxDTLchoix)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxDTLchoix)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -235,12 +235,10 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label6.ForeColor = System.Drawing.Color.Navy;
             this.label6.Name = "label6";
             // 
-            // cmbUtgnce
+            // dgvDmdNV
             // 
-            resources.ApplyResources(this.cmbUtgnce, "cmbUtgnce");
-            this.cmbUtgnce.FormattingEnabled = true;
-            this.cmbUtgnce.Name = "cmbUtgnce";
-            this.cmbUtgnce.SelectedIndexChanged += new System.EventHandler(this.cmbUtgnce_SelectedIndexChanged);
+            resources.ApplyResources(this.dgvDmdNV, "dgvDmdNV");
+            this.dgvDmdNV.Name = "dgvDmdNV";
             // 
             // pnlDTLdmd
             // 
@@ -259,10 +257,27 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             resources.ApplyResources(this.pnlDTLdmd, "pnlDTLdmd");
             this.pnlDTLdmd.Name = "pnlDTLdmd";
             // 
-            resources.ApplyResources(this.cmbDeprt, "cmbDeprt");
-            this.cmbDeprt.FormattingEnabled = true;
-            this.cmbDeprt.Name = "cmbDeprt";
-            this.cmbDeprt.SelectedIndexChanged += new System.EventHandler(this.cmbDeprt_SelectedIndexChanged);
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::Centre_D_affaire.Properties.Resources.WhatsApp_Image_2021_07_03_at_12_23_06;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label5.Name = "label5";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
+            this.label4.Name = "label4";
+            // 
             // lbldepartm
             // 
             resources.ApplyResources(this.lbldepartm, "lbldepartm");
@@ -270,18 +285,12 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.lbldepartm.ForeColor = System.Drawing.Color.DarkRed;
             this.lbldepartm.Name = "lbldepartm";
             // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Name = "label11";
             // label15
             // 
             resources.ApplyResources(this.label15, "label15");
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Name = "label15";
             // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Name = "label10";
             // lblNonAfich
             // 
             resources.ApplyResources(this.lblNonAfich, "lblNonAfich");
@@ -323,32 +332,6 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // label4
-            // 
-            resources.ApplyResources(this.cmbID, "cmbID");
-            this.cmbID.FormattingEnabled = true;
-            this.cmbID.Name = "cmbID";
-            this.cmbID.SelectedIndexChanged += new System.EventHandler(this.cmbID_SelectedIndexChanged);
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Name = "label4";
-            // 
-            // label7
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label5.Name = "label5";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::Centre_D_affaire.Properties.Resources.WhatsApp_Image_2021_07_03_at_12_23_06;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            // 
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
@@ -376,8 +359,8 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             ((System.ComponentModel.ISupportInitialize)(this.dgvDmdNV)).EndInit();
             this.pnlDTLdmd.ResumeLayout(false);
             this.pnlDTLdmd.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxDTLchoix)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxDTLchoix)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
