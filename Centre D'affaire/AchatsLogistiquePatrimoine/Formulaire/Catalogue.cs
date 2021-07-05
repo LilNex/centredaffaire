@@ -572,7 +572,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
             //pictureBox1.Location = new Point(x, y);
         }
-        private int cpt = 0;
+        
 
         
 
