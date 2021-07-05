@@ -78,18 +78,6 @@
     <Compile Include="Catalogue_User.Designer.cs">
       <DependentUpon>Catalogue_User.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="GestionCafeRestaurant\frmGCR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +121,12 @@
     </Compile>
     <Compile Include="GestionCreche\Dejeuner.Designer.cs">
       <DependentUpon>Dejeuner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCreche\FrmPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCreche\FrmPersonnel.Designer.cs">
+      <DependentUpon>FrmPersonnel.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionCreche\Jeux.cs">
       <SubType>UserControl</SubType>
@@ -194,9 +188,6 @@
     <EmbeddedResource Include="Catalogue_User.resx">
       <DependentUpon>Catalogue_User.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\Activité.resx">
       <DependentUpon>Activité.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,20 +197,14 @@
     <EmbeddedResource Include="GestionCreche\frmCatalogue.resx">
       <DependentUpon>frmCatalogue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionCreche\frmEnfant.resx">
-      <DependentUpon>frmEnfant.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionCreche\frmFacture.resx">
-      <DependentUpon>frmFacture.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionCreche\frmGroupe.resx">
-      <DependentUpon>frmGroupe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmInscription.resx">
       <DependentUpon>frmInscription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\Dejeuner.resx">
       <DependentUpon>Dejeuner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCreche\FrmPersonnel.resx">
+      <DependentUpon>FrmPersonnel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\Jeux.resx">
       <DependentUpon>Jeux.cs</DependentUpon>
