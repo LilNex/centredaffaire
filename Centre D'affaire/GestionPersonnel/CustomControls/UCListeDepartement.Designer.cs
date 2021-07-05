@@ -182,7 +182,7 @@
             this.dgvListeDeps.BackgroundColor = System.Drawing.Color.White;
             this.dgvListeDeps.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListeDeps.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvListeDeps.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            //this.dgvListeDeps.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListeDeps.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListeDeps.EnableHeadersVisualStyles = false;
             this.dgvListeDeps.Location = new System.Drawing.Point(7, 77);
