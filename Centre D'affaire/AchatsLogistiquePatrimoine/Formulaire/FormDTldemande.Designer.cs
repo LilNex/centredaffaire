@@ -329,7 +329,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(150, 100);
             this.Name = "FormDTldemande";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDTldemande";
             this.Load += new System.EventHandler(this.FormDTldemande_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

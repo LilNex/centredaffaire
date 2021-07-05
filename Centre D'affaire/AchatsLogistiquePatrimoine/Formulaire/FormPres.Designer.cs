@@ -31,17 +31,15 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPres));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnFourniss = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnDemande = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlDemande = new System.Windows.Forms.Panel();
+            this.dgvDmdNV = new System.Windows.Forms.DataGridView();
             this.cmbUtgnce = new System.Windows.Forms.ComboBox();
             this.cmbDeprt = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -50,9 +48,9 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.cmbID = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dgvDmdNV = new System.Windows.Forms.DataGridView();
             this.pnlDTLdmd = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnValider = new System.Windows.Forms.Button();
+            this.picboxlogo = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbldepartm = new System.Windows.Forms.Label();
@@ -63,47 +61,54 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label8 = new System.Windows.Forms.Label();
             this.picboxDTLchoix = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
+            this.PNLFOURNISS = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dgvFournisseur = new System.Windows.Forms.DataGridView();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlDemande.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDmdNV)).BeginInit();
             this.pnlDTLdmd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxlogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxDTLchoix)).BeginInit();
+            this.PNLFOURNISS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFournisseur)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.btnFourniss);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnDemande);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // button5
+            // btnFourniss
             // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnFourniss.BackColor = System.Drawing.Color.Transparent;
+            this.btnFourniss.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnFourniss.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnFourniss, "btnFourniss");
+            this.btnFourniss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnFourniss.Name = "btnFourniss";
+            this.btnFourniss.UseVisualStyleBackColor = false;
+            this.btnFourniss.Click += new System.EventHandler(this.btnFourniss_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Centre_D_affaire.Properties.Resources.WhatsApp_Image_2021_07_03_at_12_23_06;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Name = "label3";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Centre_D_affaire.Properties.Resources.caricature_homme_affaires_18591_40638;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
             // 
             // button4
             // 
@@ -112,36 +117,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button3.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button2.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnDemande
             // 
@@ -168,19 +144,29 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             // 
             // pnlDemande
             // 
-            this.pnlDemande.BackColor = System.Drawing.Color.Transparent;
+            this.pnlDemande.BackColor = System.Drawing.SystemColors.Menu;
+            this.pnlDemande.Controls.Add(this.dgvDmdNV);
             this.pnlDemande.Controls.Add(this.cmbUtgnce);
             this.pnlDemande.Controls.Add(this.cmbDeprt);
+            this.pnlDemande.Controls.Add(this.pnlDTLdmd);
             this.pnlDemande.Controls.Add(this.label11);
             this.pnlDemande.Controls.Add(this.label10);
             this.pnlDemande.Controls.Add(this.label9);
             this.pnlDemande.Controls.Add(this.cmbID);
             this.pnlDemande.Controls.Add(this.label7);
             this.pnlDemande.Controls.Add(this.label6);
-            this.pnlDemande.Controls.Add(this.dgvDmdNV);
             resources.ApplyResources(this.pnlDemande, "pnlDemande");
             this.pnlDemande.Name = "pnlDemande";
             this.pnlDemande.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDemande_Paint);
+            // 
+            // dgvDmdNV
+            // 
+            this.dgvDmdNV.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.dgvDmdNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgvDmdNV, "dgvDmdNV");
+            this.dgvDmdNV.Name = "dgvDmdNV";
+            this.dgvDmdNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDmdNV_CellContentClick);
+            this.dgvDmdNV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDmdNV_CellDoubleClick);
             // 
             // cmbUtgnce
             // 
@@ -235,15 +221,11 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             this.label6.ForeColor = System.Drawing.Color.Navy;
             this.label6.Name = "label6";
             // 
-            // dgvDmdNV
-            // 
-            resources.ApplyResources(this.dgvDmdNV, "dgvDmdNV");
-            this.dgvDmdNV.Name = "dgvDmdNV";
-            // 
             // pnlDTLdmd
             // 
             this.pnlDTLdmd.BackgroundImage = global::Centre_D_affaire.Properties.Resources.feuille_page;
-            this.pnlDTLdmd.Controls.Add(this.pictureBox2);
+            this.pnlDTLdmd.Controls.Add(this.btnValider);
+            this.pnlDTLdmd.Controls.Add(this.picboxlogo);
             this.pnlDTLdmd.Controls.Add(this.label5);
             this.pnlDTLdmd.Controls.Add(this.label4);
             this.pnlDTLdmd.Controls.Add(this.lbldepartm);
@@ -257,12 +239,21 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             resources.ApplyResources(this.pnlDTLdmd, "pnlDTLdmd");
             this.pnlDTLdmd.Name = "pnlDTLdmd";
             // 
-            // pictureBox2
+            // btnValider
             // 
-            this.pictureBox2.BackgroundImage = global::Centre_D_affaire.Properties.Resources.WhatsApp_Image_2021_07_03_at_12_23_06;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
+            this.btnValider.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnValider, "btnValider");
+            this.btnValider.ForeColor = System.Drawing.Color.Green;
+            this.btnValider.Name = "btnValider";
+            this.btnValider.UseVisualStyleBackColor = false;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
+            // 
+            // picboxlogo
+            // 
+            this.picboxlogo.BackgroundImage = global::Centre_D_affaire.Properties.Resources.WhatsApp_Image_2021_07_03_at_12_23_06;
+            resources.ApplyResources(this.picboxlogo, "picboxlogo");
+            this.picboxlogo.Name = "picboxlogo";
+            this.picboxlogo.TabStop = false;
             // 
             // label5
             // 
@@ -327,23 +318,48 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             // 
             this.button7.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.button7, "button7");
-            this.button7.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.button7.ForeColor = System.Drawing.SystemColors.GrayText;
             this.button7.Name = "button7";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // label12
+            // PNLFOURNISS
             // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
+            this.PNLFOURNISS.BackColor = System.Drawing.SystemColors.Menu;
+            this.PNLFOURNISS.Controls.Add(this.label14);
+            this.PNLFOURNISS.Controls.Add(this.button3);
+            this.PNLFOURNISS.Controls.Add(this.dgvFournisseur);
+            resources.ApplyResources(this.PNLFOURNISS, "PNLFOURNISS");
+            this.PNLFOURNISS.Name = "PNLFOURNISS";
+            this.PNLFOURNISS.Paint += new System.Windows.Forms.PaintEventHandler(this.PNLFOURNISS_Paint);
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // dgvFournisseur
+            // 
+            this.dgvFournisseur.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.dgvFournisseur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgvFournisseur, "dgvFournisseur");
+            this.dgvFournisseur.Name = "dgvFournisseur";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label14.Name = "label14";
             // 
             // FormPres
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Centre_D_affaire.Properties.Resources.depositphotos_18595071_stock_photo_light_room;
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.pnlDTLdmd);
+            this.Controls.Add(this.PNLFOURNISS);
             this.Controls.Add(this.pnlDemande);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -359,8 +375,11 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
             ((System.ComponentModel.ISupportInitialize)(this.dgvDmdNV)).EndInit();
             this.pnlDTLdmd.ResumeLayout(false);
             this.pnlDTLdmd.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxlogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxDTLchoix)).EndInit();
+            this.PNLFOURNISS.ResumeLayout(false);
+            this.PNLFOURNISS.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFournisseur)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,19 +389,13 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDemande;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel pnlDemande;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dgvDmdNV;
         private System.Windows.Forms.ComboBox cmbID;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -399,8 +412,15 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lblNonAfich;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picboxlogo;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridView dgvDmdNV;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnValider;
+        private System.Windows.Forms.Button btnFourniss;
+        private System.Windows.Forms.Panel PNLFOURNISS;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView dgvFournisseur;
+        private System.Windows.Forms.Label label14;
     }
 }

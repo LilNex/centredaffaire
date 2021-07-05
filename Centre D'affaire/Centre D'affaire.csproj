@@ -179,10 +179,10 @@
     <Compile Include="LocationEspacesSalleReunion\frmLESR.Designer.cs">
       <DependentUpon>frmLESR.cs</DependentUpon>
     </Compile>
-    <Compile Include="LOGIN.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOGIN.Designer.cs">
+    <Compile Include="AchatsLogistiquePatrimoine\Formulaire\LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -223,7 +223,7 @@
     <EmbeddedResource Include="GestionCafeRestaurant\frmGCR.resx">
       <DependentUpon>frmGCR.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN.resx">
+    <EmbeddedResource Include="AchatsLogistiquePatrimoine\Formulaire\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

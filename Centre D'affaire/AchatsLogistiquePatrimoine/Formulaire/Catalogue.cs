@@ -197,6 +197,7 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
                 btnChoisir.Visible = false;
                 dgvCHoi.Visible = false;
                 dgvFinal.Visible = false;
+                pnlPersonnel.Visible = false;
 
             }
             else
@@ -575,6 +576,38 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         }
 
         private void pnlHaut_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnCONECT_Click(object sender, EventArgs e)
+        {
+            pnlPersonnel.Visible = true;
+
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAcha_Click(object sender, EventArgs e)
+        {
+            FormPres f = new FormPres();
+            f.Show();
+
+            this.Hide();
+
+        }
+
+        private void btnCom_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

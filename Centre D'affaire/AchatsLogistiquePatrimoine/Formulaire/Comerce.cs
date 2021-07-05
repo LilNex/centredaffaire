@@ -152,5 +152,13 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine
         {
             pnlfournisseur.Visible = true;
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Catalogue f = new Catalogue();
+            f.Show();
+
+            this.Hide();
+        }
     }
 }
