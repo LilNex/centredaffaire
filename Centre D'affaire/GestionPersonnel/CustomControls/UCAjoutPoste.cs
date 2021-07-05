@@ -39,21 +39,6 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private void btnAjouter_Click(object sender, EventArgs e)
         {
 
-            try 
-            {
-                
-                //if (tempListePoste.Count != 0)
-                //{
-                //    newDep.ListePoste = tempListePoste;
-                //}
-                //Functions.AjouterDepartement(newDep);
-                N.ShowBalloonTip(1100, "Departement ajouté", "Le département a été ajouté à la liste avec succès", ToolTipIcon.Info);
-            }
-            catch (DepartementException ex)
-            {
-                
-                N.ShowBalloonTip(1100, "Erreur lors de l'ajout du département", ex.Message, ToolTipIcon.Info);
-            }
             
         }
 
@@ -91,6 +76,11 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Functions.clearForm(this);
         }
     }
 }

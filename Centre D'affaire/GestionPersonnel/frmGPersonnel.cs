@@ -20,6 +20,7 @@ namespace Centre_D_affaire.GestionPersonnel
         private void frmGPersonnel_Load(object sender, EventArgs e)
         {
             // test
+            panel1.BackColor = Color.FromArgb(50, 0, 0, 0);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -33,7 +34,7 @@ namespace Centre_D_affaire.GestionPersonnel
                     frm.UserLogged = logged;
                     frm.Show();
                 }
-                if (logged.Type == EmployeType.Employe)
+                else /*(logged.Type == EmployeType.Employe)*/
                 {
                     frmPrincipal_Employe frm = new frmPrincipal_Employe();
                     frm.UserLogged = logged;
@@ -45,6 +46,14 @@ namespace Centre_D_affaire.GestionPersonnel
             {
                 lblNotif.Text = "Identifiant ou mot de passe invalide.";
             }
+        }
+
+
+        private void btnDirect_Click(object sender, EventArgs e)
+        {
+            frmPrincipal_Directeur frm = new frmPrincipal_Directeur();
+            this.Hide();
+            frm.Show();
         }
     }
 }

@@ -143,5 +143,10 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         {
 
         }
+
+        private void btnEffacer_Click(object sender, EventArgs e)
+        {
+            Functions.clearForm(this);
+        }
     }
 }

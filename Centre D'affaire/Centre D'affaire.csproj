@@ -271,6 +271,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionPersonnel\CustomControls\UCAjoutPoste.resx">
       <DependentUpon>UCAjoutPoste.cs</DependentUpon>
     </EmbeddedResource>
@@ -348,14 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
@@ -364,6 +362,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -468,6 +471,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_info_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_key_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_workspace_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GestionPersonnel\Resources\icons8_pencil_drawing_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

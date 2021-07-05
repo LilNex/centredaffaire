@@ -79,5 +79,10 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             tempPoste = null;
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

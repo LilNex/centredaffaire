@@ -56,6 +56,8 @@ namespace Centre_D_affaire.GestionPersonnel
             this.Close();
             this.Dispose();
 
+            Application.Exit();
+
         }
         private void btnMinimize_Click(object sender, EventArgs e)
         {

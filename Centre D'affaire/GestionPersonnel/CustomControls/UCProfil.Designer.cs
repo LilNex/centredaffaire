@@ -67,7 +67,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(200, 22);
             this.label2.TabIndex = 2;
-            this.label2.Text = "PDF";
+            this.label2.Text = "PDG";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UCProfil

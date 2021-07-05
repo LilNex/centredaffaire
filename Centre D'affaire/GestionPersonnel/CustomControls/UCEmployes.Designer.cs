@@ -39,7 +39,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             // 
             this.btnAjouterEmploye.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnAjouterEmploye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAjouterEmploye.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterEmploye.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouterEmploye.ForeColor = System.Drawing.Color.White;
             this.btnAjouterEmploye.Image = global::Centre_D_affaire.Properties.Resources.icons8_add_user_male_32px;
             this.btnAjouterEmploye.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -57,7 +57,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             // 
             this.btnListeEmployes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnListeEmployes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListeEmployes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListeEmployes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListeEmployes.ForeColor = System.Drawing.Color.White;
             this.btnListeEmployes.Image = global::Centre_D_affaire.Properties.Resources.icons8_user_groups_32px;
             this.btnListeEmployes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;

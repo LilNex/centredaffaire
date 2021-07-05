@@ -188,7 +188,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.btnMofidDep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMofidDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMofidDep.ForeColor = System.Drawing.Color.White;
-            this.btnMofidDep.Image = global::Centre_D_affaire.Properties.Resources.icons8_add_user_male_32px;
+            this.btnMofidDep.Image = global::Centre_D_affaire.Properties.Resources.icons8_pencil_drawing_32px;
             this.btnMofidDep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMofidDep.Location = new System.Drawing.Point(827, 434);
             this.btnMofidDep.Name = "btnMofidDep";
@@ -225,7 +225,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.btnSuppPoste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuppPoste.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuppPoste.ForeColor = System.Drawing.Color.White;
-            this.btnSuppPoste.Image = global::Centre_D_affaire.Properties.Resources.icons8_add_user_male_32px;
+            this.btnSuppPoste.Image = global::Centre_D_affaire.Properties.Resources.icons8_multiply_26px_4;
             this.btnSuppPoste.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSuppPoste.Location = new System.Drawing.Point(499, 145);
             this.btnSuppPoste.Name = "btnSuppPoste";

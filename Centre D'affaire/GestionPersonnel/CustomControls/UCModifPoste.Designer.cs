@@ -36,10 +36,10 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.lblText_Numero = new System.Windows.Forms.Label();
             this.lblText_Ajout = new System.Windows.Forms.Label();
             this.dgvListeEmploye = new System.Windows.Forms.DataGridView();
+            this.cmbEmpManager = new System.Windows.Forms.ComboBox();
+            this.btnSuppEmp = new System.Windows.Forms.Button();
             this.btnMofidDep = new System.Windows.Forms.Button();
             this.btnEffacer = new System.Windows.Forms.Button();
-            this.btnSuppEmp = new System.Windows.Forms.Button();
-            this.cmbEmpManager = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListeEmploye)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,6 +114,34 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.dgvListeEmploye.Size = new System.Drawing.Size(477, 341);
             this.dgvListeEmploye.TabIndex = 130;
             // 
+            // cmbEmpManager
+            // 
+            this.cmbEmpManager.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEmpManager.FormattingEnabled = true;
+            this.cmbEmpManager.Location = new System.Drawing.Point(81, 78);
+            this.cmbEmpManager.Name = "cmbEmpManager";
+            this.cmbEmpManager.Size = new System.Drawing.Size(121, 21);
+            this.cmbEmpManager.TabIndex = 134;
+            // 
+            // btnSuppEmp
+            // 
+            this.btnSuppEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSuppEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnSuppEmp.FlatAppearance.BorderSize = 0;
+            this.btnSuppEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuppEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuppEmp.ForeColor = System.Drawing.Color.White;
+            this.btnSuppEmp.Image = global::Centre_D_affaire.Properties.Resources.icons8_multiply_26px_4;
+            this.btnSuppEmp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSuppEmp.Location = new System.Drawing.Point(499, 145);
+            this.btnSuppEmp.Name = "btnSuppEmp";
+            this.btnSuppEmp.Size = new System.Drawing.Size(113, 39);
+            this.btnSuppEmp.TabIndex = 133;
+            this.btnSuppEmp.Text = "Supprimer l\'employé";
+            this.btnSuppEmp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSuppEmp.UseVisualStyleBackColor = false;
+            this.btnSuppEmp.Click += new System.EventHandler(this.btnSuppEmp_Click);
+            // 
             // btnMofidDep
             // 
             this.btnMofidDep.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -122,7 +150,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.btnMofidDep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMofidDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMofidDep.ForeColor = System.Drawing.Color.White;
-            this.btnMofidDep.Image = global::Centre_D_affaire.Properties.Resources.icons8_add_user_male_32px;
+            this.btnMofidDep.Image = global::Centre_D_affaire.Properties.Resources.icons8_pencil_drawing_32px;
             this.btnMofidDep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMofidDep.Location = new System.Drawing.Point(827, 434);
             this.btnMofidDep.Name = "btnMofidDep";
@@ -150,34 +178,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.btnEffacer.Text = "Effacer";
             this.btnEffacer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEffacer.UseVisualStyleBackColor = false;
-            // 
-            // btnSuppEmp
-            // 
-            this.btnSuppEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSuppEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            this.btnSuppEmp.FlatAppearance.BorderSize = 0;
-            this.btnSuppEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuppEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuppEmp.ForeColor = System.Drawing.Color.White;
-            this.btnSuppEmp.Image = global::Centre_D_affaire.Properties.Resources.icons8_add_user_male_32px;
-            this.btnSuppEmp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuppEmp.Location = new System.Drawing.Point(499, 145);
-            this.btnSuppEmp.Name = "btnSuppEmp";
-            this.btnSuppEmp.Size = new System.Drawing.Size(113, 39);
-            this.btnSuppEmp.TabIndex = 133;
-            this.btnSuppEmp.Text = "Supprimer l\'employé";
-            this.btnSuppEmp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSuppEmp.UseVisualStyleBackColor = false;
-            this.btnSuppEmp.Click += new System.EventHandler(this.btnSuppEmp_Click);
-            // 
-            // cmbEmpManager
-            // 
-            this.cmbEmpManager.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEmpManager.FormattingEnabled = true;
-            this.cmbEmpManager.Location = new System.Drawing.Point(81, 78);
-            this.cmbEmpManager.Name = "cmbEmpManager";
-            this.cmbEmpManager.Size = new System.Drawing.Size(121, 21);
-            this.cmbEmpManager.TabIndex = 134;
+            this.btnEffacer.Click += new System.EventHandler(this.btnEffacer_Click);
             // 
             // UCModifPoste
             // 

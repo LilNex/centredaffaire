@@ -19,7 +19,7 @@ namespace Centre_D_affaire.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -133,7 +133,7 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_error_60px {
+        public static System.Drawing.Bitmap icons8_error_60px {
             get {
                 object obj = ResourceManager.GetObject("icons8_error_60px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_euro_money_32px {
+        public static System.Drawing.Bitmap icons8_euro_money_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_euro_money_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +213,7 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_info_96px {
+        public static System.Drawing.Bitmap icons8_info_96px {
             get {
                 object obj = ResourceManager.GetObject("icons8_info_96px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +223,17 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_male_user_32px {
+        public static System.Drawing.Bitmap icons8_key_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_key_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_male_user_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_male_user_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -293,6 +303,16 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap icons8_pencil_drawing_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_pencil_drawing_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap icons8_settings_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_settings_32px", resourceCulture);
@@ -351,9 +371,19 @@ namespace Centre_D_affaire.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_workspace_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_workspace_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] Poppins_Light {
+        public static byte[] Poppins_Light {
             get {
                 object obj = ResourceManager.GetObject("Poppins_Light", resourceCulture);
                 return ((byte[])(obj));
@@ -363,7 +393,7 @@ namespace Centre_D_affaire.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] Poppins_Regular {
+        public static byte[] Poppins_Regular {
             get {
                 object obj = ResourceManager.GetObject("Poppins_Regular", resourceCulture);
                 return ((byte[])(obj));
@@ -371,25 +401,12 @@ namespace Centre_D_affaire.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-        ///&lt;ArrayOfClsDepartement xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
-        ///  &lt;ClsDepartement&gt;
-        ///    &lt;Num&gt;AAA777&lt;/Num&gt;
-        ///    &lt;Nom&gt;dep1&lt;/Nom&gt;
-        ///    &lt;ListePoste&gt;
-        ///      &lt;clsPoste&gt;
-        ///        &lt;listeDesEmployé&gt;
-        ///          &lt;ClsEmploye&gt;
-        ///            &lt;Nom&gt;ismail&lt;/Nom&gt;
-        ///            &lt;Prenom&gt;chq&lt;/Prenom&gt;
-        ///            &lt;Num&gt;78787&lt;/Num&gt;
-        ///            &lt;Cin&gt;bk&lt;/Cin&gt;
-        ///            &lt;Situation_familiale&gt;0&lt;/Situation_familiale&gt;
-        ///            &lt;Date [rest of string was truncated]&quot;;.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static string Liste_des_departements {
+        public static System.Drawing.Bitmap unnamed {
             get {
-                return ResourceManager.GetString("Liste_des_departements", resourceCulture);
+                object obj = ResourceManager.GetObject("unnamed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

@@ -107,5 +107,10 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
                 handler(this, e);
             }
         }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

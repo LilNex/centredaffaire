@@ -67,13 +67,12 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.lblText_Badge = new System.Windows.Forms.Label();
             this.txtIdBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnEffacer = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbTDirecteur = new System.Windows.Forms.RadioButton();
             this.rdbTSecretaire = new System.Windows.Forms.RadioButton();
             this.rdbTEmp = new System.Windows.Forms.RadioButton();
-            this.rdbTDirecteur = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.grpSexe.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -483,24 +482,6 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.label4.TabIndex = 56;
             this.label4.Text = "ID Badge : ";
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Centre_D_affaire.Properties.Resources.icons8_add_user_male_32px;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(827, 481);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 39);
-            this.button1.TabIndex = 58;
-            this.button1.Text = "btnX";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // btnEffacer
             // 
             this.btnEffacer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -518,6 +499,7 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.btnEffacer.Text = "Effacer";
             this.btnEffacer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEffacer.UseVisualStyleBackColor = false;
+            this.btnEffacer.Click += new System.EventHandler(this.btnEffacer_Click);
             // 
             // btnAjouter
             // 
@@ -551,6 +533,19 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sexe";
             // 
+            // rdbTDirecteur
+            // 
+            this.rdbTDirecteur.AutoSize = true;
+            this.rdbTDirecteur.FlatAppearance.BorderSize = 0;
+            this.rdbTDirecteur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rdbTDirecteur.Location = new System.Drawing.Point(177, 16);
+            this.rdbTDirecteur.Name = "rdbTDirecteur";
+            this.rdbTDirecteur.Size = new System.Drawing.Size(79, 20);
+            this.rdbTDirecteur.TabIndex = 2;
+            this.rdbTDirecteur.TabStop = true;
+            this.rdbTDirecteur.Text = "Directeur";
+            this.rdbTDirecteur.UseVisualStyleBackColor = true;
+            // 
             // rdbTSecretaire
             // 
             this.rdbTSecretaire.AutoSize = true;
@@ -577,26 +572,12 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
             this.rdbTEmp.Text = "Employe";
             this.rdbTEmp.UseVisualStyleBackColor = true;
             // 
-            // rdbTDirecteur
-            // 
-            this.rdbTDirecteur.AutoSize = true;
-            this.rdbTDirecteur.FlatAppearance.BorderSize = 0;
-            this.rdbTDirecteur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdbTDirecteur.Location = new System.Drawing.Point(177, 16);
-            this.rdbTDirecteur.Name = "rdbTDirecteur";
-            this.rdbTDirecteur.Size = new System.Drawing.Size(79, 20);
-            this.rdbTDirecteur.TabIndex = 2;
-            this.rdbTDirecteur.TabStop = true;
-            this.rdbTDirecteur.Text = "Directeur";
-            this.rdbTDirecteur.UseVisualStyleBackColor = true;
-            // 
             // UCAjoutEmploye
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnEffacer);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtIdBox);
             this.Controls.Add(this.lblText_Badge);
@@ -686,7 +667,6 @@ namespace Centre_D_affaire.GestionPersonnel.CustomControls
         private System.Windows.Forms.Label lblText_Badge;
         private System.Windows.Forms.TextBox txtIdBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEffacer;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.GroupBox groupBox1;
