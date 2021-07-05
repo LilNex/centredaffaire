@@ -110,18 +110,6 @@
     <Compile Include="GestionCreche\frmCatalogue.Designer.cs">
       <DependentUpon>frmCatalogue.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionCreche\frmFacture.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionCreche\frmFacture.Designer.cs">
-      <DependentUpon>frmFacture.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionCreche\frmGroupe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionCreche\frmGroupe.Designer.cs">
-      <DependentUpon>frmGroupe.cs</DependentUpon>
-    </Compile>
     <Compile Include="GestionCreche\frmInscription.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,12 +196,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmCatalogue.resx">
       <DependentUpon>frmCatalogue.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionCreche\frmFacture.resx">
-      <DependentUpon>frmFacture.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionCreche\frmGroupe.resx">
-      <DependentUpon>frmGroupe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCreche\frmInscription.resx">
       <DependentUpon>frmInscription.cs</DependentUpon>
