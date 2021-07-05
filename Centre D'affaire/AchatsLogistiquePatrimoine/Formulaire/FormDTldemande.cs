@@ -240,12 +240,14 @@ namespace Centre_D_affaire.AchatsLogistiquePatrimoine.Formulaire
 
             ClsListe.sauvegardeDEMANDE();
 
-            //Catalogue f = new Catalogue();
+            
+            MessageBox.Show("Commande enregistré !");
+
+            Catalogue f = new Catalogue();
+            f.Show();
+            //FormPres f = new FormPres();
             //f.Show();
 
-            FormPres f = new FormPres();
-            f.Show();
-            
 
             this.Close();
 
