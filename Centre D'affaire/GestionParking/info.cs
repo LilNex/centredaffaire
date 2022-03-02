@@ -8,6 +8,7 @@ using System.Xml.Serialization;
 
 namespace Centre_D_affaire.GestionParking
 {
+    //test mod
     public class info
     {
         private static string username;
